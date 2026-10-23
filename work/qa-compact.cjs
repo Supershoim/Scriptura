@@ -1,0 +1,31 @@
+const assert=require('node:assert/strict'),path=require('node:path'),fs=require('node:fs');
+const {chromium}=require('C:/Users/Ovidiu Pop/Documents/Codex/2026-10-17/new-chat/work/playwright/package');
+(async()=>{
+ const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const context=await browser.newContext({viewport:{width:1440,height:1000},offline:true});
+ const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const file='file:///'+path.resolve('outputs/Scriptura-VDCC-NTR.html').replace(/\\/g,'/');
+ await page.goto(file+'#43/3');await page.waitForFunction(()=>window.scriptura?.state.ready);
+ await page.evaluate(()=>{localStorage.setItem('scriptura-font','19')});await page.reload();await page.waitForFunction(()=>window.scriptura?.state.ready);
+ assert.equal(await page.locator('.sourcepage,[data-copy],.versecell .copy').count(),0);
+ assert.equal(await page.locator('[data-copy-edition]').count(),2);assert(await page.locator('#copyChapter').isVisible());
+ const chapterHeight=await page.locator('#verses').evaluate(x=>x.offsetHeight);
+ const old=await context.newPage();await old.goto('file:///'+path.resolve('work/inline-downloaded.html').replace(/\\/g,'/'));await old.waitForFunction(()=>window.scriptura?.state.ready);await old.evaluate(()=>window.scriptura.read(42,3));
+ const oldHeight=await old.locator('#verses').evaluate(x=>x.offsetHeight);assert(chapterHeight<oldHeight*.85);await old.close();
+ const setSize=async value=>{await page.locator('#fontSize').evaluate((x,value)=>{x.value=value;x.dispatchEvent(new Event('input',{bubbles:true}))},value);};
+ await setSize(24);assert.equal(await page.locator('.vtext').first().evaluate(x=>getComputedStyle(x).fontSize),'24px');assert.equal(await page.locator('#fontValue').innerText(),'24 px');
+ await page.reload();await page.waitForFunction(()=>window.scriptura?.state.ready);assert.equal(await page.locator('#fontSize').inputValue(),'24');assert.equal(await page.locator('.vtext').first().evaluate(x=>getComputedStyle(x).fontSize),'24px');
+ await page.locator('#fontDown').click();assert.equal(await page.locator('#fontSize').inputValue(),'23');await page.locator('#fontUp').click();assert.equal(await page.locator('#fontSize').inputValue(),'24');
+ await page.locator('#fontSize').focus();await page.keyboard.press('End');assert.equal(await page.locator('#fontSize').inputValue(),'30');assert(await page.locator('#fontUp').isDisabled());await page.keyboard.press('Home');assert.equal(await page.locator('#fontSize').inputValue(),'14');assert(await page.locator('#fontDown').isDisabled());
+ await page.locator('#fontReset').click();assert.equal(await page.locator('#fontSize').inputValue(),'19');
+ await page.evaluate(()=>{window.__copies=[];Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async t=>window.__copies.push(t)}})});
+ for(const edition of ['vdcc','ntr','both']){await page.locator('#copyEdition').selectOption(edition);await page.locator('#copyChapter').click();const copied=await page.evaluate(()=>window.__copies.at(-1));assert(copied.startsWith('Ioan 3\n\n'));assert(copied.includes('\n36.'));assert(!copied.includes('Rom. 5.8'));assert(!/[*†‡\[\]]/.test(copied));}
+ await page.locator('#query').fill('har');await page.locator('#searchForm .primary').click();assert(await page.locator('#fontSize').isVisible());assert.equal(await page.locator('.sourcepage,[data-copy]').count(),0);
+ await page.evaluate(()=>window.scriptura.read(42,3));await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.resolve('work/compact-desktop.png')});
+ const mobileContext=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,offline:true}),mobile=await mobileContext.newPage();mobile.on('pageerror',e=>errors.push(e.message));
+ await mobile.goto(file+'#43/3');await mobile.waitForFunction(()=>window.scriptura?.state.ready);await mobile.locator('#fontSize').evaluate(x=>{x.value='30';x.dispatchEvent(new Event('input',{bubbles:true}))});
+ assert.equal(await mobile.locator('.vtext').first().evaluate(x=>getComputedStyle(x).fontSize),'30px');assert(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await mobile.locator('#fontReset').tap();await mobile.evaluate(()=>scrollTo(0,0));await mobile.screenshot({path:path.resolve('work/compact-mobile.png')});
+ await mobile.locator('#v-42-3-16 .ref-link').first().tap();assert.equal(await mobile.locator('#referenceTitle').innerText(),'Romani 5:8');assert(await mobile.locator('#referencePopup').isVisible());
+ assert.deepEqual(errors,[]);const report={passed:true,chapterHeightBefore:oldHeight,chapterHeightAfter:chapterHeight,heightReductionPercent:Math.round((1-chapterHeight/oldHeight)*100),checks:['no PDF page labels or verse copy buttons','compact chapter height','text-size slider, keyboard and A+/A− synchronization','saved text size after reload','chapter copy excludes inline references','search controls remain available','mobile at maximum font size without overflow','offline file and reference popup'],pageErrors:errors};fs.writeFileSync('work/qa-report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

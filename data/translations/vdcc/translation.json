@@ -1,0 +1,19 @@
+{
+  "id": "vdcc",
+  "abbreviation": "VDCC",
+  "name": "Versiunea Dumitru Cornilescu Corectată",
+  "description": "Dumitru Cornilescu · revizuită ortografic",
+  "language": "ro",
+  "color": "#4f6b3a",
+  "order": 1,
+  "source": "Biblia-VDCC.pdf (ediția revizuită ortografic, Societatea Biblică din România, 2007). Text extras automat din PDF; diacriticele au fost normalizate, iar cuvintele despărțite la capăt de rând au fost reunite. Corectate etichetele greșite pentru Geneza 41:24, Iosua 24:33, Ezra 2:47 și Ezechiel 14:12–13.",
+  "copyright": "Drepturile asupra traducerii aparțin titularilor lor.",
+  "notes": "Trimiterile tipărite în PDF, așezate la marcajele din text (*, †, ‡). Notele explicative numerotate și indicațiile muzicale ale psalmilor nu sunt incluse.",
+  "alignment": {
+    "map": {},
+    "spans": {},
+    "gaps": {
+      "REV 12:18": "În această ediție, textul este la începutul versetului 13:1."
+    }
+  }
+}
