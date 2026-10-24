@@ -1,14 +1,15 @@
 # Scriptura — Biblia în paralel
 
-Aplicație web pentru citirea mai multor traduceri ale Bibliei alăturat, verset cu verset, cu căutare și cu trimiterile tipărite afișate ca ferestre mici (pop-up). Funcționează pe calculator, telefon și tabletă; instalată de pe site, merge și fără internet.
+Aplicație web pentru citirea mai multor traduceri ale Bibliei alăturat, verset cu verset, cu căutare și cu trimiterile tipărite afișate ca ferestre mici (pop-up). Secțiunea **Studii** adaugă studiile biblice expozitive, câte unul pe capitol (scopul: toate cele 1.189 de capitole), fiecare cu părțile lui și cu o reprezentare vizuală. Funcționează pe calculator, telefon și tabletă; instalată de pe site, merge și fără internet.
 
 ## Structură
 
 | Folder | Conținut |
 |---|---|
-| `data/` | Textele canonice. `books.json` (cele 66 de cărți, coduri USFM) și câte un folder pentru fiecare traducere în `data/translations/<id>/`. |
+| `data/` | Textele canonice. `books.json` (cele 66 de cărți, coduri USFM, abrevieri) și câte un folder pentru fiecare traducere în `data/translations/<id>/`. |
+| `data/studies/` | Studiile, câte un folder pe carte (`data/studies/ROM/`): `studies.json`, textele `.md` și vizualizările `.visual.json`. |
 | `app/` | Aplicația: HTML, CSS și module JavaScript simple, fără framework. |
-| `tools/` | `build.mjs` (construiește `dist/`), `validate.mjs`, `serve.mjs` (previzualizare locală), `import-tsv.mjs` (traducere nouă), `import-legacy.mjs` (conversia unică din vechea extragere PDF). |
+| `tools/` | `build.mjs` (construiește `dist/`), `validate.mjs`, `studies.mjs` (verifică și construiește studiile), `serve.mjs` (previzualizare locală), `import-tsv.mjs` (traducere nouă), `import-legacy.mjs` și `import-studies.mjs` (conversii unice din aplicațiile precedente), `vendor/marked.min.js` (Markdown → HTML, folosit doar la build). |
 | `work/` | Aplicația precedentă și scripturile de extragere din PDF, păstrate ca referință. |
 | `.github/workflows/pages.yml` | Publicare automată pe GitHub Pages la fiecare `git push`. |
 
@@ -54,14 +55,47 @@ Fiecare traducere își păstrează numerotarea proprie. Rândurile afișate sun
 3. Completează `data/translations/kjv/translation.json` (sursă, drepturi, diferențe de numerotare).
 4. Rulează `node tools/build.mjs`. Validatorul semnalează orice problemă. Noua traducere apare în fereastra „Traduceri”.
 
+## Studiile
+
+Fiecare carte are un folder `data/studies/<COD>/` (codurile din `data/books.json`). În `studies.json` e câte o intrare pe capitol; `chapter: 0` este privirea de ansamblu a cărții:
+
+```json
+{
+  "chapter": 2,
+  "date": "2026-10-17",
+  "title": "Romani 2: judecătorul religios fără scuză",
+  "summary": "…",
+  "themes": ["judecată", "lege naturală"],
+  "parts": [
+    { "label": "Studiu complet", "file": "romani-02.md" },
+    { "label": "Întrebări punctuale", "file": "romani-02-intrebari.md" }
+  ],
+  "visual": "romani-02.visual.json"
+}
+```
+
+- `covers` (opțional): capitolele cuprinse de același studiu, de ex. `[9, 10]`.
+- Părțile sunt Markdown. Trimiterile biblice din text („Fapte 17:31”, „2:16”, „v. 4-5”) devin automat pop-up-uri cu versetul. Legăturile spre alt studiu se scriu `[Romani capitolul 1](Romani%20capitolul%201.md)` sau `[…](Romani%20privire%20de%20ansamblu.md)`.
+- `visual` (opțional, dar fiecare studiu ar trebui să aibă unul): `{ "blocks": [ { "type", "title", "note", "data" } ] }`, afișat în fila „Vizual”. Tipuri: `chapters` (o coloană pe capitol), `flow` (firul cărții), `causal` (cauze și urmări), `journeys` (hartă, axa timpului, epistole). Exemplu complet: `data/studies/ACT/fapte-00.visual.json`. Un tip nou se adaugă în `app/js/visual.js` și în `VISUAL_TYPES` din `tools/studies.mjs`.
+
+### Adăugarea unui studiu
+
+1. Pune fișierele `.md` (și `.visual.json`) în `data/studies/<COD>/`.
+2. Adaugă intrarea în `studies.json` (creează fișierul, cu `[ … ]`, la prima carte nouă).
+3. Rulează `node tools/build.mjs`. Build-ul se oprește la orice problemă: câmp lipsă, capitol inexistent sau deja studiat, fișier negăsit, fișier nefolosit, legătură spre un studiu necunoscut, tip de vizualizare necunoscut.
+
+Build-ul transformă textele în HTML, scrie catalogul (`data/studies/index.json`) și un index de cuvinte împărțit după primele două litere (`data/studies/search/`). Căutarea descarcă doar bucățile de care are nevoie, așa că rămâne rapidă și cu un studiu pe fiecare capitol.
+
 ## Publicare (GitHub Pages)
 
 1. Creează un depozit pe GitHub și urcă proiectul (`git push`) pe ramura `main`.
 2. În depozit: *Settings → Pages → Source: GitHub Actions*.
 3. Fiecare `push` reconstruiește și publică site-ul. Pe telefon, deschide adresa și alege „Adaugă pe ecranul principal” / „Instalează aplicația”.
 
-**Atenție la drepturi:** pe planul gratuit GitHub, depozitele publicate cu Pages sunt publice. VDCC și NTR sunt protejate de drepturi de autor. Cere permisiunea titularilor înainte de publicare sau folosește un depozit privat cu un plan care permite Pages private.
+**Atenție la drepturi:** pe planul gratuit GitHub, depozitele publicate cu Pages sunt publice. VDCC și NTR sunt protejate de drepturi de autor, iar studiile ar deveni și ele publice. Cere permisiunea titularilor înainte de publicare sau folosește un depozit privat cu un plan care permite Pages private.
 
 ## Validare
 
 Textele provin din aceeași extragere ca aplicația precedentă: 31.102 versete pentru fiecare traducere și 61.331 de trimiteri VDCC. Verificat în browser: lectura în paralel, alinierea pentru 2 Corinteni 13, 3 Ioan, Filipeni 1 și Apocalipsa 12, pop-up-urile la hover și la atingere, comutarea traducerii în pop-up, căutarea (cuvinte, expresii, referințe), copierea capitolului fără trimiteri, alegerea și ordonarea traducerilor, temele, afișarea pe telefon și fișierul `Scriptura.html` fără rețea.
+
+Studiile (135, din 14 cărți) sunt copiate octet cu octet din Biblioteca Studiu Biblic. Verificat în browser: catalogul și progresul, căutarea după cuvânt, temă și trimitere (cu fragmente), cititorul cu părți și cuprins, pop-up-urile trimiterilor din studii, legăturile Biblie ↔ studiu, vizualizarea Faptelor Apostolilor, afișarea pe telefon și `Scriptura.html` fără nicio cerere de rețea. Service worker-ul nu a putut fi încercat în panoul de browser folosit (nu permite service workers, nici pentru versiunea anterioară); s-a verificat doar că toate fișierele din lista lui de precache există.
