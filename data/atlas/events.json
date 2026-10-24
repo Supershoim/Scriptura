@@ -24,13 +24,13 @@
     "source": { "t": "Daniel 2:1; anii de domnie după ABC 5" }
   },
   "ierusalim-597": {
-    "name": "Ierusalimul cucerit", "year": -597, "date": "2 Adar 597 î.Hr.", "certain": true,
+    "name": "Ierusalimul cucerit", "kind": "major", "year": -597, "date": "2 Adar 597 î.Hr.", "certain": true,
     "about": "Nebucadnețar ia cetatea, prinde pe împăratul ei și pune altul în locul lui. Al doilea val al exilului.",
     "refs": ["2KI 24:10", "2KI 24:12"], "places": ["ierusalim"], "people": ["nebucadnetar"],
     "source": { "t": "Cronica babiloniană ABC 5, anul 7", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-5-jerusalem-chronicle/" }
   },
   "templul-ars": {
-    "name": "Templul ars", "year": -586, "date": "c. 587/586 î.Hr.", "certain": false,
+    "name": "Templul ars", "kind": "major", "year": -586, "date": "c. 587/586 î.Hr.", "certain": false,
     "about": "Ierusalimul și templul sunt distruse. Anul exact (587 sau 586) este dezbătut.",
     "refs": ["2KI 25:8", "2KI 25:9"], "places": ["ierusalim"], "people": ["nebucadnetar"],
     "source": { "t": "2 Împărați 25:8 corelat cu anii de domnie ai lui Nebucadnețar" }
@@ -54,7 +54,7 @@
     "source": { "t": "Daniel 8:1 („anul al treilea al domniei împăratului Belșațar”)" }
   },
   "caderea-babilonului": {
-    "name": "Căderea Babilonului", "year": -539, "date": "539 î.Hr.", "certain": true,
+    "name": "Căderea Babilonului", "kind": "major", "year": -539, "date": "539 î.Hr.", "certain": true,
     "about": "Ugbaru și armata lui Cir intră în Babilon fără luptă. „Chiar în noaptea aceea, Belșațar, împăratul haldeilor, a fost omorât” (5:30).",
     "refs": ["DAN 5:30", "DAN 5:31"], "places": ["babilon"], "people": ["belsatar", "cir", "dariu-medul"],
     "source": { "t": "Cronica lui Nabonid ABC 7, anul 17", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-7-nabonidus-chronicle/" }
@@ -78,7 +78,7 @@
     "source": { "t": "Daniel 10:1 („anul al treilea al lui Cir”)" }
   },
   "gaugamela": {
-    "name": "Bătălia de la Gaugamela", "year": -331, "date": "331 î.Hr.", "certain": true,
+    "name": "Bătălia de la Gaugamela", "kind": "major", "year": -331, "date": "331 î.Hr.", "certain": true,
     "about": "Alexandru zdrobește armata lui Darius III; Imperiul Persan se prăbușește. Țapul care sfarmă berbecul (8:5–7).",
     "refs": ["DAN 8:5", "DAN 8:7"], "places": ["gaugamela", "babilon"], "people": ["alexandru"],
     "source": { "t": "Jurnal astronomic babilonian BM 36761 (331–330 î.Hr.)", "url": "https://www.livius.org/sources/content/oriental-varia/a-contemporary-account-of-the-battle-of-gaugamela/" }
@@ -124,5 +124,89 @@
     "about": "Moare în Persia, de boală, fără să fie învins în luptă: „va fi zdrobit fără ajutorul vreunei mâini omenești” (8:25, după studiu).",
     "refs": ["DAN 8:25"], "places": ["persia"], "people": ["antioh-iv"],
     "source": { "t": "1 Macabei 6:1–16; Polibiu 31.9" }
+  },
+  "prof-isaia-babilon": {
+    "name": "Isaia: fiii lui Ezechia, duși în Babilon", "kind": "prophecy", "fulfils": ["deportarea-daniel"], "year": -701, "date": "c. 701 î.Hr.", "certain": false,
+    "about": "După vizita solilor din Babilon, Isaia îi spune lui Ezechia că vistieriile casei lui vor fi duse în Babilon, iar din fiii lui vor fi luați slujitori în casa împăratului Babilonului. Daniel 1:2–3 descrie împlinirea: vasele templului și tineri de neam împărătesc duși la curte.",
+    "refs": ["ISA 39:6-7","2KI 20:17-18"],
+    "source": { "t": "Datare aproximativă, după domnia lui Ezechia (c. 715–686 î.Hr.) și 2 Împărați 20" }
+  },
+  "prof-isaia-cir": {
+    "name": "Isaia îl numește pe Cir", "kind": "prophecy", "fulfils": ["caderea-babilonului","decretul-lui-cir"], "year": -690, "date": "c. 700–681 î.Hr.", "certain": false,
+    "about": "Isaia îl numește pe Cir păstorul și unsul Domnului, care va doborî neamuri și va porunci rezidirea Ierusalimului și a templului. Daniel 5–6 și 10:1 se petrec în vremea împlinirii.",
+    "refs": ["ISA 44:28","ISA 45:1"], "people": ["cir"],
+    "source": { "t": "Datare aproximativă: slujirea lui Isaia sub Ezechia; datarea capitolelor 40–66 este disputată" }
+  },
+  "prof-habacuc": {
+    "name": "Habacuc: haldeii ridicați", "kind": "prophecy", "fulfils": ["carchemis","ierusalim-597"], "year": -607, "date": "c. 609–605 î.Hr.", "certain": false,
+    "about": "Domnul anunță că îi ridică pe haldei, un popor care străbate țări întinse. Împlinirea: victoria de la Carchemiș și asediile Ierusalimului din Daniel 1.",
+    "refs": ["HAB 1:6"],
+    "source": { "t": "Datare aproximativă, după conținut (înainte de primele campanii babiloniene în Iuda)" }
+  },
+  "prof-ieremia-70": {
+    "name": "Ieremia: 70 de ani ai Babilonului", "kind": "prophecy", "fulfils": ["rugaciunea-70","decretul-lui-cir"], "year": -605, "date": "605 î.Hr. (anul 1 al lui Nebucadnețar)", "certain": false,
+    "about": "Ieremia anunță că țara va fi supusă împăratului Babilonului timp de șaptezeci de ani, apoi Babilonul va fi pedepsit, iar poporul adus înapoi. Daniel citește aceste cuvinte în anul întâi al lui Dariu și se roagă (Daniel 9:2).",
+    "refs": ["JER 25:1","JER 25:11-12","JER 29:10"], "people": ["ieremia"],
+    "source": { "t": "Ieremia 25:1 sincronizează anul 4 al lui Ioiachim cu anul 1 al lui Nebucadnețar" }
+  },
+  "prof-ieremia-babilon": {
+    "name": "Ieremia: căderea Babilonului", "kind": "prophecy", "fulfils": ["caderea-babilonului"], "year": -594, "date": "c. 594–593 î.Hr.", "certain": false,
+    "about": "Ieremia scrie într-o carte nenorocirile care vor veni asupra Babilonului și numește împărații Mediei drept unealta judecății. Isaia 13 anunță același lucru. Împlinirea: noaptea din Daniel 5.",
+    "refs": ["JER 51:11","JER 51:59-60","ISA 13:19"], "people": ["ieremia"],
+    "source": { "t": "Ieremia 51:59: anul al patrulea al lui Zedechia" }
+  },
+  "caderea-ninivei": {
+    "name": "Căderea Ninivei", "kind": "major", "year": -612, "date": "612 î.Hr.", "certain": true,
+    "about": "Babilonienii și mezii cuceresc Ninive. Imperiul Asirian se prăbușește, iar Babilonul devine puterea dominantă: cadrul în care începe cartea Daniel.",
+    "refs": ["ZEP 2:13"],
+    "source": { "t": "Cronica babiloniană ABC 3 (Cronica căderii Ninivei)", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-3-fall-of-nineveh-chronicle/" }
+  },
+  "deportarea-582": {
+    "name": "Al patrulea val al exilului", "kind": "major", "year": -582, "date": "c. 582 î.Hr.", "certain": false,
+    "about": "În anul 23 al lui Nebucadnețar, Nebuzaradan mai duce în robie 745 de iudei. Ieremia 52 numără trei valuri (597, 586, 582), în total 4.600 de oameni.",
+    "refs": ["JER 52:28-30"], "places": ["ierusalim","babilon"], "people": ["nebucadnetar"],
+    "source": { "t": "Ieremia 52:30 (anul 23 al lui Nebucadnețar); conversia în an î.Hr. e aproximativă" }
+  },
+  "intoarcerea-zorobabel": {
+    "name": "Întoarcerea cu Zorobabel", "kind": "major", "year": -537, "date": "c. 538–537 î.Hr.", "certain": false,
+    "about": "După decretul lui Cir, primul grup de exilați se întoarce la Ierusalim și în Iuda, cu Zorobabel și Iosua. Daniel este încă în Babilon (Daniel 10:1).",
+    "refs": ["EZR 1:1-3","EZR 2:1-2"], "places": ["babilon","ierusalim"], "people": ["cir"],
+    "source": { "t": "Ezra 1:1 (anul întâi al lui Cir); data plecării e aproximativă" }
+  },
+  "templul-rezidit": {
+    "name": "Templul rezidit", "kind": "major", "year": -515, "date": "516/515 î.Hr.", "certain": false,
+    "about": "Al doilea templu este terminat în luna Adar, în anul al șaselea al lui Dariu I, la aproximativ 70 de ani după ce fusese ars.",
+    "refs": ["EZR 6:15"], "places": ["ierusalim"],
+    "source": { "t": "Ezra 6:15 (anul 6 al lui Dariu I); conversia în an î.Hr. e aproximativă" }
+  },
+  "intoarcerea-ezra": {
+    "name": "Întoarcerea cu Ezra", "kind": "major", "year": -458, "date": "c. 458 î.Hr.", "certain": false,
+    "about": "Ezra, cărturar în Legea lui Moise, pleacă din Babilon în prima zi a lunii întâi și ajunge la Ierusalim în a cincea lună, în anul al șaptelea al lui Artaxerxe.",
+    "refs": ["EZR 7:6-9"], "places": ["babilon","ierusalim"],
+    "source": { "t": "Ezra 7:7–8 (anul 7 al lui Artaxerxe I, dacă e Artaxerxe I)" }
+  },
+  "intoarcerea-neemia": {
+    "name": "Neemia trimis la Ierusalim", "kind": "major", "year": -445, "date": "c. 445/444 î.Hr.", "certain": false,
+    "about": "În luna Nisan a anului al douăzecilea al lui Artaxerxe, Neemia primește aprobarea să rezidească cetatea. Unii interpreți numără cele 70 de săptămâni din Daniel 9:25 de la acest decret (lectură disputată).",
+    "refs": ["NEH 2:1-6"], "places": ["susa","ierusalim"],
+    "source": { "t": "Neemia 2:1 (anul 20 al lui Artaxerxe I)" }
+  },
+  "regatele-diadohilor": {
+    "name": "Imperiul lui Alexandru împărțit", "kind": "fulfilment", "year": -301, "date": "după 301 î.Hr. (Ipsos)", "certain": false,
+    "about": "După moartea lui Alexandru, generalii lui își împart imperiul; după bătălia de la Ipsos rămân patru regate. Împlinirea celor patru coarne din Daniel 8:22 și a împărțirii spre cele patru vânturi din 11:4.",
+    "refs": ["DAN 8:21-22","DAN 11:4"], "people": ["alexandru"],
+    "source": { "t": "Diodor din Sicilia, cartea 21; Plutarh, Viața lui Demetrius 28–30" }
+  },
+  "mesia-starpit": {
+    "name": "Unsul stârpit: răstignirea", "kind": "fulfilment", "year": 30, "date": "c. 30 sau 33 d.Hr.", "certain": false,
+    "about": "Lectură de lucru, după studiul capitolului 9: Unsul stârpit după cele 62 de săptămâni este Isus, răstignit sub Pilat. Anul exact (30 sau 33) este disputat.",
+    "refs": ["DAN 9:26","LUK 23:33"],
+    "source": { "t": "Datare aproximativă, după Evanghelii și guvernarea lui Pilat (26–36 d.Hr.)" }
+  },
+  "distrugerea-templului-70": {
+    "name": "Ierusalimul și templul distruse", "kind": "fulfilment", "year": 70, "date": "70 d.Hr.", "certain": true,
+    "about": "Legiunile lui Titus cuceresc Ierusalimul și ard templul. Isus vorbise de urâciunea pustiirii despre care a scris Daniel și de Ierusalimul înconjurat de oști; Daniel 9:26 anunță nimicirea cetății și a Sfântului Locaș.",
+    "refs": ["DAN 9:26","MAT 24:15","LUK 21:20"], "places": ["ierusalim"],
+    "source": { "t": "Iosif Flavius, Războiul iudeilor, cartea a VI-a" }
   }
 }

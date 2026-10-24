@@ -1,14 +1,20 @@
 // The Bible-wide register shared by all study visuals (data/atlas/):
-//   people.json  { id: { name, aka?, kind, about, refs, books?: { BOOK: [refs] }, note?, sources? } }
+//   people.json  { id: { name, aka?, kind (om, proroc, înger, divin, grup), image? (id in images.json), about, refs, books?: { BOOK: [refs] }, note?, sources? } }
 //   places.json  { id: { name, kind, lat, lon, approx?, about, refs, books?, sources? } }
-//   events.json  { id: { name, year (negative = B.C.), end?, date, certain, about, refs, people?, places?, source: { t, url? } } }
-//   images.json  { id: { title, caption, refs, places?, people?, file, source, author, license } }  (files in images/)
+//   events.json  { id: { name, kind?, fulfils?, year (negative = B.C.), end?, date, certain, about, refs, people?, places?, source: { t, url? } } }
+//                kind: book (default, events of the book), prophecy (an earlier prophecy; "fulfils" lists the events it
+//                speaks of), fulfilment (a later fulfilment of the book's prophecies), major (fall of empires, deportations, returns)
+//   images.json  { id: { title, caption, refs, places?, people?, kind?: "portrait", file, source, author, license } }  (files in images/)
+//                portraits are artistic depictions: shown on the person, not among the historical witnesses
+//   visual-help.json  { block type: what the block represents (100–150 words), shown under each block title }
 //   maps/near-east.json  land outline and rivers (tools/make-map.mjs)
 // Visuals refer to these entries by id; the app shows them in one detail panel wherever they are clicked.
 import fs from 'node:fs';
 import path from 'node:path';
 
-const FILES = ['people', 'places', 'events', 'images'];
+const FILES = ['people', 'places', 'events', 'images', 'visual-help'];
+const KINDS = ['om', 'proroc', 'înger', 'divin', 'grup'], EVENT_KINDS = ['book', 'prophecy', 'fulfilment', 'major'];
+const words = s => String(s || '').trim().split(/\s+/).filter(Boolean).length;
 const ID = /^[a-z0-9-]+$/;
 
 // checkRef(ref) returns an error message or null.
@@ -35,6 +41,8 @@ export function loadAtlas(dir, books, checkRef) {
     const where = `atlas/people.json ${id}`;
     if (!ID.test(id)) problems.push(`${where}: id must be lowercase letters, digits and dashes`);
     named(where, p);
+    if (!KINDS.includes(p.kind)) problems.push(`${where}: "kind" must be one of ${KINDS.join(', ')}`);
+    if (p.image && !atlas.images[p.image]) problems.push(`${where}: unknown image "${p.image}"`);
     refs(where, p.refs, !!p.sources);
     otherBooks(where, p.books);
   }
@@ -54,8 +62,15 @@ export function loadAtlas(dir, books, checkRef) {
     if (!e.source?.t) problems.push(`${where}: every date needs a "source"`);
     if (typeof e.date !== 'string' || !e.date) problems.push(`${where}: missing "date" (as shown)`);
     refs(where, e.refs);
+    if (e.kind && !EVENT_KINDS.includes(e.kind)) problems.push(`${where}: "kind" must be one of ${EVENT_KINDS.join(', ')}`);
+    for (const k of e.fulfils || []) if (!atlas.events[k]) problems.push(`${where}: "fulfils" names unknown event "${k}"`);
+    if (e.fulfils && e.kind !== 'prophecy') problems.push(`${where}: only a prophecy has "fulfils"`);
     for (const k of e.people || []) if (!atlas.people[k]) problems.push(`${where}: unknown person "${k}"`);
     for (const k of e.places || []) if (!atlas.places[k]) problems.push(`${where}: unknown place "${k}"`);
+  }
+  for (const [type, text] of Object.entries(atlas['visual-help'])) {
+    const n = words(text);
+    if (n < 100 || n > 150) problems.push(`atlas/visual-help.json ${type}: has ${n} words, must have 100–150`);
   }
   for (const [id, im] of Object.entries(atlas.images)) {
     const where = `atlas/images.json ${id}`;
@@ -74,5 +89,5 @@ export function loadAtlas(dir, books, checkRef) {
 export function atlasForApp(atlas, seen) {
   const images = Object.fromEntries(Object.entries(atlas.images).map(([id, im]) => [id, { ...im, file: `data/atlas/images/${im.file}` }]));
   const seenOut = Object.fromEntries([...seen].map(([id, set]) => [id, [...set]]));
-  return { people: atlas.people, places: atlas.places, events: atlas.events, images, seen: seenOut };
+  return { people: atlas.people, places: atlas.places, events: atlas.events, images, help: atlas['visual-help'], seen: seenOut };
 }

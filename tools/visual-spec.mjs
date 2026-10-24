@@ -2,15 +2,21 @@
 //
 // Book visual (data/studies/<BOOK>/book.visual.json) and chapter visuals (named by "visual" in studies.json).
 // Block types and their data:
-//   book-map     { sections: [{t, s, from, to}], bands?: [{t, from, to}], chapters: { "1": {t, sum (30–40 words),
-//                  status?: "în lucru", people?, places?} }, links?: [[ch, ch, label]] }
-//   timeline     { events: [event ids], eras?: [{t, from, to}], views?: [{t, from, to}] }
+//   book-map     { about (the key message of the book, 100–150 words), sections: [{t, s, from, to}] (the halves),
+//                  parts: [{id, t, chapters: [ch], sum}] (4–8 key sections, a simplified structure of the book),
+//                  bands?: [{t, from, to}], chapters: { "1": {t, sum (30–40 words), status?: "în lucru", people?, places?} },
+//                  links?: [[ch, ch, label (≤ 5 words, shown on the arc), text?]] }
+//   timeline     { events: [event ids], eras?: [{t, from, to}], views?: [{t, from, to, kinds?: [event kinds]}] }
+//                  Gaps of more than 40 years between events are drawn compressed.
 //   network      { nodes: [person or place ids], links: [[id, id, label, ref?]] }
 //   chapter-map  { idea: {t, text, refs}, parts: [{id, t, refs, text}], flow?: [[part, part, label]],
 //                  book?: [{ch, from, t, why, refs?}], bible?: [{ref, from, t, why}] }
-//   map          { places: [place ids], routes?: [{t, kind?, mode?: land|sea, via: [place id | {lat, lon, t?}], refs?}] }
+//   map          { places: [place ids], layers?: [{id, t, on?}], routes?: [{t, kind?: exile|return|journey, tone?: 1–4,
+//                  layer?, mode?: land|sea, via: [place id | {lat, lon, t?}], refs?}] }
 //   history      { items: [image ids] }
 //   chapters, flow, causal, journeys: the earlier book visuals of Acts (not checked in detail).
+// Under each block title the app shows what the block represents: the text for its type in data/atlas/visual-help.json
+// (100–150 words), or the block's own "about" (100–150 words). "note" is shown under the diagram, in small print.
 // "source" is a fingerprint of the study text the visual was made from (tools/visuals.mjs stamp); when the text
 // changes, the visual is reported as out of date and can be queued for regeneration.
 import crypto from 'node:crypto';
@@ -19,7 +25,7 @@ export const MAP_PATH = 'data/atlas/maps/near-east.json';   // land outline used
 export const VISUAL_TYPES = ['book-map', 'timeline', 'network', 'chapter-map', 'map', 'history', 'chapters', 'flow', 'causal', 'journeys'];
 export const REQUIRED = { book: ['book-map', 'timeline', 'network'], chapter: ['chapter-map', 'network'] };
 export const fingerprint = texts => crypto.createHash('sha1').update(texts.join('\n\u0000')).digest('hex').slice(0, 12);
-const words = s => String(s || '').trim().split(/\s+/).filter(Boolean).length;
+export const words = s => String(s || '').trim().split(/\s+/).filter(Boolean).length;
 
 // ctx: { at, level: 'book' | 'chapter', book: {id, chapters}, studied: Set of chapters with a study, atlas, checkRef }
 export function checkVisual(spec, ctx) {
@@ -39,7 +45,16 @@ export function checkVisual(spec, ctx) {
     if (typeof b.title !== 'string' || !b.title.trim()) say(i, 'missing "title"');
     const d = b.data;
     if (typeof d !== 'object' || !d) return say(i, 'missing "data"');
+    if (b.about != null && (words(b.about) < 100 || words(b.about) > 150)) say(i, `"about" has ${words(b.about)} words, must have 100–150`);
     if (b.type === 'book-map') {
+      const n = words(d.about);
+      if (n < 100 || n > 150) say(i, `"about" (the key message of the book) has ${n} words, must have 100–150`);
+      const parts = d.parts || [];
+      if (parts.length < 4 || parts.length > 8) say(i, `"parts" must list 4–8 key sections of the book, has ${parts.length}`);
+      for (const p of parts) {
+        if (!p.id || !p.t || !p.sum) say(i, `part "${p.t}": needs "id", "t" and "sum"`);
+        if (!Array.isArray(p.chapters) || !p.chapters.length || !p.chapters.every(chapter)) say(i, `part "${p.t}": "chapters" must list chapters of the book`);
+      }
       for (const s of d.sections || []) if (!chapter(s.from) || !chapter(s.to) || !s.t) say(i, `section "${s.t}" needs "t", "from" and "to" chapters`);
       for (let c = 1; c <= book.chapters; c++) {
         const ch = d.chapters?.[c];
@@ -50,10 +65,14 @@ export function checkVisual(spec, ctx) {
         if (!ctx.studied.has(c) && ch.status !== 'în lucru') say(i, `chapter ${c} has no study yet: mark its summary "status": "în lucru"`);
         for (const id of [...ch.people || [], ...ch.places || []]) if (!entity(id)) say(i, `chapter ${c}: unknown person or place "${id}"`);
       }
-      for (const [a, z] of d.links || []) if (!chapter(a) || !chapter(z)) say(i, `link ${a}–${z}: chapters must exist`);
+      for (const [a, z, label] of d.links || []) {
+        if (!chapter(a) || !chapter(z)) say(i, `link ${a}–${z}: chapters must exist`);
+        if (!label || words(label) > 5) say(i, `link ${a}–${z}: the label is shown on the arc and must have 1–5 words`);
+      }
     } else if (b.type === 'timeline') {
       if (!Array.isArray(d.events) || !d.events.length) say(i, '"events" must list event ids');
       for (const id of d.events || []) if (!atlas.events[id]) say(i, `unknown event "${id}" (add it to data/atlas/events.json)`);
+      for (const v of d.views || []) if (typeof v.from !== 'number' || typeof v.to !== 'number' || !v.t) say(i, `view "${v.t}": needs "t", "from" and "to"`);
     } else if (b.type === 'network') {
       const nodes = new Set(d.nodes || []);
       if (!nodes.size) say(i, '"nodes" must list people or places');
@@ -88,7 +107,10 @@ export function checkVisual(spec, ctx) {
       }
     } else if (b.type === 'map') {
       for (const id of d.places || []) if (!atlas.places[id]) say(i, `unknown place "${id}"`);
+      const layers = new Set((d.layers || []).map(l => l.id));
+      for (const l of d.layers || []) if (!l.id || !l.t) say(i, 'every layer needs "id" and "t"');
       for (const r of d.routes || []) {
+        if (r.layer && !layers.has(r.layer)) say(i, `route "${r.t}": unknown layer "${r.layer}"`);
         if (!Array.isArray(r.via) || r.via.length < 2) say(i, `route "${r.t}": "via" needs at least two points`);
         for (const v of r.via || []) if (typeof v === 'string' ? !atlas.places[v] : typeof v?.lat !== 'number' || typeof v?.lon !== 'number') say(i, `route "${r.t}": point ${JSON.stringify(v)} must be a place id or {lat, lon}`);
         if (r.mode && !['land', 'sea'].includes(r.mode)) say(i, `route "${r.t}": "mode" must be land or sea`);

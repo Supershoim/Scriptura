@@ -1,38 +1,38 @@
 {
   "daniel": {
-    "name": "Daniel", "aka": ["Beltșațar"], "kind": "om",
+    "name": "Daniel", "aka": ["Beltșațar"], "kind": "proroc", "image": "portret-daniel",
     "about": "Tânăr de neam împărătesc din Iuda, dus în Babilon în primul val al exilului (605 î.Hr.). Slujește la curte de la Nebucadnețar până în vremea lui Cir, tâlcuiește visuri și primește viziunile din cap. 7–12.",
     "refs": ["DAN 1:6", "DAN 1:7", "DAN 6:28", "DAN 10:1", "DAN 12:13"],
     "books": { "MAT": ["MAT 24:15"] }
   },
   "hanania": {
-    "name": "Hanania", "aka": ["Șadrac"], "kind": "om",
+    "name": "Hanania", "aka": ["Șadrac"], "kind": "om", "image": "cuptorul-catacomba",
     "about": "Unul dintre cei trei prieteni ai lui Daniel, aleși pentru curtea Babilonului; primește numele babilonian Șadrac.",
     "refs": ["DAN 1:6", "DAN 1:7", "DAN 3:12"]
   },
   "misael": {
-    "name": "Mișael", "aka": ["Meșac"], "kind": "om",
+    "name": "Mișael", "aka": ["Meșac"], "kind": "om", "image": "cuptorul-catacomba",
     "about": "Unul dintre cei trei prieteni ai lui Daniel; primește numele babilonian Meșac.",
     "refs": ["DAN 1:6", "DAN 1:7", "DAN 3:12"]
   },
   "azaria": {
-    "name": "Azaria", "aka": ["Abed-Nego"], "kind": "om",
+    "name": "Azaria", "aka": ["Abed-Nego"], "kind": "om", "image": "cuptorul-catacomba",
     "about": "Unul dintre cei trei prieteni ai lui Daniel; primește numele babilonian Abed-Nego.",
     "refs": ["DAN 1:6", "DAN 1:7", "DAN 3:12"]
   },
   "nebucadnetar": {
-    "name": "Nebucadnețar", "kind": "om",
+    "name": "Nebucadnețar", "kind": "om", "image": "portret-nebucadnetar",
     "about": "Împăratul Babilonului (605–562 î.Hr.). Ia Ierusalimul, are visul statuii (cap. 2) și al copacului (cap. 4); este smerit pentru mândrie și sfârșește lăudându-L pe Cel Preaînalt. Campaniile lui sunt consemnate în Cronica babiloniană.",
     "refs": ["DAN 1:1", "DAN 2:1", "DAN 4:30", "DAN 4:37"],
     "books": { "2KI": ["2KI 24:1", "2KI 24:10"], "JER": ["JER 25:9"], "EZR": ["EZR 1:7"] }
   },
   "belsatar": {
-    "name": "Belșațar", "kind": "om",
+    "name": "Belșațar", "kind": "om", "image": "portret-belsatar",
     "about": "Fiul lui Nabonid și coregent în Babilon cât tatăl lui stătea la Tayma. Profanează vasele templului la ospăț și moare în noaptea căderii Babilonului (539 î.Hr.). Îi oferă lui Daniel locul al treilea în împărăție.",
     "refs": ["DAN 5:1", "DAN 5:29", "DAN 5:30", "DAN 7:1", "DAN 8:1"]
   },
   "nabonid": {
-    "name": "Nabonid", "kind": "om",
+    "name": "Nabonid", "kind": "om", "image": "stela-nabonid",
     "about": "Ultimul împărat al Babilonului, tatăl lui Belșațar. Nenumit în Biblie; Cronica lui Nabonid arată că a stat ani la rând la Tayma, în Arabia, iar prințul moștenitor a condus în Babilonia. Explică de ce Daniel este „al treilea” în împărăție (5:29).",
     "refs": ["DAN 5:29"],
     "sources": [{ "t": "Cronica lui Nabonid (ABC 7)", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-7-nabonidus-chronicle/" }]
@@ -48,7 +48,7 @@
     "refs": ["DAN 5:31", "DAN 6:1", "DAN 6:25", "DAN 9:1"]
   },
   "cir": {
-    "name": "Cir", "kind": "om",
+    "name": "Cir", "kind": "om", "image": "relief-pasargade",
     "about": "Împăratul Persiei care cucerește Babilonul (539 î.Hr.) și dă edictul de întoarcere a iudeilor. Cartea Daniel se încheie cronologic în anul al treilea al lui.",
     "refs": ["DAN 1:21", "DAN 6:28", "DAN 10:1"],
     "books": { "EZR": ["EZR 1:1", "EZR 1:7"], "ISA": ["ISA 45:1"], "2CH": ["2CH 36:22"] }
@@ -70,19 +70,19 @@
     "refs": ["DAN 2:14", "DAN 2:25"]
   },
   "ieremia": {
-    "name": "Ieremia", "kind": "om",
+    "name": "Ieremia", "kind": "proroc", "image": "portret-ieremia",
     "about": "Prorocul ale cărui cărți le citește Daniel: cei 70 de ani ai pustiirii Ierusalimului îl duc la rugăciunea din cap. 9.",
     "refs": ["DAN 9:2"],
     "books": { "JER": ["JER 25:11", "JER 29:10"] }
   },
   "gavril": {
-    "name": "Gavril", "kind": "înger",
+    "name": "Gavril", "kind": "înger", "image": "portret-gavril",
     "about": "Primul înger numit în Scriptură. Tâlcuiește viziunea berbecului și a țapului (cap. 8) și aduce profeția celor 70 de săptămâni (cap. 9).",
     "refs": ["DAN 8:16", "DAN 9:21"],
     "books": { "LUK": ["LUK 1:19", "LUK 1:26"] }
   },
   "mihail": {
-    "name": "Mihail", "kind": "înger",
+    "name": "Mihail", "kind": "înger", "image": "portret-mihail",
     "about": "„Una din căpeteniile cele mai de seamă” (10:13), ocrotitorul poporului lui Daniel. Luptă împotriva căpeteniei Persiei (cap. 10) și se ridică în vremea necazului celui mare (12:1).",
     "refs": ["DAN 10:13", "DAN 10:21", "DAN 12:1"],
     "books": { "JUD": ["JUD 1:9"], "REV": ["REV 12:7"] }
@@ -99,13 +99,13 @@
     "books": { "MAT": ["MAT 26:64"], "MRK": ["MRK 14:62"], "REV": ["REV 1:13"] }
   },
   "alexandru": {
-    "name": "Alexandru cel Mare", "kind": "om",
+    "name": "Alexandru cel Mare", "kind": "om", "image": "mozaicul-alexandru",
     "about": "Nenumit în text. Cornul cel mare al țapului, „cel dintâi împărat” al Greciei (8:21), și împăratul viteaz din 11:3 sunt identificați istoric cu Alexandru (336–323 î.Hr.).",
     "refs": ["DAN 8:21", "DAN 11:3"],
     "note": "identificare istorică"
   },
   "antioh-iv": {
-    "name": "Antioh IV Epifanes", "kind": "om",
+    "name": "Antioh IV Epifanes", "kind": "om", "image": "moneda-antioh",
     "about": "Nenumit în text. Cornul cel mic din 8:9–12 și „un om disprețuit” din 11:21 sunt identificați istoric cu Antioh IV (175–164 î.Hr.), care a profanat templul în 167 î.Hr.",
     "refs": ["DAN 8:9", "DAN 11:21", "DAN 11:31"],
     "note": "identificare istorică"

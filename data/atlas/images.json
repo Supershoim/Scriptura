@@ -237,5 +237,145 @@
     "source": "https://commons.wikimedia.org/wiki/File:Astronomical_Diary_331_330_BC_BM_36761.jpg",
     "author": "Zunkir",
     "license": "CC BY-SA 4.0"
+  },
+  "portret-daniel": {
+    "title": "Prorocul Daniel (Michelangelo, Capela Sixtină)",
+    "caption": "Michelangelo, frescă pe bolta Capelei Sixtine, 1508–1512. Reprezentare artistică, nu portret istoric.",
+    "refs": [
+      "DAN 1:6"
+    ],
+    "file": "portret-daniel.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Michelangelo_Buonarroti_026.jpg",
+    "author": "Michelangelo",
+    "license": "Public domain",
+    "people": [
+      "daniel"
+    ],
+    "kind": "portrait"
+  },
+  "portret-ieremia": {
+    "title": "Prorocul Ieremia (Michelangelo, Capela Sixtină)",
+    "caption": "Michelangelo, frescă pe bolta Capelei Sixtine, 1508–1512. Reprezentare artistică, nu portret istoric.",
+    "refs": [
+      "DAN 9:2"
+    ],
+    "file": "portret-ieremia.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Michelangelo,_profeti,_Jeremiah_01.jpg",
+    "author": "Michelangelo",
+    "license": "Public domain",
+    "people": [
+      "ieremia"
+    ],
+    "kind": "portrait"
+  },
+  "portret-belsatar": {
+    "title": "Ospățul lui Belșațar (Rembrandt)",
+    "caption": "Rembrandt, c. 1635–1638, National Gallery, Londra. Reprezentare artistică a scenei din Daniel 5.",
+    "refs": [
+      "DAN 5:1",
+      "DAN 5:5"
+    ],
+    "file": "portret-belsatar.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Belshazzar%27s_Feast_-_WGA19123.jpg",
+    "author": "Rembrandt",
+    "license": "Public domain",
+    "people": [
+      "belsatar"
+    ],
+    "kind": "portrait"
+  },
+  "portret-nebucadnetar": {
+    "title": "Nebucadnețar (William Blake)",
+    "caption": "William Blake, 1795/c. 1805, Tate Britain. Împăratul printre fiare, după Daniel 4:33. Reprezentare artistică.",
+    "refs": [
+      "DAN 4:33"
+    ],
+    "file": "portret-nebucadnetar.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:William_Blake_-_Nebuchadnezzar_(Tate_Britain).jpg",
+    "author": "William Blake",
+    "license": "Public domain",
+    "people": [
+      "nebucadnetar"
+    ],
+    "kind": "portrait"
+  },
+  "stela-nabonid": {
+    "title": "Stela lui Nabonid (British Museum)",
+    "caption": "Stelă de bazalt din Babilon, 555–539 î.Hr.: Nabonid în rugăciune înaintea simbolurilor lunii, soarelui și lui Venus.",
+    "refs": [
+      "DAN 5:1"
+    ],
+    "file": "stela-nabonid.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:British_Museum_Stela_of_Nabonidus.JPG",
+    "author": "Foto: Fæ",
+    "license": "CC0",
+    "people": [
+      "nabonid"
+    ]
+  },
+  "relief-pasargade": {
+    "title": "Relieful de la Pasargade",
+    "caption": "Figura înaripată din Poarta R a palatului lui Cir de la Pasargade. Identificarea cu Cir însuși este disputată.",
+    "refs": [
+      "DAN 6:28"
+    ],
+    "file": "relief-pasargade.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pasargades_winged_man.jpg",
+    "author": "Pentocelo",
+    "license": "CC BY-SA 3.0",
+    "people": [
+      "cir"
+    ],
+    "places": []
+  },
+  "cuptorul-catacomba": {
+    "title": "Cei trei evrei în cuptor (catacomba Priscilla)",
+    "caption": "Frescă creștină timpurie din catacomba Priscilla, Roma (sec. III). Reprezentare artistică a scenei din Daniel 3.",
+    "refs": [
+      "DAN 3:23",
+      "DAN 3:25"
+    ],
+    "file": "cuptorul-catacomba.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fiery_furnace_01.jpg",
+    "author": "Foto: http://people.hofstra.edu/faculty/martha_hollander/GalleryPictures/Etruscan.html (at http://people.hofstra.edu/faculty/martha_hollander/GalleryPictures/FullSizedImages/Etruscan/RomanCatacombs.jpg)",
+    "license": "Public domain",
+    "people": [
+      "hanania",
+      "misael",
+      "azaria"
+    ],
+    "kind": "portrait"
+  },
+  "portret-mihail": {
+    "title": "Arhanghelul Mihail (Guido Reni)",
+    "caption": "Guido Reni, 1635, Santa Maria della Concezione, Roma. Reprezentare artistică.",
+    "refs": [
+      "DAN 10:13",
+      "DAN 12:1"
+    ],
+    "file": "portret-mihail.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Guido_Reni_031.jpg",
+    "author": "Guido Reni",
+    "license": "Public domain",
+    "people": [
+      "mihail"
+    ],
+    "kind": "portrait"
+  },
+  "portret-gavril": {
+    "title": "Arhanghelul Gavril (Borovikovski)",
+    "caption": "Vladimir Borovikovski, sec. XVIII–XIX, detaliu dintr-o Bunavestire. Reprezentare artistică.",
+    "refs": [
+      "DAN 8:16",
+      "DAN 9:21"
+    ],
+    "file": "portret-gavril.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Archangel_Gabriel_from_the_Annunciation.jpg",
+    "author": "Vladimir Borovikovsky",
+    "license": "Public domain",
+    "people": [
+      "gavril"
+    ],
+    "kind": "portrait"
   }
 }

@@ -5,23 +5,114 @@
       "type": "chapter-map",
       "title": "Harta capitolului",
       "data": {
-        "idea": { "t": "Credincioșie în Babilon", "text": "Dumnezeu dă Ierusalimul în mâna Babilonului, dar rămâne cu ai Săi în exil: Daniel hotărăște să nu se spurce, iar Dumnezeu îi dă trecere și înțelepciune.", "refs": ["DAN 1:2", "DAN 1:8", "DAN 1:17"] },
+        "idea": {
+          "t": "Credincioșie în Babilon",
+          "text": "Dumnezeu dă Ierusalimul în mâna Babilonului, dar rămâne cu ai Săi în exil: Daniel hotărăște să nu se spurce, iar Dumnezeu îi dă trecere și înțelepciune.",
+          "refs": [
+            "DAN 1:2",
+            "DAN 1:8",
+            "DAN 1:17"
+          ]
+        },
         "parts": [
-          { "id": "a", "t": "Contextul exilului", "refs": ["DAN 1:1-2"], "text": "Asediul Ierusalimului (605 î.Hr.); vasele templului sunt duse în țara Șinear." },
-          { "id": "b", "t": "Reeducarea", "refs": ["DAN 1:3-7"], "text": "Tineri aleși, învățați în limba haldeilor; li se schimbă numele." },
-          { "id": "c", "t": "Testul hranei", "refs": ["DAN 1:8-16"], "text": "Zece zile cu legume și apă; tinerii arată mai bine decât ceilalți." },
-          { "id": "d", "t": "Rezultatele", "refs": ["DAN 1:17-21"], "text": "Dumnezeu le dă pricepere; împăratul îi găsește de zece ori mai destoinici." }
+          {
+            "id": "a",
+            "t": "Contextul exilului",
+            "refs": [
+              "DAN 1:1-2"
+            ],
+            "text": "Asediul Ierusalimului (605 î.Hr.); vasele templului sunt duse în țara Șinear."
+          },
+          {
+            "id": "b",
+            "t": "Reeducarea",
+            "refs": [
+              "DAN 1:3-7"
+            ],
+            "text": "Tineri aleși, învățați în limba haldeilor; li se schimbă numele."
+          },
+          {
+            "id": "c",
+            "t": "Testul hranei",
+            "refs": [
+              "DAN 1:8-16"
+            ],
+            "text": "Zece zile cu legume și apă; tinerii arată mai bine decât ceilalți."
+          },
+          {
+            "id": "d",
+            "t": "Rezultatele",
+            "refs": [
+              "DAN 1:17-21"
+            ],
+            "text": "Dumnezeu le dă pricepere; împăratul îi găsește de zece ori mai destoinici."
+          }
         ],
-        "flow": [["a", "b", "presiunea culturii"], ["b", "c", "hotărârea lui Daniel"], ["c", "d", "răsplata"]],
+        "flow": [
+          [
+            "a",
+            "b",
+            "presiunea culturii"
+          ],
+          [
+            "b",
+            "c",
+            "hotărârea lui Daniel"
+          ],
+          [
+            "c",
+            "d",
+            "răsplata"
+          ]
+        ],
         "book": [
-          { "ch": 3, "from": "c", "t": "Cuptorul aprins", "why": "Prietenii lui Daniel refuză din nou compromisul, de data aceasta cu prețul vieții.", "refs": ["DAN 3:12"] },
-          { "ch": 5, "from": "a", "t": "Ospățul lui Belșațar", "why": "Vasele luate din templu în 1:2 sunt profanate la ospăț.", "refs": ["DAN 5:2"] },
-          { "ch": 6, "from": "d", "t": "Groapa cu lei", "why": "Daniel rămâne credincios până în vremea lui Cir (1:21; 6:28).", "refs": ["DAN 6:28"] }
+          {
+            "ch": 3,
+            "from": "c",
+            "t": "Cuptorul aprins",
+            "why": "Prietenii lui Daniel refuză din nou compromisul, de data aceasta cu prețul vieții.",
+            "refs": [
+              "DAN 3:12"
+            ]
+          },
+          {
+            "ch": 5,
+            "from": "a",
+            "t": "Ospățul lui Belșațar",
+            "why": "Vasele luate din templu în 1:2 sunt profanate la ospăț.",
+            "refs": [
+              "DAN 5:2"
+            ]
+          },
+          {
+            "ch": 6,
+            "from": "d",
+            "t": "Groapa cu lei",
+            "why": "Daniel rămâne credincios până în vremea lui Cir (1:21; 6:28).",
+            "refs": [
+              "DAN 6:28"
+            ]
+          }
         ],
         "bible": [
-          { "ref": "2KI 24:1", "from": "a", "t": "2 Împărați 24:1", "why": "Ioiachim ajunge supus lui Nebucadnețar: fundalul asediului." },
-          { "ref": "JER 25:11", "from": "a", "t": "Ieremia 25:11", "why": "Cei șaptezeci de ani de supunere față de Babilon, pe care Daniel îi va citi în cap. 9." },
-          { "ref": "EZR 1:7", "from": "a", "t": "Ezra 1:7", "why": "Cir dă înapoi uneltele Casei Domnului luate de Nebucadnețar." }
+          {
+            "ref": "2KI 24:1",
+            "from": "a",
+            "t": "2 Împărați 24:1",
+            "why": "Ioiachim ajunge supus lui Nebucadnețar: fundalul asediului."
+          },
+          {
+            "ref": "JER 25:11",
+            "from": "a",
+            "t": "Ieremia 25:11",
+            "why": "Cei șaptezeci de ani de supunere față de Babilon, pe care Daniel îi va citi în cap. 9."
+          },
+          {
+            "ref": "EZR 1:7",
+            "from": "a",
+            "t": "Ezra 1:7",
+            "why": "Cir dă înapoi uneltele Casei Domnului luate de Nebucadnețar."
+          }
         ]
       }
     },
@@ -29,17 +120,73 @@
       "type": "network",
       "title": "Personaje și locuri",
       "data": {
-        "nodes": ["daniel", "hanania", "misael", "azaria", "nebucadnetar", "aspenaz", "ioiachim", "ierusalim", "babilon", "sinear"],
+        "nodes": [
+          "daniel",
+          "hanania",
+          "misael",
+          "azaria",
+          "nebucadnetar",
+          "aspenaz",
+          "ioiachim",
+          "ierusalim",
+          "babilon",
+          "sinear"
+        ],
         "links": [
-          ["nebucadnetar", "ierusalim", "asediu", "DAN 1:1"],
-          ["nebucadnetar", "ioiachim", "îl primește în mână", "DAN 1:2"],
-          ["ierusalim", "sinear", "vasele templului duse", "DAN 1:2"],
-          ["aspenaz", "daniel", "formarea la curte", "DAN 1:3"],
-          ["daniel", "hanania", "aleși împreună", "DAN 1:6"],
-          ["daniel", "misael", "aleși împreună", "DAN 1:6"],
-          ["daniel", "azaria", "aleși împreună", "DAN 1:6"],
-          ["nebucadnetar", "daniel", "de zece ori mai destoinici", "DAN 1:20"],
-          ["daniel", "babilon", "slujește la curte", "DAN 1:19"]
+          [
+            "nebucadnetar",
+            "ierusalim",
+            "asediu",
+            "DAN 1:1"
+          ],
+          [
+            "nebucadnetar",
+            "ioiachim",
+            "îl primește în mână",
+            "DAN 1:2"
+          ],
+          [
+            "ierusalim",
+            "sinear",
+            "vasele templului duse",
+            "DAN 1:2"
+          ],
+          [
+            "aspenaz",
+            "daniel",
+            "formarea la curte",
+            "DAN 1:3"
+          ],
+          [
+            "daniel",
+            "hanania",
+            "aleși împreună",
+            "DAN 1:6"
+          ],
+          [
+            "daniel",
+            "misael",
+            "aleși împreună",
+            "DAN 1:6"
+          ],
+          [
+            "daniel",
+            "azaria",
+            "aleși împreună",
+            "DAN 1:6"
+          ],
+          [
+            "nebucadnetar",
+            "daniel",
+            "de zece ori mai destoinici",
+            "DAN 1:20"
+          ],
+          [
+            "daniel",
+            "babilon",
+            "slujește la curte",
+            "DAN 1:19"
+          ]
         ]
       }
     },
@@ -48,16 +195,101 @@
       "title": "Drumul exilului",
       "note": "Traseu probabil, nu descris în text: prin Ribla și pe valea Eufratului.",
       "data": {
-        "places": ["ierusalim", "ribla", "carchemis", "babilon", "sinear"],
+        "places": [
+          "ierusalim",
+          "ribla",
+          "carchemis",
+          "babilon",
+          "sinear"
+        ],
         "routes": [
-          { "t": "Ierusalim → Babilon (605 î.Hr.)", "kind": "exile", "mode": "land", "via": ["ierusalim", "ribla", { "lat": 35.95, "lon": 38.4 }, "babilon"], "refs": ["DAN 1:1", "DAN 1:2"] }
+          {
+            "t": "Ierusalim → Babilon (605 î.Hr.)",
+            "kind": "exile",
+            "mode": "land",
+            "via": [
+              "ierusalim",
+              "ribla",
+              {
+                "lat": 35.95,
+                "lon": 38.4
+              },
+              "babilon"
+            ],
+            "refs": [
+              "DAN 1:1",
+              "DAN 1:2"
+            ],
+            "tone": 1,
+            "layer": "v605"
+          },
+          {
+            "t": "Al doilea val (597 î.Hr.)",
+            "kind": "exile",
+            "tone": 2,
+            "layer": "v597",
+            "mode": "land",
+            "via": [
+              "ierusalim",
+              "ribla",
+              {
+                "lat": 35.95,
+                "lon": 38.4
+              },
+              "babilon"
+            ],
+            "refs": [
+              "2KI 24:12-16"
+            ]
+          },
+          {
+            "t": "Al treilea val (586 î.Hr.)",
+            "kind": "exile",
+            "tone": 3,
+            "layer": "v586",
+            "mode": "land",
+            "via": [
+              "ierusalim",
+              "ribla",
+              {
+                "lat": 35.95,
+                "lon": 38.4
+              },
+              "babilon"
+            ],
+            "refs": [
+              "2KI 25:8-11"
+            ]
+          }
+        ],
+        "layers": [
+          {
+            "id": "v605",
+            "t": "605 · Daniel",
+            "on": true
+          },
+          {
+            "id": "v597",
+            "t": "597 · Ioiachin",
+            "on": false
+          },
+          {
+            "id": "v586",
+            "t": "586 · templul ars",
+            "on": false
+          }
         ]
       }
     },
     {
       "type": "history",
       "title": "Mărturii istorice",
-      "data": { "items": ["cronica-nebucadnetar", "poarta-istar"] }
+      "data": {
+        "items": [
+          "cronica-nebucadnetar",
+          "poarta-istar"
+        ]
+      }
     }
   ]
 }
