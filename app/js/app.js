@@ -1,7 +1,7 @@
 import { $, esc, norm, store, toast, copyText } from './util.js';
 import * as data from './data.js';
 import { books, bookIndex, key, parseKey } from './data.js';
-import { parseReference, search } from './search.js';
+import { parseReference, search, approximate } from './search.js';
 import { cellHtml } from './render.js';
 import { setupNotes, hideNote, repositionNote } from './notes.js';
 import { setupTips, hideTip } from './tips.js';
@@ -109,7 +109,8 @@ function headHtml() {
 function rowHtml(canon, searchInfo) {
   const { b, c, v } = parseKey(canon);
   const selected = state.view === 'read' && state.v && v >= state.v && v <= (state.end || state.v);
-  const ref = searchInfo ? `<div class="resultref"><button type="button" data-open="${canon}">${esc(book(b).name)} ${c}:${v}</button><span>Deschide în capitol ↗</span></div>` : '';
+  const score = searchInfo?.approx?.get(canon);
+  const ref = searchInfo ? `<div class="resultref"><button type="button" data-open="${canon}">${esc(book(b).name)} ${c}:${v}</button>${score ? `<span class="match" title="Cât de aproape e versetul de căutare">potrivire ${Math.round(score * 100)}%</span>` : ''}<span>Deschide în capitol ↗</span></div>` : '';
   return `<article class="row${selected ? ' selected' : ''}" id="v-${b}-${c}-${v}" data-k="${canon}">${ref}${shown().map(t => cellHtml(t, canon, searchInfo)).join('')}</article>`;
 }
 
@@ -159,11 +160,17 @@ function renderResults() {
   const r = state.results, total = r.keys.length, start = r.page * PAGE;
   const slice = r.keys.slice(start, start + PAGE);
   updateTitle('Căutare · ' + $('searchIn').selectedOptions[0].textContent, `Rezultate pentru „${r.query}”`, false);
-  setStatus(`${total.toLocaleString('ro-RO')} versete găsite${total ? ` · ${start + 1}–${Math.min(start + PAGE, total)}` : ''} · ${r.ms} ms`);
+  setStatus(r.approx
+    ? `${r.exact ? `${r.exact.toLocaleString('ro-RO')} potriviri exacte` : 'Nicio potrivire exactă'} · ${total} potriviri apropiate${total ? ` · ${start + 1}–${Math.min(start + PAGE, total)}` : ''} · ${r.ms} ms`
+    : `${total.toLocaleString('ro-RO')} versete găsite${total ? ` · ${start + 1}–${Math.min(start + PAGE, total)}` : ''} · ${r.ms} ms`);
   $('notice').hidden = $('studyLink').hidden = true;
+  // Approximate matches are shown apart, ordered by score; exact results offer them on request.
+  const bar = r.approx
+    ? `<div class="approx-bar"><strong>Potriviri apropiate</strong> ordonate după cât de aproape sunt de „${esc(r.query)}”: aceleași cuvinte sau rădăcini, altă ordine, o greșeală de tipar.${r.exact ? ' <button type="button" data-exact>Înapoi la potrivirile exacte</button>' : ''}</div>`
+    : total && r.page === 0 ? '<div class="approx-bar"><button type="button" data-approx>Caută și potriviri apropiate</button></div>' : '';
   $('columns').innerHTML = slice.length
-    ? headHtml() + slice.map(k => rowHtml(k, r)).join('')
-    : '<div class="empty"><strong>Niciun verset găsit</strong>Încearcă mai puține cuvinte sau extinde căutarea la toată Biblia.</div>';
+    ? bar + headHtml() + slice.map(k => rowHtml(k, r)).join('')
+    : '<div class="empty"><strong>Niciun verset găsit</strong>Nici potriviri apropiate. Încearcă alte cuvinte sau extinde căutarea la toată Biblia.</div>';
   $('back').hidden = false;
   $('copyAll').hidden = $('share').hidden = $('prev').hidden = $('next').hidden = true;
   const pages = Math.ceil(total / PAGE);
@@ -242,7 +249,7 @@ function move(delta) {
 
 // ---------- Search ----------
 
-async function runSearch() {
+async function runSearch(approx = false) {
   const query = $('query').value.trim();
   if (!query) { read(state.b, state.c); return; }
   const reference = parseReference(query);
@@ -266,6 +273,12 @@ async function runSearch() {
   const whole = $('whole').checked;
   const { keys, terms } = search(translations, { query, mode: $('mode').value, whole, scope: $('scope').value, currentBook: state.b });
   state.results = { keys, terms, whole, query, page: 0, ms: Math.round(performance.now() - started) };
+  if (!keys.length || approx) {
+    // Nothing exact (or asked for): the closest verses.
+    const near = approximate(translations, { query, scope: $('scope').value, currentBook: state.b });
+    state.results = { keys: near.hits.map(h => h.key), terms: near.terms, whole: true, query, page: 0, exact: keys.length,
+      approx: new Map(near.hits.map(h => [h.key, h.score])), ms: Math.round(performance.now() - started) };
+  }
   state.view = 'search';
   render();
   document.querySelector('.reader').scrollIntoView({ block: 'start' });
@@ -349,6 +362,8 @@ function wire() {
   $('copyAll').addEventListener('click', () => copyText(chapterText(state.visible)));
   $('columns').addEventListener('click', e => {
     if (e.target.closest('.ref-link')) return;
+    if (e.target.closest('[data-approx]')) { runSearch(true); return; }
+    if (e.target.closest('[data-exact]')) { runSearch(); return; }
     const copy = e.target.closest('[data-copy]');
     if (copy) { copyText(chapterText([copy.dataset.copy])); return; }
     const open = e.target.closest('[data-open]');

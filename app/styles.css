@@ -673,3 +673,9 @@ svg .v-pf:not(.sel) { opacity: 0 !important; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .v-node:hover, .v-node:focus-visible, .partcard:hover { transform: none; }
 }
+
+/* Approximate search */
+.approx-bar { grid-column: 1 / -1; padding: 10px 14px; font-size: 13px; line-height: 1.5; color: var(--muted); border-bottom: 1px solid var(--line); }
+.approx-bar strong { color: var(--ink); }
+.approx-bar button { font-size: 12.5px; padding: 4px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); color: var(--green); cursor: pointer; }
+.resultref .match { margin-left: auto; margin-right: 12px; color: var(--approx); font-weight: 650; font-size: 10.5px; }
