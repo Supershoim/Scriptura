@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Cartea se încheie cu speranța învierii. Necazul cel mare are o durată hotărâtă, iar cei scriși în carte vor fi mântuiți. Mulți din cei ce dorm se vor scula, cei înțelepți vor străluci, iar Daniel primește promisiunea personală că se va scula la sfârșitul zilelor.",
       "data": {
         "idea": { "t": "Învierea și răsplata celor credincioși", "text": "Necazul cel mare are o durată hotărâtă; cei scriși în carte vor fi mântuiți. Mulți din cei ce dorm se vor scula, iar Daniel însuși primește promisiunea că se va scula la sfârșitul zilelor.", "refs": ["DAN 12:1", "DAN 12:2", "DAN 12:13"] },
         "parts": [
@@ -30,6 +31,7 @@
     {
       "type": "network",
       "title": "Personaje",
+      "message": "Ultimul capitol are doar trei noduri: Daniel, Mihail, ocrotitorul poporului, și cei înțelepți, care vor străluci. Imperiile au dispărut cu totul din imagine; rămân cei credincioși și Cel care îi ocrotește.",
       "data": {
         "nodes": ["daniel", "mihail", "cei-intelepti"],
         "links": [

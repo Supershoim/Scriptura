@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Din perspectiva lui Dumnezeu, imperiile sunt fiare care ies din mare. Cel Îmbătrânit de zile se așază pe tron și le judecă, iar stăpânirea veșnică este dată unuia ca un fiu al omului și sfinților Celui Preaînalt. Cornul cel mic luptă împotriva sfinților doar o vreme hotărâtă.",
       "data": {
         "idea": { "t": "Împărăția este dată Fiului omului", "text": "Din perspectiva lui Dumnezeu, imperiile sunt fiare. Cel Îmbătrânit de zile le judecă, iar stăpânirea veșnică este dată unuia ca un fiu al omului și sfinților Celui Preaînalt.", "refs": ["DAN 7:13", "DAN 7:14", "DAN 7:27"] },
         "parts": [
@@ -31,6 +32,7 @@
     {
       "type": "network",
       "title": "Personaje",
+      "message": "Capitolul are puține personaje, dar decisive: Daniel vede tronul Celui Îmbătrânit de zile, care dă stăpânirea Fiului omului. Viziunea e datată în anul întâi al lui Belșațar, deci înainte de căderea Babilonului din capitolul 5.",
       "data": {
         "nodes": ["daniel", "cel-imbatranit", "fiul-omului", "belsatar"],
         "links": [
@@ -43,6 +45,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Lamassu, ființele înaripate cu trup de animal care păzeau palatele asiriene, și leii de pe Calea Procesiunilor din Babilon arată limbajul vizual al imperiilor. În viziune, Dumnezeu folosește aceleași imagini pentru a arăta adevărata lor natură: fiare.",
       "data": { "items": ["lamassu", "leu-procesiune"] }
     }
   ]

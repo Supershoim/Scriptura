@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Împăratul cere ce nu poate da nimeni: visul și tâlcuirea lui. Criza îi împinge pe Daniel și pe prietenii lui la rugăciune, iar Dumnezeu descoperă taina. Statuia arată împărățiile oamenilor, care trec una după alta; piatra lui Dumnezeu le zdrobește și devine o împărăție care nu va fi nimicită niciodată.",
       "data": {
         "idea": { "t": "Dumnezeu descoperă tainele", "text": "Ce nu pot înțelepții Babilonului, Dumnezeu descoperă: împărățiile oamenilor trec, iar piatra lui Dumnezeu devine o împărăție care nu va fi nimicită niciodată.", "refs": ["DAN 2:28", "DAN 2:44"] },
         "parts": [
@@ -27,6 +28,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Porunca de ucidere a înțelepților ajunge, prin Arioc, la Daniel. Daniel nu fuge, ci se roagă împreună cu Hanania, Mișael și Azaria. După tâlcuire, Nebucadnețar îl face mare și îl pune dregător peste ținutul Babilonului.",
       "data": {
         "nodes": ["daniel", "nebucadnetar", "arioc", "hanania", "misael", "azaria", "babilon"],
         "links": [
@@ -43,6 +45,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Poarta Iștar și cronica primilor ani ai lui Nebucadnețar arată Babilonul de la începutul domniei lui: un imperiu bogat și în plină putere, exact capul de aur al statuii din vis.",
       "data": { "items": ["poarta-istar", "cronica-nebucadnetar"] }
     }
   ]

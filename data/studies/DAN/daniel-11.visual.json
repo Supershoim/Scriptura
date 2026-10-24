@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Profeția urmărește istoria în detaliu: regii Persiei, Alexandru, apoi războaiele dintre împăratul de la miazăzi și cel de la miazănoapte, până la Antioh IV. În mijlocul ei, poporul care Îl cunoaște pe Dumnezeu rămâne tare, iar suferința celor înțelepți are un scop: încercare, curățire, albire.",
       "data": {
         "idea": { "t": "Cei ce Îl cunosc pe Dumnezeu rămân tari", "text": "Profeția urmărește istoria în detaliu, până la Antioh IV. În mijlocul ei, poporul care Îl cunoaște pe Dumnezeu rămâne tare, iar suferința celor înțelepți are un scop: încercare, curățire, albire.", "refs": ["DAN 11:32", "DAN 11:35"] },
         "parts": [
@@ -29,6 +30,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Persia se ridică împotriva Greciei, Alexandru o cucerește, iar după el regatele de miazăzi și de miazănoapte se luptă ani la rând. Antioh IV, întors din Egipt de corăbiile din Chitim, își varsă furia asupra Ierusalimului și spurcă Sfântul Locaș. Cei înțelepți rămân tari în persecuție.",
       "data": {
         "nodes": ["regele-miazazi", "regele-miazanoapte", "alexandru", "antioh-iv", "cei-intelepti", "egipt", "chitim", "ierusalim", "persia", "grecia"],
         "links": [
@@ -45,6 +47,7 @@
     {
       "type": "map",
       "title": "Campaniile lui Antioh IV în Egipt",
+      "message": "În 168 î.Hr., Antioh IV pornește spre Egipt, dar corăbiile din Chitim îl obligă să se retragă. La întoarcere trece prin Ierusalim, unde își varsă mânia. Harta arată drumul pe coastă dintre cele două regate rivale.",
       "note": "Traseu schematic după studiu: Antiohia → Egipt → Alexandria, oprit de romani (168 î.Hr.), apoi întoarcerea prin Ierusalim.",
       "data": {
         "places": ["ierusalim", "egipt", "chitim", "raphia"],
@@ -59,6 +62,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Tetradrahma lui Antioh IV îl arată pe împăratul care se numea Epifanes, dumnezeul arătat, iar mozaicul lui Alexandru amintește de puternicul împărat viteaz cu care începe istoria Greciei în capitol.",
       "data": { "items": ["moneda-antioh", "mozaicul-alexandru"] }
     }
   ]

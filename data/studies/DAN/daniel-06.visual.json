@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Dregătorii nu găsesc nicio vină în Daniel, decât legea Dumnezeului său, și o transformă în capăt de acuzare. Daniel se roagă cum făcea și mai înainte. Dumnezeu nu-l scutește de groapă, ci îl izbăvește în ea, iar decretul lui Dariu Îl laudă pe Dumnezeul lui Daniel.",
       "data": {
         "idea": { "t": "Credincioșie neschimbată", "text": "Singurul cap de acuzare împotriva lui Daniel este legea Dumnezeului său. El se roagă cum făcea și mai înainte; Dumnezeu nu-l scutește de groapă, ci îl izbăvește în ea.", "refs": ["DAN 6:5", "DAN 6:10", "DAN 6:22"] },
         "parts": [
@@ -28,6 +29,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Dariu Medul vrea să-l pună pe Daniel peste toată împărăția, dar legea lui proprie îl obligă să-l arunce în groapă. Daniel se roagă cu ferestrele deschise spre Ierusalim și o duce bine sub Dariu și sub Cir, ca dregător în noul imperiu.",
       "data": {
         "nodes": ["daniel", "dariu-medul", "cir", "ierusalim", "babilon"],
         "links": [
@@ -42,6 +44,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Reliefurile vânătorii regale de lei de la Ninive arată că împărații Mesopotamiei țineau lei pentru vânătoare, fundalul gropii cu lei. Cilindrul lui Cir marchează începutul imperiului persan în care continuă slujba lui Daniel.",
       "data": { "items": ["vanatoarea-de-lei", "cilindrul-cirus"] }
     }
   ]

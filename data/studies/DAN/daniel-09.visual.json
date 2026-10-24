@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Daniel citește din Ieremia despre cei 70 de ani și transformă profeția în rugăciune: se identifică cu păcatul poporului și cere îndurare pe temeiul caracterului lui Dumnezeu, nu al meritelor lor. Răspunsul vine încă pe când se roagă: Gavril aduce profeția celor 70 de săptămâni.",
       "data": {
         "idea": { "t": "Scriptura citită devine rugăciune", "text": "Daniel citește din Ieremia, se identifică cu păcatul poporului și cere îndurare pe temeiul caracterului lui Dumnezeu. Răspunsul vine încă pe când se roagă: profeția celor 70 de săptămâni.", "refs": ["DAN 9:2", "DAN 9:18", "DAN 9:23"] },
         "parts": [
@@ -29,6 +30,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Legătura cheie este o carte: Ieremia, prin profeția celor 70 de ani, îl aduce pe Daniel la rugăciune în anul dintâi al lui Dariu Medul. Daniel se roagă pentru Ierusalim, cetatea pustiită, iar Gavril vine la el pe când se roagă.",
       "data": {
         "nodes": ["daniel", "ieremia", "gavril", "dariu-medul", "ierusalim"],
         "links": [
@@ -42,6 +44,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Cilindrul lui Cir și cronica lui Nabonid fixează contextul rugăciunii: Babilonul tocmai a căzut, iar noul stăpân lasă popoarele deportate să se întoarcă. Cei 70 de ani ai lui Ieremia se apropie de capăt.",
       "data": { "items": ["cilindrul-cirus", "cronica-nabonid"] }
     }
   ]

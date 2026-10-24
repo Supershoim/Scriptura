@@ -39,7 +39,7 @@ Aplicația pune prezentarea vizuală înaintea textului. Standardul, verificat d
 - **Capitol** (`<nume>.visual.json`): `chapter-map` (ideea principală și cum se leagă în capitol, carte și Biblie), `network`.
 - **Ocazional**: `map` oriunde sunt călătorii sau evenimente legate de locuri (traseele se calculează realist, nu ca linii drepte; grupuri de trasee ca straturi, `layers`, de ex. valurile exilului și întoarcerile), `history` (imagini cu licență liberă, prin `tools/commons.mjs`, cu sursă, autor și licență).
 
-- **General**: cum se citește fiecare bloc (100–150 de cuvinte, în panou, la butonul „?” de lângă titlu; `data/atlas/visual-help.json` pe tip sau `about` pe bloc); `note` și legendele apar dedesubt, cu litere mici; tranzițiile respectă `prefers-reduced-motion`.
+- **General**: sub titlul fiecărui bloc, mesajul a ceea ce arată diagrama despre text (`message`, 30–90 de cuvinte, scris din datele vizualizării și din studiu; la harta cărții ține locul lui `about`); cum se citește fiecare bloc (100–150 de cuvinte, în panou, la butonul „?” de lângă titlu; `data/atlas/visual-help.json` pe tip sau `about` pe bloc); `note` și legendele apar dedesubt, cu litere mici; tranzițiile respectă `prefers-reduced-motion`.
 
 Textele vizualizărilor (rezumate, idei, legături, legende) se scriu în fișierele de date, nu în cod. Un tip nou de reprezentare se adaugă ca funcție de desen în `app/js/viz*.js` (întoarce `{ html, mount }`), în `RENDER` din `visual.js` și în `VISUAL_TYPES` (cu verificări) din `tools/visual-spec.mjs`.
 

@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Viziunea de la Susa are o tâlcuire explicită: berbecul cu două coarne sunt mezii și perșii, țapul este Grecia. Din urmașii ei se ridică un împărat fără rușine, care oprește jertfa necurmată. Puterea lui are un timp fixat și va fi zdrobită fără mână omenească.",
       "data": {
         "idea": { "t": "Împărățiile au un sfârșit hotărât", "text": "Gavril numește explicit împărățiile: mezii și perșii, apoi Grecia. Puterea care se ridică împotriva lui Dumnezeu are un timp fixat și va fi zdrobită fără mână omenească.", "refs": ["DAN 8:19", "DAN 8:20", "DAN 8:21", "DAN 8:25"] },
         "parts": [
@@ -30,6 +31,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Daniel e în viziune la Susa, lângă râul Ulai, iar Gavril îi tâlcuiește ce vede. Media și Persia formează berbecul; Alexandru, cel dintâi împărat al Greciei, îl sfarmă. Antioh IV, cornul cel mic, ajunge până la Ierusalim și oprește jertfa necurmată.",
       "data": {
         "nodes": ["daniel", "gavril", "alexandru", "antioh-iv", "susa", "ulai", "media", "persia", "grecia", "ierusalim"],
         "links": [
@@ -46,6 +48,7 @@
     {
       "type": "map",
       "title": "De la Susa la Gaugamela",
+      "message": "Campania lui Alexandru (334–331 î.Hr.) arată cât de repede a lovit țapul: de la Grecia până la Gaugamela, unde Persia este învinsă, apoi la Babilon și Susa. Viziunea fusese dată în Susa cu două secole mai înainte.",
       "note": "Campania lui Alexandru după studiu (334–331 î.Hr.): Granic, Issos, Gaugamela, Babilon. Traseu schematic.",
       "data": {
         "places": ["susa", "ulai", "babilon", "gaugamela", "grecia", "media", "persia", "ierusalim"],
@@ -58,6 +61,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Friza arcașilor din palatul de la Susa arată Persia la apogeu, mozaicul lui Alexandru arată lupta cu perșii, iar jurnalul astronomic babilonian consemnează bătălia de la Gaugamela. Tetradrahma lui Antioh IV îl arată pe împăratul care se numea pe sine dumnezeu.",
       "data": { "items": ["arcasi-susa", "codul-hammurabi", "mozaicul-alexandru", "jurnal-astronomic", "moneda-antioh"] }
     }
   ]

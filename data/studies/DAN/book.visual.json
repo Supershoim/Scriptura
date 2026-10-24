@@ -310,6 +310,7 @@
     {
       "type": "timeline",
       "title": "Cronologia cărții",
+      "message": "Daniel trăiește tot exilul, de la primul val (605 î.Hr.) până după decretul lui Cir. Profețiile mai vechi ale lui Isaia, Ieremia și Habacuc anunțaseră aceste fapte, iar viziunile lui Daniel privesc mai departe: Babilonul, Medo-Persia și Grecia trec la rând, Antioh IV profanează templul, iar împlinirile ajung, după lectura studiului, până la Mesia și la distrugerea templului în anul 70 d.Hr.",
       "note": "Verde: dată fixată de un izvor antic primar (cronică, jurnal astronomic, 1 Macabei). Portocaliu: dată aproximativă sau dedusă. Sursa e scrisă sub fiecare eveniment; click pentru detalii.",
       "data": {
         "events": [
@@ -412,6 +413,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Daniel stă în centru: credincios la curtea a patru stăpânitori, de la Nebucadnețar la Cir, alături de cei trei prieteni. Împărații se schimbă, Daniel rămâne. În spatele lor lucrează Dumnezeu, Cel Îmbătrânit de zile, care dă stăpânirea Fiului omului; Gavril tâlcuiește viziunile, Mihail ocrotește poporul, iar cartea lui Ieremia leagă rugăciunea lui Daniel de cei 70 de ani.",
       "note": "Cine apare în carte, unde și cum se leagă. Etichetele mici arată alte cărți ale Bibliei în care apare același personaj sau loc. Click pe oricine pentru detalii.",
       "data": {
         "nodes": [
@@ -554,6 +556,7 @@
     {
       "type": "map",
       "title": "Geografia cărții",
+      "message": "Exilul nu a fost un singur eveniment, ci patru valuri, între 605 și c. 582 î.Hr., toate pe drumul lung de pe valea Eufratului, de la Ierusalim la Babilon. Pe același drum s-au întors evreii, în trei grupuri, între 538 și 445 î.Hr. Daniel se află la capătul îndepărtat al drumului, dar viziunile lui ajung la Susa și pe malul Tigrului.",
       "note": "Traseele sunt probabile, nu descrise în text: prin Ribla și pe valea Eufratului, ocolind deșertul; valurile exilului au urmat, foarte probabil, același drum. Datele valurilor după 2 Împărați 24–25 și Ieremia 52:28–30. Locurile marcate cu ≈ au poziție aproximativă.",
       "data": {
         "places": [
@@ -743,6 +746,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Izvoarele din afara Bibliei arată aceeași lume ca textul: cronicile babiloniene consemnează lupta de la Carchemiș și căderea Babilonului, cilindrul de la Ur îl numește pe Belșațar fiul lui Nabonid, cilindrul lui Cir arată politica de întoarcere a popoarelor, iar un jurnal astronomic notează bătălia de la Gaugamela, unde Grecia învinge Persia.",
       "note": "Obiecte și texte antice care confirmă cadrul istoric al cărții.",
       "data": {
         "items": [

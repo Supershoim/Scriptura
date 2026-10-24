@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Capitolul pornește de la o înfrângere: Dumnezeu dă Ierusalimul în mâna Babilonului. Imperiul încearcă să-i reeduce pe tinerii deportați, cu nume, limbă și hrană noi. Testul hranei este punctul de cotitură: Daniel hotărăște să nu se spurce, iar Dumnezeu îi dă trecere și înțelepciune. Același tipar revine în capitolele 3, 5 și 6.",
       "data": {
         "idea": {
           "t": "Credincioșie în Babilon",
@@ -119,6 +120,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Nebucadnețar asediază Ierusalimul și duce vasele templului în țara Șinear. Așpenaz îi formează la curte pe Daniel, Hanania, Mișael și Azaria, aleși împreună. La capătul formării, împăratul îi găsește de zece ori mai destoinici decât ceilalți, iar Daniel rămâne în slujba curții din Babilon.",
       "data": {
         "nodes": [
           "daniel",
@@ -193,6 +195,7 @@
     {
       "type": "map",
       "title": "Drumul exilului",
+      "message": "Drumul lui Daniel din 605 î.Hr. a fost primul val al exilului, nu ultimul. Au urmat al doilea, în 597, și al treilea, în 586, când templul a fost ars. Traseul urmează valea Eufratului, prin Carchemiș și Ribla, nu linia dreaptă prin deșert.",
       "note": "Traseu probabil, nu descris în text: prin Ribla și pe valea Eufratului.",
       "data": {
         "places": [
@@ -284,6 +287,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Cronica babiloniană a primilor ani ai lui Nebucadnețar consemnează lupta de la Carchemiș și urcarea lui pe tron, în anul în care începe și cartea. Poarta Iștar arată Babilonul pe care l-a construit și în care au fost aduși tinerii din Iuda.",
       "data": {
         "items": [
           "cronica-nebucadnetar",

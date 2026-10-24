@@ -15,6 +15,7 @@
 //                  layer?, mode?: land|sea, via: [place id | {lat, lon, t?}], refs?}] }
 //   history      { items: [image ids] }
 //   chapters, flow, causal, journeys: the earlier book visuals of Acts (not checked in detail).
+// Every block may have a "message" (30–90 words): what the diagram shows about the text, under the title.
 // The "?" next to each block title opens, in the side panel, how to read the block: the text for its type in data/atlas/visual-help.json
 // (100–150 words), or the block's own "about" (100–150 words). "note" is shown under the diagram, in small print.
 // "source" is a fingerprint of the study text the visual was made from (tools/visuals.mjs stamp); when the text
@@ -46,6 +47,7 @@ export function checkVisual(spec, ctx) {
     const d = b.data;
     if (typeof d !== 'object' || !d) return say(i, 'missing "data"');
     if (b.about != null && (words(b.about) < 100 || words(b.about) > 150)) say(i, `"about" has ${words(b.about)} words, must have 100–150`);
+    if (b.message != null && (words(b.message) < 30 || words(b.message) > 90)) say(i, `"message" has ${words(b.message)} words, must have 30–90`);
     if (b.type === 'book-map') {
       const n = words(d.about);
       if (n < 100 || n > 150) say(i, `"about" (the key message of the book) has ${n} words, must have 100–150`);

@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Belșațar știa ce i se întâmplase lui Nebucadnețar și totuși folosește vasele templului la banchet și laudă zeii. Scrisul de pe perete nu poate fi citit de înțelepți; împărăteasa îl aduce pe Daniel, care citește judecata: cântărit și găsit ușor. Judecata vine în aceeași noapte.",
       "data": {
         "idea": { "t": "Cântărit și găsit ușor", "text": "Belșațar știa ce i se întâmplase lui Nebucadnețar și totuși L-a sfidat pe Dumnezeul în mâna căruia îi era suflarea. Judecata vine în aceeași noapte.", "refs": ["DAN 5:22", "DAN 5:23", "DAN 5:27"] },
         "parts": [
@@ -30,6 +31,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Belșațar este fiul și coregentul lui Nabonid, care stătea ani la rând la Tayma, departe de Babilon; de aceea îi poate oferi lui Daniel doar locul al treilea. Împărăteasa își amintește de Daniel, uitat de curte. În noaptea căderii, Belșațar este omorât, iar Dariu Medul ia împărăția.",
       "data": {
         "nodes": ["belsatar", "daniel", "imparateasa", "nebucadnetar", "nabonid", "dariu-medul", "babilon", "tayma"],
         "links": [
@@ -46,12 +48,14 @@
     {
       "type": "map",
       "title": "Babilonul în 539 î.Hr.",
+      "message": "În 539 î.Hr., Babilonul cade în fața mezilor și a perșilor. Harta arată cele două centre de putere ale imperiului: Babilonul lui Belșațar și Tayma, din Arabia, unde stătea Nabonid. Dinspre Media și Persia vine împărăția care urmează.",
       "note": "Nabonid la Tayma, Belșațar în Babilon; mezii și perșii la răsărit.",
       "data": { "places": ["babilon", "tayma", "media", "persia", "susa", "ierusalim"], "routes": [] }
     },
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Cilindrul de la Ur îl numește pe Belșațar fiul cel mare al lui Nabonid, cronica lui Nabonid notează lipsa împăratului din Babilon și căderea cetății, iar cilindrul lui Cir prezintă intrarea noului stăpân. Împreună explică de ce Daniel ar fi al treilea în împărăție.",
       "data": { "items": ["cilindrul-nabonid", "cronica-nabonid", "cilindrul-cirus"] }
     }
   ]

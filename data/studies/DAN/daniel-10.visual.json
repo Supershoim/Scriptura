@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Istoria are o latură nevăzută. Rugăciunea lui Daniel este ascultată din prima zi, dar răspunsul întârzie din cauza unei lupte cu căpetenia Persiei. În spatele împărățiilor stau căpetenii spirituale, iar Mihail ocrotește poporul lui Dumnezeu. Daniel este întărit ca să poată primi viziunea finală.",
       "data": {
         "idea": { "t": "Istoria are o latură nevăzută", "text": "Rugăciunea lui Daniel este ascultată din prima zi, dar răspunsul întârzie din cauza unei lupte în lumea nevăzută. În spatele împărățiilor stau căpetenii; Mihail ocrotește poporul lui Dumnezeu.", "refs": ["DAN 10:12", "DAN 10:13", "DAN 10:20", "DAN 10:21"] },
         "parts": [
@@ -29,6 +30,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "În anul al treilea al lui Cir, Daniel stă pe malul râului Hidechel. Mihail luptă cu căpetenia Persiei, după care urmează căpetenia Greciei: aceeași succesiune de imperii ca în capitolele 2, 7 și 8, văzută acum din culise.",
       "data": {
         "nodes": ["daniel", "mihail", "cir", "persia", "grecia", "hidechel"],
         "links": [
@@ -43,6 +45,7 @@
     {
       "type": "map",
       "title": "Locul ultimei viziuni",
+      "message": "Ultima viziune are loc pe malul Tigrului, departe de Ierusalim, în inima imperiului persan. Harta arată cât de departe de cetatea pentru care se ruga a ajuns Daniel la bătrânețe.",
       "note": "Daniel este pe malul Tigrului; punctul exact nu este precizat.",
       "data": { "places": ["hidechel", "babilon", "susa", "persia", "media", "ierusalim"], "routes": [] }
     }

@@ -301,7 +301,7 @@ function draw() {
     mounts.push([i, out.mount]);
     // How to read the block (its own "about" or the text for its type) opens from the "?" next to the title; the note goes under the diagram, in small print.
     const help = helpText(b) ? `<button type="button" class="vis-help" data-help="${i}" aria-haspopup="dialog" aria-label="Cum citești: ${esc(b.title)}" data-tip="Cum citești diagrama">?</button>` : '';
-    return `<section class="visblock" id="vb-${i}" data-block="${i}"><div class="vis-head"><h2 class="vis-h">${esc(b.title)}</h2>${help}</div>${out.html}${b.note ? `<p class="fine-print">${esc(b.note)}</p>` : ''}</section>`;
+    return `<section class="visblock" id="vb-${i}" data-block="${i}"><div class="vis-head"><h2 class="vis-h">${esc(b.title)}</h2>${help}</div>${b.message ? `<p class="vis-msg">${esc(b.message)}</p>` : ''}${out.html}${b.note ? `<p class="fine-print">${esc(b.note)}</p>` : ''}</section>`;
   });
   const nav = spec.blocks.length > 2 ? `<nav class="visnav" aria-label="Părțile vizualizării">${spec.blocks.map((b, i) => `<a href="#vb-${i}" data-jump="vb-${i}">${esc(NAV[b.type] || b.title)}</a>`).join('')}</nav>` : '';
   root.innerHTML = view.banner + nav + sections.join('');

@@ -4,6 +4,7 @@
     {
       "type": "chapter-map",
       "title": "Harta capitolului",
+      "message": "Capitolul este mărturia împăratului însuși. Visul copacului tăiat anunță judecata mândriei, iar Daniel îl cheamă la pocăință. Judecata vine, dar are un scop restaurator: Nebucadnețar este smerit până recunoaște că Cel Preaînalt stăpânește peste împărăția oamenilor, apoi i se dă înapoi domnia.",
       "data": {
         "idea": { "t": "Cel Preaînalt stăpânește peste împărăția oamenilor", "text": "Mândria regală este judecată, dar judecata are un scop restaurator: împăratul este smerit până recunoaște cine stăpânește cu adevărat.", "refs": ["DAN 4:17", "DAN 4:32", "DAN 4:37"] },
         "parts": [
@@ -28,6 +29,7 @@
     {
       "type": "network",
       "title": "Personaje și locuri",
+      "message": "Trei noduri și o singură tensiune: Nebucadnețar, mândru de Babilonul cel mare, și Daniel, care îi tâlcuiește visul și îl cheamă la pocăință. Relația lor arată cum vorbește un credincios adevărul unui om cu putere.",
       "data": {
         "nodes": ["nebucadnetar", "daniel", "babilon"],
         "links": [
@@ -40,6 +42,7 @@
     {
       "type": "history",
       "title": "Mărturii istorice",
+      "message": "Inscripția East India House enumeră lucrările de construcție ale lui Nebucadnețar, iar Poarta Iștar este una dintre ele. Ele arată de ce se putea lăuda împăratul cu Babilonul pe care l-a zidit.",
       "data": { "items": ["inscriptia-nebucadnetar", "poarta-istar"] }
     }
   ]
