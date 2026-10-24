@@ -13,7 +13,8 @@
         "label": "Studiu complet",
         "file": "fapte-00.md"
       }
-    ]
+    ],
+    "visual": "fapte-00.visual.json"
   },
   {
     "chapter": 1,

@@ -57,6 +57,30 @@ function renderPart(md, books) {
   return { html, sections, level };
 }
 
+// A study's visual: { "blocks": [ { "type", "title", "note"?, "data" } ] }. The types are drawn by
+// app/js/visual.js; a "journeys" block names a land outline file (data.land) in the same folder.
+export const VISUAL_TYPES = ['chapters', 'flow', 'causal', 'journeys'];
+function loadVisual(folder, file, at, problems, used) {
+  if (!/^[\w.-]+\.visual\.json$/.test(file)) { problems.push(`${at} must be a file named <name>.visual.json`); return null; }
+  let spec;
+  try { spec = JSON.parse(fs.readFileSync(path.join(folder, file), 'utf8')); }
+  catch (e) { problems.push(`${at}: ${e.code === 'ENOENT' ? 'file not found' : e.message}`); return null; }
+  used.add(file);
+  if (!Array.isArray(spec.blocks) || !spec.blocks.length) { problems.push(`${at}: "blocks" must list at least one block`); return null; }
+  const assets = {};
+  spec.blocks.forEach((b, i) => {
+    if (!VISUAL_TYPES.includes(b.type)) problems.push(`${at} block ${i + 1}: "type" must be one of ${VISUAL_TYPES.join(', ')}`);
+    if (typeof b.title !== 'string' || !b.title.trim()) problems.push(`${at} block ${i + 1}: missing "title"`);
+    if (typeof b.data !== 'object' || !b.data) problems.push(`${at} block ${i + 1}: missing "data"`);
+    const land = b.data?.land;
+    if (land) {
+      if (!fs.existsSync(path.join(folder, land))) problems.push(`${at} block ${i + 1}: land file ${land} not found`);
+      else { used.add(land); assets[land] = fs.readFileSync(path.join(folder, land), 'utf8'); }
+    }
+  });
+  return { file, spec, assets };
+}
+
 // Reads every book folder. Returns { studies, problems }; studies are in canonical order.
 export function loadStudies(dir, books) {
   const problems = [], studies = [];
@@ -97,17 +121,18 @@ export function loadStudies(dir, books) {
           if (!studyRoute(href, books)) problems.push(`${folder}/${p.file}: link "${decodeURIComponent(href)}" must name a study as "<Carte> capitolul N.md" or "<Carte> privire de ansamblu.md"`);
         parts.push({ label: p.label, file: p.file, md });
       }
-      if (parts.length) studies.push({ b: book.id, ...s, parts, bookWords });
+      const visual = s.visual === undefined ? null : loadVisual(path.join(dir, folder), s.visual, `${at}: visual`, problems, used);
+      if (parts.length) studies.push({ b: book.id, ...s, parts, visual, bookWords });
     });
     for (const f of fs.readdirSync(path.join(dir, folder)))
-      if (f.endsWith('.md') && !used.has(f)) problems.push(`${where}/${f}: not listed in studies.json`);
+      if (f !== 'studies.json' && !used.has(f)) problems.push(`${where}/${f}: not used by studies.json`);
   }
   const order = new Map(books.map((b, i) => [b.id, i]));
   studies.sort((x, y) => order.get(x.b) - order.get(y.b) || x.chapter - y.chapter);
   return { studies, problems };
 }
 
-// Builds what the app downloads: { index, files: { path: html }, shards: { name: { word: [study numbers] } } }.
+// Builds what the app downloads: { index, files: { path: html or JSON }, shards: { name: { word: [study numbers] } } }.
 export function buildStudies(studies, books) {
   const files = {}, words = new Map();
   const index = studies.map((s, n) => {
@@ -116,10 +141,21 @@ export function buildStudies(studies, books) {
       const { html, sections, level } = renderPart(p.md, books);
       const out = `data/studies/${s.b}/${p.file.replace(/\.md$/, '.html')}`;
       files[out] = html;
-      text += ' ' + plain(html);
+      const body = plain(html);
+      text += ' ' + body;
       const outline = level === 'h1' ? sections.slice(1) : sections; // a lone h1 level starts with the document title
-      return { label: p.label, path: out, sections: outline.length, outline: outline.slice(0, 8).map(h => headCase(h, s.bookWords)) };
+      const part = { label: p.label, path: out, words: body.split(' ').length, sections: outline.length, outline: outline.slice(0, 8).map(h => headCase(h, s.bookWords)) };
+      if (/întrebări/i.test(p.label)) part.questions = (p.md.match(/^> Întrebare/gm) || []).length;
+      return part;
     });
+    let visual;
+    if (s.visual) {
+      const base = `data/studies/${s.b}/`;
+      for (const [name, content] of Object.entries(s.visual.assets)) files[base + name] = content;
+      const spec = { blocks: s.visual.spec.blocks.map(b => b.data.land ? { ...b, data: { ...b.data, land: base + b.data.land } } : b) };
+      visual = base + s.visual.file;
+      files[visual] = JSON.stringify(spec);
+    }
     const count = text.trim().split(' ').length;
     for (const t of new Set(tokens(norm(`${s.title} ${s.summary} ${s.themes.join(' ')} ${text}`)))) {
       if (!words.has(t)) words.set(t, []);
@@ -127,7 +163,7 @@ export function buildStudies(studies, books) {
     }
     const entry = { id: `${s.b}-${s.chapter}`, b: s.b, c: s.chapter };
     if (s.covers) entry.covers = s.covers;
-    return { ...entry, date: s.date, title: s.title, summary: s.summary, themes: s.themes, words: count, parts };
+    return { ...entry, date: s.date, title: s.title, summary: s.summary, themes: s.themes, words: count, parts, ...visual && { visual } };
   });
   const shards = {};
   for (const [w, list] of [...words].sort((a, b) => a[0] < b[0] ? -1 : 1)) (shards[shardOf(w)] ??= {})[w] = list;

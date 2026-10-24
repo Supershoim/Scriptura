@@ -9,7 +9,7 @@ import { loadStudies, buildStudies } from './studies.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const app = path.join(root, 'app'), dataDir = path.join(root, 'data'), dist = path.join(root, 'dist');
-const MODULES = ['util', 'data', 'search', 'render', 'notes', 'tips', 'catalog', 'refs', 'studies', 'app'];
+const MODULES = ['util', 'data', 'search', 'render', 'notes', 'tips', 'catalog', 'refs', 'visual', 'studies', 'app'];
 const SHELL = ['index.html', 'styles.css', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', ...MODULES.map(m => `js/${m}.js`)];
 
 const read = file => fs.readFileSync(file, 'utf8');

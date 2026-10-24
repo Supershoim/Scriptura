@@ -1,0 +1,1854 @@
+{
+ "blocks": [
+  {
+   "type": "chapters",
+   "title": "Faptele Apostolilor: harta studiului",
+   "data": {
+    "verses": [
+     26,
+     47,
+     26,
+     37,
+     42,
+     15,
+     60,
+     40,
+     43,
+     48,
+     30,
+     25,
+     52,
+     28,
+     41,
+     40,
+     34,
+     28,
+     41,
+     38,
+     40,
+     30,
+     35,
+     27,
+     27,
+     32,
+     44,
+     31
+    ],
+    "blocks": [
+     {
+      "t": "Fundamentul",
+      "s": "Ierusalim · 1–7",
+      "from": 1,
+      "to": 7
+     },
+     {
+      "t": "Tranziția",
+      "s": "Iudeea, Samaria",
+      "from": 8,
+      "to": 12
+     },
+     {
+      "t": "Expansiunea",
+      "s": "până la marginile pământului · 13–28",
+      "from": 13,
+      "to": 28
+     }
+    ],
+    "blocksSrc": "Structura după 1:8, din studiul de ansamblu",
+    "blockTips": [
+     "Înălțarea, Rusaliile, nașterea Bisericii, Ștefan.",
+     "Filip, Saul convertit, Petru și Corneliu, Biserica din Antiohia.",
+     "Cele trei călătorii misionare ale lui Pavel, Sinodul de la Ierusalim (15), captivitatea și călătoria la Roma."
+    ],
+    "marker": {
+     "ch": 12,
+     "t": "De la cap. 12: secțiuni extinse"
+    },
+    "lanes": [
+     {
+      "t": "Petru",
+      "segs": [
+       [
+        1,
+        5
+       ],
+       [
+        8,
+        12
+       ],
+       [
+        15,
+        15
+       ]
+      ]
+     },
+     {
+      "t": "Ștefan (6–7), Filip (8)",
+      "segs": [
+       [
+        6,
+        7
+       ],
+       [
+        8,
+        8
+       ]
+      ],
+      "neutral": true,
+      "outside": true
+     },
+     {
+      "t": "Saul / Pavel",
+      "segs": [
+       [
+        9,
+        9
+       ],
+       [
+        11,
+        11
+       ],
+       [
+        13,
+        28
+       ]
+      ]
+     }
+    ],
+    "lanesNote": "Personajul central e o lectură de lucru a narațiunii, nu e preluat din studii."
+   }
+  },
+  {
+   "type": "flow",
+   "title": "Firul cărții: programul din 1:8",
+   "note": "Etapele vin din studiul de ansamblu. Etichetele episoadelor sunt rezumate de lucru. Click pe un episod deschide primul capitol al lui.",
+   "data": {
+    "top": {
+     "t": "Programul cărții · 1:8",
+     "s": "întâi putere, apoi martori",
+     "ch": 0
+    },
+    "stages": [
+     {
+      "t": "I · Ierusalim",
+      "s": "cap. 1–7",
+      "nodes": [
+       [
+        "Rusaliile",
+        "cap. 2",
+        2
+       ],
+       [
+        "Biserica sub presiune",
+        "cap. 3–5",
+        3
+       ],
+       [
+        "Ștefan, martirul",
+        "cap. 6–7",
+        6
+       ]
+      ]
+     },
+     {
+      "t": "II · Iudeea și Samaria",
+      "s": "cap. 8–12",
+      "nodes": [
+       [
+        "Filip în Samaria",
+        "cap. 8",
+        8
+       ],
+       [
+        "Saul convertit",
+        "cap. 9",
+        9
+       ],
+       [
+        "Corneliu, Antiohia",
+        "cap. 10–12",
+        10
+       ]
+      ]
+     },
+     {
+      "t": "III · Până la marginile pământului",
+      "s": "cap. 13–28",
+      "nodes": [
+       [
+        "Călătoria 1",
+        "cap. 13–14",
+        13
+       ],
+       [
+        "Sinodul: har vs. Lege",
+        "cap. 15",
+        15,
+        true
+       ],
+       [
+        "Călătoria 2",
+        "15:36 – 18:22",
+        16
+       ],
+       [
+        "Călătoria 3",
+        "18:23 – 21:16",
+        19
+       ],
+       [
+        "Arest și procese",
+        "cap. 21–26",
+        21
+       ],
+       [
+        "Spre Roma",
+        "cap. 27–28",
+        27
+       ]
+      ]
+     }
+    ],
+    "end": {
+     "t": "Finalul deschis · 28:31",
+     "s": "„fără nici o piedică”",
+     "ch": 28
+    },
+    "tips": {
+     "0": "Fapte 1:8: „veți primi o putere... și-Mi veți fi martori în Ierusalim, în toată Iudeea, în Samaria și până la marginile pământului.”",
+     "2": "Duhul coboară la Cincizecime; predica lui Petru; aproape trei mii se adaugă (2:41).",
+     "3": "Ologul vindecat, arestări, rugăciune pentru îndrăzneală (4:31); Anania și Safira; apostolii din nou în temniță (5:18).",
+     "6": "Cei șapte aleși (6:5); Ștefan, acuzat, rostește apărarea și e ucis cu pietre (7:58-60).",
+     "8": "Prigoana îi împrăștie pe credincioși (8:1); Filip în Samaria și famenul etiopian.",
+     "9": "Saul îl întâlnește pe Isus pe drumul Damascului (9:3-6) și începe să-L propovăduiască (9:20).",
+     "10": "Corneliu și Duhul peste neamuri (10:44); Antiohia și numele de „creștini” (11:26); Irod și eliberarea lui Petru (cap. 12).",
+     "13": "Trimiși de Duhul (13:2-4): Cipru, Pisidia, Licaonia; „ușa credinței” pentru neamuri (14:27).",
+     "15": "Disputa despre tăierea împrejur (15:1) și decizia apostolilor și prezbiterilor (15:28-29).",
+     "16": "Timotei; viziunea macedoneanului; Filipi, Tesalonic, Bereea, Atena, Corint (Galion).",
+     "19": "Efes ~3 ani (20:31); hotărârea din 19:21; Troa, Milet; avertismente la Tir și Cezareea.",
+     "21": "Arestul din Templu; cetățenia romană; complotul; Felix, Festus, Agripa; apelul la Cezar (25:11).",
+     "27": "Furtuna și naufragiul; Malta; Roma, doi ani de propovăduire (28:30-31).",
+     "28": "Cartea se oprește deschis: Pavel, legat, propovăduiește la Roma „fără nici o piedică” (28:31)."
+    }
+   }
+  },
+  {
+   "type": "causal",
+   "title": "Cum se leagă evenimentele",
+   "note": "Cele mai multe legături sunt explicite în text (8:1; 11:19; 11:25; 15:1-2; 19:21; 23:11; 25:11). Câteva sunt deducții de lucru: creșterea Bisericii ca premisă pentru 6:1, Corneliu ca precedent pentru Antiohia, cetățenia ca factor în transfer.",
+   "data": {
+    "columns": [
+     "Ierusalim",
+     "Spre neamuri",
+     "Saul / Pavel"
+    ],
+    "links": {
+     "p": "persecuția împinge Evanghelia mai departe",
+     "f": "promisiune → împlinire"
+    },
+    "N": [
+     [
+      "rus",
+      0,
+      0,
+      "Rusaliile",
+      "2:1-41",
+      2
+     ],
+     [
+      "aresta",
+      0,
+      1,
+      "Arestări, apoi curaj",
+      "cap. 3–5",
+      4
+     ],
+     [
+      "sapte",
+      0,
+      2,
+      "Cei șapte aleși",
+      "6:1-6",
+      6
+     ],
+     [
+      "stefan",
+      0,
+      3,
+      "Ștefan ucis",
+      "7:54-60",
+      7
+     ],
+     [
+      "saulm",
+      2,
+      3,
+      "Saul, martor",
+      "7:58",
+      7
+     ],
+     [
+      "prig",
+      0,
+      4,
+      "Prigoana cea mare",
+      "8:1",
+      8
+     ],
+     [
+      "saulp",
+      2,
+      4,
+      "Saul persecutor",
+      "8:3",
+      8
+     ],
+     [
+      "filip",
+      1,
+      5,
+      "Filip în Samaria",
+      "8:4-40",
+      8
+     ],
+     [
+      "saulc",
+      2,
+      5,
+      "Saul convertit",
+      "9:1-19",
+      9
+     ],
+     [
+      "corn",
+      1,
+      6,
+      "Corneliu: neamurile",
+      "10:1–11:18",
+      10
+     ],
+     [
+      "tars",
+      2,
+      6,
+      "Trimis la Tars",
+      "9:30",
+      9
+     ],
+     [
+      "antio",
+      1,
+      7,
+      "Antiohia: și grecilor",
+      "11:19-26",
+      11
+     ],
+     [
+      "barn",
+      2,
+      7,
+      "Barnaba îl aduce",
+      "11:25-26",
+      11
+     ],
+     [
+      "trim",
+      2,
+      8,
+      "Trimiși din Antiohia",
+      "13:1-3",
+      13
+     ],
+     [
+      "cal1",
+      2,
+      9,
+      "Călătoria 1",
+      "cap. 13–14",
+      13
+     ],
+     [
+      "disp",
+      0,
+      10,
+      "Disputa circumciziei",
+      "15:1-2",
+      15
+     ],
+     [
+      "sinod",
+      0,
+      11,
+      "Sinodul",
+      "15:6-29",
+      15
+     ],
+     [
+      "cal2",
+      2,
+      11,
+      "Călătoria 2",
+      "15:36–18:22",
+      16
+     ],
+     [
+      "cal3",
+      2,
+      12,
+      "Efes, călătoria 3",
+      "18:23–19:41",
+      19
+     ],
+     [
+      "hot",
+      2,
+      13,
+      "Ierusalim, apoi Roma",
+      "19:21",
+      19
+     ],
+     [
+      "arest",
+      0,
+      14,
+      "Arest în Templu",
+      "21:27-33",
+      21
+     ],
+     [
+      "cet",
+      2,
+      15,
+      "Cetățenia romană",
+      "22:25-29",
+      22
+     ],
+     [
+      "compl",
+      0,
+      16,
+      "Complotul celor 40",
+      "23:12-22",
+      23
+     ],
+     [
+      "prom",
+      1,
+      16,
+      "Promisiunea: Roma",
+      "23:11",
+      23
+     ],
+     [
+      "transf",
+      2,
+      17,
+      "Transfer la Cezareea",
+      "23:23-33",
+      23
+     ],
+     [
+      "apel",
+      2,
+      18,
+      "Apel la Cezar",
+      "25:11",
+      25
+     ],
+     [
+      "roma",
+      1,
+      19,
+      "Roma: 1:8 împlinit",
+      "28:14-31",
+      28
+     ]
+    ],
+    "E": [
+     [
+      "rus",
+      "aresta"
+     ],
+     [
+      "aresta",
+      "sapte"
+     ],
+     [
+      "sapte",
+      "stefan"
+     ],
+     [
+      "stefan",
+      "saulm"
+     ],
+     [
+      "saulm",
+      "saulp"
+     ],
+     [
+      "saulp",
+      "saulc"
+     ],
+     [
+      "saulc",
+      "tars"
+     ],
+     [
+      "tars",
+      "barn"
+     ],
+     [
+      "corn",
+      "antio"
+     ],
+     [
+      "antio",
+      "barn"
+     ],
+     [
+      "barn",
+      "trim"
+     ],
+     [
+      "trim",
+      "cal1"
+     ],
+     [
+      "cal1",
+      "disp"
+     ],
+     [
+      "disp",
+      "sinod"
+     ],
+     [
+      "sinod",
+      "cal2"
+     ],
+     [
+      "cal2",
+      "cal3"
+     ],
+     [
+      "cal3",
+      "hot"
+     ],
+     [
+      "hot",
+      "arest"
+     ],
+     [
+      "arest",
+      "cet"
+     ],
+     [
+      "arest",
+      "compl"
+     ],
+     [
+      "compl",
+      "transf"
+     ],
+     [
+      "cet",
+      "transf"
+     ],
+     [
+      "transf",
+      "apel"
+     ],
+     [
+      "apel",
+      "roma"
+     ],
+     [
+      "stefan",
+      "prig",
+      "p"
+     ],
+     [
+      "prig",
+      "filip",
+      "p"
+     ],
+     [
+      "prig",
+      "antio",
+      "p"
+     ],
+     [
+      "prom",
+      "roma",
+      "f"
+     ]
+    ],
+    "tips": {
+     "rus": "Duhul Sfânt coboară la Cincizecime; Petru predică și aproape trei mii de suflete se adaugă (2:41).",
+     "aresta": "Vindecarea ologului (cap. 3) duce la arestarea lui Petru și Ioan (4:3); Biserica se roagă și vestește cu îndrăzneală (4:31). Apostolii, arestați din nou (5:18).",
+     "sapte": "Văduvele eleniștilor sunt neglijate (6:1); sunt aleși șapte, între ei Ștefan și Filip (6:5).",
+     "stefan": "Acuzat înaintea Sinedriului, Ștefan rostește apărarea din cap. 7 și e ucis cu pietre (7:58-60): primul martir.",
+     "saulm": "Martorii își pun hainele la picioarele unui tânăr numit Saul (7:58).",
+     "prig": "„O mare prigonire” la Ierusalim; toți, afară de apostoli, se împrăștie prin Iudeea și Samaria (8:1).",
+     "saulp": "Saul pustiește Biserica, intrând prin case și târând bărbați și femei la închisoare (8:3).",
+     "filip": "Cei împrăștiați vestesc Cuvântul din loc în loc (8:4); Filip predică în Samaria, apoi famenului etiopian (8:26-39).",
+     "saulc": "Pe drumul Damascului îl întâlnește pe Isus (9:3-6); îndată propovăduiește că Isus este Fiul lui Dumnezeu (9:20).",
+     "corn": "Duhul Sfânt Se coboară peste neamurile din casa lui Corneliu (10:44); Ierusalimul acceptă: „Dumnezeu a dat deci și Neamurilor pocăință” (11:18).",
+     "tars": "Amenințat cu moartea, frații îl duc la Cezareea și-l trimit la Tars (9:29-30).",
+     "antio": "Cei împrăștiați după Ștefan ajung la Antiohia și vorbesc și grecilor (11:19-20); aici apare numele de „creștini” (11:26).",
+     "barn": "Barnaba merge la Tars să-l caute pe Saul și-l aduce la Antiohia; un an întreg învață biserica (11:25-26).",
+     "trim": "„Puneți-Mi deoparte pe Barnaba și pe Saul” (13:2); biserica îi trimite după post și rugăciune (13:3).",
+     "cal1": "Cipru, Pamfilia, Pisidia, Licaonia; la întoarcere: Dumnezeu „deschisese Neamurilor ușa credinței” (14:27).",
+     "disp": "Unii din Iudeea cer tăierea împrejur pentru mântuire (15:1); Pavel și Barnaba sunt trimiși la Ierusalim (15:2).",
+     "sinod": "„S-a părut nimerit Duhului Sfânt și nouă” să nu mai pună alte greutăți peste neamuri (15:28).",
+     "cal2": "Cu Sila și Timotei; Duhul îi îndreaptă spre Macedonia: biserici la Filipi, Tesalonic, Bereea, Corint.",
+     "cal3": "Aproape trei ani la Efes (20:31); „toți cei ce locuiau în Asia” aud Cuvântul (19:10).",
+     "hot": "Pavel își pune de gând să meargă la Ierusalim prin Macedonia și Ahaia, apoi: „trebuie să văd și Roma” (19:21).",
+     "arest": "Iudei din Asia ațâță mulțimea în Templu (21:27-28); căpitanul roman îl leagă cu două lanțuri (21:33).",
+     "cet": "„Vă este îngăduit să bateți pe un roman care nu este osândit?” (22:25); căpitanul se teme (22:29).",
+     "compl": "Iudeii se leagă cu blestem să nu mănânce până nu-l omoară pe Pavel (23:12); nepotul lui Pavel dă de veste (23:16).",
+     "prom": "„Îndrăznește, Pavele... trebuie să mărturisești și la Roma” (23:11).",
+     "transf": "Trimis noaptea, sub escortă, la Cezareea (23:23); doi ani de detenție sub Felix (24:27).",
+     "apel": "„Cer să fiu judecat de cezar” (25:11). Agripa: i s-ar fi putut da drumul dacă n-ar fi cerut asta (26:32).",
+     "roma": "După naufragiu ajunge la Roma; doi ani propovăduiește „fără nici o piedică” (28:30-31): programul din 1:8 împlinit."
+    }
+   }
+  },
+  {
+   "type": "journeys",
+   "title": "Călătoriile misionare",
+   "note": "Rute schematice după Fapte; unde textul numește doar o regiune, punctul e aproximativ (etichetă înclinată). Alege o călătorie: harta se mărește, iar firul și epistolele se filtrează.",
+   "data": {
+    "land": "harta-med.json",
+    "C": {
+     "Ierusalim": [
+      35.23,
+      31.78,
+      1,
+      4
+     ],
+     "Cezareea": [
+      34.89,
+      32.5,
+      1,
+      4
+     ],
+     "Antiohia": [
+      36.16,
+      36.2,
+      1,
+      1
+     ],
+     "Seleucia": [
+      35.93,
+      36.12,
+      0,
+      0
+     ],
+     "Salamina": [
+      33.9,
+      35.18,
+      1,
+      1
+     ],
+     "Pafos": [
+      32.41,
+      34.76,
+      1,
+      3
+     ],
+     "Perga": [
+      30.85,
+      36.96,
+      1,
+      1
+     ],
+     "Atalia": [
+      30.7,
+      36.89,
+      0,
+      3
+     ],
+     "Antiohia Pisidiei": [
+      31.19,
+      38.3,
+      1,
+      1
+     ],
+     "Iconia": [
+      32.49,
+      37.87,
+      1,
+      1
+     ],
+     "Listra": [
+      32.33,
+      37.58,
+      1,
+      3
+     ],
+     "Derbe": [
+      33.36,
+      37.35,
+      1,
+      1
+     ],
+     "Cilicia": [
+      34.9,
+      36.92,
+      0,
+      1,
+      1
+     ],
+     "Frigia, Galatia": [
+      31.6,
+      38.95,
+      0,
+      1,
+      1
+     ],
+     "Troa": [
+      26.16,
+      39.75,
+      1,
+      2
+     ],
+     "Samotracia": [
+      25.53,
+      40.48,
+      0,
+      0
+     ],
+     "Neapolis": [
+      24.4,
+      40.94,
+      0,
+      0
+     ],
+     "Filipi": [
+      24.29,
+      41.01,
+      1,
+      1
+     ],
+     "Amfipoli": [
+      23.85,
+      40.82,
+      0,
+      0
+     ],
+     "Apolonia": [
+      23.48,
+      40.62,
+      0,
+      0
+     ],
+     "Tesalonic": [
+      22.94,
+      40.64,
+      1,
+      2
+     ],
+     "Bereea": [
+      22.2,
+      40.52,
+      1,
+      4
+     ],
+     "Atena": [
+      23.73,
+      37.98,
+      1,
+      1
+     ],
+     "Corint": [
+      22.88,
+      37.91,
+      1,
+      4
+     ],
+     "Chencrea": [
+      22.99,
+      37.88,
+      0,
+      0
+     ],
+     "Efes": [
+      27.34,
+      37.94,
+      1,
+      1,
+      0,
+      1
+     ],
+     "Macedonia": [
+      23.3,
+      40.95,
+      0,
+      2,
+      1
+     ],
+     "Assos": [
+      26.34,
+      39.49,
+      0,
+      1
+     ],
+     "Mitilene": [
+      26.55,
+      39.1,
+      0,
+      1
+     ],
+     "Chios": [
+      26.13,
+      38.37,
+      0,
+      4
+     ],
+     "Samos": [
+      26.95,
+      37.7,
+      0,
+      4
+     ],
+     "Milet": [
+      27.28,
+      37.53,
+      0,
+      3
+     ],
+     "Cos": [
+      27.29,
+      36.89,
+      0,
+      1
+     ],
+     "Rodos": [
+      28.22,
+      36.44,
+      0,
+      1
+     ],
+     "Patara": [
+      29.32,
+      36.26,
+      0,
+      3
+     ],
+     "Tir": [
+      35.2,
+      33.27,
+      1,
+      2
+     ],
+     "Ptolemaida": [
+      35.07,
+      32.93,
+      0,
+      0
+     ],
+     "Sidon": [
+      35.37,
+      33.56,
+      1,
+      1
+     ],
+     "Mira": [
+      29.98,
+      36.25,
+      1,
+      3
+     ],
+     "Cnid": [
+      27.37,
+      36.69,
+      0,
+      2
+     ],
+     "Limanuri Bune": [
+      24.8,
+      34.93,
+      1,
+      3
+     ],
+     "Malta": [
+      14.4,
+      35.9,
+      1,
+      3
+     ],
+     "Siracusa": [
+      15.29,
+      37.07,
+      1,
+      1
+     ],
+     "Regio": [
+      15.65,
+      38.11,
+      0,
+      1
+     ],
+     "Puzole": [
+      14.12,
+      40.82,
+      1,
+      2
+     ],
+     "Roma": [
+      12.5,
+      41.9,
+      1,
+      2
+     ]
+    },
+    "WP": {
+     "w1": [
+      33.5,
+      35.95
+     ],
+     "w2": [
+      22.7,
+      40.35
+     ],
+     "w3": [
+      23.9,
+      39.2
+     ],
+     "w4": [
+      24.3,
+      38.2
+     ],
+     "w5": [
+      34.2,
+      35.9
+     ],
+     "w6": [
+      26.3,
+      35.3
+     ]
+    },
+    "J": {
+     "j1": {
+      "n": "Călătoria 1",
+      "d": "~46–48",
+      "col": "var(--j1)",
+      "dash": "",
+      "ref": "13:1–14:28",
+      "ch": 13,
+      "r": [
+       "Antiohia",
+       "Seleucia",
+       "Salamina",
+       "Pafos",
+       "Perga",
+       "Antiohia Pisidiei",
+       "Iconia",
+       "Listra",
+       "Derbe",
+       "Listra",
+       "Iconia",
+       "Antiohia Pisidiei",
+       "Perga",
+       "Atalia",
+       "w1",
+       "Seleucia",
+       "Antiohia"
+      ],
+      "b": {
+       "Antiohia": "Gal"
+      },
+      "f": [
+       [
+        "13:2",
+        "Duhul: „Puneți-Mi deoparte pe Barnaba și pe Saul”",
+        "d"
+       ],
+       [
+        "13:6-12",
+        "Pafos: vrăjitorul orbit, dregătorul crede",
+        "d"
+       ],
+       [
+        "13:13",
+        "Ioan Marcu se întoarce la Ierusalim",
+        "x",
+        "duce la cearta din 15:37-39"
+       ],
+       [
+        "13:14-41",
+        "Antiohia Pisidiei: predica din sinagogă",
+        "n"
+       ],
+       [
+        "13:46",
+        "Iudeii resping → „ne întoarcem spre Neamuri”",
+        "o"
+       ],
+       [
+        "13:50-51",
+        "Izgoniți → merg la Iconia",
+        "o"
+       ],
+       [
+        "14:5-6",
+        "Complot de lapidare → fug la Listra și Derbe",
+        "o"
+       ],
+       [
+        "14:8-11",
+        "Listra: ologul vindecat, luați drept zei",
+        "n"
+       ],
+       [
+        "14:19",
+        "Iudei din Antiohia și Iconia → Pavel lapidat",
+        "o"
+       ],
+       [
+        "14:21-23",
+        "Întoarcerea: întăresc ucenicii, rânduiesc prezbiteri",
+        "d"
+       ],
+       [
+        "14:27",
+        "Raport: Dumnezeu a deschis Neamurilor ușa credinței",
+        "x",
+        "duce la disputa din 15:1 și la Sinod"
+       ]
+      ],
+      "e": [
+       [
+        "Galateni",
+        "Antiohia Siriei · ~48–49",
+        "Bisericile abia fondate în sudul Galatiei, tulburate de cei ce cereau tăierea împrejur (Gal 1:6); după călătoria 1, înaintea Sinodului.",
+        "Alternativă: Efes, ~53–57 (teoria nord-galateană).",
+        [
+         "lig",
+         "vbv"
+        ]
+       ]
+      ]
+     },
+     "j2": {
+      "n": "Călătoria 2",
+      "d": "~49/50–52",
+      "col": "var(--j2)",
+      "dash": "",
+      "ref": "15:36–18:22",
+      "ch": 16,
+      "r": [
+       "Antiohia",
+       "Cilicia",
+       "Derbe",
+       "Listra",
+       "Iconia",
+       "Frigia, Galatia",
+       "Troa",
+       "Samotracia",
+       "Neapolis",
+       "Filipi",
+       "Amfipoli",
+       "Apolonia",
+       "Tesalonic",
+       "Bereea",
+       "w2",
+       "w3",
+       "w4",
+       "Atena",
+       "Corint",
+       "Chencrea",
+       "Efes",
+       "Cezareea",
+       "Ierusalim",
+       "Antiohia"
+      ],
+      "b": {
+       "Corint": "1–2 Tes"
+      },
+      "f": [
+       [
+        "15:37-40",
+        "Cearta pentru Marcu → două echipe; Pavel o ia pe Sila",
+        "x",
+        "consecință a lui 13:13"
+       ],
+       [
+        "16:1-3",
+        "Listra: Timotei se alătură",
+        "n"
+       ],
+       [
+        "16:6-7",
+        "Duhul oprește drumul spre Asia și Bitinia",
+        "d"
+       ],
+       [
+        "16:9-10",
+        "Troa: viziunea macedoneanului; textul trece la „noi”",
+        "d"
+       ],
+       [
+        "16:14-15",
+        "Filipi: Lidia, căreia Domnul i-a deschis inima",
+        "d"
+       ],
+       [
+        "16:16-23",
+        "Roaba cu duh de ghicire → bătuți și închiși",
+        "o"
+       ],
+       [
+        "16:26-31",
+        "Cutremurul → temnicerul crede",
+        "d"
+       ],
+       [
+        "17:5-10",
+        "Tesalonic: gloata → trimiși noaptea la Bereea",
+        "o"
+       ],
+       [
+        "17:11-15",
+        "Bereea cercetează Scripturile; iudeii din Tesalonic vin → Atena",
+        "o"
+       ],
+       [
+        "17:22",
+        "Areopagul: discursul către atenieni",
+        "n"
+       ],
+       [
+        "18:2",
+        "Corint: Acuila și Priscila, alungați de edictul lui Claudiu",
+        "n"
+       ],
+       [
+        "18:9-11",
+        "„Nu te teme” → rămâne un an și șase luni",
+        "d"
+       ],
+       [
+        "18:12-15",
+        "Galion respinge acuzația → protecție legală",
+        "d"
+       ],
+       [
+        "18:19-22",
+        "Efes pe scurt → Cezareea → Ierusalim → Antiohia",
+        "n"
+       ]
+      ],
+      "e": [
+       [
+        "1 Tesaloniceni",
+        "Corint · ~51",
+        "Pavel fusese alungat din Tesalonic (17:5-10); trimisese pe Timotei înapoi (1 Tes 3:1), care aduce vești bune (3:6).",
+        "",
+        [
+         "gty",
+         "vbv"
+        ]
+       ],
+       [
+        "2 Tesaloniceni",
+        "Corint · ~51",
+        "Tulburare legată de ziua Domnului (2 Tes 2:2).",
+        "",
+        [
+         "vbv"
+        ]
+       ]
+      ]
+     },
+     "j3": {
+      "n": "Călătoria 3",
+      "d": "~53–57",
+      "col": "var(--j3)",
+      "dash": "",
+      "ref": "18:23–21:16",
+      "ch": 19,
+      "r": [
+       "Antiohia",
+       "Frigia, Galatia",
+       "Efes",
+       "Macedonia",
+       "Corint",
+       "Filipi",
+       "Troa",
+       "Assos",
+       "Mitilene",
+       "Chios",
+       "Samos",
+       "Milet",
+       "Cos",
+       "Rodos",
+       "Patara",
+       "Tir",
+       "Ptolemaida",
+       "Cezareea",
+       "Ierusalim"
+      ],
+      "b": {
+       "Efes": "1 Cor",
+       "Macedonia": "2 Cor",
+       "Corint": "Rom"
+      },
+      "f": [
+       [
+        "18:23",
+        "Galatia și Frigia: întărește ucenicii",
+        "n"
+       ],
+       [
+        "18:24-26",
+        "Apolo la Efes, învățat de Priscila și Acuila",
+        "n"
+       ],
+       [
+        "19:1-7",
+        "Efes: ucenicii lui Ioan primesc Duhul",
+        "d"
+       ],
+       [
+        "19:9-10",
+        "Respins în sinagogă → școala lui Tiran, 2 ani → toată Asia aude",
+        "o"
+       ],
+       [
+        "19:14-19",
+        "Fiii lui Sceva → cărțile de vrăjitorie arse",
+        "d"
+       ],
+       [
+        "19:21",
+        "Hotărârea: Ierusalim, apoi Roma",
+        "x",
+        "duce la arestul din cap. 21 și la Roma"
+       ],
+       [
+        "19:24-41",
+        "Dimitrie și argintarii → răscoala",
+        "o"
+       ],
+       [
+        "20:1-3",
+        "Macedonia, Grecia 3 luni; o cursă → ocol prin Macedonia",
+        "o"
+       ],
+       [
+        "20:7-12",
+        "Troa: Eutih",
+        "d"
+       ],
+       [
+        "20:17-38",
+        "Milet: discursul către prezbiterii din Efes",
+        "n"
+       ],
+       [
+        "21:4, 10-11",
+        "Tir și Cezareea: avertismente; Agab",
+        "d"
+       ],
+       [
+        "21:15-17",
+        "Ierusalim",
+        "n"
+       ]
+      ],
+      "e": [
+       [
+        "1 Corinteni",
+        "Efes · primăvara lui 55 (Bruce) / 56",
+        "În cei ~3 ani de la Efes (20:31); vești de la ai Cloei (1 Cor 1:11) și scrisoarea corintenilor (7:1); „rămân în Efes până la Cincizecime” (16:8).",
+        "",
+        [
+         "bru",
+         "vbv"
+        ]
+       ],
+       [
+        "2 Corinteni",
+        "Macedonia · ~56",
+        "Pe drumul din 20:1-2; după venirea lui Tit (2 Cor 7:6).",
+        "",
+        [
+         "bru",
+         "vbv"
+        ]
+       ],
+       [
+        "Romani",
+        "Corint · ~56–57",
+        "În cele 3 luni din Grecia (20:2-3), înainte de a duce ajutoarele la Ierusalim (Rom 15:25); plan spre Spania (15:28).",
+        "",
+        [
+         "bru",
+         "vbv"
+        ]
+       ]
+      ]
+     },
+     "j4": {
+      "n": "Spre Roma",
+      "d": "~59–60; Roma 60–62",
+      "col": "var(--j4)",
+      "dash": "6 4",
+      "ref": "27:1–28:31",
+      "ch": 27,
+      "r": [
+       "Cezareea",
+       "Sidon",
+       "w5",
+       "Mira",
+       "Cnid",
+       "w6",
+       "Limanuri Bune",
+       "Malta",
+       "Siracusa",
+       "Regio",
+       "Puzole",
+       "Roma"
+      ],
+      "b": {
+       "Roma": "Ef, Fil, Col, Flm"
+      },
+      "f": [
+       [
+        "25:11",
+        "Apelul la Cezar → îmbarcat ca întemnițat",
+        "x",
+        "consecință a arestului din cap. 21"
+       ],
+       [
+        "27:1-6",
+        "Sidon, Mira: corabie din Alexandria spre Italia",
+        "n"
+       ],
+       [
+        "27:10-11",
+        "Sfatul lui Pavel e ignorat",
+        "o"
+       ],
+       [
+        "27:14",
+        "Eurachilon: furtuna",
+        "o"
+       ],
+       [
+        "27:23-24",
+        "Îngerul: „trebuie să stai înaintea cezarului”",
+        "d"
+       ],
+       [
+        "27:44",
+        "Naufragiu: toți ajung teferi la uscat",
+        "d"
+       ],
+       [
+        "28:1-8",
+        "Malta: năpârca; tatăl lui Publius vindecat",
+        "d"
+       ],
+       [
+        "28:15",
+        "Frații din Roma îi ies înainte; Pavel prinde curaj",
+        "n"
+       ],
+       [
+        "28:30-31",
+        "Doi ani în casă cu chirie; propovăduiește fără nici o piedică",
+        "d"
+       ]
+      ],
+      "e": [
+       [
+        "Efeseni, Filipeni, Coloseni, Filimon",
+        "Roma · 60–62 (tradițional)",
+        "Scrise „în lanțuri” (Ef 3:1; Fil 1:13; Col 4:18; Flm 1).",
+        "Alternative: Efes (Filipeni, Filimon) sau Cezareea (Coloseni).",
+        [
+         "vbv",
+         "just"
+        ]
+       ],
+       [
+        "1 Timotei, Tit, 2 Timotei",
+        "după Fapte · ~62–67",
+        "În afara narațiunii din Fapte.",
+        "",
+        [
+         "vbv"
+        ]
+       ]
+      ]
+     }
+    },
+    "datesNote": "Ancora fixă: Galion, proconsul în 51–52 (inscripția de la Delfi; vezi studiul la Fapte 18). Celelalte date sunt aproximări relative; prima călătorie apare și ca ~44–46 în unele surse.",
+    "refs": {
+     "Antiohia": [
+      "6:5",
+      "11:19",
+      "11:20",
+      "11:22",
+      "11:26",
+      "11:27",
+      "13:1",
+      "14:26",
+      "15:22",
+      "15:23",
+      "15:30",
+      "15:35",
+      "18:22",
+      "18:23"
+     ],
+     "Seleucia": [
+      "13:4"
+     ],
+     "Salamina": [
+      "13:5"
+     ],
+     "Pafos": [
+      "13:6",
+      "13:13"
+     ],
+     "Perga": [
+      "13:13",
+      "13:14",
+      "14:25"
+     ],
+     "Atalia": [
+      "14:25"
+     ],
+     "Iconia": [
+      "13:51",
+      "14:1",
+      "14:3",
+      "14:19",
+      "14:21",
+      "16:2"
+     ],
+     "Listra": [
+      "14:6",
+      "14:8",
+      "14:21",
+      "16:1",
+      "16:2"
+     ],
+     "Derbe": [
+      "14:6",
+      "14:20",
+      "16:1",
+      "20:4"
+     ],
+     "Troa": [
+      "16:8",
+      "16:11",
+      "20:5",
+      "20:6"
+     ],
+     "Samotracia": [
+      "16:11"
+     ],
+     "Filipi": [
+      "16:12",
+      "20:6"
+     ],
+     "Amfipoli": [
+      "17:1"
+     ],
+     "Apolonia": [
+      "17:1"
+     ],
+     "Tesalonic": [
+      "17:1",
+      "17:11",
+      "17:13",
+      "20:4",
+      "27:2"
+     ],
+     "Bereea": [
+      "17:10",
+      "17:13",
+      "17:14",
+      "20:4"
+     ],
+     "Atena": [
+      "17:15",
+      "17:16",
+      "17:21",
+      "18:1"
+     ],
+     "Corint": [
+      "18:1",
+      "18:18",
+      "19:1"
+     ],
+     "Chencrea": [
+      "18:18"
+     ],
+     "Efes": [
+      "18:19",
+      "18:21",
+      "18:24",
+      "19:1",
+      "19:17",
+      "19:26",
+      "20:16",
+      "20:17"
+     ],
+     "Assos": [
+      "20:13",
+      "20:14"
+     ],
+     "Mitilene": [
+      "20:14"
+     ],
+     "Chios": [
+      "20:15"
+     ],
+     "Samos": [
+      "20:15"
+     ],
+     "Milet": [
+      "20:15",
+      "20:17"
+     ],
+     "Cos": [
+      "21:1"
+     ],
+     "Rodos": [
+      "21:1"
+     ],
+     "Patara": [
+      "21:1"
+     ],
+     "Tir": [
+      "12:20",
+      "21:3",
+      "21:7"
+     ],
+     "Ptolemaida": [
+      "21:7"
+     ],
+     "Cezareea": [
+      "8:40",
+      "9:30",
+      "10:1",
+      "10:24",
+      "11:11",
+      "12:19",
+      "18:22",
+      "21:8",
+      "21:16",
+      "23:23",
+      "23:33",
+      "25:1",
+      "25:4",
+      "25:6",
+      "25:13"
+     ],
+     "Ierusalim": [
+      "1:4",
+      "1:8",
+      "1:12",
+      "1:19",
+      "2:5",
+      "2:14",
+      "4:5",
+      "4:16",
+      "5:16",
+      "5:28",
+      "6:7",
+      "8:1",
+      "8:14",
+      "8:25",
+      "8:26",
+      "8:27",
+      "9:2",
+      "9:13",
+      "9:21",
+      "9:26",
+      "9:28",
+      "10:39",
+      "11:2",
+      "11:22",
+      "11:27",
+      "12:25",
+      "13:13",
+      "13:27",
+      "13:31",
+      "15:2",
+      "15:4",
+      "16:4",
+      "18:21",
+      "18:22",
+      "19:21",
+      "20:16",
+      "20:22",
+      "21:4",
+      "21:11",
+      "21:12",
+      "21:13",
+      "21:15",
+      "21:17",
+      "21:31",
+      "22:5",
+      "22:17",
+      "22:18",
+      "23:11",
+      "24:11",
+      "25:1",
+      "25:3",
+      "25:7",
+      "25:9",
+      "25:15",
+      "25:20",
+      "25:24",
+      "26:4",
+      "26:10",
+      "26:20",
+      "28:17"
+     ],
+     "Sidon": [
+      "12:20",
+      "27:3"
+     ],
+     "Mira": [
+      "27:5"
+     ],
+     "Cnid": [
+      "27:7"
+     ],
+     "Limanuri Bune": [
+      "27:8"
+     ],
+     "Malta": [
+      "28:1"
+     ],
+     "Regio": [
+      "28:13"
+     ],
+     "Roma": [
+      "2:10",
+      "18:2",
+      "19:21",
+      "23:11",
+      "28:14",
+      "28:15",
+      "28:16"
+     ],
+     "Antiohia Pisidiei": [
+      "13:14",
+      "14:19",
+      "14:21"
+     ],
+     "Neapolis": [
+      "16:11"
+     ],
+     "Siracusa": [
+      "28:12"
+     ],
+     "Puzole": [
+      "28:13"
+     ],
+     "Cilicia": [
+      "15:41"
+     ],
+     "Frigia, Galatia": [
+      "16:6",
+      "18:23"
+     ],
+     "Macedonia": [
+      "20:1",
+      "20:3"
+     ]
+    },
+    "info": {
+     "Antiohia": "Prima biserică cu mulți credincioși dintre neamuri; aici ucenicii sunt numiți „creștini” (11:26). Baza călătoriilor: plecări 13:3, 15:40, 18:23; întoarceri 14:26, 18:22.",
+     "Antiohia Pisidiei": "Prima predică a lui Pavel redată pe larg (13:16-41). Iudeii resping: „ne întoarcem spre Neamuri” (13:46); izgoniți (13:50).",
+     "Seleucia": "Portul Antiohiei; de aici pleacă spre Cipru, „trimiși de Duhul Sfânt” (13:4).",
+     "Salamina": "Vestesc Cuvântul în sinagogile iudeilor; Ioan Marcu e cu ei (13:5).",
+     "Pafos": "Vrăjitorul Bar-Isus e orbit, iar dregătorul crede (13:6-12).",
+     "Perga": "Ioan Marcu se întoarce la Ierusalim (13:13); la întoarcere vestesc Cuvântul aici (14:25).",
+     "Atalia": "Portul de îmbarcare spre Antiohia la finalul călătoriei 1 (14:25-26).",
+     "Iconia": "„O mare mulțime de iudei și de greci au crezut” (14:1); complot de lapidare → fug (14:5-6).",
+     "Listra": "Ologul vindecat; Pavel și Barnaba luați drept zei; apoi Pavel e lapidat (14:8-19). Aici se alătură Timotei (16:1).",
+     "Derbe": "Fac mulți ucenici (14:21); punctul de întoarcere al călătoriei 1. Gaiu era de aici (20:4).",
+     "Cilicia": "„A străbătut Siria și Cilicia, întărind bisericile” (15:41).",
+     "Frigia, Galatia": "Opriți de Duhul să vestească în Asia, trec prin Frigia și Galatia (16:6); revin în călătoria 3, întărind ucenicii (18:23).",
+     "Troa": "Viziunea macedoneanului; textul trece la „noi” (16:8-10). În călătoria 3: Eutih (20:6-12).",
+     "Samotracia": "Escală pe drumul spre Macedonia (16:11).",
+     "Neapolis": "Portul prin care intră în Macedonia (16:11).",
+     "Filipi": "Colonie romană (16:12): Lidia, roaba cu duh de ghicire, temnița, temnicerul (16:12-40).",
+     "Amfipoli": "Oraș tranzitat spre Tesalonic (17:1).",
+     "Apolonia": "Oraș tranzitat spre Tesalonic (17:1).",
+     "Tesalonic": "Trei sabate în sinagogă (17:2); gloata năvălește la casa lui Iason (17:5-9).",
+     "Bereea": "„Cercetau Scripturile în fiecare zi” (17:11); tulburați de iudeii din Tesalonic (17:13).",
+     "Atena": "Duhul lui Pavel se întărâtă la vederea idolilor (17:16); discursul din Areopag (17:22-31).",
+     "Corint": "Un an și șase luni (18:11); Acuila și Priscila; Galion respinge acuzația (18:12-17). Revine 3 luni în Grecia (20:2-3).",
+     "Chencrea": "Portul estic al Corintului; plecarea spre Siria (18:18).",
+     "Efes": "Scurt la finalul călătoriei 2 (18:19-21); apoi ~3 ani (20:31): școala lui Tiran, cărțile arse, răscoala argintarilor (cap. 19).",
+     "Macedonia": "Trece prin Macedonia îndemnând ucenicii (20:1-2); la întoarcere, ocol prin Macedonia din cauza unei curse (20:3).",
+     "Assos": "Pavel face drumul pe jos până aici, apoi urcă la bord (20:13-14).",
+     "Mitilene": "Escală spre Ierusalim (20:14).",
+     "Chios": "Escală spre Ierusalim (20:15).",
+     "Samos": "Escală spre Ierusalim (20:15).",
+     "Milet": "Îi cheamă pe prezbiterii din Efes; discursul de rămas-bun (20:17-38).",
+     "Cos": "Escală (21:1).",
+     "Rodos": "Escală (21:1).",
+     "Patara": "Găsesc o corabie spre Fenicia (21:1-2).",
+     "Tir": "Ucenicii, prin Duhul, îl roagă să nu urce la Ierusalim (21:4).",
+     "Ptolemaida": "O zi cu frații (21:7).",
+     "Cezareea": "Corneliu (cap. 10); casa lui Filip și Agab (21:8-11); doi ani de detenție (24:27); procesele înaintea lui Felix, Festus și Agripa (cap. 24–26).",
+     "Ierusalim": "Punctul de plecare al programului din 1:8; Sinodul (cap. 15); arestul din Templu (21:27-33).",
+     "Sidon": "Iuliu îi dă voie să meargă pe la prieteni (27:3).",
+     "Mira": "Sutașul găsește o corabie din Alexandria spre Italia (27:5-6).",
+     "Cnid": "Vântul nu-i lasă să se oprească (27:7).",
+     "Limanuri Bune": "Pavel avertizează asupra primejdiei, dar sutașul ascultă de cârmaci (27:8-11).",
+     "Malta": "Naufragiu, toți scapă (27:44); năpârca; tatăl lui Publius vindecat (28:1-8).",
+     "Siracusa": "Trei zile de oprire (28:12).",
+     "Regio": "Escală (28:13).",
+     "Puzole": "Frați care îi rețin șapte zile; „și așa am ajuns la Roma” (28:13-14).",
+     "Roma": "Frații îi ies înainte (28:15); doi ani în casă cu chirie, propovăduind „fără nici o piedică” (28:30-31)."
+    },
+    "sources": {
+     "lig": [
+      "Ligonier",
+      "https://learn.ligonier.org/devotionals/who-were-the-galatians"
+     ],
+     "vbv": [
+      "Verse By Verse",
+      "https://media.versebyverseministry.org/images/uploads/pauls_letters.pdf"
+     ],
+     "gty": [
+      "MacArthur / GTY",
+      "https://www.myopenbible.com/bible/intro/gty/1th"
+     ],
+     "bru": [
+      "Wilson / F.F. Bruce",
+      "https://www.jesuswalk.com/1corinthians/appendix3_chronology.htm"
+     ],
+     "just": [
+      "F. Just",
+      "https://catholic-resources.org/Bible/Pauline_Chronology.htm"
+     ]
+    },
+    "timeline": {
+     "from": 44,
+     "to": 68,
+     "step": 2,
+     "journeys": [
+      [
+       "j1",
+       46,
+       48,
+       "C1"
+      ],
+      [
+       "j2",
+       49.6,
+       52.4,
+       "C2"
+      ],
+      [
+       "j3",
+       53,
+       57.3,
+       "C3"
+      ],
+      [
+       "j4",
+       59.6,
+       62,
+       "Roma"
+      ]
+     ],
+     "marks": [
+      {
+       "kind": "bar",
+       "from": 57.3,
+       "to": 59.6,
+       "label": "Cezareea",
+       "title": "Detenția din Cezareea · ~57–59",
+       "tip": "Doi ani sub Felix, apoi Festus (24:27); procesele înaintea lui Felix, Festus și Agripa (cap. 24–26)."
+      },
+      {
+       "kind": "point",
+       "at": 49,
+       "label": "Sinodul",
+       "title": "Sinodul de la Ierusalim · Fapte 15",
+       "tip": "Datat de majoritatea cercetătorilor conservatori în jurul anilor 48–50 (studiul tău la Fapte 15). Decizia: neamurile nu sunt obligate la tăierea împrejur (15:28-29)."
+      },
+      {
+       "kind": "anchor",
+       "at": 51.5,
+       "label": "Galion (ancoră)",
+       "title": "Galion, proconsulul Ahaiei · 51–52",
+       "tip": "Inscripția de la Delfi (scrisoarea lui Claudius către Galion) fixează proconsulatul în 51–52; de aici șederea de 18 luni la Corint ≈ 50–52 (studiul tău la Fapte 18; 18:12)."
+      }
+     ],
+     "letters": [
+      [
+       "Gal",
+       48.7,
+       "j1",
+       0,
+       "Galateni"
+      ],
+      [
+       "1–2 Tes",
+       51,
+       "j2",
+       1,
+       "1 Tesaloniceni"
+      ],
+      [
+       "1 Cor",
+       55,
+       "j3",
+       0,
+       "1 Corinteni"
+      ],
+      [
+       "2 Cor",
+       56,
+       "j3",
+       1,
+       "2 Corinteni"
+      ],
+      [
+       "Rom",
+       57,
+       "j3",
+       0,
+       "Romani"
+      ],
+      [
+       "Ef, Fil, Col, Flm",
+       61,
+       "j4",
+       1,
+       "Efeseni"
+      ],
+      [
+       "1 Tim, Tit",
+       64,
+       "j4",
+       0,
+       "1 Timotei"
+      ],
+      [
+       "2 Tim",
+       67,
+       "j4",
+       1,
+       "2 Timotei"
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -5,6 +5,7 @@ import { books } from './data.js';
 import * as catalog from './catalog.js';
 import { studies, study, chapters, bookOf } from './catalog.js';
 import { hideTip } from './tips.js';
+import { showVisual, visualClick } from './visual.js';
 
 const PAGE = 30;
 const state = { book: null, theme: null, query: '', tab: 'all', shown: PAGE, current: null, part: 0, seq: 0 };
@@ -19,7 +20,8 @@ const shortTitle = s => {
   const t = s.c === 0 ? s.title : s.title.replace(/^.*?:\s+/, '');
   return t.charAt(0).toUpperCase() + t.slice(1);
 };
-export const studyHash = (s, part = 0) => `#/studii/${s.b}/${s.c}${part ? '/' + (part + 1) : ''}`;
+const VISUAL = 'visual';   // state.part when the "Vizual" tab is open
+export const studyHash = (s, part = 0) => `#/studii/${s.b}/${s.c}${part === VISUAL ? '/vizual' : part ? '/' + (part + 1) : ''}`;
 
 // ---------- Sidebar and progress ----------
 
@@ -80,7 +82,7 @@ function cardHtml(s) {
     `<span class="cref"><span class="cb">${esc(b.abbr || b.name)}</span><span class="cc${s.c === 0 ? ' sm' : ''}">${esc(chapterLabel(s))}</span></span>` +
     `<span class="cbody"><span class="ctitle">${esc(shortTitle(s))}</span><span class="csum">${esc(s.summary)}</span>` +
     `<span class="snips" data-snip="${s.id}"></span>` +
-    `<span class="cmeta">${s.parts.map(p => `<span class="tag">${esc(p.label)}</span>`).join('')}<span>${esc(s.date)}</span><span>${kwords(s.words)}</span></span>` +
+    `<span class="cmeta">${s.parts.map(p => `<span class="tag">${esc(p.label)}</span>`).join('')}${s.visual ? '<span class="tag vis">Vizual</span>' : ''}<span>${esc(s.date)}</span><span>${kwords(s.words)}</span></span>` +
     `<span class="ctags">${esc(s.themes.slice(0, 6).join(', '))}</span></span></button>`;
 }
 
@@ -180,8 +182,8 @@ function find(term) {
 
 async function openStudy(s, part, term) {
   state.current = s;
-  state.part = Math.max(0, Math.min(s.parts.length - 1, part));
-  const b = bookOf(s.b), p = s.parts[state.part];
+  state.part = part === VISUAL && s.visual ? VISUAL : Math.max(0, Math.min(s.parts.length - 1, +part || 0));
+  const b = bookOf(s.b), visual = state.part === VISUAL;
   $('studyCatalog').hidden = true;
   $('studyReader').hidden = false;
   $('studyEyebrow').textContent = `Studii · ${b.name}${s.c ? ' ' + chapterLabel(s) : ' · privire de ansamblu'}`;
@@ -192,13 +194,20 @@ async function openStudy(s, part, term) {
   $('studyNext').disabled = s.n === studies.length - 1;
   $('studyPrev').title = s.n ? 'Studiul anterior: ' + studies[s.n - 1].title : '';
   $('studyNext').title = s.n < studies.length - 1 ? 'Studiul următor: ' + studies[s.n + 1].title : '';
-  $('studyParts').innerHTML = s.parts.length > 1 ? s.parts.map((x, i) =>
-    `<button type="button" role="tab" data-part="${i}" aria-selected="${i === state.part}">${esc(x.label)}</button>`).join('') : '';
+  const tabs = [...s.parts.map((x, i) => [i, x.label]), ...s.visual ? [[VISUAL, 'Vizual']] : []];
+  $('studyParts').innerHTML = tabs.length > 1 ? tabs.map(([i, label]) =>
+    `<button type="button" role="tab" data-part="${i}" aria-selected="${i === state.part}">${esc(label)}</button>`).join('') : '';
   const doc = $('studyDoc');
   delete doc.dataset.raw;
   doc.innerHTML = '<div class="loading">Se încarcă studiul…</div>';
   $('studyToc').innerHTML = '';
+  for (const id of ['studyFind', 'studyFindCount']) $(id).hidden = visual;
+  document.querySelector('.studygrid').hidden = visual;
+  $('studyVisual').hidden = !visual;
+  store.set('studiesHash', studyHash(s, state.part));
   scrollTo(0, 0);
+  if (visual) { tocObserver?.disconnect(); await showVisual($('studyVisual'), s); return; }
+  const p = s.parts[state.part];
   let html;
   try { html = await catalog.text(p.path); } catch { html = '<div class="empty"><strong>Studiul nu s-a putut încărca</strong>Verifică conexiunea și încearcă din nou.</div>'; }
   if (state.current !== s || state.part !== s.parts.indexOf(p)) return;
@@ -213,7 +222,6 @@ async function openStudy(s, part, term) {
   }).join('') + '</div></details>' : '';
   $('studyFind').value = term || '';
   find(term || '');
-  store.set('studiesHash', studyHash(s, state.part));
 }
 
 function showCatalog() {
@@ -230,11 +238,13 @@ function showCatalog() {
 export async function showStudies(path) {
   hideTip();
   await catalog.load();
+  if (!$('studyBooks').innerHTML) { progress(); sideBooks(); }
   const [b, c, part] = path.split('/').filter(Boolean);
   const s = b && c !== undefined && studies.find(x => x.b === b && x.c === +c);
   if (s) {
     const term = state.query && !catalog.parseRef(state.query) ? state.query : catalog.parseRef(state.query)?.rest || '';
-    if (state.current !== s || state.part !== (+part || 1) - 1) await openStudy(s, (+part || 1) - 1, term);
+    const target = part === 'vizual' ? VISUAL : (+part || 1) - 1;
+    if (state.current !== s || state.part !== target) await openStudy(s, target, term);
     return;
   }
   const book = b && bookOf(b) ? b : null, changed = book !== state.book;
@@ -286,7 +296,17 @@ export function setupStudies(opts) {
   $('studyNext').addEventListener('click', () => { const s = state.current; if (s && s.n < studies.length - 1) go(studyHash(studies[s.n + 1])); });
   $('studyParts').addEventListener('click', e => {
     const t = e.target.closest('[data-part]');
-    if (t && state.current) go(studyHash(state.current, +t.dataset.part));
+    if (t && state.current) go(studyHash(state.current, t.dataset.part === VISUAL ? VISUAL : +t.dataset.part));
+  });
+  $('studyVisual').addEventListener('click', e => {
+    if (visualClick(e)) return;
+    const open = e.target.closest('[data-open]');
+    if (open) go(studyHash(study(open.dataset.open)));
+  });
+  // Diagram elements marked role="button" answer to Enter and Space like buttons.
+  $('studyVisual').addEventListener('keydown', e => {
+    const el = (e.key === 'Enter' || e.key === ' ') && e.target.closest('[role="button"]');
+    if (el) { e.preventDefault(); el.dispatchEvent(new MouseEvent('click', { bubbles: true })); }
   });
   $('studyToc').addEventListener('click', e => {
     const a = e.target.closest('[data-goto]');

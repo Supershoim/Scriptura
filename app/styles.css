@@ -268,6 +268,59 @@ button.chc { padding: 0; }
 .studylink .eyebrow { font-family: var(--sans); }
 .doc .ref-link { font-family: inherit; }
 
+/* Study visuals (app/js/visual.js). The diagrams use these names; colors follow the app's theme. */
+.visual {
+  --fg: var(--ink); --surface: var(--paper); --accent: var(--green); --accent-soft: var(--soft); --todo: var(--head); --f-ui: var(--sans);
+  --lane: #534ab7; --lane-soft: #eeedfe; --warn: #c2511f; --warn-soft: #faece7;
+  --j1: #7f77dd; --j2: #1d9e75; --j3: #d85a30; --j4: #378add; --ep-bg: #faeeda; --ep-bd: #ba7517; --ep-fg: #633806;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .visual {
+    --lane: #afa9ec; --lane-soft: #2a2750; --warn: #f0997b; --warn-soft: #4a1f12;
+    --j1: #9c95e8; --j2: #3fbf93; --j3: #ee8160; --j4: #6aa8ea; --ep-bg: #412402; --ep-bd: #ef9f27; --ep-fg: #fac775;
+  }
+}
+:root[data-theme="dark"] .visual {
+  --lane: #afa9ec; --lane-soft: #2a2750; --warn: #f0997b; --warn-soft: #4a1f12;
+  --j1: #9c95e8; --j2: #3fbf93; --j3: #ee8160; --j4: #6aa8ea; --ep-bg: #412402; --ep-bd: #ef9f27; --ep-fg: #fac775;
+}
+.visual { max-width: 1000px; }
+.visblock + .visblock { margin-top: 30px; }
+.vis-h { font: 600 20px var(--serif); margin: 4px 0 6px; }
+.vis-h3 { font-size: 14px; font-weight: 600; margin: 16px 0 6px; }
+.vis-p { color: var(--muted); font-size: 13px; line-height: 1.55; margin: 0 0 10px; max-width: 80ch; }
+.visbox { overflow-x: auto; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 16px 10px; margin: 0 0 18px; }
+.visbox svg { display: block; width: 100%; min-width: 600px; height: auto; }
+.vt { font: 600 13px var(--f-ui); fill: var(--fg); }
+.vs { font: 400 12px var(--f-ui); fill: var(--muted); }
+.vacc { fill: var(--accent-soft); stroke: var(--accent); stroke-width: .6; } .vacc-t { fill: var(--accent); }
+.vbar { fill: var(--accent); } .vq { fill: var(--warn); }
+.vlane { fill: var(--lane-soft); stroke: var(--lane); stroke-width: .6; } .vlane-t { fill: var(--lane); }
+.vwarn { fill: var(--warn-soft); stroke: var(--warn); stroke-width: .8; } .vwarn-t { fill: var(--warn); }
+.vneu { fill: var(--todo); stroke: var(--line); stroke-width: .6; }
+.vcol { cursor: pointer; } .vcol .hit { fill: transparent; }
+.vcol:hover .hit, .vcol:focus-visible .hit { fill: var(--accent-soft); }
+.vnode { cursor: pointer; } .vnode:hover rect, .vnode:focus-visible rect { stroke-width: 1.6; }
+.vcol:focus-visible, .vnode:focus-visible { outline: none; }
+[data-cz], [data-ce] { transition: opacity .2s; }
+.czbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; font-size: 13px; color: var(--muted); margin: 0 0 8px; min-height: 34px; }
+.czbar b { color: var(--ink); }
+.czbar button, .visual .cols button { font-size: 12px; }
+.jt { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.jt button { font-size: 12px; padding: 5px 12px; border-radius: 14px; }
+.jt button[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--on-green); }
+.lg { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted); margin: -6px 0 0; }
+.lg i { display: inline-block; width: 16px; height: 4px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.visual .cols { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 22px; margin-top: 8px; }
+.st { border-left: 3px solid var(--line); padding: 5px 0 5px 11px; font: 15px/1.45 var(--serif); }
+.st .r { font: 700 11px var(--sans); color: var(--muted); margin-right: 7px; }
+.st.d { border-color: var(--accent); } .st.o { border-color: var(--warn); } .st.x { border-color: var(--lane); }
+.st .lk { display: block; font: 12px var(--sans); color: var(--lane); margin-top: 2px; }
+.ar { font-size: 11px; color: var(--muted); padding-left: 13px; line-height: 1.2; }
+.ep { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin: 0 0 8px; font-size: 13px; line-height: 1.5; }
+.ep b { font: 600 15px var(--serif); } .ep .m { color: var(--muted); font-size: 12px; }
+.tag.vis { background: var(--green); color: var(--on-green); }
+
 /* Tooltip */
 .tip { position: fixed; z-index: 55; max-width: 340px; padding: 9px 12px; border-radius: 9px; background: var(--ink); color: var(--bg); font-size: 12px; line-height: 1.45; pointer-events: none; box-shadow: 0 6px 24px #0003; }
 .tip b { display: block; font-weight: 600; margin-bottom: 3px; }
@@ -322,6 +375,7 @@ button.chc { padding: 0; }
   .studytools { margin-top: 10px; }
   #studyFind { flex: 1; width: auto; min-width: 120px; }
   .doc { padding: 4px 14px 20px; }
+  .visual .cols { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 480px) {
   #fontDown, #fontUp { display: none; } /* the reader's text-size slider stays */
