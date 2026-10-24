@@ -1,8 +1,9 @@
-// Reference popup: hover (mouse), focus (keyboard) or tap (touch) on a reference inside a note.
+// Reference popup: hover (mouse), focus (keyboard) or tap (touch) on a reference inside a printed note
+// (data-t/k/g/l) or inside a study (data-ref="ROM 2:13-16", in canonical numbering).
 import { $, esc } from './util.js';
 import { books, bookIndex, get, key, parseKey } from './data.js';
 
-let anchor = null, closeTimer = 0, current = null, onOpen = () => {}, visible = () => [];
+let anchor = null, closeTimer = 0, current = null, lastShown = null, onOpen = () => {}, visible = () => [];
 
 const bookName = id => books[bookIndex.get(id)]?.name || id;
 
@@ -40,15 +41,27 @@ function targetVerses(owner, link) {
   });
 }
 
+// A study reference: "ROM 2:13-16" -> canonical verse keys (at most 30, as long passages are only quoted).
+const MAX_VERSES = 30;
+function studyTargets(ref) {
+  const m = ref.match(/^([1-3A-Z]{3}) (\d+):(\d+)(?:-(\d+))?$/);
+  const [b, c, from] = [m[1], +m[2], +m[3]], to = Math.max(from, +m[4] || from);
+  const exists = c >= 1 && c <= (books[bookIndex.get(b)]?.chapters || 0);
+  const numbers = [];
+  for (let v = from; v <= Math.min(to, from + MAX_VERSES - 1); v++) if (visible().some(t => t.versesAt(key(b, c, v)).length || t.coveredBy.has(key(b, c, v)))) numbers.push(v);
+  return { targets: [{ b, c, exists, keys: numbers.map(v => key(b, c, v)) }], truncated: to - from + 1 > MAX_VERSES, title: `${bookName(b)} ${c}:${from}${to > from ? '–' + to : ''}` };
+}
+
 function renderBody() {
-  const { owner, link, shown } = current;
+  const { targets, canonical, shown } = current;
   const display = get(shown);
   let html = '';
   current.first = null;
-  for (const target of targetVerses(owner, link)) {
+  for (const target of targets) {
     if (!target.exists) { html += '<p class="ref-empty">Referința apare astfel în text, dar capitolul nu există.</p>'; continue; }
+    if (!target.keys.length) html += '<p class="ref-empty">Versetul nu există în traducerile afișate.</p>';
     for (const ownerKey of target.keys) {
-      const canon = owner.canonical(ownerKey);
+      const canon = canonical(ownerKey);
       const own = display.resolve(canon);
       const text = own && display.verse(own);
       if (text && !current.first) current.first = canon;
@@ -56,6 +69,7 @@ function renderBody() {
       html += `<p><sup>${esc(label)}</sup>${text ? esc(text) : `<span class="ref-empty">${esc(display.gapNote(canon))}</span>`}</p>`;
     }
   }
+  if (current.truncated) html += `<p class="ref-empty">Pasaj lung: sunt afișate primele ${MAX_VERSES} de versete.</p>`;
   $('noteText').innerHTML = html;
   $('noteOpen').hidden = !current.first;
   $('noteTabs').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.show === shown)));
@@ -67,13 +81,21 @@ function show(button) {
   anchor?.setAttribute('aria-expanded', 'false');
   anchor = button;
   button.setAttribute('aria-expanded', 'true');
-  const owner = get(button.dataset.t);
-  const group = owner.notes[button.dataset.k][+button.dataset.g];
-  const link = group.links[+button.dataset.l];
-  current = { owner, link, shown: owner.id };
-  $('noteTitle').textContent = link.to.map(([b, c, vs]) => `${bookName(b)} ${c}${vs.length ? ':' + vs.join(', ') : ''}`).join('; ');
-  $('noteSource').textContent = `Trimitere ${owner.meta.abbreviation} · ${group.text.slice(link.s, link.e)}`;
   const tabs = visible();
+  if (button.dataset.ref) {
+    const { targets, truncated, title } = studyTargets(button.dataset.ref);
+    const shown = tabs.some(t => t.id === lastShown) ? lastShown : tabs[0].id;
+    current = { targets, truncated, canonical: k => k, shown };
+    $('noteTitle').textContent = title;
+    $('noteSource').textContent = 'Trimitere din studiu · ' + button.textContent;
+  } else {
+    const owner = get(button.dataset.t);
+    const group = owner.notes[button.dataset.k][+button.dataset.g];
+    const link = group.links[+button.dataset.l];
+    current = { targets: targetVerses(owner, link), canonical: k => owner.canonical(k), shown: owner.id };
+    $('noteTitle').textContent = link.to.map(([b, c, vs]) => `${bookName(b)} ${c}${vs.length ? ':' + vs.join(', ') : ''}`).join('; ');
+    $('noteSource').textContent = `Trimitere ${owner.meta.abbreviation} · ${group.text.slice(link.s, link.e)}`;
+  }
   $('noteTabs').innerHTML = tabs.length > 1
     ? tabs.map(t => `<button type="button" data-show="${t.id}">${esc(t.meta.abbreviation)}</button>`).join('')
     : '';
@@ -84,23 +106,25 @@ function show(button) {
   position();
 }
 
-export function setupNotes(container, options) {
+export function setupNotes(containers, options) {
   onOpen = options.onOpen;
   visible = options.visible;
   const popup = $('notePopup');
   const trigger = e => e.target.closest?.('.ref-link');
-  container.addEventListener('pointerover', e => { if (e.pointerType !== 'touch' && trigger(e)) show(trigger(e)); });
-  container.addEventListener('pointerout', e => { if (trigger(e) && !trigger(e).contains(e.relatedTarget) && !popup.contains(e.relatedTarget)) scheduleClose(); });
-  container.addEventListener('focusin', e => { if (trigger(e)) show(trigger(e)); });
-  container.addEventListener('focusout', e => { if (trigger(e) && !popup.contains(e.relatedTarget)) scheduleClose(); });
-  container.addEventListener('click', e => { if (trigger(e)) { e.preventDefault(); show(trigger(e)); } });
+  for (const container of containers) {
+    container.addEventListener('pointerover', e => { if (e.pointerType !== 'touch' && trigger(e)) show(trigger(e)); });
+    container.addEventListener('pointerout', e => { if (trigger(e) && !trigger(e).contains(e.relatedTarget) && !popup.contains(e.relatedTarget)) scheduleClose(); });
+    container.addEventListener('focusin', e => { if (trigger(e)) show(trigger(e)); });
+    container.addEventListener('focusout', e => { if (trigger(e) && !popup.contains(e.relatedTarget)) scheduleClose(); });
+    container.addEventListener('click', e => { if (trigger(e)) { e.preventDefault(); show(trigger(e)); } });
+  }
   popup.addEventListener('pointerenter', () => clearTimeout(closeTimer));
   popup.addEventListener('pointerleave', e => { if (e.pointerType !== 'touch') scheduleClose(); });
   popup.addEventListener('focusin', () => clearTimeout(closeTimer));
   popup.addEventListener('focusout', e => { if (!popup.contains(e.relatedTarget) && e.relatedTarget !== anchor) scheduleClose(); });
   $('noteTabs').addEventListener('click', e => {
     const b = e.target.closest('[data-show]');
-    if (b && current) { current.shown = b.dataset.show; renderBody(); position(); }
+    if (b && current) { current.shown = lastShown = b.dataset.show; renderBody(); position(); }
   });
   $('noteClose').onclick = () => { const a = anchor; hide(); a?.focus({ preventScroll: true }); };
   $('noteOpen').onclick = () => { const target = current?.first; hide(); if (target) onOpen(target); };

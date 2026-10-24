@@ -5,7 +5,9 @@ import { parseReference, search } from './search.js';
 import { cellHtml } from './render.js';
 import { setupNotes, hideNote, repositionNote } from './notes.js';
 import { setupTips, hideTip } from './tips.js';
-import { setupStudies, showStudies, focusStudySearch, cardTip } from './studies.js';
+import { setupStudies, showStudies, focusStudySearch, cardTip, studyHash } from './studies.js';
+import * as catalog from './catalog.js';
+import { linkStudy } from './refs.js';
 
 const PAGE = 50, FONT_DEFAULT = 19;
 const state = {
@@ -109,6 +111,14 @@ function rowHtml(canon, searchInfo) {
   return `<article class="row${selected ? ' selected' : ''}" id="v-${b}-${c}-${v}" data-k="${canon}">${ref}${shown().map(t => cellHtml(t, canon, searchInfo)).join('')}</article>`;
 }
 
+// Studies of the chapter being read, and the overview of its book.
+function studyLinks() {
+  const list = [...catalog.forChapter(state.b, state.c), ...catalog.studies.filter(s => s.b === state.b && s.c === 0)];
+  $('studyLink').innerHTML = list.map(s =>
+    `<a href="${studyHash(s)}" data-tipcard="${s.id}"><span class="eyebrow">${s.c ? 'Studiu' : 'Privire de ansamblu'}</span>${esc(s.title)}</a>`).join('');
+  $('studyLink').hidden = !list.length;
+}
+
 function setStatus(text) {
   $('meta').textContent = text;
 }
@@ -127,6 +137,7 @@ function renderRead(scroll = true) {
   const messages = data.notices(translations, state.b, state.c);
   $('notice').innerHTML = messages.map(esc).join('<br>');
   $('notice').hidden = !messages.length;
+  studyLinks();
   $('columns').innerHTML = headHtml() + rows.map(v => rowHtml(key(state.b, state.c, v))).join('');
   $('pagination').hidden = true;
   $('back').hidden = true;
@@ -147,7 +158,7 @@ function renderResults() {
   const slice = r.keys.slice(start, start + PAGE);
   updateTitle('Căutare · ' + $('searchIn').selectedOptions[0].textContent, `Rezultate pentru „${r.query}”`, false);
   setStatus(`${total.toLocaleString('ro-RO')} versete găsite${total ? ` · ${start + 1}–${Math.min(start + PAGE, total)}` : ''} · ${r.ms} ms`);
-  $('notice').hidden = true;
+  $('notice').hidden = $('studyLink').hidden = true;
   $('columns').innerHTML = slice.length
     ? headHtml() + slice.map(k => rowHtml(k, r)).join('')
     : '<div class="empty"><strong>Niciun verset găsit</strong>Încearcă mai puține cuvinte sau extinde căutarea la toată Biblia.</div>';
@@ -393,10 +404,10 @@ function wire() {
     else if (state.view === 'read' && e.key === 'ArrowRight') move(1);
   });
   setupTips(cardTip);
-  setupStudies({ go });
-  setupNotes($('columns'), {
+  setupStudies({ go, decorate: linkStudy });
+  setupNotes([$('columns'), $('studyDoc')], {
     visible: shown,
-    onOpen: canon => { const { b, c, v } = parseKey(canon); read(b, c, v); }
+    onOpen: canon => { const { b, c, v } = parseKey(canon); if (state.mode === 'bible') read(b, c, v); else go(`#/${b}/${c}/${v}`); }
   });
 }
 
@@ -425,7 +436,10 @@ async function start() {
     const initial = readHash() || store.get('last', null);
     if (initial && bookIndex.has(initial.b)) Object.assign(state, { b: initial.b, c: initial.c || 1, v: initial.v || 0, end: initial.end || initial.v || 0 });
     const saved = store.get('visible', null);
-    await setVisible(Array.isArray(saved) && saved.length ? saved : data.available.map(t => t.id), false);
+    await Promise.all([
+      setVisible(Array.isArray(saved) && saved.length ? saved : data.available.map(t => t.id), false),
+      catalog.load().catch(error => console.warn('Studiile nu au putut fi încărcate', error))
+    ]);
     if (!location.hash && store.get('mode', 'bible') === 'studies') history.replaceState(null, '', store.get('studiesHash', '#/studii'));
     if (location.hash.startsWith('#/studii')) { renderRead(false); await route(); }
     else read(state.b, state.c, state.v, state.end);

@@ -33,10 +33,19 @@ function headCase(h, bookWords) {
     .replace(/^(\d+\.\s+)(\p{L})/u, (_, a, b) => a + b.toUpperCase());
 }
 
+// Links between studies keep the file names of the conversations they come from:
+// "Romani%20capitolul%201.md", "Romani%20privire%20de%20ansamblu.md" -> "#/studii/ROM/1", "#/studii/ROM/0".
+function studyRoute(href, books) {
+  const m = decodeURIComponent(href).replace(/\.md$/, '').match(/^(.+?)\s+(?:capitolul\s+(\d+)|privire de ansamblu)$/i);
+  const book = m && books.find(b => norm(b.name) === norm(m[1]));
+  return book ? `#/studii/${book.id}/${m[2] ? +m[2] : 0}` : null;
+}
+const MD_LINK = /\]\(([^)\s]+\.md)\)/g;
+
 // Markdown -> HTML fragment: sections get ids s0, s1… (the level that has at least three headings),
 // tables scroll inside a box, external links open in a new tab. Returns the HTML and the section titles.
-function renderPart(md) {
-  let html = marked.parse(md);
+function renderPart(md, books) {
+  let html = marked.parse(md.replace(MD_LINK, (all, href) => `](${studyRoute(href, books)})`));
   const level = ['h2', 'h1', 'h3'].find(t => (html.match(new RegExp(`<${t}>`, 'g')) || []).length >= 3) || 'h2';
   const sections = [];
   html = html.replace(new RegExp(`<${level}>([\\s\\S]*?)</${level}>`, 'g'), (_, inner) => {
@@ -83,7 +92,10 @@ export function loadStudies(dir, books) {
         const file = path.join(dir, folder, p.file);
         if (!fs.existsSync(file)) { problems.push(`${at}: file ${folder}/${p.file} not found`); continue; }
         used.add(p.file);
-        parts.push({ label: p.label, file: p.file, md: fs.readFileSync(file, 'utf8') });
+        const md = fs.readFileSync(file, 'utf8');
+        for (const [, href] of md.matchAll(MD_LINK))
+          if (!studyRoute(href, books)) problems.push(`${folder}/${p.file}: link "${decodeURIComponent(href)}" must name a study as "<Carte> capitolul N.md" or "<Carte> privire de ansamblu.md"`);
+        parts.push({ label: p.label, file: p.file, md });
       }
       if (parts.length) studies.push({ b: book.id, ...s, parts, bookWords });
     });
@@ -96,12 +108,12 @@ export function loadStudies(dir, books) {
 }
 
 // Builds what the app downloads: { index, files: { path: html }, shards: { name: { word: [study numbers] } } }.
-export function buildStudies(studies) {
+export function buildStudies(studies, books) {
   const files = {}, words = new Map();
   const index = studies.map((s, n) => {
     let text = '';
     const parts = s.parts.map(p => {
-      const { html, sections, level } = renderPart(p.md);
+      const { html, sections, level } = renderPart(p.md, books);
       const out = `data/studies/${s.b}/${p.file.replace(/\.md$/, '.html')}`;
       files[out] = html;
       text += ' ' + plain(html);

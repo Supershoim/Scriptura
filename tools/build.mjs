@@ -9,7 +9,7 @@ import { loadStudies, buildStudies } from './studies.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const app = path.join(root, 'app'), dataDir = path.join(root, 'data'), dist = path.join(root, 'dist');
-const MODULES = ['util', 'data', 'search', 'render', 'notes', 'tips', 'catalog', 'studies', 'app'];
+const MODULES = ['util', 'data', 'search', 'render', 'notes', 'tips', 'catalog', 'refs', 'studies', 'app'];
 const SHELL = ['index.html', 'styles.css', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', ...MODULES.map(m => `js/${m}.js`)];
 
 const read = file => fs.readFileSync(file, 'utf8');
@@ -48,7 +48,7 @@ for (const t of translations) {
   if (t.notes) writeDist(`data/translations/${t.meta.id}/notes.json`, JSON.stringify(t.notes));
 }
 
-const study = buildStudies(studies);
+const study = buildStudies(studies, books);
 const STUDY_FILES = ['data/studies/index.json', ...Object.keys(study.files), ...Object.keys(study.shards).map(k => `data/studies/search/${k}.json`)];
 writeDist('data/studies/index.json', JSON.stringify(study.index));
 for (const [rel, html] of Object.entries(study.files)) writeDist(rel, html);
