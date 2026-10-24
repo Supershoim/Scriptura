@@ -1,0 +1,17 @@
+[
+  {
+    "chapter": 103,
+    "date": "2026-09-09",
+    "title": "Psalmul 103: structura și mesajul",
+    "summary": "Psalmul 103 (al lui David) e o structură foarte \"curată\" din punct de vedere arhitectural — dacă vrei, are o simetrie aproape inginerească: pornește de la individual, se extinde la universal, apoi revine la individual.",
+    "themes": [
+      "Psalmi"
+    ],
+    "parts": [
+      {
+        "label": "Studiu",
+        "file": "psalmi-103.md"
+      }
+    ]
+  }
+]

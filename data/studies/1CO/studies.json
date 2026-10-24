@@ -1,0 +1,22 @@
+[
+  {
+    "chapter": 15,
+    "date": "2026-05-14",
+    "title": "1 Corinteni 15: temele răscumpărării",
+    "summary": "Pavel prezintă învierea lui Hristos ca temelia absolută a răscumpărării — nu o idee filozofică, ci un fapt istoric verificabil (Hristos S-a arătat la peste 500 de frați deodată).",
+    "themes": [
+      "învierea",
+      "Pavel"
+    ],
+    "parts": [
+      {
+        "label": "Temele răscumpărării",
+        "file": "1cor-15.md"
+      },
+      {
+        "label": "Contextul epistolei",
+        "file": "1cor-15-contextul-epistolei.md"
+      }
+    ]
+  }
+]

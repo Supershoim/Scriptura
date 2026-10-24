@@ -1,0 +1,165 @@
+[
+  {
+    "chapter": 0,
+    "date": "2026-06-11",
+    "title": "Ezra: privire de ansamblu",
+    "summary": "Cartea Ezra continuă narațiunea istorică de la 2 Cronici, acoperind perioada de după exilul babilonian (cca. 538–458/457 î.Hr.). Se împarte în două secțiuni majore",
+    "themes": [
+      "exil și restaurare",
+      "pocăință",
+      "Templul"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-00.md"
+      }
+    ]
+  },
+  {
+    "chapter": 1,
+    "date": "2026-06-11",
+    "title": "Ezra 1: Cirus permite întoarcerea exilaților",
+    "summary": "Capitolul se deschide exact unde se încheie 2 Cronici (36:22-23) — practic o \"punte\" textuală care arată continuitatea narativă a istoriei sfinte. Include: a vorbit dumnezeu in mod direct lui Cir?.",
+    "themes": [
+      "profeți și profeție",
+      "exil și restaurare",
+      "Templul",
+      "suveranitatea lui Dumnezeu"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-01.md"
+      },
+      {
+        "label": "Întrebări punctuale",
+        "file": "ezra-01-intrebari.md"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "date": "2026-06-11",
+    "title": "Ezra 2: Lista exilaților întorși",
+    "summary": "Capitolul 2 este, la prima vedere, un simplu registru administrativ — o listă de nume, familii și numere — dar funcționează teologic ca o a doua \"genealogie a mântuirii\" (similar cu genealogiile din Geneza sau 1 Cronici 1-9): documentează cine anume a rămas fidel legământului și…",
+    "themes": [
+      "Templul",
+      "exil și restaurare"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-02.md"
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "date": "2026-06-19",
+    "title": "Ezra 3: Punerea temeliei Templului",
+    "summary": "Capitolul 3 marchează începutul efectiv al reconstrucției — de la organizare administrativă (cap. 2) la acțiune concretă de cult.",
+    "themes": [
+      "Templul"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-03.md"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "date": "2026-06-19",
+    "title": "Ezra 4: Opoziția care oprește lucrarea",
+    "summary": "Capitolul 4 e structurat non-cronologic — Cronicarul grupează tematic toate episoadele de opoziție (din diverse perioade istorice, separate de decenii) pentru a ilustra un pattern, nu o secvență strict temporală. Include: Tehnica literară: gruparea tematică, nu cronologică; Referințe istorico-arheologice: Templul (Ezra 4:1-5, 24) vs. Zidurile cetății (Ezra 4:6-23); Ezra 4:11-12 — Conținutul scrisorii către Artaxerxe.",
+    "themes": [
+      "Templul",
+      "context istoric-arheologic",
+      "regalitate și conducere"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-04.md"
+      },
+      {
+        "label": "Întrebări punctuale",
+        "file": "ezra-04-intrebari.md"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "date": "2026-06-20",
+    "title": "Ezra 5: Reluarea lucrării sub Hagai și Zaharia",
+    "summary": "După ~16 ani de tăcere (cap. 4), narațiunea revine la firul cronologic principal: anul 520 î.Hr., domnia lui Darius I. Include: cat timp a trecut intre cap 4:24 si cap 5:2?.",
+    "themes": [
+      "profeți și profeție",
+      "predicarea Evangheliei",
+      "autoritățile romane"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-05.md"
+      },
+      {
+        "label": "Întrebări punctuale",
+        "file": "ezra-05-intrebari.md"
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "date": "2026-06-20",
+    "title": "Ezra 6: Decretul lui Darius și finalizarea Templului",
+    "summary": "Capitolul aduce rezolvarea conflictului ridicat de Tatnai în cap. 5 și încheie întreaga secțiune narativă cap. 1-6.",
+    "themes": [
+      "misiune la neamuri",
+      "Templul"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-06.md"
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "date": "2026-06-26",
+    "title": "Ezra 7: Sosirea lui Ezra: cărturarul trimis de Dumnezeu",
+    "summary": "Salt narativ major: între cap. 6 (finalizarea Templului, 516 î.Hr.) și cap. 7 trec 58 de ani de tăcere biblică în cartea Ezra — o generație întreagă. În acest interval se petrece povestea din cartea Estera (sub Ahașveroș/Xerxes I, 486-465 î.Hr.). Include: Ezra 7:23 — Frica lui Artaxerxe față de Dumnezeul lui Israel.",
+    "themes": [
+      "Legea",
+      "providență"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-07.md"
+      },
+      {
+        "label": "Întrebări punctuale",
+        "file": "ezra-07-intrebari.md"
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "date": "2026-06-26",
+    "title": "Ezra 8: Călătoria spre Ierusalim: Post, Credință și Răspundere",
+    "summary": "Capitolul e narațiunea la persoana I a lui Ezra despre pregătirea și executarea călătoriei din Babilon la Ierusalim — un document personal, nu un raport oficial.",
+    "themes": [
+      "Ezra"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "ezra-08.md"
+      }
+    ]
+  }
+]

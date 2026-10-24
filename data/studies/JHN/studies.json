@@ -1,0 +1,36 @@
+[
+  {
+    "chapter": 14,
+    "covers": [
+      14,
+      16
+    ],
+    "date": "2026-06-11",
+    "title": "Ioan 14 și 16: Duhul Sfânt, manifestare și scop",
+    "summary": "Termenul cheie e παράκλητος (parakletos) — termen juridic, \"cel chemat alături [să ajute]\": avocat, martor în apărare, susținător. De aici traducerile divergente (Mângâietor, Apărător, Sfătuitor) — toate parțiale.",
+    "themes": [
+      "Ioan"
+    ],
+    "parts": [
+      {
+        "label": "Studiu",
+        "file": "ioan-14.md"
+      }
+    ]
+  },
+  {
+    "chapter": 21,
+    "date": "2026-10-21",
+    "title": "Ioan 21:15-17: restaurarea lui Petru",
+    "summary": "Ioan 21:15-17 descrie restaurarea publică a lui Petru și recomisionarea lui pastorală. Cele trei întrebări corespund celor trei lepădări.",
+    "themes": [
+      "Petru"
+    ],
+    "parts": [
+      {
+        "label": "Studiu",
+        "file": "ioan-21.md"
+      }
+    ]
+  }
+]

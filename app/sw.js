@@ -1,6 +1,7 @@
-// Offline support. The build fills in VERSION and SHELL; bible texts are cached the first time they load.
+// Offline support. The build fills in VERSION, SHELL and STUDIES; bible texts are cached the first time they load.
 const VERSION = '__VERSION__';
 const SHELL = __SHELL__;
+const STUDIES = __STUDIES__;
 const CACHE = 'scriptura-' + VERSION;
 
 self.addEventListener('install', event => {
@@ -11,6 +12,10 @@ self.addEventListener('activate', event => {
   event.waitUntil(caches.keys()
     .then(keys => Promise.all(keys.filter(k => k.startsWith('scriptura-') && k !== CACHE).map(k => caches.delete(k))))
     .then(() => self.clients.claim()));
+  // The studies are many small files: fetched in the background so the app is usable meanwhile.
+  caches.open(CACHE).then(async cache => {
+    for (const file of STUDIES) if (!await cache.match(file)) await cache.add(file).catch(() => {});
+  });
 });
 
 self.addEventListener('fetch', event => {

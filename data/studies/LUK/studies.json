@@ -1,0 +1,46 @@
+[
+  {
+    "chapter": 1,
+    "date": "2026-07-02",
+    "title": "Luca 1:67-80: Benedictus, cântarea lui Zaharia",
+    "summary": "Zaharia a tăcut 9 luni (1:20-22). Nu aceasta e pedepsa, ci pedagogia. Un preot al Cuvântului, redus la tăcere, pentru ca atunci când vorbește din nou, să fie umplut cu Duhul Sfânt (v.67: ἐπλήσθη Πνεύματος Ἁγίου — eplēsthē Pneumatos Hagiou).",
+    "themes": [
+      "Mesia",
+      "profeți și profeție",
+      "legământ"
+    ],
+    "parts": [
+      {
+        "label": "Meditație",
+        "file": "luca-01.md"
+      },
+      {
+        "label": "Meditație scurtă",
+        "file": "luca-01-meditatie-scurta.md"
+      },
+      {
+        "label": "Paralele",
+        "file": "luca-01-paralele.md"
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "date": "2026-04-23",
+    "title": "Luca 15:11-24: fiul risipitor în lumina harului (Romani 5:8)",
+    "summary": "Fiul cel mic cere ce i se cuvine — un act de respingere a tatălui. El vrea darurile, nu pe Dătătorul.",
+    "themes": [
+      "har"
+    ],
+    "parts": [
+      {
+        "label": "Studiu",
+        "file": "luca-15.md"
+      },
+      {
+        "label": "Meditație",
+        "file": "luca-15-meditatie.md"
+      }
+    ]
+  }
+]

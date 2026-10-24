@@ -1,0 +1,68 @@
+[
+  {
+    "chapter": 0,
+    "date": "2026-04-08",
+    "title": "1 Împărați: privire de ansamblu",
+    "summary": "Cartea 1 Împărați este o naraţiune teologică a istoriei lui Israel, nu o simplă cronică politică. Ea urmărește destinul poporului ales prin prisma unui principiu central: credincioșia față de Dumnezeu aduce binecuvântare, iar apostazia aduce ruina.",
+    "themes": [
+      "Templul",
+      "profeți și profeție",
+      "judecata lui Dumnezeu",
+      "rugăciune",
+      "idolatrie",
+      "har",
+      "context istoric-arheologic"
+    ],
+    "parts": [
+      {
+        "label": "Analiză completă",
+        "file": "1imp-00.md"
+      },
+      {
+        "label": "Rezumat explicativ",
+        "file": "1imp-00-rezumat-explicativ.md"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "date": "2026-04-10",
+    "title": "1 Împărați 2: Ultimele cuvinte ale lui David · Moartea lui David · Consolidarea tronului lui Solomon",
+    "summary": "Capitolul 2 este capitolul tranziției: David moare, Solomon preia tronul și consolidează domnia prin acte de dreptate (sau, cel puțin, acte de realpolitik regal).",
+    "themes": [
+      "regalitate și conducere",
+      "profeți și profeție",
+      "legământ",
+      "exil și restaurare",
+      "Împărăția lui Dumnezeu",
+      "Legea"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "1imp-02.md"
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "date": "2026-04-17",
+    "title": "1 Împărați 8: Aducerea Chivotului · Slava lui Dumnezeu umple Templul · Marea Rugăciune a lui Solomon · Binecuvântarea Poporului · Sărbătoarea de 14 zile",
+    "summary": "Capitolul 8 este apogeul spiritual al întregii Biblii Ebraice până la acest punct — momentul în care Dumnezeu vine să locuiască în mijlocul poporului Său, în casa pregătită cu generații de sacrificiu, planificare și construcție.",
+    "themes": [
+      "Templul",
+      "rugăciune",
+      "exil și restaurare",
+      "sfințire",
+      "pocăință",
+      "har",
+      "misiune la neamuri"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "1imp-08.md"
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "chapter": 3,
+    "date": "2026-05-03",
+    "title": "Efeseni 3:1-13: taina revelată și misiunea lui Pavel",
+    "summary": "Pentru această pricină, eu Pavel, întemniţatul lui Hristos Isus pentru voi, Neamurile",
+    "themes": [
+      "misiune la neamuri",
+      "Pavel",
+      "har"
+    ],
+    "parts": [
+      {
+        "label": "Studiu",
+        "file": "efeseni-03.md"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "date": "2026-05-17",
+    "title": "Efeseni 4: unitatea trupului și omul nou",
+    "summary": "Efeseni 4:1 marchează una dintre cele mai clare „balamale\" structurale din epistolele pauline: trecerea de la teologie (cap. 1–3) la etică (cap. 4–6). Conjuncția „deci\" (οὖν — oun) este semnalul explicit că ceea ce urmează decurge din ceea ce s-a afirmat anterior. Include: Responsabilitatea umană în Efeseni 4:17-24.",
+    "themes": [
+      "Pavel",
+      "har"
+    ],
+    "parts": [
+      {
+        "label": "Efeseni 4:1-10",
+        "file": "efeseni-04.md"
+      },
+      {
+        "label": "Efeseni 4:17-24",
+        "file": "efeseni-04-efeseni-4-17-24.md"
+      },
+      {
+        "label": "Întrebări punctuale",
+        "file": "efeseni-04-intrebari.md"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "date": "2026-06-14",
+    "title": "Efeseni 5:1-14: imitatori ai lui Dumnezeu, copii ai luminii",
+    "summary": "Textul continuă direct firul din 4:17-32, unde Pavel a descris contrastul „omul vechi\" / „omul nou\". Capitolul 5 începe cu „dar\" (οὖν, inferențial) — concluzia logică a celor spuse anterior despre iertare (4:32): standardul nu mai este omul, ci Dumnezeu Însuși.",
+    "themes": [
+      "învierea",
+      "idolatrie",
+      "Pavel",
+      "predicarea Evangheliei",
+      "Templul"
+    ],
+    "parts": [
+      {
+        "label": "Studiu",
+        "file": "efeseni-05.md"
+      }
+    ]
+  }
+]

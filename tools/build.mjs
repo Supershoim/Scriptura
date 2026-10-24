@@ -5,6 +5,7 @@ import path from 'node:path';
 import zlib from 'node:zlib';
 import crypto from 'node:crypto';
 import { validate } from './validate.mjs';
+import { loadStudies, buildStudies } from './studies.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const app = path.join(root, 'app'), dataDir = path.join(root, 'data'), dist = path.join(root, 'dist');
@@ -28,7 +29,8 @@ const translations = fs.readdirSync(path.join(dataDir, 'translations'), { withFi
   })
   .sort((a, b) => (a.meta.order ?? 99) - (b.meta.order ?? 99));
 
-const problems = validate(books, translations);
+const { studies, problems: studyProblems } = loadStudies(path.join(dataDir, 'studies'), books);
+const problems = [...validate(books, translations), ...studyProblems];
 if (problems.length) {
   console.error(problems.slice(0, 40).join('\n'));
   console.error(`${problems.length} problem(s) in data/. Build stopped.`);
@@ -46,6 +48,12 @@ for (const t of translations) {
   if (t.notes) writeDist(`data/translations/${t.meta.id}/notes.json`, JSON.stringify(t.notes));
 }
 
+const study = buildStudies(studies);
+const STUDY_FILES = ['data/studies/index.json', ...Object.keys(study.files), ...Object.keys(study.shards).map(k => `data/studies/search/${k}.json`)];
+writeDist('data/studies/index.json', JSON.stringify(study.index));
+for (const [rel, html] of Object.entries(study.files)) writeDist(rel, html);
+for (const [k, words] of Object.entries(study.shards)) writeDist(`data/studies/search/${k}.json`, JSON.stringify(words));
+
 // ---------- Hosted app ----------
 
 for (const rel of SHELL) writeDist(rel, fs.readFileSync(path.join(app, rel)));
@@ -53,10 +61,12 @@ for (const rel of SHELL) writeDist(rel, fs.readFileSync(path.join(app, rel)));
 const hash = crypto.createHash('sha256');
 for (const rel of SHELL) hash.update(fs.readFileSync(path.join(dist, rel)));
 for (const t of translations) hash.update(JSON.stringify(t));
+hash.update(JSON.stringify(study));
 const version = hash.digest('hex').slice(0, 12);
 writeDist('sw.js', read(path.join(app, 'sw.js'))
   .replace('__VERSION__', version)
-  .replace('__SHELL__', JSON.stringify(['./', ...SHELL, 'data/books.json', 'data/translations.json'])));
+  .replace('__SHELL__', JSON.stringify(['./', ...SHELL, 'data/books.json', 'data/translations.json']))
+  .replace('__STUDIES__', JSON.stringify(STUDY_FILES)));
 
 // ---------- Single-file build ----------
 
@@ -76,7 +86,7 @@ function bundle() {
   return out;
 }
 
-const payload = zlib.gzipSync(JSON.stringify({ books, translations }), { level: 9 }).toString('base64');
+const payload = zlib.gzipSync(JSON.stringify({ books, translations, studies: study }), { level: 9 }).toString('base64');
 const standalone = read(path.join(app, 'index.html'))
   .replace(/<link rel="manifest"[^>]*>\n/, '')
   .replace(/<link rel="(?:icon|apple-touch-icon)"[^>]*>\n/g, '')
@@ -86,4 +96,4 @@ const standalone = read(path.join(app, 'index.html'))
 writeDist('Scriptura.html', standalone);
 
 const size = rel => (fs.statSync(path.join(dist, rel)).size / 1e6).toFixed(1) + ' MB';
-console.log(`Built dist/ (version ${version}) · ${translations.map(t => t.meta.abbreviation).join(', ')} · Scriptura.html ${size('Scriptura.html')}`);
+console.log(`Built dist/ (version ${version}) · ${translations.map(t => t.meta.abbreviation).join(', ')} · ${studies.length} studies · Scriptura.html ${size('Scriptura.html')}`);

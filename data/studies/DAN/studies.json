@@ -1,0 +1,221 @@
+[
+  {
+    "chapter": 0,
+    "date": "2026-05-16",
+    "title": "Daniel: privire de ansamblu",
+    "summary": "Context general: Cartea Daniel acoperă aproximativ 70 de ani din viața lui Daniel — de la primul val al exilului babilonian (605 î.Hr.), sub Nebucadnețar, până în primii ani ai Imperiului Persan (c. 536–530 î.Hr., Daniel 10:1).",
+    "themes": [
+      "Mesia",
+      "rugăciune",
+      "învierea",
+      "profeți și profeție"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-00.md"
+      }
+    ]
+  },
+  {
+    "chapter": 1,
+    "date": "2026-05-16",
+    "title": "Daniel 1: exilul, reeducarea și testul credincioșiei",
+    "summary": "Cele patru secțiuni ale capitolului Daniel 1: Contextul exilului (vv. 1-2), Reeducarea tinerilor (vv. 3-7), Testul alimentar (vv. 8-16), și Rezultatele divine (vv. 17-21).",
+    "themes": [
+      "exil și restaurare",
+      "Templul"
+    ],
+    "parts": [
+      {
+        "label": "Structura capitolului",
+        "file": "daniel-01.md"
+      },
+      {
+        "label": "Daniel 1:1-2 detaliat",
+        "file": "daniel-01-daniel-1-1-2-detaliat.md"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "date": "2026-05-21",
+    "title": "Daniel 2: visul statuii și cele patru imperii",
+    "summary": "Cele cinci secțiuni ale lui Daniel 2: Criza (vv.1-13), Revelația (vv.14-23), Descrierea visului (vv.24-35), Tâlcuirea (vv.36-45), Reacția (vv.46-49). Primele trei secțiuni sunt narative, ultimele două sunt profetice.",
+    "themes": [
+      "Daniel"
+    ],
+    "parts": [
+      {
+        "label": "Structura capitolului",
+        "file": "daniel-02.md"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "date": "2026-05-22",
+    "title": "Daniel 4: visul copacului și umilirea lui Nebucadnețar",
+    "summary": "Daniel 4 este singurul capitol din Scriptură scris în întregime ca document personal al unui rege păgân. Structura literară este aceea a unui edict regal (vv. 1–3 = adresă și formulă de deschidere; vv. 34–37 = concluzie și doxologie), incluzând narațiunea la persoana I.",
+    "themes": [
+      "suveranitatea lui Dumnezeu",
+      "pocăință",
+      "regalitate și conducere",
+      "judecata lui Dumnezeu"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-04.md"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "date": "2026-05-23",
+    "title": "Daniel 5: ospățul lui Belșațar și scrisul de pe perete",
+    "summary": "Daniel 5 este cel mai dramatic capitol narativ al cărții — și cel mai scurt în timp: evenimentele se petrec în cursul unei singure nopți.",
+    "themes": [
+      "judecata lui Dumnezeu",
+      "Templul",
+      "profeți și profeție"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-05.md"
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "date": "2026-05-23",
+    "title": "Daniel 6: Daniel în groapa cu lei",
+    "summary": "Daniel 6 este simetricul cap. 3 în structura cărții — acolo, trei tineri refuză idolatria și supraviețuiesc cuptorului; aici, un singur om refuză interdicția rugăciunii și supraviețuiește gropii cu lei.",
+    "themes": [
+      "rugăciune",
+      "Legea",
+      "profeți și profeție"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-06.md"
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "date": "2026-05-25",
+    "title": "Daniel 7: cele patru fiare și Fiul Omului",
+    "summary": "Daniel 7 este pivotul structural al întregii cărți — ultimul capitol în aramaică, prima viziune apocaliptică și capitolul care leagă secțiunea narativă (cap. 1–6) de cea profetică (cap. 8–12).",
+    "themes": [
+      "regalitate și conducere",
+      "judecata lui Dumnezeu",
+      "Împărăția lui Dumnezeu",
+      "persecuție",
+      "profeți și profeție"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-07.md"
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "date": "2026-05-28",
+    "title": "Daniel 8: berbecele și țapul",
+    "summary": "Daniel 8 marchează tranziția lingvistică a cărții: de la aramaică (cap. 2–7, adresare universală) înapoi la ebraică (cap. 8–12, adresare specifică poporului lui Dumnezeu). Aceasta nu este un detaliu tehnic — este un semnal hermeneutic.",
+    "themes": [
+      "profeți și profeție"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-08.md"
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "date": "2026-06-04",
+    "title": "Daniel 9: rugăciunea lui Daniel și cele 70 de săptămâni",
+    "summary": "Daniel 9 este cel mai mesianic capitol din Vechiul Testament — și unul dintre cele mai dense teologic din întreaga Scriptură. El conține cea mai importantă rugăciune din cartea Daniel și cea mai precisă profeție mesianică din VT.",
+    "themes": [
+      "rugăciune",
+      "Mesia",
+      "profeți și profeție",
+      "legământ",
+      "ispășire",
+      "justificare prin credință",
+      "Templul"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-09.md"
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "date": "2026-06-05",
+    "title": "Daniel 10: viziunea de lângă Tigru și lupta nevăzută",
+    "summary": "Daniel 10 este introducerea și cheia hermeneutică a blocului final al cărții (cap. 10–12) — o singură viziune care se întinde pe trei capitole.",
+    "themes": [
+      "rugăciune"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-10.md"
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "date": "2026-06-05",
+    "title": "Daniel 11: regii de la miazănoapte și de la miazăzi",
+    "summary": "Daniel 11 este cel mai detaliat capitol profetic din toată Scriptura — și unul dintre cele mai dificile hermeneutic. Conține o secvență de profeții care corespund cu o precizie remarcabilă evenimentelor istorice din perioada 530–164 î.Hr., acoperind succesiunea a peste 20 de regi…",
+    "themes": [
+      "profeți și profeție",
+      "persecuție",
+      "Legea",
+      "legământ",
+      "regalitate și conducere"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-11.md"
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "date": "2026-06-10",
+    "title": "Daniel 12: învierea și vremea sfârșitului",
+    "summary": "Daniel 12 este finalul și coroana întregii cărți — și unul dintre cele mai dense capitole profetice și pastoral-personale din VT. Include: explica v4 si v9; cronologic, care este urmatoarea carte a bibliei? este descrisa moartea lui Daniel si ce s.",
+    "themes": [
+      "învierea",
+      "profeți și profeție",
+      "eshatologie",
+      "justificare prin credință",
+      "Legea",
+      "Templul",
+      "exil și restaurare"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "daniel-12.md"
+      },
+      {
+        "label": "Întrebări punctuale",
+        "file": "daniel-12-intrebari.md"
+      }
+    ]
+  }
+]

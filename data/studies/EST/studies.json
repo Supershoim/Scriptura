@@ -1,0 +1,165 @@
+[
+  {
+    "chapter": 0,
+    "date": "2026-07-24",
+    "title": "Estera: privire de ansamblu",
+    "summary": "De inginer către inginer: înainte de a intra în capitolul 1, câteva date de context care contează pentru toată cartea.",
+    "themes": [
+      "providență",
+      "context istoric-arheologic"
+    ],
+    "parts": [
+      {
+        "label": "Introducere",
+        "file": "estera-00.md"
+      },
+      {
+        "label": "Sinteză finală",
+        "file": "estera-00-sinteza-finala.md"
+      }
+    ]
+  },
+  {
+    "chapter": 1,
+    "date": "2026-07-24",
+    "title": "Estera 1: Ospățul lui Ahașveroș și căderea Vastilor",
+    "summary": "Cartea se deschide cu Ahașveroș (Xerxes I), care domnește peste 127 de provincii, de la India până la Etiopia (Cuș). În anul al treilea al domniei sale (Estera 1:3), el organizează un ospăț monumental de 180 de zile pentru nobilii și demnitarii imperiului, urmat de un banchet de…",
+    "themes": [
+      "providență",
+      "regalitate și conducere"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-01.md"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "date": "2026-07-24",
+    "title": "Estera 2: Estera devine regină",
+    "summary": "După ce mânia lui Ahașveroș se răcește, slujitorii regelui propun o soluție practică: să fie adunate în harem toate fecioarele frumoase din imperiu, pentru ca regele să aleagă o nouă regină dintre ele (2:1-4).",
+    "themes": [
+      "Estera"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-02.md"
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "date": "2026-07-25",
+    "title": "Estera 3: Complotul lui Haman",
+    "summary": "Ahașveroș îl înalță pe Haman, fiul lui Hamedata Agaghitul, deasupra tuturor căpeteniilor imperiului (3:1). Regele poruncește ca toți slujitorii de la poarta palatului să îngenuncheze și să se închine în fața lui Haman. Mardoheu refuză.",
+    "themes": [
+      "context istoric-arheologic",
+      "regalitate și conducere"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-03.md"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "date": "2026-07-25",
+    "title": "Estera 4: Pentru o vreme ca aceasta",
+    "summary": "Vestea decretului de exterminare ajunge la Mardoheu, care reacționează cu jale profundă: își sfâșie hainele, îmbracă sac și cenușă și strigă cu glas mare și amar prin mijlocul cetății (4:1) — ajungând până la poarta palatului (unde nu avea voie să intre îmbrăcat astfel, 4:2).",
+    "themes": [
+      "Estera"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-04.md"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "date": "2026-07-25",
+    "title": "Estera 5: Estera înaintea regelui și spânzurătoarea lui Haman",
+    "summary": "După cele trei zile de post, Estera își pune hainele împărătești și se înfățișează, nechemată, în curtea interioară a palatului (5:1). Regele, văzând-o, îi arată bunăvoință și întinde spre ea sceptrul de aur — gestul care-i salvează viața (5:2).",
+    "themes": [
+      "Estera"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-05.md"
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "date": "2026-07-27",
+    "title": "Estera 6: Noaptea nedormită a regelui",
+    "summary": "În aceeași noapte, regele nu poate dormi (6:1) — un detaliu aparent banal, dar cu greutate providențială covârșitoare. Pentru a-și trece timpul, poruncește să i se aducă cartea cronicilor și să i se citească.",
+    "themes": [
+      "providență",
+      "regalitate și conducere"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-06.md"
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "date": "2026-07-27",
+    "title": "Estera 7: Căderea lui Haman",
+    "summary": "La al doilea ospăț, regele își repetă întrebarea către Estera: care e cererea ei, chiar dacă ar fi jumătate din împărăție (7:1-2).",
+    "themes": [
+      "regalitate și conducere"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-07.md"
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "date": "2026-07-27",
+    "title": "Estera 8: Decretul de apărare a evreilor",
+    "summary": "În aceeași zi, regele îi dă Esterei casa lui Haman, iar Mardoheu, a cărui rudenie cu Estera e acum dezvăluită, primește inelul cu sigiliu al regelui — același inel folosit anterior pentru pecetluirea decretului genocidar (8:1-2).",
+    "themes": [
+      "regalitate și conducere"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-08.md"
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "covers": [
+      9,
+      10
+    ],
+    "date": "2026-07-27",
+    "title": "Estera 9–10: Biruința evreilor, Purim și încheierea cărții",
+    "summary": "Ziua stabilită de sorțul lui Haman — 13 Adar — sosește, dar cu roluri complet inversate: în loc ca vrăjmașii să-i biruie pe evrei, evreii îi biruie pe vrăjmașii lor (9:1).",
+    "themes": [
+      "minuni și semne",
+      "providență"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "estera-09.md"
+      }
+    ]
+  }
+]

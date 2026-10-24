@@ -1,0 +1,112 @@
+[
+  {
+    "chapter": 0,
+    "date": "2026-10-13",
+    "title": "Romani: privire de ansamblu",
+    "summary": "Autor, dată și loc (Corint, 56–57 d.Hr.), biserica din Roma, scopul și tema (1:16-17), structura în 7 blocuri, dispute majore și planul pe capitole.",
+    "themes": [
+      "context istoric",
+      "structura cărții",
+      "justificare prin credință",
+      "perspectiva nouă asupra lui Pavel",
+      "alegere și predestinare",
+      "Israel",
+      "autoritatea statului",
+      "traduceri VDC/EDCR/NTR",
+      "istoria receptării"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "romani-00.md"
+      }
+    ]
+  },
+  {
+    "chapter": 1,
+    "date": "2026-10-14",
+    "title": "Romani 1: neprihănirea față în față cu mânia",
+    "summary": "Salutarea și hristologia (1:3-4), teza Evangheliei (1:16-17), mânia lui Dumnezeu, revelația generală, idolatria și triplul „i-a lăsat” (1:18-32).",
+    "themes": [
+      "Evanghelia",
+      "neprihănirea lui Dumnezeu",
+      "credință",
+      "hristologie",
+      "mânia lui Dumnezeu",
+      "revelație generală",
+      "idolatrie",
+      "judecată",
+      "etică sexuală",
+      "apologetică",
+      "evanghelizare"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "romani-01.md"
+      },
+      {
+        "label": "Pe înțelesul tuturor",
+        "file": "romani-01b.md"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "date": "2026-10-17",
+    "title": "Romani 2: judecătorul religios fără scuză",
+    "summary": "Moralistul care judecă (2:1-5), judecata după fapte (2:6-13), legea scrisă în inimă și conștiința (2:14-16), iudeul, Legea și circumcizia inimii (2:17-29). Include întrebarea: cine este Judecătorul?",
+    "themes": [
+      "judecată",
+      "judecată după fapte",
+      "justificare prin credință",
+      "moralism și ipocrizie",
+      "pocăință",
+      "lege naturală",
+      "conștiință",
+      "circumcizia inimii",
+      "Hristos Judecătorul"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "romani-02.md"
+      },
+      {
+        "label": "Întrebări punctuale",
+        "file": "romani-02-intrebari.md"
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "date": "2026-10-22",
+    "title": "Romani 3: închide gurile și deschide harul",
+    "summary": "Obiecțiile (3:1-8), verdictul universal „nu este niciun om neprihănit” (3:9-20), „Dar acum”: neprihănirea lui Dumnezeu prin credință și jertfa de ispășire (3:21-26), lauda exclusă și Legea întărită (3:27-31).",
+    "themes": [
+      "justificare prin credință",
+      "păcatul universal",
+      "depravare totală",
+      "ispășire și propitiere",
+      "harul lui Dumnezeu",
+      "credincioșia lui Dumnezeu",
+      "Legea",
+      "sola fide",
+      "perspectiva nouă asupra lui Pavel"
+    ],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "romani-03.md"
+      },
+      {
+        "label": "Pasaj 3:21-31",
+        "file": "romani-03-pasaj-3-21-31.md"
+      },
+      {
+        "label": "Mini-poveste",
+        "file": "romani-03-mini-poveste.md"
+      }
+    ]
+  }
+]

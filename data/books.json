@@ -2,6 +2,7 @@
   {
     "id": "GEN",
     "name": "Geneza",
+    "abbr": "Gen",
     "chapters": 50,
     "testament": "ot",
     "aliases": [
@@ -14,6 +15,7 @@
   {
     "id": "EXO",
     "name": "Exodul",
+    "abbr": "Ex",
     "chapters": 40,
     "testament": "ot",
     "aliases": [
@@ -26,6 +28,7 @@
   {
     "id": "LEV",
     "name": "Leviticul",
+    "abbr": "Lev",
     "chapters": 27,
     "testament": "ot",
     "aliases": [
@@ -37,6 +40,7 @@
   {
     "id": "NUM",
     "name": "Numeri",
+    "abbr": "Num",
     "chapters": 36,
     "testament": "ot",
     "aliases": [
@@ -48,6 +52,7 @@
   {
     "id": "DEU",
     "name": "Deuteronomul",
+    "abbr": "Deut",
     "chapters": 34,
     "testament": "ot",
     "aliases": [
@@ -60,6 +65,7 @@
   {
     "id": "JOS",
     "name": "Iosua",
+    "abbr": "Ios",
     "chapters": 24,
     "testament": "ot",
     "aliases": [
@@ -70,6 +76,7 @@
   {
     "id": "JDG",
     "name": "Judecători",
+    "abbr": "Jud",
     "chapters": 21,
     "testament": "ot",
     "aliases": [
@@ -82,6 +89,7 @@
   {
     "id": "RUT",
     "name": "Rut",
+    "abbr": "Rut",
     "chapters": 4,
     "testament": "ot",
     "aliases": [
@@ -91,6 +99,7 @@
   {
     "id": "1SA",
     "name": "1 Samuel",
+    "abbr": "1 Sam",
     "chapters": 31,
     "testament": "ot",
     "aliases": [
@@ -102,6 +111,7 @@
   {
     "id": "2SA",
     "name": "2 Samuel",
+    "abbr": "2 Sam",
     "chapters": 24,
     "testament": "ot",
     "aliases": [
@@ -113,6 +123,7 @@
   {
     "id": "1KI",
     "name": "1 Împărați",
+    "abbr": "1 Împ",
     "chapters": 22,
     "testament": "ot",
     "aliases": [
@@ -124,6 +135,7 @@
   {
     "id": "2KI",
     "name": "2 Împărați",
+    "abbr": "2 Împ",
     "chapters": 25,
     "testament": "ot",
     "aliases": [
@@ -135,6 +147,7 @@
   {
     "id": "1CH",
     "name": "1 Cronici",
+    "abbr": "1 Cron",
     "chapters": 29,
     "testament": "ot",
     "aliases": [
@@ -146,6 +159,7 @@
   {
     "id": "2CH",
     "name": "2 Cronici",
+    "abbr": "2 Cron",
     "chapters": 36,
     "testament": "ot",
     "aliases": [
@@ -157,6 +171,7 @@
   {
     "id": "EZR",
     "name": "Ezra",
+    "abbr": "Ezra",
     "chapters": 10,
     "testament": "ot",
     "aliases": [
@@ -166,6 +181,7 @@
   {
     "id": "NEH",
     "name": "Neemia",
+    "abbr": "Neem",
     "chapters": 13,
     "testament": "ot",
     "aliases": [
@@ -176,6 +192,7 @@
   {
     "id": "EST",
     "name": "Estera",
+    "abbr": "Est",
     "chapters": 10,
     "testament": "ot",
     "aliases": [
@@ -186,6 +203,7 @@
   {
     "id": "JOB",
     "name": "Iov",
+    "abbr": "Iov",
     "chapters": 42,
     "testament": "ot",
     "aliases": [
@@ -195,6 +213,7 @@
   {
     "id": "PSA",
     "name": "Psalmi",
+    "abbr": "Ps",
     "chapters": 150,
     "testament": "ot",
     "aliases": [
@@ -208,6 +227,7 @@
   {
     "id": "PRO",
     "name": "Proverbe",
+    "abbr": "Prov",
     "chapters": 31,
     "testament": "ot",
     "aliases": [
@@ -220,6 +240,7 @@
   {
     "id": "ECC",
     "name": "Eclesiastul",
+    "abbr": "Ecl",
     "chapters": 12,
     "testament": "ot",
     "aliases": [
@@ -230,6 +251,7 @@
   {
     "id": "SNG",
     "name": "Cântarea cântărilor",
+    "abbr": "Cânt",
     "chapters": 8,
     "testament": "ot",
     "aliases": [
@@ -241,6 +263,7 @@
   {
     "id": "ISA",
     "name": "Isaia",
+    "abbr": "Is",
     "chapters": 66,
     "testament": "ot",
     "aliases": [
@@ -251,6 +274,7 @@
   {
     "id": "JER",
     "name": "Ieremia",
+    "abbr": "Ier",
     "chapters": 52,
     "testament": "ot",
     "aliases": [
@@ -261,6 +285,7 @@
   {
     "id": "LAM",
     "name": "Plângerile lui Ieremia",
+    "abbr": "Plâng",
     "chapters": 5,
     "testament": "ot",
     "aliases": [
@@ -273,6 +298,7 @@
   {
     "id": "EZK",
     "name": "Ezechiel",
+    "abbr": "Ezec",
     "chapters": 48,
     "testament": "ot",
     "aliases": [
@@ -283,6 +309,7 @@
   {
     "id": "DAN",
     "name": "Daniel",
+    "abbr": "Dan",
     "chapters": 12,
     "testament": "ot",
     "aliases": [
@@ -293,6 +320,7 @@
   {
     "id": "HOS",
     "name": "Osea",
+    "abbr": "Osea",
     "chapters": 14,
     "testament": "ot",
     "aliases": [
@@ -303,6 +331,7 @@
   {
     "id": "JOL",
     "name": "Ioel",
+    "abbr": "Ioel",
     "chapters": 3,
     "testament": "ot",
     "aliases": [
@@ -312,6 +341,7 @@
   {
     "id": "AMO",
     "name": "Amos",
+    "abbr": "Amos",
     "chapters": 9,
     "testament": "ot",
     "aliases": [
@@ -321,6 +351,7 @@
   {
     "id": "OBA",
     "name": "Obadia",
+    "abbr": "Obad",
     "chapters": 1,
     "testament": "ot",
     "aliases": [
@@ -332,6 +363,7 @@
   {
     "id": "JON",
     "name": "Iona",
+    "abbr": "Iona",
     "chapters": 4,
     "testament": "ot",
     "aliases": [
@@ -341,6 +373,7 @@
   {
     "id": "MIC",
     "name": "Mica",
+    "abbr": "Mica",
     "chapters": 7,
     "testament": "ot",
     "aliases": [
@@ -351,6 +384,7 @@
   {
     "id": "NAM",
     "name": "Naum",
+    "abbr": "Naum",
     "chapters": 3,
     "testament": "ot",
     "aliases": [
@@ -360,6 +394,7 @@
   {
     "id": "HAB",
     "name": "Habacuc",
+    "abbr": "Hab",
     "chapters": 3,
     "testament": "ot",
     "aliases": [
@@ -370,6 +405,7 @@
   {
     "id": "ZEP",
     "name": "Țefania",
+    "abbr": "Țef",
     "chapters": 3,
     "testament": "ot",
     "aliases": [
@@ -380,6 +416,7 @@
   {
     "id": "HAG",
     "name": "Hagai",
+    "abbr": "Hag",
     "chapters": 2,
     "testament": "ot",
     "aliases": [
@@ -390,6 +427,7 @@
   {
     "id": "ZEC",
     "name": "Zaharia",
+    "abbr": "Zah",
     "chapters": 14,
     "testament": "ot",
     "aliases": [
@@ -400,6 +438,7 @@
   {
     "id": "MAL",
     "name": "Maleahi",
+    "abbr": "Mal",
     "chapters": 4,
     "testament": "ot",
     "aliases": [
@@ -410,6 +449,7 @@
   {
     "id": "MAT",
     "name": "Matei",
+    "abbr": "Mat",
     "chapters": 28,
     "testament": "nt",
     "aliases": [
@@ -421,6 +461,7 @@
   {
     "id": "MRK",
     "name": "Marcu",
+    "abbr": "Marcu",
     "chapters": 16,
     "testament": "nt",
     "aliases": [
@@ -432,6 +473,7 @@
   {
     "id": "LUK",
     "name": "Luca",
+    "abbr": "Luca",
     "chapters": 24,
     "testament": "nt",
     "aliases": [
@@ -442,6 +484,7 @@
   {
     "id": "JHN",
     "name": "Ioan",
+    "abbr": "Ioan",
     "chapters": 21,
     "testament": "nt",
     "aliases": [
@@ -452,6 +495,7 @@
   {
     "id": "ACT",
     "name": "Faptele Apostolilor",
+    "abbr": "Fapte",
     "chapters": 28,
     "testament": "nt",
     "aliases": [
@@ -464,6 +508,7 @@
   {
     "id": "ROM",
     "name": "Romani",
+    "abbr": "Rom",
     "chapters": 16,
     "testament": "nt",
     "aliases": [
@@ -474,6 +519,7 @@
   {
     "id": "1CO",
     "name": "1 Corinteni",
+    "abbr": "1 Cor",
     "chapters": 16,
     "testament": "nt",
     "aliases": [
@@ -485,6 +531,7 @@
   {
     "id": "2CO",
     "name": "2 Corinteni",
+    "abbr": "2 Cor",
     "chapters": 13,
     "testament": "nt",
     "aliases": [
@@ -496,6 +543,7 @@
   {
     "id": "GAL",
     "name": "Galateni",
+    "abbr": "Gal",
     "chapters": 6,
     "testament": "nt",
     "aliases": [
@@ -506,6 +554,7 @@
   {
     "id": "EPH",
     "name": "Efeseni",
+    "abbr": "Ef",
     "chapters": 6,
     "testament": "nt",
     "aliases": [
@@ -517,6 +566,7 @@
   {
     "id": "PHP",
     "name": "Filipeni",
+    "abbr": "Filip",
     "chapters": 4,
     "testament": "nt",
     "aliases": [
@@ -529,6 +579,7 @@
   {
     "id": "COL",
     "name": "Coloseni",
+    "abbr": "Col",
     "chapters": 4,
     "testament": "nt",
     "aliases": [
@@ -539,6 +590,7 @@
   {
     "id": "1TH",
     "name": "1 Tesaloniceni",
+    "abbr": "1 Tes",
     "chapters": 5,
     "testament": "nt",
     "aliases": [
@@ -549,6 +601,7 @@
   {
     "id": "2TH",
     "name": "2 Tesaloniceni",
+    "abbr": "2 Tes",
     "chapters": 3,
     "testament": "nt",
     "aliases": [
@@ -559,6 +612,7 @@
   {
     "id": "1TI",
     "name": "1 Timotei",
+    "abbr": "1 Tim",
     "chapters": 6,
     "testament": "nt",
     "aliases": [
@@ -570,6 +624,7 @@
   {
     "id": "2TI",
     "name": "2 Timotei",
+    "abbr": "2 Tim",
     "chapters": 4,
     "testament": "nt",
     "aliases": [
@@ -580,6 +635,7 @@
   {
     "id": "TIT",
     "name": "Tit",
+    "abbr": "Tit",
     "chapters": 3,
     "testament": "nt",
     "aliases": [
@@ -590,6 +646,7 @@
   {
     "id": "PHM",
     "name": "Filimon",
+    "abbr": "Filim",
     "chapters": 1,
     "testament": "nt",
     "aliases": [
@@ -601,6 +658,7 @@
   {
     "id": "HEB",
     "name": "Evrei",
+    "abbr": "Evr",
     "chapters": 13,
     "testament": "nt",
     "aliases": [
@@ -611,6 +669,7 @@
   {
     "id": "JAS",
     "name": "Iacov",
+    "abbr": "Iac",
     "chapters": 5,
     "testament": "nt",
     "aliases": [
@@ -621,6 +680,7 @@
   {
     "id": "1PE",
     "name": "1 Petru",
+    "abbr": "1 Pet",
     "chapters": 5,
     "testament": "nt",
     "aliases": [
@@ -631,6 +691,7 @@
   {
     "id": "2PE",
     "name": "2 Petru",
+    "abbr": "2 Pet",
     "chapters": 3,
     "testament": "nt",
     "aliases": [
@@ -641,6 +702,7 @@
   {
     "id": "1JN",
     "name": "1 Ioan",
+    "abbr": "1 Ioan",
     "chapters": 5,
     "testament": "nt",
     "aliases": [
@@ -651,6 +713,7 @@
   {
     "id": "2JN",
     "name": "2 Ioan",
+    "abbr": "2 Ioan",
     "chapters": 1,
     "testament": "nt",
     "aliases": [
@@ -661,6 +724,7 @@
   {
     "id": "3JN",
     "name": "3 Ioan",
+    "abbr": "3 Ioan",
     "chapters": 1,
     "testament": "nt",
     "aliases": [
@@ -671,6 +735,7 @@
   {
     "id": "JUD",
     "name": "Iuda",
+    "abbr": "Iuda",
     "chapters": 1,
     "testament": "nt",
     "aliases": [
@@ -680,6 +745,7 @@
   {
     "id": "REV",
     "name": "Apocalipsa",
+    "abbr": "Apoc",
     "chapters": 22,
     "testament": "nt",
     "aliases": [
