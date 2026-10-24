@@ -1,0 +1,58 @@
+{
+  "source": "c9ead9095f6f",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Cântărit și găsit ușor", "text": "Belșațar știa ce i se întâmplase lui Nebucadnețar și totuși L-a sfidat pe Dumnezeul în mâna căruia îi era suflarea. Judecata vine în aceeași noapte.", "refs": ["DAN 5:22", "DAN 5:23", "DAN 5:27"] },
+        "parts": [
+          { "id": "a", "t": "Banchetul sacrileg", "refs": ["DAN 5:1-4"], "text": "Vasele templului din Ierusalim, folosite la ospăț în cinstea idolilor." },
+          { "id": "b", "t": "Scrisul de pe perete", "refs": ["DAN 5:5-9"], "text": "Degetele unei mâini scriu; înțelepții Babilonului nu pot citi." },
+          { "id": "c", "t": "Împărăteasa", "refs": ["DAN 5:10-16"], "text": "Împărăteasa îl amintește pe Daniel; împăratul îi promite daruri." },
+          { "id": "d", "t": "Tâlcuirea", "refs": ["DAN 5:17-28"], "text": "Daniel refuză darurile, amintește smerirea lui Nebucadnețar și citește scrierea: numărat, numărat, cântărit și împărțit." },
+          { "id": "e", "t": "Judecata", "refs": ["DAN 5:29-31"], "text": "Daniel, al treilea în împărăție; Belșațar omorât; Dariu Medul ia împărăția." }
+        ],
+        "flow": [["a", "b", "sfidarea"], ["b", "c", "neputința înțelepților"], ["c", "d", "Daniel chemat"], ["d", "e", "împlinirea în aceeași noapte"]],
+        "book": [
+          { "ch": 4, "from": "d", "t": "Smerirea lui Nebucadnețar", "why": "Daniel îi amintește lui Belșațar ce a pățit Nebucadnețar pentru mândria lui.", "refs": ["DAN 5:20", "DAN 5:21"] },
+          { "ch": 1, "from": "a", "t": "Vasele templului", "why": "Vasele duse în Babilon în 1:2 ajung pe masa ospățului.", "refs": ["DAN 1:2", "DAN 5:2"] },
+          { "ch": 7, "from": "e", "t": "Primul an al lui Belșațar", "why": "Viziunea fiarelor fusese dată în anul întâi al lui Belșațar.", "refs": ["DAN 7:1"] }
+        ],
+        "bible": [
+          { "ref": "ROM 1:21", "from": "d", "t": "Romani 1:21", "why": "Au cunoscut pe Dumnezeu și nu L-au proslăvit: vinovăția celui care știa." },
+          { "ref": "LUK 12:20", "from": "e", "t": "Luca 12:20", "why": "Chiar în noaptea aceasta: judecata neașteptată." },
+          { "ref": "HEB 4:13", "from": "d", "t": "Evrei 4:13", "why": "Totul este gol și descoperit înaintea Lui: omul cântărit." },
+          { "ref": "EZR 1:7", "from": "a", "t": "Ezra 1:7", "why": "Cir dă înapoi uneltele Casei Domnului, deci vasele nu fuseseră distruse." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["belsatar", "daniel", "imparateasa", "nebucadnetar", "nabonid", "dariu-medul", "babilon", "tayma"],
+        "links": [
+          ["imparateasa", "daniel", "îl recomandă", "DAN 5:11"],
+          ["belsatar", "daniel", "îi oferă locul al treilea", "DAN 5:29"],
+          ["belsatar", "nebucadnetar", "numit „tatăl tău”", "DAN 5:11"],
+          ["belsatar", "nabonid", "fiu și coregent"],
+          ["nabonid", "tayma", "ani la rând departe de Babilon"],
+          ["belsatar", "babilon", "omorât în noaptea căderii", "DAN 5:30"],
+          ["dariu-medul", "babilon", "ia împărăția", "DAN 5:31"]
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "title": "Babilonul în 539 î.Hr.",
+      "note": "Nabonid la Tayma, Belșațar în Babilon; mezii și perșii la răsărit.",
+      "data": { "places": ["babilon", "tayma", "media", "persia", "susa", "ierusalim"], "routes": [] }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["cilindrul-nabonid", "cronica-nabonid", "cilindrul-cirus"] }
+    }
+  ]
+}

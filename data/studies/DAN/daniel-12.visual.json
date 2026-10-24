@@ -1,0 +1,42 @@
+{
+  "source": "74972e33b01f",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Învierea și răsplata celor credincioși", "text": "Necazul cel mare are o durată hotărâtă; cei scriși în carte vor fi mântuiți. Mulți din cei ce dorm se vor scula, iar Daniel însuși primește promisiunea că se va scula la sfârșitul zilelor.", "refs": ["DAN 12:1", "DAN 12:2", "DAN 12:13"] },
+        "parts": [
+          { "id": "a", "t": "Necazul și învierea", "refs": ["DAN 12:1-3"], "text": "Mihail se scoală; cei scriși în carte; unii spre viață veșnică, alții spre rușine; cei înțelepți strălucesc." },
+          { "id": "b", "t": "Cartea pecetluită", "refs": ["DAN 12:4"], "text": "Ascunde cuvintele până la vremea sfârșitului." },
+          { "id": "c", "t": "Până când?", "refs": ["DAN 12:5-7"], "text": "Jurământul pe Cel veșnic viu: o vreme, două vremi și o jumătate de vreme." },
+          { "id": "d", "t": "Cele două cifre", "refs": ["DAN 12:8-12"], "text": "1.290 de zile; ferice de cel ce va ajunge la 1.335 de zile." },
+          { "id": "e", "t": "Cuvântul pentru Daniel", "refs": ["DAN 12:13"], "text": "Tu te vei odihni și te vei scula iarăși la sfârșitul zilelor." }
+        ],
+        "flow": [["a", "b", "păstrează viziunea"], ["b", "c", "întrebarea"], ["c", "d", "durata"], ["d", "e", "promisiunea"]],
+        "book": [
+          { "ch": 7, "from": "c", "t": "Vreme, vremi și jumătate", "why": "Aceeași durată a asupririi sfinților ca în 7:25.", "refs": ["DAN 7:25"] },
+          { "ch": 10, "from": "a", "t": "Mihail", "why": "Mihail din lupta nevăzută a cap. 10.", "refs": ["DAN 10:21"] },
+          { "ch": 11, "from": "a", "t": "Cei înțelepți", "why": "Cei înțelepți care au învățat pe mulți și au suferit în cap. 11.", "refs": ["DAN 11:33"] }
+        ],
+        "bible": [
+          { "ref": "JHN 5:28", "from": "a", "t": "Ioan 5:28–29", "why": "Toți cei din morminte vor ieși: pentru viață sau pentru judecată." },
+          { "ref": "MAT 13:43", "from": "a", "t": "Matei 13:43", "why": "Cei neprihăniți vor străluci ca soarele." },
+          { "ref": "REV 22:10", "from": "b", "t": "Apocalipsa 22:10", "why": "Să nu pecetluiești cuvintele prorociei: vremea este aproape." },
+          { "ref": "REV 12:14", "from": "c", "t": "Apocalipsa 12:14", "why": "O vreme, vremi și jumătatea unei vremi." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje",
+      "data": {
+        "nodes": ["daniel", "mihail", "cei-intelepti"],
+        "links": [
+          ["mihail", "daniel", "ocrotitorul poporului lui", "DAN 12:1"],
+          ["cei-intelepti", "daniel", "vor străluci", "DAN 12:3"]
+        ]
+      }
+    }
+  ]
+}

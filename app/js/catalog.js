@@ -14,11 +14,17 @@ export const study = id => byId.get(id);
 export const forChapter = (b, c) => studies.filter(s => s.b === b && hasChapter(s, c));
 export const totalChapters = () => books.reduce((n, b) => n + b.chapters, 0);
 export const studiedChapters = b => new Set(studies.filter(s => s.b === b).flatMap(chapters));
+let bookVisuals = {};
+// The visual of a whole book ({ path, src, stale }), or null.
+export const bookVisual = b => bookVisuals[b]?.visual || null;
+// The visual shown on a study: its own, or for a book overview (chapter 0) the book's.
+export const visualOf = s => s.visual || (s.c === 0 ? bookVisual(s.b) : null);
 
 export async function load() {
   if (studies.length) return;
   const index = embeddedStudies()?.index || await fetchJson('data/studies/index.json');
-  index.forEach((s, n) => {
+  bookVisuals = index.books || {};
+  index.studies.forEach((s, n) => {
     const entry = { ...s, n, head: norm(`${s.title} ${s.summary} ${s.themes.join(' ')}`) };
     studies.push(entry);
     byId.set(s.id, entry);
@@ -36,6 +42,10 @@ export function text(path) {
   }
   return texts.get(path);
 }
+
+export const json = async path => JSON.parse(await text(path));
+// An image: its data: URL inside the offline file, otherwise its address.
+export const imageUrl = path => embeddedStudies()?.files[path] || path;
 
 // ---------- Search ----------
 

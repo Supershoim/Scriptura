@@ -1,0 +1,46 @@
+{
+  "source": "00971f8eb3e0",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Cel Preaînalt stăpânește peste împărăția oamenilor", "text": "Mândria regală este judecată, dar judecata are un scop restaurator: împăratul este smerit până recunoaște cine stăpânește cu adevărat.", "refs": ["DAN 4:17", "DAN 4:32", "DAN 4:37"] },
+        "parts": [
+          { "id": "a", "t": "Prologul", "refs": ["DAN 4:1-3"], "text": "Împăratul vestește tuturor popoarelor ce a făcut Dumnezeu." },
+          { "id": "b", "t": "Visul copacului", "refs": ["DAN 4:4-18"], "text": "Copacul uriaș tăiat din hotărârea străjerilor; șapte vremi." },
+          { "id": "c", "t": "Tâlcuirea și sfatul", "refs": ["DAN 4:19-27"], "text": "Copacul ești tu; sfatul: pune capăt păcatelor și trăiește în neprihănire." },
+          { "id": "d", "t": "Judecata", "refs": ["DAN 4:28-33"], "text": "Lauda de sine pe acoperișul palatului; glasul din cer; nebunia." },
+          { "id": "e", "t": "Restaurarea", "refs": ["DAN 4:34-37"], "text": "Ochii ridicați spre cer, mintea înapoi, lauda Împăratului cerurilor." }
+        ],
+        "flow": [["a", "b", "mărturia"], ["b", "c", "tâlcuirea"], ["c", "d", "sfat nesocotit"], ["d", "e", "smerire"]],
+        "book": [
+          { "ch": 5, "from": "d", "t": "Belșațar", "why": "Belșațar știa ce i se întâmplase lui Nebucadnețar și nu și-a smerit inima.", "refs": ["DAN 5:20", "DAN 5:22"] },
+          { "ch": 2, "from": "b", "t": "Visul statuii", "why": "Primul vis al împăratului, tâlcuit tot de Daniel.", "refs": ["DAN 2:28"] }
+        ],
+        "bible": [
+          { "ref": "JAS 4:6", "from": "d", "t": "Iacov 4:6", "why": "Dumnezeu stă împotriva celor mândri, dar dă har celor smeriți." },
+          { "ref": "LUK 1:52", "from": "e", "t": "Luca 1:52", "why": "Cei puternici sunt răsturnați, cei smeriți înălțați." },
+          { "ref": "HEB 12:6", "from": "e", "t": "Evrei 12:6", "why": "Judecata ca disciplină care restaurează." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["nebucadnetar", "daniel", "babilon"],
+        "links": [
+          ["nebucadnetar", "daniel", "îi spune visul", "DAN 4:8"],
+          ["daniel", "nebucadnetar", "îl cheamă la pocăință", "DAN 4:27"],
+          ["nebucadnetar", "babilon", "Babilonul cel mare", "DAN 4:30"]
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["inscriptia-nebucadnetar", "poarta-istar"] }
+    }
+  ]
+}

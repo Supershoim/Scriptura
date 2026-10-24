@@ -35,7 +35,8 @@
         "label": "Daniel 1:1-2 detaliat",
         "file": "daniel-01-daniel-1-1-2-detaliat.md"
       }
-    ]
+    ],
+    "visual": "daniel-01.visual.json"
   },
   {
     "chapter": 2,
@@ -50,7 +51,8 @@
         "label": "Structura capitolului",
         "file": "daniel-02.md"
       }
-    ]
+    ],
+    "visual": "daniel-02.visual.json"
   },
   {
     "chapter": 4,
@@ -68,7 +70,8 @@
         "label": "Studiu complet",
         "file": "daniel-04.md"
       }
-    ]
+    ],
+    "visual": "daniel-04.visual.json"
   },
   {
     "chapter": 5,
@@ -85,7 +88,8 @@
         "label": "Studiu complet",
         "file": "daniel-05.md"
       }
-    ]
+    ],
+    "visual": "daniel-05.visual.json"
   },
   {
     "chapter": 6,
@@ -102,7 +106,8 @@
         "label": "Studiu complet",
         "file": "daniel-06.md"
       }
-    ]
+    ],
+    "visual": "daniel-06.visual.json"
   },
   {
     "chapter": 7,
@@ -121,7 +126,8 @@
         "label": "Studiu complet",
         "file": "daniel-07.md"
       }
-    ]
+    ],
+    "visual": "daniel-07.visual.json"
   },
   {
     "chapter": 8,
@@ -136,7 +142,8 @@
         "label": "Studiu complet",
         "file": "daniel-08.md"
       }
-    ]
+    ],
+    "visual": "daniel-08.visual.json"
   },
   {
     "chapter": 9,
@@ -157,7 +164,8 @@
         "label": "Studiu complet",
         "file": "daniel-09.md"
       }
-    ]
+    ],
+    "visual": "daniel-09.visual.json"
   },
   {
     "chapter": 10,
@@ -172,7 +180,8 @@
         "label": "Studiu complet",
         "file": "daniel-10.md"
       }
-    ]
+    ],
+    "visual": "daniel-10.visual.json"
   },
   {
     "chapter": 11,
@@ -191,7 +200,8 @@
         "label": "Studiu complet",
         "file": "daniel-11.md"
       }
-    ]
+    ],
+    "visual": "daniel-11.visual.json"
   },
   {
     "chapter": 12,
@@ -216,6 +226,7 @@
         "label": "Întrebări punctuale",
         "file": "daniel-12-intrebari.md"
       }
-    ]
+    ],
+    "visual": "daniel-12.visual.json"
   }
 ]

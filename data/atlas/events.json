@@ -1,0 +1,128 @@
+{
+  "carchemis": {
+    "name": "Bătălia de la Carchemiș", "year": -605, "date": "605 î.Hr.", "certain": true,
+    "about": "Nebucadnețar, încă prinț moștenitor, învinge armata egipteană pe Eufrat. Babilonul devine stăpânul Siriei și al lui Iuda.",
+    "refs": ["JER 46:2"], "places": ["carchemis"], "people": ["nebucadnetar"],
+    "source": { "t": "Cronica babiloniană ABC 5, anul 21 al lui Nabopolasar", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-5-jerusalem-chronicle/" }
+  },
+  "nebucadnetar-rege": {
+    "name": "Nebucadnețar urcă pe tron", "year": -605, "date": "7 septembrie 605 î.Hr.", "certain": true,
+    "about": "După moartea lui Nabopolasar, Nebucadnețar se așază pe tronul Babilonului la 1 Ululu.",
+    "refs": ["DAN 2:1"], "places": ["babilon"], "people": ["nebucadnetar"],
+    "source": { "t": "Cronica babiloniană ABC 5", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-5-jerusalem-chronicle/" }
+  },
+  "deportarea-daniel": {
+    "name": "Daniel dus în Babilon", "year": -605, "date": "c. 605 î.Hr.", "certain": false,
+    "about": "„În al treilea an al domniei lui Ioiachim” Nebucadnețar vine împotriva Ierusalimului și ia vase din templu și tineri de neam ales, între ei Daniel.",
+    "refs": ["DAN 1:1", "DAN 1:2", "DAN 1:6"], "places": ["ierusalim", "babilon"], "people": ["daniel", "nebucadnetar", "ioiachim"],
+    "source": { "t": "Daniel 1:1 corelat cu Cronica babiloniană ABC 5; data exactă a deportării nu este consemnată" }
+  },
+  "visul-statuii": {
+    "name": "Visul statuii", "year": -603, "date": "c. 603 î.Hr.", "certain": false,
+    "about": "„În al doilea an al domniei lui Nebucadnețar” Daniel tâlcuiește visul celor patru împărății.",
+    "refs": ["DAN 2:1"], "places": ["babilon"], "people": ["daniel", "nebucadnetar"],
+    "source": { "t": "Daniel 2:1; anii de domnie după ABC 5" }
+  },
+  "ierusalim-597": {
+    "name": "Ierusalimul cucerit", "year": -597, "date": "2 Adar 597 î.Hr.", "certain": true,
+    "about": "Nebucadnețar ia cetatea, prinde pe împăratul ei și pune altul în locul lui. Al doilea val al exilului.",
+    "refs": ["2KI 24:10", "2KI 24:12"], "places": ["ierusalim"], "people": ["nebucadnetar"],
+    "source": { "t": "Cronica babiloniană ABC 5, anul 7", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-5-jerusalem-chronicle/" }
+  },
+  "templul-ars": {
+    "name": "Templul ars", "year": -586, "date": "c. 587/586 î.Hr.", "certain": false,
+    "about": "Ierusalimul și templul sunt distruse. Anul exact (587 sau 586) este dezbătut.",
+    "refs": ["2KI 25:8", "2KI 25:9"], "places": ["ierusalim"], "people": ["nebucadnetar"],
+    "source": { "t": "2 Împărați 25:8 corelat cu anii de domnie ai lui Nebucadnețar" }
+  },
+  "belsatar-regent": {
+    "name": "Belșațar conduce în Babilon", "year": -553, "end": -543, "date": "c. 553–543 î.Hr.", "certain": false,
+    "about": "Nabonid stă ani la rând la Tayma, iar prințul moștenitor rămâne în Babilonia. De aici „anul întâi al lui Belșațar” (7:1).",
+    "refs": ["DAN 7:1", "DAN 8:1"], "places": ["babilon", "tayma"], "people": ["belsatar", "nabonid"],
+    "source": { "t": "Cronica lui Nabonid (ABC 7); anii exacți ai coregenței sunt aproximativi", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-7-nabonidus-chronicle/" }
+  },
+  "viziunea-fiarelor": {
+    "name": "Viziunea celor patru fiare", "year": -553, "date": "c. 553 î.Hr.", "certain": false,
+    "about": "Prima viziune a lui Daniel: patru fiare, Cel Îmbătrânit de zile și Fiul omului.",
+    "refs": ["DAN 7:1"], "places": ["babilon"], "people": ["daniel", "belsatar"],
+    "source": { "t": "Daniel 7:1 („anul întâi al lui Belșațar”)" }
+  },
+  "viziunea-berbecului": {
+    "name": "Viziunea berbecului și a țapului", "year": -551, "date": "c. 551 î.Hr.", "certain": false,
+    "about": "Daniel se vede la Susa, lângă râul Ulai. Gavril numește împărățiile: mezii și perșii, apoi Grecia.",
+    "refs": ["DAN 8:1", "DAN 8:2"], "places": ["susa", "ulai"], "people": ["daniel", "gavril"],
+    "source": { "t": "Daniel 8:1 („anul al treilea al domniei împăratului Belșațar”)" }
+  },
+  "caderea-babilonului": {
+    "name": "Căderea Babilonului", "year": -539, "date": "539 î.Hr.", "certain": true,
+    "about": "Ugbaru și armata lui Cir intră în Babilon fără luptă. „Chiar în noaptea aceea, Belșațar, împăratul haldeilor, a fost omorât” (5:30).",
+    "refs": ["DAN 5:30", "DAN 5:31"], "places": ["babilon"], "people": ["belsatar", "cir", "dariu-medul"],
+    "source": { "t": "Cronica lui Nabonid ABC 7, anul 17", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-7-nabonidus-chronicle/" }
+  },
+  "rugaciunea-70": {
+    "name": "Rugăciunea și cele 70 de săptămâni", "year": -539, "date": "c. 539/538 î.Hr.", "certain": false,
+    "about": "Citind din Ieremia despre cei 70 de ani, Daniel se roagă; Gavril aduce profeția celor 70 de săptămâni.",
+    "refs": ["DAN 9:1", "DAN 9:2", "DAN 9:21"], "places": ["babilon"], "people": ["daniel", "ieremia", "gavril", "dariu-medul"],
+    "source": { "t": "Daniel 9:1 („anul dintâi al lui Dariu”)" }
+  },
+  "decretul-lui-cir": {
+    "name": "Decretul lui Cir", "year": -538, "date": "c. 538 î.Hr.", "certain": false,
+    "about": "Cir îngăduie iudeilor să se întoarcă și să rezidească templul. Cilindrul lui Cir confirmă politica de repatriere, dar nu datează decretul.",
+    "refs": ["EZR 1:1", "EZR 1:2", "EZR 1:3"], "places": ["babilon", "ierusalim"], "people": ["cir"],
+    "source": { "t": "Ezra 1:1; Cilindrul lui Cir (British Museum)" }
+  },
+  "viziunea-tigrului": {
+    "name": "Viziunea de lângă Tigru", "year": -536, "date": "c. 537/536 î.Hr.", "certain": false,
+    "about": "Ultima viziune (cap. 10–12): lupta nevăzută, regii de la miazănoapte și de la miazăzi, învierea.",
+    "refs": ["DAN 10:1", "DAN 10:4"], "places": ["hidechel"], "people": ["daniel", "mihail", "cir"],
+    "source": { "t": "Daniel 10:1 („anul al treilea al lui Cir”)" }
+  },
+  "gaugamela": {
+    "name": "Bătălia de la Gaugamela", "year": -331, "date": "331 î.Hr.", "certain": true,
+    "about": "Alexandru zdrobește armata lui Darius III; Imperiul Persan se prăbușește. Țapul care sfarmă berbecul (8:5–7).",
+    "refs": ["DAN 8:5", "DAN 8:7"], "places": ["gaugamela", "babilon"], "people": ["alexandru"],
+    "source": { "t": "Jurnal astronomic babilonian BM 36761 (331–330 î.Hr.)", "url": "https://www.livius.org/sources/content/oriental-varia/a-contemporary-account-of-the-battle-of-gaugamela/" }
+  },
+  "moartea-alexandru": {
+    "name": "Moartea lui Alexandru", "year": -323, "date": "323 î.Hr.", "certain": true,
+    "about": "Alexandru moare la Babilon; împărăția lui se împarte „în cele patru vânturi ale cerurilor” (8:8; 11:4).",
+    "refs": ["DAN 8:8", "DAN 11:4"], "places": ["babilon"], "people": ["alexandru"],
+    "source": { "t": "Jurnal astronomic babilonian BM 45962 („împăratul a murit”)", "url": "https://www.livius.org/sources/content/oriental-varia/a-contemporary-account-of-the-death-of-alexander/" }
+  },
+  "raphia": {
+    "name": "Bătălia de la Rafia", "year": -217, "date": "c. 217 î.Hr.", "certain": false,
+    "about": "Ptolemeu IV învinge pe Antioh III, dar nu-și urmează avantajul (11:11–12, după studiu).",
+    "refs": ["DAN 11:11", "DAN 11:12"], "places": ["raphia"], "people": ["regele-miazazi", "regele-miazanoapte"],
+    "source": { "t": "Polibiu, Istorii 5.79–86" }
+  },
+  "magnesia": {
+    "name": "Bătălia de la Magnesia", "year": -190, "date": "c. 190 î.Hr.", "certain": false,
+    "about": "Antioh III cel Mare este înfrânt de romani (11:18–19, după studiu).",
+    "refs": ["DAN 11:18", "DAN 11:19"], "people": ["regele-miazanoapte"],
+    "source": { "t": "Liviu, Ab Urbe Condita 37.39–44" }
+  },
+  "cercul-din-nisip": {
+    "name": "Romanii îl opresc pe Antioh IV", "year": -168, "date": "c. 168 î.Hr.", "certain": false,
+    "about": "La Alexandria, Popilius Laenas îi trasează lui Antioh IV un cerc în nisip: „niște corăbii din Chitim vor înainta împotriva lui” (11:30, după studiu).",
+    "refs": ["DAN 11:30"], "places": ["chitim", "egipt"], "people": ["antioh-iv"],
+    "source": { "t": "Liviu, Ab Urbe Condita 45.12" }
+  },
+  "profanarea-templului": {
+    "name": "Urâciunea pustiirii", "year": -167, "date": "15 Chislev 167 î.Hr.", "certain": true,
+    "about": "Antioh IV ridică un altar păgân pe altarul arderilor de tot și oprește jertfa zilnică (8:11–13; 11:31).",
+    "refs": ["DAN 8:11", "DAN 11:31"], "places": ["ierusalim"], "people": ["antioh-iv"],
+    "source": { "t": "1 Macabei 1:54 (anul 145 al erei seleucide)" }
+  },
+  "rededicarea-templului": {
+    "name": "Templul curățit", "year": -164, "date": "25 Chislev 164 î.Hr.", "certain": true,
+    "about": "Iuda Macabeul curăță și sfințește din nou templul; pus de studiu în legătură cu 8:14.",
+    "refs": ["DAN 8:14"], "places": ["ierusalim"],
+    "source": { "t": "1 Macabei 4:52 (anul 148 al erei seleucide)" }
+  },
+  "moartea-antioh": {
+    "name": "Moartea lui Antioh IV", "year": -164, "date": "c. 164 î.Hr.", "certain": false,
+    "about": "Moare în Persia, de boală, fără să fie învins în luptă: „va fi zdrobit fără ajutorul vreunei mâini omenești” (8:25, după studiu).",
+    "refs": ["DAN 8:25"], "places": ["persia"], "people": ["antioh-iv"],
+    "source": { "t": "1 Macabei 6:1–16; Polibiu 31.9" }
+  }
+}

@@ -133,6 +133,7 @@
         </div>
       </form>
       <div id="studyBookPanel" class="bookpanel" hidden></div>
+      <div id="studyBookVisual" class="visual" hidden></div>
       <div id="studyResults" class="studyresults" aria-live="polite"></div>
     </section>
 
@@ -155,6 +156,7 @@
         <label for="studyFind" class="sr">Caută în această parte</label>
         <input id="studyFind" type="search" placeholder="Caută în pagină" autocomplete="off">
         <span id="studyFindCount" class="meta"></span>
+        <button type="button" id="studyEdit" class="ghost small" data-edit="">Editează</button>
       </div>
       <div class="studygrid">
         <nav id="studyToc" class="toc" aria-label="Cuprins"></nav>
@@ -164,6 +166,28 @@
     </section>
   </main>
 </div>
+
+<aside id="vizPanel" class="vizpanel" aria-labelledby="vizPanelTitle" hidden>
+  <div class="vizpanel-head">
+    <div><div id="vizPanelKicker" class="eyebrow"></div><h2 id="vizPanelTitle"></h2></div>
+    <button type="button" id="vizPanelClose" class="popup-close" aria-label="Închide">×</button>
+  </div>
+  <div id="vizPanelBody" class="vizpanel-body"></div>
+</aside>
+
+<dialog id="editDialog" class="sheet wide editor" aria-labelledby="editTitle">
+  <div class="sheet-head">
+    <h2 id="editTitle">Editează</h2>
+    <button type="button" class="ghost close" data-close>Închide</button>
+  </div>
+  <p class="hint"><code id="editPath"></code></p>
+  <div id="editTabs" class="seg" role="group" aria-label="Mod"><button type="button" data-tab="text" aria-pressed="true">Text</button><button type="button" data-tab="preview" aria-pressed="false">Previzualizare</button></div>
+  <label for="editText" class="sr">Conținutul fișierului</label>
+  <textarea id="editText" spellcheck="false"></textarea>
+  <div id="editPreview" class="doc preview" hidden></div>
+  <div id="editStatus" class="edit-status"></div>
+  <div class="panel-actions"><button type="button" id="editSave" class="primary">Salvează (Ctrl+S)</button><button type="button" class="ghost" data-close>Renunță</button></div>
+</dialog>
 
 <div id="toast" class="toast" role="status" hidden></div>
 <div id="tip" class="tip" role="tooltip" hidden></div>

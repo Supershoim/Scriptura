@@ -1,0 +1,50 @@
+{
+  "source": "a82be60cd88f",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Istoria are o latură nevăzută", "text": "Rugăciunea lui Daniel este ascultată din prima zi, dar răspunsul întârzie din cauza unei lupte în lumea nevăzută. În spatele împărățiilor stau căpetenii; Mihail ocrotește poporul lui Dumnezeu.", "refs": ["DAN 10:12", "DAN 10:13", "DAN 10:20", "DAN 10:21"] },
+        "parts": [
+          { "id": "a", "t": "Trei săptămâni de doliu", "refs": ["DAN 10:1-3"], "text": "Anul al treilea al lui Cir; post fără bucate alese, carne și vin." },
+          { "id": "b", "t": "Omul îmbrăcat în in", "refs": ["DAN 10:4-9"], "text": "Pe malul Tigrului; înfățișarea glorioasă; Daniel cade fără putere." },
+          { "id": "c", "t": "Rugăciunea ascultată", "refs": ["DAN 10:10-14"], "text": "Din prima zi; căpetenia Persiei s-a împotrivit 21 de zile; Mihail a ajutat." },
+          { "id": "d", "t": "Întărirea", "refs": ["DAN 10:15-19"], "text": "Atins de trei ori; nu te teme, fii tare." },
+          { "id": "e", "t": "Căpeteniile împărățiilor", "refs": ["DAN 10:20-21"], "text": "Lupta cu căpetenia Persiei, apoi vine căpetenia Greciei; doar Mihail ajută." }
+        ],
+        "flow": [["a", "b", "viziunea"], ["b", "c", "explicația"], ["c", "d", "slăbiciunea"], ["d", "e", "misiunea"]],
+        "book": [
+          { "ch": 9, "from": "a", "t": "Rugăciunea din cap. 9", "why": "Altă rugăciune cu post, la care răspunsul pleacă îndată.", "refs": ["DAN 9:23"] },
+          { "ch": 11, "from": "e", "t": "Regii Persiei și Greciei", "why": "Viziunea continuă cu istoria acestor împărății.", "refs": ["DAN 11:2"] },
+          { "ch": 12, "from": "e", "t": "Mihail se scoală", "why": "Mihail apare din nou în vremea necazului celui mare.", "refs": ["DAN 12:1"] }
+        ],
+        "bible": [
+          { "ref": "REV 1:13", "from": "b", "t": "Apocalipsa 1:13", "why": "Ioan vede pe Cineva asemenea Fiului omului, încins cu brâu de aur." },
+          { "ref": "EPH 6:12", "from": "e", "t": "Efeseni 6:12", "why": "Lupta împotriva căpeteniilor și stăpânitorilor întunericului." },
+          { "ref": "JUD 1:9", "from": "e", "t": "Iuda 9", "why": "Arhanghelul Mihail în lupta cu diavolul." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["daniel", "mihail", "cir", "persia", "grecia", "hidechel"],
+        "links": [
+          ["cir", "daniel", "anul al treilea al lui", "DAN 10:1"],
+          ["daniel", "hidechel", "pe malul râului", "DAN 10:4"],
+          ["mihail", "persia", "luptă cu căpetenia ei", "DAN 10:13"],
+          ["persia", "grecia", "apoi căpetenia Greciei", "DAN 10:20"],
+          ["mihail", "daniel", "ocrotitorul poporului lui", "DAN 10:21"]
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "title": "Locul ultimei viziuni",
+      "note": "Daniel este pe malul Tigrului; punctul exact nu este precizat.",
+      "data": { "places": ["hidechel", "babilon", "susa", "persia", "media", "ierusalim"], "routes": [] }
+    }
+  ]
+}

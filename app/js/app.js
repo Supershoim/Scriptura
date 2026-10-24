@@ -6,6 +6,8 @@ import { cellHtml } from './render.js';
 import { setupNotes, hideNote, repositionNote } from './notes.js';
 import { setupTips, hideTip } from './tips.js';
 import { setupStudies, showStudies, focusStudySearch, cardTip, studyHash } from './studies.js';
+import { setGo, setupPanel, closePanel } from './vizcore.js';
+import { setupEditor } from './editor.js';
 import * as catalog from './catalog.js';
 import { linkStudy } from './refs.js';
 
@@ -185,6 +187,7 @@ function setMode(mode) {
   store.set('mode', mode);
   hideNote();
   hideTip();
+  if (mode === 'bible') closePanel();
 }
 
 // Pushes a new address (so Back returns here) and shows it.
@@ -405,7 +408,10 @@ function wire() {
   });
   setupTips(cardTip);
   setupStudies({ go, decorate: linkStudy });
-  setupNotes([$('columns'), $('studyDoc')], {
+  setGo(go);
+  setupPanel();
+  setupEditor();
+  setupNotes([$('columns'), $('studyDoc'), $('studyVisual'), $('studyBookVisual'), $('vizPanel')], {
     visible: shown,
     onOpen: canon => { const { b, c, v } = parseKey(canon); if (state.mode === 'bible') read(b, c, v); else go(`#/${b}/${c}/${v}`); }
   });

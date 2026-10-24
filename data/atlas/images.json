@@ -1,0 +1,241 @@
+{
+  "poarta-istar": {
+    "title": "Poarta Iștar (Pergamonmuseum, Berlin)",
+    "caption": "Poarta de nord a Babilonului, zidită de Nebucadnețar din cărămizi smălțuite. Imaginea „Babilonului celui mare” de care se laudă împăratul în 4:30.",
+    "refs": [
+      "DAN 4:30"
+    ],
+    "places": [
+      "babilon"
+    ],
+    "people": [
+      "nebucadnetar"
+    ],
+    "file": "poarta-istar.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ishtar_gate_Pergamon_Museum.JPG",
+    "author": "Bontenbal",
+    "license": "Public domain"
+  },
+  "cronica-nebucadnetar": {
+    "title": "Cronica primilor ani ai lui Nebucadnețar (ABC 5)",
+    "caption": "Tăbliță babiloniană care consemnează bătălia de la Carchemiș (605), urcarea pe tron a lui Nebucadnețar și cucerirea Ierusalimului (597). Ancora datelor din Daniel 1.",
+    "refs": [
+      "DAN 1:1",
+      "2KI 24:10"
+    ],
+    "places": [
+      "carchemis",
+      "ierusalim"
+    ],
+    "people": [
+      "nebucadnetar"
+    ],
+    "file": "cronica-nebucadnetar.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:ABC_05_Early_Years_of_Nebuchadnezzar_chronicle.jpg",
+    "author": "Jona Lendering",
+    "license": "CC0"
+  },
+  "cronica-nabonid": {
+    "title": "Cronica lui Nabonid (ABC 7, British Museum)",
+    "caption": "Arată că Nabonid a stat ani la rând la Tayma, iar prințul moștenitor a rămas în Babilonia, și consemnează intrarea armatei lui Cir în Babilon fără luptă (539).",
+    "refs": [
+      "DAN 5:29",
+      "DAN 5:30"
+    ],
+    "places": [
+      "babilon",
+      "tayma"
+    ],
+    "people": [
+      "nabonid",
+      "belsatar",
+      "cir"
+    ],
+    "file": "cronica-nabonid.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nabonidus_chronicle.jpg",
+    "author": "Foto: ChrisO",
+    "license": "CC BY-SA 3.0"
+  },
+  "cilindrul-nabonid": {
+    "title": "Cilindrul lui Nabonid de la Ur (British Museum)",
+    "caption": "Inscripție de construcție a lui Nabonid, cu o rugăciune pentru fiul său Belșațar: una dintre mărturiile care au confirmat existența lui Belșațar.",
+    "refs": [
+      "DAN 5:1",
+      "DAN 5:29"
+    ],
+    "places": [
+      "babilon"
+    ],
+    "people": [
+      "nabonid",
+      "belsatar"
+    ],
+    "file": "cilindrul-nabonid.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cylinder_Nabonidus_BM_WA91128.jpg",
+    "author": "Foto: Jastrow (2007)",
+    "license": "CC BY 2.5"
+  },
+  "cilindrul-cirus": {
+    "title": "Cilindrul lui Cir (British Museum)",
+    "caption": "Proclamația lui Cir după cucerirea Babilonului (539): descrie intrarea în cetate și politica de întoarcere a popoarelor deportate, contextul edictului din Ezra 1.",
+    "refs": [
+      "DAN 6:28",
+      "EZR 1:1"
+    ],
+    "places": [
+      "babilon"
+    ],
+    "people": [
+      "cir"
+    ],
+    "file": "cilindrul-cirus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyrus_Cylinder_front.jpg",
+    "author": "Prioryman",
+    "license": "CC BY-SA 3.0"
+  },
+  "codul-hammurabi": {
+    "title": "Stela Codului lui Hammurabi (Luvru)",
+    "caption": "Stelă babiloniană găsită la Susa, unde fusese dusă din Babilon ca pradă de război. Susa este cetatea în care Daniel se vede în viziunea din cap. 8.",
+    "refs": [
+      "DAN 8:2"
+    ],
+    "places": [
+      "susa",
+      "babilon"
+    ],
+    "people": [],
+    "file": "codul-hammurabi.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Code-de-Hammurabi-1.jpg",
+    "author": "Rama",
+    "license": "CC BY-SA 3.0 fr"
+  },
+  "lamassu": {
+    "title": "Lamassu de la Nimrud (British Museum)",
+    "caption": "Ființă înaripată cu cap de om, păzitor al porților palatelor asiriene. Daniel 7 preia imaginea leului cu aripi de vultur și o arată ca fiară.",
+    "refs": [
+      "DAN 7:4"
+    ],
+    "places": [],
+    "people": [],
+    "file": "lamassu.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lamassu_from_Nimrud_-_British_Museum.jpg",
+    "author": "Andres Rueda",
+    "license": "CC BY 2.0"
+  },
+  "vanatoarea-de-lei": {
+    "title": "Vânătoarea regală de lei (Ninive, British Museum)",
+    "caption": "Relief din palatul lui Assurbanipal (sec. 7 î.Hr.): leii erau ținuți captivi ca simbol al puterii regale. Fundalul gropii cu lei din cap. 6.",
+    "refs": [
+      "DAN 6:16",
+      "DAN 6:22"
+    ],
+    "places": [],
+    "people": [],
+    "file": "vanatoarea-de-lei.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ashurbanipal%27s_lion-hunt_scene,_wall_relief,_7th_century_BC,_from_Nineveh,_the_British_Museum.jpg",
+    "author": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+    "license": "CC BY-SA 4.0"
+  },
+  "leu-procesiune": {
+    "title": "Leu de pe Calea Procesiunilor din Babilon",
+    "caption": "Cărămizi smălțuite din vremea lui Nebucadnețar. Leul era emblema puterii Babilonului; prima fiară din viziunea din cap. 7 este un leu cu aripi de vultur.",
+    "refs": [
+      "DAN 7:4"
+    ],
+    "places": [
+      "babilon"
+    ],
+    "people": [
+      "nebucadnetar"
+    ],
+    "file": "leu-procesiune.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lion_in_relief,_from_the_procession_street_in_Babylon,_Nebuchadnezzar_II_period,_604-562_BC,_Istanbul_Archaeology_Museum_(12251941994).jpg",
+    "author": "Carole Raddato from FRANKFURT, Germany",
+    "license": "CC BY-SA 2.0"
+  },
+  "inscriptia-nebucadnetar": {
+    "title": "Inscripția East India House (British Museum)",
+    "caption": "Una dintre inscripțiile în care Nebucadnețar își descrie construcțiile din Babilon. Lauda de sine din 4:30 are tonul acestor texte.",
+    "refs": [
+      "DAN 4:30"
+    ],
+    "places": [
+      "babilon"
+    ],
+    "people": [
+      "nebucadnetar"
+    ],
+    "file": "inscriptia-nebucadnetar.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:The_East_India_House_inscription.jpg",
+    "author": "Foto: Szilas in the British Museum, 2010-08-03",
+    "license": "CC BY-SA 4.0"
+  },
+  "arcasi-susa": {
+    "title": "Friza arcașilor din palatul de la Susa (Luvru)",
+    "caption": "Cărămizi smălțuite din palatul lui Darius I de la Susa, cetatea din ținutul Elam unde Daniel primește viziunea berbecului și a țapului.",
+    "refs": [
+      "DAN 8:2"
+    ],
+    "places": [
+      "susa"
+    ],
+    "people": [],
+    "file": "arcasi-susa.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Archers_frieze_Louvre_AOD488.jpg",
+    "author": "Foto: Jastrow (2007)",
+    "license": "Public domain"
+  },
+  "mozaicul-alexandru": {
+    "title": "Mozaicul lui Alexandru (Pompei; Napoli)",
+    "caption": "Alexandru cel Mare în luptă cu Darius III. Gavril numește țapul „împărăția Greciei” și cornul cel mare „cel dintâi împărat” (8:21).",
+    "refs": [
+      "DAN 8:5",
+      "DAN 8:21"
+    ],
+    "places": [
+      "grecia"
+    ],
+    "people": [
+      "alexandru"
+    ],
+    "file": "mozaicul-alexandru.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Alexander_Mosaic_depicting_the_Battle_of_Issus_between_Alexander_the_Great_%26_Darius_III_of_Persia,_from_the_House_of_the_Faun_in_Pompeii,_Naples_Archaeological_Museum_(15045954695).jpg",
+    "author": "Carole Raddato from FRANKFURT, Germany",
+    "license": "CC BY-SA 2.0"
+  },
+  "moneda-antioh": {
+    "title": "Tetradrahmă a lui Antioh IV Epifanes",
+    "caption": "Monedă din 175–164 î.Hr. Antioh își lua titlul de „dumnezeu arătat” (Theos Epiphanes); comparați regele care „se va slăvi mai presus de toți dumnezeii” (11:36).",
+    "refs": [
+      "DAN 11:21",
+      "DAN 11:36"
+    ],
+    "places": [],
+    "people": [
+      "antioh-iv"
+    ],
+    "file": "moneda-antioh.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Antiochos_IV_Epiphanes,_Tetradrachm,_175-164_BC,_HGC_9-615l.jpg",
+    "author": "CNG",
+    "license": "CC BY-SA 2.5"
+  },
+  "jurnal-astronomic": {
+    "title": "Jurnal astronomic babilonian, 331–330 î.Hr. (BM 36761)",
+    "caption": "Tăbliță contemporană care consemnează bătălia de la Gaugamela și intrarea lui Alexandru în Babilon: țapul care sfarmă berbecul (8:5–7).",
+    "refs": [
+      "DAN 8:5",
+      "DAN 8:7"
+    ],
+    "places": [
+      "gaugamela",
+      "babilon"
+    ],
+    "people": [
+      "alexandru"
+    ],
+    "file": "jurnal-astronomic.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Astronomical_Diary_331_330_BC_BM_36761.jpg",
+    "author": "Zunkir",
+    "license": "CC BY-SA 4.0"
+  }
+}

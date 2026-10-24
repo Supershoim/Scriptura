@@ -1,11 +1,15 @@
-// The "Studii" section: books with progress, the catalog with search and filters, and the study reader.
-// Routes: #/studii, #/studii/ROM (one book), #/studii/ROM/2 (a study), #/studii/ROM/2/2 (its second part).
+// The "Studii" section: the whole Bible by coverage, books (their visual first, then the list of studies),
+// search, and the study reader (its visual first, then the text parts).
+// Routes: #/studii, #/studii/ROM (one book), #/studii/ROM/2 (a study: its visual, or its text when it has none),
+// #/studii/ROM/2/vizual, #/studii/ROM/2/1 (first text part), #/studii/ROM/2/2 …
 import { $, esc, norm, store } from './util.js';
 import { books } from './data.js';
 import * as catalog from './catalog.js';
-import { studies, study, chapters, bookOf } from './catalog.js';
+import { studies, study, chapters, bookOf, visualOf, bookVisual } from './catalog.js';
 import { hideTip } from './tips.js';
 import { showVisual, visualClick } from './visual.js';
+import { closePanel } from './vizcore.js';
+import { toolbar } from './editor.js';
 
 const PAGE = 30;
 const state = { book: null, theme: null, query: '', tab: 'all', shown: PAGE, current: null, part: 0, seq: 0 };
@@ -21,7 +25,8 @@ const shortTitle = s => {
   return t.charAt(0).toUpperCase() + t.slice(1);
 };
 const VISUAL = 'visual';   // state.part when the "Vizual" tab is open
-export const studyHash = (s, part = 0) => `#/studii/${s.b}/${s.c}${part === VISUAL ? '/vizual' : part ? '/' + (part + 1) : ''}`;
+// Without a part: the study's first view (its visual when it has one).
+export const studyHash = (s, part) => `#/studii/${s.b}/${s.c}${part === VISUAL ? '/vizual' : typeof part === 'number' ? '/' + (part + 1) : ''}`;
 
 // ---------- Sidebar and progress ----------
 
@@ -60,11 +65,23 @@ function selects() {
 
 // ---------- Catalog ----------
 
+let shownBookVisual = null;
 function bookPanel() {
-  const panel = $('studyBookPanel'), b = state.book && bookOf(state.book);
+  const panel = $('studyBookPanel'), b = state.book && bookOf(state.book), visual = b && bookVisual(b.id);
   panel.hidden = !b;
+  $('studyBookVisual').hidden = !visual;
+  if (!visual) { $('studyBookVisual').innerHTML = ''; shownBookVisual = null; }
+  else if (shownBookVisual !== b.id) {
+    shownBookVisual = b.id;
+    showVisual($('studyBookVisual'), { b: b.id }, visual, toolbar({ id: b.id, visual, label: `vizualizarea cărții ${b.name}` }));
+  }
   if (!b) return;
   const have = catalog.studiedChapters(b.id), overview = studies.find(s => s.b === b.id && s.c === 0);
+  if (visual) {   // the book map already shows every chapter and its coverage
+    panel.innerHTML = `<div class="bookpanel-head"><h2>${esc(b.name)}</h2><span class="meta">${have.size} din ${b.chapters} capitole${overview ? ' · cu privire de ansamblu' : ''}</span>` +
+      `<button type="button" class="ghost small" data-read="${b.id}">Citește în Biblie</button></div>`;
+    return;
+  }
   const cell = c => {
     const s = catalog.forChapter(b.id, c)[0];
     return s ? `<button type="button" class="chc has" data-open="${s.id}" data-tipcard="${s.id}" aria-label="${esc(b.name)} ${c}: ${esc(shortTitle(s))}">${c}</button>`
@@ -74,6 +91,20 @@ function bookPanel() {
     `<button type="button" class="ghost small" data-read="${b.id}">Citește în Biblie</button></div>` +
     `<div class="chgrid">${overview ? `<button type="button" class="chc has intro" data-open="${overview.id}" data-tipcard="${overview.id}">ansamblu</button>` : ''}` +
     Array.from({ length: b.chapters }, (_, i) => cell(i + 1)).join('') + '</div>';
+}
+
+// The whole Bible at a glance: every book as a tile, grouped, filled by how many chapters have a study.
+const GROUPS = [['Pentateuhul', 'GEN', 'DEU'], ['Cărțile istorice', 'JOS', 'EST'], ['Cărțile poetice', 'JOB', 'SNG'], ['Profeții mari', 'ISA', 'DAN'],
+  ['Profeții mici', 'HOS', 'MAL'], ['Evangheliile', 'MAT', 'JHN'], ['Faptele Apostolilor', 'ACT', 'ACT'], ['Epistolele lui Pavel', 'ROM', 'PHM'],
+  ['Epistolele generale', 'HEB', 'JUD'], ['Apocalipsa', 'REV', 'REV']];
+function bibleOverview() {
+  const at = id => books.findIndex(b => b.id === id);
+  return `<h2 class="section-title">Biblia</h2><div class="bible-map">` + GROUPS.map(([t, from, to]) =>
+    `<section class="bm-group"><h3>${esc(t)}</h3><div class="bm-books">` + books.slice(at(from), at(to) + 1).map(b => {
+      const have = catalog.studiedChapters(b.id).size, pct = have / b.chapters * 100;
+      return `<button type="button" class="bm-book${have ? ' has' : ''}" data-study-book="${b.id}" style="--pct:${pct.toFixed(1)}%" data-tip-t="${esc(b.name)}" data-tip="${have} din ${b.chapters} capitole au studiu${bookVisual(b.id) ? '\nAre vizualizarea cărții' : ''}">` +
+        `<span class="bm-abbr">${esc(b.abbr)}</span><span class="bm-n">${have}/${b.chapters}</span>${bookVisual(b.id) ? '<span class="bm-vis" aria-label="are vizualizare">◆</span>' : ''}</button>`;
+    }).join('') + '</div></section>').join('') + '</div>';
 }
 
 function cardHtml(s) {
@@ -91,7 +122,7 @@ async function results() {
   const filtered = state.book || state.theme || state.query.trim();
   if (!filtered) {
     const recent = [...studies].sort((x, y) => y.date.localeCompare(x.date) || x.n - y.n).slice(0, 12);
-    out.innerHTML = `<h2 class="section-title">Adăugate recent</h2>` + recent.map(cardHtml).join('') +
+    out.innerHTML = bibleOverview() + `<h2 class="section-title">Adăugate recent</h2>` + recent.map(cardHtml).join('') +
       `<p class="hint">Alege o carte din listă sau caută după cuvânt, temă ori trimitere (de exemplu „Rom 2:13” sau „fapte 13 har”). Fiecare capitol are studiul complet și, unde există, variantele și întrebările legate de el.</p>`;
     return;
   }
@@ -182,8 +213,10 @@ function find(term) {
 
 async function openStudy(s, part, term) {
   state.current = s;
-  state.part = part === VISUAL && s.visual ? VISUAL : Math.max(0, Math.min(s.parts.length - 1, +part || 0));
+  const vis = visualOf(s);
+  state.part = part === VISUAL && vis ? VISUAL : Math.max(0, Math.min(s.parts.length - 1, +part || 0));
   const b = bookOf(s.b), visual = state.part === VISUAL;
+  closePanel();
   $('studyCatalog').hidden = true;
   $('studyReader').hidden = false;
   $('studyEyebrow').textContent = `Studii · ${b.name}${s.c ? ' ' + chapterLabel(s) : ' · privire de ansamblu'}`;
@@ -194,9 +227,10 @@ async function openStudy(s, part, term) {
   $('studyNext').disabled = s.n === studies.length - 1;
   $('studyPrev').title = s.n ? 'Studiul anterior: ' + studies[s.n - 1].title : '';
   $('studyNext').title = s.n < studies.length - 1 ? 'Studiul următor: ' + studies[s.n + 1].title : '';
-  const tabs = [...s.parts.map((x, i) => [i, x.label]), ...s.visual ? [[VISUAL, 'Vizual']] : []];
+  const tabs = [...vis ? [[VISUAL, s.c ? 'Vizual' : 'Vizualul cărții']] : [], ...s.parts.map((x, i) => [i, x.label])];
   $('studyParts').innerHTML = tabs.length > 1 ? tabs.map(([i, label]) =>
-    `<button type="button" role="tab" data-part="${i}" aria-selected="${i === state.part}">${esc(label)}</button>`).join('') : '';
+    `<button type="button" role="tab" data-part="${i}" aria-selected="${i === state.part}"${i === VISUAL ? ' class="vis"' : ''}>${esc(label)}</button>`).join('') : '';
+  $('studyEdit').hidden = visual;
   const doc = $('studyDoc');
   delete doc.dataset.raw;
   doc.innerHTML = '<div class="loading">Se încarcă studiul…</div>';
@@ -206,8 +240,15 @@ async function openStudy(s, part, term) {
   $('studyVisual').hidden = !visual;
   store.set('studiesHash', studyHash(s, state.part));
   scrollTo(0, 0);
-  if (visual) { tocObserver?.disconnect(); await showVisual($('studyVisual'), s); return; }
+  if (visual) {
+    tocObserver?.disconnect();
+    const id = s.c ? s.id : s.b;
+    await showVisual($('studyVisual'), s, vis, toolbar({ id, visual: vis, label: s.c ? 'vizualizarea' : 'vizualizarea cărții' }));
+    return;
+  }
   const p = s.parts[state.part];
+  $('studyEdit').dataset.edit = p.src;
+  $('studyEdit').dataset.editTitle = `Editează: ${p.label}`;
   let html;
   try { html = await catalog.text(p.path); } catch { html = '<div class="empty"><strong>Studiul nu s-a putut încărca</strong>Verifică conexiunea și încearcă din nou.</div>'; }
   if (state.current !== s || state.part !== s.parts.indexOf(p)) return;
@@ -243,7 +284,7 @@ export async function showStudies(path) {
   const s = b && c !== undefined && studies.find(x => x.b === b && x.c === +c);
   if (s) {
     const term = state.query && !catalog.parseRef(state.query) ? state.query : catalog.parseRef(state.query)?.rest || '';
-    const target = part === 'vizual' ? VISUAL : (+part || 1) - 1;
+    const target = part === 'vizual' || (part === undefined && visualOf(s)) ? VISUAL : (+part || 1) - 1;
     if (state.current !== s || state.part !== target) await openStudy(s, target, term);
     return;
   }
@@ -284,10 +325,13 @@ export function setupStudies(opts) {
     if (b) go(state.book === b.dataset.studyBook ? '#/studii' : '#/studii/' + b.dataset.studyBook);
   });
   $('studyCatalog').addEventListener('click', e => {
+    if (e.target.closest('#studyBookVisual')) return;
     const open = e.target.closest('[data-open]');
     if (open) { go(studyHash(study(open.dataset.open))); return; }
     const readBook = e.target.closest('[data-read]');
     if (readBook) { go(`#/${readBook.dataset.read}/1`); return; }
+    const tile = e.target.closest('[data-study-book]');
+    if (tile) { go('#/studii/' + tile.dataset.studyBook); return; }
     if (e.target.closest('[data-more]')) { state.shown += PAGE; results(); }
   });
   $('studyBack').addEventListener('click', () => go(state.current ? '#/studii/' + state.current.b : '#/studii'));
@@ -298,16 +342,20 @@ export function setupStudies(opts) {
     const t = e.target.closest('[data-part]');
     if (t && state.current) go(studyHash(state.current, t.dataset.part === VISUAL ? VISUAL : +t.dataset.part));
   });
-  $('studyVisual').addEventListener('click', e => {
-    if (visualClick(e)) return;
-    const open = e.target.closest('[data-open]');
-    if (open) go(studyHash(study(open.dataset.open)));
-  });
-  // Diagram elements marked role="button" answer to Enter and Space like buttons.
-  $('studyVisual').addEventListener('keydown', e => {
-    const el = (e.key === 'Enter' || e.key === ' ') && e.target.closest('[role="button"]');
-    if (el) { e.preventDefault(); el.dispatchEvent(new MouseEvent('click', { bubbles: true })); }
-  });
+  for (const box of [$('studyVisual'), $('studyBookVisual')]) {
+    box.addEventListener('click', e => {
+      const jump = e.target.closest('[data-jump]');
+      if (jump) { e.preventDefault(); document.getElementById(jump.dataset.jump)?.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
+      if (visualClick(e)) return;
+      const open = e.target.closest('[data-open]');
+      if (open) go(studyHash(study(open.dataset.open)));
+    });
+    // Diagram elements marked role="button" answer to Enter and Space like buttons.
+    box.addEventListener('keydown', e => {
+      const el = (e.key === 'Enter' || e.key === ' ') && e.target.closest('[role="button"]');
+      if (el) { e.preventDefault(); el.dispatchEvent(new MouseEvent('click', { bubbles: true })); }
+    });
+  }
   $('studyToc').addEventListener('click', e => {
     const a = e.target.closest('[data-goto]');
     if (!a) return;

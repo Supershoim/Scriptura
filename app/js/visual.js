@@ -4,8 +4,13 @@
 //   causal:   events in columns with cause → effect links; clicking one highlights its chain
 //   journeys: routes on a map, a timeline, the thread of each journey and the letters written on the way
 // Ported from Biblioteca Studiu Biblic. Elements with data-open="<study id>" open that study.
+// The other block types live in vizbook.js, vizchapter.js and vizmap.js; this module dispatches all of them.
 import { esc } from './util.js';
-import { studies, bookOf, text } from './catalog.js';
+import { studies, bookOf, json } from './catalog.js';
+import { loadAtlas } from './vizcore.js';
+import { bookMap, timeline } from './vizbook.js';
+import { chapterMap, network, history } from './vizchapter.js';
+import { map, smoothPath, loadLand } from './vizmap.js';
 
 const fmt = n => n.toLocaleString('ro-RO');
 let view = null;   // { study, spec, root, causal, journey, land }
@@ -185,8 +190,8 @@ function mapSvg(JR, sel) {
   let g = '';
   if (view.land) g += `<path d="${view.land.polys.map(poly => poly.map(r => 'M' + r.map(([lo, la]) => proj(lo, la).map(v => v.toFixed(1)).join(' ')).join('L') + 'Z').join('')).join('')}" fill="var(--todo)" stroke="var(--line)" stroke-width=".6" fill-rule="evenodd"/>`;
   for (const k of ids) {
-    const v = JR.J[k];
-    g += `<path d="${'M' + v.r.map(p => proj(...pt(p)).map(n => n.toFixed(1)).join(' ')).join('L')}" fill="none" stroke="${v.col}" stroke-width="${sel === 'all' ? 2 : 2.6}" stroke-dasharray="${v.dash}" stroke-linejoin="round" stroke-linecap="round" opacity=".92"/>`;
+    const v = JR.J[k], line = JR.paths?.[k] || v.r.map(pt);   // realistic path from the build, else the stops
+    g += `<path d="${smoothPath(line.map(p => proj(...p)))}" fill="none" stroke="${v.col}" stroke-width="${sel === 'all' ? 2 : 2.6}" stroke-dasharray="${v.dash}" stroke-linejoin="round" stroke-linecap="round" opacity=".92"/>`;
   }
   const badges = {};
   ids.forEach(k => Object.entries(JR.J[k].b).forEach(([c, t]) => { badges[c] = badges[c] ? badges[c] + ', ' + t : t; }));
@@ -279,23 +284,36 @@ function journeysBlock(block, s, i) {
 
 // ---------- Rendering ----------
 
-const RENDER = { chapters: chaptersBlock, flow: flowBlock, causal: causalBlock, journeys: journeysBlock };
+// The Acts book visuals above return HTML; the newer types (app/js/viz*.js) return { html, mount(el) }.
+const LEGACY = { chapters: chaptersBlock, flow: flowBlock, causal: causalBlock, journeys: journeysBlock };
+const RENDER = { 'book-map': bookMap, timeline, 'chapter-map': chapterMap, network, map, history };
+const NAV = { 'book-map': 'Harta cărții', timeline: 'Cronologie', 'chapter-map': 'Harta capitolului', network: 'Personaje și locuri', map: 'Hartă', history: 'Istorie' };
 
 function draw() {
-  const { study, spec, root } = view;
-  root.innerHTML = spec.blocks.map((b, i) => `<section class="visblock"><h2 class="vis-h">${esc(b.title)}</h2>${RENDER[b.type]?.(b, study, i) || ''}</section>`).join('');
+  const { study, spec, root } = view, ctx = { s: study.c != null ? study : null, b: study.b };
+  const mounts = [];
+  const sections = spec.blocks.map((b, i) => {
+    if (LEGACY[b.type]) return `<section class="visblock" id="vb-${i}"><h2 class="vis-h">${esc(b.title)}</h2>${LEGACY[b.type](b, study, i)}</section>`;
+    const out = RENDER[b.type]?.(b, ctx);
+    if (!out) return '';
+    mounts.push([i, out.mount]);
+    return `<section class="visblock" id="vb-${i}" data-block="${i}"><h2 class="vis-h">${esc(b.title)}</h2>${b.note ? `<p class="vis-p">${esc(b.note)}</p>` : ''}${out.html}</section>`;
+  });
+  const nav = spec.blocks.length > 2 ? `<nav class="visnav" aria-label="Părțile vizualizării">${spec.blocks.map((b, i) => `<a href="#vb-${i}" data-jump="vb-${i}">${esc(NAV[b.type] || b.title)}</a>`).join('')}</nav>` : '';
+  root.innerHTML = view.banner + nav + sections.join('');
+  for (const [i, mount] of mounts) mount?.(root.querySelector(`[data-block="${i}"]`));
   spec.blocks.forEach((b, i) => { if (b.type === 'causal') causalSelect(i, view.causal[i] || null); });
 }
 
-export async function showVisual(root, study) {
+// study: a catalog entry, or { b } for a book page. visual: { path, src, stale }. banner: HTML above (e.g. "out of date").
+export async function showVisual(root, study, visual, banner = '') {
   root.innerHTML = '<div class="loading">Se încarcă vizualizarea…</div>';
   let spec;
-  try { spec = JSON.parse(await text(study.visual)); }
+  try { [spec] = await Promise.all([json(visual.path), loadAtlas()]); }
   catch { root.innerHTML = '<div class="empty"><strong>Vizualizarea nu s-a putut încărca</strong>Verifică conexiunea și încearcă din nou.</div>'; return; }
-  view = { study, spec, root, causal: {}, journey: {}, land: null };
+  view = { study, spec, root, causal: {}, journey: {}, land: null, banner };
   draw();
-  const land = spec.blocks.find(b => b.data.land)?.data.land;
-  if (land) text(land).then(t => { if (view?.spec === spec) { view.land = JSON.parse(t); draw(); } }).catch(() => {});
+  if (spec.blocks.some(b => b.type === 'journeys')) loadLand().then(geo => { if (geo && view?.spec === spec) { view.land = geo; draw(); } });
 }
 
 // Clicks inside the visual: journey tabs and causal events. Returns true when handled.

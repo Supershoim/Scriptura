@@ -1,0 +1,49 @@
+{
+  "source": "7184fbcf83ed",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Dumnezeu descoperă tainele", "text": "Ce nu pot înțelepții Babilonului, Dumnezeu descoperă: împărățiile oamenilor trec, iar piatra lui Dumnezeu devine o împărăție care nu va fi nimicită niciodată.", "refs": ["DAN 2:28", "DAN 2:44"] },
+        "parts": [
+          { "id": "a", "t": "Criza", "refs": ["DAN 2:1-13"], "text": "Împăratul cere visul și tâlcuirea; înțelepții sunt osândiți la moarte." },
+          { "id": "b", "t": "Revelația", "refs": ["DAN 2:14-23"], "text": "Daniel și prietenii se roagă; taina îi este descoperită noaptea." },
+          { "id": "c", "t": "Visul descris", "refs": ["DAN 2:24-35"], "text": "Statuia din aur, argint, aramă, fier și lut; piatra care o sfărâmă." },
+          { "id": "d", "t": "Tâlcuirea", "refs": ["DAN 2:36-45"], "text": "Patru împărății, apoi împărăția lui Dumnezeu, care dăinuie veșnic." },
+          { "id": "e", "t": "Reacția", "refs": ["DAN 2:46-49"], "text": "Împăratul Îl recunoaște pe Dumnezeul lui Daniel și îl înalță." }
+        ],
+        "flow": [["a", "b", "rugăciunea"], ["b", "c", "descoperirea"], ["c", "d", "sensul"], ["d", "e", "slavă lui Dumnezeu"]],
+        "book": [
+          { "ch": 7, "from": "d", "t": "Cele patru fiare", "why": "Aceleași patru împărății, văzute ca fiare; împărăția veșnică este dată Fiului omului și sfinților.", "refs": ["DAN 7:17", "DAN 7:27"] },
+          { "ch": 4, "from": "a", "t": "Visul copacului", "why": "Al doilea vis al lui Nebucadnețar, tot tâlcuit de Daniel.", "refs": ["DAN 4:18"] }
+        ],
+        "bible": [
+          { "ref": "LUK 20:18", "from": "d", "t": "Luca 20:18", "why": "Isus vorbește despre piatra care zdrobește pe cel peste care cade." },
+          { "ref": "1CO 15:24", "from": "d", "t": "1 Corinteni 15:24", "why": "Hristos predă Împărăția după ce nimicește orice domnie și stăpânire." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["daniel", "nebucadnetar", "arioc", "hanania", "misael", "azaria", "babilon"],
+        "links": [
+          ["nebucadnetar", "arioc", "porunca de ucidere", "DAN 2:14"],
+          ["arioc", "daniel", "îl duce la împărat", "DAN 2:25"],
+          ["daniel", "hanania", "se roagă împreună", "DAN 2:17"],
+          ["daniel", "misael", "se roagă împreună", "DAN 2:17"],
+          ["daniel", "azaria", "se roagă împreună", "DAN 2:17"],
+          ["nebucadnetar", "daniel", "îl face mare", "DAN 2:48"],
+          ["daniel", "babilon", "dregător peste ținut", "DAN 2:48"]
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["poarta-istar", "cronica-nebucadnetar"] }
+    }
+  ]
+}

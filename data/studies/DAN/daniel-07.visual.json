@@ -1,0 +1,49 @@
+{
+  "source": "4bc943b92ddb",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Împărăția este dată Fiului omului", "text": "Din perspectiva lui Dumnezeu, imperiile sunt fiare. Cel Îmbătrânit de zile le judecă, iar stăpânirea veșnică este dată unuia ca un fiu al omului și sfinților Celui Preaînalt.", "refs": ["DAN 7:13", "DAN 7:14", "DAN 7:27"] },
+        "parts": [
+          { "id": "a", "t": "Cele patru fiare", "refs": ["DAN 7:1-8"], "text": "Leul cu aripi, ursul, leopardul și fiara cu zece coarne; cornul cel mic." },
+          { "id": "b", "t": "Tronul de judecată", "refs": ["DAN 7:9-12"], "text": "Cel Îmbătrânit de zile pe tron; cărțile deschise; fiara ucisă." },
+          { "id": "c", "t": "Fiul omului", "refs": ["DAN 7:13-14"], "text": "Vine pe norii cerurilor și primește o stăpânire veșnică." },
+          { "id": "d", "t": "Prima tâlcuire", "refs": ["DAN 7:15-22"], "text": "Patru împărați; sfinții primesc împărăția; Daniel întreabă de fiara a patra." },
+          { "id": "e", "t": "Cornul cel mic", "refs": ["DAN 7:23-27"], "text": "Hulește, asuprește pe sfinți o vreme, două vremi și o jumătate de vreme, apoi este judecat." },
+          { "id": "f", "t": "Concluzia", "refs": ["DAN 7:28"], "text": "Daniel tulburat păstrează lucrurile în inima lui." }
+        ],
+        "flow": [["a", "b", "judecata vine"], ["b", "c", "stăpânirea dată"], ["c", "d", "tâlcuirea"], ["d", "e", "detaliile"], ["e", "f", ""]],
+        "book": [
+          { "ch": 2, "from": "a", "t": "Statuia", "why": "Aceleași patru împărății, văzute de împărat ca statuie strălucitoare.", "refs": ["DAN 2:38"] },
+          { "ch": 8, "from": "e", "t": "Cornul cel mic", "why": "Cornul cel mic reapare în viziunea berbecului și a țapului.", "refs": ["DAN 8:9"] },
+          { "ch": 12, "from": "e", "t": "Vreme, vremi și jumătate", "why": "Aceeași durată limitată a necazului.", "refs": ["DAN 12:7"] }
+        ],
+        "bible": [
+          { "ref": "MAT 26:64", "from": "c", "t": "Matei 26:64", "why": "Isus Își aplică textul la proces: Fiul omului venind pe norii cerului." },
+          { "ref": "REV 13:2", "from": "a", "t": "Apocalipsa 13:2", "why": "Fiara din Apocalipsa adună trăsăturile leopardului, ursului și leului." },
+          { "ref": "REV 20:12", "from": "b", "t": "Apocalipsa 20:12", "why": "Cărțile deschise la judecată." },
+          { "ref": "2TH 2:4", "from": "e", "t": "2 Tesaloniceni 2:4", "why": "Potrivnicul care se înalță mai presus de tot ce se numește Dumnezeu." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje",
+      "data": {
+        "nodes": ["daniel", "cel-imbatranit", "fiul-omului", "belsatar"],
+        "links": [
+          ["cel-imbatranit", "fiul-omului", "îi dă stăpânirea", "DAN 7:14"],
+          ["daniel", "belsatar", "anul întâi al lui", "DAN 7:1"],
+          ["daniel", "cel-imbatranit", "vede tronul", "DAN 7:9"]
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["lamassu", "leu-procesiune"] }
+    }
+  ]
+}

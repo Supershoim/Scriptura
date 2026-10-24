@@ -1,4 +1,5 @@
 {
+ "source": "ff7fd1ce3a1b",
  "blocks": [
   {
    "type": "chapters",
@@ -618,7 +619,6 @@
    "title": "Călătoriile misionare",
    "note": "Rute schematice după Fapte; unde textul numește doar o regiune, punctul e aproximativ (etichetă înclinată). Alege o călătorie: harta se mărește, iar firul și epistolele se filtrează.",
    "data": {
-    "land": "harta-med.json",
     "C": {
      "Ierusalim": [
       35.23,

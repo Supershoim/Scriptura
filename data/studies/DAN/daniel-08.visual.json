@@ -1,0 +1,64 @@
+{
+  "source": "480c163b8bc3",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Împărățiile au un sfârșit hotărât", "text": "Gavril numește explicit împărățiile: mezii și perșii, apoi Grecia. Puterea care se ridică împotriva lui Dumnezeu are un timp fixat și va fi zdrobită fără mână omenească.", "refs": ["DAN 8:19", "DAN 8:20", "DAN 8:21", "DAN 8:25"] },
+        "parts": [
+          { "id": "a", "t": "Susa, râul Ulai", "refs": ["DAN 8:1-2"], "text": "Anul al treilea al lui Belșațar; Daniel se vede în cetățuia Susa." },
+          { "id": "b", "t": "Berbecul și țapul", "refs": ["DAN 8:3-8"], "text": "Țapul din apus sfarmă berbecul; cornul cel mare se frânge, cresc patru." },
+          { "id": "c", "t": "Cornul cel mic", "refs": ["DAN 8:9-14"], "text": "Oprește jertfa necurmată; după 2.300 de seri și dimineți Sfântul Locaș va fi curățat." },
+          { "id": "d", "t": "Gavril tâlcuiește", "refs": ["DAN 8:15-22"], "text": "Berbecul: împărații mezilor și perșilor; țapul: împărăția Greciei." },
+          { "id": "e", "t": "Împăratul fără rușine", "refs": ["DAN 8:23-27"], "text": "Se ridică împotriva Domnului domnilor și este zdrobit; viziunea pecetluită." }
+        ],
+        "flow": [["a", "b", "viziunea"], ["b", "c", "din cele patru coarne"], ["c", "d", "până când?"], ["d", "e", "vremea sfârșitului"]],
+        "book": [
+          { "ch": 7, "from": "c", "t": "Cornul cel mic din cap. 7", "why": "Aceeași imagine a puterii care asuprește pe sfinți un timp limitat.", "refs": ["DAN 7:8"] },
+          { "ch": 9, "from": "d", "t": "Gavril revine", "why": "Gavril aduce profeția celor 70 de săptămâni.", "refs": ["DAN 9:21"] },
+          { "ch": 11, "from": "e", "t": "Istoria în detaliu", "why": "Cap. 11 urmărește pas cu pas regii elenistici până la Antioh IV.", "refs": ["DAN 11:31"] }
+        ],
+        "bible": [
+          { "ref": "LUK 1:19", "from": "d", "t": "Luca 1:19", "why": "Gavril, care stă înaintea lui Dumnezeu, vestește nașterea lui Ioan." },
+          { "ref": "MAT 24:15", "from": "c", "t": "Matei 24:15", "why": "Isus citează urâciunea pustiirii despre care a vorbit prorocul Daniel." },
+          { "ref": "2TH 2:8", "from": "e", "t": "2 Tesaloniceni 2:8", "why": "Nelegiuitul nimicit de Domnul, nu de mâna omului." },
+          { "ref": "REV 22:10", "from": "e", "t": "Apocalipsa 22:10", "why": "Viziunea pecetluită aici este desigilată în Apocalipsa." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["daniel", "gavril", "alexandru", "antioh-iv", "susa", "ulai", "media", "persia", "grecia", "ierusalim"],
+        "links": [
+          ["daniel", "susa", "în cetățuie, în viziune", "DAN 8:2"],
+          ["susa", "ulai", "lângă râu", "DAN 8:2"],
+          ["gavril", "daniel", "îi tâlcuiește", "DAN 8:16"],
+          ["media", "persia", "berbecul cu două coarne", "DAN 8:20"],
+          ["alexandru", "grecia", "cel dintâi împărat", "DAN 8:21"],
+          ["alexandru", "persia", "sfarmă berbecul", "DAN 8:7"],
+          ["antioh-iv", "ierusalim", "oprește jertfa necurmată", "DAN 8:11"]
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "title": "De la Susa la Gaugamela",
+      "note": "Campania lui Alexandru după studiu (334–331 î.Hr.): Granic, Issos, Gaugamela, Babilon. Traseu schematic.",
+      "data": {
+        "places": ["susa", "ulai", "babilon", "gaugamela", "grecia", "media", "persia", "ierusalim"],
+        "routes": [
+          { "t": "Campania lui Alexandru (334–331 î.Hr.)", "kind": "campaign", "mode": "land", "refs": ["DAN 8:5", "DAN 8:7"],
+            "via": [{ "lat": 40.75, "lon": 22.52, "t": "Macedonia" }, { "lat": 40.27, "lon": 27.3, "t": "Granic" }, { "lat": 36.84, "lon": 36.2, "t": "Issos" }, "gaugamela", "babilon", "susa"] }
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["arcasi-susa", "codul-hammurabi", "mozaicul-alexandru", "jurnal-astronomic", "moneda-antioh"] }
+    }
+  ]
+}

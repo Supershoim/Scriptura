@@ -1,0 +1,117 @@
+{
+  "source": "5d25d82aafff",
+  "blocks": [
+    {
+      "type": "book-map",
+      "title": "Harta cărții Daniel",
+      "note": "Două jumătăți: narațiuni la curțile imperiilor (cap. 1–6) și viziunile lui Daniel (cap. 7–12). Cartea este scrisă în ebraică, cu o secțiune în aramaică (2:4–7:28). Liniile arată capitolele care se explică unul pe altul.",
+      "data": {
+        "sections": [
+          { "t": "Daniel la curțile imperiilor", "s": "cap. 1–6 · narațiuni", "from": 1, "to": 6 },
+          { "t": "Viziunile lui Daniel", "s": "cap. 7–12 · profeții", "from": 7, "to": 12 }
+        ],
+        "bands": [{ "t": "aramaică (2:4–7:28)", "from": 2, "to": 7 }],
+        "chapters": {
+          "1": { "t": "Exilul și testul hranei", "people": ["daniel", "hanania", "misael", "azaria", "nebucadnetar"], "places": ["ierusalim", "babilon"],
+            "sum": "Nebucadnețar asediază Ierusalimul și duce în Babilon vase ale templului și tineri de neam ales. Daniel și prietenii lui refuză bucatele împăratului; după zece zile sunt mai sănătoși, iar Dumnezeu le dă înțelepciune." },
+          "2": { "t": "Visul statuii", "people": ["daniel", "nebucadnetar", "arioc"], "places": ["babilon"],
+            "sum": "Niciun înțelept nu poate spune visul împăratului. Daniel și prietenii se roagă, iar Dumnezeu i-l descoperă: o statuie din patru materiale, patru împărății, și o piatră care le sfărâmă și devine o împărăție veșnică." },
+          "3": { "t": "Cuptorul aprins", "status": "în lucru", "people": ["hanania", "misael", "azaria", "nebucadnetar"], "places": ["dura"],
+            "sum": "Nebucadnețar ridică un chip de aur în valea Dura. Șadrac, Meșac și Abed-Nego refuză să se închine și sunt aruncați în cuptorul aprins. Împăratul vede patru oameni umblând slobozi în foc și Îl binecuvântează pe Dumnezeul lor." },
+          "4": { "t": "Copacul tăiat", "people": ["nebucadnetar", "daniel"], "places": ["babilon"],
+            "sum": "Nebucadnețar visează un copac uriaș tăiat din hotărârea străjerilor cerești. Daniel îl tâlcuiește și îl cheamă la pocăință. Pentru mândria lui, împăratul trăiește șapte vremi printre fiare, apoi Îl recunoaște pe Cel Preaînalt." },
+          "5": { "t": "Scrisul de pe perete", "people": ["belsatar", "daniel", "imparateasa", "dariu-medul"], "places": ["babilon"],
+            "sum": "La ospățul lui Belșațar se bea din vasele templului. O mână scrie pe perete; Daniel citește judecata: împăratul a fost cântărit, iar împărăția lui va fi dată mezilor și perșilor. În aceeași noapte Babilonul cade." },
+          "6": { "t": "Groapa cu lei", "people": ["daniel", "dariu-medul"], "places": ["babilon", "ierusalim"],
+            "sum": "Dregătorii obțin de la Dariu o lege care interzice, timp de treizeci de zile, orice cerere adresată altcuiva decât împăratului. Daniel se roagă ca mai înainte și este aruncat în groapa cu lei, dar Dumnezeu le închide gura." },
+          "7": { "t": "Fiarele și Fiul omului", "people": ["daniel", "cel-imbatranit", "fiul-omului", "belsatar"], "places": ["babilon"],
+            "sum": "Patru fiare ies din mare: patru împărați. Cel Îmbătrânit de zile ține judecata, iar unul ca un fiu al omului vine pe norii cerurilor și primește o stăpânire veșnică. Cornul cel mic asuprește pe sfinți un timp." },
+          "8": { "t": "Berbecul și țapul", "people": ["daniel", "gavril", "alexandru", "antioh-iv"], "places": ["susa", "ulai"],
+            "sum": "La Susa, lângă râul Ulai, Daniel vede un berbec zdrobit de un țap venit din apus. Gavril tâlcuiește: mezii și perșii, apoi Grecia. Un corn mic oprește jertfa necurmată, dar va fi zdrobit fără mână omenească." },
+          "9": { "t": "Rugăciunea și cele 70 de săptămâni", "people": ["daniel", "ieremia", "gavril", "dariu-medul"], "places": ["ierusalim"],
+            "sum": "Citind din Ieremia despre cei șaptezeci de ani, Daniel mărturisește păcatul poporului și cere îndurare. Încă pe când se roagă, Gavril vine cu profeția celor șaptezeci de săptămâni: Ierusalimul rezidit, Unsul stârpit, urâciunea pustiirii." },
+          "10": { "t": "Lupta nevăzută", "people": ["daniel", "mihail", "cir"], "places": ["hidechel", "persia", "grecia"],
+            "sum": "După trei săptămâni de post, Daniel vede pe malul Tigrului un om îmbrăcat în in. Află că rugăciunea lui a fost ascultată din prima zi, dar căpetenia Persiei s-a împotrivit până a venit Mihail în ajutor." },
+          "11": { "t": "Regii de la miazănoapte și de la miazăzi", "people": ["regele-miazanoapte", "regele-miazazi", "alexandru", "antioh-iv", "cei-intelepti"], "places": ["persia", "grecia", "egipt", "ierusalim"],
+            "sum": "Profeția trece prin regii Persiei, prin Alexandru și prin războaiele dintre Siria și Egipt, până la Antioh IV, care spurcă Sfântul Locaș. Cei înțelepți învață pe mulți și sunt curățați prin suferință până la vremea sfârșitului." },
+          "12": { "t": "Învierea și vremea sfârșitului", "people": ["mihail", "daniel", "cei-intelepti"], "places": [],
+            "sum": "Mihail se scoală într-o vreme de strâmtorare fără seamăn; cei scriși în carte vor fi mântuiți. Mulți din cei ce dorm se vor scula, unii pentru viața veșnică, alții pentru rușine. Daniel primește promisiunea învierii." }
+        },
+        "links": [
+          [2, 7, "Aceleași patru împărății: statuia și fiarele"],
+          [7, 8, "Cornul cel mic"],
+          [8, 11, "Antioh IV și urâciunea pustiirii"],
+          [9, 11, "Urâciunea pustiirii"],
+          [4, 5, "Lecția lui Nebucadnețar, nesocotită de Belșațar"],
+          [3, 6, "Credincioșie cu prețul vieții"],
+          [10, 12, "O singură viziune (10–12)"],
+          [8, 9, "Gavril"]
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "title": "Cronologia cărții",
+      "note": "Verde: dată fixată de un izvor antic primar (cronică, jurnal astronomic, 1 Macabei). Portocaliu: dată aproximativă sau dedusă. Sursa e scrisă sub fiecare eveniment; click pentru detalii.",
+      "data": {
+        "events": ["carchemis", "nebucadnetar-rege", "deportarea-daniel", "visul-statuii", "ierusalim-597", "templul-ars", "belsatar-regent", "viziunea-fiarelor", "viziunea-berbecului", "caderea-babilonului", "rugaciunea-70", "decretul-lui-cir", "viziunea-tigrului", "gaugamela", "moartea-alexandru", "raphia", "magnesia", "cercul-din-nisip", "profanarea-templului", "rededicarea-templului", "moartea-antioh"],
+        "eras": [
+          { "t": "Imperiul Babilonian", "from": -626, "to": -539 },
+          { "t": "Imperiul Medo-Persan", "from": -539, "to": -331 },
+          { "t": "Grecia și regatele elenistice", "from": -331, "to": -150 }
+        ],
+        "views": [
+          { "t": "Toată cartea", "from": -615, "to": -155 },
+          { "t": "Viața lui Daniel", "from": -612, "to": -530 },
+          { "t": "Împlinirile din cap. 8 și 11", "from": -340, "to": -158 }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "note": "Cine apare în carte, unde și cum se leagă. Etichetele mici arată alte cărți ale Bibliei în care apare același personaj sau loc. Click pe oricine pentru detalii.",
+      "data": {
+        "nodes": ["daniel", "hanania", "misael", "azaria", "nebucadnetar", "belsatar", "nabonid", "dariu-medul", "cir", "ieremia", "gavril", "mihail", "cel-imbatranit", "fiul-omului", "ierusalim", "babilon", "susa", "hidechel"],
+        "links": [
+          ["daniel", "hanania", "aleși împreună", "DAN 1:6"],
+          ["daniel", "misael", "aleși împreună", "DAN 1:6"],
+          ["daniel", "azaria", "aleși împreună", "DAN 1:6"],
+          ["nebucadnetar", "daniel", "îi tâlcuiește visurile", "DAN 2:48"],
+          ["nebucadnetar", "hanania", "cuptorul aprins", "DAN 3:20"],
+          ["belsatar", "daniel", "citește scrisul", "DAN 5:17"],
+          ["belsatar", "nabonid", "fiu și coregent"],
+          ["dariu-medul", "daniel", "groapa cu lei", "DAN 6:16"],
+          ["cir", "daniel", "o duce bine sub Cir", "DAN 6:28"],
+          ["ieremia", "daniel", "cei 70 de ani", "DAN 9:2"],
+          ["gavril", "daniel", "tâlcuiește viziunile", "DAN 9:21"],
+          ["mihail", "daniel", "ocrotitorul poporului", "DAN 12:1"],
+          ["cel-imbatranit", "fiul-omului", "îi dă stăpânirea", "DAN 7:14"],
+          ["nebucadnetar", "ierusalim", "asediu", "DAN 1:1"],
+          ["nebucadnetar", "babilon", "Babilonul cel mare", "DAN 4:30"],
+          ["belsatar", "babilon", "cade în aceeași noapte", "DAN 5:30"],
+          ["daniel", "ierusalim", "se roagă spre", "DAN 6:10"],
+          ["daniel", "susa", "viziunea din cap. 8", "DAN 8:2"],
+          ["daniel", "hidechel", "ultima viziune", "DAN 10:4"]
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "title": "Geografia cărții",
+      "note": "Drumul exilului este probabil, nu descris în text: prin Ribla și pe valea Eufratului, ocolind deșertul. Locurile marcate cu ≈ au poziție aproximativă.",
+      "data": {
+        "places": ["ierusalim", "babilon", "ribla", "carchemis", "susa", "ulai", "hidechel", "tayma", "media", "persia", "egipt", "grecia"],
+        "routes": [
+          { "t": "Drumul exilului (605 î.Hr.)", "kind": "exile", "mode": "land", "via": ["ierusalim", "ribla", { "lat": 35.95, "lon": 38.4 }, "babilon"], "refs": ["DAN 1:1", "DAN 1:2"] }
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "note": "Obiecte și texte antice care confirmă cadrul istoric al cărții.",
+      "data": { "items": ["cronica-nebucadnetar", "cronica-nabonid", "cilindrul-nabonid", "cilindrul-cirus", "poarta-istar", "jurnal-astronomic"] }
+    }
+  ]
+}

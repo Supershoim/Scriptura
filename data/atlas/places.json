@@ -1,0 +1,99 @@
+{
+  "ierusalim": {
+    "name": "Ierusalim", "kind": "cetate", "lat": 31.778, "lon": 35.235,
+    "about": "Cetatea templului, asediată de Nebucadnețar (1:1) și cucerită în 597 î.Hr. Daniel se roagă cu ferestrele deschise spre ea (6:10); cele 70 de săptămâni pornesc de la rezidirea ei (9:25).",
+    "refs": ["DAN 1:1", "DAN 6:10", "DAN 9:2", "DAN 9:25"]
+  },
+  "babilon": {
+    "name": "Babilon", "kind": "cetate", "lat": 32.536, "lon": 44.421,
+    "about": "Capitala lui Nebucadnețar, pe Eufrat. Aici se petrec cap. 1–6; „Babilonul cel mare” (4:30) cade în noaptea ospățului lui Belșațar (539 î.Hr.).",
+    "refs": ["DAN 1:1", "DAN 4:30", "DAN 5:30"]
+  },
+  "sinear": {
+    "name": "Țara Șinear", "kind": "ținut", "lat": 32.0, "lon": 45.2,
+    "about": "Numele vechi al Babiloniei, unde Nebucadnețar duce vasele templului „în casa dumnezeului său” (1:2).",
+    "refs": ["DAN 1:2"],
+    "books": { "GEN": ["GEN 11:2"] }
+  },
+  "dura": {
+    "name": "Valea Dura", "kind": "loc", "lat": 32.35, "lon": 44.55, "approx": true,
+    "about": "Valea „în ținutul Babilonului” unde Nebucadnețar ridică chipul de aur (3:1). Locul exact nu este cunoscut.",
+    "refs": ["DAN 3:1"]
+  },
+  "susa": {
+    "name": "Susa", "kind": "cetate", "lat": 32.19, "lon": 48.26,
+    "about": "Cetățuia din ținutul Elam, lângă râul Ulai, unde Daniel se vede în viziunea din cap. 8. Mai târziu, reședință a regilor perși.",
+    "refs": ["DAN 8:2"],
+    "books": { "NEH": ["NEH 1:1"], "EST": ["EST 1:2"] }
+  },
+  "elam": {
+    "name": "Elam", "kind": "ținut", "lat": 31.6, "lon": 48.9,
+    "about": "Ținutul în care se află Susa (8:2).",
+    "refs": ["DAN 8:2"]
+  },
+  "ulai": {
+    "name": "Râul Ulai", "kind": "râu", "lat": 32.25, "lon": 48.4, "approx": true,
+    "about": "Râul de lângă Susa, pe malul căruia Daniel vede berbecul și țapul și îl aude pe Gavril (8:2, 8:16). Apare și în inscripțiile lui Assurbanipal.",
+    "refs": ["DAN 8:2", "DAN 8:16"]
+  },
+  "hidechel": {
+    "name": "Hidechel (Tigrul)", "kind": "râu", "lat": 33.3, "lon": 44.45, "approx": true,
+    "about": "Tigrul, pe malul căruia Daniel primește ultima viziune (10:4). Același râu din Geneza 2:14. Locul exact al viziunii nu este precizat.",
+    "refs": ["DAN 10:4"],
+    "books": { "GEN": ["GEN 2:14"] }
+  },
+  "carchemis": {
+    "name": "Carchemiș", "kind": "cetate", "lat": 36.83, "lon": 38.02,
+    "about": "Cetate pe Eufrat unde Nebucadnețar învinge armata egipteană în 605 î.Hr., deschizând drumul spre Iuda.",
+    "refs": ["JER 46:2"],
+    "sources": [{ "t": "Cronica babiloniană (ABC 5)", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-5-jerusalem-chronicle/" }]
+  },
+  "ribla": {
+    "name": "Ribla", "kind": "cetate", "lat": 34.6, "lon": 36.55,
+    "about": "Tabăra lui Nebucadnețar în Siria, pe drumul dintre Babilon și Iuda.",
+    "refs": ["2KI 25:6", "JER 39:5"]
+  },
+  "tayma": {
+    "name": "Tayma", "kind": "cetate", "lat": 27.63, "lon": 38.55,
+    "about": "Oază din Arabia unde Nabonid a locuit ani la rând, lăsând Babilonul în grija lui Belșațar. Nenumită în Daniel.",
+    "refs": [],
+    "sources": [{ "t": "Cronica lui Nabonid (ABC 7)", "url": "https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-7-nabonidus-chronicle/" }]
+  },
+  "egipt": {
+    "name": "Egipt", "kind": "ținut", "lat": 29.6, "lon": 31.2,
+    "about": "Împărăția „de la miazăzi” în războaiele din cap. 11.",
+    "refs": ["DAN 9:15", "DAN 11:8", "DAN 11:42"]
+  },
+  "persia": {
+    "name": "Persia", "kind": "ținut", "lat": 30.0, "lon": 53.0,
+    "about": "Împărăția lui Cir. Berbecul cu două coarne (8:20) și „căpetenia Persiei” din lupta nevăzută (10:13, 10:20).",
+    "refs": ["DAN 8:20", "DAN 10:13", "DAN 11:2"]
+  },
+  "media": {
+    "name": "Media", "kind": "ținut", "lat": 34.8, "lon": 48.5,
+    "about": "Țara mezilor, uniți cu perșii în împărăția care urmează Babilonului (5:28, 8:20).",
+    "refs": ["DAN 5:28", "DAN 8:20", "DAN 9:1"]
+  },
+  "grecia": {
+    "name": "Grecia", "kind": "ținut", "lat": 38.6, "lon": 22.4,
+    "about": "„Împărăția Greciei”, țapul din cap. 8, al cărei prim împărat zdrobește Persia (8:21; 10:20; 11:2).",
+    "refs": ["DAN 8:21", "DAN 10:20", "DAN 11:2"]
+  },
+  "chitim": {
+    "name": "Chitim", "kind": "ținut", "lat": 35.1, "lon": 33.4,
+    "about": "Corăbiile din Chitim (11:30), puse de studiu în legătură cu flota romană care l-a oprit pe Antioh IV la Alexandria (168 î.Hr.). Numele trimite la Cipru și coastele apusului.",
+    "refs": ["DAN 11:30"]
+  },
+  "gaugamela": {
+    "name": "Gaugamela", "kind": "loc", "lat": 36.36, "lon": 43.25,
+    "about": "Câmpul de luptă unde Alexandru zdrobește Imperiul Persan (331 î.Hr.): țapul care sfarmă berbecul (8:5–7).",
+    "refs": ["DAN 8:7"],
+    "sources": [{ "t": "Jurnal astronomic babilonian (BM 36761)", "url": "https://www.livius.org/sources/content/oriental-varia/a-contemporary-account-of-the-battle-of-gaugamela/" }]
+  },
+  "raphia": {
+    "name": "Rafia", "kind": "loc", "lat": 31.29, "lon": 34.25,
+    "about": "Bătălia din 217 î.Hr. dintre Ptolemeu IV și Antioh III, pusă de studiu în legătură cu 11:11–12.",
+    "refs": ["DAN 11:11"],
+    "sources": [{ "t": "Polibiu, Istorii 5.79–86" }]
+  }
+}

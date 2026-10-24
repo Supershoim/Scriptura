@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
+import { checkVisual, missingBlocks, fingerprint, prepareVisual } from './visual-spec.mjs';
 
 const { marked } = createRequire(import.meta.url)('./vendor/marked.min.js');
 
@@ -57,34 +58,34 @@ function renderPart(md, books) {
   return { html, sections, level };
 }
 
-// A study's visual: { "blocks": [ { "type", "title", "note"?, "data" } ] }. The types are drawn by
-// app/js/visual.js; a "journeys" block names a land outline file (data.land) in the same folder.
-export const VISUAL_TYPES = ['chapters', 'flow', 'causal', 'journeys'];
-function loadVisual(folder, file, at, problems, used) {
-  if (!/^[\w.-]+\.visual\.json$/.test(file)) { problems.push(`${at} must be a file named <name>.visual.json`); return null; }
+// A visual file (see tools/visual-spec.mjs). Returns { file, spec, source, stale } or null.
+function loadVisual(folder, file, ctx, texts, problems, warnings, used) {
+  if (!/^[\w.-]+\.visual\.json$/.test(file)) { problems.push(`${ctx.at} must be a file named <name>.visual.json`); return null; }
   let spec;
   try { spec = JSON.parse(fs.readFileSync(path.join(folder, file), 'utf8')); }
-  catch (e) { problems.push(`${at}: ${e.code === 'ENOENT' ? 'file not found' : e.message}`); return null; }
+  catch (e) { problems.push(`${ctx.at}: ${e.code === 'ENOENT' ? 'file not found' : e.message}`); return null; }
   used.add(file);
-  if (!Array.isArray(spec.blocks) || !spec.blocks.length) { problems.push(`${at}: "blocks" must list at least one block`); return null; }
-  const assets = {};
-  spec.blocks.forEach((b, i) => {
-    if (!VISUAL_TYPES.includes(b.type)) problems.push(`${at} block ${i + 1}: "type" must be one of ${VISUAL_TYPES.join(', ')}`);
-    if (typeof b.title !== 'string' || !b.title.trim()) problems.push(`${at} block ${i + 1}: missing "title"`);
-    if (typeof b.data !== 'object' || !b.data) problems.push(`${at} block ${i + 1}: missing "data"`);
-    const land = b.data?.land;
-    if (land) {
-      if (!fs.existsSync(path.join(folder, land))) problems.push(`${at} block ${i + 1}: land file ${land} not found`);
-      else { used.add(land); assets[land] = fs.readFileSync(path.join(folder, land), 'utf8'); }
-    }
-  });
-  return { file, spec, assets };
+  const found = checkVisual(spec, ctx);
+  if (found.length) { problems.push(...found); return null; }
+  const missing = missingBlocks(spec, ctx.level);
+  if (missing.length) warnings.push(`${ctx.at}: lipsesc elementele obligatorii ${missing.join(', ')}`);
+  const source = fingerprint(texts);
+  const stale = !!spec.source && spec.source !== source;
+  if (!spec.source) warnings.push(`${ctx.at}: vizualizare neștampilată (node tools/visuals.mjs stamp)`);
+  else if (stale) warnings.push(`${ctx.at}: textul studiului s-a schimbat după ce a fost făcută vizualizarea`);
+  return { file, spec, source, stale };
 }
 
-// Reads every book folder. Returns { studies, problems }; studies are in canonical order.
-export function loadStudies(dir, books) {
-  const problems = [], studies = [];
-  if (!fs.existsSync(dir)) return { studies, problems };
+// The texts a book visual depends on: the list of studies and every study file of the book.
+export function bookTexts(folder) {
+  return fs.readdirSync(folder).filter(f => f === 'studies.json' || f.endsWith('.md')).sort().map(f => fs.readFileSync(path.join(folder, f), 'utf8'));
+}
+
+// Reads every book folder. Returns { studies, bookVisuals, problems, warnings }; studies are in canonical order.
+// ctx: { atlas, checkRef } for checking the visuals.
+export function loadStudies(dir, books, ctx) {
+  const problems = [], warnings = [], studies = [], bookVisuals = {};
+  if (!fs.existsSync(dir)) return { studies, bookVisuals, problems, warnings };
   const byId = new Map(books.map(b => [b.id, b]));
   const bookWords = new Set(books.flatMap(b => norm(b.name).split(' ')).filter(w => w.length > 2));
   for (const folder of fs.readdirSync(dir, { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name)) {
@@ -121,20 +122,35 @@ export function loadStudies(dir, books) {
           if (!studyRoute(href, books)) problems.push(`${folder}/${p.file}: link "${decodeURIComponent(href)}" must name a study as "<Carte> capitolul N.md" or "<Carte> privire de ansamblu.md"`);
         parts.push({ label: p.label, file: p.file, md });
       }
-      const visual = s.visual === undefined ? null : loadVisual(path.join(dir, folder), s.visual, `${at}: visual`, problems, used);
-      if (parts.length) studies.push({ b: book.id, ...s, parts, visual, bookWords });
+      if (parts.length) studies.push({ b: book.id, ...s, parts, visual: null, bookWords });
     });
+    // Visuals are checked once every study of the book is known (a book map needs to know which chapters have one).
+    const studied = new Set(chapters.keys());
+    for (const s of studies.filter(x => x.b === book.id && x.visual === null && list.find(y => y.chapter === x.chapter)?.visual)) {
+      const vctx = { ...ctx, at: `${where} chapter ${s.chapter}: visual`, level: 'chapter', book, studied };
+      s.visual = loadVisual(path.join(dir, folder), list.find(y => y.chapter === s.chapter).visual, vctx, s.parts.map(p => p.md), problems, warnings, used);
+    }
+    if (fs.existsSync(path.join(dir, folder, 'book.visual.json'))) {
+      const vctx = { ...ctx, at: `${where}/book.visual.json`, level: 'book', book, studied };
+      bookVisuals[book.id] = loadVisual(path.join(dir, folder), 'book.visual.json', vctx, bookTexts(path.join(dir, folder)), problems, warnings, used);
+    }
     for (const f of fs.readdirSync(path.join(dir, folder)))
       if (f !== 'studies.json' && !used.has(f)) problems.push(`${where}/${f}: not used by studies.json`);
   }
   const order = new Map(books.map((b, i) => [b.id, i]));
   studies.sort((x, y) => order.get(x.b) - order.get(y.b) || x.chapter - y.chapter);
-  return { studies, problems };
+  return { studies, bookVisuals, problems, warnings };
 }
 
-// Builds what the app downloads: { index, files: { path: html or JSON }, shards: { name: { word: [study numbers] } } }.
-export function buildStudies(studies, books) {
-  const files = {}, words = new Map();
+// Builds what the app downloads: { index: { studies, books }, files: { path: html or JSON }, shards, atlas }.
+// ctx: { atlas, route } (route: tools/routes.mjs, null when there is no map outline).
+export function buildStudies(studies, bookVisuals, books, ctx) {
+  const files = {}, words = new Map(), seen = new Map();
+  const shipVisual = (v, subject, b) => {
+    const out = `data/studies/${b}/${v.file}`;
+    files[out] = JSON.stringify(prepareVisual(v.spec, { ...ctx, subject, seen }));
+    return { path: out, src: out, stale: v.stale };   // the source file has the same path in the project
+  };
   const index = studies.map((s, n) => {
     let text = '';
     const parts = s.parts.map(p => {
@@ -144,18 +160,11 @@ export function buildStudies(studies, books) {
       const body = plain(html);
       text += ' ' + body;
       const outline = level === 'h1' ? sections.slice(1) : sections; // a lone h1 level starts with the document title
-      const part = { label: p.label, path: out, words: body.split(' ').length, sections: outline.length, outline: outline.slice(0, 8).map(h => headCase(h, s.bookWords)) };
+      const part = { label: p.label, path: out, src: `data/studies/${s.b}/${p.file}`, words: body.split(' ').length, sections: outline.length, outline: outline.slice(0, 8).map(h => headCase(h, s.bookWords)) };
       if (/întrebări/i.test(p.label)) part.questions = (p.md.match(/^> Întrebare/gm) || []).length;
       return part;
     });
-    let visual;
-    if (s.visual) {
-      const base = `data/studies/${s.b}/`;
-      for (const [name, content] of Object.entries(s.visual.assets)) files[base + name] = content;
-      const spec = { blocks: s.visual.spec.blocks.map(b => b.data.land ? { ...b, data: { ...b.data, land: base + b.data.land } } : b) };
-      visual = base + s.visual.file;
-      files[visual] = JSON.stringify(spec);
-    }
+    const visual = s.visual && shipVisual(s.visual, `${s.b}-${s.chapter}`, s.b);
     const count = text.trim().split(' ').length;
     for (const t of new Set(tokens(norm(`${s.title} ${s.summary} ${s.themes.join(' ')} ${text}`)))) {
       if (!words.has(t)) words.set(t, []);
@@ -165,7 +174,9 @@ export function buildStudies(studies, books) {
     if (s.covers) entry.covers = s.covers;
     return { ...entry, date: s.date, title: s.title, summary: s.summary, themes: s.themes, words: count, parts, ...visual && { visual } };
   });
+  const bookIndex = {};
+  for (const [b, v] of Object.entries(bookVisuals)) if (v) bookIndex[b] = { visual: shipVisual(v, b, b) };
   const shards = {};
   for (const [w, list] of [...words].sort((a, b) => a[0] < b[0] ? -1 : 1)) (shards[shardOf(w)] ??= {})[w] = list;
-  return { index, files, shards };
+  return { index: { studies: index, books: bookIndex }, files, shards, seen };
 }

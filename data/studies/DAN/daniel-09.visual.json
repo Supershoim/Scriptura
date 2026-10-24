@@ -1,0 +1,48 @@
+{
+  "source": "1d0e53f77407",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Scriptura citită devine rugăciune", "text": "Daniel citește din Ieremia, se identifică cu păcatul poporului și cere îndurare pe temeiul caracterului lui Dumnezeu. Răspunsul vine încă pe când se roagă: profeția celor 70 de săptămâni.", "refs": ["DAN 9:2", "DAN 9:18", "DAN 9:23"] },
+        "parts": [
+          { "id": "a", "t": "Ieremia și cei 70 de ani", "refs": ["DAN 9:1-2"], "text": "Anul dintâi al lui Dariu; Daniel înțelege din cărți numărul anilor." },
+          { "id": "b", "t": "Mărturisirea", "refs": ["DAN 9:3-19"], "text": "Post, sac și cenușă; noi am păcătuit; nu pentru neprihănirea noastră." },
+          { "id": "c", "t": "Gavril vine", "refs": ["DAN 9:20-23"], "text": "Pe când vorbea încă; cuvântul a ieșit când a început să se roage." },
+          { "id": "d", "t": "Cele 70 de săptămâni", "refs": ["DAN 9:24-27"], "text": "Șase scopuri; Ierusalimul rezidit; Unsul stârpit; urâciunea pustiirii." }
+        ],
+        "flow": [["a", "b", "Scriptura → rugăciune"], ["b", "c", "răspunsul"], ["c", "d", "revelația"]],
+        "book": [
+          { "ch": 6, "from": "b", "t": "Rugăciunea zilnică", "why": "Același Daniel care se ruga de trei ori pe zi spre Ierusalim.", "refs": ["DAN 6:10"] },
+          { "ch": 8, "from": "c", "t": "Gavril", "why": "Gavril, care tâlcuise viziunea din cap. 8.", "refs": ["DAN 8:16"] },
+          { "ch": 11, "from": "d", "t": "Urâciunea pustiirii", "why": "Tema reapare în istoria lui Antioh IV.", "refs": ["DAN 11:31"] }
+        ],
+        "bible": [
+          { "ref": "JER 25:11", "from": "a", "t": "Ieremia 25:11", "why": "Profeția celor șaptezeci de ani pe care o citește Daniel." },
+          { "ref": "LUK 18:13", "from": "b", "t": "Luca 18:13", "why": "Rugăciunea vameșului: apel la milă, nu la merit." },
+          { "ref": "MAT 24:15", "from": "d", "t": "Matei 24:15", "why": "Isus citează urâciunea pustiirii din Daniel." },
+          { "ref": "GAL 4:4", "from": "d", "t": "Galateni 4:4", "why": "Venirea Fiului la împlinirea vremii." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["daniel", "ieremia", "gavril", "dariu-medul", "ierusalim"],
+        "links": [
+          ["ieremia", "daniel", "cartea celor 70 de ani", "DAN 9:2"],
+          ["gavril", "daniel", "vine pe când se roagă", "DAN 9:21"],
+          ["dariu-medul", "daniel", "anul dintâi al lui", "DAN 9:1"],
+          ["daniel", "ierusalim", "cetatea pentru care se roagă", "DAN 9:16"]
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["cilindrul-cirus", "cronica-nabonid"] }
+    }
+  ]
+}

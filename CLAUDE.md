@@ -16,7 +16,8 @@ Build-ul verifică datele și se oprește la orice problemă. Rulează-l după o
 
 ## Structură
 
-- `app/js/`: module ES fără framework. `app.js` (Biblia, rutare, comutatorul Biblia/Studii), `data.js` (traduceri și date încorporate), `search.js`, `render.js`, `notes.js` (pop-up-ul de versete, folosit și de studii), `tips.js` (tooltip-uri), `catalog.js` (catalogul și căutarea studiilor), `refs.js` (trimiteri din studii → pop-up), `visual.js` (fila „Vizual”), `studies.js` (secțiunea Studii).
+- `app/js/`: module ES fără framework. `app.js` (Biblia, rutare, comutatorul Biblia/Studii), `data.js` (traduceri și date încorporate), `search.js`, `render.js`, `notes.js` (pop-up-ul de versete, folosit și de studii și vizualizări), `tips.js` (tooltip-uri), `catalog.js` (catalogul și căutarea studiilor), `refs.js` (trimiteri din studii → pop-up), `vizcore.js` (registrul, panoul de detalii, evidențierea legată, zoom), `vizbook.js` (harta cărții, cronologia), `vizchapter.js` (harta capitolului, rețeaua de personaje și locuri, mărturiile istorice), `vizmap.js` (hărți), `visual.js` (alege desenul fiecărui bloc; tipurile vechi ale Faptelor), `editor.js` (editare și regenerare), `studies.js` (secțiunea Studii).
+- `data/atlas/`: registrul comun (personaje, locuri, evenimente, imagini, harta). Formatul vizualizărilor: începutul lui `tools/visual-spec.mjs`.
 - Importurile între module se scriu pe un singur rând (`import { a } from './x.js';`): `tools/build.mjs` le transformă în `Scriptura.html`. Un modul nou se adaugă în `MODULES`, în ordinea dependențelor.
 - `data/studies/<COD>/`: `studies.json`, textele `.md`, vizualizările `.visual.json` și fișierele folosite de ele (de ex. `harta-med.json`).
 - Rute: `#/JHN/3/16` (Biblia), `#/studii`, `#/studii/ROM` (o carte), `#/studii/ROM/2` (un studiu), `#/studii/ROM/2/2` (a doua parte), `#/studii/ROM/2/vizual`.
@@ -31,13 +32,26 @@ Proiectul e un studiu biblic baptist neoprotestant, cu reguli stricte de verific
 - **Vizualizări:** etichetele și tooltip-urile au trimiteri verificate în VDCC. Numele de locuri urmează VDCC (Neapolis, Siracusa, Puzole). Cronologia: singura ancoră fixă e Galion (51–52, inscripția de la Delfi); restul datelor sunt aproximative și se prezintă ca atare.
 - **Drepturi:** VDCC, NTR și studiile nu se publică (GitHub Pages public) fără acordul utilizatorului.
 
+## Vizualizările (accentul aplicației)
+
+Aplicația pune prezentarea vizuală înaintea textului. Standardul, verificat de build:
+- **Carte** (`book.visual.json`): `book-map` (fluxul cărții, acoperirea pe capitole, rezumat de 30–40 de cuvinte pentru fiecare capitol; capitolele fără studiu au rezumat marcat `"status": "în lucru"`), `timeline` (verde doar când un izvor antic primar fixează data, altfel portocaliu; fiecare dată are sursă), `network` (personaje și locuri, cu legături spre alte cărți).
+- **Capitol** (`<nume>.visual.json`): `chapter-map` (ideea principală și cum se leagă în capitol, carte și Biblie), `network`.
+- **Ocazional**: `map` oriunde sunt călătorii sau evenimente legate de locuri (traseele se calculează realist, nu ca linii drepte), `history` (imagini cu licență liberă, prin `tools/commons.mjs`, cu sursă, autor și licență).
+
+Textele vizualizărilor (rezumate, idei, legături, legende) se scriu în fișierele de date, nu în cod. Un tip nou de reprezentare se adaugă ca funcție de desen în `app/js/viz*.js` (întoarce `{ html, mount }`), în `RENDER` din `visual.js` și în `VISUAL_TYPES` (cu verificări) din `tools/visual-spec.mjs`.
+
 ## Cum adaugi un studiu
 
 1. Pune fișierele în `data/studies/<COD>/`: partea principală `.md`, părțile suplimentare (`…-intrebari.md` etc.) și vizualizarea `.visual.json`.
-2. Adaugă intrarea în `data/studies/<COD>/studies.json` (`chapter`, `date`, `title`, `summary`, `themes`, `parts`, `visual`, opțional `covers`).
-3. Rulează `node tools/build.mjs` și deschide studiul în browser, inclusiv fila „Vizual”.
+2. Adaugă intrarea în `data/studies/<COD>/studies.json` (`chapter`, `date`, `title`, `summary`, `themes`, `parts`, `visual`, opțional `covers`). Actualizează rezumatul capitolului în `book.visual.json` și scoate `"status": "în lucru"`.
+3. Adaugă în `data/atlas/` personajele, locurile, evenimentele și imaginile noi.
+4. Rulează `node tools/build.mjs`, apoi `node tools/visuals.mjs stamp <COD> <capitol>` (și `book`), și deschide studiul în browser.
 
-Vizualizarea folosește tipurile existente din `app/js/visual.js` (`chapters`, `flow`, `causal`, `journeys`). Dacă un capitol cere alt fel de reprezentare, adaugă un tip nou acolo, cu textele în fișierul de date (nu în cod), și înscrie-l în `VISUAL_TYPES` din `tools/studies.mjs`.
+## Editare și regenerare
+
+- Utilizatorul poate edita orice parte și orice vizualizare din aplicație (butonul „Editează”, prin `node tools/serve.mjs`). Modificările lui manuale se respectă.
+- Când textul unui studiu se schimbă, vizualizarea devine „neactualizată”. „Regenerează” o pune în `data/studies/regenerate.json`; comanda `/regenerate-visuals` (`.claude/skills/regenerate-visuals/`) le reface.
 
 ## Design
 

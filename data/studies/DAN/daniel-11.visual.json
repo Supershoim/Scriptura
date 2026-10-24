@@ -1,0 +1,65 @@
+{
+  "source": "2cbba841adf3",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Cei ce Îl cunosc pe Dumnezeu rămân tari", "text": "Profeția urmărește istoria în detaliu, până la Antioh IV. În mijlocul ei, poporul care Îl cunoaște pe Dumnezeu rămâne tare, iar suferința celor înțelepți are un scop: încercare, curățire, albire.", "refs": ["DAN 11:32", "DAN 11:35"] },
+        "parts": [
+          { "id": "a", "t": "Persia și Grecia", "refs": ["DAN 11:2-4"], "text": "Trei regi, apoi al patrulea, bogat; împăratul viteaz; împărăția ruptă în patru." },
+          { "id": "b", "t": "Miazăzi și miazănoapte", "refs": ["DAN 11:5-20"], "text": "Războaiele Ptolemeilor și Seleucizilor; Rafia; Antioh III cel Mare." },
+          { "id": "c", "t": "Omul disprețuit", "refs": ["DAN 11:21-35"], "text": "Antioh IV: uneltiri, campaniile în Egipt, corăbiile din Chitim, Sfântul Locaș spurcat, cei înțelepți." },
+          { "id": "d", "t": "Împăratul care face ce vrea", "refs": ["DAN 11:36-45"], "text": "Se înalță mai presus de orice dumnezeu; ajunge la sfârșit fără ajutor." }
+        ],
+        "flow": [["a", "b", "împărăția împărțită"], ["b", "c", "în locul lui"], ["c", "d", "vremea sfârșitului"]],
+        "book": [
+          { "ch": 8, "from": "c", "t": "Cornul cel mic", "why": "Viziunea din cap. 8 prezenta deja pe Antioh IV ca un corn mic.", "refs": ["DAN 8:9", "DAN 8:11"] },
+          { "ch": 10, "from": "a", "t": "Căpeteniile Persiei și Greciei", "why": "Istoria vizibilă a luptei nevăzute din cap. 10.", "refs": ["DAN 10:20"] },
+          { "ch": 12, "from": "d", "t": "Vremea sfârșitului", "why": "Profeția continuă direct cu necazul cel mare și învierea.", "refs": ["DAN 12:1"] }
+        ],
+        "bible": [
+          { "ref": "MAT 24:15", "from": "c", "t": "Matei 24:15", "why": "Urâciunea pustiirii, citată de Isus." },
+          { "ref": "2TH 2:4", "from": "d", "t": "2 Tesaloniceni 2:4", "why": "Potrivnicul care se înalță mai presus de tot ce se numește Dumnezeu." },
+          { "ref": "1PE 1:7", "from": "c", "t": "1 Petru 1:7", "why": "Credința încercată prin foc." },
+          { "ref": "REV 19:20", "from": "d", "t": "Apocalipsa 19:20", "why": "Sfârșitul fiarei." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["regele-miazazi", "regele-miazanoapte", "alexandru", "antioh-iv", "cei-intelepti", "egipt", "chitim", "ierusalim", "persia", "grecia"],
+        "links": [
+          ["alexandru", "grecia", "împăratul viteaz", "DAN 11:3"],
+          ["persia", "grecia", "se răscoală împotriva", "DAN 11:2"],
+          ["regele-miazazi", "egipt", "duce prada în Egipt", "DAN 11:8"],
+          ["regele-miazazi", "regele-miazanoapte", "războaie", "DAN 11:11"],
+          ["antioh-iv", "chitim", "corăbiile îl întorc", "DAN 11:30"],
+          ["antioh-iv", "ierusalim", "spurcă Sfântul Locaș", "DAN 11:31"],
+          ["cei-intelepti", "antioh-iv", "rămân tari în persecuție", "DAN 11:33"]
+        ]
+      }
+    },
+    {
+      "type": "map",
+      "title": "Campaniile lui Antioh IV în Egipt",
+      "note": "Traseu schematic după studiu: Antiohia → Egipt → Alexandria, oprit de romani (168 î.Hr.), apoi întoarcerea prin Ierusalim.",
+      "data": {
+        "places": ["ierusalim", "egipt", "chitim", "raphia"],
+        "routes": [
+          { "t": "Spre Egipt (168 î.Hr.)", "kind": "campaign", "mode": "land", "refs": ["DAN 11:29"],
+            "via": [{ "lat": 36.2, "lon": 36.16, "t": "Antiohia" }, "raphia", { "lat": 31.2, "lon": 29.92, "t": "Alexandria" }] },
+          { "t": "Întoarcerea prin Ierusalim", "kind": "return", "mode": "land", "refs": ["DAN 11:30", "DAN 11:31"],
+            "via": [{ "lat": 31.2, "lon": 29.92, "t": "Alexandria" }, "ierusalim", { "lat": 36.2, "lon": 36.16, "t": "Antiohia" }] }
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["moneda-antioh", "mozaicul-alexandru"] }
+    }
+  ]
+}

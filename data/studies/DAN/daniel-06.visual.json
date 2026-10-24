@@ -1,0 +1,48 @@
+{
+  "source": "01e634462937",
+  "blocks": [
+    {
+      "type": "chapter-map",
+      "title": "Harta capitolului",
+      "data": {
+        "idea": { "t": "Credincioșie neschimbată", "text": "Singurul cap de acuzare împotriva lui Daniel este legea Dumnezeului său. El se roagă cum făcea și mai înainte; Dumnezeu nu-l scutește de groapă, ci îl izbăvește în ea.", "refs": ["DAN 6:5", "DAN 6:10", "DAN 6:22"] },
+        "parts": [
+          { "id": "a", "t": "Complotul", "refs": ["DAN 6:1-9"], "text": "Daniel întrece pe toți dregătorii; aceștia obțin legea celor treizeci de zile." },
+          { "id": "b", "t": "Rugăciunea", "refs": ["DAN 6:10-15"], "text": "De trei ori pe zi, cu ferestrele deschise spre Ierusalim; împăratul nu poate revoca legea." },
+          { "id": "c", "t": "Groapa", "refs": ["DAN 6:16-18"], "text": "Daniel aruncat la lei; piatra pecetluită; împăratul petrece noaptea fără somn." },
+          { "id": "d", "t": "Dimineața", "refs": ["DAN 6:19-23"], "text": "Îngerul a închis gura leilor; Daniel scos fără nicio rană." },
+          { "id": "e", "t": "Judecata și decretul", "refs": ["DAN 6:24-28"], "text": "Pârâșii aruncați în groapă; decretul lui Dariu laudă pe Dumnezeul cel viu." }
+        ],
+        "flow": [["a", "b", "legea"], ["b", "c", "pâra"], ["c", "d", "noaptea"], ["d", "e", "izbăvirea"]],
+        "book": [
+          { "ch": 3, "from": "c", "t": "Cuptorul aprins", "why": "Același tipar: credincioșie cu prețul vieții și izbăvire prin îngerul lui Dumnezeu.", "refs": ["DAN 3:28"] },
+          { "ch": 9, "from": "b", "t": "Rugăciunea din cap. 9", "why": "Rugăciunea spre Ierusalim continuă cu marea mărturisire din cap. 9.", "refs": ["DAN 9:3"] }
+        ],
+        "bible": [
+          { "ref": "HEB 11:33", "from": "d", "t": "Evrei 11:33", "why": "Prin credință au astupat gurile leilor." },
+          { "ref": "MAT 27:66", "from": "c", "t": "Matei 27:66", "why": "Piatra pecetluită a mormântului, deschisă dimineața." },
+          { "ref": "1TH 5:17", "from": "b", "t": "1 Tesaloniceni 5:17", "why": "Rugăciunea ca disciplină neîntreruptă." }
+        ]
+      }
+    },
+    {
+      "type": "network",
+      "title": "Personaje și locuri",
+      "data": {
+        "nodes": ["daniel", "dariu-medul", "cir", "ierusalim", "babilon"],
+        "links": [
+          ["dariu-medul", "daniel", "vrea să-l pună peste împărăție", "DAN 6:3"],
+          ["dariu-medul", "daniel", "îl aruncă, apoi îl scoate", "DAN 6:23"],
+          ["daniel", "ierusalim", "ferestrele deschise spre", "DAN 6:10"],
+          ["cir", "daniel", "o duce bine sub Cir", "DAN 6:28"],
+          ["daniel", "babilon", "dregător în imperiu", "DAN 6:2"]
+        ]
+      }
+    },
+    {
+      "type": "history",
+      "title": "Mărturii istorice",
+      "data": { "items": ["vanatoarea-de-lei", "cilindrul-cirus"] }
+    }
+  ]
+}

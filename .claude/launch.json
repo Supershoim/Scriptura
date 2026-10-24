@@ -6,6 +6,12 @@
       "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
       "runtimeArgs": ["tools/serve.mjs", "8080"],
       "port": 8080
+    },
+    {
+      "name": "scriptura-8090",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": ["tools/serve.mjs", "8090"],
+      "port": 8090
     }
   ]
 }

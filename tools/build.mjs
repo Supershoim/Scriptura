@@ -6,10 +6,13 @@ import zlib from 'node:zlib';
 import crypto from 'node:crypto';
 import { validate } from './validate.mjs';
 import { loadStudies, buildStudies } from './studies.mjs';
+import { loadAtlas, atlasForApp } from './atlas.mjs';
+import { makeRouter } from './routes.mjs';
+import { MAP_PATH } from './visual-spec.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const app = path.join(root, 'app'), dataDir = path.join(root, 'data'), dist = path.join(root, 'dist');
-const MODULES = ['util', 'data', 'search', 'render', 'notes', 'tips', 'catalog', 'refs', 'visual', 'studies', 'app'];
+const MODULES = ['util', 'data', 'search', 'render', 'notes', 'tips', 'catalog', 'refs', 'vizcore', 'vizbook', 'vizchapter', 'vizmap', 'visual', 'editor', 'studies', 'app'];
 const SHELL = ['index.html', 'styles.css', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', ...MODULES.map(m => `js/${m}.js`)];
 
 const read = file => fs.readFileSync(file, 'utf8');
@@ -29,8 +32,20 @@ const translations = fs.readdirSync(path.join(dataDir, 'translations'), { withFi
   })
   .sort((a, b) => (a.meta.order ?? 99) - (b.meta.order ?? 99));
 
-const { studies, problems: studyProblems } = loadStudies(path.join(dataDir, 'studies'), books);
-const problems = [...validate(books, translations), ...studyProblems];
+// "DAN 5:1" or "DAN 5:1-4": the book exists and the verses exist in at least one translation.
+const bookNames = new Map(books.map(b => [b.id, b]));
+function checkRef(ref) {
+  const m = /^([1-3A-Z]{3}) (\d+):(\d+)(?:-(\d+))?$/.exec(ref || '');
+  if (!m) return `reference "${ref}" must look like "DAN 5:1" or "DAN 5:1-4"`;
+  const [b, c, from, to] = [m[1], +m[2], +m[3], +(m[4] || m[3])];
+  if (!bookNames.has(b)) return `reference "${ref}": unknown book`;
+  if (to < from) return `reference "${ref}": the range runs backwards`;
+  for (const v of [from, to]) if (!translations.some(t => typeof t.text[b]?.[c - 1]?.[v - 1] === 'string')) return `reference "${ref}": ${b} ${c}:${v} does not exist`;
+  return null;
+}
+const { atlas, problems: atlasProblems } = loadAtlas(path.join(dataDir, 'atlas'), books, checkRef);
+const { studies, bookVisuals, problems: studyProblems, warnings } = loadStudies(path.join(dataDir, 'studies'), books, { atlas, checkRef });
+const problems = [...validate(books, translations), ...atlasProblems, ...studyProblems];
 if (problems.length) {
   console.error(problems.slice(0, 40).join('\n'));
   console.error(`${problems.length} problem(s) in data/. Build stopped.`);
@@ -48,8 +63,13 @@ for (const t of translations) {
   if (t.notes) writeDist(`data/translations/${t.meta.id}/notes.json`, JSON.stringify(t.notes));
 }
 
-const study = buildStudies(studies, books);
-const STUDY_FILES = ['data/studies/index.json', ...Object.keys(study.files), ...Object.keys(study.shards).map(k => `data/studies/search/${k}.json`)];
+const study = buildStudies(studies, bookVisuals, books, { atlas, route: atlas.map ? makeRouter(atlas.map) : null });
+// Register and map: shipped as files of the study set so the offline file carries them too.
+study.files['data/atlas.json'] = JSON.stringify(atlasForApp(atlas, study.seen));
+if (atlas.map) study.files[MAP_PATH] = JSON.stringify(atlas.map);
+const images = Object.values(atlas.images).map(im => im.file);
+const STUDY_FILES = ['data/studies/index.json', ...Object.keys(study.files), ...Object.keys(study.shards).map(k => `data/studies/search/${k}.json`), ...images.map(f => `data/atlas/images/${f}`)];
+for (const f of images) writeDist(`data/atlas/images/${f}`, fs.readFileSync(path.join(dataDir, 'atlas/images', f)));
 writeDist('data/studies/index.json', JSON.stringify(study.index));
 for (const [rel, html] of Object.entries(study.files)) writeDist(rel, html);
 for (const [k, words] of Object.entries(study.shards)) writeDist(`data/studies/search/${k}.json`, JSON.stringify(words));
@@ -57,6 +77,8 @@ for (const [k, words] of Object.entries(study.shards)) writeDist(`data/studies/s
 // ---------- Hosted app ----------
 
 for (const rel of SHELL) writeDist(rel, fs.readFileSync(path.join(app, rel)));
+// Markdown preview in the editor (loaded only when editing, through tools/serve.mjs).
+writeDist('js/marked.min.js', fs.readFileSync(path.join(root, 'tools/vendor/marked.min.js')));
 
 const hash = crypto.createHash('sha256');
 for (const rel of SHELL) hash.update(fs.readFileSync(path.join(dist, rel)));
@@ -86,7 +108,11 @@ function bundle() {
   return out;
 }
 
-const payload = zlib.gzipSync(JSON.stringify({ books, translations, studies: study }), { level: 9 }).toString('base64');
+// Images travel inside the offline file as data: URLs under their usual path.
+const imageData = Object.fromEntries(images.map(f => [`data/atlas/images/${f}`,
+  `data:image/${f.endsWith('.png') ? 'png' : 'jpeg'};base64,` + fs.readFileSync(path.join(dataDir, 'atlas/images', f)).toString('base64')]));
+const embeddedStudies = { index: study.index, files: { ...study.files, ...imageData }, shards: study.shards };
+const payload = zlib.gzipSync(JSON.stringify({ books, translations, studies: embeddedStudies }), { level: 9 }).toString('base64');
 const standalone = read(path.join(app, 'index.html'))
   .replace(/<link rel="manifest"[^>]*>\n/, '')
   .replace(/<link rel="(?:icon|apple-touch-icon)"[^>]*>\n/g, '')
@@ -96,4 +122,6 @@ const standalone = read(path.join(app, 'index.html'))
 writeDist('Scriptura.html', standalone);
 
 const size = rel => (fs.statSync(path.join(dist, rel)).size / 1e6).toFixed(1) + ' MB';
-console.log(`Built dist/ (version ${version}) · ${translations.map(t => t.meta.abbreviation).join(', ')} · ${studies.length} studies · Scriptura.html ${size('Scriptura.html')}`);
+if (warnings.length) console.warn(warnings.map(w => '  ! ' + w).join('\n'));
+const visuals = studies.filter(s => s.visual).length;
+console.log(`Built dist/ (version ${version}) · ${translations.map(t => t.meta.abbreviation).join(', ')} · ${studies.length} studies, ${visuals} with visuals, ${Object.keys(bookVisuals).length} book visuals · Scriptura.html ${size('Scriptura.html')}`);
