@@ -7,7 +7,7 @@
 // The other block types live in vizbook.js, vizchapter.js and vizmap.js; this module dispatches all of them.
 import { esc } from './util.js';
 import { studies, bookOf, json } from './catalog.js';
-import { loadAtlas } from './vizcore.js';
+import { loadAtlas, getAtlas } from './vizcore.js';
 import { bookMap, timeline } from './vizbook.js';
 import { chapterMap, network, history } from './vizchapter.js';
 import { map, smoothPath, loadLand } from './vizmap.js';
@@ -297,7 +297,9 @@ function draw() {
     const out = RENDER[b.type]?.(b, ctx);
     if (!out) return '';
     mounts.push([i, out.mount]);
-    return `<section class="visblock" id="vb-${i}" data-block="${i}"><h2 class="vis-h">${esc(b.title)}</h2>${b.note ? `<p class="vis-p">${esc(b.note)}</p>` : ''}${out.html}</section>`;
+    // Under the title: what the block represents (its own "about" or the text for its type); the note goes under the diagram, in small print.
+    const about = b.about || getAtlas()?.help?.[b.type];
+    return `<section class="visblock" id="vb-${i}" data-block="${i}"><h2 class="vis-h">${esc(b.title)}</h2>${about ? `<p class="vis-about">${esc(about)}</p>` : ''}${out.html}${b.note ? `<p class="fine-print">${esc(b.note)}</p>` : ''}</section>`;
   });
   const nav = spec.blocks.length > 2 ? `<nav class="visnav" aria-label="Părțile vizualizării">${spec.blocks.map((b, i) => `<a href="#vb-${i}" data-jump="vb-${i}">${esc(NAV[b.type] || b.title)}</a>`).join('')}</nav>` : '';
   root.innerHTML = view.banner + nav + sections.join('');

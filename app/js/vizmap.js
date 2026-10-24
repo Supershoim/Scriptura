@@ -34,6 +34,19 @@ function projection(points, W) {
   return { H, proj: (lon, lat) => [ox + (lon - x0) * k * s, H - oy - (lat - y0) * s] };
 }
 
+const routeCls = r => `k-${esc(r.kind || 'journey')}${r.tone ? ` tone-${r.tone}` : ''}`;
+
+// Layers: buttons above the map turn groups of routes on and off (e.g. each wave of the exile, the returns).
+function layerBar(layers) {
+  if (!layers?.length) return '';
+  return `<div class="map-layers" role="group" aria-label="Straturi">${layers.map(l =>
+    `<button type="button" class="layer-btn" data-layer-btn="${esc(l.id)}" aria-pressed="${l.on !== false}">${esc(l.t)}</button>`).join('')}</div>`;
+}
+function applyLayers(el, layers) {
+  const on = new Set(layers.filter(l => l.on !== false).map(l => l.id));
+  el.querySelectorAll('[data-layer]').forEach(n => n.classList.toggle('layer-off', !on.has(n.dataset.layer)));
+}
+
 export function map(block) {
   const d = block.data, W = 1000;
   const places = d.places.map(id => ({ id, ...entity(id) })).filter(p => p.lat != null);
@@ -48,7 +61,7 @@ export function map(block) {
     }
     routes.forEach((r, i) => {
       const pts = (r.path || []).map(([lo, la]) => proj(lo, la));
-      g += `<g class="v-route k-${esc(r.kind || 'journey')}" data-route="${i}" data-e="route-${i} ${r.via.filter(v => typeof v === 'string').join(' ')}" tabindex="0" role="button" aria-label="${esc(r.t)}">` +
+      g += `<g class="v-route ${routeCls(r)}" data-route="${i}"${r.layer ? ` data-layer="${esc(r.layer)}"` : ''} data-e="route-${i} ${r.via.filter(v => typeof v === 'string').join(' ')}" tabindex="0" role="button" aria-label="${esc(r.t)}">` +
         `<path class="hitline" d="${smoothPath(pts)}"/><path class="line" d="${smoothPath(pts)}" marker-end="url(#arrow-route)"/><title>${esc(r.t)}</title></g>`;
       // Named stops that are not places of the register (e.g. Antiohia, Alexandria).
       for (const v of r.via) if (typeof v !== 'string' && v.t) {
@@ -66,15 +79,26 @@ export function map(block) {
     return g;
   };
   const defs = '<defs><marker id="arrow-route" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1L9 5L1 9z" fill="context-stroke"/></marker></defs>';
-  const legend = routes.length ? `<ul class="routes">${routes.map((r, i) => `<li><button type="button" class="route-key k-${esc(r.kind || 'journey')}" data-route="${i}" data-e="route-${i}"><i></i>${esc(r.t)}</button> ${refList(r.refs)}</li>`).join('')}</ul>` : '';
+  const legend = routes.length ? `<ul class="routes">${routes.map((r, i) => `<li${r.layer ? ` data-layer="${esc(r.layer)}"` : ''}><button type="button" class="route-key ${routeCls(r)}" data-route="${i}" data-e="route-${i}"><i></i>${esc(r.t)}</button> ${refList(r.refs)}</li>`).join('')}</ul>` : '';
   return {
-    html: `<div class="visbox map"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(block.title)}">${defs}<g class="layer">${draw(null)}</g></svg></div>${legend}` +
-      '<p class="hint credit">Contur și râuri: Natural Earth (domeniu public). Trasee calculate pe uscat de-a lungul văilor și pe mare de-a lungul coastelor.</p>',
+    html: layerBar(d.layers) + `<div class="visbox map"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(block.title)}">${defs}<g class="layer">${draw(null)}</g></svg></div>${legend}` +
+      '<p class="fine-print">Contur și râuri: Natural Earth (domeniu public). Trasee probabile, calculate pe uscat de-a lungul văilor și pe mare de-a lungul coastelor: textul numește locurile, nu drumul. ≈ poziție aproximativă.' +
+      (d.layers?.length ? ' Exilul: nuanțe de portocaliu, câte una pentru fiecare val; întoarcerile: nuanțe de verde, linie întreruptă.' : '') + '</p>',
     mount(el) {
       const svg = el.querySelector('svg');
       zoomable(svg);
-      loadLand().then(geo => { if (geo && svg.isConnected) svg.querySelector('.layer').innerHTML = draw(geo); });
+      const layers = (d.layers || []).map(l => ({ ...l }));
+      applyLayers(el, layers);
+      loadLand().then(geo => { if (geo && svg.isConnected) { svg.querySelector('.layer').innerHTML = draw(geo); applyLayers(el, layers); } });
       el.addEventListener('click', e => {
+        const lb = e.target.closest('[data-layer-btn]');
+        if (lb) {
+          const l = layers.find(x => x.id === lb.dataset.layerBtn);
+          l.on = l.on === false;
+          lb.setAttribute('aria-pressed', String(l.on));
+          applyLayers(el, layers);
+          return;
+        }
         const place = e.target.closest('[data-place]');
         if (place) { entityPanel(place.dataset.place); return; }
         const route = e.target.closest('[data-route]');

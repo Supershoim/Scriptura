@@ -3,8 +3,8 @@
 // places (with the other books where they appear) and the gallery of historical witnesses.
 import { esc } from './util.js';
 import { books, bookIndex } from './data.js';
-import { forChapter } from './catalog.js';
-import { entity, entityName, openPanel, refList, refButton, refLabel, svgLines, wrap, select, zoomable, entityPanel, imageFigure, chips } from './vizcore.js';
+import { forChapter, imageUrl } from './catalog.js';
+import { entity, entityName, openPanel, refList, refButton, refLabel, svgLines, wrap, select, zoomable, entityPanel, imageFigure, chips, getAtlas } from './vizcore.js';
 
 const bookOf = id => books[bookIndex.get(id)];
 const firstVerse = ref => { const m = /^([1-3A-Z]{3}) (\d+):(\d+)/.exec(ref); return m ? `#/${m[1]}/${m[2]}/${m[3]}` : null; };
@@ -152,9 +152,19 @@ function layout(ids, links, W, H) {
   return pos;
 }
 
+// A person's picture inside the node, clipped to a circle inside the coloured ring.
+let clips = 0;
+function portrait(e, x, y, r) {
+  const im = e.image && getAtlas().images[e.image];
+  if (!im) return '';
+  const id = `pc-${++clips}`, ri = r - 3;
+  return `<clipPath id="${id}"><circle cx="${x}" cy="${y}" r="${ri}"/></clipPath>` +
+    `<image class="v-face" href="${esc(imageUrl(im.file))}" x="${x - ri}" y="${y - ri}" width="${2 * ri}" height="${2 * ri}" preserveAspectRatio="xMidYMid slice" clip-path="url(#${id})"/>`;
+}
+
 export function network(block) {
   const d = block.data, ids = d.nodes.filter(entity), links = d.links || [];
-  const W = 1000, H = Math.max(380, Math.min(620, 160 + ids.length * 26));
+  const W = 1000, H = Math.max(400, Math.min(660, 170 + ids.length * 28));
   const pos = layout(ids, links, W, H);
   const degree = id => links.filter(l => l[0] === id || l[1] === id).length;
   let edges = '', nodes = '';
@@ -165,10 +175,10 @@ export function network(block) {
       `<text class="v-edge-t" x="${(A.x + Z.x) / 2}" y="${(A.y + Z.y) / 2 - 5}" text-anchor="middle">${esc(label)}</text><title>${esc(label)}</title></g>`;
   });
   for (const id of ids) {
-    const e = entity(id), { x, y } = pos.get(id), r = 13 + Math.min(degree(id), 6) * 2;
+    const e = entity(id), { x, y } = pos.get(id), r = 16 + Math.min(degree(id), 6) * 2;
     const shape = e.type === 'place'
       ? `<rect x="${x - r}" y="${y - r}" width="${2 * r}" height="${2 * r}" rx="6"/>`
-      : `<circle cx="${x}" cy="${y}" r="${r}"/>`;
+      : `<circle cx="${x}" cy="${y}" r="${r}"/>` + portrait(e, x, y, r);
     const other = Object.keys(e.books || {});
     const badges = other.slice(0, 3).map((bk, i) => `<g class="v-other" data-other="${id}:${bk}"><rect x="${x + r + 4}" y="${y - r + i * 15}" width="${bookOf(bk).abbr.length * 6 + 10}" height="13" rx="6.5"/><text x="${x + r + 9}" y="${y - r + i * 15 + 10}">${esc(bookOf(bk).abbr)}</text></g>`).join('');
     nodes += `<g class="v-node ${e.type} k-${(e.kind || '').replace(/[^a-zăâîșț]/gi, '')}" data-node="${id}" data-e="${id}" tabindex="0" role="button" aria-label="${esc(entityName(id))}">` +
@@ -178,8 +188,9 @@ export function network(block) {
   return {
     html: `<div class="net-bar"><div class="seg" role="group" aria-label="Arată"><button type="button" data-show="all" aria-pressed="true">Toate (${ids.length})</button>` +
       `<button type="button" data-show="person" aria-pressed="false">Personaje (${people})</button><button type="button" data-show="place" aria-pressed="false">Locuri (${ids.length - people})</button></div>` +
-      `<span class="legend"><span class="key person">personaj</span><span class="key angel">înger</span><span class="key divine">Dumnezeu</span><span class="key place">loc</span><span class="key other">în alte cărți</span></span></div>` +
-      `<div class="visbox"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(block.title)}">${edges}${nodes}</svg></div>`,
+      `</div><div class="visbox"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(block.title)}">${edges}${nodes}</svg></div>` +
+      `<p class="fine-print legend"><span class="key person">om</span><span class="key prophet">proroc</span><span class="key angel">înger</span><span class="key divine">Dumnezeu</span><span class="key group">grup</span><span class="key place">loc (pătrat)</span><span class="key other">insignă: apare și în alte cărți</span>` +
+      '<span class="hint">Nodul crește cu numărul de legături. Portretele sunt reprezentări artistice cu licență liberă (Wikimedia Commons); autorul și licența sunt în panou.</span></p>',
     mount(el) {
       const svg = el.querySelector('svg');
       zoomable(svg);

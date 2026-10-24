@@ -76,7 +76,7 @@ export function closePanel() {
   onClose();
 }
 
-const KIND = { person: 'Personaj', place: 'Loc', event: 'Eveniment', image: 'Mărturie istorică' };
+const KIND = { person: 'Personaj', prophecy: 'Profeție', fulfilment: 'Împlinire', major: 'Eveniment major', place: 'Loc', event: 'Eveniment', image: 'Mărturie istorică' };
 // Where an entry appears: studies ("DAN-5") and books ("DAN").
 function seenIn(id) {
   const list = atlas?.seen?.[id] || [];
@@ -102,6 +102,7 @@ export function entityPanel(id) {
   if (e.type === 'image') {
     body = imageFigure(id, true) + `<p class="refs">${refList(e.refs, true)}</p>` + `<div class="chips">${chips([...e.people || [], ...e.places || []])}</div>`;
   } else {
+    if (e.image && atlas.images[e.image]) body += imageFigure(e.image, true);
     if (e.aka?.length) body += `<p class="aka">numit și ${e.aka.map(esc).join(', ')}</p>`;
     if (e.type === 'event') body += `<p class="when"><span class="cert ${e.certain ? 'sure' : 'approx'}">${e.certain ? 'dată sigură' : 'dată aproximativă'}</span> ${esc(e.date)}</p>`;
     if (e.note) body += `<p class="hint">${esc(e.note)}</p>`;
@@ -113,15 +114,19 @@ export function entityPanel(id) {
     if (e.type === 'event') {
       body += `<h4>Sursa datării</h4><p class="source">${e.source.url ? `<a href="${esc(e.source.url)}" target="_blank" rel="noopener">${esc(e.source.t)}</a>` : esc(e.source.t)}</p>`;
       if (e.people?.length || e.places?.length) body += `<div class="chips">${chips([...e.people || [], ...e.places || []])}</div>`;
+      // Prophecies and what they announce, both ways.
+      if (e.fulfils?.length) body += `<h4>Se împlinește în</h4><div class="chips">${chips(e.fulfils)}</div>`;
+      const by = Object.keys(atlas.events).filter(k => atlas.events[k].fulfils?.includes(id));
+      if (by.length) body += `<h4>Anunțat de</h4><div class="chips">${chips(by)}</div>`;
     }
     for (const s of e.sources || []) body += `<p class="source">Sursă: ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.t)}</a>` : esc(s.t)}</p>`;
-    const images = Object.entries(atlas.images).filter(([, im]) => (im.people || []).includes(id) || (im.places || []).includes(id));
+    const images = Object.entries(atlas.images).filter(([, im]) => im.kind !== 'portrait' && ((im.people || []).includes(id) || (im.places || []).includes(id)));
     if (images.length) body += `<h4>Mărturii istorice</h4><div class="thumbs">${images.map(([k, im]) =>
       `<button type="button" class="thumb" data-entity="${k}"><img src="${esc(imageUrl(im.file))}" alt="${esc(im.title)}" loading="lazy"></button>`).join('')}</div>`;
   }
   const seen = seenIn(id);
   if (seen) body += `<h4>Apare în</h4><div class="chips">${seen}</div>`;
-  openPanel({ kicker: KIND[e.type], title: e.name || e.title, body, keys: id });
+  openPanel({ kicker: (e.type === 'event' && KIND[e.kind]) || (e.kind === 'proroc' ? 'Proroc' : KIND[e.type]), title: e.name || e.title, body, keys: id });
 }
 
 // ---------- Selection ----------
@@ -160,18 +165,32 @@ export function zoomable(svg, { max = 8 } = {}) {
     view.y = Math.min(home.y + home.h - view.h, Math.max(home.y, view.y));
   };
   // Zoom by `factor` keeping the point (fx, fy) (0–1 of the visible area) in place.
-  const zoom = (factor, fx = 0.5, fy = 0.5) => {
-    const w = view.w / factor, h = view.h / factor;
+  const zoom = (factor, fx = 0.5, fy = 0.5, smooth = false) => {
+    const from = { ...view }, w = view.w / factor, h = view.h / factor;
     view = { x: view.x + (view.w - w) * fx, y: view.y + (view.h - h) * fy, w, h };
     clamp();
-    apply();
+    if (smooth) glide(from); else apply();
+  };
+  // The buttons move the view gradually (about a fifth of a second), unless the reader asked for less motion.
+  let frame = 0;
+  const glide = from => {
+    cancelAnimationFrame(frame);
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { apply(); return; }
+    const to = { ...view }, t0 = performance.now();
+    const tick = now => {
+      const t = Math.min(1, (now - t0) / 220), k = 1 - (1 - t) ** 3;
+      view = Object.fromEntries(Object.keys(to).map(p => [p, from[p] + (to[p] - from[p]) * k]));
+      apply();
+      if (t < 1) frame = requestAnimationFrame(tick); else view = to;
+    };
+    frame = requestAnimationFrame(tick);
   };
   const controls = document.createElement('div');
   controls.className = 'zoomctl';
   controls.innerHTML = '<button type="button" data-z="in" aria-label="Mărește">+</button><button type="button" data-z="out" aria-label="Micșorează">−</button><button type="button" data-z="home" aria-label="Vedere completă">⟲</button>';
   controls.addEventListener('click', e => {
     const z = e.target.closest('[data-z]')?.dataset.z;
-    if (z === 'in') zoom(1.6); else if (z === 'out') zoom(1 / 1.6); else if (z === 'home') { view = { ...home }; apply(); }
+    if (z === 'in') zoom(1.6, 0.5, 0.5, true); else if (z === 'out') zoom(1 / 1.6, 0.5, 0.5, true); else if (z === 'home') { const from = { ...view }; view = { ...home }; glide(from); }
   });
   box.append(controls);
   const frac = e => { const r = svg.getBoundingClientRect(); return [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height]; };
