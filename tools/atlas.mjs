@@ -6,7 +6,7 @@
 //                speaks of), fulfilment (a later fulfilment of the book's prophecies), major (fall of empires, deportations, returns)
 //   images.json  { id: { title, caption, refs, places?, people?, kind?: "portrait", file, source, author, license } }  (files in images/)
 //                portraits are artistic depictions: shown on the person, not among the historical witnesses
-//   visual-help.json  { block type: what the block represents (100–150 words), shown under each block title }
+//   visual-help.json  { block type: what the block represents (100–150 words), opened from the "?" next to each block title }
 //   maps/near-east.json  land outline and rivers (tools/make-map.mjs)
 // Visuals refer to these entries by id; the app shows them in one detail panel wherever they are clicked.
 import fs from 'node:fs';

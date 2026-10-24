@@ -7,7 +7,7 @@
 // The other block types live in vizbook.js, vizchapter.js and vizmap.js; this module dispatches all of them.
 import { esc } from './util.js';
 import { studies, bookOf, json } from './catalog.js';
-import { loadAtlas, getAtlas } from './vizcore.js';
+import { loadAtlas, getAtlas, openPanel } from './vizcore.js';
 import { bookMap, timeline } from './vizbook.js';
 import { chapterMap, network, history } from './vizchapter.js';
 import { map, smoothPath, loadLand } from './vizmap.js';
@@ -289,6 +289,8 @@ const LEGACY = { chapters: chaptersBlock, flow: flowBlock, causal: causalBlock, 
 const RENDER = { 'book-map': bookMap, timeline, 'chapter-map': chapterMap, network, map, history };
 const NAV = { 'book-map': 'Harta cărții', timeline: 'Cronologie', 'chapter-map': 'Harta capitolului', network: 'Personaje și locuri', map: 'Hartă', history: 'Istorie' };
 
+const helpText = b => b.about || getAtlas()?.help?.[b.type] || '';
+
 function draw() {
   const { study, spec, root } = view, ctx = { s: study.c != null ? study : null, b: study.b };
   const mounts = [];
@@ -297,9 +299,9 @@ function draw() {
     const out = RENDER[b.type]?.(b, ctx);
     if (!out) return '';
     mounts.push([i, out.mount]);
-    // Under the title: what the block represents (its own "about" or the text for its type); the note goes under the diagram, in small print.
-    const about = b.about || getAtlas()?.help?.[b.type];
-    return `<section class="visblock" id="vb-${i}" data-block="${i}"><h2 class="vis-h">${esc(b.title)}</h2>${about ? `<p class="vis-about">${esc(about)}</p>` : ''}${out.html}${b.note ? `<p class="fine-print">${esc(b.note)}</p>` : ''}</section>`;
+    // How to read the block (its own "about" or the text for its type) opens from the "?" next to the title; the note goes under the diagram, in small print.
+    const help = helpText(b) ? `<button type="button" class="vis-help" data-help="${i}" aria-haspopup="dialog" aria-label="Cum citești: ${esc(b.title)}" data-tip="Cum citești diagrama">?</button>` : '';
+    return `<section class="visblock" id="vb-${i}" data-block="${i}"><div class="vis-head"><h2 class="vis-h">${esc(b.title)}</h2>${help}</div>${out.html}${b.note ? `<p class="fine-print">${esc(b.note)}</p>` : ''}</section>`;
   });
   const nav = spec.blocks.length > 2 ? `<nav class="visnav" aria-label="Părțile vizualizării">${spec.blocks.map((b, i) => `<a href="#vb-${i}" data-jump="vb-${i}">${esc(NAV[b.type] || b.title)}</a>`).join('')}</nav>` : '';
   root.innerHTML = view.banner + nav + sections.join('');
@@ -321,6 +323,16 @@ export async function showVisual(root, study, visual, banner = '') {
 // Clicks inside the visual: journey tabs and causal events. Returns true when handled.
 export function visualClick(e) {
   if (!view) return false;
+  const help = e.target.closest('[data-help]');
+  if (help) {
+    const b = view.spec.blocks[+help.dataset.help];
+    // Two sentences per paragraph read more easily in the narrow panel.
+    const s = helpText(b).match(/[^.!?]+[.!?]+(\s|$)/g) || [helpText(b)];
+    const paras = [];
+    s.forEach((x, k) => { if (k % 2) paras[paras.length - 1] += x; else paras.push(x); });
+    openPanel({ kicker: 'Cum citești', title: b.title, body: paras.map(p => `<p>${esc(p.trim())}</p>`).join('') });
+    return true;
+  }
   const jr = e.target.closest('[data-jr]');
   if (jr) {
     const [i, k] = jr.dataset.jr.split(':');

@@ -15,7 +15,7 @@
 //                  layer?, mode?: land|sea, via: [place id | {lat, lon, t?}], refs?}] }
 //   history      { items: [image ids] }
 //   chapters, flow, causal, journeys: the earlier book visuals of Acts (not checked in detail).
-// Under each block title the app shows what the block represents: the text for its type in data/atlas/visual-help.json
+// The "?" next to each block title opens, in the side panel, how to read the block: the text for its type in data/atlas/visual-help.json
 // (100–150 words), or the block's own "about" (100–150 words). "note" is shown under the diagram, in small print.
 // "source" is a fingerprint of the study text the visual was made from (tools/visuals.mjs stamp); when the text
 // changes, the visual is reported as out of date and can be queued for regeneration.
