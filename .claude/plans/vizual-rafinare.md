@@ -50,3 +50,19 @@ Căutarea din cititorul Bibliei (`app/js/search.js`, `runSearch` din `app/js/app
 3. Conținut Daniel (`data/studies/DAN/*.visual.json`, `data/atlas/*`), cu toate citatele verificate (`verses.mjs` din scratchpad sau un script nou în `tools/`).
 4. `node tools/build.mjs`, `node tools/visuals.mjs stamp DAN`, verificare în browser (preview `scriptura-8090`), commit.
 5. Documentație și standardul pentru celelalte cărți.
+
+## Progres
+- 2026-10-24, rularea 1 (întreruptă): formatul și verificările (`visual-spec.mjs`, `atlas.mjs`), conținutul Daniel (secțiuni cheie, etichete, 35 de evenimente cu profeții/împliniri/majore, straturi exil/întoarcere, portrete), `tools/verses.mjs`. Commit `9ba6702`.
+- 2026-10-24, rularea 2: descrierile de 100–150 de cuvinte pe tip (`data/atlas/visual-help.json`), `note` jos cu litere mici (`.fine-print`).
+- Harta cărții: `about` sus, cardurile secțiunilor cheie (clic → panou, evidențiază capitolele), etichete pe arce (arcele pe benzi, fără suprapuneri), explicația `links[3]` în panou.
+- Cronologia: scară pe segmente (golurile > 40 de ani comprimate, marcaj „⋯ N ani”), axa trece de anul 0 (d.Hr.), culori pe tip (profeție violet, împlinire romb verde/portocaliu, major gri), arce profeție → împlinire la selecție, filtrul `kinds` al vederilor, animație FLIP între vederi; panoul arată „Se împlinește în” / „Anunțat de”.
+- Rețeaua: culoare pentru proroci, portret rotund în nod (clipPath) și mare în panou cu credit; portretele nu apar printre mărturiile istorice.
+- Hărțile: butoane de straturi (fade), nuanțe pe valuri (portocaliu) și întoarceri (verde). Zoom animat la butoane; panou cu slide-in; hover cu scalare; `prefers-reduced-motion` oprește tot. Commit `f914fd8`.
+- B, căutarea aproximativă (`approximate` în `search.js`): rădăcini românești, prefix comun, o greșeală de tipar, ponderare IDF, bonus de ordine; automat la 0 rezultate exacte, altfel buton „Caută și potriviri apropiate”; procent pe fiecare rezultat. Teste în Node: Ioan 3:16 95%, Ps 23:1 80% (parafrază), Mat 5:3 91%, „Dumnezu a iubit lumea” → Ioan 3:16 89%. Commit `604f0d2`.
+- `CLAUDE.md` actualizat cu standardul nou.
+
+### Rămâne
+- Verificarea în browser (desktop și telefon, consola): pornirea serverului de previzualizare a fost refuzată în rularea automată; randarea a fost testată doar în Node (fără erori, fără NaN, etichetele arcelor fără suprapuneri).
+- `README.md` și `.claude/skills/regenerate-visuals/SKILL.md`: de descris câmpurile noi (acum documentate în `tools/visual-spec.mjs`, `tools/atlas.mjs`, `CLAUDE.md`).
+- Căutarea aproximativă: indexul se construiește la prima căutare fără rezultat (~400 ms pe traducere pe calculator; pe telefon probabil mai mult); de mutat în `requestIdleCallback` sau pe bucăți. Sinonimele nu sunt prinse („a fost” ≠ „era”: „la început a fost Cuvântul” nu dă Ioan 1:1 primul).
+- Celelalte hărți de capitol din Daniel nu au încă straturi; doar harta cărții și Daniel 1.

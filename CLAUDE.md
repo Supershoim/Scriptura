@@ -35,9 +35,11 @@ Proiectul e un studiu biblic baptist neoprotestant, cu reguli stricte de verific
 ## Vizualizările (accentul aplicației)
 
 Aplicația pune prezentarea vizuală înaintea textului. Standardul, verificat de build:
-- **Carte** (`book.visual.json`): `book-map` (fluxul cărții, acoperirea pe capitole, rezumat de 30–40 de cuvinte pentru fiecare capitol; capitolele fără studiu au rezumat marcat `"status": "în lucru"`), `timeline` (verde doar când un izvor antic primar fixează data, altfel portocaliu; fiecare dată are sursă), `network` (personaje și locuri, cu legături spre alte cărți).
+- **Carte** (`book.visual.json`): `book-map` (sus mesajul cărții în 100–150 de cuvinte, `about`; cele două jumătăți și 4–8 secțiuni cheie, `parts`, o structură simplificată; legături între capitole cu etichetă vizibilă de cel mult 5 cuvinte și explicație în panou; acoperirea pe capitole, rezumat de 30–40 de cuvinte pentru fiecare capitol; capitolele fără studiu au rezumat marcat `"status": "în lucru"`), `timeline` (verde doar când un izvor antic primar fixează data, altfel portocaliu; fiecare dată are sursă; pe lângă evenimentele cărții: profeții anterioare `prophecy` cu `fulfils`, împliniri ulterioare `fulfilment`, evenimente majore `major`; golurile de peste 40 de ani se comprimă), `network` (personaje și locuri, cu legături spre alte cărți; prorocii au `kind: "proroc"`; fiecare personaj are, unde se poate, `image`, un portret cu licență liberă, `kind: "portrait"` în `images.json`).
 - **Capitol** (`<nume>.visual.json`): `chapter-map` (ideea principală și cum se leagă în capitol, carte și Biblie), `network`.
-- **Ocazional**: `map` oriunde sunt călătorii sau evenimente legate de locuri (traseele se calculează realist, nu ca linii drepte), `history` (imagini cu licență liberă, prin `tools/commons.mjs`, cu sursă, autor și licență).
+- **Ocazional**: `map` oriunde sunt călătorii sau evenimente legate de locuri (traseele se calculează realist, nu ca linii drepte; grupuri de trasee ca straturi, `layers`, de ex. valurile exilului și întoarcerile), `history` (imagini cu licență liberă, prin `tools/commons.mjs`, cu sursă, autor și licență).
+
+- **General**: sub titlul fiecărui bloc, ce reprezintă (100–150 de cuvinte, `data/atlas/visual-help.json` pe tip sau `about` pe bloc); `note` și legendele apar dedesubt, cu litere mici; tranzițiile respectă `prefers-reduced-motion`.
 
 Textele vizualizărilor (rezumate, idei, legături, legende) se scriu în fișierele de date, nu în cod. Un tip nou de reprezentare se adaugă ca funcție de desen în `app/js/viz*.js` (întoarce `{ html, mount }`), în `RENDER` din `visual.js` și în `VISUAL_TYPES` (cu verificări) din `tools/visual-spec.mjs`.
 
