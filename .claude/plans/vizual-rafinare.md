@@ -61,6 +61,8 @@ Căutarea din cititorul Bibliei (`app/js/search.js`, `runSearch` din `app/js/app
 - B, căutarea aproximativă (`approximate` în `search.js`): rădăcini românești, prefix comun, o greșeală de tipar, ponderare IDF, bonus de ordine; automat la 0 rezultate exacte, altfel buton „Caută și potriviri apropiate”; procent pe fiecare rezultat. Teste în Node: Ioan 3:16 95%, Ps 23:1 80% (parafrază), Mat 5:3 91%, „Dumnezu a iubit lumea” → Ioan 3:16 89%. Commit `604f0d2`.
 - `CLAUDE.md` actualizat cu standardul nou.
 
+- 2026-10-24, rularea 3: utilizare săptămânală 95%, rulare scurtă. Build trece (avertisment așteptat: `ACT/book.visual.json` nu are încă blocurile cerute de standardul nou). Serverul de previzualizare a fost refuzat din nou, deci verificarea în browser rămâne pentru utilizator sau o rulare interactivă.
+
 ### Rămâne
 - Verificarea în browser (desktop și telefon, consola): pornirea serverului de previzualizare a fost refuzată în rularea automată; randarea a fost testată doar în Node (fără erori, fără NaN, etichetele arcelor fără suprapuneri).
 - `README.md` și `.claude/skills/regenerate-visuals/SKILL.md`: de descris câmpurile noi (acum documentate în `tools/visual-spec.mjs`, `tools/atlas.mjs`, `CLAUDE.md`).
