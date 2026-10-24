@@ -26,11 +26,14 @@ async function readEmbedded() {
   return JSON.parse(await new Response(stream).text());
 }
 
-async function fetchJson(path) {
+export async function fetchJson(path) {
   const response = await fetch(path);
   if (!response.ok) throw new Error(`${path}: ${response.status}`);
   return response.json();
 }
+
+// The studies built into Scriptura.html ({ index, files, shards }), or null on the hosted site.
+export const embeddedStudies = () => embedded?.studies || null;
 
 export async function init() {
   embedded = await readEmbedded();

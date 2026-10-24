@@ -4,6 +4,8 @@ import { books, bookIndex, key, parseKey } from './data.js';
 import { parseReference, search } from './search.js';
 import { cellHtml } from './render.js';
 import { setupNotes, hideNote, repositionNote } from './notes.js';
+import { setupTips, hideTip } from './tips.js';
+import { setupStudies, showStudies, focusStudySearch, cardTip } from './studies.js';
 
 const PAGE = 50, FONT_DEFAULT = 19;
 const state = {
@@ -14,7 +16,8 @@ const state = {
   layout: store.get('layout', 'auto'),
   font: store.get('font', FONT_DEFAULT),
   theme: store.get('theme', 'auto'),
-  tab: 'all'
+  tab: 'all',
+  mode: 'bible'              // 'bible' | 'studies'
 };
 
 const book = id => books[bookIndex.get(id)];
@@ -163,6 +166,32 @@ function render(scroll) {
 
 // ---------- Routing ----------
 
+function setMode(mode) {
+  state.mode = mode;
+  $('bibleView').hidden = mode !== 'bible';
+  $('studiesView').hidden = mode !== 'studies';
+  document.querySelectorAll('[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === mode)));
+  store.set('mode', mode);
+  hideNote();
+  hideTip();
+}
+
+// Pushes a new address (so Back returns here) and shows it.
+function go(hash) {
+  if (location.hash === hash) route(); else location.hash = hash;
+}
+
+async function route() {
+  if (location.hash.startsWith('#/studii')) {
+    setMode('studies');
+    await showStudies(location.hash.slice('#/studii'.length));
+    return;
+  }
+  const r = readHash();
+  if (state.mode !== 'bible') { setMode('bible'); if (!r) { read(state.b, state.c, state.v, state.end); return; } }
+  if (r) read(r.b, r.c, r.v, r.end);
+}
+
 function writeHash() {
   const hash = `#/${state.b}/${state.c}${state.v ? '/' + state.v + (state.end > state.v ? '-' + state.end : '') : ''}`;
   if (location.hash !== hash) history.replaceState(null, '', hash);
@@ -301,7 +330,7 @@ function wire() {
   $('prev').addEventListener('click', () => move(-1));
   $('next').addEventListener('click', () => move(1));
   $('back').addEventListener('click', () => { state.view = 'read'; render(true); });
-  $('home').addEventListener('click', e => { e.preventDefault(); $('query').value = ''; read(state.b, state.c); });
+  $('home').addEventListener('click', e => { e.preventDefault(); $('query').value = ''; if (state.mode === 'bible') read(state.b, state.c); else go(`#/${state.b}/${state.c}`); });
   $('share').addEventListener('click', () => copyText(location.href));
   $('copyAll').addEventListener('click', () => copyText(chapterText(state.visible)));
   $('columns').addEventListener('click', e => {
@@ -352,14 +381,19 @@ function wire() {
     if (e.target.closest('[data-close]')) { d.close(); return; }
     if (e.target === d) { const r = d.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) d.close(); }
   }));
-  window.addEventListener('hashchange', () => { const r = readHash(); if (r) read(r.b, r.c, r.v, r.end); });
+  window.addEventListener('hashchange', route);
+  document.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () =>
+    go(b.dataset.mode === 'studies' ? store.get('studiesHash', '#/studii') : `#/${state.b}/${state.c}`)));
   document.addEventListener('keydown', e => {
     const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName) || document.querySelector('dialog[open]');
     if (typing || e.altKey || e.ctrlKey || e.metaKey) return;
-    if (e.key === '/') { e.preventDefault(); $('query').focus(); }
+    if (e.key === '/') { e.preventDefault(); if (state.mode === 'studies') focusStudySearch(); else $('query').focus(); }
+    else if (state.mode !== 'bible') return;
     else if (state.view === 'read' && e.key === 'ArrowLeft') move(-1);
     else if (state.view === 'read' && e.key === 'ArrowRight') move(1);
   });
+  setupTips(cardTip);
+  setupStudies({ go });
   setupNotes($('columns'), {
     visible: shown,
     onOpen: canon => { const { b, c, v } = parseKey(canon); read(b, c, v); }
@@ -392,10 +426,12 @@ async function start() {
     if (initial && bookIndex.has(initial.b)) Object.assign(state, { b: initial.b, c: initial.c || 1, v: initial.v || 0, end: initial.end || initial.v || 0 });
     const saved = store.get('visible', null);
     await setVisible(Array.isArray(saved) && saved.length ? saved : data.available.map(t => t.id), false);
-    read(state.b, state.c, state.v, state.end);
+    if (!location.hash && store.get('mode', 'bible') === 'studies') history.replaceState(null, '', store.get('studiesHash', '#/studii'));
+    if (location.hash.startsWith('#/studii')) { renderRead(false); await route(); }
+    else read(state.b, state.c, state.v, state.end);
     $('footInfo').textContent = `${books.length} cărți · ${data.available.length} traduceri disponibile · căutarea rămâne pe dispozitivul tău`;
     offlineSetup();
-    window.scriptura = { state, data, read, runSearch };
+    window.scriptura = { state, data, read, runSearch, go };
   } catch (error) {
     console.error(error);
     $('columns').innerHTML = '<div class="empty"><strong>Textele nu au putut fi încărcate</strong>Verifică conexiunea sau deschide aplicația într-un browser actualizat (Chrome, Edge, Firefox, Safari).</div>';

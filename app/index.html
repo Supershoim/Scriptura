@@ -20,6 +20,10 @@
     <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 5C8 2 3 3 2 4v15c3-2 7-1 10 1 3-2 7-3 10-1V4c-1-1-6-2-10 1Zm0 0v15M5 7c2-.5 3 0 4 .6M15 7.6c1-.6 2-1.1 4-.6M5 10c2-.5 3 0 4 .6M15 10.6c1-.6 2-1.1 4-.6"/></svg></span>
     <span><span class="brand-name">Scriptura</span><span class="eyebrow">Biblia în paralel</span></span>
   </a>
+  <nav class="modes" aria-label="Secțiune">
+    <button type="button" data-mode="bible" aria-pressed="true">Biblia</button>
+    <button type="button" data-mode="studies" aria-pressed="false">Studii</button>
+  </nav>
   <div class="headtools">
     <span id="status" class="status" hidden><span class="dot"></span><span id="statusText"></span></span>
     <button type="button" id="translationsButton" class="ghost" aria-haspopup="dialog">Traduceri <span id="translationsCount" class="pill"></span></button>
@@ -30,7 +34,7 @@
   </div>
 </header>
 
-<div class="layout">
+<div class="layout" id="bibleView">
   <aside class="sidebar" aria-label="Cărțile Bibliei">
     <input id="bookFilter" class="bookfind" type="search" placeholder="Găsește o carte…" aria-label="Filtrează lista cărților">
     <div class="tabs" role="group" aria-label="Testament">
@@ -101,7 +105,66 @@
   </main>
 </div>
 
+<div class="layout" id="studiesView" hidden>
+  <aside class="sidebar" aria-label="Studii pe cărți">
+    <div id="studyProgress" class="progress"></div>
+    <input id="studyBookFilter" class="bookfind" type="search" placeholder="Găsește o carte…" aria-label="Filtrează lista cărților">
+    <div class="tabs" role="group" aria-label="Testament">
+      <button type="button" data-study-tab="all" class="active">Toate</button>
+      <button type="button" data-study-tab="ot">Vechiul</button>
+      <button type="button" data-study-tab="nt">Noul</button>
+    </div>
+    <nav id="studyBooks" class="booklist studybooks"></nav>
+  </aside>
+
+  <main>
+    <section id="studyCatalog" aria-label="Catalogul studiilor">
+      <form id="studySearchForm" role="search" class="search">
+        <div class="searchbox">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.8"/><path d="m16 16 4.7 4.7"/></svg>
+          <label for="studyQuery" class="sr">Caută în studii</label>
+          <input id="studyQuery" type="search" autocomplete="off" enterkeyhint="search" placeholder="Caută în studii: Rom 2:13, Fapte 13, har, legământ…">
+        </div>
+        <div class="searchoptions">
+          <select id="studyBook" class="mobile-only" aria-label="Cartea"></select>
+          <select id="studyTheme" aria-label="Tema"></select>
+          <button type="button" id="studyReset" class="ghost small">Resetează</button>
+        </div>
+      </form>
+      <div id="studyBookPanel" class="bookpanel" hidden></div>
+      <div id="studyResults" class="studyresults" aria-live="polite"></div>
+    </section>
+
+    <section id="studyReader" class="studyreader" hidden aria-labelledby="studyTitle">
+      <div class="readerbar">
+        <div class="readerhead">
+          <div id="studyEyebrow" class="eyebrow"></div>
+          <h1 id="studyTitle"></h1>
+          <div id="studyMeta" class="meta"></div>
+        </div>
+        <div class="readerbuttons">
+          <button type="button" id="studyBack">← Catalog</button>
+          <button type="button" id="studyBible" title="Deschide capitolul în Biblie"></button>
+          <button type="button" id="studyPrev" class="icon" aria-label="Studiul anterior">←</button>
+          <button type="button" id="studyNext" class="icon" aria-label="Studiul următor">→</button>
+        </div>
+      </div>
+      <div class="studytools">
+        <div id="studyParts" class="parts" role="tablist" aria-label="Părțile studiului"></div>
+        <label for="studyFind" class="sr">Caută în această parte</label>
+        <input id="studyFind" type="search" placeholder="Caută în pagină" autocomplete="off">
+        <span id="studyFindCount" class="meta"></span>
+      </div>
+      <div class="studygrid">
+        <nav id="studyToc" class="toc" aria-label="Cuprins"></nav>
+        <article id="studyDoc" class="doc"></article>
+      </div>
+    </section>
+  </main>
+</div>
+
 <div id="toast" class="toast" role="status" hidden></div>
+<div id="tip" class="tip" role="tooltip" hidden></div>
 
 <div id="notePopup" class="note-popup" role="dialog" aria-modal="false" aria-labelledby="noteTitle" hidden>
   <button type="button" id="noteClose" class="popup-close" aria-label="Închide">×</button>
