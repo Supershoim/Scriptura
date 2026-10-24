@@ -33,7 +33,7 @@ export function bookMap(block, { b }) {
       rows.at(-1).cs.push(c);
     }
   });
-  const labelW = t => t.length * 5.9 + 12, overlaps = (a, z) => a.x1 < z.x2 + 6 && z.x1 < a.x2 + 6;
+  const labelW = t => t.length * 6.6 + 12, overlaps = (a, z) => a.x1 < z.x2 + 6 && z.x1 < a.x2 + 6;
   // Arcs between chapters of the same row nest in lanes, so their labels never overlap.
   const lanes = rows.map(() => []), links = (d.links || []).map(([a, z, label, text], i) => ({ i, a, z, label, text }));
   // Shorter arcs first; an arc goes above every arc it spans.
@@ -88,9 +88,14 @@ export function bookMap(block, { b }) {
       const [U, L] = A.y < Z.y ? [A, Z] : [Z, A];
       const x1 = U.x + NW / 2 + 12, x2 = L.x + NW / 2 - 12;
       path = `M${x1} ${U.y + NH} C${x1} ${U.y + NH + 70} ${x2} ${L.y - 70} ${x2} ${L.y}`;
-      [lx, ly] = [(x1 + x2) / 2, (U.y + NH + L.y) / 2];
+      // The label sits just under the upper row, above the title of the next half, on the curve itself.
+      ly = U.y + NH + 44;
+      const y0 = U.y + NH, bz = (t, a, b, c2, d2) => (1 - t) ** 3 * a + 3 * (1 - t) ** 2 * t * b + 3 * (1 - t) * t * t * c2 + t ** 3 * d2;
+      let bt = 0;
+      for (let t = 0; t <= 1; t += 0.01) if (Math.abs(bz(t, y0, y0 + 70, L.y - 70, L.y) - ly) < Math.abs(bz(bt, y0, y0 + 70, L.y - 70, L.y) - ly)) bt = t;
+      lx = bz(bt, x1, x1, x2, x2);
       const box = () => ({ x1: lx - labelW(l.label) / 2, x2: lx + labelW(l.label) / 2, y: ly });
-      while (placed.some(o => Math.abs(o.y - ly) < 15 && overlaps(o, box()))) ly += 15;
+      while (placed.some(o => Math.abs(o.y - ly) < 16 && overlaps(o, box()))) ly += 16;
       placed.push(box());
     }
     const keys = `ch-${l.a} ch-${l.z}`;

@@ -63,8 +63,9 @@ Căutarea din cititorul Bibliei (`app/js/search.js`, `runSearch` din `app/js/app
 
 - 2026-10-24, rularea 3: utilizare săptămânală 95%, rulare scurtă. Build trece (avertisment așteptat: `ACT/book.visual.json` nu are încă blocurile cerute de standardul nou). Serverul de previzualizare a fost refuzat din nou, deci verificarea în browser rămâne pentru utilizator sau o rulare interactivă.
 
+- Verificat în browser (preview `scriptura-8090`, desktop 1024 px și telefon 375 px): fără erori în consolă, fără derulare orizontală; harta cărții, toate vederile cronologiei, rețeaua (portrete, proroci), straturile hărții, hărțile capitolelor 1–12 fără suprapuneri; căutarea aproximativă și butoanele ei. Corectat: etichetele legăturilor dintre jumătăți (se suprapuneau peste titlul jumătății a doua) și secțiunile hărții capitolului care atingeau coloanele laterale (cap. 11).
+
 ### Rămâne
-- Verificarea în browser (desktop și telefon, consola): pornirea serverului de previzualizare a fost refuzată în rularea automată; randarea a fost testată doar în Node (fără erori, fără NaN, etichetele arcelor fără suprapuneri).
 - `README.md` și `.claude/skills/regenerate-visuals/SKILL.md`: de descris câmpurile noi (acum documentate în `tools/visual-spec.mjs`, `tools/atlas.mjs`, `CLAUDE.md`).
 - Căutarea aproximativă: indexul se construiește la prima căutare fără rezultat (~400 ms pe traducere pe calculator; pe telefon probabil mai mult); de mutat în `requestIdleCallback` sau pe bucăți. Sinonimele nu sunt prinse („a fost” ≠ „era”: „la început a fost Cuvântul” nu dă Ioan 1:1 primul).
 - Celelalte hărți de capitol din Daniel nu au încă straturi; doar harta cărții și Daniel 1.

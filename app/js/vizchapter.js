@@ -19,7 +19,8 @@ export function chapterMap(block, { s, b }) {
   const P = {};
   parts.forEach((p, i) => {
     const a = -Math.PI / 2 + i * 2 * Math.PI / n;
-    P[p.id] = { x: cx + rx * Math.cos(a), y: cy + ry * Math.sin(a) };
+    // Clamped so the parts at the sides stay clear of the outer columns (190 wide, 18 from the edge).
+    P[p.id] = { x: Math.min(W - 216 - PW / 2, Math.max(216 + PW / 2, cx + rx * Math.cos(a))), y: cy + ry * Math.sin(a) };
   });
   let lines = '', nodes = '', labels = '';
   // Idea → each part.
