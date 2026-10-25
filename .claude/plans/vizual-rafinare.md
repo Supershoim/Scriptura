@@ -65,7 +65,7 @@ Căutarea din cititorul Bibliei (`app/js/search.js`, `runSearch` din `app/js/app
 
 - Verificat în browser (preview `scriptura-8090`, desktop 1024 px și telefon 375 px): fără erori în consolă, fără derulare orizontală; harta cărții, toate vederile cronologiei, rețeaua (portrete, proroci), straturile hărții, hărțile capitolelor 1–12 fără suprapuneri; căutarea aproximativă și butoanele ei. Corectat: etichetele legăturilor dintre jumătăți (se suprapuneau peste titlul jumătății a doua) și secțiunile hărții capitolului care atingeau coloanele laterale (cap. 11).
 
+- 2026-10-25: indexul căutării aproximative se construiește pe bucăți în timpul liber al browserului (`warmFuzzy`); mecanism de sinonime (`SYNONYMS` în `search.js`, lista se completează); straturi exil/întoarcere pe hărțile din Daniel 9 (hartă nouă) și 10; `README.md` și skill-ul descriu câmpurile noi.
+
 ### Rămâne
-- `README.md` și `.claude/skills/regenerate-visuals/SKILL.md`: de descris câmpurile noi (acum documentate în `tools/visual-spec.mjs`, `tools/atlas.mjs`, `CLAUDE.md`).
-- Căutarea aproximativă: indexul se construiește la prima căutare fără rezultat (~400 ms pe traducere pe calculator; pe telefon probabil mai mult); de mutat în `requestIdleCallback` sau pe bucăți. Sinonimele nu sunt prinse („a fost” ≠ „era”: „la început a fost Cuvântul” nu dă Ioan 1:1 primul).
-- Celelalte hărți de capitol din Daniel nu au încă straturi; doar harta cărții și Daniel 1.
+- Lista de sinonime din `search.js` (grupuri de cuvinte echivalente).

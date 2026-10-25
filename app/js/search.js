@@ -100,24 +100,56 @@ function oneEdit(a, b) {
   const ra = a.slice(i + 1), rb = b.slice(i + 1);
   return ra === rb || a.slice(i) === rb || ra === b.slice(i) || (a[i] === b[i + 1] && a[i + 1] === b[i] && a.slice(i + 2) === b.slice(i + 2));
 }
+// Words that stand for each other when a verse is quoted from memory or from another translation
+// (written without diacritics, as `norm` leaves them). Each group is a list of interchangeable words.
+const SYNONYMS = [
+  // TODO(human)
+];
+const synonymOf = new Map();
+for (const group of SYNONYMS) for (const w of group) synonymOf.set(w, new Set(group.filter(x => x !== w)));
+
 // How well a word of the verse answers a word of the query (0–1).
 function likeness(q, qs, w) {
   if (q === w) return 1;
   if (stem(w) === qs) return 0.9;
+  if (synonymOf.get(q)?.has(w)) return 0.85;
   if (q.length >= 5 && w.length >= 5 && oneEdit(q, w)) return 0.8;
   let p = 0;
   while (p < q.length && q[p] === w[p]) p++;
   return p >= 4 && p >= 0.7 * Math.min(q.length, w.length) ? 0.7 : 0;
 }
 
-const fuzzyIndex = new Map(); // translation id -> { words: [[token]], post: Map(token -> [row]), N }
-function fuzzy(translation) {
+// The index is built in slices: `done` rows so far. warmFuzzy() fills it while the browser is idle, so the first
+// approximate search does not freeze the page; fuzzy() finishes whatever is left when a search needs it now.
+const fuzzyIndex = new Map(); // translation id -> { rows, words: [[token]], post: Map(token -> [row]), N, done }
+function addRows(ix, until) {
+  for (; ix.done < until; ix.done++) {
+    const ws = ix.words[ix.done] = tokens(ix.rows[ix.done].text);
+    for (const w of new Set(ws)) { let l = ix.post.get(w); if (!l) ix.post.set(w, l = []); l.push(ix.done); }
+  }
+}
+function start(translation) {
   if (!fuzzyIndex.has(translation.id)) {
-    const rows = normalized(translation), words = rows.map(r => tokens(r.text)), post = new Map();
-    words.forEach((ws, i) => { for (const w of new Set(ws)) { let l = post.get(w); if (!l) post.set(w, l = []); l.push(i); } });
-    fuzzyIndex.set(translation.id, { rows, words, post, N: rows.length });
+    const rows = normalized(translation);
+    fuzzyIndex.set(translation.id, { rows, words: new Array(rows.length), post: new Map(), N: rows.length, done: 0 });
   }
   return fuzzyIndex.get(translation.id);
+}
+function fuzzy(translation) {
+  const ix = start(translation);
+  addRows(ix, ix.N);
+  return ix;
+}
+export function warmFuzzy(translations) {
+  const idle = window.requestIdleCallback || (fn => setTimeout(() => fn({ timeRemaining: () => 8 }), 50));
+  for (const translation of translations) {
+    const step = deadline => {
+      const ix = start(translation);
+      while (ix.done < ix.N && deadline.timeRemaining() > 2) addRows(ix, Math.min(ix.N, ix.done + 500));
+      if (ix.done < ix.N) idle(step);
+    };
+    idle(step);
+  }
 }
 
 // Returns { hits: [{ key, score (0–1) }] ordered by score, terms (for highlighting the matched words) }.
@@ -132,7 +164,8 @@ export function approximate(translations, { query, scope, currentBook }, { limit
     // For every query word, the words of the vocabulary that answer it, and how well.
     const per = qs.map(q => {
       const s = stem(q), list = [];
-      for (const w of post.keys()) if (w[0] === q[0] || q.length >= 5) { const k = likeness(q, s, w); if (k) list.push([w, k]); }
+      const syn = synonymOf.get(q);
+      for (const w of post.keys()) if (w[0] === q[0] || q.length >= 5 || syn?.has(w)) { const k = likeness(q, s, w); if (k) list.push([w, k]); }
       // The weight of a query word is the rarity of its best match (the word itself when the text has it).
       const top = list.reduce((m, x) => !m || x[1] > m[1] || (x[1] === m[1] && idf(x[0]) < idf(m[0])) ? x : m, null);
       const weight = top ? idf(top[0]) : Math.log(1 + N);

@@ -14,9 +14,10 @@ A visual (`data/studies/<BOOK>/<name>.visual.json`, or `book.visual.json`) is ma
 3. Update only what the change affects:
    - `chapter-map`: main idea, sections (verse ranges from the study's structure), flow, links in the book and in the Bible (taken from the study's parallels).
    - `network`: people and places of the chapter; add new ones to `data/atlas/people.json` / `places.json` (names spelled as in VDCC).
-   - `book-map` (book visual): the chapter's title and 30–40 word summary; remove `"status": "în lucru"` once the chapter has a study.
-   - `timeline`: events in `data/atlas/events.json`. `certain: true` only when a primary ancient source (inscription, chronicle, astronomical diary, 1 Maccabees) fixes the date; otherwise `false`. Every event needs a `source`.
-   - `map`: places and routes (`via` = place ids or `{lat, lon, t}`; the build computes realistic paths).
+   - `book-map` (book visual): the chapter's title and 30–40 word summary; remove `"status": "în lucru"` once the chapter has a study. Keep `about` (the book's message, 100–150 words), the key sections `parts` and the link labels (≤ 5 words, explanation as the 4th item) in line with the new text.
+   - `timeline`: events in `data/atlas/events.json`. `certain: true` only when a primary ancient source (inscription, chronicle, astronomical diary, 1 Maccabees) fixes the date; otherwise `false`. Every event needs a `source`. Besides the events of the book, add earlier prophecies (`kind: "prophecy"`, with `fulfils`), later fulfilments (`fulfilment`) and major events (`major`).
+   - `map`: places and routes (`via` = place ids or `{lat, lon, t}`; the build computes realistic paths). Group related routes into `layers` (e.g. exile waves, returns).
+   - Every block: `message` under the title (30–90 words, what the diagram shows about the text). New people get `kind` (`proroc` for prophets) and, where a free portrait exists, `image`.
    - `history`: images from Wikimedia Commons with a free licence (`node tools/commons.mjs search …` / `fetch …`), then write `title`, `caption` and `refs` in `data/atlas/images.json`.
 4. Check every Bible quotation you write against the data (VDCC text in `data/translations/vdcc/text.json`), never from memory. Every link and source must be real.
 5. Run `node tools/build.mjs`. Fix every problem it reports (references, summaries outside 30–40 words, unknown ids).

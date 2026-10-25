@@ -1,7 +1,7 @@
 import { $, esc, norm, store, toast, copyText } from './util.js';
 import * as data from './data.js';
 import { books, bookIndex, key, parseKey } from './data.js';
-import { parseReference, search, approximate } from './search.js';
+import { parseReference, search, approximate, warmFuzzy } from './search.js';
 import { cellHtml } from './render.js';
 import { setupNotes, hideNote, repositionNote } from './notes.js';
 import { setupTips, hideTip } from './tips.js';
@@ -324,6 +324,7 @@ async function setVisible(ids, rerender = true) {
   store.set('visible', state.visible);
   setStatus('Se încarcă…');
   await Promise.all(state.visible.map(data.load));
+  warmFuzzy(shown());   // the index for approximate search, built while the page is idle
   translationList();
   fillSearchIn();
   if (!rerender) return;
