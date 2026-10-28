@@ -74,9 +74,10 @@ http.createServer(async (req, res) => {
   if (url.pathname.startsWith('/api/')) {
     try { return await api(req, res, url); } catch (e) { return send(res, 500, { error: e.message }); }
   }
-  const rel = decodeURIComponent(url.pathname);
+  let rel;
+  try { rel = decodeURIComponent(url.pathname); } catch { res.writeHead(400); res.end('Bad request'); return; }
   const file = path.join(root, rel.endsWith('/') ? rel + 'index.html' : rel);
   if (!file.startsWith(root) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.writeHead(404); res.end('Not found'); return; }
   res.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
   fs.createReadStream(file).pipe(res);
-}).listen(port, () => console.log(`Serving dist/ on http://localhost:${port} (editing enabled for this computer)`));
+}).on('clientError', (e, socket) => socket.destroy()).listen(port, () => console.log(`Serving dist/ on http://localhost:${port} (editing enabled for this computer)`));
