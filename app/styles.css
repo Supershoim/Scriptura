@@ -1,7 +1,7 @@
 :root {
   --bg: #f6f5f0; --paper: #fffefa; --ink: #233b37; --muted: #6f7b74; --line: #dedfd5; --soft: #e9efdf;
   --green: #173f3b; --on-green: #fff; --gold: #9c733a; --highlight: #f9e9b5; --selected: #f8f2dc; --hover: #f6f7ef;
-  --head: #f0f1e8; --font: 19px;
+  --head: #f0f1e8; --font: 19px; --kjv: #3b5a7a; --box: #eef0ea;
   --serif: Georgia, "Times New Roman", serif; --sans: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
   color-scheme: light;
 }
@@ -9,13 +9,13 @@
   :root:not([data-theme="light"]) {
     --bg: #1b2522; --paper: #22302b; --ink: #e6e9de; --muted: #a5b5a7; --line: #3d4b43; --soft: #33463a;
     --green: #b5c99d; --on-green: #1b3025; --gold: #d6b879; --highlight: #6e5830; --selected: #3d3b28; --hover: #283a31;
-    --head: #2a3a32; --logo-ink: #1b3025; color-scheme: dark;
+    --head: #2a3a32; --logo-ink: #1b3025; --kjv: #9dbbd9; --box: #2a3934; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #1b2522; --paper: #22302b; --ink: #e6e9de; --muted: #a5b5a7; --line: #3d4b43; --soft: #33463a;
   --green: #b5c99d; --on-green: #1b3025; --gold: #d6b879; --highlight: #6e5830; --selected: #3d3b28; --hover: #283a31;
-  --head: #2a3a32; --logo-ink: #1b3025; color-scheme: dark;
+  --head: #2a3a32; --logo-ink: #1b3025; --kjv: #9dbbd9; --box: #2a3934; color-scheme: dark;
 }
 
 [hidden] { display: none !important; }
@@ -153,6 +153,57 @@ mark { background: var(--highlight); color: inherit; border-radius: 2px; padding
 .ref-empty { font: italic 12px/1.6 var(--sans); color: var(--muted); }
 .popup-close { position: absolute; top: 6px; right: 6px; border: 0; background: transparent; font-size: 19px; padding: 2px 9px; }
 .popup-open { margin-top: 8px; font-size: 11px; }
+
+/* Study notes (KJV) in a wide pop-up: as tall as the window allows; on a narrow screen a sheet along the bottom */
+.note-popup.wide { width: min(680px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); }
+@media (max-width: 699px) {
+  .note-popup.wide { width: 100vw; max-height: 88dvh; border-radius: 14px 14px 0 0; border-width: 1px 0 0; padding: 14px 16px calc(14px + env(safe-area-inset-bottom)); }
+}
+.sn { font: 14px/1.55 var(--serif); }
+.sn p { margin: 6px 0; }
+.sn-note { padding: 8px 0; border-top: 1px solid var(--line); }
+.sn > :first-child { border-top: 0; padding-top: 2px; }
+.sn-note strong:first-child { color: var(--kjv); }
+.sn-box { margin: 10px 0; padding: 10px 14px; border-radius: 10px; background: var(--box); font: 13.5px/1.5 var(--sans); }
+.sn-box-head { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+.sn-box-head strong { font-size: 12px; letter-spacing: .5px; color: var(--kjv); }
+.sn-box-head { flex-wrap: wrap; }
+.sn-label { flex-basis: 100%; font: 650 10px var(--sans); letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); }
+.sn-box-head .sn-label + strong { font-size: 15px; letter-spacing: 0; }
+/* The pages of the study Bible: "Sumar" and "Informații suplimentare". */
+.bookextras { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.bookextras a { padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--kjv); font: 600 13px var(--sans); text-decoration: none; }
+.bookextras a:hover { background: var(--hover); }
+.bookextras a:focus-visible { outline: 2px solid var(--kjv); outline-offset: 2px; }
+.sn-page { max-width: 760px; margin: 0 auto; padding: 18px 22px 24px; font-size: 16px; }
+.sn-page h3 { margin: 22px 0 6px; font: 650 15px var(--sans); color: var(--kjv); }
+.sn-page .sn-box { font-size: 14.5px; }
+.sn-page .sn-fig { margin: 16px 0; }
+.sn-icon { width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0; }
+.sn-fig { margin: 12px 0; }
+.sn-zoom { display: block; width: 100%; padding: 0; border: 0; border-radius: 6px; background: transparent; cursor: zoom-in; overflow: hidden; }
+.sn-zoom:focus-visible { outline: 2px solid var(--kjv); outline-offset: 2px; }
+.sn-zoom img { display: block; width: 100%; height: auto; max-height: 60dvh; object-fit: contain; }
+.sn-fig figcaption, .viewer-caption { margin-top: 4px; font: 12px/1.45 var(--sans); color: var(--muted); }
+.sn-credit { display: block; font-size: 10.5px; }
+.sn-intro { margin: 2px 0 8px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; }
+.sn-intro summary { cursor: pointer; font: 600 13px var(--sans); color: var(--kjv); }
+.sn-intro summary span { font-weight: 400; color: var(--muted); }
+.sn-intro[open] summary { margin-bottom: 6px; }
+.sn-pending { display: inline-block; margin-top: 8px; padding: 1px 7px; border-radius: 8px; background: var(--soft); font: 11px var(--sans); color: var(--muted); }
+.sn-about { margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--line); font: 11.5px/1.45 var(--sans); color: var(--muted); }
+
+/* Picture viewer: the picture fitted to the window; a click shows it at its own size */
+dialog.viewer { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; padding: 0; border: 0; border-radius: 0; background: #0d1412f2; color: #e6e9de; overflow: hidden; }
+dialog.viewer[open] { display: flex; flex-direction: column; }
+dialog.viewer::backdrop { background: #0d1412cc; }
+.viewer-frame { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 12px; }
+.viewer-frame img { width: 100%; height: 100%; object-fit: contain; cursor: zoom-in; }
+.viewer.actual .viewer-frame { display: block; overflow: auto; }
+.viewer.actual .viewer-frame img { width: auto; height: auto; max-width: none; cursor: zoom-out; }
+.viewer-caption { margin: 0; padding: 0 16px calc(12px + env(safe-area-inset-bottom)); color: #c9d1c6; text-align: center; }
+.viewer-close { position: absolute; top: 10px; right: 12px; z-index: 1; width: 40px; height: 40px; border-radius: 50%; border: 0; background: #ffffff22; color: #fff; font-size: 24px; line-height: 1; }
+.viewer-close:hover:not(:disabled) { background: #ffffff44; }
 
 /* Dialogs */
 dialog { border: 1px solid var(--line); border-radius: 14px; background: var(--paper); color: var(--ink); padding: 18px 22px 22px; width: min(560px, calc(100vw - 24px)); max-height: 85dvh; overflow: auto; }
@@ -601,7 +652,7 @@ dialog.editor .preview { height: 58vh; overflow: auto; margin-top: 8px; max-widt
   .brand-name { display: none; }
 }
 @media print {
-  .topbar, .sidebar, .search, .readerbuttons, .text-size, .footer, .pagination, .head-copy, .note-popup, .studytools, .toc, .tip { display: none !important; }
+  .topbar, .sidebar, .search, .readerbuttons, .text-size, .footer, .pagination, .head-copy, .note-popup, .studytools, .toc, .tip, .fns { display: none !important; }
   .studygrid { display: block; }
   .doc { border: 0; padding: 0; max-width: none; font-size: 11pt; }
   .layout { display: block; }
@@ -683,3 +734,60 @@ svg .v-pf:not(.sel) { opacity: 0 !important; }
 .approx-bar strong { color: var(--ink); }
 .approx-bar button { font-size: 12.5px; padding: 4px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); color: var(--green); cursor: pointer; }
 .resultref .match { margin-left: auto; margin-right: 12px; color: var(--approx); font-weight: 650; font-size: 10.5px; }
+
+/* Footnotes after a verse: the user's comments and the studies that mention it */
+.columns:not(.no-comments) .row { -webkit-touch-callout: none; }   /* a long press opens the comments, not the system menu */
+.fns { display: inline-flex; gap: 2px; margin-left: 4px; vertical-align: super; line-height: 1; white-space: nowrap; }
+.fn { display: inline-flex; align-items: center; gap: 2px; padding: 2px 5px; border: 0; border-radius: 8px; background: transparent; font: 600 10.5px/1.2 var(--sans); cursor: pointer; transition: background .15s, color .15s; }
+.fn-comment { color: var(--green); }
+.fn-study { color: var(--gold); letter-spacing: .2px; }
+.fn-notes { color: var(--kjv); letter-spacing: .3px; }
+.fn:hover:not(:disabled), .fn:focus-visible, .fn[aria-expanded="true"] { background: var(--soft); }
+@media (pointer: coarse) { .fn { padding: 5px 7px; margin: -3px 0; } }
+.fn-item { display: block; padding: 9px 0; border-top: 1px solid var(--line); font: 13.5px/1.5 var(--sans); color: var(--ink); text-decoration: none; }
+.fn-item:first-child { border-top: 0; padding-top: 2px; }
+.fn-meta { display: block; font-size: 10.5px; color: var(--muted); letter-spacing: .3px; }
+.fn-link strong { display: block; font: 600 15px/1.35 var(--serif); color: var(--green); }
+.fn-link:hover strong, .fn-link:focus-visible strong { text-decoration: underline; }
+.fn-x { display: block; margin-top: 3px; font-size: 12.5px; color: var(--muted); }
+.comment-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.ref-link.flash { animation: ref-flash 2.4s ease-out; }
+@keyframes ref-flash { 0%, 45% { background: var(--highlight); box-shadow: 0 0 0 3px var(--highlight); } }
+
+.toggles { display: flex; flex-direction: column; gap: 8px; margin: 16px 0 0; padding: 0; border: 0; }
+.toggles legend { margin-bottom: 8px; padding: 0; font-size: 12px; font-weight: 600; }
+.toggles .check { align-items: flex-start; font-size: 13px; color: var(--ink); cursor: pointer; }
+.toggles input { width: 16px; height: 16px; margin: 1px 4px 0 0; flex-shrink: 0; }
+
+/* Comments dialog */
+.comment-verse { margin: 0 0 12px; padding: 8px 12px; border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; background: color-mix(in srgb, var(--gold) 7%, var(--paper)); font: 15px/1.55 var(--serif); }
+.comment-verse cite { margin-left: 4px; font: 600 10px var(--sans); font-style: normal; color: var(--muted); }
+.comment-list { list-style: none; margin: 0 0 12px; padding: 0; }
+.comment-list li { margin-bottom: 6px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; line-height: 1.5; transition: background .2s, border-color .2s; }
+.comment-list li.editing { border-color: var(--gold); background: var(--selected); }
+.comment-date { font-size: 10.5px; color: var(--muted); }
+.comment-actions { display: flex; justify-content: flex-end; gap: 4px; margin-top: 2px; }
+.comment-label { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 600; }
+dialog.comments textarea { width: 100%; padding: 8px 10px; font: 16px/1.5 var(--serif); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
+.comment-sync { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+.comment-sync summary { cursor: pointer; font-size: 12.5px; font-weight: 600; }
+.comment-sync .field { margin-top: 8px; }
+.comment-sync input { padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); font-size: 16px; font-weight: 400; }
+
+/* Pop-ups and dialogs: a short fade and lift in, a quicker fade out. Browsers without @starting-style
+   simply show and hide them; with reduced motion the rule above turns all of this off. */
+.note-popup, .tip, .toast { transition: opacity .16s ease-out, translate .16s ease-out, scale .16s ease-out, display .16s allow-discrete; }
+.note-popup[hidden], .tip[hidden], .toast[hidden] { opacity: 0; translate: 0 4px; scale: .98; pointer-events: none; transition-duration: .1s; }
+.note-popup[data-side="above"][hidden] { translate: 0 -4px; }
+@starting-style {
+  .note-popup:not([hidden]), .tip:not([hidden]), .toast:not([hidden]) { opacity: 0; translate: 0 4px; scale: .98; }
+  .note-popup[data-side="above"]:not([hidden]) { translate: 0 -4px; }
+}
+dialog { transition: opacity .18s ease-out, translate .18s ease-out, overlay .18s allow-discrete, display .18s allow-discrete; }
+dialog:not([open]) { opacity: 0; translate: 0 10px; }
+dialog::backdrop { transition: opacity .18s ease-out, overlay .18s allow-discrete, display .18s allow-discrete; }
+dialog:not([open])::backdrop { opacity: 0; }
+@starting-style {
+  dialog[open] { opacity: 0; translate: 0 10px; }
+  dialog[open]::backdrop { opacity: 0; }
+}

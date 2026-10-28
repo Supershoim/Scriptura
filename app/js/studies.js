@@ -3,7 +3,7 @@
 // Routes: #/studii, #/studii/ROM (one book), #/studii/ROM/2 (a study: its visual, or its text when it has none),
 // #/studii/ROM/2/vizual, #/studii/ROM/2/1 (first text part), #/studii/ROM/2/2 …
 import { $, esc, norm, store } from './util.js';
-import { books } from './data.js';
+import { books, parseKey } from './data.js';
 import * as catalog from './catalog.js';
 import { studies, study, chapters, bookOf, visualOf, bookVisual } from './catalog.js';
 import { hideTip } from './tips.js';
@@ -263,6 +263,24 @@ async function openStudy(s, part, term) {
   }).join('') + '</div></details>' : '';
   $('studyFind').value = term || '';
   find(term || '');
+  showReveal();
+}
+
+// A verse to scroll to once the study text is shown (from a footnote under a verse in the reader).
+let reveal = null;
+export const revealVerse = canon => { reveal = canon; };
+function showReveal() {
+  if (!reveal) return;
+  const { b, c, v } = parseKey(reveal);
+  reveal = null;
+  const hit = [...$('studyDoc').querySelectorAll('.ref-link[data-ref]')].find(el => {
+    const m = el.dataset.ref.match(/^(\S+) (\d+):(\d+)(?:-(\d+))?$/);
+    return m && m[1] === b && +m[2] === c && v >= +m[3] && v <= +(m[4] || m[3]);
+  });
+  if (!hit) return;
+  hit.scrollIntoView({ block: 'center' });
+  hit.classList.add('flash');
+  setTimeout(() => hit.classList.remove('flash'), 2400);
 }
 
 function showCatalog() {
@@ -286,6 +304,7 @@ export async function showStudies(path) {
     const term = state.query && !catalog.parseRef(state.query) ? state.query : catalog.parseRef(state.query)?.rest || '';
     const target = part === 'vizual' || (part === undefined && visualOf(s)) ? VISUAL : (+part || 1) - 1;
     if (state.current !== s || state.part !== target) await openStudy(s, target, term);
+    else showReveal();
     return;
   }
   const book = b && bookOf(b) ? b : null, changed = book !== state.book;

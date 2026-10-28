@@ -9,8 +9,9 @@ Aplicație web pentru citirea mai multor traduceri ale Bibliei alăturat, verset
 | `data/` | Textele canonice. `books.json` (cele 66 de cărți, coduri USFM, abrevieri) și câte un folder pentru fiecare traducere în `data/translations/<id>/`. |
 | `data/studies/` | Studiile, câte un folder pe carte (`data/studies/ROM/`): `studies.json`, textele `.md` și vizualizările `.visual.json` (inclusiv `book.visual.json` pentru carte). |
 | `data/atlas/` | Registrul comun al vizualizărilor: personaje, locuri, evenimente datate, imagini istorice și harta. |
+| `data/comments/` | Comentariile la versete, câte un fișier pe carte (`ROM.json`), scrise din aplicație. |
 | `app/` | Aplicația: HTML, CSS și module JavaScript simple, fără framework. |
-| `tools/` | `build.mjs` (construiește `dist/`), `validate.mjs`, `studies.mjs` (verifică și construiește studiile), `visual-spec.mjs` (formatul și verificarea vizualizărilor), `atlas.mjs` (registrul), `routes.mjs` (trasee realiste), `visuals.mjs` (stare, ștampilare, coada de regenerare), `commons.mjs` (imagini), `make-map.mjs` (harta), `serve.mjs` (previzualizare locală și editare), `import-tsv.mjs` (traducere nouă), `import-legacy.mjs` și `import-studies.mjs` (conversii unice din aplicațiile precedente), `vendor/marked.min.js` (Markdown → HTML). |
+| `tools/` | `build.mjs` (construiește `dist/`), `validate.mjs`, `studies.mjs` (verifică și construiește studiile), `visual-spec.mjs` (formatul și verificarea vizualizărilor), `atlas.mjs` (registrul), `routes.mjs` (trasee realiste), `visuals.mjs` (stare, ștampilare, coada de regenerare), `commons.mjs` (imagini), `make-map.mjs` (harta), `serve.mjs` (previzualizare locală și editare), `import-tsv.mjs` (traducere nouă), `import-kjv.mjs` (KJV și notele King James Study Bible din PDF), `study-notes.mjs` (verifică notele de studiu ale unei traduceri), `translate-notes.mjs` (memoria de traducere a notelor), `check-quotes.mjs` (citatele din notele traduse, verificate în VDCC), `english-books.mjs` (numele englezești ale cărților), `import-legacy.mjs` și `import-studies.mjs` (conversii unice din aplicațiile precedente), `vendor/marked.min.js` (Markdown → HTML). |
 | `work/` | Aplicația precedentă și scripturile de extragere din PDF, păstrate ca referință. |
 | `.github/workflows/pages.yml` | Publicare automată pe GitHub Pages la fiecare `git push`. |
 
@@ -113,6 +114,49 @@ Fiecare vizualizare reține amprenta textului din care a fost făcută. Când te
 3. Rulează `node tools/build.mjs`, apoi `node tools/visuals.mjs stamp <COD> <capitol>`. Build-ul se oprește la orice problemă: câmp lipsă, capitol inexistent sau deja studiat, fișier negăsit sau nefolosit, trimitere biblică inexistentă, rezumat în afara a 30–40 de cuvinte, personaj, loc, eveniment sau imagine care lipsește din registru, eveniment fără sursă.
 
 Build-ul transformă textele în HTML, scrie catalogul (`data/studies/index.json`) și un index de cuvinte împărțit după primele două litere (`data/studies/search/`). Căutarea descarcă doar bucățile de care are nevoie, așa că rămâne rapidă și cu un studiu pe fiecare capitol.
+
+## NKJV Study Bible (NKJV)
+
+`data/translations/nkjv/` vine din PDF-ul *The NKJV Study Bible, Second Edition, Full-Color Edition* (Thomas Nelson, 2014), cu `tools/import-nkjv.mjs`. A înlocuit KJV Study Bible (Liberty University, doar Geneza), păstrată cu importul ei și cu traducerea în română a notelor în `archive/kjv-liberty/` (în afara build-ului și a git).
+
+- `text.json`: versetele NKJV; `notes.json`: trimiterile din coloana centrală (litere) și notele de traducere (cifre), puse după cuvântul marcat, ca trimiterile VDCC.
+- `study/<COD>.json`: pe verset, notele de studiu (o notă pe un interval e la primul verset, cu `to`) și studiile de cuvinte (`kind: "word"`).
+- `study/<COD>.book.json`: introducerea cărții (pagina **Sumar**) și, pe capitol, inserțiile care nu țin de un verset: Bible Times & Culture Notes, articolele, tabelele, hărțile, imaginile (pagina **Informații suplimentare**).
+- `study/index.json`: **indexul notelor și inserțiilor**, pentru alte unelte și aplicații. `items`: fiecare notă sau inserție după un id stabil (`GEN.12.6`, `GEN.12.1-9`, `GEN.1.1.word.heavens`, `GEN.c11.culture.ur`, `GEN.intro`), cu felul ei, versetele (`from`, `to`) sau capitolul, pagina din PDF (`pdf`) și cea tipărită (`page`), cuvintele-titlu găsite în verset (`lemmas`, cu poziția) și trimiterile din text (`refs`). `verses`: pentru fiecare verset, `own` (notele lui), `covers` (notele pe un interval care îl cuprinde) și `cited` (notele și inserțiile care îl citează). Textul unei intrări se ia din fișierul cărții după id. Build-ul îl copiază în `dist/` neschimbat.
+
+Formatele sunt descrise la începutul lui `tools/study-notes.mjs`, care le verifică la build. Importul sortează textul paginii după font (versete Esprit, trimiteri Myriad 6 pt, note Myriad 7 pt cu eticheta albastră, antet Gotham), iar inserțiile după umplerile colorate și imagini. MuPDF nu este o dependență a proiectului; se instalează separat:
+
+```bash
+npm install --prefix "%TEMP%/mupdf" mupdf
+```
+
+```bash
+MUPDF="$TEMP/mupdf/node_modules/mupdf/dist/mupdf.js" node tools/import-nkjv.mjs "D:/Biblia PDF/The New King James Version Study Bible.pdf" GEN
+```
+
+Cu coduri de carte importă doar acele cărți (celelalte rămân); fără ele, toată Biblia. Verificat pentru Geneza (pilot): 1.533 de versete, 846 de note, 10 studii de cuvinte, 20 de inserții pe capitole, introducerea cu schița și cronologia.
+
+### Traducerea în română
+
+Uneltele de mai jos au tradus notele KJV Study Bible (Geneza, acum în `archive/kjv-liberty/kjv/study/ro/`). Notele NKJV nu sunt încă traduse; comenzile primesc `nkjv` în loc de `kjv`.
+
+Notele traduse sunt o memorie de traducere, `study/ro/<COD>.json`: un segment pe fiecare câmp de text (`"1:2|1|html"`), cu textul românesc și amprenta englezei din care a fost tradus. Build-ul scrie `study/<COD>.ro.json`; un segment lipsă sau a cărui engleză s-a schimbat la un import nou rămâne în engleză, marcat „netradus încă”.
+
+- `node tools/translate-notes.mjs status kjv GEN ro`: cât e tradus.
+- `node tools/translate-notes.mjs export kjv GEN ro segmente.json`: segmentele de tradus, cu trimiterile deja în prescurtările românești.
+- `node tools/translate-notes.mjs apply kjv GEN ro traducere.json`: adaugă `{ "cheie": "text" }` după ce verifică paragrafele, eticheta notei („1:2.”), închiderea etichetelor `<strong>`/`<em>` și trimiterile `c:v`.
+- `node tools/check-quotes.mjs kjv GEN ro`: cuvintele biblice îngroșate și citatele („…”) care nu sunt text VDCC cuvânt cu cuvânt. Cuvintele îngroșate trebuie să fie toate VDCC; citatele rămase sunt glosele notei (traduceri literale, texte nebiblice), de citit unul câte unul.
+
+Reguli de traducere: accentul este pe mesaj, deci totul este în română. Cuvintele biblice comentate (îngroșate) și citatele biblice sunt textul VDCC al versetului, verificat cu `check-quotes.mjs`, nu traduse din engleză; unde nota discută traducerea engleză însăși, cuvântul KJV apare în paranteză, cursiv („KJV are <em>replenish</em>, care se traduce mai bine…”); numele urmează VDCC; trimiterile folosesc prescurtările din `data/books.json`; unitățile de măsură se păstrează, cu echivalentul metric în paranteză. Geneza este tradusă integral (238 de segmente, 26.536 de cuvinte englezești; 490 din 490 de cuvinte biblice îngroșate sunt text VDCC).
+
+**Drepturi:** textul NKJV (© 1982 Thomas Nelson), notele, articolele, hărțile și imaginile sunt protejate (Thomas Nelson, Zondervan, sursele fotografiilor). Sunt doar pentru uz personal și nu se publică pe GitHub Pages.
+
+## Comentarii și trimiteri spre studii
+
+Clic dreapta pe un verset (pe telefon: apăsare lungă) deschide comentariile lui. Un verset cu comentarii are după text un balon mic; versetele menționate în studii au, cu litere mici, studiul („Romani 2”) sau numărul de studii. Atinse, se deschid într-o fereastră; din ea se ajunge în studiu, derulat la locul unde apare versetul.
+
+- **Comentariile** sunt în `data/comments/<COD>.json`: `{ "3:16": [ { "date": "2026-10-25", "text": "…" } ] }`, cu numerotarea rândurilor din cititor. Build-ul verifică versetul, data și textul (cel mult 4.000 de caractere). Salvarea merge prin `node tools/serve.mjs` (fișierul se scrie local; îl urci cu `git push`) sau, pe site-ul publicat, direct în depozitul GitHub: în fereastra comentariilor, „Salvare pe GitHub” cere un token *fine-grained* doar pentru acest depozit, cu *Contents: Read and write*. Fiecare salvare devine un commit în `data/comments/`, iar GitHub Pages reconstruiește site-ul în jur de un minut. Cu token, aplicația citește comentariile direct din depozit, deci le vede imediat. Înainte de un `git push` local, `git pull` aduce comentariile scrise de pe alte dispozitive.
+- **Trimiterile spre studii** se calculează la build (`tools/mentions.mjs`) cu aceeași recunoaștere a referințelor ca pop-up-urile din studii (`app/js/refs.js`): `data/studies/mentions/<COD>.json`, pe verset, studiul, partea, de câte ori apare și un fragment din jur. Un pasaj de peste 30 de versete marchează doar primul verset.
 
 ## Publicare (GitHub Pages)
 

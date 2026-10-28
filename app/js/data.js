@@ -34,6 +34,8 @@ export async function fetchJson(path) {
 
 // The studies built into Scriptura.html ({ index, files, shards }), or null on the hosted site.
 export const embeddedStudies = () => embedded?.studies || null;
+// The comments built into Scriptura.html ({ BOOK: { "c:v": [...] } }), or null on the hosted site.
+export const embeddedComments = () => embedded?.comments || null;
 
 export async function init() {
   embedded = await readEmbedded();

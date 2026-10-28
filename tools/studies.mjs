@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
 import { checkVisual, missingBlocks, fingerprint, prepareVisual } from './visual-spec.mjs';
+import { studyMentions } from './mentions.mjs';
 
 const { marked } = createRequire(import.meta.url)('./vendor/marked.min.js');
 
@@ -142,10 +143,10 @@ export function loadStudies(dir, books, ctx) {
   return { studies, bookVisuals, problems, warnings };
 }
 
-// Builds what the app downloads: { index: { studies, books }, files: { path: html or JSON }, shards, atlas }.
-// ctx: { atlas, route } (route: tools/routes.mjs, null when there is no map outline).
+// Builds what the app downloads: { index: { studies, books, mentions }, files: { path: html or JSON }, shards, atlas }.
+// ctx: { atlas, route, exists } (route: tools/routes.mjs, null when there is no map outline; exists(b, c, v): the verse has text).
 export function buildStudies(studies, bookVisuals, books, ctx) {
-  const files = {}, words = new Map(), seen = new Map();
+  const files = {}, words = new Map(), seen = new Map(), rendered = [];
   const shipVisual = (v, subject, b) => {
     const out = `data/studies/${b}/${v.file}`;
     files[out] = JSON.stringify(prepareVisual(v.spec, { ...ctx, subject, seen }));
@@ -172,11 +173,15 @@ export function buildStudies(studies, bookVisuals, books, ctx) {
     }
     const entry = { id: `${s.b}-${s.chapter}`, b: s.b, c: s.chapter };
     if (s.covers) entry.covers = s.covers;
+    rendered.push({ ...entry, parts: parts.map(p => ({ html: files[p.path] })) });
     return { ...entry, date: s.date, title: s.title, summary: s.summary, themes: s.themes, words: count, parts, ...visual && { visual } };
   });
   const bookIndex = {};
   for (const [b, v] of Object.entries(bookVisuals)) if (v) bookIndex[b] = { visual: shipVisual(v, b, b) };
   const shards = {};
   for (const [w, list] of [...words].sort((a, b) => a[0] < b[0] ? -1 : 1)) (shards[shardOf(w)] ??= {})[w] = list;
-  return { index: { studies: index, books: bookIndex }, files, shards, seen };
+  // Verses mentioned by the studies, one file per book of the verse (tools/mentions.mjs).
+  const mentions = studyMentions(rendered, books, ctx.exists);
+  for (const [b, verses] of Object.entries(mentions)) files[`data/studies/mentions/${b}.json`] = JSON.stringify(verses);
+  return { index: { studies: index, books: bookIndex, mentions: Object.keys(mentions) }, files, shards, seen };
 }

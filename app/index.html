@@ -76,6 +76,9 @@
           <div id="eyebrow" class="eyebrow"></div>
           <h1 id="titleWrap"><button type="button" id="title" class="title" aria-haspopup="dialog"></button></h1>
           <div id="meta" class="meta" role="status" aria-live="polite">Se încarcă…</div>
+          <nav id="bookExtras" class="bookextras" aria-label="Din Biblia de studiu" hidden>
+            <a id="summaryLink" hidden>Sumar</a><a id="extraLink" hidden>Informații suplimentare</a>
+          </nav>
         </div>
         <div class="readerbuttons">
           <button type="button" id="back" hidden>← Înapoi la lectură</button>
@@ -189,6 +192,28 @@
   <div class="panel-actions"><button type="button" id="editSave" class="primary">Salvează (Ctrl+S)</button><button type="button" class="ghost" data-close>Renunță</button></div>
 </dialog>
 
+<dialog id="commentDialog" class="sheet comments" aria-labelledby="commentTitle">
+  <div class="sheet-head">
+    <h2 id="commentTitle">Comentarii</h2>
+    <button type="button" class="ghost close" data-close>Închide</button>
+  </div>
+  <blockquote id="commentVerse" class="comment-verse"></blockquote>
+  <ol id="commentList" class="comment-list" aria-label="Comentariile versetului"></ol>
+  <label for="commentText" id="commentLabel" class="comment-label">Comentariu nou</label>
+  <textarea id="commentText" rows="4" maxlength="4000"></textarea>
+  <div id="commentStatus" class="edit-status" role="status"></div>
+  <div class="panel-actions"><button type="button" id="commentSave" class="primary">Adaugă</button><button type="button" id="commentCancel" class="ghost" hidden>Renunță la editare</button></div>
+  <p id="commentWhere" class="hint"></p>
+  <details id="commentSync" class="comment-sync">
+    <summary>Salvare pe GitHub de pe acest dispozitiv</summary>
+    <p>Pe site-ul publicat, comentariile se salvează direct în depozitul GitHub (<code>data/comments/</code>), iar site-ul se reconstruiește singur în jur de un minut. Ai nevoie de un token: pe GitHub, <em>Settings → Developer settings → Fine-grained tokens</em>, doar pentru depozitul Scriptura, cu permisiunea <em>Contents: Read and write</em>.</p>
+    <p class="hint">Tokenul rămâne doar în acest browser. Depozitul este public, deci și comentariile sunt publice.</p>
+    <label class="field">Depozit <input id="ghRepo" type="text" autocomplete="off" spellcheck="false"></label>
+    <label class="field">Token <input id="ghToken" type="password" autocomplete="off" spellcheck="false"></label>
+    <div class="panel-actions"><button type="button" id="ghSave">Păstrează pe acest dispozitiv</button><button type="button" id="ghForget" class="ghost">Șterge tokenul</button></div>
+  </details>
+</dialog>
+
 <div id="toast" class="toast" role="status" hidden></div>
 <div id="tip" class="tip" role="tooltip" hidden></div>
 
@@ -224,6 +249,18 @@
       <option value="stacked">Versetele una sub alta</option>
     </select>
   </label>
+  <fieldset class="toggles">
+    <legend>După fiecare verset</legend>
+    <label class="check"><input id="fnNotes" type="checkbox">Notele de studiu KJV (King James Study Bible): note, articole, hărți și imagini; în engleză după textul KJV, în română după VDCC</label>
+    <label class="check"><input id="fnStudies" type="checkbox">Trimiteri spre studiile care menționează versetul</label>
+    <label class="check"><input id="fnComments" type="checkbox">Comentarii (și deschiderea lor cu clic dreapta sau apăsare lungă)</label>
+  </fieldset>
+</dialog>
+
+<dialog id="imageViewer" class="viewer" aria-label="Imagine">
+  <button type="button" id="viewerClose" class="viewer-close" aria-label="Închide">×</button>
+  <div class="viewer-frame"><img id="viewerImage" alt="" title="Clic: mărime reală / potrivită ferestrei"></div>
+  <p id="viewerCaption" class="viewer-caption"></p>
 </dialog>
 
 <dialog id="helpDialog" class="sheet wide" aria-labelledby="helpTitle">
@@ -239,6 +276,8 @@
   <p>Scrie un cuvânt, o expresie sau o referință: <code>Ioan 3:16</code>, <code>Rom 8:28-30</code>, <code>1 Cor 13</code>, <code>Ps 23</code>. Căutarea ignoră diacriticele și literele mari. Pentru o expresie exactă folosește ghilimele. Tasta <code>/</code> duce în câmpul de căutare.</p>
   <h3>Trimiteri</h3>
   <p>Trimiterile tipărite apar în text între paranteze drepte. Treci cu mouse-ul, atinge sau focalizează cu Tab o trimitere pentru a citi versetul într-o fereastră mică; acolo poți alege traducerea în care îl citești. Escape închide fereastra.</p>
+  <h3>Comentarii și studii</h3>
+  <p>Clic dreapta pe un verset (pe telefon: apasă lung) deschide comentariile lui: adaugi, editezi sau ștergi. Un verset cu comentarii are după text un mic balon; versetele menționate în studii au, cu litere mici, studiul sau numărul de studii. Atinge-le pentru a le deschide; din fereastră ajungi în studiu, la locul unde apare versetul. Le poți opri pe fiecare din „Traduceri”.</p>
   <h3>Pe toate dispozitivele</h3>
   <p>Deschisă de pe site, aplicația se poate instala (în meniul browserului: „Instalează aplicația” sau „Adaugă pe ecranul principal”) și funcționează apoi fără internet. Preferințele se păstrează pe fiecare dispozitiv.</p>
   <h3>Sursele textelor</h3>

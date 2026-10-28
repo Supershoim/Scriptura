@@ -1,6 +1,7 @@
 // Turns Bible references in a study's text into pop-up triggers (.ref-link with data-ref="ROM 2:13-16").
 // Recognized: "Fapte 17:31", "1 Cor 15:21-22", "2:16" (book of the study, or the book named just before),
 // and inside a chapter study "v. 4-5", "vv. 1-3" (verses of that chapter).
+// findReferences/findVerses do not touch the DOM: tools/mentions.mjs uses them to index the verses each study mentions.
 import { norm } from './util.js';
 import { books, bookIndex } from './data.js';
 
@@ -46,52 +47,59 @@ function textNodes(root, skip) {
 
 const REF = /((?:[1-3]\s?)?[A-Za-zĂÂÎȘȚăâîșțŞŢşţ]{2,}\.?\s+)?(\d{1,3}):(\d{1,3})(?:\s?[-–]\s?(\d{1,3}))?/g;
 
-function linkReferences(root, defaultBook) {
-  for (const node of textNodes(root, 'a, code, pre, .ref-link')) {
-    const text = node.nodeValue;
-    if (!/\d:\d/.test(text)) continue;
-    const frag = document.createDocumentFragment();
-    let m, last = 0, lastBook = null, lastEnd = -1, any = false;
-    REF.lastIndex = 0;
-    while ((m = REF.exec(text))) {
-      let start = m.index, book = m[1] ? bookFor(m[1]) : null;
-      if (m[1] && !book) start += m[1].length;
-      // "Rom 8:28; 9:5" -> the second reference keeps the book named before it.
-      if (!book) book = lastBook && /^[\s,;și]*$/.test(text.slice(lastEnd, start)) ? lastBook : defaultBook;
-      const c = +m[2], from = +m[3], to = m[4] ? +m[4] : null;
-      if ((to !== null && to < from) || c < 1 || c > chaptersOf(book)) continue;
-      frag.append(text.slice(last, start), button(`${book} ${c}:${from}${to ? '-' + to : ''}`, text.slice(start, REF.lastIndex)));
-      last = lastEnd = REF.lastIndex;
-      lastBook = book;
-      any = true;
-    }
-    if (!any) continue;
-    frag.append(text.slice(last));
-    node.replaceWith(frag);
+// References in one text node: [{ start, end, ref: "ROM 2:13-16" }].
+export function findReferences(text, defaultBook) {
+  const found = [];
+  if (!/\d:\d/.test(text)) return found;
+  let m, lastBook = null, lastEnd = -1;
+  REF.lastIndex = 0;
+  while ((m = REF.exec(text))) {
+    let start = m.index, book = m[1] ? bookFor(m[1]) : null;
+    if (m[1] && !book) start += m[1].length;
+    // "Rom 8:28; 9:5" -> the second reference keeps the book named before it.
+    if (!book) book = lastBook && /^[\s,;și]*$/.test(text.slice(lastEnd, start)) ? lastBook : defaultBook;
+    const c = +m[2], from = +m[3], to = m[4] ? +m[4] : null;
+    if ((to !== null && to < from) || c < 1 || c > chaptersOf(book)) continue;
+    found.push({ start, end: REF.lastIndex, ref: `${book} ${c}:${from}${to ? '-' + to : ''}` });
+    lastEnd = REF.lastIndex;
+    lastBook = book;
   }
+  return found;
 }
 
 const VERSES = /\b(vv?\.\s?|v\s)(\d{1,3})(?:\s?[-–]\s?(\d{1,3}))?(?![\d:])/g;
 
-function linkVerses(root, book, c) {
-  for (const node of textNodes(root, 'a, code, pre, .ref-link, h1, h2, h3')) {
-    const text = node.nodeValue;
-    if (!/\bvv?[.\s]\s?\d/.test(text)) continue;
+// "v. 4-5" in a chapter study: [{ start, end, ref: "ROM 2:4-5" }].
+export function findVerses(text, book, c) {
+  const found = [];
+  if (!/\bvv?[.\s]\s?\d/.test(text)) return found;
+  let m;
+  VERSES.lastIndex = 0;
+  while ((m = VERSES.exec(text))) {
+    const from = +m[2], to = m[3] ? +m[3] : null;
+    if (!from || (to !== null && to < from)) continue;
+    found.push({ start: m.index, end: VERSES.lastIndex, ref: `${book} ${c}:${from}${to ? '-' + to : ''}` });
+  }
+  return found;
+}
+
+function linkText(root, skip, find) {
+  for (const node of textNodes(root, skip)) {
+    const text = node.nodeValue, found = find(text);
+    if (!found.length) continue;
     const frag = document.createDocumentFragment();
-    let m, last = 0, any = false;
-    VERSES.lastIndex = 0;
-    while ((m = VERSES.exec(text))) {
-      const from = +m[2], to = m[3] ? +m[3] : null;
-      if (!from || (to !== null && to < from)) continue;
-      frag.append(text.slice(last, m.index), button(`${book} ${c}:${from}${to ? '-' + to : ''}`, m[0]));
-      last = VERSES.lastIndex;
-      any = true;
+    let last = 0;
+    for (const { start, end, ref } of found) {
+      frag.append(text.slice(last, start), button(ref, text.slice(start, end)));
+      last = end;
     }
-    if (!any) continue;
     frag.append(text.slice(last));
     node.replaceWith(frag);
   }
 }
+
+const linkReferences = (root, defaultBook) => linkText(root, 'a, code, pre, .ref-link', text => findReferences(text, defaultBook));
+const linkVerses = (root, book, c) => linkText(root, 'a, code, pre, .ref-link, h1, h2, h3', text => findVerses(text, book, c));
 
 export function linkStudy(root, study) {
   linkReferences(root, study.b);

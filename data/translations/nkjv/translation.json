@@ -1,0 +1,20 @@
+{
+  "id": "nkjv",
+  "abbreviation": "NKJV",
+  "name": "New King James Version",
+  "description": "NKJV Study Bible · cu note de studiu",
+  "language": "en",
+  "color": "#3b5a7a",
+  "order": 3,
+  "source": "The NKJV Study Bible, Second Edition, Full-Color Edition (Thomas Nelson, 2014). Text extras automat din PDF-ul utilizatorului (The New King James Version Study Bible.pdf) cu tools/import-nkjv.mjs; cuvintele despărțite la capăt de rând au fost reunite, iar italicele cuvintelor adăugate de traducători nu sunt păstrate.",
+  "copyright": "New King James Version © 1982 Thomas Nelson. The NKJV Study Bible: notele, articolele, schițele și tabelele © 1997, 2007, 2014 Thomas Nelson; hărțile și fotografiile au sursa sub fiecare. Doar pentru uz personal: nu se publică fără acordul titularilor.",
+  "notes": "Trimiterile din coloana centrală (litere) și notele de traducere (cifre), la cuvântul marcat. Notele de studiu și studiile de cuvinte se deschid din eticheta „NKJV” de după verset; introducerea cărții din „Sumar”, articolele și hărțile capitolului din „Informații suplimentare”.",
+  "study": [
+    "GEN"
+  ],
+  "alignment": {
+    "map": {},
+    "spans": {},
+    "gaps": {}
+  }
+}

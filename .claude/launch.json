@@ -4,14 +4,38 @@
     {
       "name": "scriptura",
       "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
-      "runtimeArgs": ["tools/serve.mjs", "8080"],
+      "runtimeArgs": [
+        "tools/serve.mjs",
+        "8080"
+      ],
       "port": 8080
     },
     {
       "name": "scriptura-8090",
       "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
-      "runtimeArgs": ["tools/serve.mjs", "8090"],
+      "runtimeArgs": [
+        "tools/serve.mjs",
+        "8090"
+      ],
       "port": 8090
+    },
+    {
+      "name": "scriptura-8092",
+      "runtimeExecutable": "C:/Program Files/nodejs/node.exe",
+      "runtimeArgs": [
+        "tools/serve.mjs",
+        "8092"
+      ],
+      "port": 8092
+    },
+    {
+      "name": "scriptura-8094",
+      "runtimeExecutable": "C:/Program Files/nodejs/node.exe",
+      "runtimeArgs": [
+        "tools/serve.mjs",
+        "8094"
+      ],
+      "port": 8094
     }
   ]
 }

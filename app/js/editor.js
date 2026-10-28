@@ -7,7 +7,7 @@
 import { $, esc, toast, copyText } from './util.js';
 
 let server = null;   // Promise<boolean>: is the local editing server available?
-const hasServer = () => (server ??= location.protocol.startsWith('http')
+export const hasServer = () => (server ??= location.protocol.startsWith('http')
   ? fetch('api/status').then(r => r.ok && r.json()).then(s => !!s?.edit).catch(() => false)
   : Promise.resolve(false));
 

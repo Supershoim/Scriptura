@@ -14,7 +14,7 @@ export const study = id => byId.get(id);
 export const forChapter = (b, c) => studies.filter(s => s.b === b && hasChapter(s, c));
 export const totalChapters = () => books.reduce((n, b) => n + b.chapters, 0);
 export const studiedChapters = b => new Set(studies.filter(s => s.b === b).flatMap(chapters));
-let bookVisuals = {};
+let bookVisuals = {}, index = null;
 // The visual of a whole book ({ path, src, stale }), or null.
 export const bookVisual = b => bookVisuals[b]?.visual || null;
 // The visual shown on a study: its own, or for a book overview (chapter 0) the book's.
@@ -22,7 +22,9 @@ export const visualOf = s => s.visual || (s.c === 0 ? bookVisual(s.b) : null);
 
 export async function load() {
   if (studies.length) return;
-  const index = embeddedStudies()?.index || await fetchJson('data/studies/index.json');
+  const loaded = embeddedStudies()?.index || await fetchJson('data/studies/index.json');
+  if (studies.length) return;   // a concurrent call got there first
+  index = loaded;
   bookVisuals = index.books || {};
   index.studies.forEach((s, n) => {
     const entry = { ...s, n, head: norm(`${s.title} ${s.summary} ${s.themes.join(' ')}`) };
@@ -44,6 +46,19 @@ export function text(path) {
 }
 
 export const json = async path => JSON.parse(await text(path));
+
+// Verses of a book mentioned by the studies (tools/mentions.mjs): { "2:13": [{ s, p, n, x }] }.
+let mentionBooks = null;
+const mentionFiles = new Map();
+export function mentions(b) {
+  mentionBooks ??= load().then(() => new Set(index?.mentions || [])).catch(() => new Set());
+  if (!mentionFiles.has(b)) {
+    const p = mentionBooks.then(set => set.has(b) ? json(`data/studies/mentions/${b}.json`) : {});
+    mentionFiles.set(b, p);
+    p.catch(() => mentionFiles.delete(b));
+  }
+  return mentionFiles.get(b);
+}
 // An image: its data: URL inside the offline file, otherwise its address.
 export const imageUrl = path => embeddedStudies()?.files[path] || path;
 

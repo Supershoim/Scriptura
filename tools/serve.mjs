@@ -6,7 +6,7 @@
 //   GET  /api/file?path=data/...     the file's text
 //   PUT  /api/file?path=data/...     saves it, rebuilds; if the build fails the old file is put back
 //   POST /api/regenerate {id, note}  adds a study ("DAN-5") or book ("DAN") to data/studies/regenerate.json
-// Editable: data/studies/<BOOK>/*.md and *.json, data/atlas/{people,places,events,images}.json.
+// Editable: data/studies/<BOOK>/*.md and *.json, data/atlas/{people,places,events,images}.json, data/comments/<BOOK>.json.
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -17,7 +17,7 @@ const projectRoot = path.resolve(import.meta.dirname, '..');
 const root = path.join(projectRoot, 'dist');
 const port = +process.argv[2] || 8080;
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.webmanifest': 'application/manifest+json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg' };
-const EDITABLE = /^data\/(studies\/[1-3A-Z]{3}\/[\w.-]+\.(md|json)|atlas\/(people|places|events|images)\.json)$/;
+const EDITABLE = /^data\/(studies\/[1-3A-Z]{3}\/[\w.-]+\.(md|json)|atlas\/(people|places|events|images)\.json|comments\/[1-3A-Z]{3}\.json)$/;
 
 const local = req => ['127.0.0.1', '::1', '::ffff:127.0.0.1'].includes(req.socket.remoteAddress);
 const send = (res, code, body, type = 'application/json; charset=utf-8') => {
@@ -49,6 +49,7 @@ async function api(req, res, url) {
       const text = await readBody(req);
       if (rel.endsWith('.json')) { try { JSON.parse(text); } catch (e) { return send(res, 200, { ok: false, error: 'JSON invalid: ' + e.message }); } }
       const before = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
+      fs.mkdirSync(path.dirname(file), { recursive: true });
       fs.writeFileSync(file, text);
       const out = build();
       if (out.status !== 0) {

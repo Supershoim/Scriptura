@@ -10,18 +10,22 @@ import { setGo, setupPanel, closePanel } from './vizcore.js';
 import { setupEditor } from './editor.js';
 import * as catalog from './catalog.js';
 import { linkStudy } from './refs.js';
+import { setupComments } from './comments.js';
+import { setupFootnotes, markRows } from './footnotes.js';
+import { setupStudyNotes, bookExtras, extrasHtml } from './studynotes.js';
 
 const PAGE = 50, FONT_DEFAULT = 19;
 const state = {
   b: 'JHN', c: 3, v: 0, end: 0,
-  view: 'read',               // 'read' | 'search'
+  view: 'read',               // 'read' | 'search' | 'sumar' | 'info' (the pages of the study Bible)
   results: null,              // { keys, terms, whole, query, page }
   visible: [],                // translation ids in column order
   layout: store.get('layout', 'auto'),
   font: store.get('font', FONT_DEFAULT),
   theme: store.get('theme', 'auto'),
   tab: 'all',
-  mode: 'bible'              // 'bible' | 'studies'
+  mode: 'bible',             // 'bible' | 'studies'
+  footnotes: { studies: true, comments: true, notes: true, ...store.get('footnotes', {}) }   // what follows each verse
 };
 
 const book = id => books[bookIndex.get(id)];
@@ -141,7 +145,9 @@ function renderRead(scroll = true) {
   $('notice').innerHTML = messages.map(esc).join('<br>');
   $('notice').hidden = !messages.length;
   studyLinks();
+  extrasLinks();
   $('columns').innerHTML = headHtml() + rows.map(v => rowHtml(key(state.b, state.c, v))).join('');
+  markRows($('columns'), state.footnotes);
   $('pagination').hidden = true;
   $('back').hidden = true;
   $('copyAll').hidden = $('share').hidden = $('prev').hidden = $('next').hidden = false;
@@ -171,6 +177,7 @@ function renderResults() {
   $('columns').innerHTML = slice.length
     ? bar + headHtml() + slice.map(k => rowHtml(k, r)).join('')
     : '<div class="empty"><strong>Niciun verset găsit</strong>Nici potriviri apropiate. Încearcă alte cuvinte sau extinde căutarea la toată Biblia.</div>';
+  markRows($('columns'), state.footnotes);
   $('back').hidden = false;
   $('copyAll').hidden = $('share').hidden = $('prev').hidden = $('next').hidden = true;
   const pages = Math.ceil(total / PAGE);
@@ -179,9 +186,35 @@ function renderResults() {
   applyLayout();
 }
 
+// "Sumar" (the book introduction) and "Informații suplimentare" (the inserts of the chapter) from the study
+// Bible, shown under the title when the book or the chapter has them.
+async function extrasLinks() {
+  const { b, c } = state, list = await bookExtras(b);
+  if (state.b !== b || state.c !== c) return;
+  const summary = list.some(x => x.intro), extra = list.some(x => x.chapters?.[c]?.length);
+  Object.assign($('summaryLink'), { href: `#/${b}/sumar`, hidden: !summary });
+  Object.assign($('extraLink'), { href: `#/${b}/${c}/info`, hidden: !extra });
+  $('bookExtras').hidden = !summary && !extra;
+}
+
+async function renderExtras() {
+  const b = book(state.b), summary = state.view === 'sumar', { c } = state;
+  updateTitle(summary ? 'Sumar · introducerea cărții' : 'Informații suplimentare · articole, hărți, tabele', summary ? b.name : `${b.name} ${c}`, false);
+  $('notice').hidden = $('studyLink').hidden = $('bookExtras').hidden = $('pagination').hidden = true;
+  $('back').hidden = false;
+  $('copyAll').hidden = $('share').hidden = $('prev').hidden = $('next').hidden = true;
+  const list = await bookExtras(state.b);
+  if (state.view !== (summary ? 'sumar' : 'info') || state.c !== c) return;
+  const html = extrasHtml(list, summary ? 0 : c);
+  setStatus(list.map(x => x.meta.name).join(' · ') || 'Biblia de studiu');
+  $('columns').innerHTML = html || `<div class="empty"><strong>Nimic aici</strong>${summary ? 'Cartea nu are încă o introducere importată.' : 'Capitolul nu are articole, hărți sau tabele în Biblia de studiu.'}</div>`;
+  document.querySelector('.reader').scrollIntoView({ block: 'start' });
+}
+
 function render(scroll) {
   hideNote();
-  if (state.view === 'search' && state.results) renderResults(); else renderRead(scroll);
+  if (state.view === 'sumar' || state.view === 'info') renderExtras();
+  else if (state.view === 'search' && state.results) renderResults(); else renderRead(scroll);
 }
 
 // ---------- Routing ----------
@@ -210,7 +243,17 @@ async function route() {
   }
   const r = readHash();
   if (state.mode !== 'bible') { setMode('bible'); if (!r) { read(state.b, state.c, state.v, state.end); return; } }
-  if (r) read(r.b, r.c, r.v, r.end);
+  if (r?.page) showExtras(r.b, r.c, r.page);
+  else if (r) read(r.b, r.c, r.v, r.end);
+}
+
+function showExtras(b, c, page) {
+  state.b = b;
+  state.c = Math.max(1, Math.min(book(b).chapters, c));
+  state.v = state.end = 0;
+  state.view = page;
+  store.set('last', { b, c: state.c, v: 0 });
+  render(true);
 }
 
 function writeHash() {
@@ -222,6 +265,8 @@ function writeHash() {
 function readHash() {
   let m = location.hash.match(/^#\/([1-3A-Z]{3})\/(\d+)(?:\/(\d+)(?:-(\d+))?)?$/);
   if (m && bookIndex.has(m[1])) return { b: m[1], c: +m[2], v: +m[3] || 0, end: +m[4] || +m[3] || 0 };
+  m = location.hash.match(/^#\/([1-3A-Z]{3})\/(?:(\d+)\/)?(sumar|info)$/);   // the pages of the study Bible
+  if (m && bookIndex.has(m[1])) return { b: m[1], c: +m[2] || 1, page: m[3] };
   m = location.hash.match(/^#(\d+)\/(\d+)(?:\/(\d+))?$/); // links from the previous app: #43/3/16
   if (m && books[+m[1] - 1]) return { b: books[+m[1] - 1].id, c: +m[2], v: +m[3] || 0, end: +m[3] || 0 };
   return null;
@@ -357,12 +402,12 @@ function wire() {
   });
   $('prev').addEventListener('click', () => move(-1));
   $('next').addEventListener('click', () => move(1));
-  $('back').addEventListener('click', () => { state.view = 'read'; render(true); });
+  $('back').addEventListener('click', () => { if (state.view !== 'search') { read(state.b, state.c); return; } state.view = 'read'; render(true); });
   $('home').addEventListener('click', e => { e.preventDefault(); $('query').value = ''; if (state.mode === 'bible') read(state.b, state.c); else go(`#/${state.b}/${state.c}`); });
   $('share').addEventListener('click', () => copyText(location.href));
   $('copyAll').addEventListener('click', () => copyText(chapterText(state.visible)));
   $('columns').addEventListener('click', e => {
-    if (e.target.closest('.ref-link')) return;
+    if (e.target.closest('.ref-link, .fn')) return;
     if (e.target.closest('[data-approx]')) { runSearch(true); return; }
     if (e.target.closest('[data-exact]')) { runSearch(); return; }
     const copy = e.target.closest('[data-copy]');
@@ -407,6 +452,17 @@ function wire() {
     setVisible(list).then(() => $('translationList').querySelector(`[data-${up ? 'up' : 'down'}="${id}"]:not(:disabled)`)?.focus());
   });
   $('layout').addEventListener('change', () => { state.layout = $('layout').value; store.set('layout', state.layout); applyLayout(); });
+  for (const [id, kind] of [['fnStudies', 'studies'], ['fnComments', 'comments'], ['fnNotes', 'notes']]) {
+    $(id).checked = state.footnotes[kind];
+    $(id).addEventListener('change', () => {
+      state.footnotes[kind] = $(id).checked;
+      store.set('footnotes', state.footnotes);
+      $('columns').classList.toggle('no-comments', !state.footnotes.comments);
+      hideNote();
+      markRows($('columns'), state.footnotes);
+    });
+  }
+  $('columns').classList.toggle('no-comments', !state.footnotes.comments);
   document.querySelectorAll('dialog').forEach(d => d.addEventListener('click', e => {
     if (e.target.closest('[data-close]')) { d.close(); return; }
     if (e.target === d) { const r = d.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) d.close(); }
@@ -427,6 +483,21 @@ function wire() {
   setGo(go);
   setupPanel();
   setupEditor();
+  setupFootnotes($('columns'));
+  setupStudyNotes();
+  setupComments($('columns'), {
+    // The verse as shown in the first displayed translation that has it.
+    verse: canon => {
+      const { b, c, v } = parseKey(canon);
+      for (const t of shown()) {
+        const own = t.resolve(canon), text = own && t.verse(own);
+        if (text) return { title: `${book(b).name} ${c}:${v}`, text, abbr: t.meta.abbreviation };
+      }
+      return null;
+    },
+    onChange: () => markRows($('columns'), state.footnotes),
+    enabled: () => state.footnotes.comments
+  });
   setupNotes([$('columns'), $('studyDoc'), $('studyVisual'), $('studyBookVisual'), $('vizPanel')], {
     visible: shown,
     onOpen: canon => { const { b, c, v } = parseKey(canon); if (state.mode === 'bible') read(b, c, v); else go(`#/${b}/${c}/${v}`); }

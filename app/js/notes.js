@@ -17,9 +17,18 @@ function hide() {
 
 const scheduleClose = () => { clearTimeout(closeTimer); closeTimer = setTimeout(hide, 220); };
 
+// A wide pop-up (study notes with pictures) on a narrow screen is a sheet along the bottom edge.
+const SHEET = 700;
+
 function position() {
   const popup = $('notePopup');
   if (!anchor?.isConnected) return hide();
+  if (popup.classList.contains('wide') && window.innerWidth < SHEET) {
+    popup.dataset.side = 'below';
+    popup.style.left = '0px';
+    popup.style.top = (window.innerHeight - popup.offsetHeight) + 'px';
+    return;
+  }
   const rect = anchor.getBoundingClientRect();
   if (rect.bottom < 0 || rect.top > window.innerHeight) return hide();
   const width = popup.offsetWidth, height = popup.offsetHeight;
@@ -28,6 +37,7 @@ function position() {
   const top = below >= Math.min(height, 240) || below >= above
     ? Math.min(rect.bottom + 8, window.innerHeight - height - 12)
     : Math.max(12, rect.top - height - 8);
+  popup.dataset.side = top < rect.top ? 'above' : 'below';   // the opening animation moves away from the anchor
   popup.style.left = left + 'px';
   popup.style.top = Math.max(12, top) + 'px';
 }
@@ -75,6 +85,27 @@ function renderBody() {
   $('noteTabs').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.show === shown)));
 }
 
+// Any other content in the same pop-up (the footnotes under a verse): { title, source, html, wide }. A second
+// click on the same button closes it. Wide: a larger pop-up, as tall as the window allows (study notes).
+export function showInfo(button, { title, source, html, wide = false }) {
+  clearTimeout(closeTimer);
+  if (button === anchor) { hide(); return; }
+  anchor?.setAttribute('aria-expanded', 'false');
+  anchor = button;
+  button.setAttribute('aria-expanded', 'true');
+  current = null;
+  $('noteTitle').textContent = title;
+  $('noteSource').textContent = source;
+  $('noteTabs').innerHTML = '';
+  $('noteText').innerHTML = html;
+  $('noteOpen').hidden = true;
+  const popup = $('notePopup');
+  popup.classList.toggle('wide', wide);
+  popup.hidden = false;
+  popup.scrollTop = 0;
+  position();
+}
+
 function show(button) {
   clearTimeout(closeTimer);
   if (button === anchor) return;
@@ -101,6 +132,7 @@ function show(button) {
     : '';
   renderBody();
   const popup = $('notePopup');
+  popup.classList.remove('wide');
   popup.hidden = false;
   popup.scrollTop = 0;
   position();
@@ -128,9 +160,15 @@ export function setupNotes(containers, options) {
   });
   $('noteClose').onclick = () => { const a = anchor; hide(); a?.focus({ preventScroll: true }); };
   $('noteOpen').onclick = () => { const target = current?.first; hide(); if (target) onOpen(target); };
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !popup.hidden) { const a = anchor; hide(); a?.focus({ preventScroll: true }); } });
-  document.addEventListener('click', e => { if (!popup.hidden && !trigger(e) && !popup.contains(e.target)) hide(); });
+  const viewing = () => document.querySelector('dialog[open]');   // Escape and clicks there belong to the dialog (the picture viewer)
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !popup.hidden && !viewing()) { const a = anchor; hide(); a?.focus({ preventScroll: true }); } });
+  document.addEventListener('click', e => { if (!popup.hidden && !viewing() && !e.target.closest?.('.ref-link, .fn, dialog') && !popup.contains(e.target)) hide(); });
   window.addEventListener('resize', () => { if (!popup.hidden) position(); });
+  // Content that grows after opening (an introduction expanded, pictures loaded) moves the pop-up back into the window.
+  const refit = () => { if (!popup.hidden) position(); };
+  new ResizeObserver(refit).observe(popup);
+  popup.addEventListener('toggle', refit, true);
+  popup.addEventListener('load', refit, true);
   window.addEventListener('scroll', () => { if (!popup.hidden) position(); }, { passive: true, capture: true });
 }
 
