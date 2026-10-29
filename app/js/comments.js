@@ -1,6 +1,7 @@
 // Comments on verses: right click on a verse, or a long press on a touch screen, opens them.
 //
-// They live in data/comments/<BOOK>.json ({ "c:v": [{ date, text }] }, canonical rows; see tools/comments.mjs).
+// They live in data/comments/<BOOK>.json ({ "c:v": [{ date, text, t? }] }, canonical rows; see tools/comments.mjs).
+// Without "t" a comment applies to all translations (shown after the leftmost column); with "t", to that one only.
 // Saving goes, in this order:
 //  1. through the local server (node tools/serve.mjs): the file is written into data/ and the app rebuilt;
 //  2. through the GitHub API, with a fine-grained token entered once per device (only this repository,
@@ -13,7 +14,7 @@ import { hasServer } from './editor.js';
 const DEFAULT_REPO = 'Supershoim/Scriptura', BRANCH = 'main', MAX = 4000, PRESS_MS = 550;
 const cache = new Map();   // book -> Promise<{ "c:v": [...] }>
 let listed = null;         // Promise<Set>: books with comments in this build
-let options = { verse: () => null, onChange: () => {}, enabled: () => true };
+let options = { verse: () => null, translations: () => [], onChange: () => {}, enabled: () => true };
 let current = null;        // { canon, editing: index or -1 }
 
 const today = () => new Date().toISOString().slice(0, 10);
@@ -23,6 +24,8 @@ const sortVerses = data => Object.fromEntries(Object.entries(data).sort(([x], [y
   const [a, b] = x.split(':').map(Number), [c, d] = y.split(':').map(Number);
   return a - c || b - d;
 }));
+// The translation a comment applies to, as shown in the dialog.
+export const scopeLabel = t => t ? (options.translations().find(m => m.id === t)?.abbreviation || t) : 'toate traducerile';
 const json = data => JSON.stringify(sortVerses(data), null, 2) + '\n';
 
 // ---------- GitHub ----------
@@ -130,13 +133,23 @@ function status(html, kind = '') {
 async function renderList() {
   const list = await forVerse(current.canon);
   $('commentList').innerHTML = list.map((c, i) =>
-    `<li${i === current.editing ? ' class="editing"' : ''}><div class="comment-date">${esc(c.date)}</div><div class="comment-text">${esc(c.text)}</div>` +
+    `<li${i === current.editing ? ' class="editing"' : ''}><div class="comment-date">${esc(c.date)} · ${esc(scopeLabel(c.t))}</div><div class="comment-text">${esc(c.text)}</div>` +
     `<div class="comment-actions"><button type="button" class="ghost small" data-cedit="${i}">Editează</button><button type="button" class="ghost small" data-cdel="${i}">Șterge</button></div></li>`).join('');
   $('commentList').hidden = !list.length;
 }
 
-function setEditing(i, text = '') {
+// The choices of "Se aplică la": all translations, or one of those shown (plus the comment's own, if hidden).
+function fillScope(t = '') {
+  const list = options.translations();
+  const extra = t && !list.some(m => m.id === t) ? [{ id: t, abbreviation: t }] : [];
+  $('commentScope').innerHTML = '<option value="">Toate traducerile</option>' +
+    [...list, ...extra].map(m => `<option value="${esc(m.id)}">Doar ${esc(m.abbreviation)}</option>`).join('');
+  $('commentScope').value = t;
+}
+
+function setEditing(i, text = '', t = '') {
   current.editing = i;
+  fillScope(t);
   $('commentLabel').textContent = i < 0 ? 'Comentariu nou' : 'Editezi comentariul';
   $('commentText').value = text;
   $('commentSave').textContent = i < 0 ? 'Adaugă' : 'Salvează';
@@ -171,13 +184,14 @@ async function save() {
   const text = $('commentText').value.replace(/\s+$/, '');
   if (!text.trim()) { status('Scrie comentariul înainte de a-l salva.', 'error'); return; }
   if (text.length > MAX) { status(`Comentariul are ${text.length} de caractere; cel mult ${MAX}.`, 'error'); return; }
-  const i = current.editing, verse = options.verse(current.canon);
+  const i = current.editing, verse = options.verse(current.canon), t = $('commentScope').value;
+  const scoped = ({ t: _, ...c }) => t ? { ...c, t } : c;
   $('commentSave').disabled = true;
   status('Se salvează…');
   try {
     const where = await change(current.canon, list => {
-      if (i < 0) list.push({ date: today(), text });
-      else if (list[i]) list[i] = { ...list[i], text };
+      if (i < 0) list.push(scoped({ date: today(), text }));
+      else if (list[i]) list[i] = scoped({ ...list[i], text });
       return list;
     }, `${i < 0 ? 'Comentariu nou' : 'Comentariu modificat'}: ${verse?.title || current.canon}`);
     setEditing(-1);
@@ -260,7 +274,7 @@ export function setupComments(container, opts) {
   $('commentText').addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && (e.key === 'Enter' || e.key === 's')) { e.preventDefault(); save(); } });
   $('commentList').addEventListener('click', async e => {
     const ed = e.target.closest('[data-cedit]'), del = e.target.closest('[data-cdel]');
-    if (ed) { const i = +ed.dataset.cedit; setEditing(i, (await forVerse(current.canon))[i]?.text || ''); $('commentText').focus(); }
+    if (ed) { const i = +ed.dataset.cedit, c = (await forVerse(current.canon))[i]; setEditing(i, c?.text || '', c?.t || ''); $('commentText').focus(); }
     if (del) remove(+del.dataset.cdel);
   });
   $('ghSave').addEventListener('click', saveToken);

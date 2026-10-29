@@ -4,7 +4,7 @@
 import { esc } from './util.js';
 import { parseKey, books, bookIndex, available } from './data.js';
 import * as catalog from './catalog.js';
-import { forBook, forVerse, openComments } from './comments.js';
+import { forBook, forVerse, openComments, scopeLabel } from './comments.js';
 import { studyHash, revealVerse } from './studies.js';
 import { showInfo, hideNote } from './notes.js';
 import * as studyNotes from './studynotes.js';
@@ -29,9 +29,14 @@ function ranked(list, canon) {
   return [...byStudy.values()].sort((x, y) => own(y) - own(x) || y.n - x.n);
 }
 
-function footnotesHtml(canon, comments, mentions) {
+// The bubble of the comments with one scope: t = '' for those on all translations, else a translation id.
+function commentButton(canon, n, t) {
+  const what = `${plural(n, 'comentariu', 'comentarii')} la ${verseTitle(canon)}${t ? ', doar ' + scopeLabel(t) : ''}`;
+  return `<button type="button" class="fn fn-comment" data-fn="comments" data-scope="${esc(t)}" aria-haspopup="dialog" aria-expanded="false" aria-label="${esc(what)}" title="Comentarii${t ? ' (' + esc(scopeLabel(t)) + ')' : ''}">${BUBBLE}${n > 1 ? n : ''}</button>`;
+}
+
+function studiesHtml(canon, mentions) {
   let html = '';
-  if (comments) html += `<button type="button" class="fn fn-comment" data-fn="comments" aria-haspopup="dialog" aria-expanded="false" aria-label="${plural(comments, 'comentariu', 'comentarii')} la ${esc(verseTitle(canon))}" title="Comentarii">${BUBBLE}${comments > 1 ? comments : ''}</button>`;
   const list = ranked(mentions, canon);
   if (list.length) {
     const first = catalog.study(list[0].s);
@@ -46,6 +51,13 @@ function footnotesHtml(canon, comments, mentions) {
 function notesButton(canon, { meta, items }, i, lang) {
   const what = lang ? `Notele de studiu ${meta.abbreviation}, traduse în română` : `Note de studiu ${meta.abbreviation}, în engleză`;
   return `<button type="button" class="fn fn-notes" data-fn="notes" data-i="${i}" data-lang="${lang}" aria-haspopup="dialog" aria-expanded="false" aria-label="${esc(what)} la ${esc(verseTitle(canon))}: ${esc(studyNotes.summary(items))}" title="${esc(what)}">${BOOK}${lang ? 'Note ' : ''}${esc(meta.abbreviation)}${studyNotes.pictureCount(items) ? PICTURE : ''}</button>`;
+}
+
+// Where a comment on one translation goes when that translation's cell has no text here: it is not shown,
+// or the verse is missing from it. Returns the .vtext to append to, or null to leave the comment out.
+function hiddenScope(row, t) {
+  // TODO(human)
+  return null;
 }
 
 const language = id => available.find(t => t.id === id)?.language;
@@ -72,7 +84,13 @@ export async function markRows(container, show) {
     const canon = row.dataset.k, { b, c, v } = parseKey(canon), k = `${c}:${v}`;
     row.querySelectorAll('.fns').forEach(el => el.remove());
     const text = cell => cell?.querySelector('.vtext:not(.missing)');
-    append(row.querySelector('.vtext:not(.missing)') || row.querySelector('.vtext'), footnotesHtml(canon, of(notes, b)[k]?.length || 0, of(mentions, b)[k] || []));
+    const first = row.querySelector('.vtext:not(.missing)') || row.querySelector('.vtext');
+    // Comments on all translations go after the leftmost column; the others after their own translation.
+    const byScope = new Map();
+    for (const c of of(notes, b)[k] || []) byScope.set(c.t || '', [...(byScope.get(c.t || '') || []), c]);
+    if (byScope.has('')) append(first, commentButton(canon, byScope.get('').length, ''));
+    for (const [t, list] of byScope) if (t) append(text(row.querySelector(`.cell[data-t="${t}"]`)) || hiddenScope(row, t), commentButton(canon, list.length, t));
+    append(first, studiesHtml(canon, of(mentions, b)[k] || []));
     (of(english, b)[k] || []).forEach((entry, i) => append(text(row.querySelector(`.cell[data-t="${entry.meta.id}"]`)), notesButton(canon, entry, i, '')));
     const ro = text([...row.querySelectorAll('.cell')].find(cell => language(cell.dataset.t) === 'ro'));
     (of(romanian, b)[k] || []).forEach((entry, i) => append(ro, notesButton(canon, entry, i, 'ro')));
@@ -80,10 +98,10 @@ export async function markRows(container, show) {
 }
 
 async function showComments(button, canon) {
-  const list = await forVerse(canon);
+  const t = button.dataset.scope, list = (await forVerse(canon)).filter(c => (c.t || '') === t);
   showInfo(button, {
     title: verseTitle(canon),
-    source: plural(list.length, 'comentariu', 'comentarii'),
+    source: `${plural(list.length, 'comentariu', 'comentarii')} · ${scopeLabel(t)}`,
     html: list.map(c => `<div class="fn-item"><div class="fn-meta">${esc(c.date)}</div><div class="comment-text">${esc(c.text)}</div></div>`).join('') +
       '<button type="button" class="popup-open" data-fn-edit>Adaugă sau editează ↗</button>'
   });

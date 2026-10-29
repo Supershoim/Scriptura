@@ -495,6 +495,7 @@ function wire() {
       }
       return null;
     },
+    translations: () => shown().map(t => t.meta),
     onChange: () => markRows($('columns'), state.footnotes),
     enabled: () => state.footnotes.comments
   });

@@ -48,7 +48,7 @@ function checkRef(ref) {
 const exists = (b, c, v) => translations.some(t => typeof t.text[b]?.[c - 1]?.[v - 1] === 'string');
 const { atlas, problems: atlasProblems } = loadAtlas(path.join(dataDir, 'atlas'), books, checkRef);
 const { studies, bookVisuals, problems: studyProblems, warnings } = loadStudies(path.join(dataDir, 'studies'), books, { atlas, checkRef });
-const { comments, problems: commentProblems } = loadComments(path.join(dataDir, 'comments'), books, exists);
+const { comments, problems: commentProblems } = loadComments(path.join(dataDir, 'comments'), books, exists, translations.map(t => t.meta.id));
 // Study notes printed with a translation (KJV): one JSON file per book and the pictures they show.
 const studyNotes = translations.filter(t => t.meta.study).map(t => loadStudyNotes(dataDir, t));
 const noteFiles = Object.assign({}, ...studyNotes.map(n => n.files)), noteImages = studyNotes.flatMap(n => n.images);

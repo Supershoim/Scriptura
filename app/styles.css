@@ -766,6 +766,8 @@ svg .v-pf:not(.sel) { opacity: 0 !important; }
 .comment-list li { margin-bottom: 6px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; line-height: 1.5; transition: background .2s, border-color .2s; }
 .comment-list li.editing { border-color: var(--gold); background: var(--selected); }
 .comment-date { font-size: 10.5px; color: var(--muted); }
+.comment-scope { flex-direction: row; align-items: center; gap: 8px; margin-top: 6px; }
+.comment-scope select { padding: 5px 7px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); font-size: 14px; }
 .comment-actions { display: flex; justify-content: flex-end; gap: 4px; margin-top: 2px; }
 .comment-label { display: block; margin-bottom: 4px; font-size: 12px; font-weight: 600; }
 dialog.comments textarea { width: 100%; padding: 8px 10px; font: 16px/1.5 var(--serif); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
