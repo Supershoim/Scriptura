@@ -1,4 +1,4 @@
-# Scriptura — Biblia în paralel
+# Scriptura — Studiu și text
 
 Aplicație web pentru citirea mai multor traduceri ale Bibliei alăturat, verset cu verset, cu căutare și cu trimiterile tipărite afișate ca ferestre mici (pop-up). Secțiunea **Studii** adaugă studiile biblice expozitive, câte unul pe capitol (scopul: toate cele 1.189 de capitole), prezentate în primul rând vizual: harta cărții, cronologia, harta fiecărui capitol, personaje și locuri, hărți și mărturii istorice, cu textul complet al studiului alături. Funcționează pe calculator, telefon și tabletă; instalată de pe site, merge și fără internet.
 
