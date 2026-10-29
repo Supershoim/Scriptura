@@ -10,8 +10,9 @@
 // Without books, every book is imported; the books not named keep their earlier import.
 // --text imports only the verses and the centre-column notes (text.json, notes.json); the study notes, inserts,
 // images and index entries of those books are left as they were.
-// Needs MuPDF for Node, kept outside the project: `npm install mupdf` in any folder, then set
-// MUPDF=<that folder>/node_modules/mupdf/dist/mupdf.js
+// Needs MuPDF for Node: `npm install --no-save --no-package-lock mupdf@1.28.1` in the project (node_modules/ is
+// not in git), or install it in any folder and set MUPDF=<that folder>/node_modules/mupdf/dist/mupdf.js.
+// The New Testament books need more memory: node --max-old-space-size=8192 tools/import-nkjv.mjs …
 //
 // The page is sorted by font, not by position: verses in Esprit (9 pt; verse numbers Esprit Medium ~6 pt,
 // reference letters Esprit Italic ~6 pt, chapter numbers ~23 pt), the reference column in Myriad ~6 pt, the
