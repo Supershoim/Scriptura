@@ -198,7 +198,12 @@ async function save() {
     setEditing(-1);
     status(where === 'github' ? 'Salvat pe GitHub. Site-ul publicat îl arată după reconstruire (în jur de un minut).' : 'Salvat în data/comments.', 'ok');
   } catch (e) {
-    if (e instanceof NoStorage) { $('commentSync').open = true; status('Comentariul nu s-a salvat: adaugă mai jos un token GitHub sau deschide aplicația cu <code>node tools/serve.mjs</code>. Textul a rămas în câmp.', 'error'); }
+    if (e instanceof NoStorage) {
+      // The token field sits at the bottom of the dialog, below the fold on a phone: bring it into view.
+      $('commentSync').open = true;
+      $('ghToken').scrollIntoView({ block: 'center' });
+      $('ghToken').focus();
+      status('Comentariul nu s-a salvat: adaugă mai jos un token GitHub sau deschide aplicația cu <code>node tools/serve.mjs</code>. Textul a rămas în câmp.', 'error'); }
     else status('Nu s-a salvat: ' + esc(e.message), 'error');
   } finally {
     $('commentSave').disabled = false;
@@ -228,6 +233,8 @@ function saveToken() {
   syncHint();
   options.onChange();
   status(token || old?.token ? 'Păstrat pe acest dispozitiv.' : 'Depozitul a fost păstrat; lipsește tokenul.', 'ok');
+  // A comment that failed for lack of a token is still in the field: save it now.
+  if ((token || old?.token) && $('commentText').value.trim()) save();
 }
 
 // ---------- Gestures ----------
@@ -279,6 +286,7 @@ export function setupComments(container, opts) {
     if (del) remove(+del.dataset.cdel);
   });
   $('ghSave').addEventListener('click', saveToken);
+  for (const id of ['ghRepo', 'ghToken']) $(id).addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); saveToken(); } });
   $('ghForget').addEventListener('click', () => { store.set('github', { repo: $('ghRepo').value.trim() || DEFAULT_REPO, token: '' }); cache.clear(); syncHint(); options.onChange(); status('Tokenul a fost șters de pe acest dispozitiv.', 'ok'); });
   $('commentDialog').addEventListener('cancel', e => {
     const text = $('commentText').value.trim();
