@@ -8,6 +8,8 @@
 //   study/images/         maps, charts and pictures cut from the pages
 // Usage: node tools/import-nkjv.mjs "D:/Biblia PDF/The New King James Version Study Bible.pdf" [GEN EXO …]
 // Without books, every book is imported; the books not named keep their earlier import.
+// --text imports only the verses and the centre-column notes (text.json, notes.json); the study notes, inserts,
+// images and index entries of those books are left as they were.
 // Needs MuPDF for Node, kept outside the project: `npm install mupdf` in any folder, then set
 // MUPDF=<that folder>/node_modules/mupdf/dist/mupdf.js
 //
@@ -21,8 +23,9 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { byName, BOOK_RE } from './english-books.mjs';
 
-const [pdfPath, ...only] = process.argv.slice(2);
-if (!pdfPath) { console.error('Usage: node tools/import-nkjv.mjs <NKJV Study Bible.pdf> [BOOK …]'); process.exit(1); }
+const textOnly = process.argv.includes('--text');
+const [pdfPath, ...only] = process.argv.slice(2).filter(a => a !== '--text');
+if (!pdfPath) { console.error('Usage: node tools/import-nkjv.mjs <NKJV Study Bible.pdf> [--text] [BOOK …]'); process.exit(1); }
 const mupdf = await import(process.env.MUPDF ? pathToFileURL(process.env.MUPDF).href : 'mupdf');
 
 const root = path.resolve(import.meta.dirname, '..');
@@ -167,16 +170,22 @@ function renderClip(page, rect, scale, file) {
   const dev = new mupdf.DrawDevice(mupdf.Matrix.scale(scale, scale), pix);
   page.run(dev, mupdf.Matrix.identity);
   dev.close();
-  fs.writeFileSync(path.join(imageDir, file), pix.asJPEG(80));
+  if (!textOnly) fs.writeFileSync(path.join(imageDir, file), pix.asJPEG(80));
   return { w: box[2] - box[0], h: box[3] - box[1] };
 }
 
 // The inserts of a page: coloured boxes (culture notes, word studies, charts) and images (maps, pictures).
 function inserts(P) {
   const list = [];
+  // A tinted block holding only reference-column text is the column itself, run on beside its narrow strip
+  // when the page is full (Rom. 1, pdf page 1831), not a chart.
+  const refsOnly = r => {
+    const ls = P.lines.filter(l => inside(r, (l.x0 + l.x1) / 2, (l.top + l.y) / 2));
+    return ls.length && ls.every(l => !l.es && !l.gotham && l.size < 6.6);
+  };
   for (const f of [...P.fills].sort((a, b) => area(b.r) - area(a.r))) {
     const w = f.r[2] - f.r[0], h = f.r[3] - f.r[1];
-    if (w < 100 || h < 40 || area(f.r) > P.width * P.height * 0.7 || f.color.every(v => v < 0.03) || f.color.every(v => v > 0.97) || near(f.color, STRIP) && (w < 120 || h < 60)) continue;
+    if (w < 100 || h < 40 || area(f.r) > P.width * P.height * 0.7 || f.color.every(v => v < 0.03) || f.color.every(v => v > 0.97) || near(f.color, STRIP) && (w < 120 || h < 60 || refsOnly(f.r))) continue;
     list.push({ kind: near(f.color, CULTURE) ? 'culture' : near(f.color, WORD) ? 'word' : near(f.color, ARTICLE) ? 'article' : 'chart', r: f.r });
   }
   for (const r of P.images) if ((r[2] - r[0]) * (r[3] - r[1]) > 2500 && r[3] - r[1] > 30) list.push({ kind: 'figure', r: [...r] });
@@ -213,7 +222,17 @@ function insertChapter(start, starts, insert, P) {
 // ---------- Pass 1: find the books, read their pages ----------
 
 const header = l => l.gotham && l.y < 45 && l.size < 9;
-const titleOf = P => { const l = P.lines.find(l => l.gotham && l.max > 30); return l && byName.get(l.text.trim().toUpperCase()); };
+// The title prints the name alone ("Corinthians"); the ordinal is in the line above ("The First Epistle of … to the").
+// An ordinal that makes no book name ("The First Book of Moses" over "Genesis") is ignored.
+const ORDINAL = { FIRST: '1 ', SECOND: '2 ', THIRD: '3 ' };
+const titleOf = P => {
+  const l = P.lines.find(l => l.gotham && l.max > 30);
+  if (!l) return;
+  const name = l.text.trim().toUpperCase();
+  const above = P.lines.filter(s => s.gotham && s !== l && s.y < l.y && l.top - s.y < 20).at(-1);
+  const ord = above?.text.toUpperCase().match(/\b(FIRST|SECOND|THIRD)\b/);
+  return ord && byName.get(ORDINAL[ord[1]] + name) || byName.get(name);
+};
 const bookPages = new Map();       // BOOK -> [pdf page index]
 let current = null;
 for (let pn = 0; pn < doc.countPages(); pn++) {
@@ -238,13 +257,13 @@ const index = readJson(path.join(studyDir, 'index.json'), { items: {}, verses: {
 const warnings = [];
 
 for (const [book, pages] of bookPages) {
-  for (const f of fs.readdirSync(imageDir)) if (f.startsWith(book + '-')) fs.rmSync(path.join(imageDir, f));
+  if (!textOnly) for (const f of fs.readdirSync(imageDir)) if (f.startsWith(book + '-')) fs.rmSync(path.join(imageDir, f));
   for (const k of Object.keys(notes)) if (k.startsWith(book + ' ')) delete notes[k];
-  for (const [id, item] of Object.entries(index.items)) if (item.b === book) delete index.items[id];
+  if (!textOnly) for (const [id, item] of Object.entries(index.items)) if (item.b === book) delete index.items[id];
   const verses = (text[book] = []), study = {}, extra = { intro: null, chapters: {} };
   const ids = new Set();
   const uid = base => { let id = base, n = 1; while (ids.has(id)) id = `${base}~${++n}`; ids.add(id); return id; };
-  const record = (id, entry) => { index.items[id] = { b: book, ...entry }; };
+  const record = (id, entry) => { if (!textOnly) index.items[id] = { b: book, ...entry }; };
 
   // Streams over the whole book: verse characters, note lines, the reference entries of each page.
   let chapter = 0, verse = 0, buf = null, drop = '';
@@ -358,8 +377,11 @@ for (const [book, pages] of bookPages) {
         if (l.max > 20) starts.push({ c: chapter, col: l.col, y: l.top });   // a chapter number, or the drop cap of chapter 1
       }
       // The reference column: a bold verse number, then entries opened by a very small italic letter or number.
+      // Where the column runs on into a wide block beside its narrow strip, the strip is read first, then the block.
       let entry = null;
-      for (const l of byCol(lines.filter(l => !l.insert && !l.es && !l.gotham && l.size < 6.6))) {
+      const refLines = lines.filter(l => !l.insert && !l.es && !l.gotham && l.size < 6.6);
+      const left = Math.min(...refLines.map(l => l.x0)), runOn = l => l.x0 > left + 30;
+      for (const l of [...byCol(refLines.filter(l => !runOn(l))), ...byCol(refLines.filter(runOn))]) {
         for (const ch of l.chars) {
           if (ch.size < 5 && ch.italic && /[a-z0-9]/.test(ch.c)) {
             entry = { m: ch.c, text: '' };
@@ -401,7 +423,11 @@ for (const [book, pages] of bookPages) {
     let n = 0;
     for (const x of ins) {
       const sorted = byCol([...x.lines]);
-      const titleLine = sorted.find(l => l.gotham && l.bold && (l.white || l.size >= 8.5));
+      // A chart may print its title just above its box ("The Christian Life", Rom. 13, pdf page 1852).
+      const titleLine = sorted.find(l => l.gotham && l.bold && (l.white || l.size >= 8.5))
+        || lines.find(l => !l.insert && l.gotham && l.bold && l.size >= 8.5 && l.y <= x.r[1] + 2 && x.r[1] - l.y < 25 && l.x0 < x.r[2] && l.x1 > x.r[0]);
+      // The picture then takes the title in, as the charts that print it inside their box do.
+      if (titleLine && !titleLine.insert) { titleLine.insert = x; x.r = union(x.r, [x.r[0], titleLine.top - 4, x.r[2], x.r[1]]); }
       const label = sorted.find(l => l.gotham && !l.bold && l.white);
       const body = sorted.filter(l => l !== titleLine && l !== label && !l.gotham && l.size >= 7 && l.size < 8.2);
       const title = titleLine ? tidy(titleLine.text) : '';
@@ -487,8 +513,10 @@ for (const [book, pages] of bookPages) {
     record(`${book}.intro`, { k: 'intro', title: intro.title, pdf: pages[0].pn + 1 });
   }
 
-  fs.writeFileSync(path.join(studyDir, `${book}.json`), JSON.stringify(study, null, 1) + '\n');
-  fs.writeFileSync(path.join(studyDir, `${book}.book.json`), JSON.stringify(extra, null, 1) + '\n');
+  if (!textOnly) {
+    fs.writeFileSync(path.join(studyDir, `${book}.json`), JSON.stringify(study, null, 1) + '\n');
+    fs.writeFileSync(path.join(studyDir, `${book}.book.json`), JSON.stringify(extra, null, 1) + '\n');
+  }
   const all = Object.values(study).flat(), ex = Object.values(extra.chapters).flat();
   console.log(`${book}: pdf pages ${pages[0].pn + 1}–${pages.at(-1).pn + 1} · ${verses.flat().filter(v => v != null).length} verses in ${verses.length} chapters · ${all.filter(i => i.k === 'note').length} notes · ${all.filter(i => i.kind === 'word').length} word studies · ${ex.length} chapter inserts · intro ${extra.intro ? extra.intro.html.length + ' chars' : 'missing'}`);
 }
@@ -531,4 +559,4 @@ fs.writeFileSync(path.join(outDir, 'text.json'), JSON.stringify(text));
 fs.writeFileSync(path.join(outDir, 'notes.json'), JSON.stringify(notes));
 fs.writeFileSync(path.join(studyDir, 'index.json'), JSON.stringify(index, null, 1) + '\n');
 console.log(`index: ${Object.keys(index.items).length} items · ${Object.keys(index.verses).length} verses`);
-if (warnings.length) console.warn(`${warnings.length} warning(s):\n  ` + warnings.slice(0, 25).join('\n  '));
+if (warnings.length) console.warn(`${warnings.length} warning(s):\n  ` + warnings.slice(0, +(process.env.WARN || 25)).join('\n  '));

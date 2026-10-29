@@ -17791,6 +17791,6381 @@
    "k": "intro",
    "title": "GENESIS",
    "pdf": 36
+  },
+  "ROM.c1.culture.the-city-of-rome": {
+   "b": "ROM",
+   "k": "culture",
+   "title": "The City of Rome",
+   "chapter": 1,
+   "pdf": 1831,
+   "page": 1796,
+   "refs": [
+    "ROM 1:8",
+    "ROM 16:1-16"
+   ],
+   "text": "Bible Times & Culture Notes The City of Rome Rome was founded in 753 b.c., and by the time of Paul it was the greatest city in the world with over one million inhabitants. The forum was the ancient meeting place, marketplace, and political center of Rome. The city’s legendary founder, Romulus, is said to be buried in the forum. Here Cicero spoke to the Senate and Julius Caesar was murdered. The fo"
+  },
+  "ROM.c1.article.salvation": {
+   "b": "ROM",
+   "k": "article",
+   "title": "Salvation",
+   "chapter": 1,
+   "pdf": 1832,
+   "page": 1797,
+   "refs": [
+    "EXO 2:17",
+    "JOS 10:6",
+    "JDG 12:2",
+    "DEU 22:27",
+    "DEU 28:29",
+    "2SA 14:4",
+    "PSA 3:7",
+    "PSA 20:9",
+    "PSA 72:4",
+    "PSA 86:2",
+    "GEN 49:18",
+    "1SA 14:45",
+    "ISA 12:3",
+    "LUK 1:69",
+    "ACT 27:34",
+    "PHP 1:19",
+    "ACT 4:12",
+    "ROM 10:10",
+    "PHP 2:12",
+    "ROM 13:11",
+    "1TH 5:8-9",
+    "LUK 1:71",
+    "2TH 2:10",
+    "REV 12:10",
+    "ROM 1:16",
+    "ROM 3:24-25",
+    "ROM 5:21",
+    "HEB 12:2",
+    "JHN 3:16",
+    "EPH 2:8-9",
+    "HEB 2:3",
+    "ROM 3:21",
+    "ROM 4:5",
+    "ROM 5:1",
+    "EPH 2:1-5",
+    "ROM 6:11",
+    "PHP 1:6",
+    "ROM 8:29-30",
+    "PHP 3:21",
+    "JHN 1:12",
+    "GAL 4:4-5",
+    "EPH 1:5"
+   ],
+   "text": "Salvation Generally in the OT, the term salvation concerns physical deliverance or preservation. The major Hebrew verb for salvation, yasha, carries the sense of help, deliver, or save, and is used about 205 times in the Bible. It occurs in contexts of removing a burden or danger (Ex. 2:17) and can be used of removing someone from the danger of defeat (Josh. 10:6). At other times the term refers t"
+  },
+  "ROM.3.25.word.propitiation": {
+   "b": "ROM",
+   "k": "word",
+   "title": "propitiation",
+   "from": "3:25",
+   "to": "3:25",
+   "pdf": 1836,
+   "page": 1801,
+   "refs": [
+    "ROM 3:25",
+    "HEB 9:5",
+    "LUK 18:13",
+    "1JN 2:2",
+    "1JN 4:10"
+   ]
+  },
+  "ROM.4.25.word.justification": {
+   "b": "ROM",
+   "k": "word",
+   "title": "justification",
+   "from": "4:25",
+   "to": "4:25",
+   "pdf": 1838,
+   "page": 1803,
+   "refs": [
+    "ROM 4:25",
+    "ROM 5:18",
+    "ROM 4:2-5",
+    "ROM 5:1",
+    "ROM 3:9-20",
+    "ROM 3:26"
+   ]
+  },
+  "ROM.5.11.word.reconciliation": {
+   "b": "ROM",
+   "k": "word",
+   "title": "reconciliation",
+   "from": "5:11",
+   "to": "5:11",
+   "pdf": 1838,
+   "page": 1803,
+   "refs": [
+    "ROM 5:11",
+    "ROM 11:15",
+    "2CO 5:18-19"
+   ]
+  },
+  "ROM.6.5.word.united-together": {
+   "b": "ROM",
+   "k": "word",
+   "title": "united together",
+   "from": "6:5",
+   "to": "6:5",
+   "pdf": 1840,
+   "page": 1805,
+   "refs": [
+    "ROM 6:5",
+    "ROM 6:4",
+    "JHN 12:24"
+   ]
+  },
+  "ROM.6.14.word.law": {
+   "b": "ROM",
+   "k": "word",
+   "title": "law",
+   "from": "6:14",
+   "to": "6:14",
+   "pdf": 1842,
+   "page": 1807,
+   "refs": [
+    "ROM 6:14",
+    "ROM 7:21-25",
+    "ROM 8:2-4",
+    "GAL 2:16",
+    "GAL 5:3",
+    "HEB 8:4",
+    "ROM 8:2",
+    "ROM 8:4"
+   ]
+  },
+  "ROM.8.15.word.adoption": {
+   "b": "ROM",
+   "k": "word",
+   "title": "adoption",
+   "from": "8:15",
+   "to": "8:15",
+   "pdf": 1843,
+   "page": 1808,
+   "refs": [
+    "ROM 8:15",
+    "GAL 4:5",
+    "EPH 1:5"
+   ]
+  },
+  "ROM.8.29.word.predestined": {
+   "b": "ROM",
+   "k": "word",
+   "title": "predestined",
+   "from": "8:29",
+   "to": "8:29",
+   "pdf": 1844,
+   "page": 1809,
+   "refs": [
+    "ROM 8:29-30",
+    "ACT 4:28",
+    "1CO 2:7",
+    "EPH 1:5-11"
+   ]
+  },
+  "ROM.c9.article.election": {
+   "b": "ROM",
+   "k": "article",
+   "title": "Election",
+   "chapter": 9,
+   "pdf": 1845,
+   "page": 1810,
+   "refs": [
+    "ROM 8:29",
+    "EPH 1:3",
+    "1TI 2:3-4",
+    "2PE 3:9",
+    "ROM 9:6-24"
+   ],
+   "text": "Election The doctrine of election is one of the most hotly debated mysteries of the Christian life. Theologians through the ages have pondered the meaning of 8:29, “For whom He foreknew, He also predestined to be conformed to the image of His Son.” What did the apostle Paul mean when he wrote that God “foreknew” certain people? How are we to understand the notion of God having “predestined” certai"
+  },
+  "ROM.c10.article.righteousness": {
+   "b": "ROM",
+   "k": "article",
+   "title": "Righteousness",
+   "chapter": 10,
+   "pdf": 1848,
+   "page": 1813,
+   "refs": [
+    "PSA 71:15",
+    "PSA 119:42",
+    "LEV 19:18",
+    "MRK 12:31",
+    "ROM 3:23",
+    "ISA 64:6",
+    "ROM 1:18-31",
+    "ROM 9:31-32",
+    "ROM 4:5"
+   ],
+   "text": "Righteousness What is righteousness? Most of us immediately think of a person trying to keep a list of rules, like a little boy or girl who never steps over the line. When Paul speaks of righteousness in Romans, he means far more than this commonsense understanding of the word. He draws on the Old Testament concept of righteousness, which speaks of a proper relationship between God and a person, o"
+  },
+  "ROM.11.25.word.mystery": {
+   "b": "ROM",
+   "k": "word",
+   "title": "mystery",
+   "from": "11:25",
+   "to": "11:25",
+   "pdf": 1850,
+   "page": 1815,
+   "refs": [
+    "ROM 11:25",
+    "ROM 16:25",
+    "1CO 2:7",
+    "EPH 1:9",
+    "EPH 3:3-9"
+   ]
+  },
+  "ROM.12.2.word.transform": {
+   "b": "ROM",
+   "k": "word",
+   "title": "transform",
+   "from": "12:2",
+   "to": "12:2",
+   "pdf": 1851,
+   "page": 1816,
+   "refs": [
+    "ROM 12:2",
+    "MAT 17:2",
+    "2CO 3:18"
+   ]
+  },
+  "ROM.c13.chart.the-christian-life": {
+   "b": "ROM",
+   "k": "chart",
+   "title": "The Christian Life",
+   "chapter": 13,
+   "pdf": 1852,
+   "page": 1817,
+   "refs": [
+    "ROM 12:1",
+    "ROM 12:2",
+    "ROM 12:6-8",
+    "ROM 13:1",
+    "ROM 13:8",
+    "ROM 14:19",
+    "ROM 15:5",
+    "ROM 12:6",
+    "ROM 15:6"
+   ],
+   "text": "Presents himself to God (12:1) Receives transformation by a renewed mind (12:2) Has spiritual gifts according to grace from God (12:6 –8) Honors civil law (13:1) Loves others (13:8) Pursues peace (14:19) Becomes like-minded toward others (15:5) Becomes a sacrifice that is living, holy, and pleasing to God (12:1) Discovers and displays the will of God (12:2) Uses spiritual gifts as part of Christ’s"
+  },
+  "ROM.c13.culture.the-key-terms-of-salvation": {
+   "b": "ROM",
+   "k": "culture",
+   "title": "The Key Terms of Salvation",
+   "chapter": 13,
+   "pdf": 1853,
+   "page": 1818,
+   "refs": [
+    "ROM 1:17",
+    "ROM 4:9",
+    "ROM 12:6",
+    "ROM 1:16",
+    "ROM 11:28",
+    "ROM 1:5",
+    "ROM 5:2",
+    "ROM 12:3",
+    "ROM 4:25",
+    "ROM 5:18",
+    "ROM 2:12",
+    "ROM 4:13",
+    "ROM 7:12",
+    "ROM 10:4",
+    "ROM 13:8",
+    "ROM 3:25",
+    "ROM 3:24",
+    "ROM 8:23",
+    "ROM 3:5",
+    "ROM 5:17",
+    "ROM 9:30",
+    "ROM 10:10",
+    "ROM 3:9",
+    "ROM 5:12",
+    "ROM 7:11",
+    "ROM 8:2",
+    "ROM 14:23"
+   ],
+   "text": "The Key Terms of Salvation Paul, in the Epistle to the Romans, attempts to portray God’s plan of salvation in a concise and clear manner. In doing so, he uses Greek words whose meanings are not widely known today. Here is a brief glossary of the key terms of salvation in this book: English Term Greek Term References Faith pistis (1:17; 4:9; “Belief, trust”; faith is the means by which sinful peopl"
+  },
+  "ROM.15.13.word.hope": {
+   "b": "ROM",
+   "k": "word",
+   "title": "hope",
+   "from": "15:13",
+   "to": "15:13",
+   "pdf": 1855,
+   "page": 1820,
+   "refs": [
+    "ROM 15:13",
+    "1CO 9:10"
+   ]
+  },
+  "ROM.c16.culture.new-testament-letters": {
+   "b": "ROM",
+   "k": "culture",
+   "title": "New Testament Letters",
+   "chapter": 16,
+   "pdf": 1857,
+   "page": 1822,
+   "refs": [],
+   "text": "Bible Times & Culture Notes New Testament Letters Paul wrote letters to encourage, warn, and instruct the churches he had founded (the letters to the Corinthians, Galatians, Ephesians, Philippians, Thessalonians). He also wrote letters to churches he had not visited (Romans, Colossians), as well as to individuals (Timothy, Titus, Philemon). The letters written by the apostles and their companions "
+  },
+  "ROM.16.25.word.revelation": {
+   "b": "ROM",
+   "k": "word",
+   "title": "revelation",
+   "from": "16:25",
+   "to": "16:25",
+   "pdf": 1857,
+   "page": 1822,
+   "refs": [
+    "ROM 16:25",
+    "EPH 1:17",
+    "EPH 3:3",
+    "REV 1:1",
+    "ROM 1:18-20",
+    "ROM 2:14-15",
+    "HEB 1:1-2",
+    "ROM 5:8",
+    "2PE 3:2"
+   ]
+  },
+  "ROM.1.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:1",
+   "to": "1:1",
+   "pdf": 1831,
+   "page": 1796,
+   "lemmas": [
+    {
+     "w": "Bondservant",
+     "v": "1:1",
+     "at": 17
+    },
+    {
+     "w": "apostle",
+     "v": "1:1",
+     "at": 62
+    }
+   ],
+   "refs": [
+    "EXO 21:1-6"
+   ]
+  },
+  "ROM.1.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:3",
+   "to": "1:3",
+   "pdf": 1831,
+   "page": 1796,
+   "lemmas": [
+    {
+     "w": "David",
+     "v": "1:3",
+     "at": 70
+    }
+   ],
+   "refs": [
+    "MAT 1:1",
+    "2SA 7:8-17"
+   ]
+  },
+  "ROM.1.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:4",
+   "to": "1:4",
+   "pdf": 1831,
+   "page": 1796,
+   "lemmas": [
+    {
+     "w": "declared",
+     "v": "1:4",
+     "at": 4
+    },
+    {
+     "w": "Son of God",
+     "v": "1:4",
+     "at": 23
+    },
+    {
+     "w": "resurrection",
+     "v": "1:4",
+     "at": 89
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:5",
+   "to": "1:5",
+   "pdf": 1831,
+   "page": 1796,
+   "lemmas": [
+    {
+     "w": "for obedience to the faith",
+     "v": "1:5",
+     "at": 51
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.9": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:9",
+   "to": "1:9",
+   "pdf": 1831,
+   "page": 1796,
+   "lemmas": [
+    {
+     "w": "always in my prayers",
+     "v": "1:9",
+     "at": 120
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:11",
+   "to": "1:11",
+   "pdf": 1831,
+   "page": 1796,
+   "lemmas": [
+    {
+     "w": "impart... some spiritual gift"
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:16",
+   "to": "1:16",
+   "pdf": 1831,
+   "page": 1796,
+   "lemmas": [
+    {
+     "w": "salvation",
+     "v": "1:16",
+     "at": 76
+    }
+   ],
+   "refs": [
+    "EPH 2:8",
+    "2CO 2:15",
+    "ROM 13:11",
+    "MAT 5:10-12",
+    "MAT 8:17",
+    "2CO 5:10",
+    "2TI 2:11-13",
+    "REV 22:12"
+   ]
+  },
+  "ROM.1.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:17",
+   "to": "1:17",
+   "pdf": 1832,
+   "page": 1797,
+   "lemmas": [
+    {
+     "w": "From faith to faith",
+     "v": "1:17",
+     "at": 47
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:18",
+   "to": "1:18",
+   "pdf": 1832,
+   "page": 1797,
+   "lemmas": [
+    {
+     "w": "the truth",
+     "v": "1:18",
+     "at": 110
+    },
+    {
+     "w": "suppress",
+     "v": "1:18",
+     "at": 101
+    },
+    {
+     "w": "is",
+     "v": "1:18",
+     "at": 21
+    },
+    {
+     "w": "revealed",
+     "v": "1:18",
+     "at": 24
+    },
+    {
+     "w": "against",
+     "v": "1:18",
+     "at": 45
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.19-20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:19",
+   "to": "1:20",
+   "pdf": 1832,
+   "page": 1797,
+   "lemmas": [
+    {
+     "w": "what may be known of God",
+     "v": "1:19",
+     "at": 8
+    },
+    {
+     "w": "invisible attributes",
+     "v": "1:20",
+     "at": 40
+    },
+    {
+     "w": "eternal power",
+     "v": "1:20",
+     "at": 134
+    },
+    {
+     "w": "Godhead",
+     "v": "1:20",
+     "at": 152
+    },
+    {
+     "w": "clearly seen",
+     "v": "1:20",
+     "at": 65
+    }
+   ],
+   "refs": [
+    "ROM 10:18",
+    "PSA 19:1-4"
+   ]
+  },
+  "ROM.1.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:21",
+   "to": "1:21",
+   "pdf": 1832,
+   "page": 1797,
+   "lemmas": [
+    {
+     "w": "They knew",
+     "v": "1:21",
+     "at": 18
+    },
+    {
+     "w": "glorify Him as God",
+     "v": "1:21",
+     "at": 46
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.24": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:24",
+   "to": "1:24",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "gave them up",
+     "v": "1:24",
+     "at": 19
+    }
+   ],
+   "refs": [
+    "1TH 1:10"
+   ]
+  },
+  "ROM.1.25": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:25",
+   "to": "1:25",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "The lie",
+     "v": "1:25",
+     "at": 35
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.26": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:26",
+   "to": "1:26",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "against nature",
+     "v": "1:26",
+     "at": 110
+    }
+   ],
+   "refs": []
+  },
+  "ROM.1.27": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:27",
+   "to": "1:27",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "shameful",
+     "v": "1:27",
+     "at": 131
+    },
+    {
+     "w": "in themselves the penalty of their error",
+     "v": "1:27",
+     "at": 155
+    }
+   ],
+   "refs": [
+    "LEV 18:22"
+   ]
+  },
+  "ROM.1.29-32": {
+   "b": "ROM",
+   "k": "note",
+   "from": "1:29",
+   "to": "1:32",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "all",
+     "v": "1:29",
+     "at": 18
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:1",
+   "to": "2:1",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "judge",
+     "v": "2:1",
+     "at": 58
+    },
+    {
+     "w": "inexcusable",
+     "v": "2:1",
+     "at": 18
+    }
+   ],
+   "refs": [
+    "ROM 1:18-32"
+   ]
+  },
+  "ROM.2.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:2",
+   "to": "2:2",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "Truth",
+     "v": "2:2",
+     "at": 53
+    }
+   ],
+   "refs": [
+    "ROM 1:18-25"
+   ]
+  },
+  "ROM.2.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:4",
+   "to": "2:4",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "Repentance",
+     "v": "2:4",
+     "at": 128
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:5",
+   "to": "2:5",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "Wrath",
+     "v": "2:5",
+     "at": 98
+    }
+   ],
+   "refs": [
+    "ROM 1:18"
+   ]
+  },
+  "ROM.2.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:7",
+   "to": "2:7",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "eternal life",
+     "v": "2:7",
+     "at": 0
+    },
+    {
+     "w": "doing good",
+     "v": "2:7",
+     "at": 52
+    }
+   ],
+   "refs": [
+    "ROM 3:22",
+    "JHN 3:16",
+    "ROM 5:21",
+    "GAL 6:8",
+    "1TI 6:17-19",
+    "TIT 1:2",
+    "1PE 1:7"
+   ]
+  },
+  "ROM.2.8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:8",
+   "to": "2:8",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "Truth",
+     "v": "2:8",
+     "at": 54
+    }
+   ],
+   "refs": [
+    "GAL 2:5"
+   ]
+  },
+  "ROM.2.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:10",
+   "to": "2:10",
+   "pdf": 1833,
+   "page": 1798,
+   "lemmas": [
+    {
+     "w": "good",
+     "v": "2:10",
+     "at": 58
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:12",
+   "to": "2:12",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "without law",
+     "v": "2:12",
+     "at": 27
+    },
+    {
+     "w": "in the law",
+     "v": "2:12",
+     "at": 96
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:15",
+   "to": "2:15",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "work of the law",
+     "v": "2:15",
+     "at": 13
+    },
+    {
+     "w": "written",
+     "v": "2:15",
+     "at": 29
+    },
+    {
+     "w": "hearts",
+     "v": "2:15",
+     "at": 46
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:16",
+   "to": "2:16",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "gospel",
+     "v": "2:16",
+     "at": 83
+    },
+    {
+     "w": "judge",
+     "v": "2:16",
+     "at": 25
+    },
+    {
+     "w": "secrets",
+     "v": "2:16",
+     "at": 35
+    }
+   ],
+   "refs": [
+    "1CO 4:5"
+   ]
+  },
+  "ROM.2.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:17",
+   "to": "2:17",
+   "pdf": 1834,
+   "page": 1799,
+   "refs": []
+  },
+  "ROM.2.19-20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:19",
+   "to": "2:20",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "confident",
+     "v": "2:19",
+     "at": 8
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.22": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:22",
+   "to": "2:22",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "temples",
+     "v": "2:22",
+     "at": 95
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.23-24": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:23",
+   "to": "2:24",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "blasphemed",
+     "v": "2:24",
+     "at": 24
+    }
+   ],
+   "refs": [
+    "MAT 15:3-9",
+    "ISA 52:5"
+   ]
+  },
+  "ROM.2.25-26": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:25",
+   "to": "2:26",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "Circumcision",
+     "v": "2:25",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "1SA 15:22",
+    "ISA 1:11-20"
+   ]
+  },
+  "ROM.2.27": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:27",
+   "to": "2:27",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "judge you",
+     "v": "2:27",
+     "at": 67
+    }
+   ],
+   "refs": []
+  },
+  "ROM.2.28-29": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:28",
+   "to": "2:29",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "circumcision",
+     "v": "2:28",
+     "at": 49
+    },
+    {
+     "w": "in the Spirit, not in the letter",
+     "v": "2:29",
+     "at": 76
+    }
+   ],
+   "refs": [
+    "DEU 10:16",
+    "JER 4:4",
+    "ISA 1:10-18"
+   ]
+  },
+  "ROM.3.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:2",
+   "to": "3:2",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "Much in every way",
+     "v": "3:2",
+     "at": 0
+    },
+    {
+     "w": "oracles of God",
+     "v": "3:2",
+     "at": 62
+    }
+   ],
+   "refs": [
+    "ROM 9:4"
+   ]
+  },
+  "ROM.3.3-4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:3",
+   "to": "3:4",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "not believe",
+     "v": "3:3",
+     "at": 21
+    }
+   ],
+   "refs": [
+    "PSA 89:30-37"
+   ]
+  },
+  "ROM.3.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:5",
+   "to": "3:5",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "I speak as a man",
+     "v": "3:5",
+     "at": 120
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:6",
+   "to": "3:6",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "judge",
+     "v": "3:6",
+     "at": 37
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:7",
+   "to": "3:7",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "a sinner",
+     "v": "3:7",
+     "at": 97
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:8",
+   "to": "3:8",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "good may come",
+     "v": "3:8",
+     "at": 38
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.9": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:9",
+   "to": "3:9",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "better than they",
+     "v": "3:9",
+     "at": 18
+    },
+    {
+     "w": "all",
+     "v": "3:9",
+     "at": 43
+    },
+    {
+     "w": "under sin",
+     "v": "3:9",
+     "at": 118
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.10-18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:10",
+   "to": "3:18",
+   "pdf": 1835,
+   "page": 1800,
+   "refs": []
+  },
+  "ROM.3.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:10",
+   "to": "3:10",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "righteous",
+     "v": "3:10",
+     "at": 34
+    }
+   ],
+   "refs": [
+    "PSA 14:3",
+    "ROM 1:18"
+   ]
+  },
+  "ROM.3.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:11",
+   "to": "3:11",
+   "pdf": 1835,
+   "page": 1800,
+   "refs": [
+    "1CO 2:14"
+   ]
+  },
+  "ROM.3.12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:12",
+   "to": "3:12",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "turned aside",
+     "v": "3:12",
+     "at": 14
+    },
+    {
+     "w": "unprofitable",
+     "v": "3:12",
+     "at": 54
+    },
+    {
+     "w": "Good",
+     "v": "3:12",
+     "at": 91
+    }
+   ],
+   "refs": [
+    "ROM 1:21"
+   ]
+  },
+  "ROM.3.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:13",
+   "to": "3:13",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "tomb",
+     "v": "3:13",
+     "at": 26
+    },
+    {
+     "w": "throat",
+     "v": "3:13",
+     "at": 8
+    },
+    {
+     "w": "lips",
+     "v": "3:13",
+     "at": 116
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:14",
+   "to": "3:14",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "cursing",
+     "v": "3:14",
+     "at": 25
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.15-17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:15",
+   "to": "3:17",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "swift to shed blood",
+     "v": "3:15",
+     "at": 17
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:18",
+   "to": "3:18",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "Fear of God",
+     "v": "3:18",
+     "at": 14
+    },
+    {
+     "w": "guilty"
+    },
+    {
+     "w": "before God"
+    }
+   ],
+   "refs": [
+    "JOB 28:28",
+    "PRO 1:7"
+   ]
+  },
+  "ROM.3.20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:20",
+   "to": "3:20",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "justified",
+     "v": "3:20",
+     "at": 51
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:21",
+   "to": "3:21",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "righteousness of God",
+     "v": "3:21",
+     "at": 12
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.22-23": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:22",
+   "to": "3:23",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "all have sinned",
+     "v": "3:23",
+     "at": 4
+    },
+    {
+     "w": "fall short",
+     "v": "3:23",
+     "at": 24
+    },
+    {
+     "w": "faith in Jesus Christ",
+     "v": "3:22",
+     "at": 39
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.24": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:24",
+   "to": "3:24",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "justified",
+     "v": "3:24",
+     "at": 6
+    },
+    {
+     "w": "freely",
+     "v": "3:24",
+     "at": 16
+    },
+    {
+     "w": "grace",
+     "v": "3:24",
+     "at": 30
+    },
+    {
+     "w": "Christ Jesus",
+     "v": "3:24",
+     "at": 70
+    },
+    {
+     "w": "redemption",
+     "v": "3:24",
+     "at": 48
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.25-26": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:25",
+   "to": "3:26",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "demonstrate",
+     "v": "3:25",
+     "at": 69
+    }
+   ],
+   "refs": []
+  },
+  "ROM.3.27": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:27",
+   "to": "3:27",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "law of faith",
+     "v": "3:27",
+     "at": 78
+    }
+   ],
+   "refs": [
+    "JHN 6:28-29",
+    "ROM 2:17-23"
+   ]
+  },
+  "ROM.3.28": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:28",
+   "to": "3:28",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "Man is justified",
+     "v": "3:28",
+     "at": 29
+    },
+    {
+     "w": "apart",
+     "v": "3:28",
+     "at": 55
+    },
+    {
+     "w": "faith",
+     "v": "3:28",
+     "at": 49
+    }
+   ],
+   "refs": [
+    "ROM 4:23-25"
+   ]
+  },
+  "ROM.3.31": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:31",
+   "to": "3:31",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "Law",
+     "v": "3:31",
+     "at": 25
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.1-25": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:1",
+   "to": "4:25",
+   "pdf": 1836,
+   "page": 1801,
+   "refs": []
+  },
+  "ROM.4.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:1",
+   "to": "4:1",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "According to the flesh",
+     "v": "4:1",
+     "at": 57
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:3",
+   "to": "4:3",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "Abraham",
+     "v": "4:3",
+     "at": 34
+    },
+    {
+     "w": "righteousness",
+     "v": "4:3",
+     "at": 88
+    },
+    {
+     "w": "believed",
+     "v": "4:3",
+     "at": 42
+    }
+   ],
+   "refs": [
+    "GEN 15:6"
+   ]
+  },
+  "ROM.4.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:5",
+   "to": "4:5",
+   "pdf": 1836,
+   "page": 1801,
+   "lemmas": [
+    {
+     "w": "righteousness",
+     "v": "4:5",
+     "at": 103
+    },
+    {
+     "w": "does not work",
+     "v": "4:5",
+     "at": 15
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.6-8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:6",
+   "to": "4:8",
+   "pdf": 1837,
+   "page": 1802,
+   "refs": [
+    "ROM 4:1-5",
+    "ROM 4:6-8",
+    "ROM 3:21",
+    "ACT 2:29-30"
+   ]
+  },
+  "ROM.4.9-10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:9",
+   "to": "4:10",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "the uncircumcised?"
+    },
+    {
+     "w": "Abraham",
+     "v": "4:9",
+     "at": 130
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.11-12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:11",
+   "to": "4:12",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "father",
+     "v": "4:11",
+     "at": 144
+    },
+    {
+     "w": "uncircumcised",
+     "v": "4:11",
+     "at": 108
+    },
+    {
+     "w": "sign",
+     "v": "4:11",
+     "at": 20
+    },
+    {
+     "w": "seal",
+     "v": "4:11",
+     "at": 44
+    }
+   ],
+   "refs": [
+    "GEN 12:1-3",
+    "GEN 15:18",
+    "ROM 15:6"
+   ]
+  },
+  "ROM.4.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:13",
+   "to": "4:13",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "promise",
+     "v": "4:13",
+     "at": 8
+    },
+    {
+     "w": "teousness of faith. Heir of the world"
+    },
+    {
+     "w": "seed",
+     "v": "4:13",
+     "at": 84
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:14",
+   "to": "4:14",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "Those who are of the law",
+     "v": "4:14",
+     "at": 7
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:15",
+   "to": "4:15",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "Transgression",
+     "v": "4:15",
+     "at": 74
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:16",
+   "to": "4:16",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "Therefore it is of faith",
+     "v": "4:16",
+     "at": 0
+    },
+    {
+     "w": "grace",
+     "v": "4:16",
+     "at": 55
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:17",
+   "to": "4:17",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "Gives life to the dead",
+     "v": "4:17",
+     "at": 112
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:18",
+   "to": "4:18",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "hope",
+     "v": "4:18",
+     "at": 17
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:19",
+   "to": "4:19",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "deadness of... womb"
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:20",
+   "to": "4:20",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "glory",
+     "v": "4:20",
+     "at": 95
+    }
+   ],
+   "refs": []
+  },
+  "ROM.4.23-24": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:23",
+   "to": "4:24",
+   "pdf": 1837,
+   "page": 1802,
+   "lemmas": [
+    {
+     "w": "who raised up",
+     "v": "4:24",
+     "at": 62
+    }
+   ],
+   "refs": [
+    "1CO 15:4"
+   ]
+  },
+  "ROM.4.25": {
+   "b": "ROM",
+   "k": "note",
+   "from": "4:25",
+   "to": "4:25",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "delivered up",
+     "v": "4:25",
+     "at": 8
+    },
+    {
+     "w": "raised",
+     "v": "4:25",
+     "at": 54
+    }
+   ],
+   "refs": []
+  },
+  "ROM.5.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:1",
+   "to": "5:1",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "Peace",
+     "v": "5:1",
+     "at": 51
+    }
+   ],
+   "refs": []
+  },
+  "ROM.5.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:2",
+   "to": "5:2",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "have access",
+     "v": "5:2",
+     "at": 21
+    },
+    {
+     "w": "grace",
+     "v": "5:2",
+     "at": 52
+    },
+    {
+     "w": "Rejoice",
+     "v": "5:2",
+     "at": 81
+    },
+    {
+     "w": "hope",
+     "v": "5:2",
+     "at": 92
+    },
+    {
+     "w": "glory of God",
+     "v": "5:2",
+     "at": 104
+    }
+   ],
+   "refs": []
+  },
+  "ROM.5.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:3",
+   "to": "5:3",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "Glory",
+     "v": "5:3",
+     "at": 31
+    },
+    {
+     "w": "Tribulations",
+     "v": "5:3",
+     "at": 40
+    },
+    {
+     "w": "Perseverance",
+     "v": "5:3",
+     "at": 88
+    }
+   ],
+   "refs": [
+    "JAS 1:2-3",
+    "MAT 5:10-12",
+    "2TI 2:12"
+   ]
+  },
+  "ROM.5.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:4",
+   "to": "5:4",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "character",
+     "v": "5:4",
+     "at": 18
+    },
+    {
+     "w": "hope",
+     "v": "5:4",
+     "at": 44
+    }
+   ],
+   "refs": []
+  },
+  "ROM.5.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:5",
+   "to": "5:5",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "hope",
+     "v": "5:5",
+     "at": 4
+    },
+    {
+     "w": "disappoint",
+     "v": "5:5",
+     "at": 18
+    },
+    {
+     "w": "out",
+     "v": "5:5",
+     "at": 70
+    }
+   ],
+   "refs": [
+    "ROM 8:9"
+   ]
+  },
+  "ROM.5.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:6",
+   "to": "5:6",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "we were still without strength",
+     "v": "5:6",
+     "at": 9
+    },
+    {
+     "w": "ungodly",
+     "v": "5:6",
+     "at": 73
+    }
+   ],
+   "refs": [
+    "JHN 15:16",
+    "PHP 1:6"
+   ]
+  },
+  "ROM.5.9-10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:9",
+   "to": "5:10",
+   "pdf": 1838,
+   "page": 1803,
+   "lemmas": [
+    {
+     "w": "enemies",
+     "v": "5:10",
+     "at": 20
+    },
+    {
+     "w": "By His blood... through the death of His Son"
+    },
+    {
+     "w": "justified",
+     "v": "5:9",
+     "at": 32
+    },
+    {
+     "w": "reconciled",
+     "v": "5:10",
+     "at": 36
+    },
+    {
+     "w": "we shall be saved",
+     "v": "5:9",
+     "at": 56
+    }
+   ],
+   "refs": [
+    "ROM 1:18",
+    "ROM 6:1-14",
+    "JHN 8:32",
+    "ROM 6:14"
+   ]
+  },
+  "ROM.5.12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:12",
+   "to": "5:12",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "one man",
+     "v": "5:12",
+     "at": 27
+    },
+    {
+     "w": "sin entered the world. Sin"
+    },
+    {
+     "w": "death",
+     "v": "5:12",
+     "at": 62
+    },
+    {
+     "w": "because all sinned",
+     "v": "5:12",
+     "at": 115
+    }
+   ],
+   "refs": [
+    "1CO 15:22"
+   ]
+  },
+  "ROM.5.13-14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:13",
+   "to": "5:14",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "Until the law",
+     "v": "5:13",
+     "at": 5
+    },
+    {
+     "w": "imputed",
+     "v": "5:13",
+     "at": 56
+    },
+    {
+     "w": "not sinned",
+     "v": "5:14",
+     "at": 71
+    },
+    {
+     "w": "death reigned",
+     "v": "5:14",
+     "at": 13
+    }
+   ],
+   "refs": []
+  },
+  "ROM.5.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:15",
+   "to": "5:15",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "one Man",
+     "v": "5:15",
+     "at": 57
+    },
+    {
+     "w": "the gift",
+     "v": "5:15",
+     "at": 117
+    },
+    {
+     "w": "much more",
+     "v": "5:15",
+     "at": 86
+    }
+   ],
+   "refs": []
+  },
+  "ROM.5.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:16",
+   "to": "5:16",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "condemnation",
+     "v": "5:16",
+     "at": 126
+    },
+    {
+     "w": "the free gift",
+     "v": "5:16",
+     "at": 144
+    },
+    {
+     "w": "resulted in justification",
+     "v": "5:16",
+     "at": 188
+    }
+   ],
+   "refs": [
+    "ROM 8:1",
+    "ROM 6:16"
+   ]
+  },
+  "ROM.5.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:18",
+   "to": "5:18",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "condemnation",
+     "v": "5:18",
+     "at": 79
+    },
+    {
+     "w": "justification of life",
+     "v": "5:18",
+     "at": 177
+    }
+   ],
+   "refs": []
+  },
+  "ROM.5.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:19",
+   "to": "5:19",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "Made",
+     "v": "5:19",
+     "at": 43
+    },
+    {
+     "w": "many will be made righteous",
+     "v": "5:19",
+     "at": 88
+    }
+   ],
+   "refs": [
+    "ROM 4:3"
+   ]
+  },
+  "ROM.5.20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "5:20",
+   "to": "5:20",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "the offense might abound",
+     "v": "5:20",
+     "at": 30
+    },
+    {
+     "w": "grace abounded much more",
+     "v": "5:20",
+     "at": 80
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:1",
+   "to": "6:1",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "continue in sin?"
+    }
+   ],
+   "refs": [
+    "ROM 5:20-21"
+   ]
+  },
+  "ROM.6.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:2",
+   "to": "6:2",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "Certainly not",
+     "v": "6:2",
+     "at": 0
+    },
+    {
+     "w": "died to sin",
+     "v": "6:2",
+     "at": 32
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:3",
+   "to": "6:3",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "baptized",
+     "v": "6:3",
+     "at": 46
+    },
+    {
+     "w": "His death",
+     "v": "6:3",
+     "at": 92
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.4-5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:4",
+   "to": "6:5",
+   "pdf": 1839,
+   "page": 1804,
+   "lemmas": [
+    {
+     "w": "newness of life",
+     "v": "6:4",
+     "at": 166
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:6",
+   "to": "6:6",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "old man",
+     "v": "6:6",
+     "at": 23
+    },
+    {
+     "w": "crucified with",
+     "v": "6:6",
+     "at": 35
+    },
+    {
+     "w": "that",
+     "v": "6:6",
+     "at": 14
+    },
+    {
+     "w": "that the body of sin might be done away with",
+     "v": "6:6",
+     "at": 55
+    },
+    {
+     "w": "that we should no longer be slaves of sin",
+     "v": "6:6",
+     "at": 101
+    }
+   ],
+   "refs": [
+    "GAL 2:20",
+    "2CO 5:17",
+    "COL 2:11"
+   ]
+  },
+  "ROM.6.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:7",
+   "to": "6:7",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "Freed",
+     "v": "6:7",
+     "at": 29
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:8",
+   "to": "6:8",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "Believe",
+     "v": "6:8",
+     "at": 31
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.9-10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:9",
+   "to": "6:10",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "death",
+     "v": "6:9",
+     "at": 69
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:11",
+   "to": "6:11",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "Reckon",
+     "v": "6:11",
+     "at": 19
+    },
+    {
+     "w": "dead... to sin"
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:12",
+   "to": "6:12",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "mortal body",
+     "v": "6:12",
+     "at": 39
+    },
+    {
+     "w": "reign",
+     "v": "6:12",
+     "at": 25
+    },
+    {
+     "w": "obey",
+     "v": "6:12",
+     "at": 68
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:13",
+   "to": "6:13",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "present",
+     "v": "6:13",
+     "at": 11
+    },
+    {
+     "w": "present",
+     "v": "6:13",
+     "at": 11
+    },
+    {
+     "w": "instruments of righteousness",
+     "v": "6:13",
+     "at": 154
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:14",
+   "to": "6:14",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "Not under law",
+     "v": "6:14",
+     "at": 54
+    },
+    {
+     "w": "under grace",
+     "v": "6:14",
+     "at": 72
+    }
+   ],
+   "refs": [
+    "ROM 3:31",
+    "ROM 13:8-10",
+    "2CO 3:15-18"
+   ]
+  },
+  "ROM.6.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:16",
+   "to": "6:16",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "slaves to obey",
+     "v": "6:16",
+     "at": 52
+    }
+   ],
+   "refs": []
+  },
+  "ROM.6.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:17",
+   "to": "6:17",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "you",
+     "v": "6:17",
+     "at": 31
+    },
+    {
+     "w": "Form of doctrine",
+     "v": "6:17",
+     "at": 90
+    },
+    {
+     "w": "Obeyed from the heart",
+     "v": "6:17",
+     "at": 63
+    }
+   ],
+   "refs": [
+    "1CO 15:3-4",
+    "ACT 16:31"
+   ]
+  },
+  "ROM.6.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:18",
+   "to": "6:18",
+   "pdf": 1840,
+   "page": 1805,
+   "lemmas": [
+    {
+     "w": "slaves of righteousness",
+     "v": "6:18",
+     "at": 46
+    }
+   ],
+   "refs": [
+    "LUK 19:20-26"
+   ]
+  },
+  "ROM.6.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:19",
+   "to": "6:19",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "In human terms",
+     "v": "6:19",
+     "at": 8
+    },
+    {
+     "w": "just as",
+     "v": "6:19",
+     "at": 66
+    },
+    {
+     "w": "holiness",
+     "v": "6:19",
+     "at": 234
+    }
+   ],
+   "refs": [
+    "ROM 8:15-16"
+   ]
+  },
+  "ROM.6.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:21",
+   "to": "6:21",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "death",
+     "v": "6:21",
+     "at": 104
+    }
+   ],
+   "refs": [
+    "1JN 3:14-15",
+    "JAS 1:13-15"
+   ]
+  },
+  "ROM.6.22": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:22",
+   "to": "6:22",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "free from sin",
+     "v": "6:22",
+     "at": 24
+    },
+    {
+     "w": "fruit",
+     "v": "6:22",
+     "at": 86
+    }
+   ],
+   "refs": [
+    "JHN 3:16"
+   ]
+  },
+  "ROM.6.23": {
+   "b": "ROM",
+   "k": "note",
+   "from": "6:23",
+   "to": "6:23",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "sin",
+     "v": "6:23",
+     "at": 17
+    },
+    {
+     "w": "death",
+     "v": "6:23",
+     "at": 24
+    },
+    {
+     "w": "gift",
+     "v": "6:23",
+     "at": 39
+    },
+    {
+     "w": "eternal life",
+     "v": "6:23",
+     "at": 54
+    }
+   ],
+   "refs": [
+    "JHN 3:16",
+    "JHN 5:24",
+    "JHN 6:40",
+    "ROM 2:7",
+    "MAT 19:16-29",
+    "MRK 10:17-30",
+    "LUK 10:25",
+    "LUK 18:18-30",
+    "JHN 12:25-26",
+    "GAL 6:8",
+    "JHN 10:10",
+    "JHN 17:3"
+   ]
+  },
+  "ROM.7.1-3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:1",
+   "to": "7:3",
+   "pdf": 1841,
+   "page": 1806,
+   "refs": [
+    "ROM 6:15"
+   ]
+  },
+  "ROM.7.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:4",
+   "to": "7:4",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "to the law",
+     "v": "7:4",
+     "at": 50
+    },
+    {
+     "w": "bear fruit",
+     "v": "7:4",
+     "at": 176
+    }
+   ],
+   "refs": [
+    "ROM 6:22"
+   ]
+  },
+  "ROM.7.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:5",
+   "to": "7:5",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "In the flesh",
+     "v": "7:5",
+     "at": 17
+    },
+    {
+     "w": "aroused",
+     "v": "7:5",
+     "at": 62
+    },
+    {
+     "w": "members",
+     "v": "7:5",
+     "at": 101
+    }
+   ],
+   "refs": []
+  },
+  "ROM.7.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:6",
+   "to": "7:6",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "died",
+     "v": "7:6",
+     "at": 52
+    },
+    {
+     "w": "the letter",
+     "v": "7:6",
+     "at": 161
+    }
+   ],
+   "refs": [
+    "ROM 6:4"
+   ]
+  },
+  "ROM.7.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:7",
+   "to": "7:7",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "Is the law sin? Certainly not!",
+     "v": "7:7",
+     "at": 24
+    },
+    {
+     "w": "The law",
+     "v": "7:7",
+     "at": 27
+    }
+   ],
+   "refs": [
+    "ROM 6:1-15",
+    "ROM 6:2-15"
+   ]
+  },
+  "ROM.7.8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:8",
+   "to": "7:8",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "sin was dead",
+     "v": "7:8",
+     "at": 113
+    }
+   ],
+   "refs": [
+    "ROM 5:13"
+   ]
+  },
+  "ROM.7.9": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:9",
+   "to": "7:9",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "I was alive",
+     "v": "7:9",
+     "at": 0
+    },
+    {
+     "w": "died",
+     "v": "7:9",
+     "at": 83
+    }
+   ],
+   "refs": [
+    "ROM 6:8-13",
+    "ROM 6:14"
+   ]
+  },
+  "ROM.7.10-11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:10",
+   "to": "7:11",
+   "pdf": 1841,
+   "page": 1806,
+   "lemmas": [
+    {
+     "w": "bring life",
+     "v": "7:10",
+     "at": 34
+    },
+    {
+     "w": "deceived",
+     "v": "7:11",
+     "at": 45
+    }
+   ],
+   "refs": []
+  },
+  "ROM.7.12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:12",
+   "to": "7:12",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "the law",
+     "v": "7:12",
+     "at": 10
+    },
+    {
+     "w": "holy",
+     "v": "7:12",
+     "at": 21
+    }
+   ],
+   "refs": []
+  },
+  "ROM.7.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:13",
+   "to": "7:13",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "Has then what is good",
+     "v": "7:13",
+     "at": 0
+    },
+    {
+     "w": "become death to me? Certainly not",
+     "v": "7:13",
+     "at": 22
+    },
+    {
+     "w": "sin",
+     "v": "7:13",
+     "at": 61
+    }
+   ],
+   "refs": [
+    "ROM 6:1-15",
+    "ROM 6:2-15"
+   ]
+  },
+  "ROM.7.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:14",
+   "to": "7:14",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "spiritual",
+     "v": "7:14",
+     "at": 28
+    },
+    {
+     "w": "carnal",
+     "v": "7:14",
+     "at": 48
+    },
+    {
+     "w": "sold",
+     "v": "7:14",
+     "at": 56
+    },
+    {
+     "w": "sin",
+     "v": "7:14",
+     "at": 67
+    }
+   ],
+   "refs": [
+    "1CO 3:1-3"
+   ]
+  },
+  "ROM.7.15-17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:15",
+   "to": "7:17",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "law... is good"
+    },
+    {
+     "w": "sin",
+     "v": "7:17",
+     "at": 42
+    }
+   ],
+   "refs": []
+  },
+  "ROM.7.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:18",
+   "to": "7:18",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "flesh",
+     "v": "7:18",
+     "at": 38
+    },
+    {
+     "w": "nothing good",
+     "v": "7:18",
+     "at": 45
+    },
+    {
+     "w": "will",
+     "v": "7:18",
+     "at": 73
+    },
+    {
+     "w": "perform",
+     "v": "7:18",
+     "at": 109
+    }
+   ],
+   "refs": []
+  },
+  "ROM.7.22": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:22",
+   "to": "7:22",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "inward man",
+     "v": "7:22",
+     "at": 49
+    },
+    {
+     "w": "delight in the law of God",
+     "v": "7:22",
+     "at": 6
+    }
+   ],
+   "refs": [
+    "2CO 4:16",
+    "EPH 3:16"
+   ]
+  },
+  "ROM.7.23": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:23",
+   "to": "7:23",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "The law of sin",
+     "v": "7:23",
+     "at": 107
+    }
+   ],
+   "refs": []
+  },
+  "ROM.7.24": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:24",
+   "to": "7:24",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "wretched",
+     "v": "7:24",
+     "at": 2
+    },
+    {
+     "w": "man",
+     "v": "7:24",
+     "at": 11
+    },
+    {
+     "w": "body of death",
+     "v": "7:24",
+     "at": 56
+    }
+   ],
+   "refs": []
+  },
+  "ROM.7.25": {
+   "b": "ROM",
+   "k": "note",
+   "from": "7:25",
+   "to": "7:25",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "thank God",
+     "v": "7:25",
+     "at": 2
+    },
+    {
+     "w": "Jesus Christ",
+     "v": "7:25",
+     "at": 20
+    },
+    {
+     "w": "So then",
+     "v": "7:25",
+     "at": 43
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:1",
+   "to": "8:1",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "therefore",
+     "v": "8:1",
+     "at": 9
+    },
+    {
+     "w": "no condemnation",
+     "v": "8:1",
+     "at": 23
+    }
+   ],
+   "refs": [
+    "ROM 7:25"
+   ]
+  },
+  "ROM.8.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:2",
+   "to": "8:2",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "the law of the Spirit",
+     "v": "8:2",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:3",
+   "to": "8:3",
+   "pdf": 1842,
+   "page": 1807,
+   "lemmas": [
+    {
+     "w": "the law could not",
+     "v": "8:3",
+     "at": 9
+    },
+    {
+     "w": "God",
+     "v": "8:3",
+     "at": 69
+    },
+    {
+     "w": "by sending His own Son",
+     "v": "8:3",
+     "at": 77
+    },
+    {
+     "w": "the likeness of sinful flesh",
+     "v": "8:3",
+     "at": 103
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:4",
+   "to": "8:4",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "the law might be fulfilled",
+     "v": "8:4",
+     "at": 34
+    },
+    {
+     "w": "according to the Spirit",
+     "v": "8:4",
+     "at": 110
+    }
+   ],
+   "refs": [
+    "ROM 13:8-10"
+   ]
+  },
+  "ROM.8.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:5",
+   "to": "8:5",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "set their minds",
+     "v": "8:5",
+     "at": 42
+    },
+    {
+     "w": "on the things of the flesh",
+     "v": "8:5",
+     "at": 58
+    },
+    {
+     "w": "the Spirit",
+     "v": "8:5",
+     "at": 118
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:6",
+   "to": "8:6",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "Peace",
+     "v": "8:6",
+     "at": 77
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.7-11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:7",
+   "to": "8:11",
+   "pdf": 1843,
+   "page": 1808,
+   "refs": [
+    "JAS 1:13-15"
+   ]
+  },
+  "ROM.8.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:7",
+   "to": "8:7",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "the carnal mind",
+     "v": "8:7",
+     "at": 8
+    },
+    {
+     "w": "to the law of God",
+     "v": "8:7",
+     "at": 69
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:8",
+   "to": "8:8",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "in the flesh",
+     "v": "8:8",
+     "at": 23
+    },
+    {
+     "w": "cannot please God",
+     "v": "8:8",
+     "at": 36
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.9": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:9",
+   "to": "8:9",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "flesh",
+     "v": "8:9",
+     "at": 23
+    },
+    {
+     "w": "the Spirit",
+     "v": "8:9",
+     "at": 36
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:10",
+   "to": "8:10",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "Dead because of sin",
+     "v": "8:10",
+     "at": 37
+    }
+   ],
+   "refs": [
+    "ROM 7:24"
+   ]
+  },
+  "ROM.8.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:11",
+   "to": "8:11",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "life to your mortal bodies",
+     "v": "8:11",
+     "at": 121
+    }
+   ],
+   "refs": [
+    "PHP 3:10"
+   ]
+  },
+  "ROM.8.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:13",
+   "to": "8:13",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "you will die",
+     "v": "8:13",
+     "at": 39
+    },
+    {
+     "w": "by the Spirit",
+     "v": "8:13",
+     "at": 60
+    },
+    {
+     "w": "put to death",
+     "v": "8:13",
+     "at": 78
+    },
+    {
+     "w": "live",
+     "v": "8:13",
+     "at": 11
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:14",
+   "to": "8:14",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "led by the Spirit",
+     "v": "8:14",
+     "at": 19
+    },
+    {
+     "w": "these are sons of God",
+     "v": "8:14",
+     "at": 45
+    }
+   ],
+   "refs": [
+    "2CO 6:18"
+   ]
+  },
+  "ROM.8.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:15",
+   "to": "8:15",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "the Spirit of adoption",
+     "v": "8:15",
+     "at": 78
+    },
+    {
+     "w": "Abba",
+     "v": "8:15",
+     "at": 122
+    }
+   ],
+   "refs": [
+    "MRK 14:36"
+   ]
+  },
+  "ROM.8.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:16",
+   "to": "8:16",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "bears witness with",
+     "v": "8:16",
+     "at": 19
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:17",
+   "to": "8:17",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "heirs",
+     "v": "8:17",
+     "at": 22
+    },
+    {
+     "w": "joint heirs",
+     "v": "8:17",
+     "at": 45
+    }
+   ],
+   "refs": [
+    "1PE 1:4",
+    "TIT 3:4-7",
+    "PHP 3:10",
+    "PHP 3:11-14"
+   ]
+  },
+  "ROM.8.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:18",
+   "to": "8:18",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "sufferings",
+     "v": "8:18",
+     "at": 24
+    },
+    {
+     "w": "glory",
+     "v": "8:18",
+     "at": 95
+    }
+   ],
+   "refs": [
+    "2CO 4:17",
+    "MAT 19:29"
+   ]
+  },
+  "ROM.8.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:19",
+   "to": "8:19",
+   "pdf": 1843,
+   "page": 1808,
+   "lemmas": [
+    {
+     "w": "Earnest expectation",
+     "v": "8:19",
+     "at": 8
+    },
+    {
+     "w": "Creation",
+     "v": "8:19",
+     "at": 35
+    },
+    {
+     "w": "sons of God",
+     "v": "8:19",
+     "at": 83
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:20",
+   "to": "8:20",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "Futility",
+     "v": "8:20",
+     "at": 34
+    }
+   ],
+   "refs": [
+    "GEN 3:17-19"
+   ]
+  },
+  "ROM.8.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:21",
+   "to": "8:21",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "Creation",
+     "v": "8:21",
+     "at": 12
+    },
+    {
+     "w": "delivered",
+     "v": "8:21",
+     "at": 41
+    },
+    {
+     "w": "The bondage of corruption",
+     "v": "8:21",
+     "at": 56
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.23": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:23",
+   "to": "8:23",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "The firstfruits of the Spirit",
+     "v": "8:23",
+     "at": 36
+    },
+    {
+     "w": "the redemption of our body",
+     "v": "8:23",
+     "at": 143
+    }
+   ],
+   "refs": [
+    "ROM 8:9-11",
+    "EPH 1:14"
+   ]
+  },
+  "ROM.8.24": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:24",
+   "to": "8:24",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "Hope",
+     "v": "8:24",
+     "at": 26
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.25": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:25",
+   "to": "8:25",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "wait",
+     "v": "8:25",
+     "at": 50
+    },
+    {
+     "w": "perseverance",
+     "v": "8:25",
+     "at": 67
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.26": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:26",
+   "to": "8:26",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "weaknesses",
+     "v": "8:26",
+     "at": 38
+    },
+    {
+     "w": "cannot be uttered",
+     "v": "8:26",
+     "at": 176
+    }
+   ],
+   "refs": [
+    "1JN 2:1"
+   ]
+  },
+  "ROM.8.27-28": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:27",
+   "to": "8:28",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "work together for good",
+     "v": "8:28",
+     "at": 28
+    },
+    {
+     "w": "Those who love God",
+     "v": "8:28",
+     "at": 54
+    },
+    {
+     "w": "those who are the called",
+     "v": "8:28",
+     "at": 77
+    },
+    {
+     "w": "according to His purpose",
+     "v": "8:28",
+     "at": 102
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.29": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:29",
+   "to": "8:29",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "foreknew",
+     "v": "8:29",
+     "at": 12
+    }
+   ],
+   "refs": [
+    "1PE 1:2"
+   ]
+  },
+  "ROM.8.30": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:30",
+   "to": "8:30",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "called",
+     "v": "8:30",
+     "at": 44
+    },
+    {
+     "w": "justified",
+     "v": "8:30",
+     "at": 82
+    },
+    {
+     "w": "glorified",
+     "v": "8:30",
+     "at": 130
+    }
+   ],
+   "refs": [
+    "2TH 2:14",
+    "ACT 16:14"
+   ]
+  },
+  "ROM.8.31": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:31",
+   "to": "8:31",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "these things",
+     "v": "8:31",
+     "at": 26
+    },
+    {
+     "w": "for us",
+     "v": "8:31",
+     "at": 50
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.32": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:32",
+   "to": "8:32",
+   "pdf": 1844,
+   "page": 1809,
+   "lemmas": [
+    {
+     "w": "His own Son",
+     "v": "8:32",
+     "at": 21
+    },
+    {
+     "w": "freely give us all things?",
+     "v": "8:32",
+     "at": 98
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.33": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:33",
+   "to": "8:33",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "Elect",
+     "v": "8:33",
+     "at": 39
+    },
+    {
+     "w": "justifies",
+     "v": "8:33",
+     "at": 60
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.35": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:35",
+   "to": "8:35",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "separate",
+     "v": "8:35",
+     "at": 10
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.36": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:36",
+   "to": "8:36",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "sheep for the slaughter",
+     "v": "8:36",
+     "at": 82
+    }
+   ],
+   "refs": [
+    "PSA 44:17-22",
+    "2CO 4:11"
+   ]
+  },
+  "ROM.8.37": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:37",
+   "to": "8:37",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "more than conquerors",
+     "v": "8:37",
+     "at": 31
+    }
+   ],
+   "refs": []
+  },
+  "ROM.8.38-39": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:38",
+   "to": "8:39",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "separate",
+     "v": "8:39",
+     "at": 68
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.1-3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:1",
+   "to": "9:3",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "accursed from Christ",
+     "v": "9:3",
+     "at": 36
+    }
+   ],
+   "refs": [
+    "EXO 32:32"
+   ]
+  },
+  "ROM.9.4-5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:4",
+   "to": "9:5",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "Israelites",
+     "v": "9:4",
+     "at": 8
+    },
+    {
+     "w": "Christ",
+     "v": "9:5",
+     "at": 63
+    },
+    {
+     "w": "eternally blessed God",
+     "v": "9:5",
+     "at": 97
+    }
+   ],
+   "refs": [
+    "GEN 32:28"
+   ]
+  },
+  "ROM.9.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:6",
+   "to": "9:6",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "The word of God",
+     "v": "9:6",
+     "at": 19
+    },
+    {
+     "w": "not all Israel",
+     "v": "9:6",
+     "at": 69
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:7",
+   "to": "9:7",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "Abraham",
+     "v": "9:7",
+     "at": 55
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:8",
+   "to": "9:8",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "of the flesh",
+     "v": "9:8",
+     "at": 36
+    },
+    {
+     "w": "promise",
+     "v": "9:8",
+     "at": 109
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:10",
+   "to": "9:10",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "Isaac",
+     "v": "9:10",
+     "at": 86
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:11",
+   "to": "9:11",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "not yet... born"
+    },
+    {
+     "w": "done any good or evil",
+     "v": "9:11",
+     "at": 49
+    },
+    {
+     "w": "works",
+     "v": "9:11",
+     "at": 138
+    },
+    {
+     "w": "Him who calls",
+     "v": "9:11",
+     "at": 151
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:13",
+   "to": "9:13",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "hated",
+     "v": "9:13",
+     "at": 55
+    }
+   ],
+   "refs": [
+    "GEN 27:39",
+    "DEU 23:7",
+    "GEN 29:30"
+   ]
+  },
+  "ROM.9.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:14",
+   "to": "9:14",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "is there unrighteousness with God?",
+     "v": "9:14",
+     "at": 24
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:15",
+   "to": "9:15",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "I will have mercy",
+     "v": "9:15",
+     "at": 23
+    }
+   ],
+   "refs": [
+    "EXO 33:19"
+   ]
+  },
+  "ROM.9.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:16",
+   "to": "9:16",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "but of God",
+     "v": "9:16",
+     "at": 57
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.17-18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:17",
+   "to": "9:18",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "Pharaoh",
+     "v": "9:17",
+     "at": 30
+    },
+    {
+     "w": "power",
+     "v": "9:17",
+     "at": 103
+    },
+    {
+     "w": "name. hardens"
+    }
+   ],
+   "refs": [
+    "EXO 5:2",
+    "EXO 7:13-22",
+    "EXO 8:15-32",
+    "EXO 9:7"
+   ]
+  },
+  "ROM.9.19-20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:19",
+   "to": "9:20",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "Find fault",
+     "v": "9:19",
+     "at": 44
+    },
+    {
+     "w": "His will",
+     "v": "9:19",
+     "at": 77
+    },
+    {
+     "w": "Reply",
+     "v": "9:20",
+     "at": 34
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:21",
+   "to": "9:21",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "power",
+     "v": "9:21",
+     "at": 25
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.22-23": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:22",
+   "to": "9:23",
+   "pdf": 1846,
+   "page": 1811,
+   "lemmas": [
+    {
+     "w": "What if",
+     "v": "9:22",
+     "at": 0
+    },
+    {
+     "w": "prepared for destruction... prepared beforehand for glory"
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.24-29": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:24",
+   "to": "9:29",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "Jews",
+     "v": "9:24",
+     "at": 35
+    },
+    {
+     "w": "Gentiles",
+     "v": "9:24",
+     "at": 62
+    }
+   ],
+   "refs": []
+  },
+  "ROM.9.30-32": {
+   "b": "ROM",
+   "k": "note",
+   "from": "9:30",
+   "to": "9:32",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "Israel",
+     "v": "9:31",
+     "at": 4
+    },
+    {
+     "w": "righteousness",
+     "v": "9:30",
+     "at": 58
+    },
+    {
+     "w": "attained",
+     "v": "9:30",
+     "at": 78
+    },
+    {
+     "w": "by the works of the law",
+     "v": "9:32",
+     "at": 60
+    },
+    {
+     "w": "stumbled",
+     "v": "9:32",
+     "at": 94
+    }
+   ],
+   "refs": []
+  },
+  "ROM.10.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:1",
+   "to": "10:1",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "saved",
+     "v": "10:1",
+     "at": 77
+    },
+    {
+     "w": "desire",
+     "v": "10:1",
+     "at": 21
+    },
+    {
+     "w": "prayer",
+     "v": "10:1",
+     "at": 32
+    },
+    {
+     "w": "saved",
+     "v": "10:1",
+     "at": 77
+    }
+   ],
+   "refs": [
+    "ROM 1:16",
+    "ROM 5:9-10",
+    "ROM 1:18",
+    "ROM 9:22"
+   ]
+  },
+  "ROM.10.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:2",
+   "to": "10:2",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "zeal for God",
+     "v": "10:2",
+     "at": 41
+    },
+    {
+     "w": "not according to knowledge",
+     "v": "10:2",
+     "at": 59
+    }
+   ],
+   "refs": []
+  },
+  "ROM.10.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:3",
+   "to": "10:3",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "God’s righteousness",
+     "v": "10:3",
+     "at": 27
+    },
+    {
+     "w": "not submitted",
+     "v": "10:3",
+     "at": 103
+    }
+   ],
+   "refs": [
+    "ROM 1:5",
+    "ROM 6:17",
+    "ACT 16:31"
+   ]
+  },
+  "ROM.10.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:4",
+   "to": "10:4",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "End",
+     "v": "10:4",
+     "at": 18
+    }
+   ],
+   "refs": []
+  },
+  "ROM.10.5-8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:5",
+   "to": "10:8",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "near",
+     "v": "10:8",
+     "at": 35
+    },
+    {
+     "w": "mouth",
+     "v": "10:8",
+     "at": 53
+    },
+    {
+     "w": "heart",
+     "v": "10:6",
+     "at": 71
+    }
+   ],
+   "refs": [
+    "DEU 30:11-14"
+   ]
+  },
+  "ROM.10.9": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:9",
+   "to": "10:9",
+   "pdf": 1847,
+   "page": 1812,
+   "lemmas": [
+    {
+     "w": "Confess",
+     "v": "10:9",
+     "at": 12
+    },
+    {
+     "w": "believe",
+     "v": "10:9",
+     "at": 55
+    },
+    {
+     "w": "mouth",
+     "v": "10:9",
+     "at": 30
+    },
+    {
+     "w": "saved",
+     "v": "10:9",
+     "at": 128
+    }
+   ],
+   "refs": []
+  },
+  "ROM.10.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:10",
+   "to": "10:10",
+   "pdf": 1848,
+   "page": 1813,
+   "lemmas": [
+    {
+     "w": "For",
+     "v": "10:10",
+     "at": 0
+    },
+    {
+     "w": "righteousness",
+     "v": "10:10",
+     "at": 37
+    },
+    {
+     "w": "salvation",
+     "v": "10:10",
+     "at": 95
+    }
+   ],
+   "refs": [
+    "ROM 5:9-10"
+   ]
+  },
+  "ROM.10.11-13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:11",
+   "to": "10:13",
+   "pdf": 1848,
+   "page": 1813,
+   "lemmas": [
+    {
+     "w": "Whoever",
+     "v": "10:11",
+     "at": 25
+    },
+    {
+     "w": "Jew and Greek",
+     "v": "10:12",
+     "at": 36
+    }
+   ],
+   "refs": []
+  },
+  "ROM.10.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:16",
+   "to": "10:16",
+   "pdf": 1848,
+   "page": 1813,
+   "lemmas": [
+    {
+     "w": "they",
+     "v": "10:16",
+     "at": 4
+    },
+    {
+     "w": "all",
+     "v": "10:16",
+     "at": 18
+    },
+    {
+     "w": "obeyed",
+     "v": "10:16",
+     "at": 22
+    }
+   ],
+   "refs": []
+  },
+  "ROM.10.18-21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "10:18",
+   "to": "10:21",
+   "pdf": 1848,
+   "page": 1813,
+   "lemmas": [
+    {
+     "w": "heard",
+     "v": "10:18",
+     "at": 25
+    },
+    {
+     "w": "disobedient",
+     "v": "10:21",
+     "at": 73
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:1",
+   "to": "11:1",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "cast away",
+     "v": "11:1",
+     "at": 20
+    },
+    {
+     "w": "Israelite",
+     "v": "11:1",
+     "at": 74
+    },
+    {
+     "w": "Abraham",
+     "v": "11:1",
+     "at": 100
+    },
+    {
+     "w": "tribe of Benjamin",
+     "v": "11:1",
+     "at": 116
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:2",
+   "to": "11:2",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "His people",
+     "v": "11:2",
+     "at": 22
+    },
+    {
+     "w": "whom He foreknew",
+     "v": "11:2",
+     "at": 33
+    }
+   ],
+   "refs": [
+    "ROM 8:29"
+   ]
+  },
+  "ROM.11.3-5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:3",
+   "to": "11:5",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "remnant",
+     "v": "11:5",
+     "at": 46
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:6",
+   "to": "11:6",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "if by grace, then it is no longer of works",
+     "v": "11:6",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:7",
+   "to": "11:7",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "What",
+     "v": "11:7",
+     "at": 0
+    },
+    {
+     "w": "seeks",
+     "v": "11:7",
+     "at": 43
+    },
+    {
+     "w": "elect",
+     "v": "11:7",
+     "at": 58
+    },
+    {
+     "w": "obtained",
+     "v": "11:7",
+     "at": 26
+    },
+    {
+     "w": "blinded",
+     "v": "11:7",
+     "at": 100
+    }
+   ],
+   "refs": [
+    "ROM 9:31",
+    "ROM 10:3"
+   ]
+  },
+  "ROM.11.8-10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:8",
+   "to": "11:10",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "David",
+     "v": "11:9",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:11",
+   "to": "11:11",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "fall",
+     "v": "11:11",
+     "at": 48
+    },
+    {
+     "w": "Certainly not!",
+     "v": "11:11",
+     "at": 54
+    },
+    {
+     "w": "salvation... to the Gentiles"
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:12",
+   "to": "11:12",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "fullness"
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:14",
+   "to": "11:14",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "save some",
+     "v": "11:14",
+     "at": 69
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:15",
+   "to": "11:15",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "life from the dead",
+     "v": "11:15",
+     "at": 96
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:17",
+   "to": "11:17",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "wild olive tree",
+     "v": "11:17",
+     "at": 62
+    },
+    {
+     "w": "olive tree",
+     "v": "11:17",
+     "at": 67
+    },
+    {
+     "w": "grafted in",
+     "v": "11:17",
+     "at": 84
+    }
+   ],
+   "refs": [
+    "GEN 12:1-2",
+    "GEN 17:7-8",
+    "HOS 14:6"
+   ]
+  },
+  "ROM.11.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:18",
+   "to": "11:18",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "boast",
+     "v": "11:18",
+     "at": 7
+    },
+    {
+     "w": "the branches",
+     "v": "11:18",
+     "at": 21
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:19",
+   "to": "11:19",
+   "pdf": 1849,
+   "page": 1814,
+   "lemmas": [
+    {
+     "w": "broken off",
+     "v": "11:19",
+     "at": 34
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:20",
+   "to": "11:20",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "Well said",
+     "v": "11:20",
+     "at": 0
+    },
+    {
+     "w": "broken off",
+     "v": "11:20",
+     "at": 41
+    },
+    {
+     "w": "unbelief",
+     "v": "11:20",
+     "at": 22
+    },
+    {
+     "w": "stand by faith",
+     "v": "11:20",
+     "at": 61
+    },
+    {
+     "w": "be haughty, but fear",
+     "v": "11:20",
+     "at": 84
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:21",
+   "to": "11:21",
+   "pdf": 1850,
+   "page": 1815,
+   "refs": []
+  },
+  "ROM.11.22-23": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:22",
+   "to": "11:23",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "continue",
+     "v": "11:22",
+     "at": 115
+    },
+    {
+     "w": "goodness",
+     "v": "11:22",
+     "at": 23
+    },
+    {
+     "w": "cut off",
+     "v": "11:22",
+     "at": 168
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.24": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:24",
+   "to": "11:24",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "natural branches",
+     "v": "11:24",
+     "at": 167
+    },
+    {
+     "w": "grafted",
+     "v": "11:24",
+     "at": 76
+    },
+    {
+     "w": "wild",
+     "v": "11:24",
+     "at": 51
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.25": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:25",
+   "to": "11:25",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "mystery",
+     "v": "11:25",
+     "at": 67
+    },
+    {
+     "w": "wise in",
+     "v": "11:25",
+     "at": 95
+    },
+    {
+     "w": "own opinion",
+     "v": "11:25",
+     "at": 108
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.26": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:26",
+   "to": "11:26",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "All Israel",
+     "v": "11:26",
+     "at": 7
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.28-29": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:28",
+   "to": "11:29",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "enemies",
+     "v": "11:28",
+     "at": 31
+    },
+    {
+     "w": "gospel",
+     "v": "11:28",
+     "at": 15
+    },
+    {
+     "w": "sake of the fathers",
+     "v": "11:28",
+     "at": 107
+    },
+    {
+     "w": "Irrevocable",
+     "v": "11:29",
+     "at": 41
+    }
+   ],
+   "refs": []
+  },
+  "ROM.11.36": {
+   "b": "ROM",
+   "k": "note",
+   "from": "11:36",
+   "to": "11:36",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "forever",
+     "v": "11:36",
+     "at": 71
+    }
+   ],
+   "refs": []
+  },
+  "ROM.12.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:1",
+   "to": "12:1",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "present",
+     "v": "12:1",
+     "at": 67
+    },
+    {
+     "w": "bodies",
+     "v": "12:1",
+     "at": 80
+    },
+    {
+     "w": "a living sacrifice",
+     "v": "12:1",
+     "at": 87
+    },
+    {
+     "w": "Holy",
+     "v": "12:1",
+     "at": 107
+    },
+    {
+     "w": "acceptable",
+     "v": "12:1",
+     "at": 113
+    },
+    {
+     "w": "reasonable",
+     "v": "12:1",
+     "at": 146
+    }
+   ],
+   "refs": [
+    "ROM 9:11-23",
+    "ROM 11:30-32",
+    "ROM 6:13",
+    "ROM 6:4"
+   ]
+  },
+  "ROM.12.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:2",
+   "to": "12:2",
+   "pdf": 1850,
+   "page": 1815,
+   "lemmas": [
+    {
+     "w": "Conformed",
+     "v": "12:2",
+     "at": 14
+    },
+    {
+     "w": "World",
+     "v": "12:2",
+     "at": 32
+    },
+    {
+     "w": "transformed",
+     "v": "12:2",
+     "at": 46
+    },
+    {
+     "w": "by the renewing of",
+     "v": "12:2",
+     "at": 58
+    },
+    {
+     "w": "mind",
+     "v": "12:2",
+     "at": 82
+    }
+   ],
+   "refs": []
+  },
+  "ROM.12.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:3",
+   "to": "12:3",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "think of himself",
+     "v": "12:3",
+     "at": 79
+    },
+    {
+     "w": "soberly",
+     "v": "12:3",
+     "at": 145
+    },
+    {
+     "w": "to each one",
+     "v": "12:3",
+     "at": 171
+    },
+    {
+     "w": "dealt... a measure of faith"
+    }
+   ],
+   "refs": [
+    "1CO 11:28-32",
+    "1CO 12:11-28"
+   ]
+  },
+  "ROM.12.4-5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:4",
+   "to": "12:5",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "many members",
+     "v": "12:4",
+     "at": 15
+    },
+    {
+     "w": "function",
+     "v": "12:4",
+     "at": 82
+    }
+   ],
+   "refs": [
+    "1CO 12:12-31"
+   ]
+  },
+  "ROM.12.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:6",
+   "to": "12:6",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "gifts",
+     "v": "12:6",
+     "at": 12
+    },
+    {
+     "w": "prophecy",
+     "v": "12:6",
+     "at": 92
+    }
+   ],
+   "refs": [
+    "ROM 11:29",
+    "1PE 4:10",
+    "1CO 14:3",
+    "ACT 13:1-3"
+   ]
+  },
+  "ROM.12.7-8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:7",
+   "to": "12:8",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "Ministry",
+     "v": "12:7",
+     "at": 3
+    }
+   ],
+   "refs": [
+    "1PE 4:11"
+   ]
+  },
+  "ROM.12.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:10",
+   "to": "12:10",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "brotherly love",
+     "v": "12:10",
+     "at": 43
+    },
+    {
+     "w": "kindly affectionate",
+     "v": "12:10",
+     "at": 3
+    },
+    {
+     "w": "preference to one another",
+     "v": "12:10",
+     "at": 75
+    }
+   ],
+   "refs": [
+    "PHP 2:3-8"
+   ]
+  },
+  "ROM.12.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:11",
+   "to": "12:11",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "in diligence",
+     "v": "12:11",
+     "at": 12
+    }
+   ],
+   "refs": []
+  },
+  "ROM.12.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:13",
+   "to": "12:13",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "Hospitality",
+     "v": "12:13",
+     "at": 50
+    }
+   ],
+   "refs": []
+  },
+  "ROM.12.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:14",
+   "to": "12:14",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "Bless",
+     "v": "12:14",
+     "at": 0
+    }
+   ],
+   "refs": []
+  },
+  "ROM.12.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:15",
+   "to": "12:15",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "rejoice... weep"
+    }
+   ],
+   "refs": [
+    "1CO 12:25-26"
+   ]
+  },
+  "ROM.12.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:17",
+   "to": "12:17",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "good",
+     "v": "12:17",
+     "at": 44
+    },
+    {
+     "w": "evil for evil",
+     "v": "12:17",
+     "at": 13
+    }
+   ],
+   "refs": [
+    "1PE 3:9"
+   ]
+  },
+  "ROM.12.18": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:18",
+   "to": "12:18",
+   "pdf": 1851,
+   "page": 1816,
+   "lemmas": [
+    {
+     "w": "live peaceably",
+     "v": "12:18",
+     "at": 46
+    }
+   ],
+   "refs": []
+  },
+  "ROM.12.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:19",
+   "to": "12:19",
+   "pdf": 1852,
+   "page": 1817,
+   "refs": []
+  },
+  "ROM.12.20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "12:20",
+   "to": "12:20",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "heap coals of fire",
+     "v": "12:20",
+     "at": 108
+    }
+   ],
+   "refs": []
+  },
+  "ROM.13.1": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:1",
+   "to": "13:1",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "governing authorities. Every"
+    },
+    {
+     "w": "be subject",
+     "v": "13:1",
+     "at": 15
+    }
+   ],
+   "refs": []
+  },
+  "ROM.13.2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:2",
+   "to": "13:2",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "Judgment",
+     "v": "13:2",
+     "at": 102
+    }
+   ],
+   "refs": []
+  },
+  "ROM.13.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:4",
+   "to": "13:4",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "sword",
+     "v": "13:4",
+     "at": 98
+    }
+   ],
+   "refs": []
+  },
+  "ROM.13.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:5",
+   "to": "13:5",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "for conscience’ sake",
+     "v": "13:5",
+     "at": 66
+    }
+   ],
+   "refs": []
+  },
+  "ROM.13.8": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:8",
+   "to": "13:8",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "owe no one anything",
+     "v": "13:8",
+     "at": 0
+    },
+    {
+     "w": "except to love",
+     "v": "13:8",
+     "at": 20
+    }
+   ],
+   "refs": [
+    "PSA 37:21",
+    "MAT 5:42"
+   ]
+  },
+  "ROM.13.9": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:9",
+   "to": "13:9",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "as yourself",
+     "v": "13:9",
+     "at": 272
+    }
+   ],
+   "refs": []
+  },
+  "ROM.13.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:10",
+   "to": "13:10",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "the law",
+     "v": "13:10",
+     "at": 70
+    }
+   ],
+   "refs": [
+    "ROM 7:5"
+   ]
+  },
+  "ROM.13.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:11",
+   "to": "13:11",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "sleep",
+     "v": "13:11",
+     "at": 72
+    },
+    {
+     "w": "Salvation",
+     "v": "13:11",
+     "at": 91
+    }
+   ],
+   "refs": []
+  },
+  "ROM.13.12-13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:12",
+   "to": "13:13",
+   "pdf": 1852,
+   "page": 1817,
+   "lemmas": [
+    {
+     "w": "Night",
+     "v": "13:12",
+     "at": 4
+    },
+    {
+     "w": "Day",
+     "v": "13:12",
+     "at": 28
+    },
+    {
+     "w": "At hand",
+     "v": "13:12",
+     "at": 35
+    },
+    {
+     "w": "strife",
+     "v": "13:13",
+     "at": 102
+    },
+    {
+     "w": "envy",
+     "v": "13:13",
+     "at": 113
+    },
+    {
+     "w": "drunkenness",
+     "v": "13:13",
+     "at": 56
+    },
+    {
+     "w": "lust",
+     "v": "13:13",
+     "at": 89
+    }
+   ],
+   "refs": [
+    "PHP 4:5",
+    "JAS 5:8",
+    "1PE 4:7"
+   ]
+  },
+  "ROM.13.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "13:14",
+   "to": "13:14",
+   "pdf": 1853,
+   "page": 1818,
+   "lemmas": [
+    {
+     "w": "put on the Lord Jesus Christ",
+     "v": "13:14",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "JHN 14:6",
+    "1CO 1:30",
+    "GAL 5:22-23",
+    "EPH 2:14",
+    "EPH 6:10-17"
+   ]
+  },
+  "ROM.14.1-2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:1",
+   "to": "14:2",
+   "pdf": 1853,
+   "page": 1818,
+   "lemmas": [
+    {
+     "w": "weak in the faith",
+     "v": "14:1",
+     "at": 19
+    },
+    {
+     "w": "only vegetables",
+     "v": "14:2",
+     "at": 64
+    },
+    {
+     "w": "receive",
+     "v": "14:1",
+     "at": 0
+    },
+    {
+     "w": "doubtful things",
+     "v": "14:1",
+     "at": 63
+    }
+   ],
+   "refs": [
+    "1TI 4:4-5"
+   ]
+  },
+  "ROM.14.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:3",
+   "to": "14:3",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "despise",
+     "v": "14:3",
+     "at": 21
+    },
+    {
+     "w": "judge",
+     "v": "14:3",
+     "at": 84
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:5",
+   "to": "14:5",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "one day above another",
+     "v": "14:5",
+     "at": 19
+    },
+    {
+     "w": "fully convinced",
+     "v": "14:5",
+     "at": 87
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.6": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:6",
+   "to": "14:6",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "to the Lord",
+     "v": "14:6",
+     "at": 37
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.7-9": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:7",
+   "to": "14:9",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "None of us",
+     "v": "14:7",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:10",
+   "to": "14:10",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "judge",
+     "v": "14:10",
+     "at": 15
+    },
+    {
+     "w": "show contempt",
+     "v": "14:10",
+     "at": 49
+    },
+    {
+     "w": "All",
+     "v": "14:10",
+     "at": 90
+    },
+    {
+     "w": "judgment seat of Christ",
+     "v": "14:10",
+     "at": 115
+    }
+   ],
+   "refs": [
+    "1CO 3:11-15",
+    "2CO 5:9-10"
+   ]
+  },
+  "ROM.14.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:11",
+   "to": "14:11",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "every knee",
+     "v": "14:11",
+     "at": 47
+    }
+   ],
+   "refs": [
+    "REV 20:11-15"
+   ]
+  },
+  "ROM.14.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:14",
+   "to": "14:14",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "Unclean",
+     "v": "14:14",
+     "at": 64
+    },
+    {
+     "w": "to him",
+     "v": "14:14",
+     "at": 87
+    }
+   ],
+   "refs": [
+    "ROM 14:23"
+   ]
+  },
+  "ROM.14.15": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:15",
+   "to": "14:15",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "Do not destroy",
+     "v": "14:15",
+     "at": 88
+    }
+   ],
+   "refs": [
+    "1CO 8:7-11",
+    "1CO 10:25-28"
+   ]
+  },
+  "ROM.14.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:16",
+   "to": "14:16",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "Your good",
+     "v": "14:16",
+     "at": 21
+    },
+    {
+     "w": "Be spoken of as evil",
+     "v": "14:16",
+     "at": 31
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:17",
+   "to": "14:17",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "The kingdom of God",
+     "v": "14:17",
+     "at": 4
+    },
+    {
+     "w": "righteousness",
+     "v": "14:17",
+     "at": 55
+    },
+    {
+     "w": "peace",
+     "v": "14:17",
+     "at": 73
+    },
+    {
+     "w": "joy",
+     "v": "14:17",
+     "at": 83
+    },
+    {
+     "w": "the Holy Spirit",
+     "v": "14:17",
+     "at": 90
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.19-20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:19",
+   "to": "14:20",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "edify",
+     "v": "14:19",
+     "at": 88
+    },
+    {
+     "w": "Do not destroy",
+     "v": "14:20",
+     "at": 0
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:21",
+   "to": "14:21",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "stumbles, offended"
+    },
+    {
+     "w": "made weak",
+     "v": "14:21",
+     "at": 114
+    }
+   ],
+   "refs": []
+  },
+  "ROM.14.22": {
+   "b": "ROM",
+   "k": "note",
+   "from": "14:22",
+   "to": "14:22",
+   "pdf": 1854,
+   "page": 1819,
+   "lemmas": [
+    {
+     "w": "have faith",
+     "v": "14:22",
+     "at": 7
+    },
+    {
+     "w": "before",
+     "v": "14:22",
+     "at": 39
+    }
+   ],
+   "refs": []
+  },
+  "ROM.15.3": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:3",
+   "to": "15:3",
+   "pdf": 1855,
+   "page": 1820,
+   "lemmas": [
+    {
+     "w": "Christ",
+     "v": "15:3",
+     "at": 9
+    }
+   ],
+   "refs": [
+    "PHP 2:5-8"
+   ]
+  },
+  "ROM.15.4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:4",
+   "to": "15:4",
+   "pdf": 1855,
+   "page": 1820,
+   "lemmas": [
+    {
+     "w": "patience",
+     "v": "15:4",
+     "at": 91
+    },
+    {
+     "w": "comfort",
+     "v": "15:4",
+     "at": 104
+    },
+    {
+     "w": "hope",
+     "v": "15:4",
+     "at": 141
+    }
+   ],
+   "refs": [
+    "ROM 14:10",
+    "1CO 9:17-27"
+   ]
+  },
+  "ROM.15.5": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:5",
+   "to": "15:5",
+   "pdf": 1855,
+   "page": 1820,
+   "lemmas": [
+    {
+     "w": "the God of patience",
+     "v": "15:5",
+     "at": 8
+    }
+   ],
+   "refs": []
+  },
+  "ROM.15.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:7",
+   "to": "15:7",
+   "pdf": 1855,
+   "page": 1820,
+   "lemmas": [
+    {
+     "w": "Therefore",
+     "v": "15:7",
+     "at": 0
+    },
+    {
+     "w": "receive",
+     "v": "15:7",
+     "at": 10
+    },
+    {
+     "w": "receive one another",
+     "v": "15:7",
+     "at": 10
+    }
+   ],
+   "refs": [
+    "ROM 14:1"
+   ]
+  },
+  "ROM.15.8-13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:8",
+   "to": "15:13",
+   "pdf": 1855,
+   "page": 1820,
+   "lemmas": [
+    {
+     "w": "Jesus Christ",
+     "v": "15:8",
+     "at": 15
+    },
+    {
+     "w": "servant",
+     "v": "15:8",
+     "at": 41
+    },
+    {
+     "w": "to confirm",
+     "v": "15:8",
+     "at": 91
+    },
+    {
+     "w": "promises",
+     "v": "15:8",
+     "at": 106
+    },
+    {
+     "w": "glorify",
+     "v": "15:9",
+     "at": 28
+    },
+    {
+     "w": "as it is written",
+     "v": "15:9",
+     "at": 55
+    },
+    {
+     "w": "root of Jesse",
+     "v": "15:12",
+     "at": 43
+    }
+   ],
+   "refs": [
+    "ROM 11:1-31",
+    "ROM 3:1-12",
+    "EPH 2:14-22"
+   ]
+  },
+  "ROM.15.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:16",
+   "to": "15:16",
+   "pdf": 1855,
+   "page": 1820,
+   "lemmas": [
+    {
+     "w": "Ministering",
+     "v": "15:16",
+     "at": 60
+    },
+    {
+     "w": "acceptable",
+     "v": "15:16",
+     "at": 134
+    },
+    {
+     "w": "sanctified",
+     "v": "15:16",
+     "at": 146
+    },
+    {
+     "w": "by the Holy Spirit",
+     "v": "15:16",
+     "at": 157
+    }
+   ],
+   "refs": []
+  },
+  "ROM.15.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:19",
+   "to": "15:19",
+   "pdf": 1855,
+   "page": 1820,
+   "lemmas": [
+    {
+     "w": "mighty signs and wonders",
+     "v": "15:19",
+     "at": 3
+    },
+    {
+     "w": "Illyricum",
+     "v": "15:19",
+     "at": 106
+    }
+   ],
+   "refs": [
+    "2CO 12:12"
+   ]
+  },
+  "ROM.15.22": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:22",
+   "to": "15:22",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "For this reason",
+     "v": "15:22",
+     "at": 0
+    },
+    {
+     "w": "hindered",
+     "v": "15:22",
+     "at": 38
+    }
+   ],
+   "refs": []
+  },
+  "ROM.15.25-26": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:25",
+   "to": "15:26",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "to minister",
+     "v": "15:25",
+     "at": 32
+    },
+    {
+     "w": "contribution",
+     "v": "15:26",
+     "at": 65
+    }
+   ],
+   "refs": [
+    "1CO 16:1-4"
+   ]
+  },
+  "ROM.15.28": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:28",
+   "to": "15:28",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "this fruit",
+     "v": "15:28",
+     "at": 62
+    },
+    {
+     "w": "Spain",
+     "v": "15:28",
+     "at": 102
+    }
+   ],
+   "refs": []
+  },
+  "ROM.15.29": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:29",
+   "to": "15:29",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "when I come",
+     "v": "15:29",
+     "at": 16
+    }
+   ],
+   "refs": []
+  },
+  "ROM.15.31": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:31",
+   "to": "15:31",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "Delivered",
+     "v": "15:31",
+     "at": 14
+    }
+   ],
+   "refs": [
+    "ACT 20:22-23"
+   ]
+  },
+  "ROM.15.32": {
+   "b": "ROM",
+   "k": "note",
+   "from": "15:32",
+   "to": "15:32",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "Be refreshed",
+     "v": "15:32",
+     "at": 60
+    }
+   ],
+   "refs": []
+  },
+  "ROM.16.1-2": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:1",
+   "to": "16:2",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "Servant",
+     "v": "16:1",
+     "at": 45
+    },
+    {
+     "w": "of the church",
+     "v": "16:1",
+     "at": 53
+    },
+    {
+     "w": "Helper",
+     "v": "16:2",
+     "at": 154
+    }
+   ],
+   "refs": [
+    "PHP 1:1",
+    "1TI 3:8-12"
+   ]
+  },
+  "ROM.16.3-16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:3",
+   "to": "16:16",
+   "pdf": 1856,
+   "page": 1821,
+   "refs": []
+  },
+  "ROM.16.3-4": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:3",
+   "to": "16:4",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "Priscilla and Aquila",
+     "v": "16:3",
+     "at": 6
+    },
+    {
+     "w": "risked their own necks",
+     "v": "16:4",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "ACT 18:1-3",
+    "ACT 18:1-26"
+   ]
+  },
+  "ROM.16.7": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:7",
+   "to": "16:7",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "Of note among the apostles",
+     "v": "16:7",
+     "at": 75
+    }
+   ],
+   "refs": []
+  },
+  "ROM.16.8-10": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:8",
+   "to": "16:10",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "Amplias... Urbanus... Stachys... Apelles"
+    },
+    {
+     "w": "Aristobulus",
+     "v": "16:10",
+     "at": 75
+    }
+   ],
+   "refs": []
+  },
+  "ROM.16.11": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:11",
+   "to": "16:11",
+   "pdf": 1856,
+   "page": 1821,
+   "lemmas": [
+    {
+     "w": "my countryman",
+     "v": "16:11",
+     "at": 16
+    },
+    {
+     "w": "Narcissus",
+     "v": "16:11",
+     "at": 71
+    }
+   ],
+   "refs": []
+  },
+  "ROM.16.12": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:12",
+   "to": "16:12",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "Tryphena and Tryphosa",
+     "v": "16:12",
+     "at": 6
+    }
+   ],
+   "refs": []
+  },
+  "ROM.16.13": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:13",
+   "to": "16:13",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "Rufus",
+     "v": "16:13",
+     "at": 6
+    },
+    {
+     "w": "chosen in the Lord",
+     "v": "16:13",
+     "at": 13
+    }
+   ],
+   "refs": [
+    "MRK 15:21"
+   ]
+  },
+  "ROM.16.16": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:16",
+   "to": "16:16",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "holy kiss",
+     "v": "16:16",
+     "at": 25
+    }
+   ],
+   "refs": [
+    "1CO 16:20",
+    "2CO 13:12",
+    "1TH 5:26",
+    "1PE 5:14"
+   ]
+  },
+  "ROM.16.17": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:17",
+   "to": "16:17",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "Cause divisions",
+     "v": "16:17",
+     "at": 41
+    },
+    {
+     "w": "offenses",
+     "v": "16:17",
+     "at": 61
+    }
+   ],
+   "refs": [
+    "GAL 5:20",
+    "ROM 13:13",
+    "ROM 14:13",
+    "1CO 5:9-13",
+    "2TH 3:6",
+    "2TI 3:5",
+    "TIT 3:10"
+   ]
+  },
+  "ROM.16.20": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:20",
+   "to": "16:20",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "God",
+     "v": "16:20",
+     "at": 8
+    },
+    {
+     "w": "peace",
+     "v": "16:20",
+     "at": 15
+    },
+    {
+     "w": "crush",
+     "v": "16:20",
+     "at": 26
+    },
+    {
+     "w": "Satan",
+     "v": "16:20",
+     "at": 32
+    },
+    {
+     "w": "grace of",
+     "v": "16:20",
+     "at": 67
+    },
+    {
+     "w": "Lord Jesus Christ",
+     "v": "16:20",
+     "at": 80
+    }
+   ],
+   "refs": []
+  },
+  "ROM.16.21": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:21",
+   "to": "16:21",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "Timothy",
+     "v": "16:21",
+     "at": 0
+    },
+    {
+     "w": "Lucius",
+     "v": "16:21",
+     "at": 31
+    },
+    {
+     "w": "countrymen",
+     "v": "16:21",
+     "at": 64
+    },
+    {
+     "w": "Jason",
+     "v": "16:21",
+     "at": 39
+    },
+    {
+     "w": "Sosipater",
+     "v": "16:21",
+     "at": 50
+    }
+   ],
+   "refs": [
+    "ACT 17:5-9",
+    "ACT 20:4"
+   ]
+  },
+  "ROM.16.22": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:22",
+   "to": "16:22",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "Tertius",
+     "v": "16:22",
+     "at": 3
+    },
+    {
+     "w": "wrote",
+     "v": "16:22",
+     "at": 16
+    }
+   ],
+   "refs": []
+  },
+  "ROM.16.23": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:23",
+   "to": "16:23",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "Gaius",
+     "v": "16:23",
+     "at": 0
+    },
+    {
+     "w": "Erastus",
+     "v": "16:23",
+     "at": 61
+    }
+   ],
+   "refs": [
+    "1CO 1:14",
+    "ACT 19:22"
+   ]
+  },
+  "ROM.16.25": {
+   "b": "ROM",
+   "k": "note",
+   "from": "16:25",
+   "to": "16:25",
+   "pdf": 1857,
+   "page": 1822,
+   "lemmas": [
+    {
+     "w": "establish",
+     "v": "16:25",
+     "at": 26
+    },
+    {
+     "w": "mystery",
+     "v": "16:25",
+     "at": 133
+    }
+   ],
+   "refs": [
+    "ROM 1:11",
+    "ROM 11:25",
+    "EPH 3:1-13"
+   ]
+  },
+  "ROM.intro": {
+   "b": "ROM",
+   "k": "intro",
+   "title": "Romans",
+   "pdf": 1828
   }
  },
  "verses": {
@@ -18304,22 +24679,26 @@
   },
   "PSA 19:1": {
    "cited": [
-    "GEN.1.1.word.heavens"
+    "GEN.1.1.word.heavens",
+    "ROM.1.19-20"
    ]
   },
   "PSA 19:2": {
    "cited": [
-    "GEN.1.1.word.heavens"
+    "GEN.1.1.word.heavens",
+    "ROM.1.19-20"
    ]
   },
   "PSA 19:3": {
    "cited": [
-    "GEN.1.1.word.heavens"
+    "GEN.1.1.word.heavens",
+    "ROM.1.19-20"
    ]
   },
   "PSA 19:4": {
    "cited": [
-    "GEN.1.1.word.heavens"
+    "GEN.1.1.word.heavens",
+    "ROM.1.19-20"
    ]
   },
   "PSA 19:5": {
@@ -18992,7 +25371,9 @@
     "GEN.39.5",
     "GEN.39.21",
     "GEN.41.28",
-    "GEN.47.7-10"
+    "GEN.47.7-10",
+    "ROM.4.11-12",
+    "ROM.11.17"
    ],
    "covers": [
     "GEN.12.1-15.21"
@@ -19031,7 +25412,8 @@
     "GEN.30.27",
     "GEN.34.30-31",
     "GEN.39.5",
-    "GEN.39.21"
+    "GEN.39.21",
+    "ROM.4.11-12"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -19067,7 +25449,9 @@
     "GEN.22.5",
     "GEN.25.31",
     "GEN.28.4",
-    "GEN.39.21"
+    "GEN.39.21",
+    "ROM.4.11-12",
+    "ROM.11.17"
    ],
    "own": [
     "GEN.12.1-15.21",
@@ -19207,7 +25591,8 @@
     "GEN.22.15-18",
     "GEN.24.7",
     "GEN.26.24",
-    "GEN.35.9"
+    "GEN.35.9",
+    "ROM.4.3"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -19291,7 +25676,16 @@
   },
   "ROM 4:3": {
    "cited": [
-    "GEN.15.6.word.accounted"
+    "GEN.15.6.word.accounted",
+    "ROM.4.25.word.justification",
+    "ROM.4.6-8",
+    "ROM.5.19"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.3"
    ]
   },
   "EXO 4:31": {
@@ -19354,7 +25748,8 @@
   },
   "JHN 1:12": {
    "cited": [
-    "GEN.15.6.word.believe"
+    "GEN.15.6.word.believe",
+    "ROM.c1.article.salvation"
    ]
   },
   "GEN 13:14": {
@@ -19901,7 +26296,8 @@
     "GEN.26.28",
     "GEN.35.9",
     "GEN.46.8-27",
-    "GEN.48.22"
+    "GEN.48.22",
+    "ROM.4.11-12"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -20091,7 +26487,8 @@
     "GEN.12.7",
     "GEN.15.1-21",
     "GEN.18.1",
-    "GEN.22.5"
+    "GEN.22.5",
+    "ROM.11.17"
    ],
    "covers": [
     "GEN.17.1-22"
@@ -20106,7 +26503,8 @@
     "GEN.12.7",
     "GEN.15.1-21",
     "GEN.18.1",
-    "GEN.22.5"
+    "GEN.22.5",
+    "ROM.11.17"
    ],
    "covers": [
     "GEN.17.1-22"
@@ -21492,32 +27890,54 @@
   },
   "ROM 3:23": {
    "cited": [
-    "GEN.c32.article.payback"
+    "GEN.c32.article.payback",
+    "ROM.c10.article.righteousness"
+   ],
+   "covers": [
+    "ROM.3.22-23"
    ]
   },
   "ROM 3:24": {
    "cited": [
-    "GEN.c32.article.payback"
+    "GEN.c32.article.payback",
+    "ROM.c1.article.salvation",
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.3.24"
    ]
   },
   "ROM 3:25": {
    "cited": [
-    "GEN.c32.article.payback"
+    "GEN.c32.article.payback",
+    "ROM.c1.article.salvation",
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.3.25.word.propitiation",
+    "ROM.3.25-26"
    ]
   },
   "ROM 5:15": {
    "cited": [
     "GEN.c32.article.payback"
+   ],
+   "own": [
+    "ROM.5.15"
    ]
   },
   "ROM 5:16": {
    "cited": [
     "GEN.c32.article.payback"
+   ],
+   "own": [
+    "ROM.5.16"
    ]
   },
   "ROM 5:17": {
    "cited": [
-    "GEN.c32.article.payback"
+    "GEN.c32.article.payback",
+    "ROM.c13.culture.the-key-terms-of-salvation"
    ]
   },
   "JAS 4:1": {
@@ -21567,12 +27987,14 @@
   },
   "1JN 3:14": {
    "cited": [
-    "GEN.c32.article.payback"
+    "GEN.c32.article.payback",
+    "ROM.6.21"
    ]
   },
   "1JN 3:15": {
    "cited": [
-    "GEN.c32.article.payback"
+    "GEN.c32.article.payback",
+    "ROM.6.21"
    ]
   },
   "1JN 3:16": {
@@ -22373,7 +28795,8 @@
     "GEN.1.28",
     "GEN.3.23",
     "GEN.4.11",
-    "GEN.8.21"
+    "GEN.8.21",
+    "ROM.8.20"
    ],
    "own": [
     "GEN.3.17-19"
@@ -22382,7 +28805,8 @@
   "GEN 3:18": {
    "cited": [
     "GEN.1.28",
-    "GEN.3.23"
+    "GEN.3.23",
+    "ROM.8.20"
    ],
    "covers": [
     "GEN.3.17-19"
@@ -22394,7 +28818,8 @@
     "GEN.2.7",
     "GEN.3.23",
     "GEN.5.5",
-    "GEN.6.3"
+    "GEN.6.3",
+    "ROM.8.20"
    ],
    "covers": [
     "GEN.3.17-19"
@@ -22827,7 +29252,11 @@
    "cited": [
     "GEN.3.6",
     "GEN.3.17-19",
-    "GEN.5.5"
+    "GEN.5.5",
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.5.12"
    ]
   },
   "GEN 3:7": {
@@ -22966,12 +29395,14 @@
   },
   "PHP 2:3": {
    "cited": [
-    "GEN.3.16"
+    "GEN.3.16",
+    "ROM.12.10"
    ]
   },
   "PHP 2:4": {
    "cited": [
-    "GEN.3.16"
+    "GEN.3.16",
+    "ROM.12.10"
    ]
   },
   "EPH 5:21": {
@@ -23036,12 +29467,19 @@
   },
   "ROM 5:13": {
    "cited": [
-    "GEN.3.17-19"
+    "GEN.3.17-19",
+    "ROM.7.8"
+   ],
+   "own": [
+    "ROM.5.13-14"
    ]
   },
   "ROM 5:14": {
    "cited": [
     "GEN.3.17-19"
+   ],
+   "covers": [
+    "ROM.5.13-14"
    ]
   },
   "GEN 5:5": {
@@ -23768,12 +30206,14 @@
   },
   "1CO 15:22": {
    "cited": [
-    "GEN.5.5"
+    "GEN.5.5",
+    "ROM.5.12"
    ]
   },
   "MAT 1:1": {
    "cited": [
-    "GEN.5.6-20"
+    "GEN.5.6-20",
+    "ROM.1.3"
    ]
   },
   "MAT 1:2": {
@@ -23926,7 +30366,8 @@
   },
   "PSA 14:3": {
    "cited": [
-    "GEN.6.12"
+    "GEN.6.12",
+    "ROM.3.10"
    ]
   },
   "GEN 6:14": {
@@ -25773,12 +32214,14 @@
   },
   "JHN 6:28": {
    "cited": [
-    "GEN.15.6"
+    "GEN.15.6",
+    "ROM.3.27"
    ]
   },
   "JHN 6:29": {
    "cited": [
-    "GEN.15.6"
+    "GEN.15.6",
+    "ROM.3.27"
    ]
   },
   "PSA 113:4": {
@@ -26176,7 +32619,8 @@
   "GEN 27:39": {
    "cited": [
     "GEN.16.12",
-    "GEN.33.11"
+    "GEN.33.11",
+    "ROM.9.13"
    ],
    "own": [
     "GEN.27.39"
@@ -26291,7 +32735,8 @@
   },
   "DEU 10:16": {
    "cited": [
-    "GEN.17.14"
+    "GEN.17.14",
+    "ROM.2.28-29"
    ]
   },
   "DEU 10:17": {
@@ -26317,26 +32762,41 @@
   "ROM 2:25": {
    "cited": [
     "GEN.17.14"
+   ],
+   "own": [
+    "ROM.2.25-26"
    ]
   },
   "ROM 2:26": {
    "cited": [
     "GEN.17.14"
+   ],
+   "covers": [
+    "ROM.2.25-26"
    ]
   },
   "ROM 2:27": {
    "cited": [
     "GEN.17.14"
+   ],
+   "own": [
+    "ROM.2.27"
    ]
   },
   "ROM 2:28": {
    "cited": [
     "GEN.17.14"
+   ],
+   "own": [
+    "ROM.2.28-29"
    ]
   },
   "ROM 2:29": {
    "cited": [
     "GEN.17.14"
+   ],
+   "covers": [
+    "ROM.2.28-29"
    ]
   },
   "GEN 21:6": {
@@ -26542,77 +33002,158 @@
   },
   "ROM 1:18": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.16.25.word.revelation",
+    "ROM.2.1",
+    "ROM.2.2",
+    "ROM.2.5",
+    "ROM.3.10",
+    "ROM.5.9-10",
+    "ROM.10.1"
+   ],
+   "own": [
+    "ROM.1.18"
    ]
   },
   "ROM 1:19": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.16.25.word.revelation",
+    "ROM.2.1",
+    "ROM.2.2"
+   ],
+   "own": [
+    "ROM.1.19-20"
    ]
   },
   "ROM 1:20": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.16.25.word.revelation",
+    "ROM.2.1",
+    "ROM.2.2"
+   ],
+   "covers": [
+    "ROM.1.19-20"
    ]
   },
   "ROM 1:21": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1",
+    "ROM.2.2",
+    "ROM.3.12"
+   ],
+   "own": [
+    "ROM.1.21"
    ]
   },
   "ROM 1:22": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1",
+    "ROM.2.2"
    ]
   },
   "ROM 1:23": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1",
+    "ROM.2.2"
    ]
   },
   "ROM 1:24": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1",
+    "ROM.2.2"
+   ],
+   "own": [
+    "ROM.1.24"
    ]
   },
   "ROM 1:25": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1",
+    "ROM.2.2"
+   ],
+   "own": [
+    "ROM.1.25"
    ]
   },
   "ROM 1:26": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1"
+   ],
+   "own": [
+    "ROM.1.26"
    ]
   },
   "ROM 1:27": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1"
+   ],
+   "own": [
+    "ROM.1.27"
    ]
   },
   "ROM 1:28": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1"
    ]
   },
   "ROM 1:29": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1"
+   ],
+   "own": [
+    "ROM.1.29-32"
    ]
   },
   "ROM 1:30": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1"
+   ],
+   "covers": [
+    "ROM.1.29-32"
    ]
   },
   "ROM 1:31": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.c10.article.righteousness",
+    "ROM.2.1"
+   ],
+   "covers": [
+    "ROM.1.29-32"
    ]
   },
   "ROM 1:32": {
    "cited": [
-    "GEN.19.5"
+    "GEN.19.5",
+    "ROM.2.1"
+   ],
+   "covers": [
+    "ROM.1.29-32"
    ]
   },
   "GEN 19:9": {
@@ -27111,7 +33652,8 @@
   "ISA 12:3": {
    "cited": [
     "GEN.21.19",
-    "GEN.29.2"
+    "GEN.29.2",
+    "ROM.c1.article.salvation"
    ]
   },
   "JER 2:13": {
@@ -27447,7 +33989,8 @@
   },
   "MRK 14:36": {
    "cited": [
-    "GEN.22.9"
+    "GEN.22.9",
+    "ROM.8.15"
    ]
   },
   "GEN 48:16": {
@@ -27470,7 +34013,8 @@
   "PRO 1:7": {
    "cited": [
     "GEN.22.11-12",
-    "GEN.28.17"
+    "GEN.28.17",
+    "ROM.3.18"
    ]
   },
   "GEN 25:33": {
@@ -28301,7 +34845,8 @@
   },
   "EXO 8:30": {
    "cited": [
-    "GEN.25.21"
+    "GEN.25.21",
+    "ROM.9.17-18"
    ]
   },
   "2SA 21:14": {
@@ -28430,7 +34975,8 @@
     "GEN.35.1",
     "GEN.35.10",
     "GEN.37.3",
-    "GEN.46.2"
+    "GEN.46.2",
+    "ROM.9.4-5"
    ],
    "own": [
     "GEN.32.28"
@@ -29643,7 +36189,8 @@
    "cited": [
     "GEN.30.28",
     "GEN.31.38",
-    "GEN.37.3"
+    "GEN.37.3",
+    "ROM.9.13"
    ]
   },
   "GEN 30:32": {
@@ -31847,12 +38394,14 @@
   },
   "EXO 8:18": {
    "cited": [
-    "GEN.41.8"
+    "GEN.41.8",
+    "ROM.9.17-18"
    ]
   },
   "EXO 8:19": {
    "cited": [
-    "GEN.41.8"
+    "GEN.41.8",
+    "ROM.9.17-18"
    ]
   },
   "GEN 40:9": {
@@ -33099,6 +39648,9 @@
   "GEN 49:18": {
    "covers": [
     "GEN.49.17-18"
+   ],
+   "cited": [
+    "ROM.c1.article.salvation"
    ]
   },
   "GEN 49:19": {
@@ -33389,6 +39941,4757 @@
   "JOS 24:32": {
    "cited": [
     "GEN.50.25"
+   ]
+  },
+  "ROM 1:8": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ]
+  },
+  "ROM 16:1": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "own": [
+    "ROM.16.1-2"
+   ]
+  },
+  "ROM 16:2": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.1-2"
+   ]
+  },
+  "ROM 16:3": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "own": [
+    "ROM.16.3-16",
+    "ROM.16.3-4"
+   ]
+  },
+  "ROM 16:4": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16",
+    "ROM.16.3-4"
+   ]
+  },
+  "ROM 16:5": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ]
+  },
+  "ROM 16:6": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ]
+  },
+  "ROM 16:7": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ],
+   "own": [
+    "ROM.16.7"
+   ]
+  },
+  "ROM 16:8": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ],
+   "own": [
+    "ROM.16.8-10"
+   ]
+  },
+  "ROM 16:9": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16",
+    "ROM.16.8-10"
+   ]
+  },
+  "ROM 16:10": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16",
+    "ROM.16.8-10"
+   ]
+  },
+  "ROM 16:11": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ],
+   "own": [
+    "ROM.16.11"
+   ]
+  },
+  "ROM 16:12": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ],
+   "own": [
+    "ROM.16.12"
+   ]
+  },
+  "ROM 16:13": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ],
+   "own": [
+    "ROM.16.13"
+   ]
+  },
+  "ROM 16:14": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ]
+  },
+  "ROM 16:15": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ]
+  },
+  "ROM 16:16": {
+   "cited": [
+    "ROM.c1.culture.the-city-of-rome"
+   ],
+   "covers": [
+    "ROM.16.3-16"
+   ],
+   "own": [
+    "ROM.16.16"
+   ]
+  },
+  "EXO 2:17": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "JOS 10:6": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "JDG 12:2": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "DEU 22:27": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "DEU 28:29": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "2SA 14:4": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "PSA 3:7": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "PSA 20:9": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "PSA 72:4": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "PSA 86:2": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "1SA 14:45": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "LUK 1:69": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "ACT 27:34": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "PHP 1:19": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "ACT 4:12": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "ROM 10:10": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.10.10"
+   ]
+  },
+  "PHP 2:12": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "ROM 13:11": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.1.16"
+   ],
+   "own": [
+    "ROM.13.11"
+   ]
+  },
+  "1TH 5:8": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "1TH 5:9": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "LUK 1:71": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "2TH 2:10": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "REV 12:10": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "ROM 1:16": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.10.1"
+   ],
+   "own": [
+    "ROM.1.16"
+   ]
+  },
+  "ROM 5:21": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.2.7",
+    "ROM.6.1"
+   ]
+  },
+  "HEB 12:2": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "JHN 3:16": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.2.7",
+    "ROM.6.22",
+    "ROM.6.23"
+   ]
+  },
+  "EPH 2:8": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.1.16"
+   ]
+  },
+  "EPH 2:9": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "HEB 2:3": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "ROM 3:21": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.4.6-8"
+   ],
+   "own": [
+    "ROM.3.21"
+   ]
+  },
+  "ROM 4:5": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.4.25.word.justification",
+    "ROM.c10.article.righteousness",
+    "ROM.4.6-8"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.5"
+   ]
+  },
+  "ROM 5:1": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.4.25.word.justification"
+   ],
+   "own": [
+    "ROM.5.1"
+   ]
+  },
+  "EPH 2:1": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "EPH 2:2": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "EPH 2:3": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "EPH 2:4": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "EPH 2:5": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "ROM 6:11": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.9",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.11"
+   ]
+  },
+  "PHP 1:6": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.5.6"
+   ]
+  },
+  "ROM 8:29": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.c9.article.election",
+    "ROM.11.2"
+   ],
+   "own": [
+    "ROM.8.29.word.predestined",
+    "ROM.8.29"
+   ]
+  },
+  "ROM 8:30": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.8.29.word.predestined"
+   ],
+   "own": [
+    "ROM.8.30"
+   ]
+  },
+  "PHP 3:21": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "GAL 4:4": {
+   "cited": [
+    "ROM.c1.article.salvation"
+   ]
+  },
+  "GAL 4:5": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.8.15.word.adoption"
+   ]
+  },
+  "EPH 1:5": {
+   "cited": [
+    "ROM.c1.article.salvation",
+    "ROM.8.15.word.adoption",
+    "ROM.8.29.word.predestined"
+   ]
+  },
+  "HEB 9:5": {
+   "cited": [
+    "ROM.3.25.word.propitiation"
+   ]
+  },
+  "LUK 18:13": {
+   "cited": [
+    "ROM.3.25.word.propitiation"
+   ]
+  },
+  "1JN 2:2": {
+   "cited": [
+    "ROM.3.25.word.propitiation"
+   ]
+  },
+  "1JN 4:10": {
+   "cited": [
+    "ROM.3.25.word.propitiation"
+   ]
+  },
+  "ROM 4:25": {
+   "own": [
+    "ROM.4.25.word.justification",
+    "ROM.4.25"
+   ],
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.3.28"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ]
+  },
+  "ROM 5:18": {
+   "cited": [
+    "ROM.4.25.word.justification",
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.5.18"
+   ]
+  },
+  "ROM 4:2": {
+   "cited": [
+    "ROM.4.25.word.justification",
+    "ROM.4.6-8"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ]
+  },
+  "ROM 4:4": {
+   "cited": [
+    "ROM.4.25.word.justification",
+    "ROM.4.6-8"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ]
+  },
+  "ROM 3:9": {
+   "cited": [
+    "ROM.4.25.word.justification",
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.15.8-13"
+   ],
+   "own": [
+    "ROM.3.9"
+   ]
+  },
+  "ROM 3:10": {
+   "cited": [
+    "ROM.4.25.word.justification",
+    "ROM.15.8-13"
+   ],
+   "own": [
+    "ROM.3.10-18",
+    "ROM.3.10"
+   ]
+  },
+  "ROM 3:11": {
+   "cited": [
+    "ROM.4.25.word.justification",
+    "ROM.15.8-13"
+   ],
+   "covers": [
+    "ROM.3.10-18"
+   ],
+   "own": [
+    "ROM.3.11"
+   ]
+  },
+  "ROM 3:12": {
+   "cited": [
+    "ROM.4.25.word.justification",
+    "ROM.15.8-13"
+   ],
+   "covers": [
+    "ROM.3.10-18"
+   ],
+   "own": [
+    "ROM.3.12"
+   ]
+  },
+  "ROM 3:13": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "covers": [
+    "ROM.3.10-18"
+   ],
+   "own": [
+    "ROM.3.13"
+   ]
+  },
+  "ROM 3:14": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "covers": [
+    "ROM.3.10-18"
+   ],
+   "own": [
+    "ROM.3.14"
+   ]
+  },
+  "ROM 3:15": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "covers": [
+    "ROM.3.10-18"
+   ],
+   "own": [
+    "ROM.3.15-17"
+   ]
+  },
+  "ROM 3:16": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "covers": [
+    "ROM.3.10-18",
+    "ROM.3.15-17"
+   ]
+  },
+  "ROM 3:17": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "covers": [
+    "ROM.3.10-18",
+    "ROM.3.15-17"
+   ]
+  },
+  "ROM 3:18": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "covers": [
+    "ROM.3.10-18"
+   ],
+   "own": [
+    "ROM.3.18"
+   ]
+  },
+  "ROM 3:19": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ]
+  },
+  "ROM 3:20": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "own": [
+    "ROM.3.20"
+   ]
+  },
+  "ROM 3:26": {
+   "cited": [
+    "ROM.4.25.word.justification"
+   ],
+   "covers": [
+    "ROM.3.25-26"
+   ]
+  },
+  "ROM 5:11": {
+   "own": [
+    "ROM.5.11.word.reconciliation"
+   ]
+  },
+  "ROM 11:15": {
+   "cited": [
+    "ROM.5.11.word.reconciliation",
+    "ROM.15.8-13"
+   ],
+   "own": [
+    "ROM.11.15"
+   ]
+  },
+  "2CO 5:18": {
+   "cited": [
+    "ROM.5.11.word.reconciliation"
+   ]
+  },
+  "2CO 5:19": {
+   "cited": [
+    "ROM.5.11.word.reconciliation"
+   ]
+  },
+  "ROM 6:5": {
+   "own": [
+    "ROM.6.5.word.united-together"
+   ],
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.13"
+   ],
+   "covers": [
+    "ROM.6.4-5"
+   ]
+  },
+  "ROM 6:4": {
+   "cited": [
+    "ROM.6.5.word.united-together",
+    "ROM.5.9-10",
+    "ROM.7.6",
+    "ROM.7.7",
+    "ROM.7.13",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.6.4-5"
+   ]
+  },
+  "JHN 12:24": {
+   "cited": [
+    "ROM.6.5.word.united-together"
+   ]
+  },
+  "ROM 6:14": {
+   "own": [
+    "ROM.6.14.word.law",
+    "ROM.6.14"
+   ],
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.9",
+    "ROM.7.13"
+   ]
+  },
+  "ROM 7:21": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ]
+  },
+  "ROM 7:22": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ],
+   "own": [
+    "ROM.7.22"
+   ]
+  },
+  "ROM 7:23": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ],
+   "own": [
+    "ROM.7.23"
+   ]
+  },
+  "ROM 7:24": {
+   "cited": [
+    "ROM.6.14.word.law",
+    "ROM.8.10"
+   ],
+   "own": [
+    "ROM.7.24"
+   ]
+  },
+  "ROM 7:25": {
+   "cited": [
+    "ROM.6.14.word.law",
+    "ROM.8.1"
+   ],
+   "own": [
+    "ROM.7.25"
+   ]
+  },
+  "ROM 8:2": {
+   "cited": [
+    "ROM.6.14.word.law",
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.8.2"
+   ]
+  },
+  "ROM 8:3": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ],
+   "own": [
+    "ROM.8.3"
+   ]
+  },
+  "ROM 8:4": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ],
+   "own": [
+    "ROM.8.4"
+   ]
+  },
+  "GAL 2:16": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ]
+  },
+  "GAL 5:3": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ]
+  },
+  "HEB 8:4": {
+   "cited": [
+    "ROM.6.14.word.law"
+   ]
+  },
+  "ROM 8:15": {
+   "own": [
+    "ROM.8.15.word.adoption",
+    "ROM.8.15"
+   ],
+   "cited": [
+    "ROM.6.19"
+   ]
+  },
+  "ACT 4:28": {
+   "cited": [
+    "ROM.8.29.word.predestined"
+   ]
+  },
+  "1CO 2:7": {
+   "cited": [
+    "ROM.8.29.word.predestined",
+    "ROM.11.25.word.mystery"
+   ]
+  },
+  "EPH 1:6": {
+   "cited": [
+    "ROM.8.29.word.predestined"
+   ]
+  },
+  "EPH 1:7": {
+   "cited": [
+    "ROM.8.29.word.predestined"
+   ]
+  },
+  "EPH 1:8": {
+   "cited": [
+    "ROM.8.29.word.predestined"
+   ]
+  },
+  "EPH 1:9": {
+   "cited": [
+    "ROM.8.29.word.predestined",
+    "ROM.11.25.word.mystery"
+   ]
+  },
+  "EPH 1:10": {
+   "cited": [
+    "ROM.8.29.word.predestined"
+   ]
+  },
+  "EPH 1:11": {
+   "cited": [
+    "ROM.8.29.word.predestined"
+   ]
+  },
+  "EPH 1:3": {
+   "cited": [
+    "ROM.c9.article.election"
+   ]
+  },
+  "1TI 2:3": {
+   "cited": [
+    "ROM.c9.article.election"
+   ]
+  },
+  "1TI 2:4": {
+   "cited": [
+    "ROM.c9.article.election"
+   ]
+  },
+  "2PE 3:9": {
+   "cited": [
+    "ROM.c9.article.election"
+   ]
+  },
+  "ROM 9:6": {
+   "cited": [
+    "ROM.c9.article.election"
+   ],
+   "own": [
+    "ROM.9.6"
+   ]
+  },
+  "ROM 9:7": {
+   "cited": [
+    "ROM.c9.article.election"
+   ],
+   "own": [
+    "ROM.9.7"
+   ]
+  },
+  "ROM 9:8": {
+   "cited": [
+    "ROM.c9.article.election"
+   ],
+   "own": [
+    "ROM.9.8"
+   ]
+  },
+  "ROM 9:9": {
+   "cited": [
+    "ROM.c9.article.election"
+   ]
+  },
+  "ROM 9:10": {
+   "cited": [
+    "ROM.c9.article.election"
+   ],
+   "own": [
+    "ROM.9.10"
+   ]
+  },
+  "ROM 9:11": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.11"
+   ]
+  },
+  "ROM 9:12": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ]
+  },
+  "ROM 9:13": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.13"
+   ]
+  },
+  "ROM 9:14": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.14"
+   ]
+  },
+  "ROM 9:15": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.15"
+   ]
+  },
+  "ROM 9:16": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.16"
+   ]
+  },
+  "ROM 9:17": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.17-18"
+   ]
+  },
+  "ROM 9:18": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "covers": [
+    "ROM.9.17-18"
+   ]
+  },
+  "ROM 9:19": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.19-20"
+   ]
+  },
+  "ROM 9:20": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "covers": [
+    "ROM.9.19-20"
+   ]
+  },
+  "ROM 9:21": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.21"
+   ]
+  },
+  "ROM 9:22": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.10.1",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.9.22-23"
+   ]
+  },
+  "ROM 9:23": {
+   "cited": [
+    "ROM.c9.article.election",
+    "ROM.12.1"
+   ],
+   "covers": [
+    "ROM.9.22-23"
+   ]
+  },
+  "ROM 9:24": {
+   "cited": [
+    "ROM.c9.article.election"
+   ],
+   "own": [
+    "ROM.9.24-29"
+   ]
+  },
+  "PSA 71:15": {
+   "cited": [
+    "ROM.c10.article.righteousness"
+   ]
+  },
+  "PSA 119:42": {
+   "cited": [
+    "ROM.c10.article.righteousness"
+   ]
+  },
+  "LEV 19:18": {
+   "cited": [
+    "ROM.c10.article.righteousness"
+   ]
+  },
+  "MRK 12:31": {
+   "cited": [
+    "ROM.c10.article.righteousness"
+   ]
+  },
+  "ISA 64:6": {
+   "cited": [
+    "ROM.c10.article.righteousness"
+   ]
+  },
+  "ROM 9:31": {
+   "cited": [
+    "ROM.c10.article.righteousness",
+    "ROM.11.7"
+   ],
+   "covers": [
+    "ROM.9.30-32"
+   ]
+  },
+  "ROM 9:32": {
+   "cited": [
+    "ROM.c10.article.righteousness"
+   ],
+   "covers": [
+    "ROM.9.30-32"
+   ]
+  },
+  "ROM 11:25": {
+   "own": [
+    "ROM.11.25.word.mystery",
+    "ROM.11.25"
+   ],
+   "cited": [
+    "ROM.15.8-13",
+    "ROM.16.25"
+   ]
+  },
+  "ROM 16:25": {
+   "cited": [
+    "ROM.11.25.word.mystery"
+   ],
+   "own": [
+    "ROM.16.25.word.revelation",
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:3": {
+   "cited": [
+    "ROM.11.25.word.mystery",
+    "ROM.16.25.word.revelation",
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:4": {
+   "cited": [
+    "ROM.11.25.word.mystery",
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:5": {
+   "cited": [
+    "ROM.11.25.word.mystery",
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:6": {
+   "cited": [
+    "ROM.11.25.word.mystery",
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:7": {
+   "cited": [
+    "ROM.11.25.word.mystery",
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:8": {
+   "cited": [
+    "ROM.11.25.word.mystery",
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:9": {
+   "cited": [
+    "ROM.11.25.word.mystery",
+    "ROM.16.25"
+   ]
+  },
+  "ROM 12:2": {
+   "own": [
+    "ROM.12.2.word.transform",
+    "ROM.12.2"
+   ],
+   "cited": [
+    "ROM.c13.chart.the-christian-life"
+   ]
+  },
+  "MAT 17:2": {
+   "cited": [
+    "ROM.12.2.word.transform"
+   ]
+  },
+  "2CO 3:18": {
+   "cited": [
+    "ROM.12.2.word.transform",
+    "ROM.6.14"
+   ]
+  },
+  "ROM 12:1": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life"
+   ],
+   "own": [
+    "ROM.12.1"
+   ]
+  },
+  "ROM 12:6": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life",
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.12.6"
+   ]
+  },
+  "ROM 12:7": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life"
+   ],
+   "own": [
+    "ROM.12.7-8"
+   ]
+  },
+  "ROM 12:8": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life"
+   ],
+   "covers": [
+    "ROM.12.7-8"
+   ]
+  },
+  "ROM 13:1": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life"
+   ],
+   "own": [
+    "ROM.13.1"
+   ]
+  },
+  "ROM 13:8": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life",
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.6.14",
+    "ROM.8.4"
+   ],
+   "own": [
+    "ROM.13.8"
+   ]
+  },
+  "ROM 14:19": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life"
+   ],
+   "own": [
+    "ROM.14.19-20"
+   ]
+  },
+  "ROM 15:5": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life"
+   ],
+   "own": [
+    "ROM.15.5"
+   ]
+  },
+  "ROM 15:6": {
+   "cited": [
+    "ROM.c13.chart.the-christian-life",
+    "ROM.4.11-12"
+   ]
+  },
+  "ROM 1:17": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.1.17"
+   ]
+  },
+  "ROM 4:9": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.9-10"
+   ]
+  },
+  "ROM 11:28": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.15.8-13"
+   ],
+   "own": [
+    "ROM.11.28-29"
+   ]
+  },
+  "ROM 1:5": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.10.3"
+   ],
+   "own": [
+    "ROM.1.5"
+   ]
+  },
+  "ROM 5:2": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.5.2"
+   ]
+  },
+  "ROM 12:3": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.12.3"
+   ]
+  },
+  "ROM 2:12": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.2.12"
+   ]
+  },
+  "ROM 4:13": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.13"
+   ]
+  },
+  "ROM 7:12": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.7.12"
+   ]
+  },
+  "ROM 10:4": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.10.4"
+   ]
+  },
+  "ROM 8:23": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.8.23"
+   ]
+  },
+  "ROM 3:5": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.15.8-13"
+   ],
+   "own": [
+    "ROM.3.5"
+   ]
+  },
+  "ROM 9:30": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "own": [
+    "ROM.9.30-32"
+   ]
+  },
+  "ROM 7:11": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation"
+   ],
+   "covers": [
+    "ROM.7.10-11"
+   ]
+  },
+  "ROM 14:23": {
+   "cited": [
+    "ROM.c13.culture.the-key-terms-of-salvation",
+    "ROM.14.14"
+   ]
+  },
+  "ROM 15:13": {
+   "own": [
+    "ROM.15.13.word.hope"
+   ],
+   "covers": [
+    "ROM.15.8-13"
+   ]
+  },
+  "1CO 9:10": {
+   "cited": [
+    "ROM.15.13.word.hope"
+   ]
+  },
+  "EPH 1:17": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ]
+  },
+  "REV 1:1": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ]
+  },
+  "ROM 2:14": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ]
+  },
+  "ROM 2:15": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ],
+   "own": [
+    "ROM.2.15"
+   ]
+  },
+  "HEB 1:1": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ]
+  },
+  "HEB 1:2": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ]
+  },
+  "ROM 5:8": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ]
+  },
+  "2PE 3:2": {
+   "cited": [
+    "ROM.16.25.word.revelation"
+   ]
+  },
+  "ROM 1:1": {
+   "own": [
+    "ROM.1.1"
+   ]
+  },
+  "EXO 21:1": {
+   "cited": [
+    "ROM.1.1"
+   ]
+  },
+  "EXO 21:2": {
+   "cited": [
+    "ROM.1.1"
+   ]
+  },
+  "EXO 21:3": {
+   "cited": [
+    "ROM.1.1"
+   ]
+  },
+  "EXO 21:4": {
+   "cited": [
+    "ROM.1.1"
+   ]
+  },
+  "EXO 21:5": {
+   "cited": [
+    "ROM.1.1"
+   ]
+  },
+  "EXO 21:6": {
+   "cited": [
+    "ROM.1.1"
+   ]
+  },
+  "ROM 1:3": {
+   "own": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:8": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:9": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:10": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:11": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:12": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:13": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:14": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:15": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:16": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "2SA 7:17": {
+   "cited": [
+    "ROM.1.3"
+   ]
+  },
+  "ROM 1:4": {
+   "own": [
+    "ROM.1.4"
+   ]
+  },
+  "ROM 1:9": {
+   "own": [
+    "ROM.1.9"
+   ]
+  },
+  "ROM 1:11": {
+   "own": [
+    "ROM.1.11"
+   ],
+   "cited": [
+    "ROM.16.25"
+   ]
+  },
+  "2CO 2:15": {
+   "cited": [
+    "ROM.1.16"
+   ]
+  },
+  "MAT 5:10": {
+   "cited": [
+    "ROM.1.16",
+    "ROM.5.3"
+   ]
+  },
+  "MAT 5:11": {
+   "cited": [
+    "ROM.1.16",
+    "ROM.5.3"
+   ]
+  },
+  "MAT 5:12": {
+   "cited": [
+    "ROM.1.16",
+    "ROM.5.3"
+   ]
+  },
+  "MAT 8:17": {
+   "cited": [
+    "ROM.1.16"
+   ]
+  },
+  "2CO 5:10": {
+   "cited": [
+    "ROM.1.16",
+    "ROM.14.10"
+   ]
+  },
+  "2TI 2:11": {
+   "cited": [
+    "ROM.1.16"
+   ]
+  },
+  "2TI 2:12": {
+   "cited": [
+    "ROM.1.16",
+    "ROM.5.3"
+   ]
+  },
+  "2TI 2:13": {
+   "cited": [
+    "ROM.1.16"
+   ]
+  },
+  "REV 22:12": {
+   "cited": [
+    "ROM.1.16"
+   ]
+  },
+  "ROM 10:18": {
+   "cited": [
+    "ROM.1.19-20"
+   ],
+   "own": [
+    "ROM.10.18-21"
+   ]
+  },
+  "1TH 1:10": {
+   "cited": [
+    "ROM.1.24"
+   ]
+  },
+  "LEV 18:22": {
+   "cited": [
+    "ROM.1.27"
+   ]
+  },
+  "ROM 2:1": {
+   "own": [
+    "ROM.2.1"
+   ]
+  },
+  "ROM 2:2": {
+   "own": [
+    "ROM.2.2"
+   ]
+  },
+  "ROM 2:4": {
+   "own": [
+    "ROM.2.4"
+   ]
+  },
+  "ROM 2:5": {
+   "own": [
+    "ROM.2.5"
+   ]
+  },
+  "ROM 2:7": {
+   "own": [
+    "ROM.2.7"
+   ],
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "ROM 3:22": {
+   "cited": [
+    "ROM.2.7"
+   ],
+   "own": [
+    "ROM.3.22-23"
+   ]
+  },
+  "GAL 6:8": {
+   "cited": [
+    "ROM.2.7",
+    "ROM.6.23"
+   ]
+  },
+  "1TI 6:17": {
+   "cited": [
+    "ROM.2.7"
+   ]
+  },
+  "1TI 6:18": {
+   "cited": [
+    "ROM.2.7"
+   ]
+  },
+  "1TI 6:19": {
+   "cited": [
+    "ROM.2.7"
+   ]
+  },
+  "TIT 1:2": {
+   "cited": [
+    "ROM.2.7"
+   ]
+  },
+  "1PE 1:7": {
+   "cited": [
+    "ROM.2.7"
+   ]
+  },
+  "ROM 2:8": {
+   "own": [
+    "ROM.2.8"
+   ]
+  },
+  "GAL 2:5": {
+   "cited": [
+    "ROM.2.8"
+   ]
+  },
+  "ROM 2:10": {
+   "own": [
+    "ROM.2.10"
+   ]
+  },
+  "ROM 2:16": {
+   "own": [
+    "ROM.2.16"
+   ]
+  },
+  "1CO 4:5": {
+   "cited": [
+    "ROM.2.16"
+   ]
+  },
+  "ROM 2:17": {
+   "own": [
+    "ROM.2.17"
+   ],
+   "cited": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 2:19": {
+   "own": [
+    "ROM.2.19-20"
+   ],
+   "cited": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 2:20": {
+   "covers": [
+    "ROM.2.19-20"
+   ],
+   "cited": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 2:22": {
+   "own": [
+    "ROM.2.22"
+   ],
+   "cited": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 2:23": {
+   "own": [
+    "ROM.2.23-24"
+   ],
+   "cited": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 2:24": {
+   "covers": [
+    "ROM.2.23-24"
+   ]
+  },
+  "MAT 15:3": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "MAT 15:4": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "MAT 15:5": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "MAT 15:6": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "MAT 15:7": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "MAT 15:8": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "MAT 15:9": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "ISA 52:5": {
+   "cited": [
+    "ROM.2.23-24"
+   ]
+  },
+  "1SA 15:22": {
+   "cited": [
+    "ROM.2.25-26"
+   ]
+  },
+  "ISA 1:11": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:12": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:13": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:14": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:15": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:16": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:17": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:18": {
+   "cited": [
+    "ROM.2.25-26",
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:19": {
+   "cited": [
+    "ROM.2.25-26"
+   ]
+  },
+  "ISA 1:20": {
+   "cited": [
+    "ROM.2.25-26"
+   ]
+  },
+  "JER 4:4": {
+   "cited": [
+    "ROM.2.28-29"
+   ]
+  },
+  "ISA 1:10": {
+   "cited": [
+    "ROM.2.28-29"
+   ]
+  },
+  "ROM 3:2": {
+   "own": [
+    "ROM.3.2"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 9:4": {
+   "cited": [
+    "ROM.3.2"
+   ],
+   "own": [
+    "ROM.9.4-5"
+   ]
+  },
+  "ROM 3:3": {
+   "own": [
+    "ROM.3.3-4"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 3:4": {
+   "covers": [
+    "ROM.3.3-4"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "PSA 89:30": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "PSA 89:31": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "PSA 89:32": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "PSA 89:33": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "PSA 89:34": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "PSA 89:35": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "PSA 89:36": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "PSA 89:37": {
+   "cited": [
+    "ROM.3.3-4"
+   ]
+  },
+  "ROM 3:6": {
+   "own": [
+    "ROM.3.6"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 3:7": {
+   "own": [
+    "ROM.3.7"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 3:8": {
+   "own": [
+    "ROM.3.8"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "1CO 2:14": {
+   "cited": [
+    "ROM.3.11"
+   ]
+  },
+  "JOB 28:28": {
+   "cited": [
+    "ROM.3.18"
+   ]
+  },
+  "ROM 3:27": {
+   "own": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 2:18": {
+   "cited": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 2:21": {
+   "cited": [
+    "ROM.3.27"
+   ]
+  },
+  "ROM 3:28": {
+   "own": [
+    "ROM.3.28"
+   ]
+  },
+  "ROM 4:23": {
+   "cited": [
+    "ROM.3.28"
+   ],
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.23-24"
+   ]
+  },
+  "ROM 4:24": {
+   "cited": [
+    "ROM.3.28"
+   ],
+   "covers": [
+    "ROM.4.1-25",
+    "ROM.4.23-24"
+   ]
+  },
+  "ROM 3:31": {
+   "own": [
+    "ROM.3.31"
+   ],
+   "cited": [
+    "ROM.6.14"
+   ]
+  },
+  "ROM 4:1": {
+   "own": [
+    "ROM.4.1-25",
+    "ROM.4.1"
+   ],
+   "cited": [
+    "ROM.4.6-8"
+   ]
+  },
+  "ROM 4:6": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.6-8"
+   ]
+  },
+  "ROM 4:7": {
+   "covers": [
+    "ROM.4.1-25",
+    "ROM.4.6-8"
+   ],
+   "cited": [
+    "ROM.4.6-8"
+   ]
+  },
+  "ROM 4:8": {
+   "covers": [
+    "ROM.4.1-25",
+    "ROM.4.6-8"
+   ],
+   "cited": [
+    "ROM.4.6-8"
+   ]
+  },
+  "ROM 4:10": {
+   "covers": [
+    "ROM.4.1-25",
+    "ROM.4.9-10"
+   ]
+  },
+  "ROM 4:11": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.11-12"
+   ]
+  },
+  "ROM 4:12": {
+   "covers": [
+    "ROM.4.1-25",
+    "ROM.4.11-12"
+   ]
+  },
+  "ROM 4:14": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.14"
+   ]
+  },
+  "ROM 4:15": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.15"
+   ]
+  },
+  "ROM 4:16": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.16"
+   ]
+  },
+  "ROM 4:17": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.17"
+   ]
+  },
+  "ROM 4:18": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.18"
+   ]
+  },
+  "ROM 4:19": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.19"
+   ]
+  },
+  "ROM 4:20": {
+   "covers": [
+    "ROM.4.1-25"
+   ],
+   "own": [
+    "ROM.4.20"
+   ]
+  },
+  "ROM 4:21": {
+   "covers": [
+    "ROM.4.1-25"
+   ]
+  },
+  "ROM 4:22": {
+   "covers": [
+    "ROM.4.1-25"
+   ]
+  },
+  "ACT 2:29": {
+   "cited": [
+    "ROM.4.6-8"
+   ]
+  },
+  "ACT 2:30": {
+   "cited": [
+    "ROM.4.6-8"
+   ]
+  },
+  "1CO 15:4": {
+   "cited": [
+    "ROM.4.23-24",
+    "ROM.6.17"
+   ]
+  },
+  "ROM 5:3": {
+   "own": [
+    "ROM.5.3"
+   ]
+  },
+  "JAS 1:2": {
+   "cited": [
+    "ROM.5.3"
+   ]
+  },
+  "JAS 1:3": {
+   "cited": [
+    "ROM.5.3"
+   ]
+  },
+  "ROM 5:4": {
+   "own": [
+    "ROM.5.4"
+   ]
+  },
+  "ROM 5:5": {
+   "own": [
+    "ROM.5.5"
+   ]
+  },
+  "ROM 8:9": {
+   "cited": [
+    "ROM.5.5",
+    "ROM.8.23"
+   ],
+   "covers": [
+    "ROM.8.7-11"
+   ],
+   "own": [
+    "ROM.8.9"
+   ]
+  },
+  "ROM 5:6": {
+   "own": [
+    "ROM.5.6"
+   ]
+  },
+  "JHN 15:16": {
+   "cited": [
+    "ROM.5.6"
+   ]
+  },
+  "ROM 5:9": {
+   "own": [
+    "ROM.5.9-10"
+   ],
+   "cited": [
+    "ROM.10.1",
+    "ROM.10.10"
+   ]
+  },
+  "ROM 5:10": {
+   "covers": [
+    "ROM.5.9-10"
+   ],
+   "cited": [
+    "ROM.10.1",
+    "ROM.10.10"
+   ]
+  },
+  "ROM 6:1": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.1"
+   ]
+  },
+  "ROM 6:2": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.2"
+   ]
+  },
+  "ROM 6:3": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.3"
+   ]
+  },
+  "ROM 6:6": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.6"
+   ]
+  },
+  "ROM 6:7": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.7"
+   ]
+  },
+  "ROM 6:8": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.9",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.8"
+   ]
+  },
+  "ROM 6:9": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.9",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.9-10"
+   ]
+  },
+  "ROM 6:10": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.9",
+    "ROM.7.13"
+   ],
+   "covers": [
+    "ROM.6.9-10"
+   ]
+  },
+  "ROM 6:12": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.9",
+    "ROM.7.13"
+   ],
+   "own": [
+    "ROM.6.12"
+   ]
+  },
+  "ROM 6:13": {
+   "cited": [
+    "ROM.5.9-10",
+    "ROM.7.7",
+    "ROM.7.9",
+    "ROM.7.13",
+    "ROM.12.1"
+   ],
+   "own": [
+    "ROM.6.13"
+   ]
+  },
+  "JHN 8:32": {
+   "cited": [
+    "ROM.5.9-10"
+   ]
+  },
+  "ROM 8:1": {
+   "cited": [
+    "ROM.5.16"
+   ],
+   "own": [
+    "ROM.8.1"
+   ]
+  },
+  "ROM 6:16": {
+   "cited": [
+    "ROM.5.16"
+   ],
+   "own": [
+    "ROM.6.16"
+   ]
+  },
+  "ROM 5:19": {
+   "own": [
+    "ROM.5.19"
+   ]
+  },
+  "ROM 5:20": {
+   "own": [
+    "ROM.5.20"
+   ],
+   "cited": [
+    "ROM.6.1"
+   ]
+  },
+  "GAL 2:20": {
+   "cited": [
+    "ROM.6.6"
+   ]
+  },
+  "2CO 5:17": {
+   "cited": [
+    "ROM.6.6"
+   ]
+  },
+  "COL 2:11": {
+   "cited": [
+    "ROM.6.6"
+   ]
+  },
+  "ROM 13:9": {
+   "cited": [
+    "ROM.6.14",
+    "ROM.8.4"
+   ],
+   "own": [
+    "ROM.13.9"
+   ]
+  },
+  "ROM 13:10": {
+   "cited": [
+    "ROM.6.14",
+    "ROM.8.4"
+   ],
+   "own": [
+    "ROM.13.10"
+   ]
+  },
+  "2CO 3:15": {
+   "cited": [
+    "ROM.6.14"
+   ]
+  },
+  "2CO 3:16": {
+   "cited": [
+    "ROM.6.14"
+   ]
+  },
+  "2CO 3:17": {
+   "cited": [
+    "ROM.6.14"
+   ]
+  },
+  "ROM 6:17": {
+   "own": [
+    "ROM.6.17"
+   ],
+   "cited": [
+    "ROM.10.3"
+   ]
+  },
+  "1CO 15:3": {
+   "cited": [
+    "ROM.6.17"
+   ]
+  },
+  "ACT 16:31": {
+   "cited": [
+    "ROM.6.17",
+    "ROM.10.3"
+   ]
+  },
+  "ROM 6:18": {
+   "own": [
+    "ROM.6.18"
+   ]
+  },
+  "LUK 19:20": {
+   "cited": [
+    "ROM.6.18"
+   ]
+  },
+  "LUK 19:21": {
+   "cited": [
+    "ROM.6.18"
+   ]
+  },
+  "LUK 19:22": {
+   "cited": [
+    "ROM.6.18"
+   ]
+  },
+  "LUK 19:23": {
+   "cited": [
+    "ROM.6.18"
+   ]
+  },
+  "LUK 19:24": {
+   "cited": [
+    "ROM.6.18"
+   ]
+  },
+  "LUK 19:25": {
+   "cited": [
+    "ROM.6.18"
+   ]
+  },
+  "LUK 19:26": {
+   "cited": [
+    "ROM.6.18"
+   ]
+  },
+  "ROM 6:19": {
+   "own": [
+    "ROM.6.19"
+   ]
+  },
+  "ROM 8:16": {
+   "cited": [
+    "ROM.6.19"
+   ],
+   "own": [
+    "ROM.8.16"
+   ]
+  },
+  "ROM 6:21": {
+   "own": [
+    "ROM.6.21"
+   ]
+  },
+  "JAS 1:13": {
+   "cited": [
+    "ROM.6.21",
+    "ROM.8.7-11"
+   ]
+  },
+  "JAS 1:14": {
+   "cited": [
+    "ROM.6.21",
+    "ROM.8.7-11"
+   ]
+  },
+  "JAS 1:15": {
+   "cited": [
+    "ROM.6.21",
+    "ROM.8.7-11"
+   ]
+  },
+  "ROM 6:22": {
+   "own": [
+    "ROM.6.22"
+   ],
+   "cited": [
+    "ROM.7.4"
+   ]
+  },
+  "ROM 6:23": {
+   "own": [
+    "ROM.6.23"
+   ]
+  },
+  "JHN 5:24": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "JHN 6:40": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:16": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:17": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:18": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:19": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:20": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:21": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:22": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:23": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:24": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:25": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:26": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:27": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:28": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MAT 19:29": {
+   "cited": [
+    "ROM.6.23",
+    "ROM.8.18"
+   ]
+  },
+  "MRK 10:17": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:18": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:19": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:20": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:21": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:22": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:23": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:24": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:25": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:26": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:27": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:28": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:29": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "MRK 10:30": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 10:25": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:18": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:19": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:20": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:21": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:22": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:23": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:24": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:25": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:26": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:27": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:28": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:29": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "LUK 18:30": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "JHN 12:25": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "JHN 12:26": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "JHN 10:10": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "JHN 17:3": {
+   "cited": [
+    "ROM.6.23"
+   ]
+  },
+  "ROM 7:1": {
+   "own": [
+    "ROM.7.1-3"
+   ]
+  },
+  "ROM 7:2": {
+   "covers": [
+    "ROM.7.1-3"
+   ]
+  },
+  "ROM 7:3": {
+   "covers": [
+    "ROM.7.1-3"
+   ]
+  },
+  "ROM 6:15": {
+   "cited": [
+    "ROM.7.1-3",
+    "ROM.7.7",
+    "ROM.7.13"
+   ]
+  },
+  "ROM 7:4": {
+   "own": [
+    "ROM.7.4"
+   ]
+  },
+  "ROM 7:5": {
+   "own": [
+    "ROM.7.5"
+   ],
+   "cited": [
+    "ROM.13.10"
+   ]
+  },
+  "ROM 7:6": {
+   "own": [
+    "ROM.7.6"
+   ]
+  },
+  "ROM 7:7": {
+   "own": [
+    "ROM.7.7"
+   ]
+  },
+  "ROM 7:8": {
+   "own": [
+    "ROM.7.8"
+   ]
+  },
+  "ROM 7:9": {
+   "own": [
+    "ROM.7.9"
+   ]
+  },
+  "ROM 7:10": {
+   "own": [
+    "ROM.7.10-11"
+   ]
+  },
+  "ROM 7:13": {
+   "own": [
+    "ROM.7.13"
+   ]
+  },
+  "ROM 7:14": {
+   "own": [
+    "ROM.7.14"
+   ]
+  },
+  "1CO 3:1": {
+   "cited": [
+    "ROM.7.14"
+   ]
+  },
+  "1CO 3:2": {
+   "cited": [
+    "ROM.7.14"
+   ]
+  },
+  "1CO 3:3": {
+   "cited": [
+    "ROM.7.14"
+   ]
+  },
+  "ROM 7:15": {
+   "own": [
+    "ROM.7.15-17"
+   ]
+  },
+  "ROM 7:16": {
+   "covers": [
+    "ROM.7.15-17"
+   ]
+  },
+  "ROM 7:17": {
+   "covers": [
+    "ROM.7.15-17"
+   ]
+  },
+  "ROM 7:18": {
+   "own": [
+    "ROM.7.18"
+   ]
+  },
+  "2CO 4:16": {
+   "cited": [
+    "ROM.7.22"
+   ]
+  },
+  "EPH 3:16": {
+   "cited": [
+    "ROM.7.22"
+   ]
+  },
+  "ROM 8:5": {
+   "own": [
+    "ROM.8.5"
+   ]
+  },
+  "ROM 8:6": {
+   "own": [
+    "ROM.8.6"
+   ]
+  },
+  "ROM 8:7": {
+   "own": [
+    "ROM.8.7-11",
+    "ROM.8.7"
+   ]
+  },
+  "ROM 8:8": {
+   "covers": [
+    "ROM.8.7-11"
+   ],
+   "own": [
+    "ROM.8.8"
+   ]
+  },
+  "ROM 8:10": {
+   "covers": [
+    "ROM.8.7-11"
+   ],
+   "own": [
+    "ROM.8.10"
+   ],
+   "cited": [
+    "ROM.8.23"
+   ]
+  },
+  "ROM 8:11": {
+   "covers": [
+    "ROM.8.7-11"
+   ],
+   "own": [
+    "ROM.8.11"
+   ],
+   "cited": [
+    "ROM.8.23"
+   ]
+  },
+  "PHP 3:10": {
+   "cited": [
+    "ROM.8.11",
+    "ROM.8.17"
+   ]
+  },
+  "ROM 8:13": {
+   "own": [
+    "ROM.8.13"
+   ]
+  },
+  "ROM 8:14": {
+   "own": [
+    "ROM.8.14"
+   ]
+  },
+  "2CO 6:18": {
+   "cited": [
+    "ROM.8.14"
+   ]
+  },
+  "ROM 8:17": {
+   "own": [
+    "ROM.8.17"
+   ]
+  },
+  "1PE 1:4": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "TIT 3:4": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "TIT 3:5": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "TIT 3:6": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "TIT 3:7": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "PHP 3:11": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "PHP 3:12": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "PHP 3:13": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "PHP 3:14": {
+   "cited": [
+    "ROM.8.17"
+   ]
+  },
+  "ROM 8:18": {
+   "own": [
+    "ROM.8.18"
+   ]
+  },
+  "2CO 4:17": {
+   "cited": [
+    "ROM.8.18"
+   ]
+  },
+  "ROM 8:19": {
+   "own": [
+    "ROM.8.19"
+   ]
+  },
+  "ROM 8:20": {
+   "own": [
+    "ROM.8.20"
+   ]
+  },
+  "ROM 8:21": {
+   "own": [
+    "ROM.8.21"
+   ]
+  },
+  "EPH 1:14": {
+   "cited": [
+    "ROM.8.23"
+   ]
+  },
+  "ROM 8:24": {
+   "own": [
+    "ROM.8.24"
+   ]
+  },
+  "ROM 8:25": {
+   "own": [
+    "ROM.8.25"
+   ]
+  },
+  "ROM 8:26": {
+   "own": [
+    "ROM.8.26"
+   ]
+  },
+  "1JN 2:1": {
+   "cited": [
+    "ROM.8.26"
+   ]
+  },
+  "ROM 8:27": {
+   "own": [
+    "ROM.8.27-28"
+   ]
+  },
+  "ROM 8:28": {
+   "covers": [
+    "ROM.8.27-28"
+   ]
+  },
+  "1PE 1:2": {
+   "cited": [
+    "ROM.8.29"
+   ]
+  },
+  "2TH 2:14": {
+   "cited": [
+    "ROM.8.30"
+   ]
+  },
+  "ACT 16:14": {
+   "cited": [
+    "ROM.8.30"
+   ]
+  },
+  "ROM 8:31": {
+   "own": [
+    "ROM.8.31"
+   ]
+  },
+  "ROM 8:32": {
+   "own": [
+    "ROM.8.32"
+   ]
+  },
+  "ROM 8:33": {
+   "own": [
+    "ROM.8.33"
+   ]
+  },
+  "ROM 8:35": {
+   "own": [
+    "ROM.8.35"
+   ]
+  },
+  "ROM 8:36": {
+   "own": [
+    "ROM.8.36"
+   ]
+  },
+  "PSA 44:17": {
+   "cited": [
+    "ROM.8.36"
+   ]
+  },
+  "PSA 44:18": {
+   "cited": [
+    "ROM.8.36"
+   ]
+  },
+  "PSA 44:19": {
+   "cited": [
+    "ROM.8.36"
+   ]
+  },
+  "PSA 44:20": {
+   "cited": [
+    "ROM.8.36"
+   ]
+  },
+  "PSA 44:21": {
+   "cited": [
+    "ROM.8.36"
+   ]
+  },
+  "PSA 44:22": {
+   "cited": [
+    "ROM.8.36"
+   ]
+  },
+  "2CO 4:11": {
+   "cited": [
+    "ROM.8.36"
+   ]
+  },
+  "ROM 8:37": {
+   "own": [
+    "ROM.8.37"
+   ]
+  },
+  "ROM 8:38": {
+   "own": [
+    "ROM.8.38-39"
+   ]
+  },
+  "ROM 8:39": {
+   "covers": [
+    "ROM.8.38-39"
+   ]
+  },
+  "ROM 9:1": {
+   "own": [
+    "ROM.9.1-3"
+   ]
+  },
+  "ROM 9:2": {
+   "covers": [
+    "ROM.9.1-3"
+   ]
+  },
+  "ROM 9:3": {
+   "covers": [
+    "ROM.9.1-3"
+   ]
+  },
+  "EXO 32:32": {
+   "cited": [
+    "ROM.9.1-3"
+   ]
+  },
+  "ROM 9:5": {
+   "covers": [
+    "ROM.9.4-5"
+   ]
+  },
+  "DEU 23:7": {
+   "cited": [
+    "ROM.9.13"
+   ]
+  },
+  "EXO 33:19": {
+   "cited": [
+    "ROM.9.15"
+   ]
+  },
+  "EXO 5:2": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:13": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:14": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:15": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:16": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:17": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:18": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:19": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:20": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:21": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 7:22": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:15": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:16": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:17": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:20": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:21": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:22": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:23": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:24": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:25": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:26": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:27": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:28": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:29": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:31": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 8:32": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "EXO 9:7": {
+   "cited": [
+    "ROM.9.17-18"
+   ]
+  },
+  "ROM 9:25": {
+   "covers": [
+    "ROM.9.24-29"
+   ]
+  },
+  "ROM 9:26": {
+   "covers": [
+    "ROM.9.24-29"
+   ]
+  },
+  "ROM 9:27": {
+   "covers": [
+    "ROM.9.24-29"
+   ]
+  },
+  "ROM 9:28": {
+   "covers": [
+    "ROM.9.24-29"
+   ]
+  },
+  "ROM 9:29": {
+   "covers": [
+    "ROM.9.24-29"
+   ]
+  },
+  "ROM 10:1": {
+   "own": [
+    "ROM.10.1"
+   ]
+  },
+  "ROM 10:2": {
+   "own": [
+    "ROM.10.2"
+   ]
+  },
+  "ROM 10:3": {
+   "own": [
+    "ROM.10.3"
+   ],
+   "cited": [
+    "ROM.11.7"
+   ]
+  },
+  "ROM 10:5": {
+   "own": [
+    "ROM.10.5-8"
+   ]
+  },
+  "ROM 10:6": {
+   "covers": [
+    "ROM.10.5-8"
+   ]
+  },
+  "ROM 10:7": {
+   "covers": [
+    "ROM.10.5-8"
+   ]
+  },
+  "ROM 10:8": {
+   "covers": [
+    "ROM.10.5-8"
+   ]
+  },
+  "DEU 30:11": {
+   "cited": [
+    "ROM.10.5-8"
+   ]
+  },
+  "DEU 30:12": {
+   "cited": [
+    "ROM.10.5-8"
+   ]
+  },
+  "DEU 30:13": {
+   "cited": [
+    "ROM.10.5-8"
+   ]
+  },
+  "DEU 30:14": {
+   "cited": [
+    "ROM.10.5-8"
+   ]
+  },
+  "ROM 10:9": {
+   "own": [
+    "ROM.10.9"
+   ]
+  },
+  "ROM 10:11": {
+   "own": [
+    "ROM.10.11-13"
+   ]
+  },
+  "ROM 10:12": {
+   "covers": [
+    "ROM.10.11-13"
+   ]
+  },
+  "ROM 10:13": {
+   "covers": [
+    "ROM.10.11-13"
+   ]
+  },
+  "ROM 10:16": {
+   "own": [
+    "ROM.10.16"
+   ]
+  },
+  "ROM 10:19": {
+   "covers": [
+    "ROM.10.18-21"
+   ]
+  },
+  "ROM 10:20": {
+   "covers": [
+    "ROM.10.18-21"
+   ]
+  },
+  "ROM 10:21": {
+   "covers": [
+    "ROM.10.18-21"
+   ]
+  },
+  "ROM 11:1": {
+   "own": [
+    "ROM.11.1"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:2": {
+   "own": [
+    "ROM.11.2"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:3": {
+   "own": [
+    "ROM.11.3-5"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:4": {
+   "covers": [
+    "ROM.11.3-5"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:5": {
+   "covers": [
+    "ROM.11.3-5"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:6": {
+   "own": [
+    "ROM.11.6"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:7": {
+   "own": [
+    "ROM.11.7"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:8": {
+   "own": [
+    "ROM.11.8-10"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:9": {
+   "covers": [
+    "ROM.11.8-10"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:10": {
+   "covers": [
+    "ROM.11.8-10"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:11": {
+   "own": [
+    "ROM.11.11"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:12": {
+   "own": [
+    "ROM.11.12"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:14": {
+   "own": [
+    "ROM.11.14"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:17": {
+   "own": [
+    "ROM.11.17"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "HOS 14:6": {
+   "cited": [
+    "ROM.11.17"
+   ]
+  },
+  "ROM 11:18": {
+   "own": [
+    "ROM.11.18"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:19": {
+   "own": [
+    "ROM.11.19"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:20": {
+   "own": [
+    "ROM.11.20"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:21": {
+   "own": [
+    "ROM.11.21"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:22": {
+   "own": [
+    "ROM.11.22-23"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:23": {
+   "covers": [
+    "ROM.11.22-23"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:24": {
+   "own": [
+    "ROM.11.24"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:26": {
+   "own": [
+    "ROM.11.26"
+   ],
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:29": {
+   "covers": [
+    "ROM.11.28-29"
+   ],
+   "cited": [
+    "ROM.12.6",
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:36": {
+   "own": [
+    "ROM.11.36"
+   ]
+  },
+  "ROM 11:30": {
+   "cited": [
+    "ROM.12.1",
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:31": {
+   "cited": [
+    "ROM.12.1",
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:32": {
+   "cited": [
+    "ROM.12.1"
+   ]
+  },
+  "1CO 11:28": {
+   "cited": [
+    "ROM.12.3"
+   ]
+  },
+  "1CO 11:29": {
+   "cited": [
+    "ROM.12.3"
+   ]
+  },
+  "1CO 11:30": {
+   "cited": [
+    "ROM.12.3"
+   ]
+  },
+  "1CO 11:31": {
+   "cited": [
+    "ROM.12.3"
+   ]
+  },
+  "1CO 11:32": {
+   "cited": [
+    "ROM.12.3"
+   ]
+  },
+  "1CO 12:11": {
+   "cited": [
+    "ROM.12.3"
+   ]
+  },
+  "1CO 12:12": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:13": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:14": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:15": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:16": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:17": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:18": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:19": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:20": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:21": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:22": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:23": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:24": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:25": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5",
+    "ROM.12.15"
+   ]
+  },
+  "1CO 12:26": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5",
+    "ROM.12.15"
+   ]
+  },
+  "1CO 12:27": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:28": {
+   "cited": [
+    "ROM.12.3",
+    "ROM.12.4-5"
+   ]
+  },
+  "ROM 12:4": {
+   "own": [
+    "ROM.12.4-5"
+   ]
+  },
+  "ROM 12:5": {
+   "covers": [
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:29": {
+   "cited": [
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:30": {
+   "cited": [
+    "ROM.12.4-5"
+   ]
+  },
+  "1CO 12:31": {
+   "cited": [
+    "ROM.12.4-5"
+   ]
+  },
+  "1PE 4:10": {
+   "cited": [
+    "ROM.12.6"
+   ]
+  },
+  "1CO 14:3": {
+   "cited": [
+    "ROM.12.6"
+   ]
+  },
+  "ACT 13:1": {
+   "cited": [
+    "ROM.12.6"
+   ]
+  },
+  "ACT 13:2": {
+   "cited": [
+    "ROM.12.6"
+   ]
+  },
+  "ACT 13:3": {
+   "cited": [
+    "ROM.12.6"
+   ]
+  },
+  "1PE 4:11": {
+   "cited": [
+    "ROM.12.7-8"
+   ]
+  },
+  "ROM 12:10": {
+   "own": [
+    "ROM.12.10"
+   ]
+  },
+  "PHP 2:5": {
+   "cited": [
+    "ROM.12.10",
+    "ROM.15.3"
+   ]
+  },
+  "PHP 2:6": {
+   "cited": [
+    "ROM.12.10",
+    "ROM.15.3"
+   ]
+  },
+  "PHP 2:7": {
+   "cited": [
+    "ROM.12.10",
+    "ROM.15.3"
+   ]
+  },
+  "PHP 2:8": {
+   "cited": [
+    "ROM.12.10",
+    "ROM.15.3"
+   ]
+  },
+  "ROM 12:11": {
+   "own": [
+    "ROM.12.11"
+   ]
+  },
+  "ROM 12:13": {
+   "own": [
+    "ROM.12.13"
+   ]
+  },
+  "ROM 12:14": {
+   "own": [
+    "ROM.12.14"
+   ]
+  },
+  "ROM 12:15": {
+   "own": [
+    "ROM.12.15"
+   ]
+  },
+  "ROM 12:17": {
+   "own": [
+    "ROM.12.17"
+   ]
+  },
+  "1PE 3:9": {
+   "cited": [
+    "ROM.12.17"
+   ]
+  },
+  "ROM 12:18": {
+   "own": [
+    "ROM.12.18"
+   ]
+  },
+  "ROM 12:19": {
+   "own": [
+    "ROM.12.19"
+   ]
+  },
+  "ROM 12:20": {
+   "own": [
+    "ROM.12.20"
+   ]
+  },
+  "ROM 13:2": {
+   "own": [
+    "ROM.13.2"
+   ]
+  },
+  "ROM 13:4": {
+   "own": [
+    "ROM.13.4"
+   ]
+  },
+  "ROM 13:5": {
+   "own": [
+    "ROM.13.5"
+   ]
+  },
+  "PSA 37:21": {
+   "cited": [
+    "ROM.13.8"
+   ]
+  },
+  "MAT 5:42": {
+   "cited": [
+    "ROM.13.8"
+   ]
+  },
+  "ROM 13:12": {
+   "own": [
+    "ROM.13.12-13"
+   ]
+  },
+  "ROM 13:13": {
+   "covers": [
+    "ROM.13.12-13"
+   ],
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "PHP 4:5": {
+   "cited": [
+    "ROM.13.12-13"
+   ]
+  },
+  "JAS 5:8": {
+   "cited": [
+    "ROM.13.12-13"
+   ]
+  },
+  "1PE 4:7": {
+   "cited": [
+    "ROM.13.12-13"
+   ]
+  },
+  "ROM 13:14": {
+   "own": [
+    "ROM.13.14"
+   ]
+  },
+  "JHN 14:6": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "1CO 1:30": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "GAL 5:22": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "GAL 5:23": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 2:14": {
+   "cited": [
+    "ROM.13.14",
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 6:10": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 6:11": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 6:12": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 6:13": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 6:14": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 6:15": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 6:16": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "EPH 6:17": {
+   "cited": [
+    "ROM.13.14"
+   ]
+  },
+  "ROM 14:1": {
+   "own": [
+    "ROM.14.1-2"
+   ],
+   "cited": [
+    "ROM.15.7"
+   ]
+  },
+  "ROM 14:2": {
+   "covers": [
+    "ROM.14.1-2"
+   ]
+  },
+  "1TI 4:4": {
+   "cited": [
+    "ROM.14.1-2"
+   ]
+  },
+  "1TI 4:5": {
+   "cited": [
+    "ROM.14.1-2"
+   ]
+  },
+  "ROM 14:3": {
+   "own": [
+    "ROM.14.3"
+   ]
+  },
+  "ROM 14:5": {
+   "own": [
+    "ROM.14.5"
+   ]
+  },
+  "ROM 14:6": {
+   "own": [
+    "ROM.14.6"
+   ]
+  },
+  "ROM 14:7": {
+   "own": [
+    "ROM.14.7-9"
+   ]
+  },
+  "ROM 14:8": {
+   "covers": [
+    "ROM.14.7-9"
+   ]
+  },
+  "ROM 14:9": {
+   "covers": [
+    "ROM.14.7-9"
+   ]
+  },
+  "ROM 14:10": {
+   "own": [
+    "ROM.14.10"
+   ],
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 3:11": {
+   "cited": [
+    "ROM.14.10"
+   ]
+  },
+  "1CO 3:12": {
+   "cited": [
+    "ROM.14.10"
+   ]
+  },
+  "1CO 3:13": {
+   "cited": [
+    "ROM.14.10"
+   ]
+  },
+  "1CO 3:14": {
+   "cited": [
+    "ROM.14.10"
+   ]
+  },
+  "1CO 3:15": {
+   "cited": [
+    "ROM.14.10"
+   ]
+  },
+  "2CO 5:9": {
+   "cited": [
+    "ROM.14.10"
+   ]
+  },
+  "ROM 14:11": {
+   "own": [
+    "ROM.14.11"
+   ]
+  },
+  "REV 20:11": {
+   "cited": [
+    "ROM.14.11"
+   ]
+  },
+  "REV 20:12": {
+   "cited": [
+    "ROM.14.11"
+   ]
+  },
+  "REV 20:13": {
+   "cited": [
+    "ROM.14.11"
+   ]
+  },
+  "REV 20:14": {
+   "cited": [
+    "ROM.14.11"
+   ]
+  },
+  "REV 20:15": {
+   "cited": [
+    "ROM.14.11"
+   ]
+  },
+  "ROM 14:14": {
+   "own": [
+    "ROM.14.14"
+   ]
+  },
+  "ROM 14:15": {
+   "own": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 8:7": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 8:8": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 8:9": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 8:10": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 8:11": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 10:25": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 10:26": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 10:27": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "1CO 10:28": {
+   "cited": [
+    "ROM.14.15"
+   ]
+  },
+  "ROM 14:16": {
+   "own": [
+    "ROM.14.16"
+   ]
+  },
+  "ROM 14:17": {
+   "own": [
+    "ROM.14.17"
+   ]
+  },
+  "ROM 14:20": {
+   "covers": [
+    "ROM.14.19-20"
+   ]
+  },
+  "ROM 14:21": {
+   "own": [
+    "ROM.14.21"
+   ]
+  },
+  "ROM 14:22": {
+   "own": [
+    "ROM.14.22"
+   ]
+  },
+  "ROM 15:3": {
+   "own": [
+    "ROM.15.3"
+   ]
+  },
+  "ROM 15:4": {
+   "own": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:17": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:18": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:19": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:20": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:21": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:22": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:23": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:24": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:25": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:26": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "1CO 9:27": {
+   "cited": [
+    "ROM.15.4"
+   ]
+  },
+  "ROM 15:7": {
+   "own": [
+    "ROM.15.7"
+   ]
+  },
+  "ROM 15:8": {
+   "own": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 15:9": {
+   "covers": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 15:10": {
+   "covers": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 15:11": {
+   "covers": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 15:12": {
+   "covers": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:13": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:16": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 11:27": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 3:1": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:15": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:16": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:17": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:18": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:19": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:20": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:21": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "EPH 2:22": {
+   "cited": [
+    "ROM.15.8-13"
+   ]
+  },
+  "ROM 15:16": {
+   "own": [
+    "ROM.15.16"
+   ]
+  },
+  "ROM 15:19": {
+   "own": [
+    "ROM.15.19"
+   ]
+  },
+  "2CO 12:12": {
+   "cited": [
+    "ROM.15.19"
+   ]
+  },
+  "ROM 15:22": {
+   "own": [
+    "ROM.15.22"
+   ]
+  },
+  "ROM 15:25": {
+   "own": [
+    "ROM.15.25-26"
+   ]
+  },
+  "ROM 15:26": {
+   "covers": [
+    "ROM.15.25-26"
+   ]
+  },
+  "1CO 16:1": {
+   "cited": [
+    "ROM.15.25-26"
+   ]
+  },
+  "1CO 16:2": {
+   "cited": [
+    "ROM.15.25-26"
+   ]
+  },
+  "1CO 16:3": {
+   "cited": [
+    "ROM.15.25-26"
+   ]
+  },
+  "1CO 16:4": {
+   "cited": [
+    "ROM.15.25-26"
+   ]
+  },
+  "ROM 15:28": {
+   "own": [
+    "ROM.15.28"
+   ]
+  },
+  "ROM 15:29": {
+   "own": [
+    "ROM.15.29"
+   ]
+  },
+  "ROM 15:31": {
+   "own": [
+    "ROM.15.31"
+   ]
+  },
+  "ACT 20:22": {
+   "cited": [
+    "ROM.15.31"
+   ]
+  },
+  "ACT 20:23": {
+   "cited": [
+    "ROM.15.31"
+   ]
+  },
+  "ROM 15:32": {
+   "own": [
+    "ROM.15.32"
+   ]
+  },
+  "PHP 1:1": {
+   "cited": [
+    "ROM.16.1-2"
+   ]
+  },
+  "1TI 3:8": {
+   "cited": [
+    "ROM.16.1-2"
+   ]
+  },
+  "1TI 3:9": {
+   "cited": [
+    "ROM.16.1-2"
+   ]
+  },
+  "1TI 3:10": {
+   "cited": [
+    "ROM.16.1-2"
+   ]
+  },
+  "1TI 3:11": {
+   "cited": [
+    "ROM.16.1-2"
+   ]
+  },
+  "1TI 3:12": {
+   "cited": [
+    "ROM.16.1-2"
+   ]
+  },
+  "ACT 18:1": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:2": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:3": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:4": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:5": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:6": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:7": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:8": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:9": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:10": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:11": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:12": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:13": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:14": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:15": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:16": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:17": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:18": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:19": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:20": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:21": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:22": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:23": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:24": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:25": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "ACT 18:26": {
+   "cited": [
+    "ROM.16.3-4"
+   ]
+  },
+  "MRK 15:21": {
+   "cited": [
+    "ROM.16.13"
+   ]
+  },
+  "1CO 16:20": {
+   "cited": [
+    "ROM.16.16"
+   ]
+  },
+  "2CO 13:12": {
+   "cited": [
+    "ROM.16.16"
+   ]
+  },
+  "1TH 5:26": {
+   "cited": [
+    "ROM.16.16"
+   ]
+  },
+  "1PE 5:14": {
+   "cited": [
+    "ROM.16.16"
+   ]
+  },
+  "ROM 16:17": {
+   "own": [
+    "ROM.16.17"
+   ]
+  },
+  "GAL 5:20": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "ROM 14:13": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "1CO 5:9": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "1CO 5:10": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "1CO 5:11": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "1CO 5:12": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "1CO 5:13": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "2TH 3:6": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "2TI 3:5": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "TIT 3:10": {
+   "cited": [
+    "ROM.16.17"
+   ]
+  },
+  "ROM 16:20": {
+   "own": [
+    "ROM.16.20"
+   ]
+  },
+  "ROM 16:21": {
+   "own": [
+    "ROM.16.21"
+   ]
+  },
+  "ACT 17:5": {
+   "cited": [
+    "ROM.16.21"
+   ]
+  },
+  "ACT 17:6": {
+   "cited": [
+    "ROM.16.21"
+   ]
+  },
+  "ACT 17:7": {
+   "cited": [
+    "ROM.16.21"
+   ]
+  },
+  "ACT 17:8": {
+   "cited": [
+    "ROM.16.21"
+   ]
+  },
+  "ACT 17:9": {
+   "cited": [
+    "ROM.16.21"
+   ]
+  },
+  "ACT 20:4": {
+   "cited": [
+    "ROM.16.21"
+   ]
+  },
+  "ROM 16:22": {
+   "own": [
+    "ROM.16.22"
+   ]
+  },
+  "ROM 16:23": {
+   "own": [
+    "ROM.16.23"
+   ]
+  },
+  "1CO 1:14": {
+   "cited": [
+    "ROM.16.23"
+   ]
+  },
+  "ACT 19:22": {
+   "cited": [
+    "ROM.16.23"
+   ]
+  },
+  "EPH 3:1": {
+   "cited": [
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:2": {
+   "cited": [
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:10": {
+   "cited": [
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:11": {
+   "cited": [
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:12": {
+   "cited": [
+    "ROM.16.25"
+   ]
+  },
+  "EPH 3:13": {
+   "cited": [
+    "ROM.16.25"
    ]
   }
  }
