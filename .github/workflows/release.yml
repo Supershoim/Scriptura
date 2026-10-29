@@ -1,0 +1,31 @@
+name: Build Scriptura.html
+
+# The repository is private, so there is no GitHub Pages site: each push builds the single-file app and
+# attaches it to the release "latest" (private like the repository). Download it and open it on any device.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/build.mjs
+      - name: Attach to the release "latest"
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest >/dev/null 2>&1 || gh release create latest --title "Scriptura (ultima versiune)" --notes "Construită automat la fiecare push. Descarcă Scriptura.html și deschide-l în browser."
+          gh release upload latest dist/Scriptura.html --clobber
