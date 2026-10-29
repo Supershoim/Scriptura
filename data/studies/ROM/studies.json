@@ -132,5 +132,18 @@
         "file": "romani-04.md"
       }
     ]
+  },
+  {
+    "chapter": 5,
+    "date": "2026-10-29",
+    "title": "Romani 5 - Pacea cu Dumnezeu și domnia harului",
+    "summary": "Îndreptățirea prin credință aduce pace cu Dumnezeu și nădejde sigură, deoarece ascultarea lui Cristos\nîntemeiază pentru cei ai Lui o domnie a harului mai puternică decât domnia păcatului și a morții venită prin Adam.",
+    "themes": [],
+    "parts": [
+      {
+        "label": "Studiu complet",
+        "file": "romani-05.md"
+      }
+    ]
   }
 ]
