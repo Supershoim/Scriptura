@@ -1,7 +1,7 @@
 name: Build Scriptura.html
 
-# The repository is private, so there is no GitHub Pages site: each push builds the single-file app and
-# attaches it to the release "latest" (private like the repository). Download it and open it on any device.
+# Next to the site (pages.yml, https://supershoim.github.io/Scriptura/), each push builds the single-file app
+# and attaches it to the release "latest", to download and open offline on any device.
 on:
   push:
     branches: [main]
