@@ -133,6 +133,7 @@
           <select id="studyBook" class="mobile-only" aria-label="Cartea"></select>
           <select id="studyTheme" aria-label="Tema"></select>
           <button type="button" id="studyReset" class="ghost small">Resetează</button>
+          <button type="button" id="importOpen" class="ghost small">Importă studiu</button>
         </div>
       </form>
       <div id="studyBookPanel" class="bookpanel" hidden></div>
@@ -208,11 +209,29 @@
   <details id="commentSync" class="comment-sync">
     <summary>Salvare pe GitHub de pe acest dispozitiv</summary>
     <p>Pe site-ul publicat, comentariile se salvează direct în depozitul GitHub (<code>data/comments/</code>), iar site-ul se reconstruiește singur în jur de un minut. Ai nevoie de un token: pe GitHub, <em>Settings → Developer settings → Fine-grained tokens</em>, doar pentru depozitul Scriptura, cu permisiunea <em>Contents: Read and write</em>.</p>
-    <p class="hint">Tokenul rămâne doar în acest browser. Depozitul este public, deci și comentariile sunt publice.</p>
+    <p class="hint">Tokenul rămâne doar în acest browser. Același token servește și la importul studiilor.</p>
     <label class="field">Depozit <input id="ghRepo" type="text" autocomplete="off" spellcheck="false"></label>
     <label class="field">Token <input id="ghToken" type="password" autocomplete="off" spellcheck="false"></label>
     <div class="panel-actions"><button type="button" id="ghSave">Păstrează pe acest dispozitiv</button><button type="button" id="ghForget" class="ghost">Șterge tokenul</button></div>
   </details>
+</dialog>
+
+<dialog id="importDialog" class="sheet" aria-labelledby="importTitleH">
+  <div class="sheet-head">
+    <h2 id="importTitleH">Importă un studiu</h2>
+    <button type="button" class="ghost close" data-close>Închide</button>
+  </div>
+  <p class="hint">Fișierele .md și intrarea din <code>studies.json</code> se trimit pe GitHub într-un singur commit, cu tokenul de la comentarii. Vizualizarea se face după aceea, pe calculator.</p>
+  <label class="field">Cartea <select id="importBook"></select></label>
+  <label class="field">Capitolul (0 = privire de ansamblu) <input id="importChapter" type="number" min="0" value="1"></label>
+  <label class="field">Data <input id="importDate" type="date"></label>
+  <label class="field">Titlul <input id="importTitle" type="text"></label>
+  <label class="field">Rezumatul <textarea id="importSummary" rows="3"></textarea></label>
+  <label class="field">Teme (separate prin virgulă) <input id="importThemes" type="text"></label>
+  <label class="field">Fișierele .md (primul e partea principală) <input id="importPick" type="file" accept=".md,text/markdown" multiple></label>
+  <ol id="importFiles" class="import-files"></ol>
+  <div id="importStatus" class="edit-status" role="status"></div>
+  <div class="panel-actions"><button type="button" id="importSave" class="primary">Trimite pe GitHub</button></div>
 </dialog>
 
 <div id="toast" class="toast" role="status" hidden></div>

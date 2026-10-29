@@ -5,20 +5,21 @@
 // Saving goes, in this order:
 //  1. through the local server (node tools/serve.mjs): the file is written into data/ and the app rebuilt;
 //  2. through the GitHub API, with a fine-grained token entered once per device (only this repository,
-//     Contents: read and write). Each save is a commit to data/comments/; GitHub Pages then rebuilds the site.
+//     Contents: read and write). Each save is a commit to data/comments/; the host (Cloudflare Pages) then rebuilds the site.
 // With a token, comments are also read from GitHub, so a device sees the latest ones before the site is rebuilt.
 import { $, esc, store } from './util.js';
 import { parseKey, fetchJson, embeddedComments } from './data.js';
 import { hasServer } from './editor.js';
 
-const DEFAULT_REPO = 'Supershoim/Scriptura', BRANCH = 'main', MAX = 4000, PRESS_MS = 550;
+export const DEFAULT_REPO = 'Supershoim/Scriptura', BRANCH = 'main';
+const MAX = 4000, PRESS_MS = 550;
 const cache = new Map();   // book -> Promise<{ "c:v": [...] }>
 let listed = null;         // Promise<Set>: books with comments in this build
 let options = { verse: () => null, translations: () => [], onChange: () => {}, enabled: () => true };
 let current = null;        // { canon, editing: index or -1 }
 
 const today = () => new Date().toISOString().slice(0, 10);
-const github = () => { const g = store.get('github', null); return g?.token ? { repo: g.repo || DEFAULT_REPO, token: g.token } : null; };
+export const github = () => { const g = store.get('github', null); return g?.token ? { repo: g.repo || DEFAULT_REPO, token: g.token } : null; };
 const fileOf = b => `data/comments/${b}.json`;
 const sortVerses = data => Object.fromEntries(Object.entries(data).sort(([x], [y]) => {
   const [a, b] = x.split(':').map(Number), [c, d] = y.split(':').map(Number);
@@ -36,9 +37,9 @@ const toBase64 = text => {
   for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
   return btoa(bin);
 };
-const fromBase64 = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
+export const fromBase64 = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
 
-const GH_ERRORS = { 401: 'tokenul nu este valid sau a expirat', 403: 'tokenul nu are dreptul de scriere în acest depozit', 404: 'depozitul nu există sau tokenul nu are acces la el', 422: 'GitHub a refuzat fișierul' };
+export const GH_ERRORS = { 401: 'tokenul nu este valid sau a expirat', 403: 'tokenul nu are dreptul de scriere în acest depozit', 404: 'depozitul nu există sau tokenul nu are acces la el', 422: 'GitHub a refuzat fișierul' };
 
 async function ghRequest(b, init = {}) {
   const { repo, token } = github();
