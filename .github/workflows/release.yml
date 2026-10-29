@@ -26,6 +26,9 @@ jobs:
       - name: Attach to the release "latest"
         env:
           GH_TOKEN: ${{ github.token }}
+        # Recreated rather than updated: replacing only the file would leave the tag, the date and the commit
+        # shown on the release page at the first build. The download link stays the same.
         run: |
-          gh release view latest >/dev/null 2>&1 || gh release create latest --title "Scriptura (ultima versiune)" --notes "Construită automat la fiecare push. Descarcă Scriptura.html și deschide-l în browser."
-          gh release upload latest dist/Scriptura.html --clobber
+          gh release delete latest --cleanup-tag --yes || true
+          gh release create latest dist/Scriptura.html --target "$GITHUB_SHA" --title "Scriptura (ultima versiune)" \
+            --notes "Construită automat din ${GITHUB_SHA::7} ($(git log -1 --format=%s)), $(TZ=Europe/Bucharest date '+%d.%m.%Y %H:%M'). Descarcă Scriptura.html și deschide-l în browser."
