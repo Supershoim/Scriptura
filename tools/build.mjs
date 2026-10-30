@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
 import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { validate } from './validate.mjs';
 import { loadStudies, buildStudies } from './studies.mjs';
 import { loadComments } from './comments.mjs';
@@ -94,7 +95,18 @@ for (const [b, verses] of Object.entries(comments)) writeDist(`data/comments/${b
 
 // ---------- Hosted app ----------
 
-for (const rel of SHELL) writeDist(rel, fs.readFileSync(path.join(app, rel)));
+// The commit the build comes from, shown at the bottom of the page: "a5222a9 · 2026-10-30 19:29", with "+" when
+// app/, data/ or tools/ have uncommitted changes (a local build).
+const BUILD = (() => {
+  const git = (...args) => execFileSync('git', args, { cwd: root, encoding: 'utf8' }).trim();
+  try {
+    const [sha, date] = git('log', '-1', '--format=%h|%cd', '--date=format:%Y-%m-%d %H:%M').split('|');
+    return `${sha}${git('status', '--porcelain', '--', 'app', 'data', 'tools') ? '+' : ''} · ${date}`;
+  } catch { return 'necunoscută'; }
+})();
+const withBuild = html => html.replace('__BUILD__', BUILD);
+
+for (const rel of SHELL) writeDist(rel, rel === 'index.html' ? withBuild(read(path.join(app, rel))) : fs.readFileSync(path.join(app, rel)));
 // Markdown preview in the editor (loaded only when editing, through tools/serve.mjs).
 writeDist('js/marked.min.js', fs.readFileSync(path.join(root, 'tools/vendor/marked.min.js')));
 
@@ -135,7 +147,7 @@ const imageData = Object.fromEntries(images.map(f => [`data/atlas/images/${f}`,
 for (const rel of noteImages) imageData[rel] = `data:image/${rel.endsWith('.png') ? 'png' : 'jpeg'};base64,` + fs.readFileSync(path.join(root, rel)).toString('base64');
 const embeddedStudies = { index: study.index, files: { ...study.files, ...noteFiles, ...imageData }, shards: study.shards };
 const payload = zlib.gzipSync(JSON.stringify({ books, translations, studies: embeddedStudies, comments }), { level: 9 }).toString('base64');
-const standalone = read(path.join(app, 'index.html'))
+const standalone = withBuild(read(path.join(app, 'index.html')))
   .replace(/<link rel="manifest"[^>]*>\n/, '')
   .replace(/<link rel="(?:icon|apple-touch-icon)"[^>]*>\n/g, '')
   .replace('<link rel="stylesheet" href="styles.css">', () => `<style>\n${read(path.join(app, 'styles.css'))}</style>`)
@@ -147,4 +159,4 @@ const size = rel => (fs.statSync(path.join(dist, rel)).size / 1e6).toFixed(1) + 
 if (warnings.length) console.warn(warnings.map(w => '  ! ' + w).join('\n'));
 const visuals = studies.filter(s => s.visual).length;
 const commented = Object.values(comments).reduce((n, verses) => n + Object.keys(verses).length, 0);
-console.log(`Built dist/ (version ${version}) · ${translations.map(t => t.meta.abbreviation).join(', ')} · ${studies.length} studies, ${visuals} with visuals, ${Object.keys(bookVisuals).length} book visuals · ${commented} verses with comments · Scriptura.html ${size('Scriptura.html')}`);
+console.log(`Built dist/ (version ${version}, ${BUILD}) · ${translations.map(t => t.meta.abbreviation).join(', ')} · ${studies.length} studies, ${visuals} with visuals, ${Object.keys(bookVisuals).length} book visuals · ${commented} verses with comments · Scriptura.html ${size('Scriptura.html')}`);

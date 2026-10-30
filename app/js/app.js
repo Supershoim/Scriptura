@@ -520,6 +520,15 @@ function offlineSetup() {
   const local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) && !new URLSearchParams(location.search).has('sw');
   if ('serviceWorker' in navigator && location.protocol.startsWith('http') && !local)
     navigator.serviceWorker.register('sw.js').then(() => navigator.serviceWorker.ready).then(() => status('Disponibil offline')).catch(() => {});
+  // The page came from the previous version's cache; a new service worker takes over once a new build is
+  // published. Reload into it, unless something is being written in a dialog: then offer the reload.
+  const updating = !!navigator.serviceWorker?.controller;
+  navigator.serviceWorker?.addEventListener('controllerchange', () => {
+    if (!updating) return;
+    if (!document.querySelector('dialog[open]')) { location.reload(); return; }
+    $('buildInfo').innerHTML = 'Versiune nouă publicată. <button type="button" class="small" data-reload>Reîncarcă</button>';
+  });
+  $('buildInfo').addEventListener('click', e => { if (e.target.closest('[data-reload]')) location.reload(); });
 }
 
 // ---------- Start ----------

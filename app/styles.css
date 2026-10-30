@@ -134,6 +134,8 @@ mark { background: var(--highlight); color: inherit; border-radius: 2px; padding
 .columns.single .colhead { display: grid; }
 
 .pagination { display: flex; justify-content: center; align-items: center; gap: 14px; margin: 18px 0; font-size: 12px; }
+.buildinfo { margin: 0; padding: 10px 16px max(10px, env(safe-area-inset-bottom)); text-align: center; font-size: 10.5px; color: var(--muted); }
+.buildinfo button { margin-left: 6px; font-size: 10.5px; }
 .footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 16px; font-size: 11px; color: var(--muted); }
 
 /* Reference popup */
