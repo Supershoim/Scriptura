@@ -4,14 +4,15 @@
 // Without "t" a comment applies to all translations (shown after the leftmost column); with "t", to that one only.
 // Saving goes, in this order:
 //  1. through the local server (node tools/serve.mjs): the file is written into data/ and the app rebuilt;
-//  2. through the GitHub API, with a fine-grained token entered once per device (only this repository,
-//     Contents: read and write). Each save is a commit to data/comments/; the host (Cloudflare Pages) then rebuilds the site.
-// With a token, comments are also read from GitHub, so a device sees the latest ones before the site is rebuilt.
-import { $, esc, store } from './util.js';
+//  2. through the GitHub API, once the lock is open (lock.js: the token, encrypted with a password). Each save
+//     is a commit to data/comments/; the Pages workflow then rebuilds the site.
+// While unlocked, comments are also read from GitHub, so a device sees the latest ones before the site is rebuilt.
+import { $, esc } from './util.js';
 import { parseKey, fetchJson, embeddedComments } from './data.js';
 import { hasServer } from './editor.js';
+import { github, requireUnlock, openLock, onLockChange } from './lock.js';
+import { readFile, writeFile } from './github.js';
 
-export const DEFAULT_REPO = 'Supershoim/Scriptura', BRANCH = 'main';
 const MAX = 4000, PRESS_MS = 550;
 const cache = new Map();   // book -> Promise<{ "c:v": [...] }>
 let listed = null;         // Promise<Set>: books with comments in this build
@@ -19,7 +20,6 @@ let options = { verse: () => null, translations: () => [], onChange: () => {}, e
 let current = null;        // { canon, editing: index or -1 }
 
 const today = () => new Date().toISOString().slice(0, 10);
-export const github = () => { const g = store.get('github', null); return g?.token ? { repo: g.repo || DEFAULT_REPO, token: g.token } : null; };
 const fileOf = b => `data/comments/${b}.json`;
 const sortVerses = data => Object.fromEntries(Object.entries(data).sort(([x], [y]) => {
   const [a, b] = x.split(':').map(Number), [c, d] = y.split(':').map(Number);
@@ -28,51 +28,6 @@ const sortVerses = data => Object.fromEntries(Object.entries(data).sort(([x], [y
 // The translation a comment applies to, as shown in the dialog.
 export const scopeLabel = t => t ? (options.translations().find(m => m.id === t)?.abbreviation || t) : 'toate traducerile';
 const json = data => JSON.stringify(sortVerses(data), null, 2) + '\n';
-
-// ---------- GitHub ----------
-
-const toBase64 = text => {
-  const bytes = new TextEncoder().encode(text);
-  let bin = '';
-  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
-  return btoa(bin);
-};
-export const fromBase64 = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
-
-export const GH_ERRORS = { 401: 'tokenul nu este valid sau a expirat', 403: 'tokenul nu are dreptul de scriere în acest depozit', 404: 'depozitul nu există sau tokenul nu are acces la el', 422: 'GitHub a refuzat fișierul' };
-
-async function ghRequest(b, init = {}) {
-  const { repo, token } = github();
-  const r = await fetch(`https://api.github.com/repos/${repo}/contents/${fileOf(b)}${init.method ? '' : '?ref=' + BRANCH}`, {
-    cache: 'no-store', ...init,
-    headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`, 'X-GitHub-Api-Version': '2022-11-28' }
-  });
-  return r;
-}
-
-// The file as it is now on GitHub: { data, sha } (sha null when the book has no comments yet).
-async function ghRead(b) {
-  const r = await ghRequest(b);
-  if (r.status === 404) {
-    // 404 also means "no access": the repository itself must be readable.
-    const repo = await fetch(`https://api.github.com/repos/${github().repo}`, { headers: { Authorization: `Bearer ${github().token}` } });
-    if (repo.ok) return { data: {}, sha: null };
-  }
-  if (!r.ok) throw new Error('GitHub: ' + (GH_ERRORS[r.status] || r.status));
-  const file = await r.json();
-  return { data: JSON.parse(fromBase64(file.content)), sha: file.sha };
-}
-
-async function ghWrite(b, edit, message) {
-  for (let attempt = 0; ; attempt++) {
-    const { data, sha } = await ghRead(b);
-    const next = edit(data);
-    const r = await ghRequest(b, { method: 'PUT', body: JSON.stringify({ message, content: toBase64(json(next)), branch: BRANCH, ...sha && { sha } }) });
-    if (r.ok) return next;
-    // 409: someone else saved in between (another device); read again and redo the change once.
-    if (r.status !== 409 || attempt) throw new Error('GitHub: ' + (GH_ERRORS[r.status] || r.status));
-  }
-}
 
 // ---------- Reading and saving ----------
 
@@ -85,7 +40,7 @@ function fromBuild(b) {
 
 export function forBook(b) {
   if (!cache.has(b)) {
-    const p = github() ? ghRead(b).then(f => f.data).catch(() => fromBuild(b)) : fromBuild(b);
+    const p = github() ? readFile(fileOf(b)).then(f => f ? JSON.parse(f.text) : {}).catch(() => fromBuild(b)) : fromBuild(b);
     cache.set(b, p);
     p.catch(() => cache.delete(b));
   }
@@ -115,8 +70,8 @@ async function change(canon, edit, message) {
     const res = await (await fetch(url, { method: 'PUT', headers: { 'Content-Type': 'text/plain; charset=utf-8' }, body: json(saved) })).json();
     if (!res.ok) throw new Error(res.problems || res.error || 'build-ul a refuzat fișierul');
     where = 'local';
-  } else if (github()) {
-    saved = await ghWrite(b, apply, message);
+  } else if (await requireUnlock()) {
+    saved = JSON.parse((await writeFile(fileOf(b), text => json(apply(text ? JSON.parse(text) : {})), message)).text);
     where = 'github';
   } else throw new NoStorage();
   cache.set(b, Promise.resolve(saved));
@@ -159,12 +114,9 @@ function setEditing(i, text = '', t = '') {
 }
 
 function syncHint() {
-  const g = store.get('github', null);
-  $('ghRepo').value = g?.repo || DEFAULT_REPO;
-  $('ghToken').value = '';
-  $('ghToken').placeholder = g?.token ? 'Token păstrat pe acest dispozitiv' : 'github_pat_…';
-  $('ghForget').hidden = !g?.token;
-  $('commentWhere').textContent = g?.token ? `Se salvează în ${g.repo || DEFAULT_REPO} pe GitHub (sau local, cu node tools/serve.mjs).` : 'Se salvează local, cu node tools/serve.mjs, sau pe GitHub după ce adaugi un token (mai jos).';
+  const g = github();
+  $('commentWhere').textContent = g ? `Se salvează în ${g.repo} pe GitHub (sau local, cu node tools/serve.mjs).` : 'Se salvează local, cu node tools/serve.mjs, sau pe GitHub după deblocare (cu parola).';
+  $('commentLock').textContent = g ? 'Salvare pe GitHub: deblocat' : 'Deblochează salvarea pe GitHub';
 }
 
 export async function openComments(canon) {
@@ -198,12 +150,7 @@ async function save() {
     setEditing(-1);
     status(where === 'github' ? 'Salvat pe GitHub. Site-ul publicat îl arată după reconstruire (în jur de un minut).' : 'Salvat în data/comments.', 'ok');
   } catch (e) {
-    if (e instanceof NoStorage) {
-      // The token field sits at the bottom of the dialog, below the fold on a phone: bring it into view.
-      $('commentSync').open = true;
-      $('ghToken').scrollIntoView({ block: 'center' });
-      $('ghToken').focus();
-      status('Comentariul nu s-a salvat: adaugă mai jos un token GitHub sau deschide aplicația cu <code>node tools/serve.mjs</code>. Textul a rămas în câmp.', 'error'); }
+    if (e instanceof NoStorage) status('Comentariul nu s-a salvat: deblochează salvarea pe GitHub sau deschide aplicația cu <code>node tools/serve.mjs</code>. Textul a rămas în câmp.', 'error');
     else status('Nu s-a salvat: ' + esc(e.message), 'error');
   } finally {
     $('commentSave').disabled = false;
@@ -221,20 +168,8 @@ async function remove(i) {
     setEditing(-1);
     status('Șters.', 'ok');
   } catch (e) {
-    status(e instanceof NoStorage ? 'Nu se poate șterge fără token GitHub sau server local.' : 'Nu s-a șters: ' + esc(e.message), 'error');
+    status(e instanceof NoStorage ? 'Nu se poate șterge fără deblocare sau server local.' : 'Nu s-a șters: ' + esc(e.message), 'error');
   }
-}
-
-function saveToken() {
-  const repo = $('ghRepo').value.trim() || DEFAULT_REPO, token = $('ghToken').value.trim(), old = store.get('github', null);
-  if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) { status('Depozitul se scrie ca <code>utilizator/nume</code>.', 'error'); return; }
-  store.set('github', { repo, token: token || old?.token || '' });
-  cache.clear();
-  syncHint();
-  options.onChange();
-  status(token || old?.token ? 'Păstrat pe acest dispozitiv.' : 'Depozitul a fost păstrat; lipsește tokenul.', 'ok');
-  // A comment that failed for lack of a token is still in the field: save it now.
-  if ((token || old?.token) && $('commentText').value.trim()) save();
 }
 
 // ---------- Gestures ----------
@@ -285,9 +220,9 @@ export function setupComments(container, opts) {
     if (ed) { const i = +ed.dataset.cedit, c = (await forVerse(current.canon))[i]; setEditing(i, c?.text || '', c?.t || ''); $('commentText').focus(); }
     if (del) remove(+del.dataset.cdel);
   });
-  $('ghSave').addEventListener('click', saveToken);
-  for (const id of ['ghRepo', 'ghToken']) $(id).addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); saveToken(); } });
-  $('ghForget').addEventListener('click', () => { store.set('github', { repo: $('ghRepo').value.trim() || DEFAULT_REPO, token: '' }); cache.clear(); syncHint(); options.onChange(); status('Tokenul a fost șters de pe acest dispozitiv.', 'ok'); });
+  $('commentLock').addEventListener('click', openLock);
+  // Unlocking switches reading to GitHub (fresher than the build); locking back to the build.
+  onLockChange(() => { cache.clear(); if ($('commentDialog').open) { syncHint(); renderList(); } options.onChange(); });
   $('commentDialog').addEventListener('cancel', e => {
     const text = $('commentText').value.trim();
     if (text && !confirm('Renunți la comentariul nescris?')) e.preventDefault();

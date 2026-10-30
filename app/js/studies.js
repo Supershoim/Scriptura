@@ -249,6 +249,7 @@ async function openStudy(s, part, term) {
   const p = s.parts[state.part];
   $('studyEdit').dataset.edit = p.src;
   $('studyEdit').dataset.editTitle = `Editează: ${p.label}`;
+  $('studyEdit').dataset.study = `${s.b}:${s.c}`;
   let html;
   try { html = await catalog.text(p.path); } catch { html = '<div class="empty"><strong>Studiul nu s-a putut încărca</strong>Verifică conexiunea și încearcă din nou.</div>'; }
   if (state.current !== s || state.part !== s.parts.indexOf(p)) return;

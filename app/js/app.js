@@ -8,6 +8,7 @@ import { setupTips, hideTip } from './tips.js';
 import { setupStudies, showStudies, focusStudySearch, cardTip, studyHash } from './studies.js';
 import { setGo, setupPanel, closePanel } from './vizcore.js';
 import { setupEditor } from './editor.js';
+import { setupLock } from './lock.js';
 import * as catalog from './catalog.js';
 import { linkStudy } from './refs.js';
 import { setupComments } from './comments.js';
@@ -483,6 +484,7 @@ function wire() {
   setupStudies({ go, decorate: linkStudy });
   setGo(go);
   setupPanel();
+  setupLock();
   setupEditor();
   setupFootnotes($('columns'));
   setupStudyNotes();

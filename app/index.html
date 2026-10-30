@@ -184,13 +184,18 @@
     <h2 id="editTitle">Editează</h2>
     <button type="button" class="ghost close" data-close>Închide</button>
   </div>
-  <p class="hint"><code id="editPath"></code></p>
+  <p class="hint"><code id="editPath"></code> · <span id="editWhere"></span></p>
+  <div id="editMeta" class="edit-meta" hidden>
+    <label class="field">Titlul studiului <input id="editStudyTitle" type="text" autocomplete="off"></label>
+    <label class="field">Rezumatul <textarea id="editSummary" rows="2"></textarea></label>
+    <label class="field">Eticheta acestei părți <input id="editLabel" type="text" autocomplete="off"></label>
+  </div>
   <div id="editTabs" class="seg" role="group" aria-label="Mod"><button type="button" data-tab="text" aria-pressed="true">Text</button><button type="button" data-tab="preview" aria-pressed="false">Previzualizare</button></div>
   <label for="editText" class="sr">Conținutul fișierului</label>
   <textarea id="editText" spellcheck="false"></textarea>
   <div id="editPreview" class="doc preview" hidden></div>
   <div id="editStatus" class="edit-status"></div>
-  <div class="panel-actions"><button type="button" id="editSave" class="primary">Salvează (Ctrl+S)</button><button type="button" class="ghost" data-close>Renunță</button></div>
+  <div class="panel-actions"><button type="button" id="editSave" class="primary">Salvează (Ctrl+S)</button><button type="button" class="ghost" data-close>Renunță</button><span class="spacer"></span><button type="button" id="editLock" class="ghost small">Parola și dispozitivul</button></div>
 </dialog>
 
 <dialog id="commentDialog" class="sheet comments" aria-labelledby="commentTitle">
@@ -206,14 +211,7 @@
   <div id="commentStatus" class="edit-status" role="status"></div>
   <div class="panel-actions"><button type="button" id="commentSave" class="primary">Adaugă</button><button type="button" id="commentCancel" class="ghost" hidden>Renunță la editare</button></div>
   <p id="commentWhere" class="hint"></p>
-  <details id="commentSync" class="comment-sync">
-    <summary>Salvare pe GitHub de pe acest dispozitiv</summary>
-    <p>Pe site-ul publicat, comentariile se salvează direct în depozitul GitHub (<code>data/comments/</code>), iar site-ul se reconstruiește singur în jur de un minut. Ai nevoie de un token: pe GitHub, <em>Settings → Developer settings → Fine-grained tokens</em>, doar pentru depozitul Scriptura, cu permisiunea <em>Contents: Read and write</em>.</p>
-    <p class="hint">Tokenul rămâne doar în acest browser. Același token servește și la importul studiilor.</p>
-    <label class="field">Depozit <input id="ghRepo" type="text" autocomplete="off" spellcheck="false"></label>
-    <label class="field">Token <input id="ghToken" type="password" autocomplete="off" spellcheck="false"></label>
-    <div class="panel-actions"><button type="button" id="ghSave">Save token</button><button type="button" id="ghForget" class="ghost">Șterge tokenul</button></div>
-  </details>
+  <div class="panel-actions"><button type="button" id="commentLock" class="ghost small">Deblochează salvarea pe GitHub</button></div>
 </dialog>
 
 <dialog id="importDialog" class="sheet" aria-labelledby="importTitleH">
@@ -221,7 +219,7 @@
     <h2 id="importTitleH">Importă un studiu</h2>
     <button type="button" class="ghost close" data-close>Închide</button>
   </div>
-  <p class="hint">Fișierele .md și intrarea din <code>studies.json</code> se trimit pe GitHub într-un singur commit, cu tokenul de la comentarii. Vizualizarea se face după aceea, pe calculator.</p>
+  <p class="hint">Fișierele .md și intrarea din <code>studies.json</code> se trimit pe GitHub într-un singur commit, după deblocare (parola pentru GitHub). Vizualizarea se face după aceea, pe calculator.</p>
   <label class="field">Cartea <select id="importBook"></select></label>
   <label class="field">Capitolul (0 = privire de ansamblu) <input id="importChapter" type="number" min="0" value="1"></label>
   <label class="field">Data <input id="importDate" type="date"></label>
@@ -232,6 +230,26 @@
   <ol id="importFiles" class="import-files"></ol>
   <div id="importStatus" class="edit-status" role="status"></div>
   <div class="panel-actions"><button type="button" id="importSave" class="primary">Trimite pe GitHub</button></div>
+</dialog>
+
+<dialog id="lockDialog" class="sheet lock" aria-labelledby="lockTitle">
+  <div class="sheet-head">
+    <h2 id="lockTitle">Salvare pe GitHub</h2>
+    <button type="button" class="ghost close" data-close>Închide</button>
+  </div>
+  <div id="lockSetup">
+    <p>Editarea studiilor și comentariile se salvează direct în depozitul GitHub, iar site-ul se reconstruiește singur în jur de un minut. Pe acest dispozitiv e nevoie o singură dată de un token: pe GitHub, <em>Settings → Developer settings → Fine-grained tokens</em>, doar pentru depozitul Scriptura, cu <em>Contents: Read and write</em> (și, opțional, <em>Actions: Read</em>, ca editorul să arate când site-ul e gata).</p>
+    <p class="hint">Tokenul se păstrează criptat cu parola aleasă aici. Parola nu se salvează nicăieri; fără ea, tokenul nu poate fi folosit.</p>
+    <label class="field">Depozit <input id="lockRepo" type="text" autocomplete="off" spellcheck="false"></label>
+    <label class="field">Token <input id="lockToken" type="password" autocomplete="off" spellcheck="false"></label>
+  </div>
+  <p id="lockUnlock">Scrie parola ca să deblochezi salvarea pe GitHub.</p>
+  <p id="lockOpen"><strong id="lockState"></strong></p>
+  <label class="field" id="lockPasswordRow">Parola <input id="lockPassword" type="password" autocomplete="current-password"></label>
+  <label class="field" id="lockConfirmRow">Parola, încă o dată <input id="lockConfirm" type="password" autocomplete="new-password"></label>
+  <label class="check" id="lockTrustedRow"><input id="lockTrusted" type="checkbox"> Dispozitiv de încredere: rămân deblocat și după închiderea browserului</label>
+  <div id="lockStatus" class="edit-status" role="status"></div>
+  <div class="panel-actions"><button type="button" id="lockGo" class="primary">Deblochează</button><button type="button" id="lockNow" class="ghost">Blochează acum</button><button type="button" id="lockForget" class="ghost">Uită acest dispozitiv</button></div>
 </dialog>
 
 <div id="toast" class="toast" role="status" hidden></div>

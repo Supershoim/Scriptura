@@ -574,9 +574,16 @@ figure.hist figcaption strong { font: 600 14px var(--serif); }
 
 /* Editor */
 dialog.editor { width: min(900px, calc(100vw - 24px)); }
-dialog.editor textarea { width: 100%; height: 58vh; margin-top: 8px; padding: 10px 12px; font: 13px/1.55 ui-monospace, Consolas, monospace; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
+dialog.editor #editText { width: 100%; height: 58vh; margin-top: 8px; padding: 10px 12px; font: 13px/1.55 ui-monospace, Consolas, monospace; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; resize: vertical; }
 dialog.editor .preview { height: 58vh; overflow: auto; margin-top: 8px; max-width: none; }
 .edit-status { font-size: 12.5px; margin-top: 8px; }
+.edit-status ul { margin: 4px 0; padding-left: 18px; }
+.edit-meta { display: grid; gap: 8px; margin-top: 8px; }
+.edit-meta input, .edit-meta textarea, dialog.lock input:not([type=checkbox]) { padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: 400 16px var(--sans); }
+.edit-meta textarea { resize: vertical; }
+dialog.lock { width: min(560px, calc(100vw - 24px)); }
+dialog.lock .field, dialog.lock .check { margin-top: 10px; }
+dialog.editor .panel-actions .spacer { flex: 1; }
 .edit-status.error { color: var(--campaign); }
 .edit-status.ok { color: var(--sure); font-weight: 600; }
 .edit-status pre { white-space: pre-wrap; font-size: 11.5px; max-height: 160px; overflow: auto; background: var(--head); padding: 8px; border-radius: 6px; color: var(--ink); }

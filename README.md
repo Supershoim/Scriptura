@@ -103,7 +103,12 @@ Unelte:
 
 ### Editare și regenerare
 
-Fiecare parte a unui studiu și fiecare vizualizare are butonul **Editează**. Salvarea funcționează când aplicația rulează local cu `node tools/serve.mjs`: fișierul se scrie în `data/`, aplicația se reconstruiește, iar dacă build-ul găsește o problemă fișierul revine la forma dinainte și problema este afișată. Pe site-ul publicat și în fișierul offline butonul explică pașii.
+Fiecare parte a unui studiu și fiecare vizualizare are butonul **Editează**. La un studiu, deasupra textului apar titlul, rezumatul și eticheta părții (din `studies.json`). Salvarea merge:
+
+- local, cu `node tools/serve.mjs`: fișierul se scrie în `data/`, aplicația se reconstruiește, iar dacă build-ul găsește o problemă fișierul revine la forma dinainte și problema este afișată;
+- de oriunde, pe GitHub, după deblocare cu parola (`app/js/lock.js`): un singur commit cu fișierele schimbate; editorul urmărește build-ul GitHub Pages până la publicare (cu *Actions: Read* pe token) sau spune dacă a eșuat. Dacă fișierul a fost schimbat de pe alt dispozitiv după deschidere, salvarea se oprește în loc să-l suprascrie.
+
+**Blocarea.** Tokenul GitHub (*fine-grained*, doar acest depozit, *Contents: Read and write*, opțional *Actions: Read*) se introduce o dată pe dispozitiv și se păstrează doar criptat: PBKDF2 (600.000 de runde) face din parolă o cheie AES-GCM. Parola nu se salvează. Pe un *dispozitiv de încredere* cheia rămâne în IndexedDB ca cheie nedetașabilă (pagina o poate folosi, dar nu o poate citi), deci deblocarea se păstrează după repornire; altfel, tokenul decriptat stă doar în memorie, până la închiderea sau reîncărcarea paginii. „Blochează acum” scoate dispozitivul din încredere; „Uită acest dispozitiv” șterge tokenul criptat. Aceeași blocare servește comentariile și importul de studii.
 
 Fiecare vizualizare reține amprenta textului din care a fost făcută. Când textul studiului se schimbă, vizualizarea apare ca **neactualizată**. Părțile calculate (trasee, trimiteri, numărători) se refac singure; ideea principală, legăturile și rezumatele se refac cu **Regenerează**, care pune studiul în coada `data/studies/regenerate.json`, iar apoi în Claude Code cu comanda `/regenerate-visuals`.
 
@@ -155,7 +160,7 @@ Reguli de traducere: accentul este pe mesaj, deci totul este în română. Cuvin
 
 Clic dreapta pe un verset (pe telefon: apăsare lungă) deschide comentariile lui. Un verset cu comentarii are după text un balon mic; versetele menționate în studii au, cu litere mici, studiul („Romani 2”) sau numărul de studii. Atinse, se deschid într-o fereastră; din ea se ajunge în studiu, derulat la locul unde apare versetul.
 
-- **Comentariile** sunt în `data/comments/<COD>.json`: `{ "3:16": [ { "date": "2026-10-25", "text": "…" } ] }`, cu numerotarea rândurilor din cititor. Build-ul verifică versetul, data și textul (cel mult 4.000 de caractere). Salvarea merge prin `node tools/serve.mjs` (fișierul se scrie local; îl urci cu `git push`) sau, pe site-ul publicat, direct în depozitul GitHub: în fereastra comentariilor, „Salvare pe GitHub” cere un token *fine-grained* doar pentru acest depozit, cu *Contents: Read and write*. Fiecare salvare devine un commit în `data/comments/`, iar GitHub Pages reconstruiește site-ul în jur de un minut. Cu token, aplicația citește comentariile direct din depozit, deci le vede imediat. Înainte de un `git push` local, `git pull` aduce comentariile scrise de pe alte dispozitive.
+- **Comentariile** sunt în `data/comments/<COD>.json`: `{ "3:16": [ { "date": "2026-10-25", "text": "…" } ] }`, cu numerotarea rândurilor din cititor. Build-ul verifică versetul, data și textul (cel mult 4.000 de caractere). Salvarea merge prin `node tools/serve.mjs` (fișierul se scrie local; îl urci cu `git push`) sau, pe site-ul publicat, direct în depozitul GitHub, după deblocarea cu parola (vezi „Editare și regenerare”). Fiecare salvare devine un commit în `data/comments/`, iar GitHub Pages reconstruiește site-ul în jur de un minut. Deblocată, aplicația citește comentariile direct din depozit, deci le vede imediat. Înainte de un `git push` local, `git pull` aduce comentariile scrise de pe alte dispozitive.
 - **Trimiterile spre studii** se calculează la build (`tools/mentions.mjs`) cu aceeași recunoaștere a referințelor ca pop-up-urile din studii (`app/js/refs.js`): `data/studies/mentions/<COD>.json`, pe verset, studiul, partea, de câte ori apare și un fragment din jur. Un pasaj de peste 30 de versete marchează doar primul verset.
 
 ## Publicare (GitHub Pages)

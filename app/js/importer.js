@@ -1,23 +1,14 @@
 // Importing a study from any device: the .md files and the entry in data/studies/<BOOK>/studies.json go to
-// GitHub in one commit (Git Data API), with the token kept for comments; the host then rebuilds the site.
+// GitHub in one commit (Git Data API), once the lock is open (lock.js); the Pages workflow then rebuilds the site.
 // The visual and the atlas entries are made later, on the computer (/regenerate-visuals).
 import { $, esc } from './util.js';
 import { books } from './data.js';
-import { github, fromBase64, GH_ERRORS, BRANCH } from './comments.js';
+import { github, requireUnlock } from './lock.js';
+import { commitFiles } from './github.js';
 
 const today = () => new Date().toISOString().slice(0, 10);
 const safeName = name => name.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '-').replace(/[^\w.-]/g, '').toLowerCase();
 let files = [];   // [{ name, text, label }]
-
-async function gh(path, init = {}) {
-  const { repo, token } = github();
-  const r = await fetch(`https://api.github.com/repos/${repo}/${path}`, {
-    cache: 'no-store', ...init,
-    headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`, 'X-GitHub-Api-Version': '2022-11-28' }
-  });
-  return r;
-}
-const fail = r => new Error('GitHub: ' + (GH_ERRORS[r.status] || r.status));
 
 // Adds the new study to the book's list. Returns the new list, or throws an Error whose message is shown.
 // list: the current studies.json ([] for a book without studies); entry: { chapter, date, title, summary, themes, parts }.
@@ -31,35 +22,14 @@ function mergeEntry(list, entry) {
   return [...list, entry].sort((a, b) => a.chapter - b.chapter);
 }
 
-// One commit with the .md files and studies.json; a push from another device in between is retried once.
-async function commit(b, entry, message) {
-  for (let attempt = 0; ; attempt++) {
-    let r = await gh(`git/ref/heads/${BRANCH}`);
-    if (!r.ok) throw fail(r);
-    const head = (await r.json()).object.sha;
-    r = await gh(`git/commits/${head}`);
-    if (!r.ok) throw fail(r);
-    const base = (await r.json()).tree.sha;
-    r = await gh(`contents/data/studies/${b}/studies.json?ref=${head}`);
-    if (!r.ok && r.status !== 404) throw fail(r);
-    const list = r.ok ? JSON.parse(fromBase64((await r.json()).content)) : [];
-    const next = mergeEntry(list, entry);
-    const tree = [
-      ...files.map(f => ({ path: `data/studies/${b}/${f.name}`, mode: '100644', type: 'blob', content: f.text })),
-      { path: `data/studies/${b}/studies.json`, mode: '100644', type: 'blob', content: JSON.stringify(next, null, 2) + '\n' }
-    ];
-    r = await gh('git/trees', { method: 'POST', body: JSON.stringify({ base_tree: base, tree }) });
-    if (!r.ok) throw fail(r);
-    const treeSha = (await r.json()).sha;
-    r = await gh('git/commits', { method: 'POST', body: JSON.stringify({ message, tree: treeSha, parents: [head] }) });
-    if (!r.ok) throw fail(r);
-    const sha = (await r.json()).sha;
-    r = await gh(`git/refs/heads/${BRANCH}`, { method: 'PATCH', body: JSON.stringify({ sha }) });
-    if (r.ok) return;
-    // 422: the branch moved (a comment saved meanwhile); start again from the new head, once.
-    if (r.status !== 422 || attempt) throw fail(r);
-  }
-}
+// One commit with the .md files and studies.json, merged into the list as it is on GitHub at that moment.
+const commit = (b, entry, message) => commitFiles(async read => {
+  const list = JSON.parse(await read(`data/studies/${b}/studies.json`) ?? '[]');
+  return [
+    ...files.map(f => ({ path: `data/studies/${b}/${f.name}`, text: f.text })),
+    { path: `data/studies/${b}/studies.json`, text: JSON.stringify(mergeEntry(list, entry), null, 2) + '\n' }
+  ];
+}, message);
 
 function status(html, kind = '') {
   $('importStatus').innerHTML = html;
@@ -82,7 +52,7 @@ export function openImport() {
   files = [];
   renderFiles();
   chapterLimit();
-  status(github() ? '' : 'Adaugă întâi un token GitHub (în fereastra unui comentariu, „Salvare pe GitHub”).', github() ? '' : 'error');
+  status(github() ? '' : 'La trimitere se cere parola pentru GitHub.');
   $('importDialog').showModal();
 }
 
@@ -95,7 +65,6 @@ async function pick(e) {
 }
 
 async function submit() {
-  if (!github()) { status('Lipsește tokenul GitHub.', 'error'); return; }
   const b = $('importBook').value, chapter = +$('importChapter').value;
   const entry = {
     chapter, date: $('importDate').value, title: $('importTitle').value.trim(), summary: $('importSummary').value.trim(),
@@ -106,6 +75,7 @@ async function submit() {
   if (files.some(f => !/^[\w.-]+\.md$/.test(f.name))) { status('Fișierele trebuie să fie .md.', 'error'); return; }
   if (!entry.title || !entry.summary) { status('Completează titlul și rezumatul.', 'error'); return; }
   if (!Number.isInteger(chapter) || chapter < 0 || chapter > +$('importChapter').max) { status('Capitolul nu există în această carte (0 = privire de ansamblu).', 'error'); return; }
+  if (!await requireUnlock()) { status('Trimiterea are nevoie de deblocare (parola pentru GitHub).', 'error'); return; }
   $('importSave').disabled = true;
   status('Se trimite pe GitHub…');
   try {
