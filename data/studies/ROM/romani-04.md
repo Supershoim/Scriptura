@@ -27,7 +27,7 @@
 - **Lauda „s-a dus”** (3:27). Obiecția: și Avraam? Răspunsul: el „are cu ce să se laude, dar nu înaintea lui Dumnezeu” (4:2).
 - **Dumnezeu este al iudeilor și al neamurilor** (3:29–30). Obiecția: pe ce bază? Răspunsul: Avraam a fost socotit neprihănit înainte de tăierea împrejur (4:9–12).
 
-**Promisiunea din 3:31, că prin credință „întărim Legea”, se împlinește prin însăși metoda argumentului.** Legea, prin Gen 15:6, mărturisește îndreptățirea prin credință, iar promisiunea precede Legea și nu depinde de ea (4:13–16) [observația mea]. Dezbaterea despre Noua perspectivă este tratată în Romani – privire de ansamblu, §7.1.
+**Promisiunea din 3:31, că prin credință „întărim Legea”, se împlinește prin însăși metoda argumentului.** Legea, prin Gen 15:6, mărturisește îndreptățirea prin credință, iar promisiunea precede Legea și nu depinde de ea (4:13–16). Dezbaterea despre Noua perspectivă este tratată în Romani – privire de ansamblu, §7.1.
 
 **Capitolul deschide drumul spre 5:1, care culege rodul lui:**
 
@@ -75,7 +75,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 
 **David este al doilea martor cerut de Lege.** Cele două texte sunt legate prin același cuvânt-cheie, „a socoti”; Constable îl citează aici pe Moo ([Constable](https://www.studylight.org/commentaries/eng/dcc/romans-4.html)).
 
-**Cei doi martori descriu fețele complementare ale îndreptățirii.** La Avraam, neprihănirea *este* trecută în cont; la David, păcatul *nu este* trecut în cont [observația mea]. Henry rezumă: „Cei iertați sunt singurii oameni fericiți” ([Henry](https://www.ccel.org/ccel/henry/mhc6.Rom.v.html)).
+**Cei doi martori descriu fețele complementare ale îndreptățirii.** La Avraam, neprihănirea *este* trecută în cont; la David, păcatul *nu este* trecut în cont. Henry rezumă: „Cei iertați sunt singurii oameni fericiți” ([Henry](https://www.ccel.org/ccel/henry/mhc6.Rom.v.html)).
 
 ### 1.2 Romani 4:9–12: înainte de tăierea împrejur
 
@@ -120,7 +120,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 > **21** deplin încredințat că El ce făgăduiește, poate să și împlinească.
 > — *Romani 4:18-21, VDC*
 
-**Credința lui Avraam a operat acolo unde nădejdea omenească murise.** „Împotriva oricărei nădejdi” înseamnă împotriva nădejdii omenești, sprijinit pe nădejdea dată de promisiune [observația mea].
+**Credința lui Avraam a operat acolo unde nădejdea omenească murise.** „Împotriva oricărei nădejdi” înseamnă împotriva nădejdii omenești, sprijinit pe nădejdea dată de promisiune.
 
 **Spurgeon descrie o credință care cântărește obstacolele și apoi le pune deoparte.** Avraam „a cunoscut dificultățile și le-a cântărit; dar, după ce a făcut-o, le-a dat la o parte ca nevrednice de luat în seamă”; „a crede pe Dumnezeu când totul Îl dezminte, aceasta este credință” ([Spurgeon, Unstaggering Faith](https://www.spurgeon.org/sermons/unstaggering-faith)).
 
@@ -230,7 +230,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 >
 > **Înțeles.** Dumnezeu face ceea ce Legea interzicea judecătorului: îl achită pe cel vinovat. Fără 3:25–26, versetul ar descrie un judecător corupt; Dumnezeu rămâne drept pentru că pedeapsa a căzut pe Altcineva.
 >
-> **Traduceri.** VDC: „pe păcătos”; NTR: „pe cel neevlavios”; NKJV: „the ungodly”. NTR și NKJV păstrează mai bine forța lui *asebēs*: „păcătos” poate desemna și omul religios care greșește; „neevlavios”, pe cel care nu are nici măcar evlavie de adus [observația mea].
+> **Traduceri.** VDC: „pe păcătos”; NTR: „pe cel neevlavios”; NKJV: „the ungodly”. NTR și NKJV păstrează mai bine forța lui *asebēs*: „păcătos” poate desemna și omul religios care greșește; „neevlavios”, pe cel care nu are nici măcar evlavie de adus.
 >
 > **Comentatori.** Piper: „Lucrul acesta era absolut șocant”; când se naște credința, „suntem încă nelegiuiți” ([Piper](https://www.desiringgod.org/messages/god-credits-faith-as-righteousness)).
 >
@@ -246,7 +246,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 
 **Traducerea „a ierta” din VDC ascunde legătura lexicală.** Ebraica din Ex 23:7 spune *lō’ ’aṣdîq rāšā‘*, „nu-l voi îndreptăți pe cel rău”, cu *ṣādaq* la forma cauzativă, Strong 6663 ([Bible Hub, Ex 23:7](https://biblehub.com/interlinear/exodus/23-7.htm)). Prov 17:15 are același verb: *maṣdîq rāšā‘* ([Bible Hub, Prov 17:15](https://biblehub.com/interlinear/proverbs/17-15.htm)).
 
-**Pavel reia exact vocabularul interdicției din Septuaginta.** LXX Ex 23:7: „οὐ δικαιώσεις τὸν ἀσεβῆ” ([LXX Ex 23](https://www.blueletterbible.org/lxx/exo/23)). Romani 4:5: „τὸν δικαιοῦντα τὸν ἀσεβῆ” ([interliniar Rom 4:5](https://www.bibliaparalela.com/interlinear/romans/4-5.htm)). Coincidența face șocul deliberat [observația mea]. Soluția este 3:26:
+**Pavel reia exact vocabularul interdicției din Septuaginta.** LXX Ex 23:7: „οὐ δικαιώσεις τὸν ἀσεβῆ” ([LXX Ex 23](https://www.blueletterbible.org/lxx/exo/23)). Romani 4:5: „τὸν δικαιοῦντα τὸν ἀσεβῆ” ([interliniar Rom 4:5](https://www.bibliaparalela.com/interlinear/romans/4-5.htm)). Coincidența face șocul deliberat. Soluția este 3:26:
 
 > **26** pentru ca, în vremea de acum, să-Și arate neprihănirea Lui în așa fel, încât să fie neprihănit, și totuși să socotească neprihănit pe cel ce crede în Isus.
 > — *Romani 3:26, VDC*
@@ -255,7 +255,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 >
 > **8** Ferice de omul căruia nu-i ține Domnul în seamă păcatul!”
 >
-> **Înțeles.** Martorul lui Pavel este un adulter și un ucigaș iertat (2 Sam 11). Îndreptățirea are două fețe: neprihănirea *este* trecută în cont (4:6), păcatul *nu este* trecut în cont (4:7–8). Pavel citează Ps 32:1–2, dar se oprește înainte de finalul versetului 2, evitând probabil ideea că David a fost iertat pentru sinceritatea lui [observația mea].
+> **Înțeles.** Martorul lui Pavel este un adulter și un ucigaș iertat (2 Sam 11). Îndreptățirea are două fețe: neprihănirea *este* trecută în cont (4:6), păcatul *nu este* trecut în cont (4:7–8). Pavel citează Ps 32:1–2, dar se oprește înainte de finalul versetului 2, evitând probabil ideea că David a fost iertat pentru sinceritatea lui.
 >
 > **Traduceri.** Traducerile nu diferă notabil ca sens.
 >
@@ -308,7 +308,7 @@ Guzik leagă psalmul de păcatul cu Bat-Șeba și Urie și de mărturisirea care
 >
 > **17** după cum este scris: „Te-am rânduit să fii tatăl multor neamuri.” El, adică, este tatăl nostru înaintea lui Dumnezeu în care a crezut, care învie morții și care cheamă lucrurile care nu sunt, ca și cum ar fi.
 >
-> **Înțeles.** Dumnezeul care numește neamuri inexistente este același care scoate viață din trupuri „moarte” [observația mea]. Exemplul se află chiar în text: numele „tatăl multor neamuri” îi este dat lui Avraam înainte de nașterea fiului promisiunii (Gen 17:5).
+> **Înțeles.** Dumnezeul care numește neamuri inexistente este același care scoate viață din trupuri „moarte”. Exemplul se află chiar în text: numele „tatăl multor neamuri” îi este dat lui Avraam înainte de nașterea fiului promisiunii (Gen 17:5).
 >
 > **Traduceri.** Traducerile nu diferă notabil ca sens.
 >
@@ -335,7 +335,7 @@ Guzik leagă psalmul de păcatul cu Bat-Șeba și Urie și de mărturisirea care
 >
 > **25** care a fost dat din pricina fărădelegilor noastre, și a înviat din pricină că am fost socotiți neprihăniți.
 >
-> **Înțeles.** Două jumătăți în oglindă, posibil după modelul unei formule creștine timpurii ([NET 4:25](https://classic.net.bible.org/verse.php?book=Rom&chapter=4&verse=25)). Isus a fost dat la moarte din pricina păcatelor noastre, după planul Tatălui (Fapte 2:23). Crucea rezolvă păcatul; învierea confirmă jertfa și o face lucrătoare [observația mea].
+> **Înțeles.** Două jumătăți în oglindă, posibil după modelul unei formule creștine timpurii ([NET 4:25](https://classic.net.bible.org/verse.php?book=Rom&chapter=4&verse=25)). Isus a fost dat la moarte din pricina păcatelor noastre, după planul Tatălui (Fapte 2:23). Crucea rezolvă păcatul; învierea confirmă jertfa și o face lucrătoare.
 >
 > **Traduceri.** VDC: a înviat **pentru că** am fost deja socotiți neprihăniți (învierea confirmă plata). NTR: „a fost înviat **pentru** îndreptățirea noastră” (Hristosul viu o aplică acum). NKJV păstrează ambiguitatea grecească: „because of our justification”.
 >
@@ -382,11 +382,11 @@ Restul diferențelor („pecete”/„sigiliu” la 4:11, „chezășuită”/�
 | **Sirah 44:19–21** | „He kept the law of the Most High… he certified the covenant in his flesh, and when he was tested he proved faithful.” (NRSVUE) | Ordinea Legea → tăierea împrejur → încercarea. |
 | **Jubileele 23:10** | „Abraham was perfect in all his deeds with the Lord, and well-pleasing in righteousness” | Perfecțiunea faptelor; la 17:18 el este „found faithful” după încercări. |
 | **Mishnah, Kiddushin 4:14** | „We found that Abraham our forefather fulfilled the entire Torah before it was given” | Împlinirea Torei înainte de Sinai (Gen 26:5). Text posterior lui Pavel, dar ideea apare deja în Jubileele și Sirah. |
-| **Pavel, Romani 4** | Socotirea (Gen 15) precede tăierea împrejur (Gen 17), Moria (Gen 22) și Sinaiul | Neprihănirea precede orice faptă; ordinea tradiției este răsturnată [observația mea]. |
+| **Pavel, Romani 4** | Socotirea (Gen 15) precede tăierea împrejur (Gen 17), Moria (Gen 22) și Sinaiul | Neprihănirea precede orice faptă; ordinea tradiției este răsturnată. |
 
 <small>Surse: [1 Macabei 2:52](https://www.biblegateway.com/verse/en/1%20Maccabees%202:52) · [Sirah 44:19-21 NRSVUE](https://www.biblegateway.com/passage/?search=Sirach+44%3A19-21&version=NRSVUE) · [Jubileele 23 (sacred-texts)](https://www.sacred-texts.com/bib/jub/jub50.htm) · [Jubileele 17 (CCEL)](https://ccel.org/c/charles/otpseudepig/jubilee/17.htm) · [Mishnah Kiddushin 4:14 (Sefaria)](https://www.sefaria.org/api/texts/Mishnah_Kiddushin.4.14?context=0)</small>
 
-**Pe acest fundal, 4:2 funcționează ca replică polemică.** Tradiția: Avraam a ascultat, *de aceea* i s-a socotit neprihănire. Pavel: i s-a socotit neprihănire, *apoi* a ascultat [observația mea].
+**Pe acest fundal, 4:2 funcționează ca replică polemică.** Tradiția: Avraam a ascultat, *de aceea* i s-a socotit neprihănire. Pavel: i s-a socotit neprihănire, *apoi* a ascultat.
 
 ### 3.4 Puncte disputate
 
@@ -400,7 +400,7 @@ Restul diferențelor („pecete”/„sigiliu” la 4:11, „chezășuită”/�
 
 <small>Surse: [Piper, interviu Crossway](https://www.desiringgod.org/interviews/crossway-books-interview-with-john-piper-on-counted-righteous-in-christ) · [Piper, Faith and the Imputation](https://www.desiringgod.org/messages/faith-and-the-imputation-of-righteousness) · [Gundry (Books & Culture, 2001)](https://booksandculture.com/articles/2001/janfeb/1.6.html) · [D. Shaw, Themelios 40.1](https://www.thegospelcoalition.org/themelios/article/romans-4-and-the-justification-of-abraham-in-light-of-perspectives-new/)</small>
 
-**Limbajul contabil din 4:4–8 susține lectura reformată; Noua perspectivă are dreptate că miza include unitatea iudeilor și neamurilor** [observația mea]. Shaw: „contextul clar al expresiei este achitarea juridică a celui vinovat”.
+**Limbajul contabil din 4:4–8 susține lectura reformată; Noua perspectivă are dreptate că miza include unitatea iudeilor și neamurilor**. Shaw: „contextul clar al expresiei este achitarea juridică a celui vinovat”.
 
 **B. Iacov 2 nu contrazice Romani 4.** Iacov citează același Gen 15:6, dar vorbește despre Moria:
 
@@ -440,7 +440,7 @@ Restul diferențelor („pecete”/„sigiliu” la 4:11, „chezășuită”/�
 > **12** fiind îngropați împreună cu El, prin botez, și înviați în El și împreună cu El, prin credința în puterea lui Dumnezeu care L-a înviat din morți.
 > — *Coloseni 2:11-12, VDC*
 
-**Evaluare.** Romani 4 însuși nu tranșează disputa: Pavel nu vorbește aici despre botez. Ce stabilește capitolul este ordinea pentru Avraam: credință, socotire, semn. Lectura baptistă păstrează această ordine pentru fiecare membru al noului legământ, conform lui Ier 31:34 și Col 2:12 („prin credința”); lectura paedobaptistă o păstrează pentru legământ ca întreg [observația mea].
+**Evaluare.** Romani 4 însuși nu tranșează disputa: Pavel nu vorbește aici despre botez. Ce stabilește capitolul este ordinea pentru Avraam: credință, socotire, semn. Lectura baptistă păstrează această ordine pentru fiecare membru al noului legământ, conform lui Ier 31:34 și Col 2:12 („prin credința”); lectura paedobaptistă o păstrează pentru legământ ca întreg.
 
 ---
 
@@ -564,7 +564,7 @@ Dumnezeu nu închide ochii, cum interzicea Legea, ci trece păcatul în contul l
 
 **2. Lauda evlavioasă este tot laudă.** În comunitățile evanghelice ea rareori spune „sunt bun”; mai des spune „noi suntem cei care…”: doctrina corectă, tradiția de generații, separarea de alții. Când devin temei înaintea lui Dumnezeu sau barieră față de alți credincioși, acestea funcționează ca o nouă „tăiere împrejur” (4:2, 9–12).
 
-**3. Părtășia se construiește pe ce este comun, nu pe ce ne distinge.** Pavel scrie unei biserici împărțite între iudei și neamuri; Romani 14–15 va aplica explicit principiul (Rom 15:7). Diferențele culturale, de generație sau de stil de închinare se tratează ca diferențe între frați, nu ca hotar între cei „dinăuntru” și cei „din afară” [observația mea].
+**3. Părtășia se construiește pe ce este comun, nu pe ce ne distinge.** Pavel scrie unei biserici împărțite între iudei și neamuri; Romani 14–15 va aplica explicit principiul (Rom 15:7). Diferențele culturale, de generație sau de stil de închinare se tratează ca diferențe între frați, nu ca hotar între cei „dinăuntru” și cei „din afară”.
 
 **4. Botezul și membralitatea mărturisesc o credință care există deja.** Avraam a crezut, a fost socotit neprihănit, apoi a primit semnul. Pentru baptiști aceasta este și ordinea botezului (§3.4 C). Aplicația taie în două direcții: botezul nu este formalitate de tradiție familială, dar nici nu trebuie amânat de cel care a crezut. Copiii credincioșilor sunt iubiți și învățați în biserică, dar sunt chemați la credință personală, nu presupuși membri.
 
