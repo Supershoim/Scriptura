@@ -12,10 +12,18 @@ let files = [];   // [{ name, text, label }]
 
 // Adds the new study to the book's list. Returns the new list, or throws an Error whose message is shown.
 // list: the current studies.json ([] for a book without studies); entry: { chapter, date, title, summary, themes, parts }.
-function mergeEntry(list, entry) {
-  // Safe default: refuse anything that would replace an existing study or file.
+// replace: the study of the same chapter is swapped for the new one (its visual and covers are kept; its old
+// files stay in the folder). Without it, anything that would replace an existing study or file is refused.
+function mergeEntry(list, entry, replace) {
   const taken = list.find(s => s.chapter === entry.chapter || s.covers?.includes(entry.chapter));
-  if (taken) throw new Error(`capitolul ${entry.chapter} are deja studiul „${taken.title}”`);
+  if (taken && !(replace && taken.chapter === entry.chapter))
+    throw new Error(taken.chapter === entry.chapter
+      ? `capitolul ${entry.chapter} are deja studiul „${taken.title}”; bifează „Înlocuiește” ca să-l schimbi`
+      : `capitolul ${entry.chapter} e acoperit de studiul „${taken.title}” (capitolul ${taken.chapter})`);
+  if (taken) {
+    list = list.filter(s => s !== taken);
+    entry = { ...entry, ...taken.visual && { visual: taken.visual }, ...taken.covers && { covers: taken.covers } };
+  }
   const used = new Set(list.flatMap(s => s.parts.map(p => p.file)));
   const clash = entry.parts.find(p => used.has(p.file));
   if (clash) throw new Error(`fișierul ${clash.file} există deja; redenumește-l`);
@@ -23,11 +31,11 @@ function mergeEntry(list, entry) {
 }
 
 // One commit with the .md files and studies.json, merged into the list as it is on GitHub at that moment.
-const commit = (b, entry, message) => commitFiles(async read => {
+const commit = (b, entry, replace, message) => commitFiles(async read => {
   const list = JSON.parse(await read(`data/studies/${b}/studies.json`) ?? '[]');
   return [
     ...files.map(f => ({ path: `data/studies/${b}/${f.name}`, text: f.text })),
-    { path: `data/studies/${b}/studies.json`, text: JSON.stringify(mergeEntry(list, entry), null, 2) + '\n' }
+    { path: `data/studies/${b}/studies.json`, text: JSON.stringify(mergeEntry(list, entry, replace), null, 2) + '\n' }
   ];
 }, message);
 
@@ -50,6 +58,7 @@ export function openImport() {
   $('importBook').innerHTML = books.map(b => `<option value="${b.id}">${esc(b.name)}</option>`).join('');
   $('importDate').value = today();
   files = [];
+  $('importReplace').checked = false;
   renderFiles();
   chapterLimit();
   status(github() ? '' : 'La trimitere se cere parola pentru GitHub.');
@@ -79,7 +88,8 @@ async function submit() {
   $('importSave').disabled = true;
   status('Se trimite pe GitHub…');
   try {
-    await commit(b, entry, `Studiu importat: ${b} ${chapter}, ${entry.title}`);
+    const replace = $('importReplace').checked;
+    await commit(b, entry, replace, `Studiu ${replace ? 'înlocuit' : 'importat'}: ${b} ${chapter}, ${entry.title}`);
     status('Trimis pe GitHub. Apare în aplicație după reconstruire (în jur de un minut); vizualizarea se face apoi pe calculator.', 'ok');
   } catch (e) {
     status('Nu s-a trimis: ' + esc(e.message), 'error');
