@@ -66,14 +66,14 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 > **5** pe când, celui ce nu lucrează, ci crede în Cel ce socotește pe păcătos neprihănit, credința pe care o are el îi este socotită ca neprihănire.
 > — *Romani 4:4-5, VDC*
 
-**Pavel trece la limbajul contabil: plata se datorează, darul se primește.** Neprihănirea înaintea lui Dumnezeu aparține celei de-a doua categorii. Constable îl citează pe Mickelsen: „Iată, pe scurt, doctrina pauliniană a îndreptățirii prin credință” ([Constable](https://www.studylight.org/commentaries/eng/dcc/romans-4.html)) [sursă de mâna a doua]. Finalul versetului 5 este analizat la §3.1.
+**Pavel trece la limbajul contabil: plata se datorează, darul se primește.** Neprihănirea înaintea lui Dumnezeu aparține celei de-a doua categorii. Constable îl citează pe Mickelsen: „Iată, pe scurt, doctrina pauliniană a îndreptățirii prin credință” ([Constable](https://www.studylight.org/commentaries/eng/dcc/romans-4.html)). Finalul versetului 5 este analizat la §3.1.
 
 > **6** Tot astfel, și David numește fericit pe omul acela pe care Dumnezeu, fără fapte, îl socotește neprihănit.
 > **7** „Ferice”, zice el, „de aceia ale căror fărădelegi sunt iertate și ale căror păcate sunt acoperite!
 > **8** Ferice de omul căruia nu-i ține Domnul în seamă păcatul!”
 > — *Romani 4:6-8, VDC*
 
-**David este al doilea martor cerut de Lege.** Cele două texte sunt legate prin același cuvânt-cheie, „a socoti”; Constable îl citează aici pe Moo ([Constable](https://www.studylight.org/commentaries/eng/dcc/romans-4.html)) [sursă de mâna a doua].
+**David este al doilea martor cerut de Lege.** Cele două texte sunt legate prin același cuvânt-cheie, „a socoti”; Constable îl citează aici pe Moo ([Constable](https://www.studylight.org/commentaries/eng/dcc/romans-4.html)).
 
 **Cei doi martori descriu fețele complementare ale îndreptățirii.** La Avraam, neprihănirea *este* trecută în cont; la David, păcatul *nu este* trecut în cont [observația mea]. Henry rezumă: „Cei iertați sunt singurii oameni fericiți” ([Henry](https://www.ccel.org/ccel/henry/mhc6.Rom.v.html)).
 
@@ -134,7 +134,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 
 **Gen 15:6 a fost scris „și pentru noi”: credința creștină are aceeași structură ca a lui Avraam.** El a crezut că Dumnezeu poate scoate viață dintr-un trup îmbătrânit; credinciosul crede că Dumnezeu a scos viață dintr-un mormânt.
 
-**Învierea confirmă primirea jertfei.** Guzik îl citează pe Lenski: dacă moartea L-ar fi ținut, El ar fi eșuat ([Guzik](https://enduringword.com/bible-commentary/romans-4/)) [sursă de mâna a doua]. Pentru cele două lecturi ale lui 4:25, vezi §3.1.
+**Învierea confirmă primirea jertfei.** Guzik îl citează pe Lenski: dacă moartea L-ar fi ținut, El ar fi eșuat ([Guzik](https://enduringword.com/bible-commentary/romans-4/)). Pentru cele două lecturi ale lui 4:25, vezi §3.1.
 
 ---
 
@@ -177,7 +177,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 
 **1. Îndreptățirea este un verdict trecut în cont, nu o calitate produsă de om.** „A socoti” este termen contabil; verbul apare de 11 ori în capitol (4:3, 4, 5, 6, 8, 9, 10, 11, 22, 23, 24) ([Bible Hub, Strong 3049](https://biblehub.com/greek/3049.htm)). Dumnezeu nu îl face pe credincios perfect drept, ci îl *socotește* perfect drept ([Guzik](https://enduringword.com/bible-commentary/romans-4/)). Piper: îndreptățirea este un verdict dat „într-o clipă: nevinovat, achitat, primit, iertat” ([Piper](https://www.desiringgod.org/messages/god-credits-faith-as-righteousness)).
 
-**2. Harul și plata se exclud reciproc.** Un dar pentru care se plătește parțial încetează să fie dar. Murray, citat de Guzik: antiteza din 4:4–5 „nu este pur și simplu între cel care lucrează și cel care nu lucrează” ([Guzik](https://enduringword.com/bible-commentary/romans-4/)) [sursă de mâna a doua]. Opoziția este între a lucra *pentru plată* și a te încrede în Dumnezeu; credinciosul lucrează, dar nu pentru a fi primit.
+**2. Harul și plata se exclud reciproc.** Un dar pentru care se plătește parțial încetează să fie dar. Murray, citat de Guzik: antiteza din 4:4–5 „nu este pur și simplu între cel care lucrează și cel care nu lucrează” ([Guzik](https://enduringword.com/bible-commentary/romans-4/)). Opoziția este între a lucra *pentru plată* și a te încrede în Dumnezeu; credinciosul lucrează, dar nu pentru a fi primit.
 
 **3. Credința este mâna goală, nu o faptă mai mică.** Calvin: credința aduce neprihănire nu ca act meritoriu, ci pentru că ne obține favoarea lui Dumnezeu ([Calvin](https://biblehub.com/commentaries/calvin/romans/4.htm)). Piper: „credința este abandonarea oricărei pretenții de a fi drept” și încrederea în Cel ce îl socotește drept pe cel nelegiuit ([Piper, răspuns lui Garlington](https://www.desiringgod.org/articles/john-piper-responds-to-don-garlington-on-the-imputation-of-righteousness)).
 
@@ -259,7 +259,7 @@ Calvin face legătura la 4:25: „începutul neprihănirii este să fii împăca
 >
 > **Traduceri.** Traducerile nu diferă notabil ca sens.
 >
-> **Comentatori.** Piper: Pavel adaugă la definiția îndreptățirii ne-socotirea păcatelor; ea are loc „cât timp suntem încă nelegiuiți, înainte de a putea exista vreo faptă bună” ([Piper](https://www.desiringgod.org/messages/when-the-lord-does-not-take-account-of-sin)). Wiersbe, citat de Constable: Dumnezeu ține evidența faptelor pentru răsplată, dar „nu ține evidența păcatelor noastre” ([Constable](https://www.studylight.org/commentaries/eng/dcc/romans-4.html)) [sursă de mâna a doua].
+> **Comentatori.** Piper: Pavel adaugă la definiția îndreptățirii ne-socotirea păcatelor; ea are loc „cât timp suntem încă nelegiuiți, înainte de a putea exista vreo faptă bună” ([Piper](https://www.desiringgod.org/messages/when-the-lord-does-not-take-account-of-sin)). Wiersbe, citat de Constable: Dumnezeu ține evidența faptelor pentru răsplată, dar „nu ține evidența păcatelor noastre” ([Constable](https://www.studylight.org/commentaries/eng/dcc/romans-4.html)).
 >
 > **Divergență.** Nu există divergențe notabile între comentatorii citați.
 
@@ -339,7 +339,7 @@ Guzik leagă psalmul de păcatul cu Bat-Șeba și Urie și de mărturisirea care
 >
 > **Traduceri.** VDC: a înviat **pentru că** am fost deja socotiți neprihăniți (învierea confirmă plata). NTR: „a fost înviat **pentru** îndreptățirea noastră” (Hristosul viu o aplică acum). NKJV păstrează ambiguitatea grecească: „because of our justification”.
 >
-> **Comentatori.** Calvin: Hristos a înviat ca să dea „poporului Său, fără plată, neprihănire și viață” ([Calvin](https://biblehub.com/commentaries/calvin/romans/4.htm)). Guzik, citându-l pe Lenski: dacă moartea L-ar fi ținut, El ar fi eșuat ([Guzik](https://enduringword.com/bible-commentary/romans-4/)) [sursă de mâna a doua].
+> **Comentatori.** Calvin: Hristos a înviat ca să dea „poporului Său, fără plată, neprihănire și viață” ([Calvin](https://biblehub.com/commentaries/calvin/romans/4.htm)). Guzik, citându-l pe Lenski: dacă moartea L-ar fi ținut, El ar fi eșuat ([Guzik](https://enduringword.com/bible-commentary/romans-4/)).
 >
 > **Divergență.** Cauză sau scop: ambele lecturi sunt teologic valide (§3.2).
 
@@ -432,7 +432,7 @@ Restul diferențelor („pecete”/„sigiliu” la 4:11, „chezășuită”/�
 | **Mărturisirea** | Botezul, „semn și pecete a legământului harului”, și pentru pruncii părinților credincioși (Westminster 28.1, 28.4) | Singurii subiecți potriviți: cei care mărturisesc „pocăință față de Dumnezeu și credință” în Hristos (1689, cap. 29) |
 | **Concesia** | Noul Testament nu relatează explicit niciun botez de prunc; argumentul este dedus din continuitatea legământului | Există o „suprapunere de sens” între 4:11 și botez (Piper); Pavel leagă strâns tăierea spirituală de botez (Salter) |
 
-<small>Surse: [D. Gibson, Themelios 37.2](https://www.thegospelcoalition.org/themelios/article/sacramental-supersessionism-revisited-a-response-to-martin-salter-on-the-re/) · [D. Thomas despre Calvin, Institutio 4.16 (Reformation21)](https://www.reformation21.org/blog-214-4161-4166-php/) [sursă de mâna a doua] · [Westminster (OPC)](https://www.opc.org/wcf.html) · [M. Salter, Themelios 35.1](https://www.thegospelcoalition.org/themelios/article/does-baptism-replace-circumcision-an-examination-of-the-relationship-betwee/) · [Piper, How Do Circumcision and Baptism Correspond?](https://www.desiringgod.org/messages/how-do-circumcision-and-baptism-correspond) · [1689 LBCF cap. 29](https://reformedreader.org/ccc/1689lbc/english/Chapter29.htm)</small>
+<small>Surse: [D. Gibson, Themelios 37.2](https://www.thegospelcoalition.org/themelios/article/sacramental-supersessionism-revisited-a-response-to-martin-salter-on-the-re/) · [D. Thomas despre Calvin, Institutio 4.16 (Reformation21)](https://www.reformation21.org/blog-214-4161-4166-php/)· [Westminster (OPC)](https://www.opc.org/wcf.html) · [M. Salter, Themelios 35.1](https://www.thegospelcoalition.org/themelios/article/does-baptism-replace-circumcision-an-examination-of-the-relationship-betwee/) · [Piper, How Do Circumcision and Baptism Correspond?](https://www.desiringgod.org/messages/how-do-circumcision-and-baptism-correspond) · [1689 LBCF cap. 29](https://reformedreader.org/ccc/1689lbc/english/Chapter29.htm)</small>
 
 **Textul invocat de ambele tabere este Coloseni 2:**
 
