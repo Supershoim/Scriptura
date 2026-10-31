@@ -519,7 +519,11 @@ function offlineSetup() {
   // Local previews skip the service worker (stale caches while editing) unless ?sw is added.
   const local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) && !new URLSearchParams(location.search).has('sw');
   if ('serviceWorker' in navigator && location.protocol.startsWith('http') && !local)
-    navigator.serviceWorker.register('sw.js').then(() => navigator.serviceWorker.ready).then(() => status('Disponibil offline')).catch(() => {});
+    navigator.serviceWorker.register('sw.js').then(reg => {
+      // The browser looks for a new sw.js only on a full page load; an app left open (or resumed on a phone) asks again.
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) reg.update().catch(() => {}); });
+      return navigator.serviceWorker.ready;
+    }).then(() => status('Disponibil offline')).catch(() => {});
   // The page came from the previous version's cache; a new service worker takes over once a new build is
   // published. Reload into it, unless something is being written in a dialog: then offer the reload.
   const updating = !!navigator.serviceWorker?.controller;
