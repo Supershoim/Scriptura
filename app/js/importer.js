@@ -12,14 +12,16 @@ let files = [];   // [{ name, text, label }]
 
 // Adds the new study to the book's list. Returns the new list, or throws an Error whose message is shown.
 // list: the current studies.json ([] for a book without studies); entry: { chapter, date, title, summary, themes, parts }.
-// replace: the study of the same chapter is swapped for the new one (its visual and covers are kept; its old
-// files stay in the folder). Without it, anything that would replace an existing study or file is refused.
+// replace: the study of the same chapter is swapped for the new one (its visual and covers are kept). Without it,
+// anything that would replace an existing study or file is refused. Returns { list, removed }: removed are the old
+// part files the new study does not reuse (the build refuses .md files studies.json does not list; git keeps them).
 function mergeEntry(list, entry, replace) {
   const taken = list.find(s => s.chapter === entry.chapter || s.covers?.includes(entry.chapter));
   if (taken && !(replace && taken.chapter === entry.chapter))
     throw new Error(taken.chapter === entry.chapter
       ? `capitolul ${entry.chapter} are deja studiul „${taken.title}”; bifează „Înlocuiește” ca să-l schimbi`
       : `capitolul ${entry.chapter} e acoperit de studiul „${taken.title}” (capitolul ${taken.chapter})`);
+  const removed = taken ? taken.parts.map(p => p.file).filter(f => !entry.parts.some(p => p.file === f)) : [];
   if (taken) {
     list = list.filter(s => s !== taken);
     entry = { ...entry, ...taken.visual && { visual: taken.visual }, ...taken.covers && { covers: taken.covers } };
@@ -27,15 +29,16 @@ function mergeEntry(list, entry, replace) {
   const used = new Set(list.flatMap(s => s.parts.map(p => p.file)));
   const clash = entry.parts.find(p => used.has(p.file));
   if (clash) throw new Error(`fișierul ${clash.file} există deja; redenumește-l`);
-  return [...list, entry].sort((a, b) => a.chapter - b.chapter);
+  return { list: [...list, entry].sort((a, b) => a.chapter - b.chapter), removed };
 }
 
 // One commit with the .md files and studies.json, merged into the list as it is on GitHub at that moment.
 const commit = (b, entry, replace, message) => commitFiles(async read => {
-  const list = JSON.parse(await read(`data/studies/${b}/studies.json`) ?? '[]');
+  const { list, removed } = mergeEntry(JSON.parse(await read(`data/studies/${b}/studies.json`) ?? '[]'), entry, replace);
   return [
     ...files.map(f => ({ path: `data/studies/${b}/${f.name}`, text: f.text })),
-    { path: `data/studies/${b}/studies.json`, text: JSON.stringify(mergeEntry(list, entry, replace), null, 2) + '\n' }
+    ...removed.map(name => ({ path: `data/studies/${b}/${name}`, text: null })),
+    { path: `data/studies/${b}/studies.json`, text: JSON.stringify(list, null, 2) + '\n' }
   ];
 }, message);
 

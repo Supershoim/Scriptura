@@ -45,7 +45,7 @@ export async function writeFile(path, edit, message) {
   }
 }
 
-// Several files in one commit (Git Data API). files(read) -> [{ path, text }], where read(path) gives a file's
+// Several files in one commit (Git Data API). files(read) -> [{ path, text }] (text null: delete), where read(path) gives a file's
 // text at the commit being built on (null if missing). A push from another device in between is retried once.
 export async function commitFiles(files, message) {
   for (let attempt = 0; ; attempt++) {
@@ -56,7 +56,8 @@ export async function commitFiles(files, message) {
     if (!r.ok) throw fail(r);
     const base = (await r.json()).tree.sha;
     const list = await files(async path => (await readFile(path, head))?.text ?? null);
-    const tree = list.map(f => ({ path: f.path, mode: '100644', type: 'blob', content: f.text }));
+    // text null deletes the file (sha: null in the Git Data API).
+    const tree = list.map(f => ({ path: f.path, mode: '100644', type: 'blob', ...f.text === null ? { sha: null } : { content: f.text } }));
     r = await gh('git/trees', { method: 'POST', body: JSON.stringify({ base_tree: base, tree }) });
     if (!r.ok) throw fail(r);
     r = await gh('git/commits', { method: 'POST', body: JSON.stringify({ message, tree: (await r.json()).sha, parents: [head] }) });
