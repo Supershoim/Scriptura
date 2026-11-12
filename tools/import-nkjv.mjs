@@ -71,9 +71,22 @@ function readPage(page) {
       if (cur.length) lines.push(makeLine(cur));
     }
   });
-  const fills = [];
+  // A fill is only what its clip lets through: the sea of a vector map is drawn far wider than the map
+  // (Acts 21, pdf page 1814; Rev. 2, page 2107) and, unclipped, would cover the notes and verses beside it.
+  const fills = [], clips = [[-Infinity, -Infinity, Infinity, Infinity]];
+  const clip = r => { const c = clips.at(-1); clips.push([Math.max(c[0], r[0]), Math.max(c[1], r[1]), Math.min(c[2], r[2]), Math.min(c[3], r[3])]); };
+  const keep = () => clips.push(clips.at(-1));
   page.run(new mupdf.Device({
-    fillPath(p, evenOdd, ctm, cs, color) { const r = pathBounds(p, ctm); if ((r[2] - r[0]) * (r[3] - r[1]) > 400) fills.push({ r, color: color.map(v => +v.toFixed(2)) }); }
+    fillPath(p, evenOdd, ctm, cs, color) {
+      const b = pathBounds(p, ctm), c = clips.at(-1);
+      const r = [Math.max(b[0], c[0]), Math.max(b[1], c[1]), Math.min(b[2], c[2]), Math.min(b[3], c[3])];
+      if (r[2] > r[0] && r[3] > r[1] && (r[2] - r[0]) * (r[3] - r[1]) > 400) fills.push({ r, color: color.map(v => +v.toFixed(2)) });
+    },
+    clipPath(p, evenOdd, ctm) { clip(pathBounds(p, ctm)); },
+    clipStrokePath(p, stroke, ctm) { clip(pathBounds(p, ctm)); },
+    clipImageMask(image, m) { const xs = [m[4], m[0] + m[4], m[2] + m[4], m[0] + m[2] + m[4]], ys = [m[5], m[1] + m[5], m[3] + m[5], m[1] + m[3] + m[5]]; clip([Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)]); },
+    clipText: keep, clipStrokeText: keep,
+    popClip() { if (clips.length > 1) clips.pop(); }
   }), mupdf.Matrix.identity);
   const [, , width, height] = page.getBounds();
   return { lines: lines.filter(l => l.text.trim()), images, fills, width, height };
@@ -123,7 +136,7 @@ function joinLine(text, next) {
   return text.replace(/\s+$/, '') + ' ' + next;
 }
 // The opening quote of a poetry line hangs in the margin, a tab before the word ("\u201C\tEntreat"): no space is kept.
-const tidy = s => s.replace(/\u00AD/g, '').replace(/([\u201C\u2018])\s+(?=\p{L})/gu, '$1').replace(/\s+/g, ' ').replace(/([–—])\s+(\d)/g, '$1$2').replace(/\s+([,;:.!?)\]])/g, '$1')
+const tidy = s => s.replace(/\u00AD/g, '').replace(/([\u201C\u2018(])\s+(?=\p{L})/gu, '$1').replace(/\s+/g, ' ').replace(/([–—])\s+(\d)/g, '$1$2').replace(/\s+([,;:.!?)\]])/g, '$1')
   .replace(/<(strong|em)>(\s*)<\/\1>/g, '$2').replace(/<\/(strong|em)>(\s*)<\1>/g, '$2').replace(/ {2,}/g, ' ').replace(/ ([,;:.!?)\]])/g, '$1').trim();
 const plain = html => html.replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 const slug = s => plain(s).toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
@@ -153,7 +166,10 @@ function findLinks(text, home) {
 const cites = (text, book) => [...new Set(findLinks(text, book).flatMap(l => l.to.map(([b, c, vs]) => `${b} ${c}:${vs[0]}${vs.length > 1 ? '-' + vs.at(-1) : ''}`)))];
 
 // A note label: "12:5", "11:10–25", "12:1–3, 7", "6:8—10:1" -> { ref, from: "c:v", to: "c:v" }.
-function parseLabel(s) {
+// The books of one chapter print the verse alone ("1, 2", "4"): it is read as chapter 1.
+const ONE_CHAPTER = new Set(['OBA', 'PHM', '2JN', '3JN', 'JUD']);
+function parseLabel(s, single = false) {
+  if (single && /^\s*\d/.test(s) && !s.includes(':')) s = '1:' + s.trim();
   const m = s.trim().match(/^(\d+):(\d+)(?:\s*[–—-]\s*(\d+)(?::(\d+))?)?((?:,\s*\d+(?:\s*[–—-]\s*\d+)?)*)$/);
   if (!m) return null;
   const c = +m[1], v = +m[2];
@@ -187,6 +203,9 @@ function inserts(P) {
   };
   for (const f of [...P.fills].sort((a, b) => area(b.r) - area(a.r))) {
     const w = f.r[2] - f.r[0], h = f.r[3] - f.r[1];
+    // A fill running far off the page is clipped artwork, not a box (Rev. 2, pdf page 2107: x from -162, over vv. 8-10);
+    // the articles bleed only a few points past the edge.
+    if (f.r[0] < -20 || f.r[2] > P.width + 20) continue;
     if (w < 100 || h < 40 || area(f.r) > P.width * P.height * 0.7 || f.color.every(v => v < 0.03) || f.color.every(v => v > 0.97) || near(f.color, STRIP) && (w < 120 || h < 60 || refsOnly(f.r))) continue;
     list.push({ kind: near(f.color, CULTURE) ? 'culture' : near(f.color, WORD) ? 'word' : near(f.color, ARTICLE) ? 'article' : 'chart', r: f.r });
   }
@@ -230,7 +249,7 @@ const ORDINAL = { FIRST: '1 ', SECOND: '2 ', THIRD: '3 ' };
 const titleOf = P => {
   const l = P.lines.find(l => l.gotham && l.max > 30);
   if (!l) return;
-  const name = l.text.trim().toUpperCase();
+  const name = l.text.trim().toUpperCase().replace(/^THE\s+/, '');   // "THE ACTS", "THE REVELATION"
   const above = P.lines.filter(s => s.gotham && s !== l && s.y < l.y && l.top - s.y < 20).at(-1);
   const ord = above?.text.toUpperCase().match(/\b(FIRST|SECOND|THIRD)\b/);
   return ord && byName.get(ORDINAL[ord[1]] + name) || byName.get(name);
@@ -242,6 +261,9 @@ for (let pn = 0; pn < doc.countPages(); pn++) {
   const t = titleOf(P);
   if (t) current = t;
   if (P.lines.some(l => /^\s*CONCORDANCE/.test(l.text) && l.gotham)) break;
+  // After Revelation come the articles ("Table of Monies, Weights, and Measures"): the first running header
+  // that no longer names Revelation ends the Bible.
+  if (current === 'REV' && !t && P.lines.some(l => header(l) && /\p{L}{3}/u.test(l.text) && !/REVELATION/.test(l.text))) break;
   if (!current) continue;
   if (only.length && !only.includes(current)) { if (only.every(b => bookPages.has(b))) break; continue; }
   (bookPages.get(current) || bookPages.set(current, []).get(current)).push({ pn, P });
@@ -314,7 +336,10 @@ for (const [book, pages] of bookPages) {
     const byCol = list => {
       if (!list.length) return [];
       const mid = (Math.min(...list.map(l => l.x0)) + Math.max(...list.map(l => l.x1))) / 2;
-      for (const l of list) { l.col = l.x0 >= mid - 2 ? 1 : 0; l.key = l.max > 20 ? l.top - 0.5 : l.y; }
+      // A chapter number (or drop cap) is read from the visible top of its figure (baseline less the cap height): the
+      // top of its glyph box takes in the font's ascent and can reach above the last line of the chapter before
+      // (1 Pet. 1:25 → 2:1, pdf page 2058: "pel was preached to you." was read after the "2").
+      for (const l of list) { l.col = l.x0 >= mid - 2 ? 1 : 0; l.key = l.max > 20 ? l.y - 0.72 * l.max - 0.5 : l.y; }
       return list.sort((a, b) => a.col - b.col || a.key - b.key || a.x0 - b.x0);
     };
 
@@ -398,7 +423,14 @@ for (const [book, pages] of bookPages) {
         if (entry) entry.text += ' ';
       }
       // Notes: a bold blue label opens a note; the bold words after it are the headwords.
-      for (const l of byCol(lines.filter(l => !l.insert && !l.es && !l.gotham && l.size >= 6.7 && l.size < 7.3))) {
+      // Justified lines vary in size (6.96-7.35 pt), and so do the captions printed beside a picture, outside its box:
+      // a line beside or under a picture or box that does not start where a note label starts (a column edge) is
+      // its caption (Luke 4, pdf page 1664: caption at x 328 under the picture, notes at 227).
+      const noteSized = lines.filter(l => !l.insert && !l.es && !l.gotham && l.size >= 6.7 && l.size < 7.4);
+      const edges = noteSized.filter(l => { const c = l.chars.find(c => c.c.trim()); return c?.blue && c.bold && /\d/.test(c.c); }).map(l => l.x0);
+      const caption = l => !edges.some(e => Math.abs(l.x0 - e) <= 3)
+        && ins.some(x => l.top < x.r[3] + 60 && l.y > x.r[1] - 5 && l.x1 > x.r[0] - 30 && l.x0 < x.r[2] + 30);
+      for (const l of byCol(noteSized.filter(l => !caption(l)))) {
         let run = [];
         const push = () => { if (run.length && note) note.lines.at(-1).push(...run); run = []; };
         note?.lines.push([]);
@@ -406,7 +438,7 @@ for (const [book, pages] of bookPages) {
           const ch = l.chars[i];
           if (ch.blue && ch.bold && /\d/.test(ch.c) && !l.chars[i - 1]?.blue) {
             let j = i; while (l.chars[j] && (l.chars[j].blue || l.chars[j].c === ' ' && l.chars[j + 1]?.blue)) j++;
-            const label = parseLabel(l.chars.slice(i, j).map(c => c.c).join(''));
+            const label = parseLabel(l.chars.slice(i, j).map(c => c.c).join(''), ONE_CHAPTER.has(book));
             if (label) {
               push();
               note = { ...label, pn, page: printed, lines: [[]] };
