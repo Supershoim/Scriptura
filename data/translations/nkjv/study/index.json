@@ -1396,17 +1396,17 @@
     {
      "w": "This is now",
      "v": "2:23",
-     "at": 17
+     "at": 16
     },
     {
      "w": "bone of my bones",
      "v": "2:23",
-     "at": 29
+     "at": 28
     },
     {
      "w": "She shall be called Woman",
      "v": "2:23",
-     "at": 69
+     "at": 68
     }
    ],
    "refs": []
@@ -1709,7 +1709,7 @@
     {
      "w": "cursed",
      "v": "3:14",
-     "at": 75
+     "at": 74
     }
    ],
    "refs": [
@@ -1778,12 +1778,12 @@
     {
      "w": "your sorrow and your conception",
      "v": "3:16",
-     "at": 48
+     "at": 47
     },
     {
      "w": "desire",
      "v": "3:16",
-     "at": 126
+     "at": 125
     }
    ],
    "refs": [
@@ -1807,7 +1807,7 @@
     {
      "w": "Cursed is the ground",
      "v": "3:17",
-     "at": 163
+     "at": 162
     },
     {
      "w": "toil, thorns and thistles, sweat"
@@ -2295,7 +2295,7 @@
     {
      "w": "I have killed a man",
      "v": "4:23",
-     "at": 107
+     "at": 106
     },
     {
      "w": "seventy-sevenfold",
@@ -3475,7 +3475,7 @@
     {
      "w": "while the earth remains",
      "v": "8:22",
-     "at": 2
+     "at": 1
     }
    ],
    "refs": [
@@ -3600,7 +3600,7 @@
     {
      "w": "image of God",
      "v": "9:6",
-     "at": 72
+     "at": 71
     }
    ],
    "refs": [
@@ -3745,12 +3745,12 @@
     {
      "w": "cursed",
      "v": "9:25",
-     "at": 16
+     "at": 15
     },
     {
      "w": "Canaan",
      "v": "9:25",
-     "at": 26
+     "at": 25
     }
    ],
    "refs": [
@@ -3769,7 +3769,7 @@
     {
      "w": "Shem",
      "v": "9:26",
-     "at": 47
+     "at": 46
     }
    ],
    "refs": [
@@ -4409,7 +4409,7 @@
     {
      "w": "Get out",
      "v": "12:1",
-     "at": 34
+     "at": 33
     },
     {
      "w": "country... family... father’s house"
@@ -5237,17 +5237,17 @@
     {
      "w": "Blessed be Abram",
      "v": "14:19",
-     "at": 31
+     "at": 30
     },
     {
      "w": "God Most High",
      "v": "14:19",
-     "at": 51
+     "at": 50
     },
     {
      "w": "Possessor",
      "v": "14:19",
-     "at": 66
+     "at": 65
     }
    ],
    "refs": [
@@ -6069,7 +6069,7 @@
     {
      "w": "Ishmael",
      "v": "16:11",
-     "at": 119
+     "at": 118
     }
    ],
    "refs": []
@@ -9014,12 +9014,12 @@
     {
      "w": "The mother of thousands of ten thousands",
      "v": "24:60",
-     "at": 71
+     "at": 70
     },
     {
      "w": "gates",
      "v": "24:60",
-     "at": 150
+     "at": 149
     }
    ],
    "refs": [
@@ -9464,12 +9464,12 @@
     {
      "w": "Two nations",
      "v": "25:23",
-     "at": 28
+     "at": 27
     },
     {
      "w": "younger",
      "v": "25:23",
-     "at": 180
+     "at": 179
     }
    ],
    "refs": [
@@ -10386,7 +10386,7 @@
     {
      "w": "Behold",
      "v": "27:39",
-     "at": 50
+     "at": 49
     }
    ],
    "refs": [
@@ -10510,7 +10510,7 @@
     {
      "w": "God Almighty",
      "v": "28:3",
-     "at": 6
+     "at": 5
     }
    ],
    "refs": [
@@ -16944,7 +16944,7 @@
     {
      "w": "God",
      "v": "48:15",
-     "at": 35
+     "at": 34
     }
    ],
    "refs": [
@@ -17076,12 +17076,12 @@
     {
      "w": "Reuben",
      "v": "49:3",
-     "at": 2
+     "at": 1
     },
     {
      "w": "firstborn",
      "v": "49:3",
-     "at": 21
+     "at": 20
     },
     {
      "w": "father’s bed",
@@ -17105,12 +17105,12 @@
     {
      "w": "Simeon and Levi",
      "v": "49:5",
-     "at": 2
+     "at": 1
     },
     {
      "w": "instruments of cruelty",
      "v": "49:5",
-     "at": 32
+     "at": 31
     }
    ],
    "refs": [
@@ -17223,7 +17223,7 @@
     {
      "w": "Zebulun",
      "v": "49:13",
-     "at": 2
+     "at": 1
     }
    ],
    "refs": [
@@ -17242,7 +17242,7 @@
     {
      "w": "Issachar",
      "v": "49:14",
-     "at": 2
+     "at": 1
     }
    ],
    "refs": [
@@ -17262,7 +17262,7 @@
     {
      "w": "Dan shall judge",
      "v": "49:16",
-     "at": 2
+     "at": 1
     }
    ],
    "refs": [
@@ -17301,7 +17301,7 @@
     {
      "w": "Gad, a troop shall tramp upon him",
      "v": "49:19",
-     "at": 2
+     "at": 1
     }
    ],
    "refs": [
@@ -17319,7 +17319,7 @@
     {
      "w": "Asher",
      "v": "49:20",
-     "at": 13
+     "at": 12
     }
    ],
    "refs": [
@@ -17337,7 +17337,7 @@
     {
      "w": "Naphtali",
      "v": "49:21",
-     "at": 2
+     "at": 1
     }
    ],
    "refs": [
@@ -17355,7 +17355,7 @@
     {
      "w": "Joseph",
      "v": "49:22",
-     "at": 2
+     "at": 1
     }
    ],
    "refs": [
@@ -17490,12 +17490,12 @@
     {
      "w": "Benjamin",
      "v": "49:27",
-     "at": 2
+     "at": 1
     },
     {
      "w": "wolf",
      "v": "49:27",
-     "at": 25
+     "at": 24
     }
    ],
    "refs": [
@@ -17791,6 +17791,1119 @@
    "k": "intro",
    "title": "GENESIS",
    "pdf": 36
+  },
+  "RUT.c1.chart.the-book-of-ruth": {
+   "b": "RUT",
+   "k": "chart",
+   "title": "The Book of Ruth",
+   "chapter": 1,
+   "pdf": 454,
+   "page": 419,
+   "refs": [],
+   "text": "The Book of Ruth Set in the dark and bloody days of the judges, the story of Ruth is silent about the underlying hostility and suspicion the two peoples—Judahites and Moabites—felt for each other. The original onslaught of the invading Israelite tribes against towns that were once Moabite had never been forgotten or forgiven, while the Hebrew prophets denounced Moab’s pride and arrogance for tryin"
+  },
+  "RUT.2.2.word.glean": {
+   "b": "RUT",
+   "k": "word",
+   "title": "glean",
+   "from": "2:2",
+   "to": "2:2",
+   "pdf": 455,
+   "page": 420,
+   "refs": [
+    "RUT 2:2",
+    "LEV 19:10",
+    "LEV 23:22",
+    "GEN 31:46",
+    "GEN 47:14",
+    "EXO 16:4-26",
+    "JDG 11:3",
+    "ISA 27:12",
+    "LEV 19:9-10"
+   ]
+  },
+  "RUT.2.10.word.foreigner": {
+   "b": "RUT",
+   "k": "word",
+   "title": "foreigner",
+   "from": "2:10",
+   "to": "2:10",
+   "pdf": 456,
+   "page": 421,
+   "refs": [
+    "RUT 2:10",
+    "GEN 31:15",
+    "EXO 2:22",
+    "DEU 17:15",
+    "ISA 28:21",
+    "EXO 12:43",
+    "EZK 44:9",
+    "ISA 56:3-8",
+    "EPH 2:11",
+    "EPH 3:6"
+   ]
+  },
+  "RUT.2.20.word.close-relative": {
+   "b": "RUT",
+   "k": "word",
+   "title": "close relative",
+   "from": "2:20",
+   "to": "2:20",
+   "pdf": 458,
+   "page": 423,
+   "refs": [
+    "RUT 2:20",
+    "RUT 3:12",
+    "RUT 4:1-6",
+    "ISA 60:16",
+    "1PE 1:18-19"
+   ]
+  },
+  "RUT.1.1": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:1",
+   "to": "1:1",
+   "pdf": 454,
+   "page": 419,
+   "lemmas": [
+    {
+     "w": "when the judges ruled",
+     "v": "1:1",
+     "at": 33
+    },
+    {
+     "w": "Moab",
+     "v": "1:1",
+     "at": 164
+    },
+    {
+     "w": "Bethlehem",
+     "v": "1:1",
+     "at": 114
+    }
+   ],
+   "refs": [
+    "GEN 19:30-37"
+   ]
+  },
+  "RUT.1.2": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:2",
+   "to": "1:2",
+   "pdf": 454,
+   "page": 419,
+   "lemmas": [
+    {
+     "w": "Elimelech",
+     "v": "1:2",
+     "at": 24
+    },
+    {
+     "w": "Mahlon",
+     "v": "1:2",
+     "at": 102
+    },
+    {
+     "w": "Chilion",
+     "v": "1:2",
+     "at": 113
+    },
+    {
+     "w": "Ephrathites",
+     "v": "1:2",
+     "at": 121
+    }
+   ],
+   "refs": [
+    "GEN 48:7",
+    "MIC 5:2"
+   ]
+  },
+  "RUT.1.4": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:4",
+   "to": "1:4",
+   "pdf": 454,
+   "page": 419,
+   "lemmas": [
+    {
+     "w": "Ruth",
+     "v": "1:4",
+     "at": 99
+    }
+   ],
+   "refs": [
+    "DEU 23:1-4"
+   ]
+  },
+  "RUT.1.6": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:6",
+   "to": "1:6",
+   "pdf": 454,
+   "page": 419,
+   "lemmas": [
+    {
+     "w": "the Lord",
+     "v": "1:6",
+     "at": 134
+    },
+    {
+     "w": "visited",
+     "v": "1:6",
+     "at": 147
+    }
+   ],
+   "refs": [
+    "EXO 20:5"
+   ]
+  },
+  "RUT.1.8": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:8",
+   "to": "1:8",
+   "pdf": 454,
+   "page": 419,
+   "lemmas": [
+    {
+     "w": "kindly",
+     "v": "1:8",
+     "at": 98
+    }
+   ],
+   "refs": []
+  },
+  "RUT.1.9": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:9",
+   "to": "1:9",
+   "pdf": 454,
+   "page": 419,
+   "lemmas": [
+    {
+     "w": "rest",
+     "v": "1:9",
+     "at": 33
+    }
+   ],
+   "refs": []
+  },
+  "RUT.1.10-13": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:10",
+   "to": "1:13",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "my daughters",
+     "v": "1:11",
+     "at": 28
+    }
+   ],
+   "refs": []
+  },
+  "RUT.1.13": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:13",
+   "to": "1:13",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "grieves",
+     "v": "1:13",
+     "at": 123
+    }
+   ],
+   "refs": []
+  },
+  "RUT.1.14": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:14",
+   "to": "1:14",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "Orpah",
+     "v": "1:14",
+     "at": 53
+    },
+    {
+     "w": "Ruth",
+     "v": "1:14",
+     "at": 89
+    }
+   ],
+   "refs": [
+    "RUT 4:18-22"
+   ]
+  },
+  "RUT.1.15": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:15",
+   "to": "1:15",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "gods",
+     "v": "1:15",
+     "at": 79
+    }
+   ],
+   "refs": []
+  },
+  "RUT.1.16-17": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:16",
+   "to": "1:17",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "the Lord",
+     "v": "1:17",
+     "at": 55
+    }
+   ],
+   "refs": [
+    "GEN 12:1-4"
+   ]
+  },
+  "RUT.1.20": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:20",
+   "to": "1:20",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "Naomi",
+     "v": "1:20",
+     "at": 38
+    },
+    {
+     "w": "Mara",
+     "v": "1:20",
+     "at": 53
+    }
+   ],
+   "refs": []
+  },
+  "RUT.1.21": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:21",
+   "to": "1:21",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "empty",
+     "v": "1:21",
+     "at": 56
+    }
+   ],
+   "refs": []
+  },
+  "RUT.1.22": {
+   "b": "RUT",
+   "k": "note",
+   "from": "1:22",
+   "to": "1:22",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "Ruth the Moabitess",
+     "v": "1:22",
+     "at": 23
+    },
+    {
+     "w": "the beginning of barley harvest",
+     "v": "1:22",
+     "at": 141
+    }
+   ],
+   "refs": [
+    "RUT 1:1-6"
+   ]
+  },
+  "RUT.2.1": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:1",
+   "to": "2:1",
+   "pdf": 455,
+   "page": 420,
+   "lemmas": [
+    {
+     "w": "Boaz",
+     "v": "2:1",
+     "at": 105
+    },
+    {
+     "w": "Elimelech",
+     "v": "2:1",
+     "at": 81
+    },
+    {
+     "w": "a man of great wealth",
+     "v": "2:1",
+     "at": 41
+    }
+   ],
+   "refs": [
+    "DEU 24:19-22"
+   ]
+  },
+  "RUT.2.2": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:2",
+   "to": "2:2",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "glean",
+     "v": "2:2",
+     "at": 73
+    }
+   ],
+   "refs": [
+    "LEV 23:22"
+   ]
+  },
+  "RUT.2.3": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:3",
+   "to": "2:3",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "happened to come",
+     "v": "2:3",
+     "at": 76
+    }
+   ],
+   "refs": []
+  },
+  "RUT.2.7": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:7",
+   "to": "2:7",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "sheaves",
+     "v": "2:7",
+     "at": 74
+    }
+   ],
+   "refs": []
+  },
+  "RUT.2.8-9": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:8",
+   "to": "2:9",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "Boaz",
+     "v": "2:8",
+     "at": 5
+    }
+   ],
+   "refs": []
+  },
+  "RUT.2.11-12": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:11",
+   "to": "2:12",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "reward",
+     "v": "2:12",
+     "at": 37
+    },
+    {
+     "w": "under",
+     "v": "2:12",
+     "at": 84
+    },
+    {
+     "w": "wings",
+     "v": "2:12",
+     "at": 96
+    }
+   ],
+   "refs": []
+  },
+  "RUT.2.13": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:13",
+   "to": "2:13",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "maidservant",
+     "v": "2:13",
+     "at": 116
+    }
+   ],
+   "refs": []
+  },
+  "RUT.2.14-16": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:14",
+   "to": "2:16",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "glean",
+     "v": "2:15",
+     "at": 24
+    }
+   ],
+   "refs": []
+  },
+  "RUT.2.17": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:17",
+   "to": "2:17",
+   "pdf": 456,
+   "page": 421,
+   "lemmas": [
+    {
+     "w": "barley",
+     "v": "2:17",
+     "at": 107
+    }
+   ],
+   "refs": []
+  },
+  "RUT.2.20": {
+   "b": "RUT",
+   "k": "note",
+   "from": "2:20",
+   "to": "2:20",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "kindness",
+     "v": "2:20",
+     "at": 92
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.1": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:1",
+   "to": "3:1",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "security",
+     "v": "3:1",
+     "at": 73
+    }
+   ],
+   "refs": [
+    "RUT 1:9"
+   ]
+  },
+  "RUT.3.2": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:2",
+   "to": "3:2",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "threshing floor",
+     "v": "3:2",
+     "at": 114
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.3": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:3",
+   "to": "3:3",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "best garment",
+     "v": "3:3",
+     "at": 57
+    },
+    {
+     "w": "eating and drinking",
+     "v": "3:3",
+     "at": 170
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.4": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:4",
+   "to": "3:4",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "uncover his feet",
+     "v": "3:4",
+     "at": 105
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.7-8": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:7",
+   "to": "3:8",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "softly",
+     "v": "3:7",
+     "at": 130
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.9": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:9",
+   "to": "3:9",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "your wing",
+     "v": "3:9",
+     "at": 103
+    },
+    {
+     "w": "for you are a close relative",
+     "v": "3:9",
+     "at": 114
+    }
+   ],
+   "refs": [
+    "RUT 2:12"
+   ]
+  },
+  "RUT.3.10-11": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:10",
+   "to": "3:11",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "kindness",
+     "v": "3:10",
+     "at": 81
+    },
+    {
+     "w": "virtuous woman",
+     "v": "3:11",
+     "at": 125
+    }
+   ],
+   "refs": [
+    "DEU 25:5-10"
+   ]
+  },
+  "RUT.3.12": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:12",
+   "to": "3:12",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "relative closer than",
+     "v": "3:12",
+     "at": 63
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.13": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:13",
+   "to": "3:13",
+   "pdf": 457,
+   "page": 422,
+   "lemmas": [
+    {
+     "w": "stay",
+     "v": "3:13",
+     "at": 0
+    },
+    {
+     "w": "as the Lord lives",
+     "v": "3:13",
+     "at": 221
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.14": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:14",
+   "to": "3:14",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "before one could recognize another",
+     "v": "3:14",
+     "at": 52
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.15": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:15",
+   "to": "3:15",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "laid it on her",
+     "v": "3:15",
+     "at": 120
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.16": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:16",
+   "to": "3:16",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "Is that you",
+     "v": "3:16",
+     "at": 47
+    }
+   ],
+   "refs": []
+  },
+  "RUT.3.17": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:17",
+   "to": "3:17",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "empty-handed",
+     "v": "3:17",
+     "at": 84
+    }
+   ],
+   "refs": [
+    "RUT 1:21"
+   ]
+  },
+  "RUT.3.18": {
+   "b": "RUT",
+   "k": "note",
+   "from": "3:18",
+   "to": "3:18",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "matter",
+     "v": "3:18",
+     "at": 63
+    }
+   ],
+   "refs": []
+  },
+  "RUT.4.1-2": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:1",
+   "to": "4:2",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "gate",
+     "v": "4:1",
+     "at": 24
+    },
+    {
+     "w": "close relative",
+     "v": "4:1",
+     "at": 65
+    }
+   ],
+   "refs": []
+  },
+  "RUT.4.3": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:3",
+   "to": "4:3",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "close relative",
+     "v": "4:3",
+     "at": 20
+    },
+    {
+     "w": "sold",
+     "v": "4:3",
+     "at": 88
+    }
+   ],
+   "refs": []
+  },
+  "RUT.4.4": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:4",
+   "to": "4:4",
+   "pdf": 458,
+   "page": 423,
+   "refs": [
+    "LEV 25:23"
+   ]
+  },
+  "RUT.4.5": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:5",
+   "to": "4:5",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "To perpetuate the name of the dead",
+     "v": "4:5",
+     "at": 138
+    },
+    {
+     "w": "dead",
+     "v": "4:5",
+     "at": 132
+    }
+   ],
+   "refs": [
+    "RUT 4:10"
+   ]
+  },
+  "RUT.4.6": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:6",
+   "to": "4:6",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "right of redemption",
+     "v": "4:6",
+     "at": 107
+    },
+    {
+     "w": "own inheritance",
+     "v": "4:6",
+     "at": 76
+    }
+   ],
+   "refs": []
+  },
+  "RUT.4.7-8": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:7",
+   "to": "4:8",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "sandal",
+     "v": "4:7",
+     "at": 129
+    },
+    {
+     "w": "close relative",
+     "v": "4:8",
+     "at": 14
+    }
+   ],
+   "refs": [
+    "DEU 25:8-10"
+   ]
+  },
+  "RUT.4.9": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:9",
+   "to": "4:9",
+   "pdf": 458,
+   "page": 423,
+   "lemmas": [
+    {
+     "w": "witnesses",
+     "v": "4:9",
+     "at": 57
+    },
+    {
+     "w": "Chilion and Mahlon"
+    },
+    {
+     "w": "from the hand of Naomi",
+     "v": "4:9",
+     "at": 162
+    }
+   ],
+   "refs": []
+  },
+  "RUT.4.10": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:10",
+   "to": "4:10",
+   "pdf": 459,
+   "page": 424,
+   "lemmas": [
+    {
+     "w": "acquired",
+     "v": "4:10",
+     "at": 58
+    },
+    {
+     "w": "Mahlon",
+     "v": "4:10",
+     "at": 43
+    }
+   ],
+   "refs": []
+  },
+  "RUT.4.11": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:11",
+   "to": "4:11",
+   "pdf": 459,
+   "page": 424,
+   "lemmas": [
+    {
+     "w": "The people",
+     "v": "4:11",
+     "at": 8
+    },
+    {
+     "w": "the elders",
+     "v": "4:11",
+     "at": 45
+    },
+    {
+     "w": "we are witnesses",
+     "v": "4:11",
+     "at": 64
+    },
+    {
+     "w": "the Lord",
+     "v": "4:11",
+     "at": 82
+    },
+    {
+     "w": "Rachel and Leah",
+     "v": "4:11",
+     "at": 139
+    }
+   ],
+   "refs": [
+    "GEN 35:23-26",
+    "RUT 1:22"
+   ]
+  },
+  "RUT.4.12": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:12",
+   "to": "4:12",
+   "pdf": 459,
+   "page": 424,
+   "lemmas": [
+    {
+     "w": "Tamar",
+     "v": "4:12",
+     "at": 48
+    }
+   ],
+   "refs": [
+    "GEN 38:26"
+   ]
+  },
+  "RUT.4.13": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:13",
+   "to": "4:13",
+   "pdf": 459,
+   "page": 424,
+   "lemmas": [
+    {
+     "w": "the Lord gave her conception",
+     "v": "4:13",
+     "at": 71
+    }
+   ],
+   "refs": [
+    "PSA 139:13"
+   ]
+  },
+  "RUT.4.14-15": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:14",
+   "to": "4:15",
+   "pdf": 459,
+   "page": 424,
+   "lemmas": [
+    {
+     "w": "close relative",
+     "v": "4:14",
+     "at": 92
+    },
+    {
+     "w": "The women",
+     "v": "4:14",
+     "at": 5
+    },
+    {
+     "w": "Israel",
+     "v": "4:14",
+     "at": 138
+    },
+    {
+     "w": "old age",
+     "v": "4:15",
+     "at": 64
+    },
+    {
+     "w": "is better",
+     "v": "4:15",
+     "at": 118
+    },
+    {
+     "w": "seven sons",
+     "v": "4:15",
+     "at": 140
+    }
+   ],
+   "refs": []
+  },
+  "RUT.4.17": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:17",
+   "to": "4:17",
+   "pdf": 459,
+   "page": 424,
+   "lemmas": [
+    {
+     "w": "neighbor women",
+     "v": "4:17",
+     "at": 9
+    },
+    {
+     "w": "Obed",
+     "v": "4:17",
+     "at": 106
+    }
+   ],
+   "refs": [
+    "MAT 1:5"
+   ]
+  },
+  "RUT.4.18-22": {
+   "b": "RUT",
+   "k": "note",
+   "from": "4:18",
+   "to": "4:22",
+   "pdf": 459,
+   "page": 424,
+   "lemmas": [
+    {
+     "w": "Perez",
+     "v": "4:18",
+     "at": 29
+    }
+   ],
+   "refs": []
+  },
+  "RUT.intro": {
+   "b": "RUT",
+   "k": "intro",
+   "title": "RUTH",
+   "pdf": 451
   },
   "ROM.c1.culture.the-city-of-rome": {
    "b": "ROM",
@@ -18633,6 +19746,22 @@
    ],
    "refs": []
   },
+  "ROM.2.14": {
+   "b": "ROM",
+   "k": "note",
+   "from": "2:14",
+   "to": "2:14",
+   "pdf": 1834,
+   "page": 1799,
+   "lemmas": [
+    {
+     "w": "by nature do the things in the law",
+     "v": "2:14",
+     "at": 44
+    }
+   ],
+   "refs": []
+  },
   "ROM.2.15": {
    "b": "ROM",
    "k": "note",
@@ -18857,6 +19986,16 @@
    "page": 1800,
    "lemmas": [
     {
+     "w": "unrighteousness",
+     "v": "3:5",
+     "at": 11
+    },
+    {
+     "w": "righteousness",
+     "v": "3:5",
+     "at": 13
+    },
+    {
      "w": "I speak as a man",
      "v": "3:5",
      "at": 120
@@ -18958,7 +20097,7 @@
     {
      "w": "righteous",
      "v": "3:10",
-     "at": 34
+     "at": 33
     }
    ],
    "refs": [
@@ -19016,17 +20155,17 @@
     {
      "w": "tomb",
      "v": "3:13",
-     "at": 26
+     "at": 25
     },
     {
      "w": "throat",
      "v": "3:13",
-     "at": 8
+     "at": 7
     },
     {
      "w": "lips",
      "v": "3:13",
-     "at": 116
+     "at": 114
     }
    ],
    "refs": []
@@ -19042,7 +20181,7 @@
     {
      "w": "cursing",
      "v": "3:14",
-     "at": 25
+     "at": 24
     }
    ],
    "refs": []
@@ -19058,7 +20197,7 @@
     {
      "w": "swift to shed blood",
      "v": "3:15",
-     "at": 17
+     "at": 16
     }
    ],
    "refs": []
@@ -19074,19 +20213,44 @@
     {
      "w": "Fear of God",
      "v": "3:18",
-     "at": 14
-    },
-    {
-     "w": "guilty"
-    },
-    {
-     "w": "before God"
+     "at": 13
     }
    ],
    "refs": [
     "JOB 28:28",
     "PRO 1:7"
    ]
+  },
+  "ROM.3.19": {
+   "b": "ROM",
+   "k": "note",
+   "from": "3:19",
+   "to": "3:19",
+   "pdf": 1835,
+   "page": 1800,
+   "lemmas": [
+    {
+     "w": "Whatever the law says",
+     "v": "3:19",
+     "at": 17
+    },
+    {
+     "w": "All the world",
+     "v": "3:19",
+     "at": 117
+    },
+    {
+     "w": "guilty",
+     "v": "3:19",
+     "at": 142
+    },
+    {
+     "w": "before God",
+     "v": "3:19",
+     "at": 149
+    }
+   ],
+   "refs": []
   },
   "ROM.3.20": {
    "b": "ROM",
@@ -19417,7 +20581,12 @@
      "at": 8
     },
     {
-     "w": "teousness of faith. Heir of the world"
+     "w": "through the law",
+     "v": "4:13",
+     "at": 89
+    },
+    {
+     "w": "through the righteousness of faith. Heir of the world"
     },
     {
      "w": "seed",
@@ -19703,9 +20872,9 @@
      "at": 18
     },
     {
-     "w": "out",
+     "w": "the love of God has been poured out",
      "v": "5:5",
-     "at": 70
+     "at": 38
     }
    ],
    "refs": [
@@ -21470,6 +22639,20 @@
    ],
    "refs": []
   },
+  "ROM.8.34": {
+   "b": "ROM",
+   "k": "note",
+   "from": "8:34",
+   "to": "8:34",
+   "pdf": 1845,
+   "page": 1810,
+   "lemmas": [
+    {
+     "w": "Christ... died... makes intercession"
+    }
+   ],
+   "refs": []
+  },
   "ROM.8.35": {
    "b": "ROM",
    "k": "note",
@@ -21497,7 +22680,7 @@
     {
      "w": "sheep for the slaughter",
      "v": "8:36",
-     "at": 82
+     "at": 81
     }
    ],
    "refs": [
@@ -22151,7 +23334,7 @@
     {
      "w": "disobedient",
      "v": "10:21",
-     "at": 73
+     "at": 72
     }
    ],
    "refs": []
@@ -22952,7 +24135,7 @@
     {
      "w": "heap coals of fire",
      "v": "12:20",
-     "at": 108
+     "at": 107
     }
    ],
    "refs": []
@@ -23327,7 +24510,7 @@
     {
      "w": "every knee",
      "v": "14:11",
-     "at": 47
+     "at": 46
     }
    ],
    "refs": [
@@ -23626,7 +24809,7 @@
     {
      "w": "root of Jesse",
      "v": "15:12",
-     "at": 43
+     "at": 42
     }
    ],
    "refs": [
@@ -24148,6 +25331,16 @@
      "w": "establish",
      "v": "16:25",
      "at": 26
+    },
+    {
+     "w": "gospel",
+     "v": "16:25",
+     "at": 56
+    },
+    {
+     "w": "the preaching of Jesus Christ",
+     "v": "16:25",
+     "at": 67
     },
     {
      "w": "mystery",
@@ -25372,6 +26565,7 @@
     "GEN.39.21",
     "GEN.41.28",
     "GEN.47.7-10",
+    "RUT.1.16-17",
     "ROM.4.11-12",
     "ROM.11.17"
    ],
@@ -25413,6 +26607,7 @@
     "GEN.34.30-31",
     "GEN.39.5",
     "GEN.39.21",
+    "RUT.1.16-17",
     "ROM.4.11-12"
    ],
    "covers": [
@@ -25450,6 +26645,7 @@
     "GEN.25.31",
     "GEN.28.4",
     "GEN.39.21",
+    "RUT.1.16-17",
     "ROM.4.11-12",
     "ROM.11.17"
    ],
@@ -28727,7 +29923,8 @@
   "EXO 20:5": {
    "cited": [
     "GEN.1.26",
-    "GEN.4.13"
+    "GEN.4.13",
+    "RUT.1.6"
    ]
   },
   "EXO 20:6": {
@@ -30238,7 +31435,8 @@
   },
   "MAT 1:5": {
    "cited": [
-    "GEN.5.6-20"
+    "GEN.5.6-20",
+    "RUT.4.17"
    ]
   },
   "MAT 1:6": {
@@ -30435,7 +31633,8 @@
     "GEN.22.3",
     "GEN.22.5",
     "GEN.24.50-51",
-    "GEN.37.2"
+    "GEN.37.2",
+    "RUT.1.16-17"
    ],
    "covers": [
     "GEN.12.1-15.21"
@@ -32004,7 +33203,11 @@
   },
   "RUT 1:1": {
    "cited": [
-    "GEN.12.10"
+    "GEN.12.10",
+    "RUT.1.22"
+   ],
+   "own": [
+    "RUT.1.1"
    ]
   },
   "GEN 39:6": {
@@ -32454,7 +33657,8 @@
   "MIC 5:2": {
    "cited": [
     "GEN.15.18",
-    "GEN.35.16"
+    "GEN.35.16",
+    "RUT.1.2"
    ]
   },
   "MIC 5:3": {
@@ -32980,7 +34184,11 @@
   "RUT 4:1": {
    "cited": [
     "GEN.19.1",
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.2.20.word.close-relative"
+   ],
+   "own": [
+    "RUT.4.1-2"
    ]
   },
   "GEN 24:26": {
@@ -33262,26 +34470,41 @@
   "GEN 19:30": {
    "own": [
     "GEN.19.30"
+   ],
+   "cited": [
+    "RUT.1.1"
    ]
   },
   "GEN 19:32": {
    "own": [
     "GEN.19.32"
+   ],
+   "cited": [
+    "RUT.1.1"
    ]
   },
   "GEN 19:33": {
    "own": [
     "GEN.19.33"
+   ],
+   "cited": [
+    "RUT.1.1"
    ]
   },
   "GEN 19:36": {
    "own": [
     "GEN.19.36-38"
+   ],
+   "cited": [
+    "RUT.1.1"
    ]
   },
   "GEN 19:37": {
    "covers": [
     "GEN.19.36-38"
+   ],
+   "cited": [
+    "RUT.1.1"
    ]
   },
   "GEN 19:38": {
@@ -33783,7 +35006,8 @@
    "cited": [
     "GEN.21.27",
     "GEN.26.28",
-    "GEN.26.30"
+    "GEN.26.30",
+    "RUT.2.2.word.glean"
    ],
    "covers": [
     "GEN.31.45-46"
@@ -34699,6 +35923,9 @@
    "cited": [
     "GEN.24.60",
     "GEN.38.8"
+   ],
+   "own": [
+    "RUT.4.11"
    ]
   },
   "RUT 4:12": {
@@ -34707,6 +35934,9 @@
     "GEN.38.6",
     "GEN.38.8",
     "GEN.38.30"
+   ],
+   "own": [
+    "RUT.4.12"
    ]
   },
   "1CH 1:32": {
@@ -35648,6 +36878,9 @@
   "RUT 2:3": {
    "cited": [
     "GEN.29.9"
+   ],
+   "own": [
+    "RUT.2.3"
    ]
   },
   "GEN 29:11": {
@@ -35782,7 +37015,8 @@
   },
   "GEN 31:15": {
    "cited": [
-    "GEN.29.27"
+    "GEN.29.27",
+    "RUT.2.10.word.foreigner"
    ],
    "own": [
     "GEN.31.15"
@@ -36743,7 +37977,8 @@
   },
   "GEN 48:7": {
    "cited": [
-    "GEN.35.16"
+    "GEN.35.16",
+    "RUT.1.2"
    ],
    "covers": [
     "GEN.48.5-7"
@@ -36754,7 +37989,8 @@
   },
   "RUT 1:3": {
    "cited": [
-    "GEN.35.16"
+    "GEN.35.16",
+    "RUT.1.22"
    ]
   },
   "MAT 2:1": {
@@ -37131,7 +38367,8 @@
     "GEN.37.7",
     "GEN.37.21",
     "GEN.42.24",
-    "GEN.46.8-27"
+    "GEN.46.8-27",
+    "RUT.4.11"
    ]
   },
   "GEN 37:8": {
@@ -37382,6 +38619,9 @@
    ],
    "own": [
     "GEN.38.26"
+   ],
+   "cited": [
+    "RUT.4.12"
    ]
   },
   "GEN 49:10": {
@@ -37400,77 +38640,119 @@
   },
   "DEU 25:5": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.3.10-11"
    ]
   },
   "DEU 25:6": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.3.10-11"
    ]
   },
   "DEU 25:7": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.3.10-11"
    ]
   },
   "DEU 25:8": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.3.10-11",
+    "RUT.4.7-8"
    ]
   },
   "DEU 25:9": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.3.10-11",
+    "RUT.4.7-8"
    ]
   },
   "DEU 25:10": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.3.10-11",
+    "RUT.4.7-8"
    ]
   },
   "RUT 4:2": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.2.20.word.close-relative"
+   ],
+   "covers": [
+    "RUT.4.1-2"
    ]
   },
   "RUT 4:3": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.2.20.word.close-relative"
+   ],
+   "own": [
+    "RUT.4.3"
    ]
   },
   "RUT 4:4": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.2.20.word.close-relative"
+   ],
+   "own": [
+    "RUT.4.4"
    ]
   },
   "RUT 4:5": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.2.20.word.close-relative"
+   ],
+   "own": [
+    "RUT.4.5"
    ]
   },
   "RUT 4:6": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.2.20.word.close-relative"
+   ],
+   "own": [
+    "RUT.4.6"
    ]
   },
   "RUT 4:7": {
    "cited": [
     "GEN.38.8"
+   ],
+   "own": [
+    "RUT.4.7-8"
    ]
   },
   "RUT 4:8": {
    "cited": [
     "GEN.38.8"
+   ],
+   "covers": [
+    "RUT.4.7-8"
    ]
   },
   "RUT 4:9": {
    "cited": [
     "GEN.38.8"
+   ],
+   "own": [
+    "RUT.4.9"
    ]
   },
   "RUT 4:10": {
    "cited": [
-    "GEN.38.8"
+    "GEN.38.8",
+    "RUT.4.5"
+   ],
+   "own": [
+    "RUT.4.10"
    ]
   },
   "2SA 13:23": {
@@ -37741,7 +39023,11 @@
   },
   "RUT 4:18": {
    "cited": [
-    "GEN.38.29"
+    "GEN.38.29",
+    "RUT.1.14"
+   ],
+   "own": [
+    "RUT.4.18-22"
    ]
   },
   "1CH 2:3": {
@@ -38545,19 +39831,22 @@
   "GEN 35:24": {
    "cited": [
     "GEN.42.24",
-    "GEN.46.8-27"
+    "GEN.46.8-27",
+    "RUT.4.11"
    ]
   },
   "GEN 35:25": {
    "cited": [
     "GEN.42.24",
-    "GEN.46.8-27"
+    "GEN.46.8-27",
+    "RUT.4.11"
    ]
   },
   "GEN 35:26": {
    "cited": [
     "GEN.42.24",
-    "GEN.46.8-27"
+    "GEN.46.8-27",
+    "RUT.4.11"
    ]
   },
   "GEN 42:25": {
@@ -39210,6 +40499,9 @@
   "GEN 47:14": {
    "own": [
     "GEN.47.14"
+   ],
+   "cited": [
+    "RUT.2.2.word.glean"
    ]
   },
   "GEN 47:15": {
@@ -39705,7 +40997,8 @@
   },
   "ISA 60:16": {
    "cited": [
-    "GEN.49.24"
+    "GEN.49.24",
+    "RUT.2.20.word.close-relative"
    ]
   },
   "NUM 6:1": {
@@ -39941,6 +41234,605 @@
   "JOS 24:32": {
    "cited": [
     "GEN.50.25"
+   ]
+  },
+  "RUT 2:2": {
+   "own": [
+    "RUT.2.2.word.glean",
+    "RUT.2.2"
+   ]
+  },
+  "LEV 19:10": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "LEV 23:22": {
+   "cited": [
+    "RUT.2.2.word.glean",
+    "RUT.2.2"
+   ]
+  },
+  "EXO 16:4": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:5": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:6": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:7": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:8": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:9": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:10": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:11": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:12": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:13": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:14": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:15": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:16": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:17": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:18": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:19": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:20": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:21": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:22": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:23": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:24": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:25": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "EXO 16:26": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "JDG 11:3": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "ISA 27:12": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "LEV 19:9": {
+   "cited": [
+    "RUT.2.2.word.glean"
+   ]
+  },
+  "RUT 2:10": {
+   "own": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "EXO 2:22": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "DEU 17:15": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "ISA 28:21": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "EXO 12:43": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "EZK 44:9": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "ISA 56:3": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "ISA 56:4": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "ISA 56:5": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "ISA 56:6": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "ISA 56:7": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "ISA 56:8": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "EPH 2:11": {
+   "cited": [
+    "RUT.2.10.word.foreigner"
+   ]
+  },
+  "EPH 3:6": {
+   "cited": [
+    "RUT.2.10.word.foreigner",
+    "ROM.11.25.word.mystery",
+    "ROM.16.25"
+   ]
+  },
+  "RUT 2:20": {
+   "own": [
+    "RUT.2.20.word.close-relative",
+    "RUT.2.20"
+   ]
+  },
+  "RUT 3:12": {
+   "cited": [
+    "RUT.2.20.word.close-relative"
+   ],
+   "own": [
+    "RUT.3.12"
+   ]
+  },
+  "1PE 1:18": {
+   "cited": [
+    "RUT.2.20.word.close-relative"
+   ]
+  },
+  "1PE 1:19": {
+   "cited": [
+    "RUT.2.20.word.close-relative"
+   ]
+  },
+  "GEN 19:31": {
+   "cited": [
+    "RUT.1.1"
+   ]
+  },
+  "GEN 19:34": {
+   "cited": [
+    "RUT.1.1"
+   ]
+  },
+  "GEN 19:35": {
+   "cited": [
+    "RUT.1.1"
+   ]
+  },
+  "RUT 1:2": {
+   "own": [
+    "RUT.1.2"
+   ],
+   "cited": [
+    "RUT.1.22"
+   ]
+  },
+  "RUT 1:4": {
+   "own": [
+    "RUT.1.4"
+   ],
+   "cited": [
+    "RUT.1.22"
+   ]
+  },
+  "DEU 23:1": {
+   "cited": [
+    "RUT.1.4"
+   ]
+  },
+  "DEU 23:2": {
+   "cited": [
+    "RUT.1.4"
+   ]
+  },
+  "DEU 23:3": {
+   "cited": [
+    "RUT.1.4"
+   ]
+  },
+  "DEU 23:4": {
+   "cited": [
+    "RUT.1.4"
+   ]
+  },
+  "RUT 1:6": {
+   "own": [
+    "RUT.1.6"
+   ],
+   "cited": [
+    "RUT.1.22"
+   ]
+  },
+  "RUT 1:8": {
+   "own": [
+    "RUT.1.8"
+   ]
+  },
+  "RUT 1:9": {
+   "own": [
+    "RUT.1.9"
+   ],
+   "cited": [
+    "RUT.3.1"
+   ]
+  },
+  "RUT 1:10": {
+   "own": [
+    "RUT.1.10-13"
+   ]
+  },
+  "RUT 1:11": {
+   "covers": [
+    "RUT.1.10-13"
+   ]
+  },
+  "RUT 1:12": {
+   "covers": [
+    "RUT.1.10-13"
+   ]
+  },
+  "RUT 1:13": {
+   "covers": [
+    "RUT.1.10-13"
+   ],
+   "own": [
+    "RUT.1.13"
+   ]
+  },
+  "RUT 1:14": {
+   "own": [
+    "RUT.1.14"
+   ]
+  },
+  "RUT 4:19": {
+   "cited": [
+    "RUT.1.14"
+   ],
+   "covers": [
+    "RUT.4.18-22"
+   ]
+  },
+  "RUT 4:20": {
+   "cited": [
+    "RUT.1.14"
+   ],
+   "covers": [
+    "RUT.4.18-22"
+   ]
+  },
+  "RUT 4:21": {
+   "cited": [
+    "RUT.1.14"
+   ],
+   "covers": [
+    "RUT.4.18-22"
+   ]
+  },
+  "RUT 4:22": {
+   "cited": [
+    "RUT.1.14"
+   ],
+   "covers": [
+    "RUT.4.18-22"
+   ]
+  },
+  "RUT 1:15": {
+   "own": [
+    "RUT.1.15"
+   ]
+  },
+  "RUT 1:16": {
+   "own": [
+    "RUT.1.16-17"
+   ]
+  },
+  "RUT 1:17": {
+   "covers": [
+    "RUT.1.16-17"
+   ]
+  },
+  "RUT 1:20": {
+   "own": [
+    "RUT.1.20"
+   ]
+  },
+  "RUT 1:21": {
+   "own": [
+    "RUT.1.21"
+   ],
+   "cited": [
+    "RUT.3.17"
+   ]
+  },
+  "RUT 1:22": {
+   "own": [
+    "RUT.1.22"
+   ],
+   "cited": [
+    "RUT.4.11"
+   ]
+  },
+  "RUT 1:5": {
+   "cited": [
+    "RUT.1.22"
+   ]
+  },
+  "RUT 2:1": {
+   "own": [
+    "RUT.2.1"
+   ]
+  },
+  "DEU 24:19": {
+   "cited": [
+    "RUT.2.1"
+   ]
+  },
+  "DEU 24:20": {
+   "cited": [
+    "RUT.2.1"
+   ]
+  },
+  "DEU 24:21": {
+   "cited": [
+    "RUT.2.1"
+   ]
+  },
+  "DEU 24:22": {
+   "cited": [
+    "RUT.2.1"
+   ]
+  },
+  "RUT 2:7": {
+   "own": [
+    "RUT.2.7"
+   ]
+  },
+  "RUT 2:8": {
+   "own": [
+    "RUT.2.8-9"
+   ]
+  },
+  "RUT 2:9": {
+   "covers": [
+    "RUT.2.8-9"
+   ]
+  },
+  "RUT 2:11": {
+   "own": [
+    "RUT.2.11-12"
+   ]
+  },
+  "RUT 2:12": {
+   "covers": [
+    "RUT.2.11-12"
+   ],
+   "cited": [
+    "RUT.3.9"
+   ]
+  },
+  "RUT 2:13": {
+   "own": [
+    "RUT.2.13"
+   ]
+  },
+  "RUT 2:14": {
+   "own": [
+    "RUT.2.14-16"
+   ]
+  },
+  "RUT 2:15": {
+   "covers": [
+    "RUT.2.14-16"
+   ]
+  },
+  "RUT 2:16": {
+   "covers": [
+    "RUT.2.14-16"
+   ]
+  },
+  "RUT 2:17": {
+   "own": [
+    "RUT.2.17"
+   ]
+  },
+  "RUT 3:1": {
+   "own": [
+    "RUT.3.1"
+   ]
+  },
+  "RUT 3:2": {
+   "own": [
+    "RUT.3.2"
+   ]
+  },
+  "RUT 3:3": {
+   "own": [
+    "RUT.3.3"
+   ]
+  },
+  "RUT 3:4": {
+   "own": [
+    "RUT.3.4"
+   ]
+  },
+  "RUT 3:7": {
+   "own": [
+    "RUT.3.7-8"
+   ]
+  },
+  "RUT 3:8": {
+   "covers": [
+    "RUT.3.7-8"
+   ]
+  },
+  "RUT 3:9": {
+   "own": [
+    "RUT.3.9"
+   ]
+  },
+  "RUT 3:10": {
+   "own": [
+    "RUT.3.10-11"
+   ]
+  },
+  "RUT 3:11": {
+   "covers": [
+    "RUT.3.10-11"
+   ]
+  },
+  "RUT 3:13": {
+   "own": [
+    "RUT.3.13"
+   ]
+  },
+  "RUT 3:14": {
+   "own": [
+    "RUT.3.14"
+   ]
+  },
+  "RUT 3:15": {
+   "own": [
+    "RUT.3.15"
+   ]
+  },
+  "RUT 3:16": {
+   "own": [
+    "RUT.3.16"
+   ]
+  },
+  "RUT 3:17": {
+   "own": [
+    "RUT.3.17"
+   ]
+  },
+  "RUT 3:18": {
+   "own": [
+    "RUT.3.18"
+   ]
+  },
+  "LEV 25:23": {
+   "cited": [
+    "RUT.4.4"
+   ]
+  },
+  "RUT 4:13": {
+   "own": [
+    "RUT.4.13"
+   ]
+  },
+  "PSA 139:13": {
+   "cited": [
+    "RUT.4.13"
+   ]
+  },
+  "RUT 4:14": {
+   "own": [
+    "RUT.4.14-15"
+   ]
+  },
+  "RUT 4:15": {
+   "covers": [
+    "RUT.4.14-15"
+   ]
+  },
+  "RUT 4:17": {
+   "own": [
+    "RUT.4.17"
    ]
   },
   "ROM 1:8": {
@@ -40554,6 +42446,9 @@
   "ROM 3:19": {
    "cited": [
     "ROM.4.25.word.justification"
+   ],
+   "own": [
+    "ROM.3.19"
    ]
   },
   "ROM 3:20": {
@@ -41029,12 +42924,6 @@
     "ROM.16.25"
    ]
   },
-  "EPH 3:6": {
-   "cited": [
-    "ROM.11.25.word.mystery",
-    "ROM.16.25"
-   ]
-  },
   "EPH 3:7": {
    "cited": [
     "ROM.11.25.word.mystery",
@@ -41300,6 +43189,9 @@
   "ROM 2:14": {
    "cited": [
     "ROM.16.25.word.revelation"
+   ],
+   "own": [
+    "ROM.2.14"
    ]
   },
   "ROM 2:15": {
@@ -42974,6 +44866,11 @@
   "ROM 8:33": {
    "own": [
     "ROM.8.33"
+   ]
+  },
+  "ROM 8:34": {
+   "own": [
+    "ROM.8.34"
    ]
   },
   "ROM 8:35": {

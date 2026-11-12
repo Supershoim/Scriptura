@@ -21,7 +21,7 @@ const HEADINGS = /^(Ilustrare|Aplicație|Autorul|Data)\b/;
 const counts = { B: 0, Q: 0 }, listed = { B: 0, Q: 0 };
 for (const [key, { text }] of Object.entries(memory)) {
   for (const [, run] of text.matchAll(/<strong>(.*?)<\/strong>/g)) {
-    const words = run.replace(/<[^>]+>/g, '').replace(/^\s*\d+:\d+[^.]*\.\s*/, '').replace(/\s*…\s*/g, ' … ').trim();
+    const words = run.replace(/<[^>]+>/g, '').replace(/^\s*\d+:\d+(?:\s*[–,-]\s*\d+)*\.?\s*/, '').replace(/\s*…\s*/g, ' … ').trim();
     if (!/\p{L}/u.test(words) || HEADINGS.test(words)) continue;
     counts.B++;
     // "a … b": each part must be VDCC text

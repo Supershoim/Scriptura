@@ -122,7 +122,8 @@ function joinLine(text, next) {
   if (/[–—](<\/\w+>)?$/.test(text)) return text + next;
   return text.replace(/\s+$/, '') + ' ' + next;
 }
-const tidy = s => s.replace(/\u00AD/g, '').replace(/\s+/g, ' ').replace(/([–—])\s+(\d)/g, '$1$2').replace(/\s+([,;:.!?)\]])/g, '$1')
+// The opening quote of a poetry line hangs in the margin, a tab before the word ("\u201C\tEntreat"): no space is kept.
+const tidy = s => s.replace(/\u00AD/g, '').replace(/([\u201C\u2018])\s+(?=\p{L})/gu, '$1').replace(/\s+/g, ' ').replace(/([–—])\s+(\d)/g, '$1$2').replace(/\s+([,;:.!?)\]])/g, '$1')
   .replace(/<(strong|em)>(\s*)<\/\1>/g, '$2').replace(/<\/(strong|em)>(\s*)<\1>/g, '$2').replace(/ {2,}/g, ' ').replace(/ ([,;:.!?)\]])/g, '$1').trim();
 const plain = html => html.replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 const slug = s => plain(s).toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
@@ -348,7 +349,9 @@ for (const [book, pages] of bookPages) {
       }
     } else {
       // Verses.
-      for (const l of byCol(lines.filter(l => !l.insert && l.es && l.size >= 8.5 && !(l.bold && l.max < 20)))) {
+      // A turnover holding only small capitals ("LORD?": L 9 pt, ORD 6 pt) is a verse line too, though its median size is small.
+      const smallCaps = l => l.max >= 8.5 && l.chars.every(c => !c.c.trim() || c.size >= 8.5 || /[A-Z]/.test(c.c));
+      for (const l of byCol(lines.filter(l => !l.insert && l.es && (l.size >= 8.5 || smallCaps(l)) && !(l.bold && l.max < 20)))) {
         let s = '';
         for (const ch of l.chars) {
           if (ch.size > 40) { flush(); chapter = chapter + 1 || 1; drop = ch.c; startVerse(1); continue; }
@@ -395,7 +398,7 @@ for (const [book, pages] of bookPages) {
         if (entry) entry.text += ' ';
       }
       // Notes: a bold blue label opens a note; the bold words after it are the headwords.
-      for (const l of byCol(lines.filter(l => !l.insert && !l.es && !l.gotham && l.size >= 6.7 && l.size < 7.2))) {
+      for (const l of byCol(lines.filter(l => !l.insert && !l.es && !l.gotham && l.size >= 6.7 && l.size < 7.3))) {
         let run = [];
         const push = () => { if (run.length && note) note.lines.at(-1).push(...run); run = []; };
         note?.lines.push([]);
