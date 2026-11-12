@@ -43,7 +43,9 @@ export const localRefs = s => merge(s).replace(BOOK_REF, name => romanian.get(by
 // The paragraphs and the note's label ("<strong>1:2. ") stay as in the English; bold and italic runs may be
 // regrouped (a KJV phrase becomes the VDCC wording), but must be closed in order.
 const paragraphs = s => (s.match(/<\/?p>/g) || []).join('');
-const label = s => (s.match(/^<p><strong>(\d+:\d+[^.<]*\.)/) || [])[1] || '';
+// Only the reference of the label is compared ("1:2", "3:16, 17", "10:1–11:1"): the words after it are the headword,
+// translated into the VDCC wording (NKJV "1:28 base... despised:", KJV "1:2.").
+const label = s => (s.match(/^<p><strong>(\d+:\d+(?:\s*[–—,-]\s*\d+(?::\d+)?)*)/) || [])[1] || '';
 const balanced = s => { const open = []; for (const [, close, tag] of s.matchAll(/<(\/?)(p|strong|em)>/g)) { if (!close) open.push(tag); else if (open.pop() !== tag) return false; } return !open.length; };
 const refs = s => (s.match(/\d+:\d+/g) || []).sort().join(' ');
 export function check(en, text) {
