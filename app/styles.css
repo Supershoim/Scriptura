@@ -322,18 +322,22 @@ button.chc { padding: 0; }
 .doc .ref-link { font-family: inherit; }
 
 /* Study visuals (app/js/visual.js). The diagrams use these names; colors follow the app's theme. */
-.visual {
+/* .visbox too: studies embed SVGs that use the same names directly in their text. */
+.visual, .visbox {
   --fg: var(--ink); --surface: var(--paper); --accent: var(--green); --accent-soft: var(--soft); --todo: var(--head); --f-ui: var(--sans);
+  --line-2: #b9bcae; --rubric: #a3342b; --rubric-soft: #f7e6e3;
   --lane: #534ab7; --lane-soft: #eeedfe; --warn: #c2511f; --warn-soft: #faece7;
   --j1: #7f77dd; --j2: #1d9e75; --j3: #d85a30; --j4: #378add; --ep-bg: #faeeda; --ep-bd: #ba7517; --ep-fg: #633806;
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .visual {
+  :root:not([data-theme="light"]) .visual, :root:not([data-theme="light"]) .visbox {
+    --line-2: #5c6c62; --rubric: #e58a7e; --rubric-soft: #4a2420;
     --lane: #afa9ec; --lane-soft: #2a2750; --warn: #f0997b; --warn-soft: #4a1f12;
     --j1: #9c95e8; --j2: #3fbf93; --j3: #ee8160; --j4: #6aa8ea; --ep-bg: #412402; --ep-bd: #ef9f27; --ep-fg: #fac775;
   }
 }
-:root[data-theme="dark"] .visual {
+:root[data-theme="dark"] .visual, :root[data-theme="dark"] .visbox {
+  --line-2: #5c6c62; --rubric: #e58a7e; --rubric-soft: #4a2420;
   --lane: #afa9ec; --lane-soft: #2a2750; --warn: #f0997b; --warn-soft: #4a1f12;
   --j1: #9c95e8; --j2: #3fbf93; --j3: #ee8160; --j4: #6aa8ea; --ep-bg: #412402; --ep-bd: #ef9f27; --ep-fg: #fac775;
 }
