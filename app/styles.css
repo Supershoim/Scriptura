@@ -327,6 +327,20 @@ button.chc { padding: 0; }
 .doc .kcard dt { color: var(--muted); font-weight: 500; }
 .doc .kcard dd { margin: 0; }
 @media (max-width: 640px) { .doc .kcard { grid-template-columns: minmax(0, 1fr); } }
+/* Chapter map: a blockquote holding a numbered list with sub-lists (title, italic thesis, questions › points,
+   references in `code`). Drawn as a numbered timeline; the study text stays as written. */
+.doc blockquote:has(> ol > li > ul) { padding: 18px 24px 8px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); }
+.doc blockquote:has(> ol > li > ul) > p:first-child strong { font-size: 1.08em; }
+.doc blockquote:has(> ol > li > ul) > p > em:only-child { display: block; padding: 10px 16px; border-radius: 10px; background: var(--card-bg); color: var(--card-k); font: italic 15px/1.6 var(--sans); }
+.doc blockquote:has(> ol > li > ul) > p > em:only-child .ref-link { font-family: inherit; }
+.doc blockquote:has(> ol > li > ul) > ol { list-style: none; counter-reset: chmap; padding: 0; margin: 1em 0 0; }
+.doc blockquote:has(> ol > li > ul) > ol > li { counter-increment: chmap; position: relative; padding: 0 0 18px 50px; margin: 0; }
+.doc blockquote:has(> ol > li > ul) > ol > li::before { content: counter(chmap); position: absolute; left: 0; top: -2px; width: 30px; height: 30px; border-radius: 50%; background: var(--card-k); color: var(--paper); font: 600 14px/30px var(--sans); text-align: center; }
+.doc blockquote:has(> ol > li > ul) > ol > li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 34px; bottom: 4px; width: 2px; background: var(--line); }
+.doc blockquote:has(> ol > li > ul) code { display: inline-block; margin-left: 6px; padding: 1px 9px; border-radius: 999px; background: var(--card-bg); color: var(--card-k); font: 600 12px/1.6 var(--sans); white-space: nowrap; }
+.doc blockquote:has(> ol > li > ul) ul { list-style: none; padding: 0; margin: 6px 0 0; }
+.doc blockquote:has(> ol > li > ul) ul > li { position: relative; padding-left: 18px; margin: 4px 0; font: 15px/1.6 var(--sans); color: var(--muted); }
+.doc blockquote:has(> ol > li > ul) ul > li::before { content: ""; position: absolute; left: 3px; top: .65em; width: 6px; height: 6px; border-radius: 50%; background: var(--vnum); }
 
 /* Bible reader: studies of the chapter */
 .studylink { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
