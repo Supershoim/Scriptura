@@ -2,6 +2,7 @@
   --bg: #f6f5f0; --paper: #fffefa; --ink: #233b37; --muted: #6f7b74; --line: #dedfd5; --soft: #e9efdf;
   --green: #173f3b; --on-green: #fff; --gold: #9c733a; --highlight: #f9e9b5; --selected: #f8f2dc; --hover: #f6f7ef;
   --head: #f0f1e8; --font: 19px; --kjv: #3b5a7a; --box: #eef0ea;
+  --card-bg: #e6edf4; --card-k: #2c5282; --vnum: #b03a2e;
   --serif: Georgia, "Times New Roman", serif; --sans: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
   color-scheme: light;
 }
@@ -10,12 +11,14 @@
     --bg: #1b2522; --paper: #22302b; --ink: #e6e9de; --muted: #a5b5a7; --line: #3d4b43; --soft: #33463a;
     --green: #b5c99d; --on-green: #1b3025; --gold: #d6b879; --highlight: #6e5830; --selected: #3d3b28; --hover: #283a31;
     --head: #2a3a32; --logo-ink: #1b3025; --kjv: #9dbbd9; --box: #2a3934; color-scheme: dark;
+    --card-bg: #26333d; --card-k: #9cbbe0; --vnum: #e58a7e;
   }
 }
 :root[data-theme="dark"] {
   --bg: #1b2522; --paper: #22302b; --ink: #e6e9de; --muted: #a5b5a7; --line: #3d4b43; --soft: #33463a;
   --green: #b5c99d; --on-green: #1b3025; --gold: #d6b879; --highlight: #6e5830; --selected: #3d3b28; --hover: #283a31;
   --head: #2a3a32; --logo-ink: #1b3025; --kjv: #9dbbd9; --box: #2a3934; color-scheme: dark;
+  --card-bg: #26333d; --card-k: #9cbbe0; --vnum: #e58a7e;
 }
 
 [hidden] { display: none !important; }
@@ -313,6 +316,17 @@ button.chc { padding: 0; }
 .doc th, .doc td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 .doc th { background: var(--head); font-weight: 600; }
 .doc tr:last-child td { border-bottom: 0; }
+/* Study blocks written as HTML in the .md: chapter intros and key-verse cards (verse | meaning, translations). */
+.doc .intro { margin: .8em 0 1em; padding: 12px 18px; background: var(--card-bg); border-radius: 10px; font: 15px/1.6 var(--sans); }
+.doc .kcard { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); margin: 1em 0 1.2em; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--paper); }
+.doc .kc-l { padding: 16px 22px; background: var(--card-bg); }
+.doc .kc-k { display: block; margin-bottom: 8px; font: 600 12px/1.4 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--card-k); }
+.doc .kc-k .ref-link { text-transform: none; }
+.doc .kc-v b { font: 700 .85em var(--sans); color: var(--vnum); }
+.doc .kcard dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 10px 14px; align-content: start; margin: 0; padding: 16px 20px; font: 14px/1.6 var(--sans); }
+.doc .kcard dt { color: var(--muted); font-weight: 500; }
+.doc .kcard dd { margin: 0; }
+@media (max-width: 640px) { .doc .kcard { grid-template-columns: minmax(0, 1fr); } }
 
 /* Bible reader: studies of the chapter */
 .studylink { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
