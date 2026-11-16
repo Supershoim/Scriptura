@@ -1,8 +1,8 @@
 // The study notes printed with a translation (the NKJV Study Bible): for each verse the notes and the word
 // studies, opened from the label after the verse (footnotes.js) in the pop-up; the book introduction and the
 // inserts of each chapter on their own pages ("Sumar", "Informații suplimentare"). Files:
-// data/translations/<id>/study/<BOOK>.json and <BOOK>.book.json, in English, and <BOOK>.<lang>.json, translated
-// (tools/study-notes.mjs, tools/translate-notes.mjs).
+// data/translations/<id>/study/<BOOK>.json and <BOOK>.book.json, in English, and <BOOK>.<lang>.json and
+// <BOOK>.book.<lang>.json, translated (tools/study-notes.mjs, tools/translate-notes.mjs).
 // Pictures open in a viewer that fits them to the window; a click there shows them at full size.
 import { $, esc } from './util.js';
 import { available, fetchJson, embeddedStudies } from './data.js';
@@ -64,19 +64,26 @@ function boxHtml(meta, box) {
 
 // ---------- The book file: introduction ("Sumar") and the inserts of each chapter ----------
 
-// [{ meta, intro, chapters }] for the sources that have a book file for b.
+// [{ meta, lang, intro, chapters }] for the sources that have a book file for b: the Romanian translation
+// where there is one (lang "ro"), else the English.
 export async function bookExtras(b) {
   const list = sources().filter(m => m.studyBooks?.includes(b));
-  return Promise.all(list.map(async meta => ({ meta, ...await load(meta, b, 'book').catch(() => ({})) })));
+  return Promise.all(list.map(async meta => {
+    const lang = meta.studyBookLanguages?.ro?.includes(b) ? 'ro' : '';
+    return { meta, lang, ...await load(meta, b, lang ? 'book.' + lang : 'book').catch(() => ({})) };
+  }));
 }
 
 // The introduction of the book (page "Sumar") or the inserts of chapter c (page "Informații suplimentare").
 export function extrasHtml(list, c) {
-  return list.map(({ meta, intro, chapters }) => {
-    const source = `<p class="sn-about">${esc(meta.description)} · în engleză · ${esc(meta.copyright)}</p>`;
-    if (!c) return intro ? `<div class="sn sn-page" lang="${esc(meta.language || 'en')}">${intro.sub ? `<p class="eyebrow">${esc(intro.sub)}</p>` : ''}${intro.html}${(intro.figures || []).map(f => figureHtml(meta, f)).join('')}${source}</div>` : '';
+  return list.map(({ meta, lang, intro, chapters }) => {
+    const source = `<p class="sn-about">${esc(meta.description)} · ${lang ? 'traducere de lucru în română; citatele biblice sunt textul VDCC' : 'în engleză'} · ${esc(meta.copyright)}</p>`;
+    // An item not yet translated (or changed since) keeps its English.
+    const own = (item, html) => lang && item.untranslated ? `<div lang="en"><span class="sn-pending">netradus încă, în engleză</span>${html}</div>` : html;
+    const open = `<div class="sn sn-page" lang="${esc(lang || meta.language || 'en')}">`;
+    if (!c) return intro ? open + own(intro, `${intro.sub ? `<p class="eyebrow">${esc(intro.sub)}</p>` : ''}${intro.html}${(intro.figures || []).map(f => figureHtml(meta, f)).join('')}`) + source + '</div>' : '';
     const items = chapters?.[c] || [];
-    return items.length ? `<div class="sn sn-page" lang="${esc(meta.language || 'en')}">${items.map(i => i.k === 'box' ? boxHtml(meta, i) : figureHtml(meta, i)).join('')}${source}</div>` : '';
+    return items.length ? open + items.map(i => own(i, i.k === 'box' ? boxHtml(meta, i) : figureHtml(meta, i))).join('') + source + '</div>' : '';
   }).join('');
 }
 

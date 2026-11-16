@@ -7,6 +7,8 @@
 //   node tools/translate-notes.mjs export kjv GEN ro [file]   segments still to translate -> JSON [{ key, en }]
 //   node tools/translate-notes.mjs apply kjv GEN ro file      merges a JSON { key: text } after checking it
 //   node tools/translate-notes.mjs status kjv GEN ro
+// With "GEN.book" for <BOOK>, the same for the book file: the introduction and the chapter inserts
+// (memory study/<lang>/GEN.book.json).
 //
 // In the exported English the references already use the Romanian abbreviations ("Is. 40:12" -> "Is. 40:12",
 // "Heb. 11:3" -> "Evr. 11:3"). Apply checks that a translation keeps the same <p>, <strong> and <em> tags and
@@ -33,6 +35,21 @@ export function segments(verses) {
   return out;
 }
 
+// The same for a book file (<BOOK>.book.json): the introduction ("Sumar", keys "intro|…") and the inserts of
+// each chapter ("Informații suplimentare", keys "c11|0|…"); a box's label ("Bible Times & Culture Notes") too.
+export function bookSegments(extra) {
+  const out = [];
+  const visit = (obj, key) => {
+    for (const f of [...FIELDS, 'label']) if (typeof obj[f] === 'string' && obj[f].trim()) out.push({ key: `${key}|${f}`, en: obj[f], set: t => { obj[f] = t; } });
+    (obj.figures || []).forEach((x, j) => visit(x, `${key}|figures.${j}`));
+  };
+  if (extra.intro) visit(extra.intro, 'intro');
+  for (const [c, items] of Object.entries(extra.chapters || {})) items.forEach((item, i) => visit(item, `c${c}|${i}`));
+  return out;
+}
+// "RUT" -> the verse notes, "RUT.book" -> the book file.
+export const segmentsOf = (b, data) => b.endsWith('.book') ? bookSegments(data) : segments(data);
+
 // "Heb. 11:3" -> "Evr. 11:3": the abbreviation of data/books.json, with a full stop when it shortens the name
 // ("Fapte 3:22" is written whole, as in Romanian use).
 const romanian = new Map(books.map(b => [b.id, b.abbr + (b.name.length > b.abbr.length && b.abbr !== 'Fapte' && !/\s/.test(b.name[b.abbr.length]) ? '.' : '')]));
@@ -42,19 +59,19 @@ export const localRefs = s => merge(s).replace(BOOK_REF, name => romanian.get(by
 
 // The paragraphs and the note's label ("<strong>1:2. ") stay as in the English; bold and italic runs may be
 // regrouped (a KJV phrase becomes the VDCC wording), but must be closed in order.
-const paragraphs = s => (s.match(/<\/?p>/g) || []).join('');
+const paragraphs = s => (s.match(/<\/?(?:p|h3)>/g) || []).join('');
 // Only the reference of the label is compared ("1:2", "3:16, 17", "10:1–11:1"): the words after it are the headword,
 // translated into the VDCC wording (NKJV "1:28 base... despised:", KJV "1:2.").
 const label = s => (s.match(/^<p><strong>(\d+:\d+(?:\s*[–—,-]\s*\d+(?::\d+)?)*)/) || [])[1] || '';
-const balanced = s => { const open = []; for (const [, close, tag] of s.matchAll(/<(\/?)(p|strong|em)>/g)) { if (!close) open.push(tag); else if (open.pop() !== tag) return false; } return !open.length; };
+const balanced = s => { const open = []; for (const [, close, tag] of s.matchAll(/<(\/?)(p|h3|strong|em)>/g)) { if (!close) open.push(tag); else if (open.pop() !== tag) return false; } return !open.length; };
 const refs = s => (s.match(/\d+:\d+/g) || []).sort().join(' ');
 export function check(en, text) {
   const problems = [];
-  if (paragraphs(en) !== paragraphs(text)) problems.push('the paragraphs differ from the English');
+  if (paragraphs(en) !== paragraphs(text)) problems.push('the paragraphs (<p>, <h3>) differ from the English');
   if (label(en) !== label(text)) problems.push(`the label differs from the English (${label(en)})`);
-  if (!balanced(text)) problems.push('<p>/<strong>/<em> tags not closed in order');
+  if (!balanced(text)) problems.push('<p>/<h3>/<strong>/<em> tags not closed in order');
   if (refs(en) !== refs(text)) problems.push(`the references differ (${refs(en)} / ${refs(text)})`);
-  if (/<(?!\/?(?:p|strong|em)>)/.test(text)) problems.push('markup other than <p>, <strong>, <em>');
+  if (/<(?!\/?(?:p|h3|strong|em)>)/.test(text)) problems.push('markup other than <p>, <h3>, <strong>, <em>');
   return problems;
 }
 
@@ -68,7 +85,7 @@ if (import.meta.main) {
     process.exit(1);
   }
   const verses = JSON.parse(fs.readFileSync(path.join(root, 'data/translations', id, 'study', `${b}.json`), 'utf8'));
-  const segs = segments(verses), memory = readMemory(id, b, lang);
+  const segs = segmentsOf(b, verses), memory = readMemory(id, b, lang);
   const todo = segs.filter(s => memory[s.key]?.src !== hash(s.en));
   if (cmd === 'status') {
     const words = list => list.reduce((n, s) => n + s.en.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length, 0);

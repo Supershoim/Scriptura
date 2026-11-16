@@ -15,10 +15,11 @@
 //
 // Translations of the notes (tools/translate-notes.mjs) live in study/<lang>/<BOOK>.json; the build writes the
 // translated book as study/<BOOK>.<lang>.json, the English kept (and the item marked "untranslated") wherever a
-// segment is missing or its English changed since it was translated.
+// segment is missing or its English changed since it was translated. The book file likewise: memory
+// study/<lang>/<BOOK>.book.json, output study/<BOOK>.book.<lang>.json, listed in "studyBookLanguages".
 import fs from 'node:fs';
 import path from 'node:path';
-import { segments, hash, readMemory, check, localRefs } from './translate-notes.mjs';
+import { segmentsOf, hash, readMemory, check, localRefs } from './translate-notes.mjs';
 
 const KINDS = new Set(['intro', 'note', 'box', 'figure']);
 const ALLOWED = /<(?!\/?(?:p|strong|em)>)[^>]*>/, INTRO_ALLOWED = /<(?!\/?(?:p|h3|strong|em)>)[^>]*>/;
@@ -75,13 +76,22 @@ export function loadStudyNotes(dataDir, translation) {
         }
         files[`data/${bookRel}`] = JSON.stringify(extra);
         ((meta.studyBooks ||= [])).push(b);
+        translate(`${b}.book`, extra, where, 'studyBookLanguages');
       }
     }
 
-    for (const lang of fs.existsSync(dir) ? fs.readdirSync(dir).filter(d => /^[a-z]{2}$/.test(d) && fs.existsSync(path.join(dir, d, `${b}.json`))) : []) {
-      const memory = readMemory(meta.id, b, lang), copy = JSON.parse(JSON.stringify(verses));
+    translate(b, verses, at, 'studyLanguages');
+  }
+  return { files, images: [...images].map(src => `data/translations/${meta.id}/study/${src}`), problems };
+
+  // Puts the translation memories of b (or "b.book") over a copy of data; the item of a missing or stale
+  // segment keeps its English and is marked "untranslated".
+  function translate(name, data, at, list) {
+    const b = name.replace(/\.book$/, '');
+    for (const lang of fs.existsSync(dir) ? fs.readdirSync(dir).filter(d => /^[a-z]{2}$/.test(d) && fs.existsSync(path.join(dir, d, `${name}.json`))) : []) {
+      const memory = readMemory(meta.id, name, lang), copy = JSON.parse(JSON.stringify(data));
       let stale = 0;
-      for (const seg of segments(copy)) {
+      for (const seg of segmentsOf(name, copy)) {
         const entry = memory[seg.key];
         if (entry?.src === hash(seg.en)) {
           const bad = check(localRefs(seg.en), entry.text);
@@ -90,14 +100,16 @@ export function loadStudyNotes(dataDir, translation) {
         } else {
           stale++;
           const [v, i] = seg.key.split('|');
-          copy[v][+i].untranslated = true;
+          if (v === 'intro') copy.intro.untranslated = true;
+          else if (v[0] === 'c') copy.chapters[v.slice(1)][+i].untranslated = true;
+          else copy[v][+i].untranslated = true;
         }
       }
-      for (const key of Object.keys(memory)) if (!segments(verses).some(s => s.key === key)) problems.push(`${at} (${lang}): "${key}" is no longer a segment of the notes`);
-      files[`data/translations/${meta.id}/study/${b}.${lang}.json`] = JSON.stringify(copy);
-      ((meta.studyLanguages ||= {})[lang] ||= []).push(b);
+      const keys = new Set(segmentsOf(name, data).map(x => x.key));
+      for (const key of Object.keys(memory)) if (!keys.has(key)) problems.push(`${at} (${lang}): "${key}" is no longer a segment of the notes`);
+      files[`data/translations/${meta.id}/study/${name}.${lang}.json`] = JSON.stringify(copy);
+      ((meta[list] ||= {})[lang] ||= []).push(b);
       if (stale) console.warn(`  ! ${at} (${lang}): ${stale} segment(s) not translated or changed since; shown in English`);
     }
   }
-  return { files, images: [...images].map(src => `data/translations/${meta.id}/study/${src}`), problems };
 }
