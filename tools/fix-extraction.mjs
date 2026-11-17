@@ -4,7 +4,8 @@
 //   1. a space before punctuation where a superscript footnote digit was dropped (PDF „Babel¹,” → „Babel ,”);
 //   2. words hyphenated at a line end and joined the wrong way (PDF „Padan-⏎Aram” → „PadanAram”,
 //      „nu-⏎mele” → „nu-mele”): the form the rest of the Bible uses wins;
-//   3. text that is not the verse, run on at its end (a section heading, the „SFÂRȘIT” closing the book).
+//   3. text that is not the verse, run on at its end (a section heading, the „SFÂRȘIT” closing the book);
+//   4. the glosses in parentheses printed in italics, lost with the italic font („Gherșom (Străin), căci”).
 // The reference markers of notes.json are character offsets into the verse, and move with the text.
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf"          report only
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf" --write  apply
@@ -67,18 +68,74 @@ for (const r of breaks.values()) {
   if (to && to !== r.produced) swaps.set(r.produced, to);
 }
 
-// Edits to one verse: [{ at, del, ins }], applied from the end so the offsets stay valid.
+// 4. Glosses in parentheses, printed in italics after a name or word („Gherșom (Străin), căci”, „gofer (chiparos);”):
+// the extraction read only the upright body fonts and lost them, with any punctuation printed in italics after them.
+// Each is put back after the words that precede it in the PDF, in the verse where those words are followed by the
+// words after it. The other italics of the body size are section headings, not verse text.
+const swapWords = s => swaps.size ? s.replace(new RegExp(`(?<!${L})(${[...swaps.keys()].join('|')})(?!${L})`, 'gu'), w => swaps.get(w)) : s;
+const flatPdf = s => swapWords(s.replace(/[*†‡]/g, '').replace(/-\n/g, '-').replace(/\s+/g, ' '));
+const order = [];
+for (const [b, cs] of Object.entries(text)) cs.forEach((vs, c) => vs.forEach((s, v) => s && order.push(`${b} ${c + 1}:${v + 1}`)));
+const verseOf = k => { const [, b, c, v] = k.match(/^(\S+) (\d+):(\d+)$/); return text[b][c - 1][v - 1]; };
+const glosses = new Map();         // verse -> [{ at, del, ins }]
+let lastIndex = 0, unplaced = [];
+for (let pn = 0; pn < doc.countPages(); pn++) {
+  const cs = [];
+  doc.loadPage(pn).toStructuredText('preserve-whitespace').walk({
+    onChar(c, o, font, size) { const body = size > 9.5 && size < 10.5; cs.push({ c, body, it: body && /Italic/.test(font.getName()) }); },
+    endLine() { cs.push({ c: '\n', body: true, it: null }); }
+  });
+  for (let i = 0; i < cs.length; i++) {
+    if (!(cs[i].it && cs[i].c === '(')) continue;
+    let j = i;
+    while (j < cs.length && cs[j].it !== false) j++;
+    const run = fixEnc(cs.slice(i, j).map(x => x.c).join(''));
+    if (!run.includes(')')) { i = j; continue; }
+    const upright = xs => fixEnc(xs.filter(x => x.body && x.it !== true).map(x => x.c).join(''));
+    const tail = flatPdf(upright(cs.slice(Math.max(0, i - 60), i))).replace(/^.*\d+\.\s*/, '').trimEnd().slice(-22).trimStart();
+    // The words after, short of the next verse number or a running header („JUDECĂTORII 6, 7”); only punctuation
+    // when the gloss ends the verse.
+    const next = flatPdf(upright(cs.slice(j, j + 30))).trimStart().replace(/(^|\s)\d.*$|\s*\p{Lu}{4,}.*$/u, '').slice(0, 6).trimEnd();
+    const nextWords = next.replace(/^[,;:.!?)\s]+/, '');
+    // A word hyphenated at a line end inside the gloss is joined when the whole word is used elsewhere („Meso-⏎potamia”).
+    const ins = ' ' + flatPdf(run.replace(/(\p{L}+)-\n(\p{L}+)/gu, (m, a, b) => count(a + b) ? a + b : `${a}-${b}`)).trim();
+    i = j;
+    // Candidates, from the last gloss placed on: a verse that already has the gloss after its last words (an earlier
+    // run; „Pașhur” (Noroc…), ci Magor-Misabib” no longer has the words before the second gloss as printed upright),
+    // or one where the words before are followed (after a space, or the space the extraction left before
+    // punctuation) by the words after. Nothing after the gloss in its column (it ends the column): the words before
+    // decide alone.
+    let at = -1, already = false;
+    const found = order.findIndex((k, n) => {
+      if (n < lastIndex) return false;
+      const s = verseOf(k);
+      if (s.includes(tail.slice(-12) + ins)) return already = true;
+      for (let a = s.indexOf(tail); a >= 0; a = s.indexOf(tail, a + 1)) {
+        const rest = s.slice(a + tail.length);
+        if (!next || (!nextWords ? /^ ?[,;:.!?)]|^$/.test(rest) : rest.replace(/^ /, '').startsWith(next) || rest.replace(/^ /, '').startsWith(nextWords))) { at = a + tail.length; return true; }
+      }
+      return false;
+    });
+    if (found < 0) { unplaced.push(`p${pn + 1} „${tail}${ins}”`); continue; }
+    lastIndex = found;
+    if (already) continue;
+    const s = verseOf(order[found]);
+    (glosses.get(order[found]) || glosses.set(order[found], []).get(order[found])).push({ at, del: /^ [,;:.!?]/.test(s.slice(at)) ? 1 : 0, ins, kind: 'gloss' });
+  }
+}
+
+// Edits to one verse: [{ at, del, ins, kind }], applied from the end so the offsets stay valid.
 function edits(key, s) {
-  const out = [];
-  for (const m of s.matchAll(/ (?=[,;:.!?](?!,))/g)) out.push({ at: m.index, del: 1, ins: '' });
+  const out = [...(glosses.get(key) || [])];
+  for (const m of s.matchAll(/ (?=[,;:.!?](?!,))/g)) if (!out.some(e => e.at === m.index)) out.push({ at: m.index, del: 1, ins: '', kind: 'space' });
   if (swaps.size) for (const m of s.matchAll(new RegExp(`(?<!${L})(${[...swaps.keys()].join('|')})(?!${L})`, 'gu')))
-    out.push({ at: m.index, del: m[0].length, ins: swaps.get(m[0]) });
+    out.push({ at: m.index, del: m[0].length, ins: swaps.get(m[0]), kind: 'hyphen' });
   const tail = TAILS[key];
-  if (tail && s.endsWith(tail)) out.push({ at: s.length - tail.length, del: tail.length, ins: '' });
+  if (tail && s.endsWith(tail)) out.push({ at: s.length - tail.length, del: tail.length, ins: '', kind: 'tail' });
   return out.sort((a, b) => b.at - a.at);
 }
 
-const report = { space: 0, hyphen: 0, tail: 0, verses: 0 }, samples = [];
+const report = { space: 0, hyphen: 0, tail: 0, gloss: 0, verses: 0 }, samples = [];
 for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) => verses.forEach((s, v) => {
   if (!s) return;
   const key = `${b} ${c + 1}:${v + 1}`, list = edits(key, s);
@@ -89,13 +146,14 @@ for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) =
     t = t.slice(0, e.at) + e.ins + t.slice(e.at + e.del);
     const d = e.ins.length - e.del;
     for (const g of groups) if (g.at > e.at) g.at = Math.max(e.at + e.ins.length, g.at + d);
-    report[e.del === 1 && !e.ins ? 'space' : TAILS[key] && e.at === s.length - TAILS[key].length ? 'tail' : 'hyphen']++;
+    report[e.kind]++;
   }
   verses[v] = t; report.verses++;
-  if (samples.length < 12) samples.push(`${key}: …${s.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}… → …${t.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}…`);
+  if (list.some(e => e.kind === 'gloss')) console.log(`  gloss ${key}: …${t.slice(Math.max(0, list.at(-1).at - 25), list.at(-1).at + 40)}…`);
+  else if (samples.length < 12) samples.push(`${key}: …${s.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}… → …${t.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}…`);
 }));
 
-console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails`);
+console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails · ${report.gloss} glosses${unplaced.length ? ` (${unplaced.length} not placed: ${unplaced.join('; ')})` : ''}`);
 for (const [p, o] of swaps) console.log(`  ${p} → ${o}`);
 console.log(samples.map(s => '  ' + s).join('\n'));
 if (flag === '--write') {
