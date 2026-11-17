@@ -51,7 +51,7 @@ function pathBounds(p, m) {
 
 // Characters grouped in lines; a line is cut where a gap wider than 12 pt separates two columns.
 function readPage(page) {
-  const lines = [], images = [];
+  const lines = [], images = [], groups = [];
   let chars = null;
   page.toStructuredText('preserve-whitespace,preserve-images').walk({
     onImageBlock(bbox) { images.push(bbox); },
@@ -65,12 +65,22 @@ function readPage(page) {
     endLine() {
       let cur = [];
       for (const ch of chars) {
-        if (cur.length && ch.x - cur.at(-1).x1 > 12) { lines.push(makeLine(cur)); cur = []; }
+        if (cur.length && ch.x - cur.at(-1).x1 > 12) { push(cur); cur = []; }
         cur.push(ch);
       }
-      if (cur.length) lines.push(makeLine(cur));
+      if (cur.length) push(cur);
     }
   });
+  // MuPDF can return each word of a justified line as a line of its own (Ex. 2, pdf page 130: "bordered", "by",
+  // "the", "Sahara"); read apart, the words right of a box's middle were taken for a second column.
+  // Words on the same baseline, closer than the 12 pt of a column gap, are one line when the first ends in its
+  // space; a table cell ends without one (Acts 13, "Formal religious training" beside "A disciple of Christ").
+  function push(cs) {
+    const last = groups.at(-1)?.at(-1);
+    if (last && /\s/.test(last.c) && Math.abs(cs[0].y - last.y) < 0.5 && cs[0].x - last.x1 >= -1 && cs[0].x - last.x1 <= 12) groups.at(-1).push(...cs);
+    else groups.push(cs);
+  }
+  for (const g of groups) lines.push(makeLine(g));
   // A fill is only what its clip lets through: the sea of a vector map is drawn far wider than the map
   // (Acts 21, pdf page 1814; Rev. 2, page 2107) and, unclipped, would cover the notes and verses beside it.
   const fills = [], clips = [[-Infinity, -Infinity, Infinity, Infinity]];
