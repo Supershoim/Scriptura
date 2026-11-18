@@ -344,10 +344,13 @@ for (const [book, pages] of bookPages) {
     const isIntro = !introDone && !firstChapter;
     if (firstChapter) introDone = true;
     // In the introduction only the pictures are inserts; its text (Myriad, 8.5 pt and more) is never part of one.
+    // The labels of a map are in the map's own font (Garamond, 10 pt: "SAMSON", "M e d i t e r r a n e a n", Judg.,
+    // pdf page 411) and stay with the picture.
     const ins = inserts(P).filter(x => !isIntro || x.kind === 'figure');
     for (const l of lines) {
       const cx = (l.x0 + l.x1) / 2, cy = (l.top + l.y) / 2;
-      l.insert = isIntro && !l.gotham && l.size >= 8.5 ? null : ins.find(x => inside(x.r, cx, cy));
+      const introText = isIntro && !l.gotham && l.size >= 8.5 && l.chars.some(c => c.c.trim() && /Myriad/.test(c.font));
+      l.insert = introText ? null : ins.find(x => inside(x.r, cx, cy));
       if (l.insert) l.insert.lines.push(l);
     }
     // Captions and credits printed under or beside a picture.
