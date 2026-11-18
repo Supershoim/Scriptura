@@ -561,7 +561,10 @@ for (const [book, pages] of bookPages) {
   for (const [cv, list] of Object.entries(marks)) {
     const groups = [];
     for (const { m, at, pn } of list) {
-      const entry = (entries[pn]?.[m] || []).find(e => !e.taken) || entries[pn]?.[m]?.[0];
+      // A marker in the last lines of a page may have its entry at the top of the next page's column
+      // (Deut. 4:7, pdf page 317: "f" in the verse, "7 f [Ps. 46:1; Is. 55:6]" first on page 318).
+      const entry = (entries[pn]?.[m] || []).find(e => !e.taken) || entries[pn]?.[m]?.[0]
+        || (entries[pn + 1]?.[m] || []).find(e => !e.taken);
       if (!entry) { warnings.push(`${book} ${cv}: marker "${m}" without an entry (pdf page ${pn + 1})`); continue; }
       entry.taken = true;
       const group = { at, text: `${m} ${tidy(entry.text)}` };
