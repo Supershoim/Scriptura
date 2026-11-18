@@ -68,9 +68,10 @@
     "k": "figure",
     "src": "images/1PE-2064-1.jpg",
     "w": 957,
-    "h": 910,
+    "h": 1039,
+    "title": "Church Leaders",
     "kind": "chart",
-    "id": "1PE.c5.chart.insert"
+    "id": "1PE.c5.chart.church-leaders"
    }
   ]
  }

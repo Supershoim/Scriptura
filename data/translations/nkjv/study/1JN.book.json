@@ -45,15 +45,7 @@
     "k": "figure",
     "src": "images/1JN-2086-1.jpg",
     "w": 957,
-    "h": 517,
-    "kind": "chart",
-    "id": "1JN.c5.chart.insert"
-   },
-   {
-    "k": "figure",
-    "src": "images/1JN-2086-2.jpg",
-    "w": 957,
-    "h": 173,
+    "h": 723,
     "title": "The Trinity",
     "kind": "chart",
     "id": "1JN.c5.chart.the-trinity"

@@ -219,6 +219,18 @@ function inserts(P) {
     if (w < 100 || h < 40 || area(f.r) > P.width * P.height * 0.7 || f.color.every(v => v < 0.03) || f.color.every(v => v > 0.97) || near(f.color, STRIP) && (w < 120 || h < 60 || refsOnly(f.r))) continue;
     list.push({ kind: near(f.color, CULTURE) ? 'culture' : near(f.color, WORD) ? 'word' : near(f.color, ARTICLE) ? 'article' : 'chart', r: f.r });
   }
+  // A chart drawn as stacked bands of one width: the thin ones (a header row, a line of introduction) join the box
+  // they touch, one after another up to the title bar ("A Chronology of the Second Year of the Exodus", Num. 10,
+  // pdf page 265: title 47–79, introduction 79–101, header 101–115, body 115–283).
+  const thin = P.fills.filter(f => f.r[3] - f.r[1] < 40 && f.r[2] - f.r[0] >= 100 && !f.color.every(v => v > 0.97));
+  for (let grown = true; grown;) {
+    grown = false;
+    for (const x of list) for (const f of thin) {
+      if (Math.abs(f.r[0] - x.r[0]) > 2 || Math.abs(f.r[2] - x.r[2]) > 2 || !overlaps(x.r, f.r, 1)) continue;
+      const u = union(x.r, f.r);
+      if (u.some((v, i) => v !== x.r[i])) { x.r = u; grown = true; }
+    }
+  }
   for (const r of P.images) if ((r[2] - r[0]) * (r[3] - r[1]) > 2500 && r[3] - r[1] > 30) list.push({ kind: 'figure', r: [...r] });
   for (const bar of P.fills.filter(f => near(f.color, BAR, 0.05))) {
     const i = list.findIndex(x => overlaps(x.r, bar.r, 2));
@@ -476,7 +488,15 @@ for (const [book, pages] of bookPages) {
       if (titleLine && !titleLine.insert) { titleLine.insert = x; x.r = union(x.r, [x.r[0], titleLine.top - 4, x.r[2], x.r[1]]); }
       const label = sorted.find(l => l.gotham && !l.bold && l.white);
       const body = sorted.filter(l => l !== titleLine && l !== label && !l.gotham && l.size >= 7 && l.size < 8.2);
-      const title = titleLine ? tidy(titleLine.text) : '';
+      // A title on two lines ("A Chronology of the Second Year" / "of the Exodus", Num. 10): the lines of the same
+      // style right under it; not a dating line ("c. a.d. 46–48 (Acts 13:4—14:28)" under a map's title, Acts 14).
+      const titleLines = titleLine ? [titleLine] : [];
+      for (let more = true; more && titleLine;) {
+        const last = titleLines.at(-1);
+        const nx = sorted.find(l => !titleLines.includes(l) && l.gotham && l.bold && l.white === titleLine.white && Math.abs(l.size - titleLine.size) < 0.5 && l.top > last.top && l.top - last.y < 8 && !/\d/.test(l.text));
+        if (nx) titleLines.push(nx); else more = false;
+      }
+      const title = titleLines.length ? tidy(titleLines.map(l => l.text.trim()).join(' ')) : '';
       const paras = [];
       let prev = null;
       for (const l of body) {

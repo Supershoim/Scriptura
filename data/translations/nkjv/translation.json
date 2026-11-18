@@ -40,7 +40,8 @@
     "ACT",
     "REV",
     "EXO",
-    "LEV"
+    "LEV",
+    "NUM"
   ],
   "alignment": {
     "map": {},

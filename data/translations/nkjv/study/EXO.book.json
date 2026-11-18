@@ -27,7 +27,7 @@
     "k": "figure",
     "src": "images/EXO-0128-1.jpg",
     "w": 957,
-    "h": 509,
+    "h": 548,
     "title": "The Pharaohs and the Exodus Story",
     "kind": "chart",
     "id": "EXO.c1.chart.the-pharaohs-and-the-exodus-story"
@@ -150,9 +150,10 @@
     "k": "figure",
     "src": "images/EXO-0170-1.jpg",
     "w": 957,
-    "h": 672,
+    "h": 812,
+    "title": "Tabernacle Furnishings",
     "kind": "chart",
-    "id": "EXO.c25.chart.insert"
+    "id": "EXO.c25.chart.tabernacle-furnishings"
    }
   ],
   "28": [
