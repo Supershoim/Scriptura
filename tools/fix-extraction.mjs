@@ -6,6 +6,7 @@
 //      „nu-⏎mele” → „nu-mele”): the form the rest of the Bible uses wins;
 //   3. text that is not the verse, run on at its end (a section heading, the „SFÂRȘIT” closing the book);
 //   4. the glosses in parentheses printed in italics, lost with the italic font („Gherșom (Străin), căci”).
+//   5. letters spaced out where a line was printed with wide tracking („E l l e - a z i s” → „El le-a zis”).
 // The reference markers of notes.json are character offsets into the verse, and move with the text.
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf"          report only
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf" --write  apply
@@ -23,7 +24,8 @@ const notesFile = path.join(dir, 'notes.json');
 const notes = fs.existsSync(notesFile) ? JSON.parse(fs.readFileSync(notesFile, 'utf8')) : null;
 
 // Text run on at the end of a verse, checked one by one in the PDF.
-const TAILS = { vdcc: { 'GEN 11:9': ' DE LA AVRAAM PÂNĂ LA IOSIF', 'REV 22:11': ' SFÂRȘIT' }, ntr: {} }[id] || {};
+// 1SA 26:25: the dash of the heading after it („David în țara filistenilor – Șederea lui la Țiclag”).
+const TAILS = { vdcc: { 'GEN 11:9': ' DE LA AVRAAM PÂNĂ LA IOSIF', 'REV 22:11': ' SFÂRȘIT', '1SA 26:25': ' –' }, ntr: {} }[id] || {};
 
 // The PDF's text, in the encoding the old extraction fixed (ã → ă, º → ș, þ → ț).
 const mupdf = await import(process.env.MUPDF ? pathToFileURL(process.env.MUPDF).href : 'mupdf');
@@ -124,9 +126,28 @@ for (let pn = 0; pn < doc.countPages(); pn++) {
   }
 }
 
+// 5. Letter-spaced text („E l l e - a z i s: „ P e n t r u” in 1SA 2:23): a line printed with wide tracking came out
+// with a space after every letter, and its word breaks can't be told from the letters alone. The printed text whose
+// characters, without spaces, are the run's gives them back; a run found more than once in the PDF is left as it is.
+const pdfFlat = pages.join(' ').replace(/[*†‡]/g, '').replace(/\s+/g, ' ');
+const bareAt = [];                 // index in pdfFlat of each non-space character
+for (let i = 0; i < pdfFlat.length; i++) if (pdfFlat[i] !== ' ') bareAt.push(i);
+const pdfBare = pdfFlat.replace(/ /g, '');
+function spacedRuns(s) {
+  const out = [];
+  for (const m of s.matchAll(/(?<!\S)(?:\S{1,2} ){5,}\S{1,2}(?!\S)/gu)) {
+    if ((m[0].match(/\p{L}/gu) || []).length < 6) continue;
+    const bare = m[0].replace(/ /g, ''), a = pdfBare.indexOf(bare);
+    if (a < 0 || pdfBare.indexOf(bare, a + 1) >= 0) continue;
+    const printed = pdfFlat.slice(bareAt[a], bareAt[a + bare.length - 1] + 1);
+    if (printed !== m[0]) out.push({ at: m.index, del: m[0].length, ins: printed, kind: 'spaced' });
+  }
+  return out;
+}
+
 // Edits to one verse: [{ at, del, ins, kind }], applied from the end so the offsets stay valid.
 function edits(key, s) {
-  const out = [...(glosses.get(key) || [])];
+  const out = [...(glosses.get(key) || []), ...spacedRuns(s)];
   for (const m of s.matchAll(/ (?=[,;:.!?](?!,))/g)) if (!out.some(e => e.at === m.index)) out.push({ at: m.index, del: 1, ins: '', kind: 'space' });
   if (swaps.size) for (const m of s.matchAll(new RegExp(`(?<!${L})(${[...swaps.keys()].join('|')})(?!${L})`, 'gu')))
     out.push({ at: m.index, del: m[0].length, ins: swaps.get(m[0]), kind: 'hyphen' });
@@ -135,7 +156,7 @@ function edits(key, s) {
   return out.sort((a, b) => b.at - a.at);
 }
 
-const report = { space: 0, hyphen: 0, tail: 0, gloss: 0, verses: 0 }, samples = [];
+const report = { space: 0, hyphen: 0, tail: 0, gloss: 0, spaced: 0, verses: 0 }, samples = [];
 for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) => verses.forEach((s, v) => {
   if (!s) return;
   const key = `${b} ${c + 1}:${v + 1}`, list = edits(key, s);
@@ -153,7 +174,7 @@ for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) =
   else if (samples.length < 12) samples.push(`${key}: …${s.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}… → …${t.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}…`);
 }));
 
-console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails · ${report.gloss} glosses${unplaced.length ? ` (${unplaced.length} not placed: ${unplaced.join('; ')})` : ''}`);
+console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails · ${report.gloss} glosses · ${report.spaced} letter-spaced runs${unplaced.length ? ` (${unplaced.length} not placed: ${unplaced.join('; ')})` : ''}`);
 for (const [p, o] of swaps) console.log(`  ${p} → ${o}`);
 console.log(samples.map(s => '  ' + s).join('\n'));
 if (flag === '--write') {
