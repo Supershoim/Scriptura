@@ -37,18 +37,21 @@
   ],
   "8": [
    {
-    "k": "box",
-    "kind": "culture",
-    "id": "2KI.c8.culture.the-kings-and-prophets-of-israel-and-jud",
+    "k": "figure",
+    "src": "images/2KI-0625-1.jpg",
+    "w": 550,
+    "h": 945,
     "title": "The Kings and Prophets of Israel and Judah",
-    "html": "<p><strong>The United Kingdom </strong> Saul 1050–1010 b.c. David 1010–970 b.c. Solomon 970–930 b.c. <strong>The Divided Kingdom Judah Writing Kings Prophets Israel Writing Kings Prophets</strong></p>"
+    "kind": "chart",
+    "id": "2KI.c8.chart.the-kings-and-prophets-of-israel-and-jud"
    },
    {
-    "k": "box",
-    "kind": "culture",
-    "id": "2KI.c8.culture.insert",
-    "title": "",
-    "html": "<p><strong>The Divided Kingdom (continued) Judah Writing Kings Prophets Israel Writing Kings Prophets</strong></p>"
+    "k": "figure",
+    "src": "images/2KI-0626-1.jpg",
+    "w": 549,
+    "h": 945,
+    "kind": "chart",
+    "id": "2KI.c8.chart.insert"
    }
   ],
   "10": [

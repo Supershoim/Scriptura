@@ -523,7 +523,11 @@ for (const [book, pages] of bookPages) {
         record(id, { k: 'word', title, from: ref, to: ref, pdf: pn + 1, page: printed, refs: cites(plain(html), book) });
         continue;
       }
-      const kind = x.kind === 'word' ? 'chart' : x.kind;
+      // A table set in cell-sized type in a tinted box ("The Kings and Prophets of Israel and Judah", 2 Kin. 8, pdf
+      // pages 625–626): only its headers are body-sized and the cells would be lost, so it is pictured like a chart.
+      const cells = sorted.filter(l => !l.gotham && l.size < 6.6).length;
+      const table = (x.kind === 'culture' || x.kind === 'article') && cells >= 12 && cells > 3 * body.length;
+      const kind = x.kind === 'word' || table ? 'chart' : x.kind;
       const atc = insertChapter(startChapter, starts, x, P);
       const id = uid(`${book}.c${atc}.${kind}.${slug(title || caption || 'insert')}`);
       const clip = (r, more = {}) => { const file = `${book}-${String(pn + 1).padStart(4, '0')}-${++n}.jpg`; return { k: 'figure', src: `images/${file}`, ...renderClip(page, r, 2.5, file), ...more }; };
