@@ -358,14 +358,21 @@ for (const [book, pages] of bookPages) {
       const x = ins.filter(i => i.kind !== 'word').sort((a, b) => Math.abs(l.top - a.r[3]) - Math.abs(l.top - b.r[3]))[0];
       if (x && l.top - x.r[3] < 40 && l.top > x.r[1] - 10 && l.x0 < x.r[2] + 4 && l.x1 > x.r[0] - 4) { l.insert = x; (l.gotham ? x.caption : x.credit).push(l); }
     }
-    const byCol = list => {
+    const byCol = (list, rows = false) => {
       if (!list.length) return [];
       const mid = (Math.min(...list.map(l => l.x0)) + Math.max(...list.map(l => l.x1))) / 2;
       // A chapter number (or drop cap) is read from the visible top of its figure (baseline less the cap height): the
       // top of its glyph box takes in the font's ascent and can reach above the last line of the chapter before
       // (1 Pet. 1:25 → 2:1, pdf page 2058: "pel was preached to you." was read after the "2").
       for (const l of list) { l.col = l.x0 >= mid - 2 ? 1 : 0; l.key = l.max > 20 ? l.y - 0.72 * l.max - 0.5 : l.y; }
-      return list.sort((a, b) => a.col - b.col || a.key - b.key || a.x0 - b.x0);
+      list.sort((a, b) => a.col - b.col || a.key - b.key || a.x0 - b.x0);
+      if (!rows) return list;
+      // In the Bible text, pieces of one printed row whose baselines differ by a fraction of a point are one row, read
+      // left to right (1 Chr. 1:21–22, pdf page 668: "Diklah," and "²²Ebal, Abimael, Sheba," were read in reverse).
+      // Tables in inserts keep the plain order their translations were made from.
+      let row = null;
+      for (const l of list) { if (!row || row.col !== l.col || l.key - row.key >= 1) row = l; l.row = row.key; }
+      return list.sort((a, b) => a.col - b.col || a.row - b.row || a.x0 - b.x0);
     };
 
     if (isIntro) {
@@ -401,7 +408,7 @@ for (const [book, pages] of bookPages) {
       // Verses.
       // A turnover holding only small capitals ("LORD?": L 9 pt, ORD 6 pt) is a verse line too, though its median size is small.
       const smallCaps = l => l.max >= 8.5 && l.chars.every(c => !c.c.trim() || c.size >= 8.5 || /[A-Z]/.test(c.c));
-      for (const l of byCol(lines.filter(l => !l.insert && l.es && (l.size >= 8.5 || smallCaps(l)) && !(l.bold && l.max < 20)))) {
+      for (const l of byCol(lines.filter(l => !l.insert && l.es && (l.size >= 8.5 || smallCaps(l)) && !(l.bold && l.max < 20)), true)) {
         let s = '';
         for (const ch of l.chars) {
           if (ch.size > 40) { flush(); chapter = chapter + 1 || 1; drop = ch.c; startVerse(1); continue; }
