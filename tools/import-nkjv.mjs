@@ -146,7 +146,9 @@ function joinLine(text, next) {
   return text.replace(/\s+$/, '') + ' ' + next;
 }
 // The opening quote of a poetry line hangs in the margin, a tab before the word ("\u201C\tEntreat"): no space is kept.
-const tidy = s => s.replace(/\u00AD/g, '').replace(/([\u201C\u2018(])\s+(?=\p{L})/gu, '$1').replace(/\s+/g, ' ').replace(/([–—])\s+(\d)/g, '$1$2').replace(/\s+([,;:.!?)\]])/g, '$1')
+// Control characters are spacing in the PDF (a backspace before each "Selah" in Psalms, pdf page 873); \u0001\u2013\u0003
+// are this importer's own markers (a reference letter's position, a verse number, a chapter number) and stay.
+const tidy = s => s.replace(/\u00AD/g, '').replace(/[\u0004-\u0008\u000B\u000C\u000E-\u001F]/g, ' ').replace(/([\u201C\u2018(])\s+(?=\p{L})/gu, '$1').replace(/\s+/g, ' ').replace(/([–—])\s+(\d)/g, '$1$2').replace(/\s+([,;:.!?)\]])/g, '$1')
   .replace(/<(strong|em)>(\s*)<\/\1>/g, '$2').replace(/<\/(strong|em)>(\s*)<\1>/g, '$2').replace(/ {2,}/g, ' ').replace(/ ([,;:.!?)\]])/g, '$1').trim();
 const plain = html => html.replace(/<[^>]+>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 const slug = s => plain(s).toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
@@ -408,10 +410,18 @@ for (const [book, pages] of bookPages) {
       // Verses.
       // A turnover holding only small capitals ("LORD?": L 9 pt, ORD 6 pt) is a verse line too, though its median size is small.
       const smallCaps = l => l.max >= 8.5 && l.chars.every(c => !c.c.trim() || c.size >= 8.5 || /[A-Z]/.test(c.c));
-      for (const l of byCol(lines.filter(l => !l.insert && l.es && (l.size >= 8.5 || smallCaps(l)) && !(l.bold && l.max < 20)), true)) {
+      // Psalms: each psalm opens with a bold "PSALM 3" line (no chapter number), its title in 8 pt (left out, as in
+      // VDCC, whose verse 1 is the first line of the psalm) and a 23 pt initial for the first letter (pdf page 873).
+      const psalm = l => l.es && l.bold && l.max < 20 && /^\s*PSALM \d+\s*$/.test(l.text);
+      // A verse number standing alone at the margin, beside an indented turnover (Ps. 96:13, pdf page 964: "13" beside
+      // "before the LORD", more than 12 pt away, so read as a line of its own).
+      const loneNumber = l => l.es && /^\s*\d+\s*$/.test(l.text) && l.chars.every(c => !c.c.trim() || c.medium && c.size < 7.5);
+      for (const l of byCol(lines.filter(l => !l.insert && l.es && (l.size >= 8.5 || smallCaps(l) || loneNumber(l)) && (!(l.bold && l.max < 20) || psalm(l))), true)) {
+        if (psalm(l)) { flush(); chapter = +l.text.match(/\d+/)[0]; startVerse(1); continue; }
         let s = '';
         for (const ch of l.chars) {
           if (ch.size > 40) { flush(); chapter = chapter + 1 || 1; drop = ch.c; startVerse(1); continue; }
+          if (ch.size > 15 && /\p{L}/u.test(ch.c)) { drop = ch.c; continue; }   // a psalm's initial
           if (ch.size > 15) {
             if (/\d/.test(ch.c)) { if (!s.startsWith('\u0003')) { if (buf) buf.text = joinLine(buf.text, s); flush(); s = '\u0003'; } s += ch.c; }
             continue;
