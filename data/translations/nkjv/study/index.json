@@ -218573,6 +218573,3396 @@
    "k": "intro",
    "title": "EZRA",
    "pdf": 762
+  },
+  "NEH.1.6.word.confess": {
+   "b": "NEH",
+   "k": "word",
+   "title": "confess",
+   "from": "1:6",
+   "to": "1:6",
+   "pdf": 784,
+   "page": 749,
+   "refs": [
+    "NEH 1:6",
+    "LEV 5:5",
+    "NUM 5:7",
+    "PSA 92:1",
+    "PSA 106:47",
+    "2CH 5:13",
+    "1KI 8:33-35",
+    "NEH 9:2",
+    "DAN 9:4",
+    "PSA 32:5",
+    "PRO 28:13",
+    "2CH 30:22"
+   ]
+  },
+  "NEH.c2.culture.sanballat": {
+   "b": "NEH",
+   "k": "culture",
+   "title": "Sanballat",
+   "chapter": 2,
+   "pdf": 786,
+   "page": 751,
+   "refs": [
+    "ISA 15:5",
+    "JER 48:3-34",
+    "2CH 8:5",
+    "NEH 13:28"
+   ],
+   "text": "Sanballat The name Sanballat means “the god Sin has given life.” A leading opponent of the Jews after their return from the captivity, he tried to hinder Nehemiah in his work of rebuilding the walls of Jerusalem. Sanballat’s designation as “the Horonite” probably indicates the town of his origin, possibly Horonaim of Moab (Is. 15:5; Jer. 48:3, 5, 34) or Beth Horon in Ephraim near Jerusalem (2 Chr."
+  },
+  "NEH.3.20.word.carefully": {
+   "b": "NEH",
+   "k": "word",
+   "title": "carefully",
+   "from": "3:20",
+   "to": "3:20",
+   "pdf": 788,
+   "page": 753,
+   "refs": [
+    "NEH 3:20",
+    "EXO 32:10",
+    "JON 4:1",
+    "GEN 39:19"
+   ]
+  },
+  "NEH.1.5.word.awesome": {
+   "b": "NEH",
+   "k": "word",
+   "title": "awesome",
+   "from": "1:5",
+   "to": "1:5",
+   "pdf": 789,
+   "page": 754,
+   "refs": [
+    "NEH 1:5",
+    "NEH 4:14",
+    "GEN 32:11",
+    "LEV 19:14",
+    "LEV 25:17",
+    "DEU 17:19",
+    "2KI 17:34",
+    "JOB 1:1",
+    "PSA 128:1"
+   ]
+  },
+  "NEH.c6.chart.how-nehemiah-handled-opposition": {
+   "b": "NEH",
+   "k": "chart",
+   "title": "How Nehemiah Handled Opposition",
+   "chapter": 6,
+   "pdf": 791,
+   "page": 756,
+   "refs": [
+    "NEH 4:1-6",
+    "NEH 4:7-9",
+    "NEH 4:10-23",
+    "NEH 5:1-13",
+    "NEH 6:1-4",
+    "NEH 6:5-9",
+    "NEH 6:10-14"
+   ],
+   "text": "How Nehemiah Handled Opposition As leader of the effort to rebuild the walls of Jerusalem, Nehemiah faced resistance of almost every variety. Resistance Sanballat and Tobiah angrily ridiculed Nehemiah. Sanballat, Tobiah, and a coalition of Arabs, Ammonites, and Ashdodites threatened an attack. The Israelites became discouraged and fearful. Some of the Jewish officials took advantage of the poor by"
+  },
+  "NEH.c9.article.the-levites-psalm": {
+   "b": "NEH",
+   "k": "article",
+   "title": "The Levites’ Psalm",
+   "chapter": 9,
+   "pdf": 797,
+   "page": 762,
+   "refs": [
+    "NEH 8:7-8",
+    "2CH 34:29-32"
+   ],
+   "text": "The Levites’ Psalm The ninth chapter of Nehemiah is one of the most eloquent recitals of God’s marvelous acts in Israel’s history. Along with Moses’ “Song of the Sea” (Ex. 15), “The Song of Moses” (Deut. 32), “Deborah’s Song” (Judg. 5), “Hannah’s Song” (1 Sam. 2), and David’s “Song of the Bow” (2 Sam. 1), this poem is one of the great psalms in Scripture. Interestingly enough, the occasion for thi"
+  },
+  "NEH.1.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:1",
+   "to": "1:1",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "Nehemiah",
+     "v": "1:1",
+     "at": 13
+    },
+    {
+     "w": "The month of Chislev",
+     "v": "1:1",
+     "at": 63
+    },
+    {
+     "w": "The twentieth year",
+     "v": "1:1",
+     "at": 88
+    },
+    {
+     "w": "Shushan the citadel",
+     "v": "1:1",
+     "at": 120
+    }
+   ],
+   "refs": [
+    "EZR 10:9",
+    "EZR 7:1",
+    "DAN 8:2",
+    "EST 1:2"
+   ]
+  },
+  "NEH.1.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:2",
+   "to": "1:2",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "Hanani",
+     "v": "1:2",
+     "at": 5
+    }
+   ],
+   "refs": [
+    "NEH 7:2",
+    "EZR 7:9"
+   ]
+  },
+  "NEH.1.3": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:3",
+   "to": "1:3",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "wall",
+     "v": "1:3",
+     "at": 130
+    }
+   ],
+   "refs": []
+  },
+  "NEH.1.4": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:4",
+   "to": "1:4",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "wept... mourned"
+    },
+    {
+     "w": "God of heaven",
+     "v": "1:4",
+     "at": 127
+    }
+   ],
+   "refs": [
+    "EZR 8:15-36"
+   ]
+  },
+  "NEH.1.5": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:5",
+   "to": "1:5",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "Lord",
+     "v": "1:5",
+     "at": 21
+    },
+    {
+     "w": "God of heaven",
+     "v": "1:5",
+     "at": 26
+    },
+    {
+     "w": "covenant and mercy",
+     "v": "1:5",
+     "at": 84
+    }
+   ],
+   "refs": [
+    "EXO 6:2-9"
+   ]
+  },
+  "NEH.1.6": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:6",
+   "to": "1:6",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "let Your ear be attentive and Your eyes open",
+     "v": "1:6",
+     "at": 7
+    },
+    {
+     "w": "the children of Israel",
+     "v": "1:6",
+     "at": 146
+    }
+   ],
+   "refs": [
+    "EXO 2:23-25"
+   ]
+  },
+  "NEH.1.7": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:7",
+   "to": "1:7",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "commandments",
+     "v": "1:7",
+     "at": 64
+    },
+    {
+     "w": "we",
+     "v": "1:7",
+     "at": 0
+    },
+    {
+     "w": "commandments... statutes... ordinances"
+    }
+   ],
+   "refs": [
+    "NEH 9:13-14"
+   ]
+  },
+  "NEH.1.8": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:8",
+   "to": "1:8",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "Remember",
+     "v": "1:8",
+     "at": 0
+    },
+    {
+     "w": "I will scatter you among the nations",
+     "v": "1:8",
+     "at": 98
+    }
+   ],
+   "refs": [
+    "LEV 26:27-45",
+    "DEU 30:1-5"
+   ]
+  },
+  "NEH.1.9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:9",
+   "to": "1:9",
+   "pdf": 784,
+   "page": 749,
+   "lemmas": [
+    {
+     "w": "return",
+     "v": "1:9",
+     "at": 11
+    },
+    {
+     "w": "bring them to the place which I have chosen as a dwelling for My name",
+     "v": "1:9",
+     "at": 172
+    }
+   ],
+   "refs": [
+    "LEV 16:21",
+    "NEH 5:9"
+   ]
+  },
+  "NEH.1.10": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:10",
+   "to": "1:10",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "Your servants and Your people",
+     "v": "1:10",
+     "at": 14
+    },
+    {
+     "w": "Your strong hand",
+     "v": "1:10",
+     "at": 96
+    }
+   ],
+   "refs": [
+    "EXO 6:1",
+    "EXO 13:14",
+    "EXO 15:6",
+    "DEU 6:21"
+   ]
+  },
+  "NEH.1.11": {
+   "b": "NEH",
+   "k": "note",
+   "from": "1:11",
+   "to": "1:11",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "Your servant... Your servants"
+    },
+    {
+     "w": "let Your servant prosper",
+     "v": "1:11",
+     "at": 149
+    },
+    {
+     "w": "the king’s cupbearer",
+     "v": "1:11",
+     "at": 249
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:1",
+   "to": "2:1",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "Nisan",
+     "v": "2:1",
+     "at": 36
+    },
+    {
+     "w": "sad in his presence",
+     "v": "2:1",
+     "at": 178
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:2",
+   "to": "2:2",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "The king",
+     "v": "2:2",
+     "at": 10
+    },
+    {
+     "w": "sorrow of heart",
+     "v": "2:2",
+     "at": 98
+    },
+    {
+     "w": "I became dreadfully afraid",
+     "v": "2:2",
+     "at": 119
+    }
+   ],
+   "refs": [
+    "EZR 4:21-23"
+   ]
+  },
+  "NEH.2.3": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:3",
+   "to": "2:3",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "live forever",
+     "v": "2:3",
+     "at": 36
+    },
+    {
+     "w": "the place of my fathers’ tombs",
+     "v": "2:3",
+     "at": 96
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.4": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:4",
+   "to": "2:4",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "I prayed",
+     "v": "2:4",
+     "at": 52
+    },
+    {
+     "w": "the king",
+     "v": "2:4",
+     "at": 5
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.5": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:5",
+   "to": "2:5",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "fathers’ tombs",
+     "v": "2:5",
+     "at": 151
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.6": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:6",
+   "to": "2:6",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "How long will your journey be... when will you return"
+    },
+    {
+     "w": "I set him a time",
+     "v": "2:6",
+     "at": 160
+    },
+    {
+     "w": "it pleased the king to send me",
+     "v": "2:6",
+     "at": 124
+    }
+   ],
+   "refs": [
+    "NEH 5:14",
+    "EZR 4:21"
+   ]
+  },
+  "NEH.2.7": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:7",
+   "to": "2:7",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "Judah",
+     "v": "2:7",
+     "at": 190
+    },
+    {
+     "w": "letters",
+     "v": "2:7",
+     "at": 61
+    },
+    {
+     "w": "the governors of the region beyond the",
+     "v": "2:7",
+     "at": 88
+    },
+    {
+     "w": "River",
+     "v": "2:7",
+     "at": 127
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.8": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:8",
+   "to": "2:8",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "Asaph",
+     "v": "2:8",
+     "at": 16
+    },
+    {
+     "w": "the king’s forest",
+     "v": "2:8",
+     "at": 36
+    },
+    {
+     "w": "gates of the citadel",
+     "v": "2:8",
+     "at": 105
+    },
+    {
+     "w": "the city wall",
+     "v": "2:8",
+     "at": 160
+    },
+    {
+     "w": "house",
+     "v": "2:8",
+     "at": 187
+    },
+    {
+     "w": "according to the good hand of my God",
+     "v": "2:8",
+     "at": 246
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:9",
+   "to": "2:9",
+   "pdf": 785,
+   "page": 750,
+   "lemmas": [
+    {
+     "w": "captains of the army and horsemen",
+     "v": "2:9",
+     "at": 117
+    }
+   ],
+   "refs": [
+    "EZR 8:22"
+   ]
+  },
+  "NEH.2.10": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:10",
+   "to": "2:10",
+   "pdf": 786,
+   "page": 751,
+   "lemmas": [
+    {
+     "w": "Sanballat",
+     "v": "2:10",
+     "at": 5
+    },
+    {
+     "w": "Horonite",
+     "v": "2:10",
+     "at": 19
+    },
+    {
+     "w": "Tobiah",
+     "v": "2:10",
+     "at": 32
+    },
+    {
+     "w": "Ammonite",
+     "v": "2:10",
+     "at": 43
+    }
+   ],
+   "refs": [
+    "GEN 19:38"
+   ]
+  },
+  "NEH.2.12-15": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:12",
+   "to": "2:15",
+   "pdf": 786,
+   "page": 751,
+   "lemmas": [
+    {
+     "w": "the Valley Gate",
+     "v": "2:13",
+     "at": 32
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.16": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:16",
+   "to": "2:16",
+   "pdf": 786,
+   "page": 751,
+   "lemmas": [
+    {
+     "w": "the officials did not know",
+     "v": "2:16",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.17": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:17",
+   "to": "2:17",
+   "pdf": 786,
+   "page": 751,
+   "lemmas": [
+    {
+     "w": "we",
+     "v": "2:17",
+     "at": 48
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.18": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:18",
+   "to": "2:18",
+   "pdf": 786,
+   "page": 751,
+   "lemmas": [
+    {
+     "w": "Let us rise up and build",
+     "v": "2:18",
+     "at": 137
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.19": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:19",
+   "to": "2:19",
+   "pdf": 786,
+   "page": 751,
+   "lemmas": [
+    {
+     "w": "Geshem",
+     "v": "2:19",
+     "at": 67
+    },
+    {
+     "w": "they laughed",
+     "v": "2:19",
+     "at": 96
+    }
+   ],
+   "refs": []
+  },
+  "NEH.2.20": {
+   "b": "NEH",
+   "k": "note",
+   "from": "2:20",
+   "to": "2:20",
+   "pdf": 787,
+   "page": 752,
+   "lemmas": [
+    {
+     "w": "you have no heritage",
+     "v": "2:20",
+     "at": 134
+    }
+   ],
+   "refs": [
+    "EZR 4:3"
+   ]
+  },
+  "NEH.3.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:1",
+   "to": "3:1",
+   "pdf": 787,
+   "page": 752,
+   "lemmas": [
+    {
+     "w": "Eliashib the high priest",
+     "v": "3:1",
+     "at": 5
+    },
+    {
+     "w": "priests",
+     "v": "3:1",
+     "at": 60
+    },
+    {
+     "w": "built the Sheep Gate",
+     "v": "3:1",
+     "at": 72
+    },
+    {
+     "w": "They... consecrated it"
+    }
+   ],
+   "refs": [
+    "PSA 127:1"
+   ]
+  },
+  "NEH.3.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:2",
+   "to": "3:2",
+   "pdf": 787,
+   "page": 752,
+   "lemmas": [
+    {
+     "w": "Next to",
+     "v": "3:2",
+     "at": 0
+    }
+   ],
+   "refs": []
+  },
+  "NEH.3.8-13": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:8",
+   "to": "3:13",
+   "pdf": 787,
+   "page": 752,
+   "refs": []
+  },
+  "NEH.3.8": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:8",
+   "to": "3:8",
+   "pdf": 787,
+   "page": 752,
+   "lemmas": [
+    {
+     "w": "The Broad Wall",
+     "v": "3:8",
+     "at": 179
+    }
+   ],
+   "refs": [
+    "2CH 32:5"
+   ]
+  },
+  "NEH.3.14": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:14",
+   "to": "3:14",
+   "pdf": 787,
+   "page": 752,
+   "refs": []
+  },
+  "NEH.3.15-32": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:15",
+   "to": "3:32",
+   "pdf": 787,
+   "page": 752,
+   "refs": []
+  },
+  "NEH.3.15": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:15",
+   "to": "3:15",
+   "pdf": 787,
+   "page": 752,
+   "lemmas": [
+    {
+     "w": "The Fountain Gate",
+     "v": "3:15",
+     "at": 73
+    },
+    {
+     "w": "The Pool of Shelah",
+     "v": "3:15",
+     "at": 182
+    }
+   ],
+   "refs": []
+  },
+  "NEH.3.28": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:28",
+   "to": "3:28",
+   "pdf": 788,
+   "page": 753,
+   "lemmas": [
+    {
+     "w": "the Horse Gate",
+     "v": "3:28",
+     "at": 7
+    }
+   ],
+   "refs": []
+  },
+  "NEH.3.32": {
+   "b": "NEH",
+   "k": "note",
+   "from": "3:32",
+   "to": "3:32",
+   "pdf": 788,
+   "page": 753,
+   "lemmas": [
+    {
+     "w": "Goldsmiths",
+     "v": "3:32",
+     "at": 72
+    },
+    {
+     "w": "merchants",
+     "v": "3:32",
+     "at": 91
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:1",
+   "to": "4:1",
+   "pdf": 788,
+   "page": 753,
+   "lemmas": [
+    {
+     "w": "furious... indignant"
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:2",
+   "to": "4:2",
+   "pdf": 788,
+   "page": 753,
+   "lemmas": [
+    {
+     "w": "army of Samaria",
+     "v": "4:2",
+     "at": 41
+    },
+    {
+     "w": "these feeble Jews",
+     "v": "4:2",
+     "at": 78
+    },
+    {
+     "w": "fortify... offer sacrifices... complete it in a day... revive the stones"
+    },
+    {
+     "w": "burned",
+     "v": "4:2",
+     "at": 263
+    }
+   ],
+   "refs": [
+    "1SA 2:5",
+    "ISA 19:8",
+    "HOS 4:3"
+   ]
+  },
+  "NEH.4.3": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:3",
+   "to": "4:3",
+   "pdf": 788,
+   "page": 753,
+   "lemmas": [
+    {
+     "w": "Tobiah",
+     "v": "4:3",
+     "at": 4
+    },
+    {
+     "w": "a fox",
+     "v": "4:3",
+     "at": 83
+    }
+   ],
+   "refs": [
+    "NEH 2:10-19"
+   ]
+  },
+  "NEH.4.4-5": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:4",
+   "to": "4:5",
+   "pdf": 788,
+   "page": 753,
+   "refs": []
+  },
+  "NEH.4.7-8": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:7",
+   "to": "4:8",
+   "pdf": 788,
+   "page": 753,
+   "lemmas": [
+    {
+     "w": "Sanballat",
+     "v": "4:7",
+     "at": 22
+    },
+    {
+     "w": "The Arabs",
+     "v": "4:7",
+     "at": 41
+    },
+    {
+     "w": "the Ammonites",
+     "v": "4:7",
+     "at": 52
+    },
+    {
+     "w": "the Ashdodites",
+     "v": "4:7",
+     "at": 71
+    }
+   ],
+   "refs": [
+    "NEH 2:10",
+    "NEH 2:19"
+   ]
+  },
+  "NEH.4.9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:9",
+   "to": "4:9",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "watch",
+     "v": "4:9",
+     "at": 73
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.10": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:10",
+   "to": "4:10",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "laborers",
+     "v": "4:10",
+     "at": 38
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.11-12": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:11",
+   "to": "4:12",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "adversaries",
+     "v": "4:11",
+     "at": 8
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.13": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:13",
+   "to": "4:13",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "I positioned men",
+     "v": "4:13",
+     "at": 10
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.14-15": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:14",
+   "to": "4:15",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "nobles... leaders... rest of the people"
+    },
+    {
+     "w": "fight for your brethren",
+     "v": "4:14",
+     "at": 164
+    },
+    {
+     "w": "returned",
+     "v": "4:15",
+     "at": 128
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.16-18": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:16",
+   "to": "4:18",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "servants",
+     "v": "4:16",
+     "at": 46
+    }
+   ],
+   "refs": []
+  },
+  "NEH.4.19-20": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:19",
+   "to": "4:20",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "Our God will fight for us",
+     "v": "4:20",
+     "at": 63
+    }
+   ],
+   "refs": [
+    "NUM 10:1-10"
+   ]
+  },
+  "NEH.4.21-23": {
+   "b": "NEH",
+   "k": "note",
+   "from": "4:21",
+   "to": "4:23",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "washing",
+     "v": "4:23",
+     "at": 142
+    },
+    {
+     "w": "clothes",
+     "v": "4:23",
+     "at": 94
+    }
+   ],
+   "refs": []
+  },
+  "NEH.5.1-5": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:1",
+   "to": "5:5",
+   "pdf": 789,
+   "page": 754,
+   "lemmas": [
+    {
+     "w": "there were those who said",
+     "v": "5:2",
+     "at": 4
+    },
+    {
+     "w": "against their Jewish brethren",
+     "v": "5:1",
+     "at": 59
+    },
+    {
+     "w": "people",
+     "v": "5:1",
+     "at": 36
+    },
+    {
+     "w": "mortgaged",
+     "v": "5:3",
+     "at": 40
+    },
+    {
+     "w": "lands and vineyards and houses",
+     "v": "5:3",
+     "at": 54
+    },
+    {
+     "w": "borrowed money",
+     "v": "5:4",
+     "at": 41
+    }
+   ],
+   "refs": [
+    "DEU 23:19-20",
+    "EXO 22:25",
+    "LEV 25:35-40"
+   ]
+  },
+  "NEH.5.6": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:6",
+   "to": "5:6",
+   "pdf": 790,
+   "page": 755,
+   "lemmas": [
+    {
+     "w": "I became very angry",
+     "v": "5:6",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "NEH.5.7-10": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:7",
+   "to": "5:10",
+   "pdf": 790,
+   "page": 755,
+   "lemmas": [
+    {
+     "w": "serious thought",
+     "v": "5:7",
+     "at": 6
+    },
+    {
+     "w": "rebuked",
+     "v": "5:7",
+     "at": 25
+    },
+    {
+     "w": "not good",
+     "v": "5:9",
+     "at": 36
+    },
+    {
+     "w": "fear",
+     "v": "5:9",
+     "at": 73
+    },
+    {
+     "w": "the reproach of the nations",
+     "v": "5:9",
+     "at": 100
+    }
+   ],
+   "refs": [
+    "NEH 13:11",
+    "NEH 1:5"
+   ]
+  },
+  "NEH.5.11": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:11",
+   "to": "5:11",
+   "pdf": 790,
+   "page": 755,
+   "lemmas": [
+    {
+     "w": "restore",
+     "v": "5:11",
+     "at": 0
+    },
+    {
+     "w": "hundredth of the money",
+     "v": "5:11",
+     "at": 111
+    }
+   ],
+   "refs": []
+  },
+  "NEH.5.13": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:13",
+   "to": "5:13",
+   "pdf": 790,
+   "page": 755,
+   "lemmas": [
+    {
+     "w": "shook",
+     "v": "5:13",
+     "at": 7
+    },
+    {
+     "w": "garment",
+     "v": "5:13",
+     "at": 32
+    }
+   ],
+   "refs": []
+  },
+  "NEH.5.14": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:14",
+   "to": "5:14",
+   "pdf": 790,
+   "page": 755,
+   "refs": []
+  },
+  "NEH.5.15": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:15",
+   "to": "5:15",
+   "pdf": 790,
+   "page": 755,
+   "lemmas": [
+    {
+     "w": "former governors",
+     "v": "5:15",
+     "at": 8
+    },
+    {
+     "w": "laid burdens",
+     "v": "5:15",
+     "at": 44
+    },
+    {
+     "w": "Rule",
+     "v": "5:15",
+     "at": 170
+    }
+   ],
+   "refs": []
+  },
+  "NEH.5.16": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:16",
+   "to": "5:16",
+   "pdf": 790,
+   "page": 755,
+   "lemmas": [
+    {
+     "w": "land",
+     "v": "5:16",
+     "at": 71
+    }
+   ],
+   "refs": []
+  },
+  "NEH.5.19": {
+   "b": "NEH",
+   "k": "note",
+   "from": "5:19",
+   "to": "5:19",
+   "pdf": 791,
+   "page": 756,
+   "lemmas": [
+    {
+     "w": "good",
+     "v": "5:19",
+     "at": 25
+    }
+   ],
+   "refs": [
+    "NEH 13:31"
+   ]
+  },
+  "NEH.6.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "6:2",
+   "to": "6:2",
+   "pdf": 791,
+   "page": 756,
+   "lemmas": [
+    {
+     "w": "The plain of Ono",
+     "v": "6:2",
+     "at": 96
+    }
+   ],
+   "refs": []
+  },
+  "NEH.6.7": {
+   "b": "NEH",
+   "k": "note",
+   "from": "6:7",
+   "to": "6:7",
+   "pdf": 791,
+   "page": 756,
+   "lemmas": [
+    {
+     "w": "prophets",
+     "v": "6:7",
+     "at": 28
+    }
+   ],
+   "refs": [
+    "ZEC 9:9"
+   ]
+  },
+  "NEH.6.8-9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "6:8",
+   "to": "6:9",
+   "pdf": 791,
+   "page": 756,
+   "lemmas": [
+    {
+     "w": "strengthen",
+     "v": "6:9",
+     "at": 143
+    }
+   ],
+   "refs": [
+    "PSA 31:13-14"
+   ]
+  },
+  "NEH.6.10": {
+   "b": "NEH",
+   "k": "note",
+   "from": "6:10",
+   "to": "6:10",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "Shemaiah",
+     "v": "6:10",
+     "at": 33
+    }
+   ],
+   "refs": [
+    "EXO 21:13-14"
+   ]
+  },
+  "NEH.6.11-14": {
+   "b": "NEH",
+   "k": "note",
+   "from": "6:11",
+   "to": "6:14",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "Tobiah and Sanballat",
+     "v": "6:12",
+     "at": 107
+    },
+    {
+     "w": "flee",
+     "v": "6:11",
+     "at": 36
+    }
+   ],
+   "refs": [
+    "NUM 18:7"
+   ]
+  },
+  "NEH.6.17-19": {
+   "b": "NEH",
+   "k": "note",
+   "from": "6:17",
+   "to": "6:19",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "nobles of Judah",
+     "v": "6:17",
+     "at": 23
+    },
+    {
+     "w": "Tobiah",
+     "v": "6:17",
+     "at": 60
+    },
+    {
+     "w": "Jehohanan",
+     "v": "6:18",
+     "at": 112
+    }
+   ],
+   "refs": []
+  },
+  "NEH.7.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "7:1",
+   "to": "7:1",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "The Levites",
+     "v": "7:1",
+     "at": 102
+    },
+    {
+     "w": "appointed",
+     "v": "7:1",
+     "at": 123
+    },
+    {
+     "w": "The gatekeepers",
+     "v": "7:1",
+     "at": 68
+    },
+    {
+     "w": "singers",
+     "v": "7:1",
+     "at": 89
+    }
+   ],
+   "refs": [
+    "NUM 18:1-4",
+    "1CH 9:17-19",
+    "1CH 26:12-19"
+   ]
+  },
+  "NEH.7.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "7:2",
+   "to": "7:2",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "Hanani",
+     "v": "7:2",
+     "at": 50
+    },
+    {
+     "w": "Hananiah",
+     "v": "7:2",
+     "at": 62
+    },
+    {
+     "w": "the citadel",
+     "v": "7:2",
+     "at": 85
+    },
+    {
+     "w": "faithful",
+     "v": "7:2",
+     "at": 111
+    },
+    {
+     "w": "feared God",
+     "v": "7:2",
+     "at": 128
+    }
+   ],
+   "refs": [
+    "NEH 3:9-12",
+    "NEH 1:2"
+   ]
+  },
+  "NEH.7.3": {
+   "b": "NEH",
+   "k": "note",
+   "from": "7:3",
+   "to": "7:3",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "The gates",
+     "v": "7:3",
+     "at": 32
+    }
+   ],
+   "refs": []
+  },
+  "NEH.7.4": {
+   "b": "NEH",
+   "k": "note",
+   "from": "7:4",
+   "to": "7:4",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "city",
+     "v": "7:4",
+     "at": 8
+    }
+   ],
+   "refs": []
+  },
+  "NEH.7.5": {
+   "b": "NEH",
+   "k": "note",
+   "from": "7:5",
+   "to": "7:5",
+   "pdf": 792,
+   "page": 757,
+   "lemmas": [
+    {
+     "w": "my God put it into my heart",
+     "v": "7:5",
+     "at": 5
+    }
+   ],
+   "refs": []
+  },
+  "NEH.7.6-73": {
+   "b": "NEH",
+   "k": "note",
+   "from": "7:6",
+   "to": "7:73",
+   "pdf": 793,
+   "page": 758,
+   "refs": []
+  },
+  "NEH.7.70": {
+   "b": "NEH",
+   "k": "note",
+   "from": "7:70",
+   "to": "7:70",
+   "pdf": 794,
+   "page": 759,
+   "lemmas": [
+    {
+     "w": "drachmas",
+     "v": "7:70",
+     "at": 115
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:1",
+   "to": "8:1",
+   "pdf": 794,
+   "page": 759,
+   "lemmas": [
+    {
+     "w": "all the people",
+     "v": "8:1",
+     "at": 4
+    },
+    {
+     "w": "open square",
+     "v": "8:1",
+     "at": 55
+    },
+    {
+     "w": "Ezra",
+     "v": "8:1",
+     "at": 118
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:2",
+   "to": "8:2",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "women",
+     "v": "8:2",
+     "at": 66
+    },
+    {
+     "w": "who could hear with understanding",
+     "v": "8:2",
+     "at": 80
+    },
+    {
+     "w": "on the first day of the seventh month",
+     "v": "8:2",
+     "at": 114
+    }
+   ],
+   "refs": [
+    "NEH 6:15"
+   ]
+  },
+  "NEH.8.3": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:3",
+   "to": "8:3",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "morning until midday",
+     "v": "8:3",
+     "at": 81
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.5": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:5",
+   "to": "8:5",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "the people stood",
+     "v": "8:5",
+     "at": 126
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.6": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:6",
+   "to": "8:6",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "Blessed",
+     "v": "8:6",
+     "at": 9
+    },
+    {
+     "w": "Amen",
+     "v": "8:6",
+     "at": 73
+    }
+   ],
+   "refs": [
+    "PSA 103:1"
+   ]
+  },
+  "NEH.8.8": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:8",
+   "to": "8:8",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "they read distinctly",
+     "v": "8:8",
+     "at": 3
+    },
+    {
+     "w": "they gave the sense",
+     "v": "8:8",
+     "at": 62
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.9-11": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:9",
+   "to": "8:11",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "wept",
+     "v": "8:9",
+     "at": 209
+    },
+    {
+     "w": "day",
+     "v": "8:9",
+     "at": 132
+    },
+    {
+     "w": "holy to the Lord",
+     "v": "8:9",
+     "at": 139
+    },
+    {
+     "w": "The joy of the Lord",
+     "v": "8:10",
+     "at": 176
+    },
+    {
+     "w": "Strength",
+     "v": "8:10",
+     "at": 204
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.12": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:12",
+   "to": "8:12",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "to eat and drink",
+     "v": "8:12",
+     "at": 34
+    },
+    {
+     "w": "rejoice",
+     "v": "8:12",
+     "at": 73
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.13": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:13",
+   "to": "8:13",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "heads",
+     "v": "8:13",
+     "at": 26
+    },
+    {
+     "w": "the priests",
+     "v": "8:13",
+     "at": 79
+    },
+    {
+     "w": "Levites",
+     "v": "8:13",
+     "at": 95
+    },
+    {
+     "w": "understand",
+     "v": "8:13",
+     "at": 150
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.14": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:14",
+   "to": "8:14",
+   "pdf": 795,
+   "page": 760,
+   "lemmas": [
+    {
+     "w": "booths",
+     "v": "8:14",
+     "at": 118
+    }
+   ],
+   "refs": [
+    "LEV 23:40"
+   ]
+  },
+  "NEH.8.16": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:16",
+   "to": "8:16",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "booths",
+     "v": "8:16",
+     "at": 62
+    },
+    {
+     "w": "in their courtyards",
+     "v": "8:16",
+     "at": 108
+    },
+    {
+     "w": "the courts",
+     "v": "8:16",
+     "at": 131
+    },
+    {
+     "w": "Water Gate",
+     "v": "8:16",
+     "at": 193
+    },
+    {
+     "w": "Gate of Ephraim",
+     "v": "8:16",
+     "at": 234
+    }
+   ],
+   "refs": []
+  },
+  "NEH.8.17": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:17",
+   "to": "8:17",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "since the days of Joshua... the children of Israel had not done so"
+    }
+   ],
+   "refs": [
+    "1KI 8:65",
+    "2CH 7:9",
+    "EZR 3:4"
+   ]
+  },
+  "NEH.8.18": {
+   "b": "NEH",
+   "k": "note",
+   "from": "8:18",
+   "to": "8:18",
+   "pdf": 796,
+   "page": 761,
+   "refs": [
+    "DEU 31:10-11"
+   ]
+  },
+  "NEH.9.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:1",
+   "to": "9:1",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "the twenty-fourth day of this month",
+     "v": "9:1",
+     "at": 7
+    },
+    {
+     "w": "Fasting, sackcloth"
+    },
+    {
+     "w": "dust",
+     "v": "9:1",
+     "at": 118
+    }
+   ],
+   "refs": [
+    "NEH 8:2"
+   ]
+  },
+  "NEH.9.2": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:2",
+   "to": "9:2",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "Of Israelite lineage",
+     "v": "9:2",
+     "at": 11
+    },
+    {
+     "w": "from all foreigners",
+     "v": "9:2",
+     "at": 53
+    },
+    {
+     "w": "their sins and the iniquities of their fathers",
+     "v": "9:2",
+     "at": 103
+    }
+   ],
+   "refs": []
+  },
+  "NEH.9.3": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:3",
+   "to": "9:3",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "stood",
+     "v": "9:3",
+     "at": 9
+    },
+    {
+     "w": "one-fourth of the day",
+     "v": "9:3",
+     "at": 93
+    },
+    {
+     "w": "confessed",
+     "v": "9:3",
+     "at": 144
+    }
+   ],
+   "refs": [
+    "NEH 8:5",
+    "NEH 8:3"
+   ]
+  },
+  "NEH.9.5": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:5",
+   "to": "9:5",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "Stand up and bless the Lord your God",
+     "v": "9:5",
+     "at": 105
+    },
+    {
+     "w": "the Levites. Forever and ever"
+    },
+    {
+     "w": "Your glorious name",
+     "v": "9:5",
+     "at": 172
+    }
+   ],
+   "refs": [
+    "NEH 8:1-2",
+    "EXO 3:14",
+    "ISA 63:14"
+   ]
+  },
+  "NEH.9.6": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:6",
+   "to": "9:6",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "alone",
+     "v": "9:6",
+     "at": 4
+    },
+    {
+     "w": "heaven... earth... seas"
+    }
+   ],
+   "refs": [
+    "DEU 6:4",
+    "NUM 23:8-9",
+    "DEU 4:32-40",
+    "PSA 113:4-6"
+   ]
+  },
+  "NEH.9.7-8": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:7",
+   "to": "9:8",
+   "pdf": 796,
+   "page": 761,
+   "lemmas": [
+    {
+     "w": "You are the Lord God",
+     "v": "9:7",
+     "at": 1
+    },
+    {
+     "w": "Abraham",
+     "v": "9:7",
+     "at": 106
+    },
+    {
+     "w": "You found his heart faithful",
+     "v": "9:8",
+     "at": 0
+    },
+    {
+     "w": "the land of the Canaanites",
+     "v": "9:8",
+     "at": 78
+    },
+    {
+     "w": "You have performed Your words",
+     "v": "9:8",
+     "at": 216
+    },
+    {
+     "w": "You are righteous",
+     "v": "9:8",
+     "at": 251
+    }
+   ],
+   "refs": [
+    "GEN 12:1-3",
+    "GEN 15:18-21",
+    "EXO 3:8-17",
+    "EXO 23:23",
+    "EXO 33:2",
+    "DEU 7:1",
+    "JOS 3:10"
+   ]
+  },
+  "NEH.9.9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:9",
+   "to": "9:9",
+   "pdf": 797,
+   "page": 762,
+   "refs": []
+  },
+  "NEH.9.10": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:10",
+   "to": "9:10",
+   "pdf": 797,
+   "page": 762,
+   "lemmas": [
+    {
+     "w": "signs and wonders",
+     "v": "9:10",
+     "at": 11
+    },
+    {
+     "w": "against Pharaoh. acted proudly"
+    }
+   ],
+   "refs": [
+    "EXO 18:11"
+   ]
+  },
+  "NEH.9.11-12": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:11",
+   "to": "9:12",
+   "pdf": 797,
+   "page": 762,
+   "lemmas": [
+    {
+     "w": "You divided the sea",
+     "v": "9:11",
+     "at": 4
+    },
+    {
+     "w": "as a stone",
+     "v": "9:11",
+     "at": 148
+    },
+    {
+     "w": "cloudy pillar... pillar of fire"
+    }
+   ],
+   "refs": [
+    "EXO 15:5",
+    "EXO 13:21-22",
+    "NUM 10:11-34",
+    "DEU 1:33"
+   ]
+  },
+  "NEH.9.14": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:14",
+   "to": "9:14",
+   "pdf": 797,
+   "page": 762,
+   "lemmas": [
+    {
+     "w": "Sabbath",
+     "v": "9:14",
+     "at": 33
+    },
+    {
+     "w": "By the hand of Moses",
+     "v": "9:14",
+     "at": 90
+    }
+   ],
+   "refs": [
+    "EXO 20:8-11",
+    "EXO 23:10-13",
+    "EXO 31:12-18",
+    "JHN 1:17"
+   ]
+  },
+  "NEH.9.15": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:15",
+   "to": "9:15",
+   "pdf": 797,
+   "page": 762,
+   "lemmas": [
+    {
+     "w": "bread",
+     "v": "9:15",
+     "at": 14
+    },
+    {
+     "w": "water",
+     "v": "9:15",
+     "at": 67
+    }
+   ],
+   "refs": [
+    "EXO 16:9-35",
+    "EXO 17:1-7"
+   ]
+  },
+  "NEH.9.16-17": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:16",
+   "to": "9:17",
+   "pdf": 797,
+   "page": 762,
+   "lemmas": [
+    {
+     "w": "But they",
+     "v": "9:16",
+     "at": 1
+    },
+    {
+     "w": "acted proudly",
+     "v": "9:16",
+     "at": 26
+    },
+    {
+     "w": "appointed a leader",
+     "v": "9:17",
+     "at": 148
+    },
+    {
+     "w": "But You",
+     "v": "9:17",
+     "at": 195
+    },
+    {
+     "w": "Ready to pardon",
+     "v": "9:17",
+     "at": 212
+    },
+    {
+     "w": "Slow to anger",
+     "v": "9:17",
+     "at": 252
+    },
+    {
+     "w": "Kindness",
+     "v": "9:17",
+     "at": 279
+    },
+    {
+     "w": "did not forsake",
+     "v": "9:17",
+     "at": 293
+    }
+   ],
+   "refs": [
+    "EXO 34:6",
+    "PSA 13:5"
+   ]
+  },
+  "NEH.9.18-21": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:18",
+   "to": "9:21",
+   "pdf": 798,
+   "page": 763,
+   "lemmas": [
+    {
+     "w": "Molded calf",
+     "v": "9:18",
+     "at": 23
+    },
+    {
+     "w": "Manifold mercies",
+     "v": "9:19",
+     "at": 12
+    },
+    {
+     "w": "You did not forsake them",
+     "v": "9:19",
+     "at": 29
+    },
+    {
+     "w": "You also gave Your good Spirit",
+     "v": "9:20",
+     "at": 0
+    },
+    {
+     "w": "Forty years",
+     "v": "9:21",
+     "at": 0
+    },
+    {
+     "w": "clothes... feet"
+    }
+   ],
+   "refs": [
+    "DEU 2:7",
+    "DEU 8:4",
+    "DEU 29:5"
+   ]
+  },
+  "NEH.9.22-25": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:22",
+   "to": "9:25",
+   "pdf": 798,
+   "page": 763,
+   "lemmas": [
+    {
+     "w": "kingdoms and nations",
+     "v": "9:22",
+     "at": 24
+    },
+    {
+     "w": "as the stars",
+     "v": "9:23",
+     "at": 35
+    },
+    {
+     "w": "the people went in",
+     "v": "9:24",
+     "at": 3
+    },
+    {
+     "w": "strong cities... rich land... houses"
+    },
+    {
+     "w": "great goodness",
+     "v": "9:25",
+     "at": 237
+    }
+   ],
+   "refs": [
+    "GEN 15:5",
+    "GEN 22:17"
+   ]
+  },
+  "NEH.9.26-29": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:26",
+   "to": "9:29",
+   "pdf": 798,
+   "page": 763,
+   "lemmas": [
+    {
+     "w": "Cast Your law behind their backs",
+     "v": "9:26",
+     "at": 62
+    },
+    {
+     "w": "killed Your prophets",
+     "v": "9:26",
+     "at": 99
+    },
+    {
+     "w": "You delivered them into the hand of their enemies",
+     "v": "9:27",
+     "at": 10
+    },
+    {
+     "w": "he shall live by them",
+     "v": "9:29",
+     "at": 189
+    }
+   ],
+   "refs": [
+    "MAT 23:31",
+    "EPH 2:8-9"
+   ]
+  },
+  "NEH.9.30-31": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:30",
+   "to": "9:31",
+   "pdf": 799,
+   "page": 764,
+   "lemmas": [
+    {
+     "w": "For many years",
+     "v": "9:30",
+     "at": 4
+    },
+    {
+     "w": "Your Spirit in Your prophets",
+     "v": "9:30",
+     "at": 77
+    },
+    {
+     "w": "You gave them into the hand of the peoples of the lands",
+     "v": "9:30",
+     "at": 144
+    },
+    {
+     "w": "nor forsake them",
+     "v": "9:31",
+     "at": 66
+    }
+   ],
+   "refs": [
+    "JER 1:9"
+   ]
+  },
+  "NEH.9.32": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:32",
+   "to": "9:32",
+   "pdf": 799,
+   "page": 764,
+   "lemmas": [
+    {
+     "w": "Now",
+     "v": "9:32",
+     "at": 1
+    },
+    {
+     "w": "covenant and mercy",
+     "v": "9:32",
+     "at": 75
+    },
+    {
+     "w": "Do not let all the trouble seem small",
+     "v": "9:32",
+     "at": 95
+    },
+    {
+     "w": "kings... people"
+    },
+    {
+     "w": "From the days of the kings of Assyria",
+     "v": "9:32",
+     "at": 260
+    }
+   ],
+   "refs": [
+    "NEH 8:1-2",
+    "HEB 6:17-18"
+   ]
+  },
+  "NEH.9.33": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:33",
+   "to": "9:33",
+   "pdf": 799,
+   "page": 764,
+   "lemmas": [
+    {
+     "w": "You are just",
+     "v": "9:33",
+     "at": 8
+    },
+    {
+     "w": "You have dealt faithfully... we have done wickedly"
+    }
+   ],
+   "refs": []
+  },
+  "NEH.9.36-37": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:36",
+   "to": "9:37",
+   "pdf": 799,
+   "page": 764,
+   "lemmas": [
+    {
+     "w": "Servants",
+     "v": "9:36",
+     "at": 14
+    },
+    {
+     "w": "kings",
+     "v": "9:37",
+     "at": 35
+    }
+   ],
+   "refs": [
+    "LEV 25:55"
+   ]
+  },
+  "NEH.9.38": {
+   "b": "NEH",
+   "k": "note",
+   "from": "9:38",
+   "to": "9:38",
+   "pdf": 799,
+   "page": 764,
+   "lemmas": [
+    {
+     "w": "covenant",
+     "v": "9:38",
+     "at": 41
+    }
+   ],
+   "refs": []
+  },
+  "NEH.10.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:1",
+   "to": "10:1",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "document",
+     "v": "10:1",
+     "at": 39
+    },
+    {
+     "w": "seal",
+     "v": "10:1",
+     "at": 27
+    }
+   ],
+   "refs": []
+  },
+  "NEH.10.2-8": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:2",
+   "to": "10:8",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "priests",
+     "v": "10:8",
+     "at": 46
+    }
+   ],
+   "refs": [
+    "NEH 12:11-20"
+   ]
+  },
+  "NEH.10.9-13": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:9",
+   "to": "10:13",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "Levites",
+     "v": "10:9",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "NEH 12:8"
+   ]
+  },
+  "NEH.10.14-27": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:14",
+   "to": "10:27",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "leaders",
+     "v": "10:14",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "NEH 7:4-63"
+   ]
+  },
+  "NEH.10.28": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:28",
+   "to": "10:28",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "The Nethinim",
+     "v": "10:28",
+     "at": 83
+    },
+    {
+     "w": "Those who had separated themselves from the peoples of the lands",
+     "v": "10:28",
+     "at": 105
+    }
+   ],
+   "refs": [
+    "EZR 2:43"
+   ]
+  },
+  "NEH.10.29": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:29",
+   "to": "10:29",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "entered into a curse",
+     "v": "10:29",
+     "at": 52
+    },
+    {
+     "w": "God’s Law",
+     "v": "10:29",
+     "at": 96
+    },
+    {
+     "w": "given by Moses",
+     "v": "10:29",
+     "at": 117
+    },
+    {
+     "w": "commandments... ordinances... statutes"
+    }
+   ],
+   "refs": [
+    "NEH 1:7"
+   ]
+  },
+  "NEH.10.30": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:30",
+   "to": "10:30",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "We would not give our daughters... nor take their daughters"
+    }
+   ],
+   "refs": [
+    "EXO 34:12-16",
+    "DEU 7:3",
+    "JOS 23:12",
+    "JDG 3:6"
+   ]
+  },
+  "NEH.10.31": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:31",
+   "to": "10:31",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "Sabbath",
+     "v": "10:31",
+     "at": 69
+    }
+   ],
+   "refs": [
+    "LEV 25:1-7",
+    "DEU 15:1-6"
+   ]
+  },
+  "NEH.10.32-39": {
+   "b": "NEH",
+   "k": "note",
+   "from": "10:32",
+   "to": "10:39",
+   "pdf": 800,
+   "page": 765,
+   "lemmas": [
+    {
+     "w": "wood offering",
+     "v": "10:34",
+     "at": 78
+    },
+    {
+     "w": "firstfruits",
+     "v": "10:35",
+     "at": 36
+    },
+    {
+     "w": "all trees",
+     "v": "10:35",
+     "at": 98
+    },
+    {
+     "w": "the priests",
+     "v": "10:34",
+     "at": 19
+    }
+   ],
+   "refs": [
+    "LEV 6:12-13",
+    "EXO 23:19",
+    "EXO 34:26",
+    "DEU 26:2",
+    "NUM 18:15-19"
+   ]
+  },
+  "NEH.11.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:1",
+   "to": "11:1",
+   "pdf": 801,
+   "page": 766,
+   "lemmas": [
+    {
+     "w": "cast lots",
+     "v": "11:1",
+     "at": 73
+    },
+    {
+     "w": "one out of ten",
+     "v": "11:1",
+     "at": 92
+    }
+   ],
+   "refs": [
+    "PRO 16:33"
+   ]
+  },
+  "NEH.11.4-9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:4",
+   "to": "11:9",
+   "pdf": 801,
+   "page": 766,
+   "lemmas": [
+    {
+     "w": "Four hundred and sixty-eight",
+     "v": "11:6",
+     "at": 50
+    },
+    {
+     "w": "Jerusalem; nine hundred and twenty-eight"
+    },
+    {
+     "w": "Benjamin",
+     "v": "11:4",
+     "at": 77
+    }
+   ],
+   "refs": [
+    "1CH 9:3"
+   ]
+  },
+  "NEH.11.12": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:12",
+   "to": "11:12",
+   "pdf": 801,
+   "page": 766,
+   "lemmas": [
+    {
+     "w": "The work of the house",
+     "v": "11:12",
+     "at": 23
+    }
+   ],
+   "refs": []
+  },
+  "NEH.11.14": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:14",
+   "to": "11:14",
+   "pdf": 801,
+   "page": 766,
+   "lemmas": [
+    {
+     "w": "Mighty men of valor",
+     "v": "11:14",
+     "at": 20
+    }
+   ],
+   "refs": []
+  },
+  "NEH.11.16": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:16",
+   "to": "11:16",
+   "pdf": 801,
+   "page": 766,
+   "lemmas": [
+    {
+     "w": "The oversight of the business outside of the house of God",
+     "v": "11:16",
+     "at": 57
+    }
+   ],
+   "refs": []
+  },
+  "NEH.11.19": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:19",
+   "to": "11:19",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "The gatekeepers",
+     "v": "11:19",
+     "at": 9
+    }
+   ],
+   "refs": []
+  },
+  "NEH.11.22": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:22",
+   "to": "11:22",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "the overseer of the Levites: Uzzi"
+    }
+   ],
+   "refs": []
+  },
+  "NEH.11.24": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:24",
+   "to": "11:24",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "The king’s deputy",
+     "v": "11:24",
+     "at": 80
+    }
+   ],
+   "refs": []
+  },
+  "NEH.11.25-36": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:25",
+   "to": "11:36",
+   "pdf": 802,
+   "page": 767,
+   "refs": []
+  },
+  "NEH.11.25": {
+   "b": "NEH",
+   "k": "note",
+   "from": "11:25",
+   "to": "11:25",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "Kirjath Arba",
+     "v": "11:25",
+     "at": 82
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.1": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:1",
+   "to": "12:1",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "Zerubbabel",
+     "v": "12:1",
+     "at": 59
+    },
+    {
+     "w": "Jeshua",
+     "v": "12:1",
+     "at": 96
+    },
+    {
+     "w": "Ezra",
+     "v": "12:1",
+     "at": 123
+    }
+   ],
+   "refs": [
+    "EZR 7:1"
+   ]
+  },
+  "NEH.12.9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:9",
+   "to": "12:9",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "stood across from them",
+     "v": "12:9",
+     "at": 41
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.10-11": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:10",
+   "to": "12:11",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "Eliashib",
+     "v": "12:10",
+     "at": 36
+    },
+    {
+     "w": "Jaddua",
+     "v": "12:11",
+     "at": 42
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.12-21": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:12",
+   "to": "12:21",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "priests",
+     "v": "12:12",
+     "at": 32
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.22": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:22",
+   "to": "12:22",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "Darius",
+     "v": "12:22",
+     "at": 20
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.23": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:23",
+   "to": "12:23",
+   "pdf": 802,
+   "page": 767,
+   "lemmas": [
+    {
+     "w": "The book of the chronicles",
+     "v": "12:23",
+     "at": 114
+    },
+    {
+     "w": "the heads of the fathers’ houses",
+     "v": "12:23",
+     "at": 18
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.27-29": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:27",
+   "to": "12:29",
+   "pdf": 803,
+   "page": 768,
+   "lemmas": [
+    {
+     "w": "with gladness",
+     "v": "12:27",
+     "at": 151
+    },
+    {
+     "w": "Thanksgivings",
+     "v": "12:27",
+     "at": 176
+    },
+    {
+     "w": "singing",
+     "v": "12:27",
+     "at": 194
+    },
+    {
+     "w": "instruments",
+     "v": "12:27",
+     "at": 229
+    }
+   ],
+   "refs": [
+    "NEH 7:4-5",
+    "NEH 11:1-2",
+    "PSA 147:7"
+   ]
+  },
+  "NEH.12.30": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:30",
+   "to": "12:30",
+   "pdf": 803,
+   "page": 768,
+   "lemmas": [
+    {
+     "w": "the priests and Levites",
+     "v": "12:30",
+     "at": 5
+    },
+    {
+     "w": "the people, the gates, and the wall",
+     "v": "12:30",
+     "at": 63
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.36": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:36",
+   "to": "12:36",
+   "pdf": 803,
+   "page": 768,
+   "lemmas": [
+    {
+     "w": "David",
+     "v": "12:36",
+     "at": 121
+    },
+    {
+     "w": "musical instruments",
+     "v": "12:36",
+     "at": 98
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.43": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:43",
+   "to": "12:43",
+   "pdf": 803,
+   "page": 768,
+   "lemmas": [
+    {
+     "w": "sacrifices",
+     "v": "12:43",
+     "at": 33
+    }
+   ],
+   "refs": []
+  },
+  "NEH.12.44-47": {
+   "b": "NEH",
+   "k": "note",
+   "from": "12:44",
+   "to": "12:47",
+   "pdf": 803,
+   "page": 768,
+   "lemmas": [
+    {
+     "w": "priests, Levites, singers"
+    },
+    {
+     "w": "gatekeepers",
+     "v": "12:45",
+     "at": 25
+    },
+    {
+     "w": "the days of David and Asaph",
+     "v": "12:46",
+     "at": 7
+    }
+   ],
+   "refs": []
+  },
+  "NEH.13.1-3": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:1",
+   "to": "13:3",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "people",
+     "v": "13:1",
+     "at": 67
+    }
+   ],
+   "refs": [
+    "NEH 9:2",
+    "1CO 15:33"
+   ]
+  },
+  "NEH.13.4-9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:4",
+   "to": "13:9",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "Eliashib",
+     "v": "13:4",
+     "at": 17
+    },
+    {
+     "w": "Tobiah",
+     "v": "13:4",
+     "at": 116
+    }
+   ],
+   "refs": [
+    "NEH 2:10-19",
+    "NEH 4:3",
+    "NEH 6:10-19"
+   ]
+  },
+  "NEH.13.8-9": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:8",
+   "to": "13:9",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "grain",
+     "v": "13:9",
+     "at": 116
+    }
+   ],
+   "refs": []
+  },
+  "NEH.13.10-11": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:10",
+   "to": "13:11",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "Contended",
+     "v": "13:11",
+     "at": 5
+    },
+    {
+     "w": "Why is the house of God forsaken?",
+     "v": "13:11",
+     "at": 43
+    }
+   ],
+   "refs": [
+    "JER 2:9"
+   ]
+  },
+  "NEH.13.12-13": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:12",
+   "to": "13:13",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "Then all Judah brought the tithe",
+     "v": "13:12",
+     "at": 0
+    },
+    {
+     "w": "treasurers",
+     "v": "13:13",
+     "at": 19
+    }
+   ],
+   "refs": [
+    "NEH 7:2",
+    "1CO 4:2",
+    "2TI 2:2"
+   ]
+  },
+  "NEH.13.14": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:14",
+   "to": "13:14",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "good deeds",
+     "v": "13:14",
+     "at": 63
+    }
+   ],
+   "refs": []
+  },
+  "NEH.13.15-22": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:15",
+   "to": "13:22",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "the Sabbath",
+     "v": "13:15",
+     "at": 61
+    },
+    {
+     "w": "Men of Tyre",
+     "v": "13:16",
+     "at": 0
+    },
+    {
+     "w": "Judah",
+     "v": "13:15",
+     "at": 30
+    },
+    {
+     "w": "Jerusalem",
+     "v": "13:15",
+     "at": 194
+    }
+   ],
+   "refs": [
+    "EXO 20:8-11",
+    "NEH 10:31"
+   ]
+  },
+  "NEH.13.19-22": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:19",
+   "to": "13:22",
+   "pdf": 804,
+   "page": 769,
+   "lemmas": [
+    {
+     "w": "I commanded the gates to be shut",
+     "v": "13:19",
+     "at": 86
+    },
+    {
+     "w": "merchants",
+     "v": "13:20",
+     "at": 8
+    },
+    {
+     "w": "warned",
+     "v": "13:21",
+     "at": 7
+    },
+    {
+     "w": "on the Sabbath",
+     "v": "13:19",
+     "at": 272
+    }
+   ],
+   "refs": []
+  },
+  "NEH.13.23-24": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:23",
+   "to": "13:24",
+   "pdf": 805,
+   "page": 770,
+   "lemmas": [
+    {
+     "w": "language",
+     "v": "13:24",
+     "at": 37
+    }
+   ],
+   "refs": [
+    "EZR 9:1-4",
+    "NEH 10:30"
+   ]
+  },
+  "NEH.13.25-27": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:25",
+   "to": "13:27",
+   "pdf": 805,
+   "page": 770,
+   "lemmas": [
+    {
+     "w": "contended... cursed... struck... pulled out their hair"
+    },
+    {
+     "w": "made them swear",
+     "v": "13:25",
+     "at": 93
+    },
+    {
+     "w": "Solomon",
+     "v": "13:26",
+     "at": 8
+    }
+   ],
+   "refs": [
+    "1KI 11:4-8"
+   ]
+  },
+  "NEH.13.28-29": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:28",
+   "to": "13:29",
+   "pdf": 805,
+   "page": 770,
+   "lemmas": [
+    {
+     "w": "I drove him from me",
+     "v": "13:28",
+     "at": 121
+    }
+   ],
+   "refs": [
+    "NEH 2:10"
+   ]
+  },
+  "NEH.13.30-31": {
+   "b": "NEH",
+   "k": "note",
+   "from": "13:30",
+   "to": "13:31",
+   "pdf": 805,
+   "page": 770,
+   "lemmas": [
+    {
+     "w": "I cleansed them of everything pagan",
+     "v": "13:30",
+     "at": 5
+    },
+    {
+     "w": "remember me, O my God, for good",
+     "v": "13:31",
+     "at": 74
+    }
+   ],
+   "refs": [
+    "NEH 5:19"
+   ]
+  },
+  "NEH.intro": {
+   "b": "NEH",
+   "k": "intro",
+   "title": "NEHEMIAH",
+   "pdf": 781
   }
  },
  "verses": {
@@ -219284,7 +222674,8 @@
   },
   "PSA 128:1": {
    "cited": [
-    "GEN.5.24.word.walked"
+    "GEN.5.24.word.walked",
+    "NEH.1.5.word.awesome"
    ]
   },
   "MIC 6:8": {
@@ -220003,7 +223394,8 @@
     "REV.5.5-6",
     "1CH.5.7.word.generations",
     "1CH.16.16-18",
-    "1CH.27.23"
+    "1CH.27.23",
+    "NEH.9.7-8"
    ],
    "covers": [
     "GEN.12.1-15.21"
@@ -220072,7 +223464,8 @@
     "REV.5.5-6",
     "1CH.5.7.word.generations",
     "1CH.16.16-18",
-    "EZR.9.8.word.remnant"
+    "EZR.9.8.word.remnant",
+    "NEH.9.7-8"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -220124,7 +223517,8 @@
     "GAL.3.6",
     "GAL.4.24",
     "REV.5.5-6",
-    "1CH.5.7.word.generations"
+    "1CH.5.7.word.generations",
+    "NEH.9.7-8"
    ],
    "own": [
     "GEN.12.1-15.21",
@@ -220481,7 +223875,11 @@
   },
   "NEH 5:13": {
    "cited": [
-    "GEN.15.6.word.believe"
+    "GEN.15.6.word.believe",
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.5.13"
    ]
   },
   "PSA 41:13": {
@@ -220783,7 +224181,8 @@
     "DEU.10.22",
     "1KI.4.20-21",
     "1CH.16.16-18",
-    "1CH.27.23"
+    "1CH.27.23",
+    "NEH.9.22-25"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -221239,7 +224638,8 @@
     "1CH.17.9",
     "1CH.18.3",
     "1CH.19.19",
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.9.7-8"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -221290,7 +224690,8 @@
     "LUK.21.33",
     "1CH.17.9",
     "1CH.19.19",
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.9.7-8"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -221341,7 +224742,8 @@
     "LUK.21.33",
     "1CH.17.9",
     "1CH.19.19",
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.9.7-8"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -221392,7 +224794,8 @@
     "LUK.21.33",
     "1CH.17.9",
     "1CH.19.19",
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.9.7-8"
    ],
    "covers": [
     "GEN.12.1-15.21",
@@ -222457,7 +225860,8 @@
     "JOS.1.2",
     "JOS.9.20",
     "2SA.c5.chart.the-city-of-the-jebusites-david-s-jerusa",
-    "LUK.1.54-55"
+    "LUK.1.54-55",
+    "NEH.9.22-25"
    ],
    "covers": [
     "GEN.22.1-19",
@@ -222660,7 +226064,12 @@
     "GEN.c21.culture.wells",
     "2CH.26.9",
     "EZR.4.23",
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.13.4-9"
+   ],
+   "covers": [
+    "NEH.2.12-15"
    ]
   },
   "JHN 4:11": {
@@ -223065,7 +226474,8 @@
   "GEN 32:11": {
    "cited": [
     "GEN.c32.article.payback",
-    "GEN.35.1"
+    "GEN.35.1",
+    "NEH.1.5.word.awesome"
    ],
    "covers": [
     "GEN.32.9-11"
@@ -223678,7 +227088,8 @@
   "EXO 18:11": {
    "cited": [
     "GEN.41.1.word.pharaoh",
-    "EXO.21.14-15"
+    "EXO.21.14-15",
+    "NEH.9.10"
    ],
    "own": [
     "EXO.18.11"
@@ -224571,7 +227982,9 @@
     "2SA.12.9",
     "2KI.4.23",
     "LUK.c14.article.keeping-the-sabbath",
-    "1TI.1.9"
+    "1TI.1.9",
+    "NEH.9.14",
+    "NEH.13.15-22"
    ],
    "covers": [
     "EXO.20.1-17",
@@ -224595,7 +228008,9 @@
     "2SA.12.9",
     "2KI.4.23",
     "LUK.c14.article.keeping-the-sabbath",
-    "1TI.1.9"
+    "1TI.1.9",
+    "NEH.9.14",
+    "NEH.13.15-22"
    ],
    "covers": [
     "EXO.20.1-17",
@@ -224619,7 +228034,9 @@
     "2SA.12.9",
     "2KI.4.23",
     "LUK.c14.article.keeping-the-sabbath",
-    "1TI.1.9"
+    "1TI.1.9",
+    "NEH.9.14",
+    "NEH.13.15-22"
    ],
    "covers": [
     "EXO.20.1-17",
@@ -224925,7 +228342,9 @@
     "JHN.8.24",
     "JHN.8.58-59",
     "JHN.18.8",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.5",
+    "NEH.9.7-8"
    ],
    "own": [
     "EXO.3.14"
@@ -224958,7 +228377,8 @@
     "MAT.22.32",
     "LUK.20.38",
     "JHN.1.12",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.7-8"
    ],
    "own": [
     "EXO.3.15"
@@ -226890,7 +230310,8 @@
     "GEN.17.22",
     "GEN.18.21",
     "DEU.32.39",
-    "JOS.2.11"
+    "JOS.2.11",
+    "NEH.9.6"
    ]
   },
   "GEN 12:4": {
@@ -229007,7 +232428,8 @@
   "PSA 103:1": {
    "cited": [
     "GEN.14.20",
-    "JOS.14.13"
+    "JOS.14.13",
+    "NEH.8.6"
    ]
   },
   "PSA 103:2": {
@@ -229174,7 +232596,8 @@
     "GEN.15.12",
     "GEN.17.22",
     "GEN.18.21",
-    "DEU.32.39"
+    "DEU.32.39",
+    "NEH.9.6"
    ]
   },
   "PSA 113:5": {
@@ -229183,7 +232606,8 @@
     "GEN.17.22",
     "GEN.18.21",
     "DEU.32.39",
-    "JOS.2.11"
+    "JOS.2.11",
+    "NEH.9.6"
    ]
   },
   "ISA 6:3": {
@@ -229881,7 +233305,8 @@
     "LEV.1.2",
     "LEV.11.44",
     "LEV.18.2",
-    "JOS.3.13"
+    "JOS.3.13",
+    "NEH.1.5"
    ],
    "own": [
     "EXO.6.2"
@@ -229902,7 +233327,8 @@
     "LEV.18.2",
     "JOS.3.13",
     "1KI.8.20.word.name",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.1.5"
    ],
    "own": [
     "EXO.6.3"
@@ -229978,7 +233404,8 @@
     "EPH.c4.article.the-trinity-in-the-bible",
     "JAS.2.19",
     "1CH.29.19",
-    "2CH.34.31"
+    "2CH.34.31",
+    "NEH.9.6"
    ],
    "own": [
     "DEU.6.4"
@@ -230747,7 +234174,8 @@
    "cited": [
     "JDG.11.24",
     "1SA.11.1",
-    "1SA.14.47"
+    "1SA.14.47",
+    "NEH.2.10"
    ]
   },
   "GEN 20:1": {
@@ -232432,7 +235860,8 @@
     "2KI.17.10.word.wooden-image",
     "2CH.2.14",
     "EZR.9.2",
-    "EZR.9.10-12"
+    "EZR.9.10-12",
+    "NEH.10.30"
    ],
    "own": [
     "DEU.7.3"
@@ -234416,7 +237845,8 @@
     "MAT.22.32",
     "LUK.20.38",
     "JHN.6.35.word.i-am",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.7-8"
    ],
    "own": [
     "EXO.3.12"
@@ -234434,7 +237864,8 @@
     "MAT.22.32",
     "LUK.20.38",
     "JHN.6.35.word.i-am",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.7-8"
    ]
   },
   "GEN 32:24": {
@@ -236868,7 +240299,8 @@
    "cited": [
     "GEN.39.4",
     "1CO.c9.article.the-race-for-the-crown",
-    "2TI.c2.culture.descriptions-of-the-christian-life"
+    "2TI.c2.culture.descriptions-of-the-christian-life",
+    "NEH.13.12-13"
    ]
   },
   "GEN 39:7": {
@@ -236953,7 +240385,8 @@
    ],
    "cited": [
     "GEN.41.10-12",
-    "1CO.4.1"
+    "1CO.4.1",
+    "NEH.3.20.word.carefully"
    ]
   },
   "GEN 39:20": {
@@ -237059,7 +240492,8 @@
    "cited": [
     "GEN.39.21",
     "EXO.15.13.word.goodness",
-    "EXO.15.13"
+    "EXO.15.13",
+    "NEH.9.16-17"
    ]
   },
   "GEN 50:24": {
@@ -239783,7 +243217,8 @@
     "EXO.19.5",
     "DEU.26.7",
     "2SA.3.12.word.covenant",
-    "2KI.13.23"
+    "2KI.13.23",
+    "NEH.1.6"
    ],
    "covers": [
     "EXO.2.23-25"
@@ -239796,7 +243231,8 @@
     "DEU.4.31",
     "JDG.6.13",
     "1KI.18.36",
-    "1CH.17.9"
+    "1CH.17.9",
+    "NEH.9.7-8"
    ]
   },
   "HEB 11:22": {
@@ -240260,7 +243696,8 @@
     "MAT.22.32",
     "LUK.20.38",
     "JHN.6.35.word.i-am",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.7-8"
    ]
   },
   "JDG 6:9": {
@@ -240291,7 +243728,8 @@
     "EXO.9.1",
     "EXO.33.13",
     "LEV.1.2",
-    "JOS.1.2"
+    "JOS.1.2",
+    "NEH.1.5"
    ],
    "own": [
     "EXO.6.6-8"
@@ -241600,7 +245038,8 @@
     "EXO.33.13",
     "LEV.1.2",
     "NUM.16.2-3",
-    "JOS.1.2"
+    "JOS.1.2",
+    "NEH.1.5"
    ],
    "covers": [
     "EXO.6.6-8"
@@ -242434,7 +245873,9 @@
     "DEU.5.12-15",
     "2SA.12.9",
     "LUK.c14.article.keeping-the-sabbath",
-    "1TI.1.9"
+    "1TI.1.9",
+    "NEH.9.14",
+    "NEH.13.15-22"
    ],
    "covers": [
     "EXO.20.1-17"
@@ -242584,7 +246025,8 @@
     "1SA.12.22",
     "2KI.13.23",
     "MRK.6.34",
-    "JHN.1.14"
+    "JHN.1.14",
+    "NEH.9.16-17"
    ],
    "own": [
     "EXO.34.6"
@@ -242662,7 +246104,8 @@
     "EPH.c4.article.the-trinity-in-the-bible",
     "COL.1.1.word.jesus-christ",
     "1JN.1.1-4",
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.9.14"
    ],
    "own": [
     "JHN.1.17"
@@ -243145,7 +246588,8 @@
     "EXO.7.16",
     "EXO.8.12",
     "DEU.26.7",
-    "2KI.13.23"
+    "2KI.13.23",
+    "NEH.1.6"
    ]
   },
   "EXO 2:25": {
@@ -243155,7 +246599,8 @@
    "cited": [
     "EXO.6.5",
     "DEU.26.7",
-    "2KI.13.23"
+    "2KI.13.23",
+    "NEH.1.6"
    ]
   },
   "EXO 4:19": {
@@ -243175,7 +246620,8 @@
     "EXO.19.5",
     "EXO.33.13",
     "LEV.1.2",
-    "JOS.1.2"
+    "JOS.1.2",
+    "NEH.1.5"
    ],
    "own": [
     "EXO.6.5"
@@ -243262,7 +246708,8 @@
     "EXO.14.19",
     "EXO.32.34",
     "JDG.2.1",
-    "2CH.6.18"
+    "2CH.6.18",
+    "NEH.9.7-8"
    ]
   },
   "EXO 32:34": {
@@ -243283,7 +246730,8 @@
    "cited": [
     "EXO.3.2",
     "EXO.34.9",
-    "NUM.21.21-26"
+    "NUM.21.21-26",
+    "NEH.9.7-8"
    ]
   },
   "EXO 3:3": {
@@ -243349,7 +246797,8 @@
     "EXO.33.13",
     "LEV.1.2",
     "JOS.1.2",
-    "1CH.17.9"
+    "1CH.17.9",
+    "NEH.1.5"
    ],
    "covers": [
     "EXO.6.6-8"
@@ -243430,7 +246879,8 @@
   "EXO 6:1": {
    "cited": [
     "EXO.3.19",
-    "EXO.33.13"
+    "EXO.33.13",
+    "NEH.1.10"
    ],
    "own": [
     "EXO.6.1"
@@ -243452,7 +246902,8 @@
     "EXO.14.31",
     "DEU.2.15",
     "REV.15.3-4",
-    "2CH.20.21"
+    "2CH.20.21",
+    "NEH.1.10"
    ],
    "covers": [
     "EXO.14.1-15.21",
@@ -244326,7 +247777,8 @@
     "EXO.33.13",
     "LEV.1.2",
     "JOS.1.2",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.1.5"
    ]
   },
   "EXO 14:31": {
@@ -244348,7 +247800,8 @@
     "EXO.6.9"
    ],
    "cited": [
-    "EXO.14.31"
+    "EXO.14.31",
+    "NEH.1.5"
    ]
   },
   "EXO 6:10": {
@@ -244490,7 +247943,8 @@
   "DEU 29:5": {
    "cited": [
     "EXO.7.7",
-    "DEU.34.1"
+    "DEU.34.1",
+    "NEH.9.18-21"
    ],
    "covers": [
     "DEU.29.2-8",
@@ -244865,7 +248319,8 @@
     "EXO.14.16",
     "DEU.6.16-19",
     "LUK.4.12",
-    "HEB.3.7-11"
+    "HEB.3.7-11",
+    "NEH.9.15"
    ],
    "own": [
     "EXO.17.5"
@@ -244882,7 +248337,8 @@
     "NUM.20.8",
     "DEU.6.16-19",
     "LUK.4.12",
-    "HEB.3.7-11"
+    "HEB.3.7-11",
+    "NEH.9.15"
    ],
    "own": [
     "EXO.17.6"
@@ -244899,7 +248355,8 @@
     "NUM.20.13",
     "DEU.6.16-19",
     "LUK.4.12",
-    "HEB.3.7-11"
+    "HEB.3.7-11",
+    "NEH.9.15"
    ],
    "own": [
     "EXO.17.7"
@@ -245943,7 +249400,8 @@
     "DEU.6.16-19",
     "1SA.30.6",
     "LUK.4.12",
-    "HEB.3.7-11"
+    "HEB.3.7-11",
+    "NEH.9.15"
    ]
   },
   "EXO 22:23": {
@@ -245960,7 +249418,8 @@
    "cited": [
     "EXO.8.12",
     "EXO.23.3",
-    "DEU.23.19"
+    "DEU.23.19",
+    "NEH.5.1-5"
    ],
    "own": [
     "EXO.22.25-27"
@@ -246729,7 +250188,8 @@
     "NUM.3.11-13",
     "DEU.6.8-9",
     "DEU.16.1",
-    "MAT.23.5"
+    "MAT.23.5",
+    "NEH.1.10"
    ]
   },
   "EXO 13:15": {
@@ -246810,7 +250270,8 @@
     "NUM.9.15-23",
     "DEU.31.15",
     "ACT.2.3",
-    "1CO.10.1"
+    "1CO.10.1",
+    "NEH.9.11-12"
    ]
   },
   "EXO 13:22": {
@@ -246823,7 +250284,8 @@
     "EXO.33.9",
     "EXO.40.36-37",
     "DEU.31.15",
-    "ACT.2.3"
+    "ACT.2.3",
+    "NEH.9.11-12"
    ]
   },
   "NUM 12:8": {
@@ -247232,7 +250694,8 @@
    ],
    "cited": [
     "REV.15.3-4",
-    "2CH.20.21"
+    "2CH.20.21",
+    "NEH.9.11-12"
    ]
   },
   "EXO 15:14": {
@@ -247375,7 +250838,8 @@
     "EXO.15.24",
     "DEU.6.16-19",
     "LUK.4.12",
-    "HEB.3.7-11"
+    "HEB.3.7-11",
+    "NEH.9.15"
    ],
    "own": [
     "EXO.17.2"
@@ -247387,7 +250851,8 @@
     "DEU.6.16-19",
     "JOS.7.7",
     "LUK.4.12",
-    "HEB.3.7-11"
+    "HEB.3.7-11",
+    "NEH.9.15"
    ],
    "own": [
     "EXO.17.3"
@@ -247621,7 +251086,8 @@
     "EXO.33.18",
     "RUT.2.2.word.glean",
     "JHN.6.31",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:12": {
@@ -247631,7 +251097,8 @@
    "cited": [
     "RUT.2.2.word.glean",
     "JHN.6.31",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:13": {
@@ -247641,7 +251108,8 @@
    "cited": [
     "RUT.2.2.word.glean",
     "JHN.6.31",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "NUM 11:31": {
@@ -247695,7 +251163,8 @@
    "cited": [
     "RUT.2.2.word.glean",
     "JHN.6.31",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:15": {
@@ -247705,7 +251174,8 @@
    "cited": [
     "RUT.2.2.word.glean",
     "JHN.6.31",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "NUM 11:1": {
@@ -247851,7 +251321,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:19": {
@@ -247860,7 +251331,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:20": {
@@ -247869,7 +251341,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:21": {
@@ -247878,7 +251351,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:22": {
@@ -247887,7 +251361,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:23": {
@@ -247896,7 +251371,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:24": {
@@ -247905,7 +251381,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:25": {
@@ -247914,7 +251391,8 @@
    ],
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:26": {
@@ -247924,7 +251402,8 @@
    "cited": [
     "NUM.28.9.word.sabbath",
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:27": {
@@ -247932,7 +251411,8 @@
     "EXO.16.27-31"
    ],
    "cited": [
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:28": {
@@ -247940,7 +251420,8 @@
     "EXO.16.27-31"
    ],
    "cited": [
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:29": {
@@ -247949,7 +251430,8 @@
    ],
    "cited": [
     "ACT.1.12",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:30": {
@@ -247957,7 +251439,8 @@
     "EXO.16.27-31"
    ],
    "cited": [
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:31": {
@@ -247968,7 +251451,8 @@
     "EXO.16.31"
    ],
    "cited": [
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:32": {
@@ -247976,7 +251460,8 @@
     "EXO.16.32-33"
    ],
    "cited": [
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:33": {
@@ -247987,7 +251472,8 @@
     "NUM.11.7-9",
     "1SA.c5.chart.the-ark",
     "1KI.8.9",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:35": {
@@ -247995,7 +251481,8 @@
     "EXO.16.35"
    ],
    "cited": [
-    "NUM.11.7-9"
+    "NUM.11.7-9",
+    "NEH.9.15"
    ]
   },
   "EXO 17:1": {
@@ -248005,7 +251492,8 @@
    "cited": [
     "DEU.6.16-19",
     "LUK.4.12",
-    "HEB.3.7-11"
+    "HEB.3.7-11",
+    "NEH.9.15"
    ]
   },
   "EXO 19:2": {
@@ -248804,7 +252292,8 @@
     "EXO.34.21",
     "EXO.35.1-3",
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "NUM.28.9.word.sabbath"
+    "NUM.28.9.word.sabbath",
+    "NEH.9.14"
    ]
   },
   "EXO 31:13": {
@@ -248815,7 +252304,8 @@
     "EXO.34.21",
     "EXO.35.1-3",
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "NUM.28.9.word.sabbath"
+    "NUM.28.9.word.sabbath",
+    "NEH.9.14"
    ],
    "own": [
     "EXO.31.13-14"
@@ -248830,7 +252320,8 @@
     "EXO.35.1-3",
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
-    "LUK.c14.article.keeping-the-sabbath"
+    "LUK.c14.article.keeping-the-sabbath",
+    "NEH.9.14"
    ],
    "covers": [
     "EXO.31.13-14"
@@ -248846,7 +252337,8 @@
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
     "MRK.2.24",
-    "LUK.c14.article.keeping-the-sabbath"
+    "LUK.c14.article.keeping-the-sabbath",
+    "NEH.9.14"
    ]
   },
   "EXO 31:16": {
@@ -248857,7 +252349,8 @@
     "EXO.34.21",
     "EXO.35.1-3",
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "NUM.28.9.word.sabbath"
+    "NUM.28.9.word.sabbath",
+    "NEH.9.14"
    ],
    "own": [
     "EXO.31.16-17"
@@ -248871,7 +252364,8 @@
     "EXO.34.21",
     "EXO.35.1-3",
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "NUM.28.9.word.sabbath"
+    "NUM.28.9.word.sabbath",
+    "NEH.9.14"
    ],
    "covers": [
     "EXO.31.16-17"
@@ -248889,7 +252383,8 @@
     "NUM.28.9.word.sabbath",
     "DEU.4.13",
     "JOS.4.16",
-    "REV.15.5"
+    "REV.15.5",
+    "NEH.9.14"
    ],
    "own": [
     "EXO.31.18"
@@ -248912,7 +252407,8 @@
     "JOS.9.6",
     "JOS.23.12",
     "1KI.11.1",
-    "2KI.17.10.word.wooden-image"
+    "2KI.17.10.word.wooden-image",
+    "NEH.10.30"
    ],
    "own": [
     "EXO.34.12"
@@ -248926,7 +252422,8 @@
     "JDG.2.2-3",
     "1KI.11.1",
     "1KI.18.19",
-    "2KI.17.10.word.wooden-image"
+    "2KI.17.10.word.wooden-image",
+    "NEH.10.30"
    ]
   },
   "EXO 34:14": {
@@ -248936,7 +252433,8 @@
     "JOS.23.12",
     "1KI.11.1",
     "2KI.17.10.word.wooden-image",
-    "JAS.4.5"
+    "JAS.4.5",
+    "NEH.10.30"
    ]
   },
   "EXO 34:15": {
@@ -248945,7 +252443,8 @@
     "EXO.32.6",
     "JOS.23.12",
     "1KI.11.1",
-    "2KI.17.10.word.wooden-image"
+    "2KI.17.10.word.wooden-image",
+    "NEH.10.30"
    ],
    "own": [
     "EXO.34.15"
@@ -249283,7 +252782,8 @@
     "EXO.21.13"
    ],
    "cited": [
-    "1KI.1.50-53"
+    "1KI.1.50-53",
+    "NEH.6.10"
    ]
   },
   "NUM 35:9": {
@@ -249514,7 +253014,8 @@
     "EXO.21.14-15"
    ],
    "cited": [
-    "1KI.1.50-53"
+    "1KI.1.50-53",
+    "NEH.6.10"
    ]
   },
   "EXO 21:24": {
@@ -249846,7 +253347,8 @@
    ],
    "cited": [
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "DEU.15.1"
+    "DEU.15.1",
+    "NEH.9.14"
    ]
   },
   "EXO 23:11": {
@@ -249855,12 +253357,16 @@
    ],
    "cited": [
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "DEU.15.1"
+    "DEU.15.1",
+    "NEH.9.14"
    ]
   },
   "EXO 23:12": {
    "covers": [
     "EXO.23.10-12"
+   ],
+   "cited": [
+    "NEH.9.14"
    ]
   },
   "LEV 25:1": {
@@ -249869,7 +253375,8 @@
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
     "DEU.15.1",
-    "DEU.15.2"
+    "DEU.15.2",
+    "NEH.10.31"
    ],
    "own": [
     "LEV.25.1"
@@ -249881,7 +253388,8 @@
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
     "DEU.15.1",
-    "DEU.15.2"
+    "DEU.15.2",
+    "NEH.10.31"
    ],
    "own": [
     "LEV.25.2"
@@ -249893,7 +253401,8 @@
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
     "DEU.15.1",
-    "DEU.15.2"
+    "DEU.15.2",
+    "NEH.10.31"
    ]
   },
   "LEV 25:4": {
@@ -249903,7 +253412,8 @@
     "NUM.28.9.word.sabbath",
     "DEU.15.1",
     "DEU.15.2",
-    "2CH.36.21"
+    "2CH.36.21",
+    "NEH.10.31"
    ]
   },
   "LEV 25:5": {
@@ -249912,7 +253422,8 @@
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
     "DEU.15.1",
-    "DEU.15.2"
+    "DEU.15.2",
+    "NEH.10.31"
    ],
    "own": [
     "LEV.25.5-7"
@@ -249924,7 +253435,8 @@
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
     "DEU.15.1",
-    "DEU.15.2"
+    "DEU.15.2",
+    "NEH.10.31"
    ],
    "covers": [
     "LEV.25.5-7"
@@ -249936,7 +253448,8 @@
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "NUM.28.9.word.sabbath",
     "DEU.15.1",
-    "DEU.15.2"
+    "DEU.15.2",
+    "NEH.10.31"
    ],
    "covers": [
     "LEV.25.5-7"
@@ -249971,7 +253484,8 @@
    ],
    "cited": [
     "JHN.2.13",
-    "1CO.c15.chart.facts-about-the-resurrection"
+    "1CO.c15.chart.facts-about-the-resurrection",
+    "NEH.10.32-39"
    ]
   },
   "EXO 19:11": {
@@ -253128,7 +256642,8 @@
    ],
    "cited": [
     "EXO.34.15",
-    "2KI.13.3.word.anger"
+    "2KI.13.3.word.anger",
+    "NEH.3.20.word.carefully"
    ]
   },
   "EXO 32:11": {
@@ -253491,7 +257006,8 @@
     "JDG.14.1-15.20",
     "1KI.11.1",
     "2KI.17.10.word.wooden-image",
-    "EZR.9.2"
+    "EZR.9.2",
+    "NEH.10.30"
    ],
    "own": [
     "EXO.34.16"
@@ -253732,7 +257248,8 @@
     "EXO.33.18",
     "RUT.2.2.word.glean",
     "JHN.6.31",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 33:19": {
@@ -253825,7 +257342,8 @@
   "DEU 4:32": {
    "cited": [
     "EXO.34.10",
-    "2SA.7.22"
+    "2SA.7.22",
+    "NEH.9.6"
    ],
    "own": [
     "DEU.4.32-34"
@@ -253834,7 +257352,8 @@
   "DEU 4:33": {
    "cited": [
     "EXO.34.10",
-    "2SA.7.22"
+    "2SA.7.22",
+    "NEH.9.6"
    ],
    "covers": [
     "DEU.4.32-34"
@@ -253846,7 +257365,8 @@
     "DEU.26.8",
     "DEU.29.2-8",
     "2SA.7.22",
-    "LUK.1.51-53"
+    "LUK.1.51-53",
+    "NEH.9.6"
    ],
    "covers": [
     "DEU.4.32-34"
@@ -253855,7 +257375,8 @@
   "DEU 4:35": {
    "cited": [
     "EXO.34.10",
-    "2SA.7.22"
+    "2SA.7.22",
+    "NEH.9.6"
    ],
    "own": [
     "DEU.4.35"
@@ -253864,7 +257385,8 @@
   "DEU 4:36": {
    "cited": [
     "EXO.34.10",
-    "2SA.7.22"
+    "2SA.7.22",
+    "NEH.9.6"
    ],
    "own": [
     "DEU.4.36"
@@ -253874,14 +257396,16 @@
    "cited": [
     "EXO.34.10",
     "DEU.7.6.word.chosen",
-    "2SA.7.22"
+    "2SA.7.22",
+    "NEH.9.6"
    ]
   },
   "DEU 4:38": {
    "cited": [
     "EXO.34.10",
     "JOS.1.2",
-    "2SA.7.22"
+    "2SA.7.22",
+    "NEH.9.6"
    ],
    "own": [
     "DEU.4.38"
@@ -253892,7 +257416,8 @@
     "EXO.34.10",
     "DEU.4.35",
     "JOS.1.2",
-    "2SA.7.22"
+    "2SA.7.22",
+    "NEH.9.6"
    ],
    "own": [
     "DEU.4.39"
@@ -253903,7 +257428,8 @@
     "EXO.34.10",
     "JOS.1.2",
     "2SA.7.22",
-    "2CH.34.31"
+    "2CH.34.31",
+    "NEH.9.6"
    ],
    "own": [
     "DEU.4.40"
@@ -255804,7 +259330,8 @@
     "LEV.c5.article.the-holiness-code",
     "LEV.16.16.word.transgressions",
     "NUM.19.7.word.wash",
-    "HEB.6.1-2"
+    "HEB.6.1-2",
+    "NEH.1.9"
    ],
    "own": [
     "LEV.16.21"
@@ -256935,7 +260462,8 @@
   "LEV 6:12": {
    "cited": [
     "LEV.c14.culture.the-offerings",
-    "2SA.24.25"
+    "2SA.24.25",
+    "NEH.10.32-39"
    ],
    "own": [
     "LEV.6.12-13"
@@ -256944,7 +260472,8 @@
   "LEV 6:13": {
    "cited": [
     "LEV.c14.culture.the-offerings",
-    "2SA.24.25"
+    "2SA.24.25",
+    "NEH.10.32-39"
    ],
    "covers": [
     "LEV.6.12-13"
@@ -258011,7 +261540,8 @@
    "cited": [
     "LEV.16.16.word.transgressions",
     "1SA.25.28.word.forgive",
-    "1KI.11.4"
+    "1KI.11.4",
+    "NEH.1.6.word.confess"
    ]
   },
   "2KI 8:20": {
@@ -259237,7 +262767,8 @@
     "JHN.7.2",
     "1CH.23.31",
     "2CH.5.3",
-    "2CH.31.3"
+    "2CH.31.3",
+    "NEH.8.14"
    ],
    "own": [
     "LEV.23.40"
@@ -259729,7 +263260,8 @@
   "LEV 25:17": {
    "cited": [
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "LEV.25.10.word.jubilee"
+    "LEV.25.10.word.jubilee",
+    "NEH.1.5.word.awesome"
    ],
    "own": [
     "LEV.25.17"
@@ -259857,7 +263389,8 @@
   },
   "LEV 25:35": {
    "cited": [
-    "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i"
+    "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
+    "NEH.5.1-5"
    ],
    "own": [
     "LEV.25.35-38"
@@ -259867,7 +263400,8 @@
    "cited": [
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "DEU.23.19",
-    "LUK.16.6"
+    "LUK.16.6",
+    "NEH.5.1-5"
    ],
    "covers": [
     "LEV.25.35-38"
@@ -259876,7 +263410,8 @@
   "LEV 25:37": {
    "cited": [
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
-    "LUK.16.6"
+    "LUK.16.6",
+    "NEH.5.1-5"
    ],
    "covers": [
     "LEV.25.35-38"
@@ -259887,7 +263422,8 @@
   },
   "LEV 25:38": {
    "cited": [
-    "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i"
+    "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
+    "NEH.5.1-5"
    ],
    "covers": [
     "LEV.25.35-38"
@@ -259900,14 +263436,16 @@
    "cited": [
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "2KI.4.1",
-    "2CH.28.10"
+    "2CH.28.10",
+    "NEH.5.1-5"
    ]
   },
   "LEV 25:40": {
    "cited": [
     "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
     "2KI.4.1",
-    "2CH.28.10"
+    "2CH.28.10",
+    "NEH.5.1-5"
    ]
   },
   "LEV 25:41": {
@@ -260008,7 +263546,8 @@
   },
   "LEV 25:55": {
    "cited": [
-    "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i"
+    "LEV.c23.chart.the-feasts-and-sacred-times-of-ancient-i",
+    "NEH.9.36-37"
    ]
   },
   "LEV 27:17": {
@@ -260594,6 +264133,9 @@
   "LEV 5:5": {
    "own": [
     "LEV.5.5"
+   ],
+   "cited": [
+    "NEH.1.6.word.confess"
    ]
   },
   "LEV 5:6": {
@@ -261763,7 +265305,8 @@
    "cited": [
     "LEV.10.11-13",
     "DEU.c31.culture.biblical-law-public-law",
-    "JOS.4.6"
+    "JOS.4.6",
+    "NEH.1.10"
    ],
    "covers": [
     "DEU.6.20-24"
@@ -264760,7 +268303,8 @@
    ],
    "cited": [
     "2KI.6.28",
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "2KI 6:28": {
@@ -264795,7 +268339,8 @@
     "LEV.26.30"
    ],
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:33": {
@@ -264804,7 +268349,8 @@
    ],
    "cited": [
     "2CH.33.8",
-    "2CH.36.21"
+    "2CH.36.21",
+    "NEH.1.8"
    ]
   },
   "LEV 26:36": {
@@ -264812,7 +268358,8 @@
     "LEV.26.36-37"
    ],
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:37": {
@@ -264820,7 +268367,8 @@
     "LEV.26.36-37"
    ],
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:38": {
@@ -264828,7 +268376,8 @@
     "LEV.26.38-39"
    ],
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:39": {
@@ -264836,7 +268385,8 @@
     "LEV.26.38-39"
    ],
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:42": {
@@ -264845,7 +268395,8 @@
    ],
    "cited": [
     "LUK.1.72",
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "GAL 3:15": {
@@ -264887,7 +268438,8 @@
     "LEV.26.44-45"
    ],
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:45": {
@@ -264895,7 +268447,8 @@
     "LEV.26.44-45"
    ],
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:46": {
@@ -265981,6 +269534,9 @@
   "NEH 12:27": {
    "cited": [
     "NUM.7.10.word.dedication"
+   ],
+   "own": [
+    "NEH.12.27-29"
    ]
   },
   "PSA 30:1": {
@@ -266103,7 +269659,8 @@
   "1SA 2:5": {
    "cited": [
     "NUM.7.10.word.dedication",
-    "1SA.7.5"
+    "1SA.7.5",
+    "NEH.4.2"
    ],
    "covers": [
     "1SA.2.4-5"
@@ -266200,7 +269757,8 @@
   },
   "NUM 10:11": {
    "cited": [
-    "NUM.c10.chart.a-chronology-of-the-second-year-of-the-e"
+    "NUM.c10.chart.a-chronology-of-the-second-year-of-the-e",
+    "NEH.9.11-12"
    ],
    "own": [
     "NUM.10.11"
@@ -266216,7 +269774,8 @@
    ],
    "cited": [
     "2SA.2.26-28",
-    "REV.8.2"
+    "REV.8.2",
+    "NEH.4.19-20"
    ]
   },
   "EZR 4:1": {
@@ -266560,7 +270119,8 @@
   },
   "DEU 1:33": {
    "cited": [
-    "NUM.14.9.word.rebel"
+    "NUM.14.9.word.rebel",
+    "NEH.9.11-12"
    ],
    "own": [
     "DEU.1.33"
@@ -267199,7 +270759,8 @@
     "MAT.22.32",
     "LUK.20.38",
     "JHN.6.35.word.i-am",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.7-8"
    ]
   },
   "EXO 6:28": {
@@ -268123,7 +271684,8 @@
   "NUM 18:7": {
    "cited": [
     "NUM.1.51-53",
-    "1CH.6.1"
+    "1CH.6.1",
+    "NEH.6.11-14"
    ],
    "covers": [
     "NUM.18.5-7"
@@ -269052,7 +272614,8 @@
     "NUM.5.7-8"
    ],
    "cited": [
-    "LUK.19.8"
+    "LUK.19.8",
+    "NEH.1.6.word.confess"
    ]
   },
   "NUM 5:8": {
@@ -269585,7 +273148,8 @@
     "NUM.5.1-10.10"
    ],
    "cited": [
-    "2SA.2.26-28"
+    "2SA.2.26-28",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:2": {
@@ -269597,7 +273161,8 @@
    ],
    "cited": [
     "NUM.29.1-6",
-    "2SA.2.26-28"
+    "2SA.2.26-28",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:3": {
@@ -269605,7 +273170,8 @@
     "NUM.5.1-10.10"
    ],
    "cited": [
-    "2SA.2.26-28"
+    "2SA.2.26-28",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:4": {
@@ -269616,7 +273182,8 @@
     "NUM.10.4"
    ],
    "cited": [
-    "2SA.2.26-28"
+    "2SA.2.26-28",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:5": {
@@ -269627,7 +273194,8 @@
     "NUM.10.5"
    ],
    "cited": [
-    "2SA.2.26-28"
+    "2SA.2.26-28",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:6": {
@@ -269635,7 +273203,8 @@
     "NUM.5.1-10.10"
    ],
    "cited": [
-    "2SA.2.26-28"
+    "2SA.2.26-28",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:7": {
@@ -269644,7 +273213,8 @@
    ],
    "cited": [
     "2SA.2.26-28",
-    "REV.8.2"
+    "REV.8.2",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:8": {
@@ -269653,7 +273223,8 @@
    ],
    "cited": [
     "2SA.2.26-28",
-    "REV.8.2"
+    "REV.8.2",
+    "NEH.4.19-20"
    ]
   },
   "NUM 10:10": {
@@ -269665,7 +273236,8 @@
    ],
    "cited": [
     "1SA.20.5-6",
-    "2SA.2.26-28"
+    "2SA.2.26-28",
+    "NEH.4.19-20"
    ]
   },
   "LEV 6:1": {
@@ -269784,7 +273356,8 @@
    ],
    "cited": [
     "NUM.12.16",
-    "JDG.5.4-5"
+    "JDG.5.4-5",
+    "NEH.9.11-12"
    ]
   },
   "NUM 12:16": {
@@ -269801,57 +273374,88 @@
     "NUM.10.14-28"
    ],
    "cited": [
-    "EZR.5.1.word.jews"
+    "EZR.5.1.word.jews",
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:15": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:16": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:17": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:18": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:19": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:20": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:21": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:22": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:23": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:24": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:25": {
@@ -269859,22 +273463,32 @@
     "NUM.10.14-28"
    ],
    "cited": [
-    "JOS.6.9"
+    "JOS.6.9",
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:26": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:27": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:28": {
    "covers": [
     "NUM.10.14-28"
+   ],
+   "cited": [
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:29": {
@@ -269885,7 +273499,8 @@
     "NUM.24.21-22",
     "JDG.1.16",
     "1SA.15.6",
-    "1SA.27.10"
+    "1SA.27.10",
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:30": {
@@ -269893,7 +273508,8 @@
     "NUM.10.29-32"
    ],
    "cited": [
-    "JDG.1.16"
+    "JDG.1.16",
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:31": {
@@ -269901,7 +273517,8 @@
     "NUM.10.29-32"
    ],
    "cited": [
-    "JDG.1.16"
+    "JDG.1.16",
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:32": {
@@ -269909,7 +273526,8 @@
     "NUM.10.29-32"
    ],
    "cited": [
-    "JDG.1.16"
+    "JDG.1.16",
+    "NEH.9.11-12"
    ]
   },
   "JDG 1:16": {
@@ -270504,7 +274122,8 @@
     "MAT.22.32",
     "LUK.20.38",
     "JHN.6.35.word.i-am",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.7-8"
    ]
   },
   "EXO 3:10": {
@@ -270514,14 +274133,16 @@
     "MAT.22.32",
     "LUK.20.38",
     "JHN.6.35.word.i-am",
-    "1CH.29.18"
+    "1CH.29.18",
+    "NEH.9.7-8"
    ]
   },
   "EXO 3:17": {
    "cited": [
     "NUM.13.27",
     "DEU.4.31",
-    "1CH.17.9"
+    "1CH.17.9",
+    "NEH.9.7-8"
    ]
   },
   "DEU 6:3": {
@@ -271298,7 +274919,8 @@
    "cited": [
     "NUM.17.10-11",
     "1SA.c5.chart.the-ark",
-    "1KI.8.9"
+    "1KI.8.9",
+    "NEH.9.15"
    ]
   },
   "NUM 17:12": {
@@ -271349,7 +274971,8 @@
     "NUM.18.1"
    ],
    "cited": [
-    "1CH.6.1"
+    "1CH.6.1",
+    "NEH.7.1"
    ]
   },
   "NUM 18:2": {
@@ -271359,7 +274982,8 @@
    "cited": [
     "1CH.16.4.word.minister",
     "1CH.23.26.word.levites",
-    "1CH.6.1"
+    "1CH.6.1",
+    "NEH.7.1"
    ]
   },
   "NUM 18:3": {
@@ -271367,7 +274991,8 @@
     "NUM.18.2-3"
    ],
    "cited": [
-    "1CH.6.1"
+    "1CH.6.1",
+    "NEH.7.1"
    ]
   },
   "NUM 18:5": {
@@ -271448,7 +275073,8 @@
     "NUM.18.8-20"
    ],
    "cited": [
-    "2CH.31.4"
+    "2CH.31.4",
+    "NEH.10.32-39"
    ]
   },
   "NUM 18:16": {
@@ -271456,7 +275082,8 @@
     "NUM.18.8-20"
    ],
    "cited": [
-    "2CH.31.4"
+    "2CH.31.4",
+    "NEH.10.32-39"
    ]
   },
   "NUM 18:17": {
@@ -271464,7 +275091,8 @@
     "NUM.18.8-20"
    ],
    "cited": [
-    "2CH.31.4"
+    "2CH.31.4",
+    "NEH.10.32-39"
    ]
   },
   "NUM 18:18": {
@@ -271472,7 +275100,8 @@
     "NUM.18.8-20"
    ],
    "cited": [
-    "2CH.31.4"
+    "2CH.31.4",
+    "NEH.10.32-39"
    ]
   },
   "NUM 18:19": {
@@ -271482,7 +275111,8 @@
    "cited": [
     "2KI.2.20",
     "2CH.13.5",
-    "2CH.31.4"
+    "2CH.31.4",
+    "NEH.10.32-39"
    ]
   },
   "NUM 18:20": {
@@ -272428,6 +276058,9 @@
    "cited": [
     "NUM.22.5",
     "JOS.13.22"
+   ],
+   "covers": [
+    "NEH.13.1-3"
    ]
   },
   "MIC 6:5": {
@@ -272913,7 +276546,8 @@
   },
   "JER 1:9": {
    "cited": [
-    "NUM.23.1-6"
+    "NUM.23.1-6",
+    "NEH.9.30-31"
    ]
   },
   "NUM 23:8": {
@@ -272921,7 +276555,8 @@
     "NUM.23.7-10"
    ],
    "cited": [
-    "NUM.23.7-10"
+    "NUM.23.7-10",
+    "NEH.9.6"
    ]
   },
   "NUM 23:9": {
@@ -272930,7 +276565,8 @@
    ],
    "cited": [
     "NUM.23.7-10",
-    "DEU.33.28"
+    "DEU.33.28",
+    "NEH.9.6"
    ]
   },
   "NUM 23:10": {
@@ -274949,7 +278585,8 @@
   },
   "JOB 1:1": {
    "cited": [
-    "DEU.4.25.word.evil"
+    "DEU.4.25.word.evil",
+    "NEH.1.5.word.awesome"
    ]
   },
   "PSA 141:4": {
@@ -275448,6 +279085,9 @@
   "NEH 9:7": {
    "cited": [
     "DEU.7.6.word.chosen"
+   ],
+   "own": [
+    "NEH.9.7-8"
    ]
   },
   "ISA 14:1": {
@@ -275561,7 +279201,8 @@
     "1CH.22.12",
     "2CH.23.11",
     "2CH.29.10",
-    "2CH.34.30"
+    "2CH.34.30",
+    "NEH.1.5.word.awesome"
    ],
    "own": [
     "DEU.17.19-20"
@@ -276661,7 +280302,8 @@
     "2KI.23.2",
     "2CH.15.12",
     "2CH.29.10",
-    "2CH.30.22"
+    "2CH.30.22",
+    "NEH.8.18"
    ]
   },
   "DEU 31:11": {
@@ -276671,7 +280313,8 @@
     "2KI.23.2",
     "2CH.15.12",
     "2CH.29.10",
-    "2CH.30.22"
+    "2CH.30.22",
+    "NEH.8.18"
    ],
    "own": [
     "DEU.31.11-12"
@@ -277301,14 +280944,16 @@
    "cited": [
     "DEU.1.33",
     "1SA.c5.chart.the-ark",
-    "REV.11.19"
+    "REV.11.19",
+    "NEH.9.11-12"
    ]
   },
   "NUM 10:34": {
    "cited": [
     "DEU.1.33",
     "LUK.5.24",
-    "REV.11.19"
+    "REV.11.19",
+    "NEH.9.11-12"
    ]
   },
   "DEU 3:28": {
@@ -277600,7 +281245,8 @@
     "JOS.23.12",
     "1KI.11.1",
     "2CH.2.14",
-    "EZR.9.10-12"
+    "EZR.9.10-12",
+    "NEH.9.7-8"
    ],
    "own": [
     "DEU.7.1"
@@ -278949,7 +282595,8 @@
    "cited": [
     "DEU.10.17-18",
     "DEU.29.2-8",
-    "JOS.1.2"
+    "JOS.1.2",
+    "NEH.9.18-21"
    ]
   },
   "DEU 11:8": {
@@ -279117,7 +282764,8 @@
   "DAN 9:4": {
    "cited": [
     "DEU.9.19",
-    "2CH.7.14.word.pray"
+    "2CH.7.14.word.pray",
+    "NEH.1.6.word.confess"
    ]
   },
   "DAN 9:7": {
@@ -280436,7 +284084,8 @@
     "DEU.15.1"
    ],
    "cited": [
-    "2KI.8.3"
+    "2KI.8.3",
+    "NEH.10.31"
    ]
   },
   "DEU 15:2": {
@@ -280444,7 +284093,8 @@
     "DEU.15.2"
    ],
    "cited": [
-    "2KI.8.3"
+    "2KI.8.3",
+    "NEH.10.31"
    ]
   },
   "DEU 15:4": {
@@ -280452,7 +284102,8 @@
     "DEU.15.4-5"
    ],
    "cited": [
-    "2KI.8.3"
+    "2KI.8.3",
+    "NEH.10.31"
    ]
   },
   "DEU 15:5": {
@@ -280460,7 +284111,8 @@
     "DEU.15.4-5"
    ],
    "cited": [
-    "2KI.8.3"
+    "2KI.8.3",
+    "NEH.10.31"
    ]
   },
   "DEU 15:6": {
@@ -280468,7 +284120,8 @@
     "DEU.15.6"
    ],
    "cited": [
-    "2KI.8.3"
+    "2KI.8.3",
+    "NEH.10.31"
    ]
   },
   "ISA 55:4": {
@@ -281604,6 +285257,9 @@
   "DEU 23:19": {
    "own": [
     "DEU.23.19"
+   ],
+   "cited": [
+    "NEH.5.1-5"
    ]
   },
   "MAT 5:37": {
@@ -281938,7 +285594,8 @@
     "DEU.26.2"
    ],
    "cited": [
-    "JOS.1.2"
+    "JOS.1.2",
+    "NEH.10.32-39"
    ]
   },
   "DEU 26:3": {
@@ -283026,7 +286683,8 @@
     "1SA.7.3",
     "MAT.22.32",
     "MAT.24.31",
-    "REV.5.5-6"
+    "REV.5.5-6",
+    "NEH.1.8"
    ]
   },
   "DEU 30:2": {
@@ -283037,7 +286695,8 @@
     "1SA.7.3",
     "MAT.22.32",
     "MAT.24.31",
-    "REV.5.5-6"
+    "REV.5.5-6",
+    "NEH.1.8"
    ]
   },
   "DEU 30:3": {
@@ -283048,7 +286707,8 @@
     "1SA.7.3",
     "MAT.22.32",
     "MAT.24.31",
-    "REV.5.5-6"
+    "REV.5.5-6",
+    "NEH.1.8"
    ]
   },
   "DEU 30:4": {
@@ -283059,7 +286719,8 @@
     "1SA.7.3",
     "MAT.22.32",
     "MAT.24.31",
-    "REV.5.5-6"
+    "REV.5.5-6",
+    "NEH.1.8"
    ]
   },
   "DEU 30:5": {
@@ -283070,7 +286731,8 @@
     "1SA.7.3",
     "MAT.22.32",
     "MAT.24.31",
-    "REV.5.5-6"
+    "REV.5.5-6",
+    "NEH.1.8"
    ]
   },
   "DEU 30:7": {
@@ -283482,17 +287144,32 @@
   },
   "NEH 8:1": {
    "cited": [
-    "DEU.31.11-12"
+    "DEU.31.11-12",
+    "NEH.9.5",
+    "NEH.9.32"
+   ],
+   "own": [
+    "NEH.8.1"
    ]
   },
   "NEH 8:2": {
    "cited": [
-    "DEU.31.11-12"
+    "DEU.31.11-12",
+    "NEH.9.1",
+    "NEH.9.5",
+    "NEH.9.32"
+   ],
+   "own": [
+    "NEH.8.2"
    ]
   },
   "NEH 8:3": {
    "cited": [
-    "DEU.31.11-12"
+    "DEU.31.11-12",
+    "NEH.9.3"
+   ],
+   "own": [
+    "NEH.8.3"
    ]
   },
   "NEH 8:4": {
@@ -283502,12 +287179,19 @@
   },
   "NEH 8:5": {
    "cited": [
-    "DEU.31.11-12"
+    "DEU.31.11-12",
+    "NEH.9.3"
+   ],
+   "own": [
+    "NEH.8.5"
    ]
   },
   "NEH 8:6": {
    "cited": [
     "DEU.31.11-12"
+   ],
+   "own": [
+    "NEH.8.6"
    ]
   },
   "MAL 2:4": {
@@ -283877,7 +287561,8 @@
    "cited": [
     "DEU.32.40",
     "EPH.1.9.word.purpose",
-    "1CH.c15.article.king-david-as-priest"
+    "1CH.c15.article.king-david-as-priest",
+    "NEH.9.32"
    ],
    "covers": [
     "HEB.6.16-17"
@@ -283886,7 +287571,8 @@
   "HEB 6:18": {
    "cited": [
     "DEU.32.40",
-    "1CH.c15.article.king-david-as-priest"
+    "1CH.c15.article.king-david-as-priest",
+    "NEH.9.32"
    ],
    "own": [
     "HEB.6.18"
@@ -285276,7 +288962,8 @@
     "2JN.1.8",
     "REV.20.12",
     "REV.22.14-15",
-    "REV.22.21"
+    "REV.22.21",
+    "NEH.9.26-29"
    ],
    "own": [
     "EPH.2.8-10"
@@ -285298,7 +288985,8 @@
     "1PE.4.18",
     "REV.20.12",
     "REV.22.14-15",
-    "REV.22.21"
+    "REV.22.21",
+    "NEH.9.26-29"
    ],
    "covers": [
     "EPH.2.8-10"
@@ -286656,7 +290344,8 @@
     "JDG.1.34",
     "JDG.3.5",
     "1KI.9.20-21",
-    "REV.11.19"
+    "REV.11.19",
+    "NEH.9.7-8"
    ]
   },
   "JOS 4:24": {
@@ -289345,7 +293034,8 @@
   },
   "PRO 16:33": {
    "cited": [
-    "JOS.14.2"
+    "JOS.14.2",
+    "NEH.11.1"
    ]
   },
   "JOS 15:1": {
@@ -289496,7 +293186,8 @@
   },
   "NEH 11:2": {
    "cited": [
-    "JOS.14.13"
+    "JOS.14.13",
+    "NEH.12.27-29"
    ]
   },
   "PSA 104:1": {
@@ -290159,6 +293850,9 @@
   "JOS 23:12": {
    "own": [
     "JOS.23.12"
+   ],
+   "cited": [
+    "NEH.10.30"
    ]
   },
   "1KI 3:1": {
@@ -290217,7 +293911,8 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "1CH.28.9",
-    "2CH.21.11"
+    "2CH.21.11",
+    "NEH.13.25-27"
    ],
    "own": [
     "1KI.11.4"
@@ -290232,7 +293927,8 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "2KI.23.10",
-    "2CH.21.11"
+    "2CH.21.11",
+    "NEH.13.25-27"
    ],
    "own": [
     "1KI.11.5"
@@ -290245,7 +293941,8 @@
     "2SA.7.14",
     "1KI.9.1-9",
     "1KI.16.30-31",
-    "2CH.21.11"
+    "2CH.21.11",
+    "NEH.13.25-27"
    ]
   },
   "1KI 11:7": {
@@ -290258,7 +293955,8 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "2KI.14.4.word.high-places",
-    "2CH.21.11"
+    "2CH.21.11",
+    "NEH.13.25-27"
    ],
    "own": [
     "1KI.11.7"
@@ -290271,7 +293969,8 @@
     "2SA.7.14",
     "1KI.9.1-9",
     "1KI.16.30-31",
-    "2CH.21.11"
+    "2CH.21.11",
+    "NEH.13.25-27"
    ]
   },
   "JOS 23:13": {
@@ -290467,7 +294166,8 @@
    "cited": [
     "JOS.23.16",
     "JDG.2.6-3.6",
-    "JDG.2.6-10"
+    "JDG.2.6-10",
+    "NEH.10.30"
    ],
    "covers": [
     "JDG.2.6-3.6",
@@ -296177,7 +299877,12 @@
    "cited": [
     "JDG.4.4",
     "2KI.c22.article.female-prophets",
-    "2CH.34.22"
+    "2CH.34.22",
+    "NEH.c6.chart.how-nehemiah-handled-opposition",
+    "NEH.13.4-9"
+   ],
+   "covers": [
+    "NEH.6.11-14"
    ]
   },
   "2SA 20:19": {
@@ -296884,7 +300589,8 @@
   },
   "JER 48:33": {
    "cited": [
-    "JDG.6.11"
+    "JDG.6.11",
+    "NEH.c2.culture.sanballat"
    ]
   },
   "JER 1:6": {
@@ -299076,19 +302782,22 @@
    "cited": [
     "RUT.2.2.word.glean",
     "JHN.6.31",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:17": {
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "EXO 16:18": {
    "cited": [
     "RUT.2.2.word.glean",
-    "REV.2.17"
+    "REV.2.17",
+    "NEH.9.15"
    ]
   },
   "ISA 27:12": {
@@ -300564,7 +304273,8 @@
   },
   "EST 1:2": {
    "cited": [
-    "1SA.10.24.word.king"
+    "1SA.10.24.word.king",
+    "NEH.1.1"
    ]
   },
   "EST 1:3": {
@@ -310258,6 +313968,9 @@
   "NEH 9:32": {
    "cited": [
     "2SA.23.8.word.mighty-men"
+   ],
+   "own": [
+    "NEH.9.32"
    ]
   },
   "ISA 10:21": {
@@ -310420,6 +314133,9 @@
     "2SA.2.1",
     "1CH.9.2",
     "EZR.2.1"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "2SA 2:2": {
@@ -310946,6 +314662,9 @@
   "NEH 11:33": {
    "cited": [
     "2SA.4.2-3"
+   ],
+   "covers": [
+    "NEH.11.25-36"
    ]
   },
   "2SA 4:4": {
@@ -317995,7 +321714,8 @@
     "MAT.21.4-5",
     "MRK.c13.chart.passion-week-bethany-the-mount-of-olives",
     "LUK.19.35",
-    "JHN.12.13-15"
+    "JHN.12.13-15",
+    "NEH.6.7"
    ]
   },
   "MAT 21:5": {
@@ -319960,7 +323680,8 @@
   "2CH 5:13": {
    "cited": [
     "1KI.8.1",
-    "EZR.3.10-11"
+    "EZR.3.10-11",
+    "NEH.1.6.word.confess"
    ],
    "own": [
     "2CH.5.13"
@@ -320090,7 +323811,8 @@
     "1KI.8.33"
    ],
    "cited": [
-    "REV.6.8"
+    "REV.6.8",
+    "NEH.1.6.word.confess"
    ]
   },
   "1KI 8:35": {
@@ -320098,7 +323820,8 @@
     "1KI.8.35-40"
    ],
    "cited": [
-    "REV.6.8"
+    "REV.6.8",
+    "NEH.1.6.word.confess"
    ]
   },
   "1KI 8:36": {
@@ -320976,6 +324699,9 @@
   "1KI 8:65": {
    "covers": [
     "1KI.8.62-66"
+   ],
+   "cited": [
+    "NEH.8.17"
    ]
   },
   "1KI 8:66": {
@@ -325207,7 +328933,8 @@
    "cited": [
     "2KI.c12.culture.millo",
     "2CH.33.14",
-    "2CH.34.11"
+    "2CH.34.11",
+    "NEH.3.8"
    ],
    "own": [
     "2CH.32.5"
@@ -325423,6 +329150,10 @@
   "NEH 3:15": {
    "cited": [
     "2KI.21.18.word.garden"
+   ],
+   "own": [
+    "NEH.3.15-32",
+    "NEH.3.15"
    ]
   },
   "JER 29:5": {
@@ -325740,7 +329471,8 @@
   },
   "EZR 8:15": {
    "cited": [
-    "2KI.c25.chart.exile-of-the-southern-kingdom"
+    "2KI.c25.chart.exile-of-the-southern-kingdom",
+    "NEH.1.4"
    ],
    "own": [
     "EZR.8.15"
@@ -325749,12 +329481,14 @@
   "EZR 8:16": {
    "cited": [
     "2KI.c25.chart.exile-of-the-southern-kingdom",
-    "EZR.10.15"
+    "EZR.10.15",
+    "NEH.1.4"
    ]
   },
   "EZR 8:17": {
    "cited": [
-    "2KI.c25.chart.exile-of-the-southern-kingdom"
+    "2KI.c25.chart.exile-of-the-southern-kingdom",
+    "NEH.1.4"
    ],
    "own": [
     "EZR.8.17"
@@ -325764,7 +329498,11 @@
    "cited": [
     "2KI.c25.chart.exile-of-the-southern-kingdom",
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "2KI 1:2": {
@@ -326861,7 +330599,8 @@
   },
   "DEU 15:3": {
    "cited": [
-    "2KI.8.3"
+    "2KI.8.3",
+    "NEH.10.31"
    ]
   },
   "2KI 8:5": {
@@ -328932,7 +332671,8 @@
     "2KI.17.34-39"
    ],
    "cited": [
-    "EZR.4.3"
+    "EZR.4.3",
+    "NEH.1.5.word.awesome"
    ]
   },
   "2KI 17:35": {
@@ -330932,12 +334672,15 @@
    "cited": [
     "2KI.25.10",
     "EZR.7.6",
-    "EZR.8.33-34"
+    "EZR.8.33-34",
+    "NEH.4.3",
+    "NEH.13.4-9"
    ]
   },
   "NEH 6:16": {
    "cited": [
-    "2KI.25.10"
+    "2KI.25.10",
+    "NEH.13.4-9"
    ]
   },
   "2KI 25:18": {
@@ -330951,7 +334694,9 @@
   "EZR 7:1": {
    "cited": [
     "2KI.25.18",
-    "2CH.34.9"
+    "2CH.34.9",
+    "NEH.1.1",
+    "NEH.12.1"
    ],
    "own": [
     "EZR.7.1-5"
@@ -340492,6 +344237,9 @@
   "NEH 9:26": {
    "cited": [
     "MAT.21.33-40"
+   ],
+   "own": [
+    "NEH.9.26-29"
    ]
   },
   "JER 2:30": {
@@ -342167,6 +345915,9 @@
   "MAT 23:31": {
    "own": [
     "MAT.23.31-32"
+   ],
+   "cited": [
+    "NEH.9.26-29"
    ]
   },
   "MAT 23:32": {
@@ -356759,7 +360510,11 @@
   },
   "NEH 12:17": {
    "cited": [
-    "LUK.1.5"
+    "LUK.1.5",
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
    ]
   },
   "LUK 3:30": {
@@ -362600,7 +366355,8 @@
   },
   "DEU 23:20": {
    "cited": [
-    "LUK.16.6"
+    "LUK.16.6",
+    "NEH.5.1-5"
    ]
   },
   "JAS 1:9": {
@@ -363256,7 +367012,8 @@
     "1CO.15.12.word.resurrection",
     "PHP.3.11",
     "2TI.3.5",
-    "REV.20.5"
+    "REV.20.5",
+    "NEH.13.1-3"
    ],
    "own": [
     "1CO.15.33-34"
@@ -367182,26 +370939,44 @@
   "NEH 13:15": {
    "cited": [
     "JHN.5.10"
+   ],
+   "own": [
+    "NEH.13.15-22"
    ]
   },
   "NEH 13:16": {
    "cited": [
     "JHN.5.10"
+   ],
+   "covers": [
+    "NEH.13.15-22"
    ]
   },
   "NEH 13:17": {
    "cited": [
     "JHN.5.10"
+   ],
+   "covers": [
+    "NEH.13.15-22"
    ]
   },
   "NEH 13:18": {
    "cited": [
     "JHN.5.10"
+   ],
+   "covers": [
+    "NEH.13.15-22"
    ]
   },
   "NEH 13:19": {
    "cited": [
     "JHN.5.10"
+   ],
+   "covers": [
+    "NEH.13.15-22"
+   ],
+   "own": [
+    "NEH.13.19-22"
    ]
   },
   "JHN 5:13": {
@@ -377588,7 +381363,8 @@
    "cited": [
     "1CO.c12.chart.spiritual-gifts-vs-spiritual-responsibil",
     "1CO.12.28-30",
-    "2TI.c1.article.the-handbook-for-a-life-s-work"
+    "2TI.c1.article.the-handbook-for-a-life-s-work",
+    "NEH.13.12-13"
    ],
    "own": [
     "2TI.2.2"
@@ -383934,7 +387710,8 @@
   "LEV 26:41": {
    "cited": [
     "PHP.3.3",
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "EZK 44:7": {
@@ -391270,7 +395047,8 @@
   },
   "1KI 8:34": {
    "cited": [
-    "REV.6.8"
+    "REV.6.8",
+    "NEH.1.6.word.confess"
    ]
   },
   "1CH 21:12": {
@@ -392657,7 +396435,8 @@
     "2CH.20.19",
     "2CH.25.24",
     "2CH.31.11",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ]
   },
   "1CH 1:1": {
@@ -393107,7 +396886,8 @@
   },
   "EZR 3:4": {
    "cited": [
-    "1CH.3.19"
+    "1CH.3.19",
+    "NEH.8.17"
    ],
    "own": [
     "EZR.3.4"
@@ -393151,6 +396931,9 @@
   "NEH 12:1": {
    "cited": [
     "1CH.3.19"
+   ],
+   "own": [
+    "NEH.12.1"
    ]
   },
   "HAG 1:12": {
@@ -393418,7 +397201,8 @@
   },
   "NUM 18:4": {
    "cited": [
-    "1CH.6.1"
+    "1CH.6.1",
+    "NEH.7.1"
    ]
   },
   "1CH 24:4": {
@@ -394194,7 +397978,8 @@
   },
   "EZR 2:43": {
    "cited": [
-    "1CH.9.2"
+    "1CH.9.2",
+    "NEH.10.28"
    ],
    "own": [
     "EZR.2.43-50"
@@ -394208,134 +397993,217 @@
   "NEH 7:46": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:47": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:48": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:49": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:50": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:51": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:52": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:53": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:54": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:55": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:56": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:57": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:58": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:59": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:60": {
    "cited": [
     "1CH.9.2",
     "EZR.2.1",
-    "EZR.2.55"
+    "EZR.2.55",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:62": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:63": {
    "cited": [
     "1CH.9.2",
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:64": {
    "cited": [
     "1CH.9.2",
     "EZR.2.1"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:66": {
    "cited": [
     "1CH.9.2",
     "EZR.2.1"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:67": {
    "cited": [
     "1CH.9.2",
     "EZR.2.1"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:68": {
    "cited": [
     "1CH.9.2",
     "EZR.2.1"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:69": {
    "cited": [
     "1CH.9.2",
     "EZR.2.1"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:70": {
@@ -394343,6 +398211,12 @@
     "1CH.9.2",
     "EZR.2.1",
     "EZR.2.69"
+   ],
+   "covers": [
+    "NEH.7.6-73"
+   ],
+   "own": [
+    "NEH.7.70"
    ]
   },
   "NEH 7:71": {
@@ -394350,6 +398224,9 @@
     "1CH.9.2",
     "EZR.2.1",
     "EZR.2.69"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:72": {
@@ -394357,22 +398234,34 @@
     "1CH.9.2",
     "EZR.2.1",
     "EZR.2.69"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:73": {
    "cited": [
     "1CH.9.2",
     "EZR.2.1"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 10:28": {
    "cited": [
     "1CH.9.2"
+   ],
+   "own": [
+    "NEH.10.28"
    ]
   },
   "1CH 9:3": {
    "own": [
     "1CH.9.3"
+   ],
+   "cited": [
+    "NEH.11.4-9"
    ]
   },
   "DEU 33:13": {
@@ -394412,7 +398301,8 @@
    "cited": [
     "1CH.15.18",
     "1CH.26.2",
-    "1CH.26.14"
+    "1CH.26.14",
+    "NEH.7.1"
    ]
   },
   "EZK 46:1": {
@@ -394490,7 +398380,8 @@
     "1CH.9.22",
     "1CH.26.2",
     "2CH.20.19",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ],
    "own": [
     "1CH.26.12"
@@ -394502,7 +398393,8 @@
     "1CH.9.22",
     "1CH.26.2",
     "2CH.20.19",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ]
   },
   "1CH 26:14": {
@@ -394512,7 +398404,8 @@
     "1CH.26.2",
     "2CH.20.19",
     "2CH.31.14",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ],
    "own": [
     "1CH.26.14"
@@ -394525,7 +398418,8 @@
    "cited": [
     "1CH.12.6",
     "1CH.15.18",
-    "1CH.26.2"
+    "1CH.26.2",
+    "NEH.7.1"
    ]
   },
   "1CH 9:22": {
@@ -394545,7 +398439,8 @@
     "2CH.20.19",
     "2CH.25.24",
     "2CH.31.11",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ],
    "own": [
     "1CH.26.15"
@@ -394559,7 +398454,8 @@
     "2CH.20.19",
     "2CH.25.24",
     "2CH.31.11",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ]
   },
   "1CH 26:17": {
@@ -394570,7 +398466,8 @@
     "2CH.20.19",
     "2CH.25.24",
     "2CH.31.11",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ]
   },
   "1CH 26:18": {
@@ -394580,7 +398477,8 @@
     "2CH.20.19",
     "2CH.25.24",
     "2CH.31.11",
-    "EZR.2.42"
+    "EZR.2.42",
+    "NEH.7.1"
    ]
   },
   "1CH 9:25": {
@@ -395091,7 +398989,8 @@
    "cited": [
     "1CH.15.18",
     "1CH.26.2",
-    "1CH.26.14"
+    "1CH.26.14",
+    "NEH.7.1"
    ]
   },
   "1CH 9:20": {
@@ -395660,7 +399559,8 @@
   },
   "PSA 106:47": {
    "cited": [
-    "1CH.16.7"
+    "1CH.16.7",
+    "NEH.1.6.word.confess"
    ]
   },
   "PSA 106:48": {
@@ -397299,11 +401199,17 @@
   "NEH 13:4": {
    "cited": [
     "1CH.28.11"
+   ],
+   "own": [
+    "NEH.13.4-9"
    ]
   },
   "NEH 13:5": {
    "cited": [
     "1CH.28.11"
+   ],
+   "covers": [
+    "NEH.13.4-9"
    ]
   },
   "1KI 6:8": {
@@ -397528,6 +401434,9 @@
   "NEH 13:1": {
    "cited": [
     "2CH.6.3.word.assembly"
+   ],
+   "own": [
+    "NEH.13.1-3"
    ]
   },
   "ISA 16:12": {
@@ -397622,11 +401531,19 @@
   "NEH 1:6": {
    "cited": [
     "2CH.12.2.word.transgressed"
+   ],
+   "own": [
+    "NEH.1.6.word.confess",
+    "NEH.1.6"
    ]
   },
   "NEH 1:7": {
    "cited": [
-    "2CH.12.2.word.transgressed"
+    "2CH.12.2.word.transgressed",
+    "NEH.10.29"
+   ],
+   "own": [
+    "NEH.1.7"
    ]
   },
   "PRO 16:10": {
@@ -397844,12 +401761,14 @@
   },
   "2CH 34:29": {
    "cited": [
-    "2CH.c34.article.the-book-of-the-law-of-the-lord"
+    "2CH.c34.article.the-book-of-the-law-of-the-lord",
+    "NEH.c9.article.the-levites-psalm"
    ]
   },
   "2CH 34:30": {
    "cited": [
-    "2CH.c34.article.the-book-of-the-law-of-the-lord"
+    "2CH.c34.article.the-book-of-the-law-of-the-lord",
+    "NEH.c9.article.the-levites-psalm"
    ],
    "own": [
     "2CH.34.30"
@@ -397857,7 +401776,8 @@
   },
   "2CH 34:31": {
    "cited": [
-    "2CH.c34.article.the-book-of-the-law-of-the-lord"
+    "2CH.c34.article.the-book-of-the-law-of-the-lord",
+    "NEH.c9.article.the-levites-psalm"
    ],
    "own": [
     "2CH.34.31"
@@ -397865,7 +401785,8 @@
   },
   "2CH 34:32": {
    "cited": [
-    "2CH.c34.article.the-book-of-the-law-of-the-lord"
+    "2CH.c34.article.the-book-of-the-law-of-the-lord",
+    "NEH.c9.article.the-levites-psalm"
    ]
   },
   "2CH 34:33": {
@@ -397893,7 +401814,8 @@
   "2CH 30:22": {
    "cited": [
     "2CH.30.1.word.passover",
-    "2CH.35.17"
+    "2CH.35.17",
+    "NEH.1.6.word.confess"
    ],
    "own": [
     "2CH.30.22"
@@ -398391,7 +402313,8 @@
     "2CH.7.9"
    ],
    "cited": [
-    "2CH.30.23"
+    "2CH.30.23",
+    "NEH.8.17"
    ]
   },
   "2CH 7:10": {
@@ -398467,7 +402390,8 @@
    ],
    "cited": [
     "2CH.27.4",
-    "2CH.32.1"
+    "2CH.32.1",
+    "NEH.c2.culture.sanballat"
    ]
   },
   "2CH 8:7": {
@@ -399371,14 +403295,24 @@
    "cited": [
     "2CH.26.9",
     "EZR.4.23",
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.13.4-9"
+   ],
+   "covers": [
+    "NEH.2.12-15"
    ]
   },
   "NEH 2:15": {
    "cited": [
     "2CH.26.9",
     "EZR.4.23",
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.13.4-9"
+   ],
+   "covers": [
+    "NEH.2.12-15"
    ]
   },
   "2CH 26:10": {
@@ -400122,44 +404056,52 @@
   },
   "LEV 26:27": {
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:28": {
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:31": {
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:32": {
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:34": {
    "cited": [
     "2CH.33.8",
-    "2CH.36.21"
+    "2CH.36.21",
+    "NEH.1.8"
    ]
   },
   "LEV 26:35": {
    "cited": [
     "2CH.33.8",
-    "2CH.36.21"
+    "2CH.36.21",
+    "NEH.1.8"
    ]
   },
   "LEV 26:40": {
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "LEV 26:43": {
    "cited": [
-    "2CH.33.8"
+    "2CH.33.8",
+    "NEH.1.8"
    ]
   },
   "2CH 32:8": {
@@ -401012,12 +404954,19 @@
   },
   "NEH 1:2": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.7.2"
+   ],
+   "own": [
+    "NEH.1.2"
    ]
   },
   "NEH 1:3": {
    "cited": [
     "EZR.2.1"
+   ],
+   "own": [
+    "NEH.1.3"
    ]
   },
   "NEH 11:3": {
@@ -401027,213 +404976,383 @@
   },
   "NEH 7:4": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27",
+    "NEH.12.27-29"
+   ],
+   "own": [
+    "NEH.7.4"
    ]
   },
   "NEH 7:5": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27",
+    "NEH.12.27-29"
+   ],
+   "own": [
+    "NEH.7.5"
    ]
   },
   "NEH 7:6": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "own": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:7": {
    "cited": [
     "EZR.2.1",
-    "EZR.2.2"
+    "EZR.2.2",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:8": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:9": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:10": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:11": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:12": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:13": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:14": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:15": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:16": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:17": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:18": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:19": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:20": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:21": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:22": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:23": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:24": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:25": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:26": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:27": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:28": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:29": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:30": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:31": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:32": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:33": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:34": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:35": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:36": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:37": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:38": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:39": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:40": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:41": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:42": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:43": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:44": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "NEH 7:45": {
    "cited": [
-    "EZR.2.1"
+    "EZR.2.1",
+    "NEH.10.14-27"
+   ],
+   "covers": [
+    "NEH.7.6-73"
    ]
   },
   "EZR 2:2": {
@@ -401458,17 +405577,25 @@
   },
   "NEH 8:7": {
    "cited": [
-    "EZR.2.40"
+    "EZR.2.40",
+    "NEH.c9.article.the-levites-psalm"
    ]
   },
   "NEH 8:8": {
    "cited": [
-    "EZR.2.40"
+    "EZR.2.40",
+    "NEH.c9.article.the-levites-psalm"
+   ],
+   "own": [
+    "NEH.8.8"
    ]
   },
   "NEH 8:9": {
    "cited": [
     "EZR.2.40"
+   ],
+   "own": [
+    "NEH.8.9-11"
    ]
   },
   "EZR 2:41": {
@@ -401600,6 +405727,9 @@
   "EZR 4:3": {
    "own": [
     "EZR.4.3"
+   ],
+   "cited": [
+    "NEH.2.20"
    ]
   },
   "2KI 17:32": {
@@ -401693,47 +405823,75 @@
   "EZR 4:21": {
    "own": [
     "EZR.4.21-22"
+   ],
+   "cited": [
+    "NEH.2.2",
+    "NEH.2.6"
    ]
   },
   "EZR 4:22": {
    "covers": [
     "EZR.4.21-22"
+   ],
+   "cited": [
+    "NEH.2.2"
    ]
   },
   "NEH 2:1": {
    "cited": [
     "EZR.4.21-22"
+   ],
+   "own": [
+    "NEH.2.1"
    ]
   },
   "NEH 2:2": {
    "cited": [
     "EZR.4.21-22"
+   ],
+   "own": [
+    "NEH.2.2"
    ]
   },
   "NEH 2:3": {
    "cited": [
     "EZR.4.21-22"
+   ],
+   "own": [
+    "NEH.2.3"
    ]
   },
   "NEH 2:4": {
    "cited": [
     "EZR.4.21-22"
+   ],
+   "own": [
+    "NEH.2.4"
    ]
   },
   "NEH 2:5": {
    "cited": [
     "EZR.4.21-22"
+   ],
+   "own": [
+    "NEH.2.5"
    ]
   },
   "NEH 2:6": {
    "cited": [
     "EZR.4.21-22"
+   ],
+   "own": [
+    "NEH.2.6"
    ]
   },
   "NEH 2:7": {
    "cited": [
     "EZR.4.21-22",
     "EZR.8.22"
+   ],
+   "own": [
+    "NEH.2.7"
    ]
   },
   "NEH 2:8": {
@@ -401741,23 +405899,39 @@
     "EZR.4.21-22",
     "EZR.7.6",
     "EZR.8.22"
+   ],
+   "own": [
+    "NEH.2.8"
    ]
   },
   "EZR 4:23": {
    "own": [
     "EZR.4.23"
+   ],
+   "cited": [
+    "NEH.2.2"
    ]
   },
   "NEH 2:12": {
    "cited": [
     "EZR.4.23",
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.2.12-15"
    ]
   },
   "NEH 2:16": {
    "cited": [
     "EZR.4.23",
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.2.16"
    ]
   },
   "EZR 4:24": {
@@ -401768,7 +405942,8 @@
   "EZR 8:36": {
    "cited": [
     "EZR.5.3",
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.1.4"
    ],
    "own": [
     "EZR.8.36"
@@ -401780,7 +405955,8 @@
     "EZR.7.6",
     "EZR.8.31",
     "EZR.8.32",
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.1.2"
    ],
    "covers": [
     "EZR.7.8-9"
@@ -402076,22 +406252,26 @@
   },
   "EZR 8:18": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ]
   },
   "EZR 8:19": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ]
   },
   "EZR 8:20": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ]
   },
   "EZR 8:21": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "own": [
     "EZR.8.21"
@@ -402099,7 +406279,9 @@
   },
   "EZR 8:22": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4",
+    "NEH.2.9"
    ],
    "own": [
     "EZR.8.22"
@@ -402107,12 +406289,14 @@
   },
   "EZR 8:23": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ]
   },
   "EZR 8:24": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "own": [
     "EZR.8.24-30"
@@ -402120,7 +406304,8 @@
   },
   "EZR 8:25": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "covers": [
     "EZR.8.24-30"
@@ -402128,7 +406313,8 @@
   },
   "EZR 8:26": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "covers": [
     "EZR.8.24-30"
@@ -402136,7 +406322,8 @@
   },
   "EZR 8:27": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "covers": [
     "EZR.8.24-30"
@@ -402144,7 +406331,8 @@
   },
   "EZR 8:28": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "covers": [
     "EZR.8.24-30"
@@ -402152,7 +406340,8 @@
   },
   "EZR 8:29": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "covers": [
     "EZR.8.24-30"
@@ -402160,7 +406349,8 @@
   },
   "EZR 8:30": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.1.4"
    ],
    "covers": [
     "EZR.8.24-30"
@@ -402169,7 +406359,8 @@
   "EZR 8:31": {
    "cited": [
     "EZR.7.6",
-    "EZR.8.32"
+    "EZR.8.32",
+    "NEH.1.4"
    ],
    "own": [
     "EZR.8.31"
@@ -402179,21 +406370,41 @@
    "cited": [
     "EZR.7.6",
     "EZR.8.22"
+   ],
+   "own": [
+    "NEH.2.9"
    ]
   },
   "NEH 2:10": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.4.7-8",
+    "NEH.13.4-9",
+    "NEH.13.28-29"
+   ],
+   "own": [
+    "NEH.2.10"
    ]
   },
   "NEH 2:17": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.2.17"
    ]
   },
   "NEH 2:18": {
    "cited": [
-    "EZR.7.6"
+    "EZR.7.6",
+    "NEH.4.3",
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.2.18"
    ]
   },
   "EZR 7:8": {
@@ -402287,6 +406498,9 @@
   "EZR 8:32": {
    "own": [
     "EZR.8.32"
+   ],
+   "cited": [
+    "NEH.1.4"
    ]
   },
   "EZR 8:33": {
@@ -402294,27 +406508,38 @@
     "EZR.8.33-34"
    ],
    "cited": [
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.1.4"
    ]
   },
   "EZR 8:34": {
    "covers": [
     "EZR.8.33-34"
+   ],
+   "cited": [
+    "NEH.1.4"
    ]
   },
   "EZR 8:35": {
    "own": [
     "EZR.8.35"
+   ],
+   "cited": [
+    "NEH.1.4"
    ]
   },
   "EZR 9:1": {
    "own": [
     "EZR.9.1"
+   ],
+   "cited": [
+    "NEH.13.23-24"
    ]
   },
   "EZR 10:9": {
    "cited": [
-    "EZR.9.1"
+    "EZR.9.1",
+    "NEH.1.1"
    ],
    "own": [
     "EZR.10.9"
@@ -402328,6 +406553,9 @@
   "EZR 9:2": {
    "own": [
     "EZR.9.2"
+   ],
+   "cited": [
+    "NEH.13.23-24"
    ]
   },
   "EZR 9:6": {
@@ -402403,6 +406631,9 @@
   "NEH 1:1": {
    "cited": [
     "EZR.10.9"
+   ],
+   "own": [
+    "NEH.1.1"
    ]
   },
   "EZR 10:13": {
@@ -402581,6 +406812,1707 @@
    ],
    "own": [
     "EZR.10.44"
+   ]
+  },
+  "PSA 92:1": {
+   "cited": [
+    "NEH.1.6.word.confess"
+   ]
+  },
+  "NEH 9:2": {
+   "cited": [
+    "NEH.1.6.word.confess",
+    "NEH.13.1-3"
+   ],
+   "own": [
+    "NEH.9.2"
+   ]
+  },
+  "PRO 28:13": {
+   "cited": [
+    "NEH.1.6.word.confess"
+   ]
+  },
+  "ISA 15:5": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:3": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:4": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:5": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:6": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:7": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:8": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:9": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:10": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:11": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:12": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:13": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:14": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:15": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:16": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:17": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:18": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:19": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:20": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:21": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:22": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:23": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:24": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:25": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:26": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:27": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:28": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:29": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:30": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:31": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:32": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "JER 48:34": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ]
+  },
+  "NEH 13:28": {
+   "cited": [
+    "NEH.c2.culture.sanballat"
+   ],
+   "own": [
+    "NEH.13.28-29"
+   ]
+  },
+  "NEH 3:20": {
+   "own": [
+    "NEH.3.20.word.carefully"
+   ],
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "JON 4:1": {
+   "cited": [
+    "NEH.3.20.word.carefully"
+   ]
+  },
+  "NEH 1:5": {
+   "own": [
+    "NEH.1.5.word.awesome",
+    "NEH.1.5"
+   ],
+   "cited": [
+    "NEH.5.7-10"
+   ]
+  },
+  "NEH 4:14": {
+   "cited": [
+    "NEH.1.5.word.awesome",
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.14-15"
+   ]
+  },
+  "LEV 19:14": {
+   "cited": [
+    "NEH.1.5.word.awesome"
+   ]
+  },
+  "NEH 4:1": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.1"
+   ]
+  },
+  "NEH 4:2": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.2"
+   ]
+  },
+  "NEH 4:3": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition",
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.4.3"
+   ]
+  },
+  "NEH 4:4": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.4-5"
+   ]
+  },
+  "NEH 4:5": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.4-5"
+   ]
+  },
+  "NEH 4:6": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ]
+  },
+  "NEH 4:7": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.7-8"
+   ]
+  },
+  "NEH 4:8": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.7-8"
+   ]
+  },
+  "NEH 4:9": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.9"
+   ]
+  },
+  "NEH 4:10": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.10"
+   ]
+  },
+  "NEH 4:11": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.11-12"
+   ]
+  },
+  "NEH 4:12": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.11-12"
+   ]
+  },
+  "NEH 4:13": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.13"
+   ]
+  },
+  "NEH 4:15": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.14-15"
+   ]
+  },
+  "NEH 4:16": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.16-18"
+   ]
+  },
+  "NEH 4:17": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.16-18"
+   ]
+  },
+  "NEH 4:18": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.16-18"
+   ]
+  },
+  "NEH 4:19": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.19-20"
+   ]
+  },
+  "NEH 4:20": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.19-20"
+   ]
+  },
+  "NEH 4:21": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.4.21-23"
+   ]
+  },
+  "NEH 4:22": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.21-23"
+   ]
+  },
+  "NEH 4:23": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.4.21-23"
+   ]
+  },
+  "NEH 5:1": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.5.1-5"
+   ]
+  },
+  "NEH 5:2": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.5.1-5"
+   ]
+  },
+  "NEH 5:3": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.5.1-5"
+   ]
+  },
+  "NEH 5:4": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.5.1-5"
+   ]
+  },
+  "NEH 5:5": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.5.1-5"
+   ]
+  },
+  "NEH 5:6": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.5.6"
+   ]
+  },
+  "NEH 5:7": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.5.7-10"
+   ]
+  },
+  "NEH 5:8": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.5.7-10"
+   ]
+  },
+  "NEH 5:9": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition",
+    "NEH.1.9"
+   ],
+   "covers": [
+    "NEH.5.7-10"
+   ]
+  },
+  "NEH 5:10": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.5.7-10"
+   ]
+  },
+  "NEH 5:11": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.5.11"
+   ]
+  },
+  "NEH 5:12": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ]
+  },
+  "NEH 6:1": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ]
+  },
+  "NEH 6:2": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.6.2"
+   ]
+  },
+  "NEH 6:3": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ]
+  },
+  "NEH 6:4": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ]
+  },
+  "NEH 6:5": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ]
+  },
+  "NEH 6:6": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ]
+  },
+  "NEH 6:7": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.6.7"
+   ]
+  },
+  "NEH 6:8": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "own": [
+    "NEH.6.8-9"
+   ]
+  },
+  "NEH 6:9": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition"
+   ],
+   "covers": [
+    "NEH.6.8-9"
+   ]
+  },
+  "NEH 6:10": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition",
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.6.10"
+   ]
+  },
+  "NEH 6:11": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition",
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.6.11-14"
+   ]
+  },
+  "NEH 6:12": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition",
+    "NEH.13.4-9"
+   ],
+   "covers": [
+    "NEH.6.11-14"
+   ]
+  },
+  "NEH 6:13": {
+   "cited": [
+    "NEH.c6.chart.how-nehemiah-handled-opposition",
+    "NEH.13.4-9"
+   ],
+   "covers": [
+    "NEH.6.11-14"
+   ]
+  },
+  "DAN 8:2": {
+   "cited": [
+    "NEH.1.1"
+   ]
+  },
+  "NEH 7:2": {
+   "cited": [
+    "NEH.1.2",
+    "NEH.13.12-13"
+   ],
+   "own": [
+    "NEH.7.2"
+   ]
+  },
+  "NEH 1:4": {
+   "own": [
+    "NEH.1.4"
+   ]
+  },
+  "NEH 9:13": {
+   "cited": [
+    "NEH.1.7"
+   ]
+  },
+  "NEH 9:14": {
+   "cited": [
+    "NEH.1.7"
+   ],
+   "own": [
+    "NEH.9.14"
+   ]
+  },
+  "NEH 1:8": {
+   "own": [
+    "NEH.1.8"
+   ]
+  },
+  "NEH 1:9": {
+   "own": [
+    "NEH.1.9"
+   ]
+  },
+  "NEH 1:10": {
+   "own": [
+    "NEH.1.10"
+   ]
+  },
+  "NEH 1:11": {
+   "own": [
+    "NEH.1.11"
+   ]
+  },
+  "NEH 5:14": {
+   "cited": [
+    "NEH.2.6"
+   ],
+   "own": [
+    "NEH.5.14"
+   ]
+  },
+  "NEH 2:19": {
+   "own": [
+    "NEH.2.19"
+   ],
+   "cited": [
+    "NEH.4.3",
+    "NEH.4.7-8",
+    "NEH.13.4-9"
+   ]
+  },
+  "NEH 2:20": {
+   "own": [
+    "NEH.2.20"
+   ]
+  },
+  "NEH 3:1": {
+   "own": [
+    "NEH.3.1"
+   ]
+  },
+  "PSA 127:1": {
+   "cited": [
+    "NEH.3.1"
+   ]
+  },
+  "NEH 3:2": {
+   "own": [
+    "NEH.3.2"
+   ]
+  },
+  "NEH 3:8": {
+   "own": [
+    "NEH.3.8-13",
+    "NEH.3.8"
+   ]
+  },
+  "NEH 3:9": {
+   "covers": [
+    "NEH.3.8-13"
+   ],
+   "cited": [
+    "NEH.7.2"
+   ]
+  },
+  "NEH 3:10": {
+   "covers": [
+    "NEH.3.8-13"
+   ],
+   "cited": [
+    "NEH.7.2"
+   ]
+  },
+  "NEH 3:11": {
+   "covers": [
+    "NEH.3.8-13"
+   ],
+   "cited": [
+    "NEH.7.2"
+   ]
+  },
+  "NEH 3:12": {
+   "covers": [
+    "NEH.3.8-13"
+   ],
+   "cited": [
+    "NEH.7.2"
+   ]
+  },
+  "NEH 3:13": {
+   "covers": [
+    "NEH.3.8-13"
+   ]
+  },
+  "NEH 3:14": {
+   "own": [
+    "NEH.3.14"
+   ]
+  },
+  "NEH 3:16": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:17": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:18": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:19": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:21": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:22": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:23": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:24": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:25": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:26": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:27": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:28": {
+   "covers": [
+    "NEH.3.15-32"
+   ],
+   "own": [
+    "NEH.3.28"
+   ]
+  },
+  "NEH 3:29": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:30": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:31": {
+   "covers": [
+    "NEH.3.15-32"
+   ]
+  },
+  "NEH 3:32": {
+   "covers": [
+    "NEH.3.15-32"
+   ],
+   "own": [
+    "NEH.3.32"
+   ]
+  },
+  "ISA 19:8": {
+   "cited": [
+    "NEH.4.2"
+   ]
+  },
+  "HOS 4:3": {
+   "cited": [
+    "NEH.4.2"
+   ]
+  },
+  "NEH 13:11": {
+   "cited": [
+    "NEH.5.7-10"
+   ],
+   "covers": [
+    "NEH.13.10-11"
+   ]
+  },
+  "NEH 5:15": {
+   "own": [
+    "NEH.5.15"
+   ]
+  },
+  "NEH 5:16": {
+   "own": [
+    "NEH.5.16"
+   ]
+  },
+  "NEH 5:19": {
+   "own": [
+    "NEH.5.19"
+   ],
+   "cited": [
+    "NEH.13.30-31"
+   ]
+  },
+  "NEH 13:31": {
+   "cited": [
+    "NEH.5.19"
+   ],
+   "covers": [
+    "NEH.13.30-31"
+   ]
+  },
+  "PSA 31:13": {
+   "cited": [
+    "NEH.6.8-9"
+   ]
+  },
+  "PSA 31:14": {
+   "cited": [
+    "NEH.6.8-9"
+   ]
+  },
+  "NEH 6:17": {
+   "own": [
+    "NEH.6.17-19"
+   ],
+   "cited": [
+    "NEH.13.4-9"
+   ]
+  },
+  "NEH 6:18": {
+   "covers": [
+    "NEH.6.17-19"
+   ],
+   "cited": [
+    "NEH.13.4-9"
+   ]
+  },
+  "NEH 6:19": {
+   "covers": [
+    "NEH.6.17-19"
+   ],
+   "cited": [
+    "NEH.13.4-9"
+   ]
+  },
+  "NEH 7:1": {
+   "own": [
+    "NEH.7.1"
+   ]
+  },
+  "NEH 7:3": {
+   "own": [
+    "NEH.7.3"
+   ]
+  },
+  "NEH 6:15": {
+   "cited": [
+    "NEH.8.2",
+    "NEH.13.4-9"
+   ]
+  },
+  "NEH 8:10": {
+   "covers": [
+    "NEH.8.9-11"
+   ]
+  },
+  "NEH 8:11": {
+   "covers": [
+    "NEH.8.9-11"
+   ]
+  },
+  "NEH 8:12": {
+   "own": [
+    "NEH.8.12"
+   ]
+  },
+  "NEH 8:13": {
+   "own": [
+    "NEH.8.13"
+   ]
+  },
+  "NEH 8:14": {
+   "own": [
+    "NEH.8.14"
+   ]
+  },
+  "NEH 8:16": {
+   "own": [
+    "NEH.8.16"
+   ]
+  },
+  "NEH 8:17": {
+   "own": [
+    "NEH.8.17"
+   ]
+  },
+  "NEH 8:18": {
+   "own": [
+    "NEH.8.18"
+   ]
+  },
+  "NEH 9:1": {
+   "own": [
+    "NEH.9.1"
+   ]
+  },
+  "NEH 9:3": {
+   "own": [
+    "NEH.9.3"
+   ]
+  },
+  "NEH 9:5": {
+   "own": [
+    "NEH.9.5"
+   ]
+  },
+  "ISA 63:14": {
+   "cited": [
+    "NEH.9.5"
+   ]
+  },
+  "NEH 9:6": {
+   "own": [
+    "NEH.9.6"
+   ]
+  },
+  "NEH 9:8": {
+   "covers": [
+    "NEH.9.7-8"
+   ]
+  },
+  "NEH 9:9": {
+   "own": [
+    "NEH.9.9"
+   ]
+  },
+  "NEH 9:10": {
+   "own": [
+    "NEH.9.10"
+   ]
+  },
+  "NEH 9:11": {
+   "own": [
+    "NEH.9.11-12"
+   ]
+  },
+  "NEH 9:12": {
+   "covers": [
+    "NEH.9.11-12"
+   ]
+  },
+  "NUM 10:13": {
+   "cited": [
+    "NEH.9.11-12"
+   ]
+  },
+  "EXO 23:13": {
+   "cited": [
+    "NEH.9.14"
+   ]
+  },
+  "NEH 9:15": {
+   "own": [
+    "NEH.9.15"
+   ]
+  },
+  "NEH 9:16": {
+   "own": [
+    "NEH.9.16-17"
+   ]
+  },
+  "NEH 9:17": {
+   "covers": [
+    "NEH.9.16-17"
+   ]
+  },
+  "NEH 9:18": {
+   "own": [
+    "NEH.9.18-21"
+   ]
+  },
+  "NEH 9:19": {
+   "covers": [
+    "NEH.9.18-21"
+   ]
+  },
+  "NEH 9:20": {
+   "covers": [
+    "NEH.9.18-21"
+   ]
+  },
+  "NEH 9:21": {
+   "covers": [
+    "NEH.9.18-21"
+   ]
+  },
+  "DEU 2:7": {
+   "cited": [
+    "NEH.9.18-21"
+   ]
+  },
+  "NEH 9:22": {
+   "own": [
+    "NEH.9.22-25"
+   ]
+  },
+  "NEH 9:23": {
+   "covers": [
+    "NEH.9.22-25"
+   ]
+  },
+  "NEH 9:24": {
+   "covers": [
+    "NEH.9.22-25"
+   ]
+  },
+  "NEH 9:25": {
+   "covers": [
+    "NEH.9.22-25"
+   ]
+  },
+  "NEH 9:27": {
+   "covers": [
+    "NEH.9.26-29"
+   ]
+  },
+  "NEH 9:28": {
+   "covers": [
+    "NEH.9.26-29"
+   ]
+  },
+  "NEH 9:29": {
+   "covers": [
+    "NEH.9.26-29"
+   ]
+  },
+  "NEH 9:30": {
+   "own": [
+    "NEH.9.30-31"
+   ]
+  },
+  "NEH 9:31": {
+   "covers": [
+    "NEH.9.30-31"
+   ]
+  },
+  "NEH 9:33": {
+   "own": [
+    "NEH.9.33"
+   ]
+  },
+  "NEH 9:36": {
+   "own": [
+    "NEH.9.36-37"
+   ]
+  },
+  "NEH 9:37": {
+   "covers": [
+    "NEH.9.36-37"
+   ]
+  },
+  "NEH 9:38": {
+   "own": [
+    "NEH.9.38"
+   ]
+  },
+  "NEH 10:1": {
+   "own": [
+    "NEH.10.1"
+   ]
+  },
+  "NEH 10:2": {
+   "own": [
+    "NEH.10.2-8"
+   ]
+  },
+  "NEH 10:3": {
+   "covers": [
+    "NEH.10.2-8"
+   ]
+  },
+  "NEH 10:4": {
+   "covers": [
+    "NEH.10.2-8"
+   ]
+  },
+  "NEH 10:5": {
+   "covers": [
+    "NEH.10.2-8"
+   ]
+  },
+  "NEH 10:6": {
+   "covers": [
+    "NEH.10.2-8"
+   ]
+  },
+  "NEH 10:7": {
+   "covers": [
+    "NEH.10.2-8"
+   ]
+  },
+  "NEH 10:8": {
+   "covers": [
+    "NEH.10.2-8"
+   ]
+  },
+  "NEH 12:11": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.10-11"
+   ]
+  },
+  "NEH 12:12": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "own": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:13": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:14": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:15": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:16": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:18": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:19": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:20": {
+   "cited": [
+    "NEH.10.2-8"
+   ],
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 10:9": {
+   "own": [
+    "NEH.10.9-13"
+   ]
+  },
+  "NEH 10:10": {
+   "covers": [
+    "NEH.10.9-13"
+   ]
+  },
+  "NEH 10:11": {
+   "covers": [
+    "NEH.10.9-13"
+   ]
+  },
+  "NEH 10:12": {
+   "covers": [
+    "NEH.10.9-13"
+   ]
+  },
+  "NEH 10:13": {
+   "covers": [
+    "NEH.10.9-13"
+   ]
+  },
+  "NEH 12:8": {
+   "cited": [
+    "NEH.10.9-13"
+   ]
+  },
+  "NEH 10:14": {
+   "own": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:15": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:16": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:17": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:18": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:19": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:20": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:21": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:22": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:23": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:24": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:25": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:26": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:27": {
+   "covers": [
+    "NEH.10.14-27"
+   ]
+  },
+  "NEH 10:29": {
+   "own": [
+    "NEH.10.29"
+   ]
+  },
+  "NEH 10:30": {
+   "own": [
+    "NEH.10.30"
+   ],
+   "cited": [
+    "NEH.13.23-24"
+   ]
+  },
+  "NEH 10:31": {
+   "own": [
+    "NEH.10.31"
+   ],
+   "cited": [
+    "NEH.13.15-22"
+   ]
+  },
+  "NEH 10:32": {
+   "own": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 10:33": {
+   "covers": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 10:34": {
+   "covers": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 10:35": {
+   "covers": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 10:36": {
+   "covers": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 10:37": {
+   "covers": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 10:38": {
+   "covers": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 10:39": {
+   "covers": [
+    "NEH.10.32-39"
+   ]
+  },
+  "EXO 34:26": {
+   "cited": [
+    "NEH.10.32-39"
+   ]
+  },
+  "NEH 11:1": {
+   "own": [
+    "NEH.11.1"
+   ],
+   "cited": [
+    "NEH.12.27-29"
+   ]
+  },
+  "NEH 11:4": {
+   "own": [
+    "NEH.11.4-9"
+   ]
+  },
+  "NEH 11:5": {
+   "covers": [
+    "NEH.11.4-9"
+   ]
+  },
+  "NEH 11:6": {
+   "covers": [
+    "NEH.11.4-9"
+   ]
+  },
+  "NEH 11:7": {
+   "covers": [
+    "NEH.11.4-9"
+   ]
+  },
+  "NEH 11:8": {
+   "covers": [
+    "NEH.11.4-9"
+   ]
+  },
+  "NEH 11:9": {
+   "covers": [
+    "NEH.11.4-9"
+   ]
+  },
+  "NEH 11:12": {
+   "own": [
+    "NEH.11.12"
+   ]
+  },
+  "NEH 11:14": {
+   "own": [
+    "NEH.11.14"
+   ]
+  },
+  "NEH 11:16": {
+   "own": [
+    "NEH.11.16"
+   ]
+  },
+  "NEH 11:19": {
+   "own": [
+    "NEH.11.19"
+   ]
+  },
+  "NEH 11:22": {
+   "own": [
+    "NEH.11.22"
+   ]
+  },
+  "NEH 11:24": {
+   "own": [
+    "NEH.11.24"
+   ]
+  },
+  "NEH 11:25": {
+   "own": [
+    "NEH.11.25-36",
+    "NEH.11.25"
+   ]
+  },
+  "NEH 11:26": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:27": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:28": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:29": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:30": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:31": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:32": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:34": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:35": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 11:36": {
+   "covers": [
+    "NEH.11.25-36"
+   ]
+  },
+  "NEH 12:9": {
+   "own": [
+    "NEH.12.9"
+   ]
+  },
+  "NEH 12:10": {
+   "own": [
+    "NEH.12.10-11"
+   ]
+  },
+  "NEH 12:21": {
+   "covers": [
+    "NEH.12.12-21"
+   ]
+  },
+  "NEH 12:22": {
+   "own": [
+    "NEH.12.22"
+   ]
+  },
+  "NEH 12:23": {
+   "own": [
+    "NEH.12.23"
+   ]
+  },
+  "NEH 12:28": {
+   "covers": [
+    "NEH.12.27-29"
+   ]
+  },
+  "NEH 12:29": {
+   "covers": [
+    "NEH.12.27-29"
+   ]
+  },
+  "PSA 147:7": {
+   "cited": [
+    "NEH.12.27-29"
+   ]
+  },
+  "NEH 12:30": {
+   "own": [
+    "NEH.12.30"
+   ]
+  },
+  "NEH 12:36": {
+   "own": [
+    "NEH.12.36"
+   ]
+  },
+  "NEH 12:43": {
+   "own": [
+    "NEH.12.43"
+   ]
+  },
+  "NEH 12:44": {
+   "own": [
+    "NEH.12.44-47"
+   ]
+  },
+  "NEH 12:45": {
+   "covers": [
+    "NEH.12.44-47"
+   ]
+  },
+  "NEH 12:46": {
+   "covers": [
+    "NEH.12.44-47"
+   ]
+  },
+  "NEH 12:47": {
+   "covers": [
+    "NEH.12.44-47"
+   ]
+  },
+  "NEH 13:3": {
+   "covers": [
+    "NEH.13.1-3"
+   ]
+  },
+  "NEH 13:6": {
+   "covers": [
+    "NEH.13.4-9"
+   ]
+  },
+  "NEH 13:7": {
+   "covers": [
+    "NEH.13.4-9"
+   ]
+  },
+  "NEH 13:8": {
+   "covers": [
+    "NEH.13.4-9"
+   ],
+   "own": [
+    "NEH.13.8-9"
+   ]
+  },
+  "NEH 13:9": {
+   "covers": [
+    "NEH.13.4-9",
+    "NEH.13.8-9"
+   ]
+  },
+  "NEH 13:10": {
+   "own": [
+    "NEH.13.10-11"
+   ]
+  },
+  "JER 2:9": {
+   "cited": [
+    "NEH.13.10-11"
+   ]
+  },
+  "NEH 13:12": {
+   "own": [
+    "NEH.13.12-13"
+   ]
+  },
+  "NEH 13:13": {
+   "covers": [
+    "NEH.13.12-13"
+   ]
+  },
+  "NEH 13:14": {
+   "own": [
+    "NEH.13.14"
+   ]
+  },
+  "NEH 13:20": {
+   "covers": [
+    "NEH.13.15-22",
+    "NEH.13.19-22"
+   ]
+  },
+  "NEH 13:21": {
+   "covers": [
+    "NEH.13.15-22",
+    "NEH.13.19-22"
+   ]
+  },
+  "NEH 13:22": {
+   "covers": [
+    "NEH.13.15-22",
+    "NEH.13.19-22"
+   ]
+  },
+  "NEH 13:23": {
+   "own": [
+    "NEH.13.23-24"
+   ]
+  },
+  "NEH 13:24": {
+   "covers": [
+    "NEH.13.23-24"
+   ]
+  },
+  "EZR 9:3": {
+   "cited": [
+    "NEH.13.23-24"
+   ]
+  },
+  "EZR 9:4": {
+   "cited": [
+    "NEH.13.23-24"
+   ]
+  },
+  "NEH 13:25": {
+   "own": [
+    "NEH.13.25-27"
+   ]
+  },
+  "NEH 13:26": {
+   "covers": [
+    "NEH.13.25-27"
+   ]
+  },
+  "NEH 13:27": {
+   "covers": [
+    "NEH.13.25-27"
+   ]
+  },
+  "NEH 13:29": {
+   "covers": [
+    "NEH.13.28-29"
+   ]
+  },
+  "NEH 13:30": {
+   "own": [
+    "NEH.13.30-31"
    ]
   }
  }
