@@ -7,7 +7,9 @@
 //   3. text that is not the verse, run on at its end (a section heading, the „SFÂRȘIT” closing the book);
 //   4. the glosses in parentheses printed in italics, lost with the italic font („Gherșom (Străin), căci”).
 //   5. letters spaced out where a line was printed with wide tracking („E l l e - a z i s” → „El le-a zis”);
-//   6. a word broken at a line end with its hyphen missing in print, read as two words („Dom⏎nului” → „Domnului”).
+//   6. a word broken at a line end with its hyphen missing in print, read as two words („Dom⏎nului” → „Domnului”);
+//   7. „(Oprire)” (Selah), printed in the small type of the cross-references: lost from the verse and read as the
+//      end of a cross-reference note; put back in the verse and taken off the note.
 // The reference markers of notes.json are character offsets into the verse, and move with the text.
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf"          report only
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf" --write  apply
@@ -150,9 +152,56 @@ function spacedRuns(s) {
   return out;
 }
 
+// 7. „(Oprire)”, VDCC's Selah, printed in the small type of the cross-references after its verse (Ps. 3:2, pdf page
+// 563: „…la Dumnezeu!” ⁷2 Sam. 16.8. Ps. 71.11. (Oprire) 3. Dar…”): the extraction read only the body size and lost it.
+// Also „(Joc de instrumente. Oprire)” (Ps. 9:16, Higgaion. Selah) and „(Oprire.)” (Hab. 3). Each is put back after
+// the body text printed before it, compared letter by letter (a word broken at a line end, „adevă-⏎rul”, still
+// matches): usually the end of the verse, three times inside it where the Hebrew has it mid-verse (Ps. 55:19, 57:3,
+// 85:3: „…îmi aruncă ocări. (Oprire) Da, Dumnezeu…”), after the words before it and their punctuation. The search
+// goes on from the last one placed, past its position: the same words can end two verses of a psalm (46:7, 46:11).
+const PAUSE = /\((?:Joc de instrumente\*{0,2}\. )?Oprire\.?\)/g;
+const pauses = new Map();          // verse -> [{ at, del, ins }]
+if (id === 'vdcc') {
+  let from = 0, past = -1;
+  for (let pn = 0; pn < doc.countPages(); pn++) {
+    const cs = [];
+    doc.loadPage(pn).toStructuredText('preserve-whitespace').walk({
+      onChar(c, o, font, size) { cs.push({ c, body: size > 9.5 && size < 10.5 }); },
+      endLine() { cs.push({ c: '\n', body: true }); }
+    });
+    const all = cs.map(x => x.c).join('');
+    for (const m of all.matchAll(PAUSE)) {
+      const i = m.index, ins = ' ' + m[0].replace(/\*/g, '');
+      if (cs[i].body) continue;
+      const before = flatPdf(fixEnc(cs.slice(Math.max(0, i - 400), i).filter(x => x.body).map(x => x.c).join(''))).trimEnd();
+      const tail = before.replace(/[^\p{L}]/gu, '').slice(-18);
+      let at = -1;
+      const found = order.findIndex((k, n) => {
+        if (n < from || !/^(PSA|HAB) /.test(k)) return false;
+        const s = verseOf(k), pos = [], skip = new Set();   // index in s of each letter, a restored pause left out
+        for (const r of s.matchAll(PAUSE)) for (let j = r.index; j < r.index + r[0].length; j++) skip.add(j);
+        for (let j = 0; j < s.length; j++) if (!skip.has(j) && /\p{L}/u.test(s[j])) pos.push(j);
+        const ls = pos.map(j => s[j]).join('');
+        for (let x = ls.indexOf(tail); x >= 0; x = ls.indexOf(tail, x + 1)) {
+          let p = pos[x + tail.length - 1] + 1;
+          while (p < s.length && !/\p{L}|\(/u.test(s[p])) p++;
+          while (p > 0 && s[p - 1] === ' ') p--;
+          if (n === from && p <= past) continue;
+          at = p; return true;
+        }
+        return false;
+      });
+      if (found < 0) { unplaced.push(`p${pn + 1} ${ins.trim()} after „${tail}”`); continue; }
+      from = found; past = at;
+      const s = verseOf(order[found]);
+      if (!s.startsWith(ins, at)) (pauses.get(order[found]) || pauses.set(order[found], []).get(order[found])).push({ at, del: 0, ins, kind: 'pause' });
+    }
+  }
+}
+
 // Edits to one verse: [{ at, del, ins, kind }], applied from the end so the offsets stay valid.
 function edits(key, s) {
-  const out = [...(glosses.get(key) || []), ...spacedRuns(s)];
+  const out = [...(glosses.get(key) || []), ...(pauses.get(key) || []), ...spacedRuns(s)];
   for (const m of s.matchAll(/ (?=[,;:.!?](?!,))/g)) if (!out.some(e => e.at === m.index)) out.push({ at: m.index, del: 1, ins: '', kind: 'space' });
   if (swaps.size) for (const m of s.matchAll(new RegExp(`(?<!${L})(${[...swaps.keys()].join('|')})(?!${L})`, 'gu')))
     out.push({ at: m.index, del: m[0].length, ins: swaps.get(m[0]), kind: 'hyphen' });
@@ -163,7 +212,7 @@ function edits(key, s) {
   return out.sort((a, b) => b.at - a.at);
 }
 
-const report = { space: 0, hyphen: 0, tail: 0, gloss: 0, spaced: 0, join: 0, verses: 0 }, samples = [];
+const report = { space: 0, hyphen: 0, tail: 0, gloss: 0, spaced: 0, join: 0, pause: 0, verses: 0 }, samples = [];
 for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) => verses.forEach((s, v) => {
   if (!s) return;
   const key = `${b} ${c + 1}:${v + 1}`, list = edits(key, s);
@@ -181,7 +230,18 @@ for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) =
   else if (samples.length < 12) samples.push(`${key}: …${s.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}… → …${t.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}…`);
 }));
 
-console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails · ${report.gloss} glosses · ${report.spaced} letter-spaced runs · ${report.join} joined line breaks${unplaced.length ? ` (${unplaced.length} not placed: ${unplaced.join('; ')})` : ''}`);
+// The old extraction had read a pause printed after cross-references as the end of their note („Ps. 20.4,5. (Oprire)”):
+// once it is in its verse, it comes off the note.
+report.notePause = 0;
+if (notes) for (const [key, groups] of Object.entries(notes)) {
+  if (!/^PSA /.test(key) || !new RegExp(PAUSE.source).test(verseOf(key))) continue;
+  for (const g of groups) {
+    const t = g.text.replace(new RegExp(`\\s*${PAUSE.source}\\s*$`), '');
+    if (t !== g.text) { g.text = t; report.notePause++; }
+  }
+}
+
+console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails · ${report.gloss} glosses · ${report.spaced} letter-spaced runs · ${report.join} joined line breaks · ${report.pause} „(Oprire)” restored (${report.notePause} taken off cross-reference notes)${unplaced.length ? ` (${unplaced.length} not placed: ${unplaced.join('; ')})` : ''}`);
 for (const [p, o] of swaps) console.log(`  ${p} → ${o}`);
 console.log(samples.map(s => '  ' + s).join('\n'));
 if (flag === '--write') {
