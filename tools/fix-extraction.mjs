@@ -6,7 +6,8 @@
 //      „nu-⏎mele” → „nu-mele”): the form the rest of the Bible uses wins;
 //   3. text that is not the verse, run on at its end (a section heading, the „SFÂRȘIT” closing the book);
 //   4. the glosses in parentheses printed in italics, lost with the italic font („Gherșom (Străin), căci”).
-//   5. letters spaced out where a line was printed with wide tracking („E l l e - a z i s” → „El le-a zis”).
+//   5. letters spaced out where a line was printed with wide tracking („E l l e - a z i s” → „El le-a zis”);
+//   6. a word broken at a line end with its hyphen missing in print, read as two words („Dom⏎nului” → „Domnului”).
 // The reference markers of notes.json are character offsets into the verse, and move with the text.
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf"          report only
 //   node tools/fix-extraction.mjs vdcc "D:/Biblia PDF/Biblia-VDCC.pdf" --write  apply
@@ -26,6 +27,10 @@ const notes = fs.existsSync(notesFile) ? JSON.parse(fs.readFileSync(notesFile, '
 // Text run on at the end of a verse, checked one by one in the PDF.
 // 1SA 26:25: the dash of the heading after it („David în țara filistenilor – Șederea lui la Țiclag”).
 const TAILS = { vdcc: { 'GEN 11:9': ' DE LA AVRAAM PÂNĂ LA IOSIF', 'REV 22:11': ' SFÂRȘIT', '1SA 26:25': ' –' }, ntr: {} }[id] || {};
+
+// 6. Words the PDF breaks at a line end without printing the hyphen, checked one by one in the PDF.
+// JOB 1:6, pdf page 529: „înaintea Dom⏎nului”.
+const JOINS = { vdcc: { 'JOB 1:6': ['Dom nului', 'Domnului'] }, ntr: {} }[id] || {};
 
 // The PDF's text, in the encoding the old extraction fixed (ã → ă, º → ș, þ → ț).
 const mupdf = await import(process.env.MUPDF ? pathToFileURL(process.env.MUPDF).href : 'mupdf');
@@ -153,10 +158,12 @@ function edits(key, s) {
     out.push({ at: m.index, del: m[0].length, ins: swaps.get(m[0]), kind: 'hyphen' });
   const tail = TAILS[key];
   if (tail && s.endsWith(tail)) out.push({ at: s.length - tail.length, del: tail.length, ins: '', kind: 'tail' });
+  const join = JOINS[key], j = join ? s.indexOf(join[0]) : -1;
+  if (j >= 0) out.push({ at: j, del: join[0].length, ins: join[1], kind: 'join' });
   return out.sort((a, b) => b.at - a.at);
 }
 
-const report = { space: 0, hyphen: 0, tail: 0, gloss: 0, spaced: 0, verses: 0 }, samples = [];
+const report = { space: 0, hyphen: 0, tail: 0, gloss: 0, spaced: 0, join: 0, verses: 0 }, samples = [];
 for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) => verses.forEach((s, v) => {
   if (!s) return;
   const key = `${b} ${c + 1}:${v + 1}`, list = edits(key, s);
@@ -174,7 +181,7 @@ for (const [b, chapters] of Object.entries(text)) chapters.forEach((verses, c) =
   else if (samples.length < 12) samples.push(`${key}: …${s.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}… → …${t.slice(Math.max(0, list.at(-1).at - 20), list.at(-1).at + 25)}…`);
 }));
 
-console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails · ${report.gloss} glosses · ${report.spaced} letter-spaced runs${unplaced.length ? ` (${unplaced.length} not placed: ${unplaced.join('; ')})` : ''}`);
+console.log(`${id}: ${report.verses} verses · ${report.space} spaces before punctuation · ${report.hyphen} line-end hyphens (${swaps.size} words) · ${report.tail} run-on tails · ${report.gloss} glosses · ${report.spaced} letter-spaced runs · ${report.join} joined line breaks${unplaced.length ? ` (${unplaced.length} not placed: ${unplaced.join('; ')})` : ''}`);
 for (const [p, o] of swaps) console.log(`  ${p} → ${o}`);
 console.log(samples.map(s => '  ' + s).join('\n'));
 if (flag === '--write') {
