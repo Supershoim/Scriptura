@@ -53,7 +53,10 @@ function pathBounds(p, m) {
 function readPage(page) {
   const lines = [], images = [], groups = [];
   let chars = null;
-  page.toStructuredText('preserve-whitespace,preserve-images').walk({
+  // inhibit-spaces: MuPDF otherwise adds a space of its own wherever a glyph starts further on than the font's
+  // width table says. In Proverbs–Song of Songs (pdf pages ~1011–1090) the capitals of the notes' font have
+  // narrow widths, which made "T he", "L ev.", "R om.", "O ne"; the spaces printed in the PDF are kept.
+  page.toStructuredText('preserve-whitespace,preserve-images,inhibit-spaces').walk({
     onImageBlock(bbox) { images.push(bbox); },
     beginLine() { chars = []; },
     onChar(c, origin, font, size, quad, color) {
