@@ -259481,6 +259481,3256 @@
    "k": "intro",
    "title": "THE REVELATION",
    "pdf": 2101
+  },
+  "ECC.1.14.word.vanity": {
+   "b": "ECC",
+   "k": "word",
+   "title": "vanity",
+   "from": "1:14",
+   "to": "1:14",
+   "pdf": 1061,
+   "page": 1026,
+   "refs": [
+    "ECC 1:14",
+    "ECC 2:1-11",
+    "ECC 6:12",
+    "ECC 7:15",
+    "PSA 78:33",
+    "ISA 49:4",
+    "ECC 2:17",
+    "JER 18:15",
+    "JOB 7:16",
+    "ECC 2:24-26"
+   ]
+  },
+  "ECC.c1.chart.solomon-s-search-for-satisfaction": {
+   "b": "ECC",
+   "k": "chart",
+   "title": "Solomon’s Search for Satisfaction",
+   "chapter": 1,
+   "pdf": 1061,
+   "page": 1026,
+   "refs": [
+    "ECC 12:13",
+    "ECC 1:12-18",
+    "ECC 2:1-3",
+    "ECC 2:4-6",
+    "ECC 2:7-17",
+    "1KI 11:3",
+    "ECC 1:18",
+    "ECC 2:1",
+    "ECC 2:11",
+    "ECC 2:17"
+   ],
+   "text": "Solomon’s Search for Satisfaction Solomon drifted away from God during his lifetime, pursuing different ways to achieve satisfaction. Only after many years of futile searching did he finally remember the true source of peace: a proper relationship with God. Solomon wrote Ecclesiastes to pass on this truth. Satisfaction can be found only by fearing God and keeping His commandments (12:13). Solomon "
+  },
+  "ECC.2.11.word.labor": {
+   "b": "ECC",
+   "k": "word",
+   "title": "labor",
+   "from": "2:11",
+   "to": "2:11",
+   "pdf": 1066,
+   "page": 1031,
+   "refs": [
+    "ECC 2:11",
+    "ECC 5:18",
+    "PSA 105:44",
+    "JER 20:18",
+    "PSA 127:1",
+    "PRO 16:26",
+    "JOB 3:10",
+    "ECC 6:7",
+    "ECC 5:18-20",
+    "1CO 3:8-14",
+    "1CO 15:58"
+   ]
+  },
+  "ECC.c7.article.wisdom-literature": {
+   "b": "ECC",
+   "k": "article",
+   "title": "Wisdom Literature",
+   "chapter": 7,
+   "pdf": 1067,
+   "page": 1032,
+   "refs": [],
+   "text": "Wisdom Literature The Book of Ecclesiastes is an example of what is called wisdom literature. Common in the ancient Middle East, wisdom literature provided instructions for upright living. Such writing falls into two categories: proverbial wisdom, short, instructive sayings of the kind found in the Book of Proverbs, and speculation wisdom, consisting of dialogues or monologues that subtly disclose"
+  },
+  "ECC.1.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:1",
+   "to": "1:1",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "Preacher",
+     "v": "1:1",
+     "at": 17
+    }
+   ],
+   "refs": []
+  },
+  "ECC.1.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:2",
+   "to": "1:2",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "Vanity of vanities",
+     "v": "1:2",
+     "at": 1
+    }
+   ],
+   "refs": [
+    "ECC 6:12"
+   ]
+  },
+  "ECC.1.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:3",
+   "to": "1:3",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "profit",
+     "v": "1:3",
+     "at": 5
+    },
+    {
+     "w": "labor",
+     "v": "1:3",
+     "at": 35
+    },
+    {
+     "w": "under the sun",
+     "v": "1:3",
+     "at": 59
+    }
+   ],
+   "refs": [
+    "ECC 2:3",
+    "ECC 3:1"
+   ]
+  },
+  "ECC.1.4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:4",
+   "to": "1:4",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "generation",
+     "v": "1:4",
+     "at": 4
+    },
+    {
+     "w": "passes away",
+     "v": "1:4",
+     "at": 15
+    },
+    {
+     "w": "the earth abides forever",
+     "v": "1:4",
+     "at": 62
+    }
+   ],
+   "refs": []
+  },
+  "ECC.1.5-7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:5",
+   "to": "1:7",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "The sun... The wind... the rivers"
+    }
+   ],
+   "refs": []
+  },
+  "ECC.1.8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:8",
+   "to": "1:8",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "All things are full of labor",
+     "v": "1:8",
+     "at": 0
+    },
+    {
+     "w": "The eye is not satisfied",
+     "v": "1:8",
+     "at": 53
+    }
+   ],
+   "refs": [
+    "ECC 4:8",
+    "ECC 5:10",
+    "PRO 27:20"
+   ]
+  },
+  "ECC.1.10-11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:10",
+   "to": "1:11",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "new",
+     "v": "1:10",
+     "at": 57
+    }
+   ],
+   "refs": []
+  },
+  "ECC.1.12": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:12",
+   "to": "1:12",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "I, the Preacher, was king",
+     "v": "1:12",
+     "at": 0
+    }
+   ],
+   "refs": [
+    "ECC 12:9-14"
+   ]
+  },
+  "ECC.1.13": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:13",
+   "to": "1:13",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "under heaven",
+     "v": "1:13",
+     "at": 80
+    },
+    {
+     "w": "God",
+     "v": "1:13",
+     "at": 115
+    },
+    {
+     "w": "sons of man",
+     "v": "1:13",
+     "at": 136
+    },
+    {
+     "w": "may be exercised",
+     "v": "1:13",
+     "at": 163
+    },
+    {
+     "w": "task",
+     "v": "1:13",
+     "at": 110
+    }
+   ],
+   "refs": [
+    "EXO 3:14-15",
+    "ECC 3:10"
+   ]
+  },
+  "ECC.1.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:14",
+   "to": "1:14",
+   "pdf": 1060,
+   "page": 1025,
+   "lemmas": [
+    {
+     "w": "grasping for the wind",
+     "v": "1:14",
+     "at": 85
+    }
+   ],
+   "refs": [
+    "ECC 2:11-26",
+    "ECC 4:4-6",
+    "ECC 6:9"
+   ]
+  },
+  "ECC.1.15": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:15",
+   "to": "1:15",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "crooked",
+     "v": "1:15",
+     "at": 8
+    }
+   ],
+   "refs": [
+    "ECC 7:13"
+   ]
+  },
+  "ECC.1.16": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:16",
+   "to": "1:16",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "all who were before me in Jerusalem",
+     "v": "1:16",
+     "at": 101
+    }
+   ],
+   "refs": [
+    "GEN 14:18",
+    "JOS 10:1"
+   ]
+  },
+  "ECC.1.17": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:17",
+   "to": "1:17",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "wisdom",
+     "v": "1:17",
+     "at": 27
+    }
+   ],
+   "refs": [
+    "ECC 2:15",
+    "ECC 7:16"
+   ]
+  },
+  "ECC.1.18": {
+   "b": "ECC",
+   "k": "note",
+   "from": "1:18",
+   "to": "1:18",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "much wisdom is much grief",
+     "v": "1:18",
+     "at": 7
+    }
+   ],
+   "refs": [
+    "ECC 12:12"
+   ]
+  },
+  "ECC.2.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:1",
+   "to": "2:1",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "mirth",
+     "v": "2:1",
+     "at": 52
+    }
+   ],
+   "refs": []
+  },
+  "ECC.2.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:2",
+   "to": "2:2",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "madness",
+     "v": "2:2",
+     "at": 20
+    }
+   ],
+   "refs": [
+    "PRO 14:13"
+   ]
+  },
+  "ECC.2.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:3",
+   "to": "2:3",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "flesh with wine... heart with wisdom"
+    }
+   ],
+   "refs": []
+  },
+  "ECC.2.4-6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:4",
+   "to": "2:6",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "I built myself houses",
+     "v": "2:4",
+     "at": 23
+    },
+    {
+     "w": "vineyards... gardens and orchards"
+    }
+   ],
+   "refs": [
+    "1KI 9:10",
+    "1KI 10:17",
+    "1KI 9:24",
+    "1KI 9:15-18",
+    "1KI 4:33"
+   ]
+  },
+  "ECC.2.7-8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:7",
+   "to": "2:8",
+   "pdf": 1061,
+   "page": 1026,
+   "lemmas": [
+    {
+     "w": "silver and gold",
+     "v": "2:8",
+     "at": 27
+    },
+    {
+     "w": "musical instruments",
+     "v": "2:8",
+     "at": 173
+    }
+   ],
+   "refs": [
+    "1KI 10:14-29"
+   ]
+  },
+  "ECC.2.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:10",
+   "to": "2:10",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "my eyes desired",
+     "v": "2:10",
+     "at": 9
+    },
+    {
+     "w": "labor",
+     "v": "2:10",
+     "at": 130
+    }
+   ],
+   "refs": []
+  },
+  "ECC.2.11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:11",
+   "to": "2:11",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "vanity",
+     "v": "2:11",
+     "at": 113
+    },
+    {
+     "w": "grasping for the wind",
+     "v": "2:11",
+     "at": 124
+    }
+   ],
+   "refs": []
+  },
+  "ECC.2.12": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:12",
+   "to": "2:12",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "madness and folly",
+     "v": "2:12",
+     "at": 44
+    }
+   ],
+   "refs": [
+    "ECC 1:17"
+   ]
+  },
+  "ECC.2.13": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:13",
+   "to": "2:13",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "wisdom",
+     "v": "2:13",
+     "at": 16
+    },
+    {
+     "w": "folly",
+     "v": "2:13",
+     "at": 30
+    }
+   ],
+   "refs": []
+  },
+  "ECC.2.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:14",
+   "to": "2:14",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "the same event",
+     "v": "2:14",
+     "at": 97
+    }
+   ],
+   "refs": [
+    "ECC 3:19",
+    "ECC 9:2-11"
+   ]
+  },
+  "ECC.2.17": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:17",
+   "to": "2:17",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "life",
+     "v": "2:17",
+     "at": 18
+    },
+    {
+     "w": "grasping for the wind",
+     "v": "2:17",
+     "at": 113
+    }
+   ],
+   "refs": [
+    "PRO 3:16",
+    "PRO 8:35",
+    "ECC 1:2",
+    "ECC 1:14"
+   ]
+  },
+  "ECC.2.20": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:20",
+   "to": "2:20",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "labor in which I had toiled",
+     "v": "2:20",
+     "at": 53
+    }
+   ],
+   "refs": []
+  },
+  "ECC.2.21": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:21",
+   "to": "2:21",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "skill",
+     "v": "2:21",
+     "at": 62
+    },
+    {
+     "w": "great evil",
+     "v": "2:21",
+     "at": 163
+    }
+   ],
+   "refs": [
+    "ECC 4:4"
+   ]
+  },
+  "ECC.2.24": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:24",
+   "to": "2:24",
+   "pdf": 1062,
+   "page": 1027,
+   "lemmas": [
+    {
+     "w": "better",
+     "v": "2:24",
+     "at": 11
+    },
+    {
+     "w": "eat and drink... good in his labor"
+    },
+    {
+     "w": "from the hand of God",
+     "v": "2:24",
+     "at": 135
+    }
+   ],
+   "refs": [
+    "ECC 3:12",
+    "ECC 5:18",
+    "ECC 8:15",
+    "ECC 3:12-13",
+    "ECC 3:22",
+    "ECC 5:18-20",
+    "ECC 9:7"
+   ]
+  },
+  "ECC.2.25": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:25",
+   "to": "2:25",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "more than I",
+     "v": "2:25",
+     "at": 44
+    }
+   ],
+   "refs": []
+  },
+  "ECC.2.26": {
+   "b": "ECC",
+   "k": "note",
+   "from": "2:26",
+   "to": "2:26",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "God gives",
+     "v": "2:26",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "ECC.3.1-15": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:1",
+   "to": "3:15",
+   "pdf": 1063,
+   "page": 1028,
+   "refs": []
+  },
+  "ECC.3.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:1",
+   "to": "3:1",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "a season... A time"
+    },
+    {
+     "w": "under heaven",
+     "v": "3:1",
+     "at": 58
+    }
+   ],
+   "refs": []
+  },
+  "ECC.3.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:2",
+   "to": "3:2",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "born... die"
+    }
+   ],
+   "refs": []
+  },
+  "ECC.3.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:3",
+   "to": "3:3",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "A time to kill",
+     "v": "3:3",
+     "at": 0
+    },
+    {
+     "w": "A time to break down",
+     "v": "3:3",
+     "at": 36
+    }
+   ],
+   "refs": [
+    "GEN 9:6",
+    "ISA 5:5",
+    "JER 18:7-9"
+   ]
+  },
+  "ECC.3.4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:4",
+   "to": "3:4",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "weep... laugh"
+    }
+   ],
+   "refs": [
+    "1TH 4:13",
+    "MAT 5:4",
+    "EXO 15:20",
+    "PSA 149:2-3",
+    "PSA 150:4",
+    "LUK 15:25"
+   ]
+  },
+  "ECC.3.5": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:5",
+   "to": "3:5",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "stones",
+     "v": "3:5",
+     "at": 20
+    },
+    {
+     "w": "to embrace",
+     "v": "3:5",
+     "at": 64
+    }
+   ],
+   "refs": [
+    "2KI 3:19-25"
+   ]
+  },
+  "ECC.3.6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:6",
+   "to": "3:6",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "to keep... to throw away"
+    }
+   ],
+   "refs": []
+  },
+  "ECC.3.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:7",
+   "to": "3:7",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "sew",
+     "v": "3:7",
+     "at": 30
+    },
+    {
+     "w": "silence... speak"
+    }
+   ],
+   "refs": [
+    "2SA 13:31",
+    "PRO 26:4-5"
+   ]
+  },
+  "ECC.3.8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:8",
+   "to": "3:8",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "love",
+     "v": "3:8",
+     "at": 10
+    },
+    {
+     "w": "hate",
+     "v": "3:8",
+     "at": 30
+    },
+    {
+     "w": "peace",
+     "v": "3:8",
+     "at": 65
+    }
+   ],
+   "refs": []
+  },
+  "ECC.3.9": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:9",
+   "to": "3:9",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "What profit",
+     "v": "3:9",
+     "at": 0
+    }
+   ],
+   "refs": [
+    "ECC 1:3"
+   ]
+  },
+  "ECC.3.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:10",
+   "to": "3:10",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "task",
+     "v": "3:10",
+     "at": 26
+    }
+   ],
+   "refs": [
+    "ECC 5:3",
+    "ECC 8:16",
+    "ECC 1:13",
+    "ECC 2:23-26",
+    "ECC 4:8",
+    "ECC 5:14"
+   ]
+  },
+  "ECC.3.11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:11",
+   "to": "3:11",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "beautiful",
+     "v": "3:11",
+     "at": 23
+    },
+    {
+     "w": "in its time",
+     "v": "3:11",
+     "at": 33
+    },
+    {
+     "w": "Eternity in their hearts",
+     "v": "3:11",
+     "at": 62
+    },
+    {
+     "w": "from beginning to end",
+     "v": "3:11",
+     "at": 143
+    },
+    {
+     "w": "everything",
+     "v": "3:11",
+     "at": 12
+    }
+   ],
+   "refs": [
+    "ECC 3:1-8",
+    "1CO 13:12"
+   ]
+  },
+  "ECC.3.12-13": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:12",
+   "to": "3:13",
+   "pdf": 1063,
+   "page": 1028,
+   "lemmas": [
+    {
+     "w": "nothing is better",
+     "v": "3:12",
+     "at": 12
+    },
+    {
+     "w": "rejoice... enjoy"
+    }
+   ],
+   "refs": [
+    "ECC 2:24"
+   ]
+  },
+  "ECC.3.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:14",
+   "to": "3:14",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "nothing",
+     "v": "3:14",
+     "at": 52
+    },
+    {
+     "w": "added",
+     "v": "3:14",
+     "at": 67
+    },
+    {
+     "w": "taken",
+     "v": "3:14",
+     "at": 92
+    },
+    {
+     "w": "should fear",
+     "v": "3:14",
+     "at": 129
+    }
+   ],
+   "refs": [
+    "DEU 4:2",
+    "DEU 12:32",
+    "PRO 30:6",
+    "ECC 5:7",
+    "ECC 12:13"
+   ]
+  },
+  "ECC.3.16-17": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:16",
+   "to": "3:17",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "judgment",
+     "v": "3:16",
+     "at": 46
+    },
+    {
+     "w": "wickedness",
+     "v": "3:16",
+     "at": 56
+    },
+    {
+     "w": "judge",
+     "v": "3:17",
+     "at": 31
+    }
+   ],
+   "refs": [
+    "ECC 12:14",
+    "ECC 9:1",
+    "ECC 11:9"
+   ]
+  },
+  "ECC.3.18": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:18",
+   "to": "3:18",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "tests them",
+     "v": "3:18",
+     "at": 70
+    }
+   ],
+   "refs": []
+  },
+  "ECC.3.19": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:19",
+   "to": "3:19",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "one breath",
+     "v": "3:19",
+     "at": 139
+    },
+    {
+     "w": "advantage",
+     "v": "3:19",
+     "at": 162
+    }
+   ],
+   "refs": [
+    "ECC 8:8",
+    "GEN 6:17",
+    "GEN 7:15-22",
+    "PRO 14:23",
+    "PRO 21:5"
+   ]
+  },
+  "ECC.3.20-21": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:20",
+   "to": "3:21",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "All go to one place",
+     "v": "3:20",
+     "at": 0
+    },
+    {
+     "w": "who knows",
+     "v": "3:21",
+     "at": 0
+    }
+   ],
+   "refs": [
+    "2SA 12:22",
+    "EST 4:14",
+    "PSA 90:11",
+    "PRO 24:22",
+    "JOL 2:14",
+    "JHN 3:9",
+    "ECC 2:19",
+    "ECC 3:21",
+    "ECC 6:12",
+    "ECC 8:1"
+   ]
+  },
+  "ECC.3.22": {
+   "b": "ECC",
+   "k": "note",
+   "from": "3:22",
+   "to": "3:22",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "better",
+     "v": "3:22",
+     "at": 31
+    },
+    {
+     "w": "his heritage",
+     "v": "3:22",
+     "at": 99
+    }
+   ],
+   "refs": [
+    "ECC 2:24",
+    "ECC 2:21",
+    "ECC 11:2",
+    "ECC 2:10",
+    "ECC 3:22",
+    "ECC 5:17-18",
+    "ECC 9:9"
+   ]
+  },
+  "ECC.4.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:1",
+   "to": "4:1",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "they have no comforter",
+     "v": "4:1",
+     "at": 120
+    }
+   ],
+   "refs": [
+    "1KI 19:4",
+    "JOB 3:3-10",
+    "ECC 5:1-6",
+    "PSA 73:17"
+   ]
+  },
+  "ECC.4.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:2",
+   "to": "4:2",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "I praised the dead",
+     "v": "4:2",
+     "at": 10
+    }
+   ],
+   "refs": []
+  },
+  "ECC.4.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:3",
+   "to": "4:3",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "he who has never existed",
+     "v": "4:3",
+     "at": 25
+    }
+   ],
+   "refs": [
+    "JOB 3:3-10"
+   ]
+  },
+  "ECC.4.4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:4",
+   "to": "4:4",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "a man is envied by his neighbor",
+     "v": "4:4",
+     "at": 55
+    }
+   ],
+   "refs": []
+  },
+  "ECC.4.5-6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:5",
+   "to": "4:6",
+   "pdf": 1064,
+   "page": 1029,
+   "lemmas": [
+    {
+     "w": "The fool",
+     "v": "4:5",
+     "at": 0
+    },
+    {
+     "w": "a handful",
+     "v": "4:6",
+     "at": 7
+    }
+   ],
+   "refs": [
+    "PRO 16:8"
+   ]
+  },
+  "ECC.4.7-8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:7",
+   "to": "4:8",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "grave misfortune",
+     "v": "4:8",
+     "at": 242
+    }
+   ],
+   "refs": [
+    "ECC 4:1",
+    "ECC 4:4-6",
+    "ECC 4:8",
+    "ECC 3:10"
+   ]
+  },
+  "ECC.4.9-12": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:9",
+   "to": "4:12",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "threefold cord",
+     "v": "4:12",
+     "at": 71
+    }
+   ],
+   "refs": []
+  },
+  "ECC.4.13-14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:13",
+   "to": "4:14",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "king",
+     "v": "4:13",
+     "at": 53
+    },
+    {
+     "w": "foolish",
+     "v": "4:13",
+     "at": 45
+    }
+   ],
+   "refs": [
+    "GEN 41:14-41"
+   ]
+  },
+  "ECC.4.16": {
+   "b": "ECC",
+   "k": "note",
+   "from": "4:16",
+   "to": "4:16",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "those who come afterward",
+     "v": "4:16",
+     "at": 67
+    }
+   ],
+   "refs": []
+  },
+  "ECC.5.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:1",
+   "to": "5:1",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "Walk prudently",
+     "v": "5:1",
+     "at": 0
+    },
+    {
+     "w": "to hear",
+     "v": "5:1",
+     "at": 62
+    },
+    {
+     "w": "the sacrifice of fools",
+     "v": "5:1",
+     "at": 90
+    }
+   ],
+   "refs": [
+    "ECC 5:7",
+    "ISA 1:10-15",
+    "1SA 15:22"
+   ]
+  },
+  "ECC.5.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:2",
+   "to": "5:2",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "God is in heaven... you on earth"
+    }
+   ],
+   "refs": []
+  },
+  "ECC.5.4-5": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:4",
+   "to": "5:5",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "vow",
+     "v": "5:4",
+     "at": 16
+    }
+   ],
+   "refs": [
+    "DEU 23:21",
+    "ACT 5:1-11"
+   ]
+  },
+  "ECC.5.6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:6",
+   "to": "5:6",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "messenger of God",
+     "v": "5:6",
+     "at": 66
+    }
+   ],
+   "refs": [
+    "HAG 1:13",
+    "MAL 2:7"
+   ]
+  },
+  "ECC.5.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:7",
+   "to": "5:7",
+   "pdf": 1065,
+   "page": 1030,
+   "lemmas": [
+    {
+     "w": "fear God",
+     "v": "5:7",
+     "at": 72
+    }
+   ],
+   "refs": [
+    "EXO 20:2",
+    "JOB 1:1",
+    "PSA 111:10",
+    "PRO 1:7"
+   ]
+  },
+  "ECC.5.9": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:9",
+   "to": "5:9",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "for all... king"
+    }
+   ],
+   "refs": []
+  },
+  "ECC.5.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:10",
+   "to": "5:10",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "not be satisfied",
+     "v": "5:10",
+     "at": 25
+    }
+   ],
+   "refs": [
+    "ECC 1:8",
+    "ECC 4:8"
+   ]
+  },
+  "ECC.5.12": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:12",
+   "to": "5:12",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "sleep",
+     "v": "5:12",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "ECC.5.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:14",
+   "to": "5:14",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "Misfortune",
+     "v": "5:14",
+     "at": 32
+    }
+   ],
+   "refs": [
+    "ECC 3:10"
+   ]
+  },
+  "ECC.5.15": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:15",
+   "to": "5:15",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "naked shall he return",
+     "v": "5:15",
+     "at": 35
+    }
+   ],
+   "refs": [
+    "ECC 2:21"
+   ]
+  },
+  "ECC.5.16": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:16",
+   "to": "5:16",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "labored for the wind",
+     "v": "5:16",
+     "at": 103
+    }
+   ],
+   "refs": [
+    "ECC 1:14"
+   ]
+  },
+  "ECC.5.17": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:17",
+   "to": "5:17",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "darkness... anger"
+    }
+   ],
+   "refs": [
+    "ECC 2:24-26",
+    "ECC 3:12-13"
+   ]
+  },
+  "ECC.5.19": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:19",
+   "to": "5:19",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "gift",
+     "v": "5:19",
+     "at": 153
+    }
+   ],
+   "refs": []
+  },
+  "ECC.5.20": {
+   "b": "ECC",
+   "k": "note",
+   "from": "5:20",
+   "to": "5:20",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "keeps him busy",
+     "v": "5:20",
+     "at": 66
+    },
+    {
+     "w": "joy of his heart",
+     "v": "5:20",
+     "at": 90
+    }
+   ],
+   "refs": [
+    "ECC 2:10-26",
+    "ECC 4:16",
+    "ECC 9:7",
+    "ECC 10:19",
+    "ECC 2:1-10",
+    "ECC 7:4",
+    "ECC 11:9"
+   ]
+  },
+  "ECC.6.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "6:2",
+   "to": "6:2",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "God does not give him power",
+     "v": "6:2",
+     "at": 117
+    }
+   ],
+   "refs": [
+    "ECC 5:19"
+   ]
+  },
+  "ECC.6.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "6:3",
+   "to": "6:3",
+   "pdf": 1066,
+   "page": 1031,
+   "lemmas": [
+    {
+     "w": "stillborn child",
+     "v": "6:3",
+     "at": 183
+    }
+   ],
+   "refs": []
+  },
+  "ECC.6.6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "6:6",
+   "to": "6:6",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "place",
+     "v": "6:6",
+     "at": 88
+    }
+   ],
+   "refs": [
+    "ECC 3:20"
+   ]
+  },
+  "ECC.6.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "6:7",
+   "to": "6:7",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "soul",
+     "v": "6:7",
+     "at": 51
+    }
+   ],
+   "refs": [
+    "ECC 5:10"
+   ]
+  },
+  "ECC.6.9": {
+   "b": "ECC",
+   "k": "note",
+   "from": "6:9",
+   "to": "6:9",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "better",
+     "v": "6:9",
+     "at": 0
+    }
+   ],
+   "refs": []
+  },
+  "ECC.6.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "6:10",
+   "to": "6:10",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "Whatever",
+     "v": "6:10",
+     "at": 0
+    }
+   ],
+   "refs": [
+    "ECC 1:9-11"
+   ]
+  },
+  "ECC.6.12": {
+   "b": "ECC",
+   "k": "note",
+   "from": "6:12",
+   "to": "6:12",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "like a shadow",
+     "v": "6:12",
+     "at": 90
+    },
+    {
+     "w": "what will happen after him",
+     "v": "6:12",
+     "at": 124
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:1",
+   "to": "7:1",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "better",
+     "v": "7:1",
+     "at": 15
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.2-4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:2",
+   "to": "7:4",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "house of mourning",
+     "v": "7:2",
+     "at": 20
+    },
+    {
+     "w": "house of feasting",
+     "v": "7:2",
+     "at": 56
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.5-6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:5",
+   "to": "7:6",
+   "pdf": 1067,
+   "page": 1032,
+   "lemmas": [
+    {
+     "w": "thorns",
+     "v": "7:6",
+     "at": 26
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:7",
+   "to": "7:7",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "bribe",
+     "v": "7:7",
+     "at": 54
+    }
+   ],
+   "refs": [
+    "EXO 23:8",
+    "DEU 16:19",
+    "MAT 28:11-15",
+    "LUK 22:4-6"
+   ]
+  },
+  "ECC.7.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:10",
+   "to": "7:10",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "days",
+     "v": "7:10",
+     "at": 33
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:11",
+   "to": "7:11",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "wisdom",
+     "v": "7:11",
+     "at": 0
+    },
+    {
+     "w": "who see the sun",
+     "v": "7:11",
+     "at": 60
+    }
+   ],
+   "refs": [
+    "PRO 8:35"
+   ]
+  },
+  "ECC.7.12": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:12",
+   "to": "7:12",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "defense",
+     "v": "7:12",
+     "at": 16
+    },
+    {
+     "w": "excellence",
+     "v": "7:12",
+     "at": 55
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.13": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:13",
+   "to": "7:13",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "crooked",
+     "v": "7:13",
+     "at": 69
+    }
+   ],
+   "refs": [
+    "ECC 1:15"
+   ]
+  },
+  "ECC.7.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:14",
+   "to": "7:14",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "find out nothing",
+     "v": "7:14",
+     "at": 145
+    }
+   ],
+   "refs": [
+    "ECC 3:11"
+   ]
+  },
+  "ECC.7.15": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:15",
+   "to": "7:15",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "just man",
+     "v": "7:15",
+     "at": 56
+    }
+   ],
+   "refs": [
+    "ECC 3:16",
+    "ECC 4:3",
+    "ECC 8:14"
+   ]
+  },
+  "ECC.7.16": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:16",
+   "to": "7:16",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "Do not be overly righteous",
+     "v": "7:16",
+     "at": 0
+    }
+   ],
+   "refs": [
+    "PRO 3:7"
+   ]
+  },
+  "ECC.7.18": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:18",
+   "to": "7:18",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "this",
+     "v": "7:18",
+     "at": 26
+    },
+    {
+     "w": "other",
+     "v": "7:18",
+     "at": 71
+    },
+    {
+     "w": "fears God",
+     "v": "7:18",
+     "at": 89
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.20": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:20",
+   "to": "7:20",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "not a just man on earth",
+     "v": "7:20",
+     "at": 13
+    }
+   ],
+   "refs": [
+    "1KI 8:46",
+    "PSA 14:2-4",
+    "PSA 143:2"
+   ]
+  },
+  "ECC.7.21-22": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:21",
+   "to": "7:22",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "take to heart",
+     "v": "7:21",
+     "at": 12
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.23": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:23",
+   "to": "7:23",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "proved by wisdom",
+     "v": "7:23",
+     "at": 16
+    }
+   ],
+   "refs": []
+  },
+  "ECC.7.24": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:24",
+   "to": "7:24",
+   "pdf": 1068,
+   "page": 1033,
+   "lemmas": [
+    {
+     "w": "can find",
+     "v": "7:24",
+     "at": 55
+    }
+   ],
+   "refs": [
+    "JOB 28:23-28"
+   ]
+  },
+  "ECC.7.26": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:26",
+   "to": "7:26",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "woman",
+     "v": "7:26",
+     "at": 38
+    }
+   ],
+   "refs": [
+    "ECC 9:9"
+   ]
+  },
+  "ECC.7.28": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:28",
+   "to": "7:28",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "Man",
+     "v": "7:28",
+     "at": 49
+    },
+    {
+     "w": "woman",
+     "v": "7:28",
+     "at": 90
+    }
+   ],
+   "refs": [
+    "PRO 20:6"
+   ]
+  },
+  "ECC.7.29": {
+   "b": "ECC",
+   "k": "note",
+   "from": "7:29",
+   "to": "7:29",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "made",
+     "v": "7:29",
+     "at": 40
+    },
+    {
+     "w": "upright",
+     "v": "7:29",
+     "at": 49
+    }
+   ],
+   "refs": [
+    "ECC 3:11",
+    "GEN 1:31"
+   ]
+  },
+  "ECC.8.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:1",
+   "to": "8:1",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "face",
+     "v": "8:1",
+     "at": 94
+    },
+    {
+     "w": "shine",
+     "v": "8:1",
+     "at": 99
+    }
+   ],
+   "refs": [
+    "NUM 6:25"
+   ]
+  },
+  "ECC.8.2-3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:2",
+   "to": "8:3",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "oath",
+     "v": "8:2",
+     "at": 57
+    },
+    {
+     "w": "not... stand for an evil thing"
+    }
+   ],
+   "refs": [
+    "ROM 13:1-5",
+    "ACT 5:29"
+   ]
+  },
+  "ECC.8.4-5": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:4",
+   "to": "8:5",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "What are you doing",
+     "v": "8:4",
+     "at": 70
+    }
+   ],
+   "refs": [
+    "JOB 9:12",
+    "DAN 4:32"
+   ]
+  },
+  "ECC.8.6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:6",
+   "to": "8:6",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "time and judgment",
+     "v": "8:6",
+     "at": 36
+    }
+   ],
+   "refs": [
+    "ECC 12:14"
+   ]
+  },
+  "ECC.8.8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:8",
+   "to": "8:8",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "spirit",
+     "v": "8:8",
+     "at": 26
+    }
+   ],
+   "refs": [
+    "ECC 3:19"
+   ]
+  },
+  "ECC.8.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:10",
+   "to": "8:10",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "wicked",
+     "v": "8:10",
+     "at": 15
+    },
+    {
+     "w": "forgotten",
+     "v": "8:10",
+     "at": 94
+    }
+   ],
+   "refs": []
+  },
+  "ECC.8.11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:11",
+   "to": "8:11",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "sentence... is not executed"
+    }
+   ],
+   "refs": []
+  },
+  "ECC.8.12-13": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:12",
+   "to": "8:13",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "wicked",
+     "v": "8:13",
+     "at": 33
+    }
+   ],
+   "refs": []
+  },
+  "ECC.8.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:14",
+   "to": "8:14",
+   "pdf": 1069,
+   "page": 1034,
+   "lemmas": [
+    {
+     "w": "according... righteous"
+    }
+   ],
+   "refs": [
+    "ECC 3:16",
+    "ECC 4:3",
+    "ECC 7:15"
+   ]
+  },
+  "ECC.8.15": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:15",
+   "to": "8:15",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "enjoyment",
+     "v": "8:15",
+     "at": 15
+    },
+    {
+     "w": "eat, drink, and be merry",
+     "v": "8:15",
+     "at": 81
+    }
+   ],
+   "refs": []
+  },
+  "ECC.8.17": {
+   "b": "ECC",
+   "k": "note",
+   "from": "8:17",
+   "to": "8:17",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "attempts",
+     "v": "8:17",
+     "at": 189
+    }
+   ],
+   "refs": [
+    "ECC 3:11",
+    "ECC 7:25-29",
+    "ECC 11:5-8",
+    "2CH 13:8"
+   ]
+  },
+  "ECC.9.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:1",
+   "to": "9:1",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "In the hand of God",
+     "v": "9:1",
+     "at": 123
+    },
+    {
+     "w": "love nor hatred",
+     "v": "9:1",
+     "at": 163
+    }
+   ],
+   "refs": []
+  },
+  "ECC.9.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:2",
+   "to": "9:2",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "event",
+     "v": "9:2",
+     "at": 34
+    }
+   ],
+   "refs": [
+    "ECC 2:14"
+   ]
+  },
+  "ECC.9.4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:4",
+   "to": "9:4",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "hope",
+     "v": "9:4",
+     "at": 53
+    }
+   ],
+   "refs": []
+  },
+  "ECC.9.5": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:5",
+   "to": "9:5",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "they have no more reward",
+     "v": "9:5",
+     "at": 71
+    }
+   ],
+   "refs": [
+    "JHN 9:4"
+   ]
+  },
+  "ECC.9.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:7",
+   "to": "9:7",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "bread",
+     "v": "9:7",
+     "at": 13
+    },
+    {
+     "w": "wine",
+     "v": "9:7",
+     "at": 44
+    }
+   ],
+   "refs": [
+    "GEN 14:18",
+    "1SA 16:20",
+    "1SA 25:18",
+    "NEH 5:15",
+    "LAM 2:12"
+   ]
+  },
+  "ECC.9.8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:8",
+   "to": "9:8",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "garments",
+     "v": "9:8",
+     "at": 9
+    },
+    {
+     "w": "oil",
+     "v": "9:8",
+     "at": 61
+    }
+   ],
+   "refs": [
+    "ISA 1:18"
+   ]
+  },
+  "ECC.9.9": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:9",
+   "to": "9:9",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "vain life",
+     "v": "9:9",
+     "at": 63
+    }
+   ],
+   "refs": [
+    "ECC 13:4",
+    "PRO 5:15-20",
+    "PRO 5:1-14"
+   ]
+  },
+  "ECC.9.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:10",
+   "to": "9:10",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "no work... in the grave"
+    }
+   ],
+   "refs": [
+    "COL 3:23",
+    "JHN 9:4"
+   ]
+  },
+  "ECC.9.11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:11",
+   "to": "9:11",
+   "pdf": 1070,
+   "page": 1035,
+   "lemmas": [
+    {
+     "w": "not to the swift... strong... wise... men of understanding... men of skill"
+    }
+   ],
+   "refs": [
+    "2SA 2:22-23",
+    "JDG 16:19",
+    "1KI 11:1-25",
+    "2SA 16:23",
+    "2SA 17:5-14",
+    "EXO 2:11-15",
+    "ACT 7:22"
+   ]
+  },
+  "ECC.9.14-18": {
+   "b": "ECC",
+   "k": "note",
+   "from": "9:14",
+   "to": "9:18",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "poor",
+     "v": "9:15",
+     "at": 28
+    },
+    {
+     "w": "wise man",
+     "v": "9:15",
+     "at": 33
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:1",
+   "to": "10:1",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "ointment",
+     "v": "10:1",
+     "at": 34
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:2",
+   "to": "10:2",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "right hand",
+     "v": "10:2",
+     "at": 29
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:3",
+   "to": "10:3",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "a fool",
+     "v": "10:3",
+     "at": 10
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:4",
+   "to": "10:4",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "conciliation pacifies",
+     "v": "10:4",
+     "at": 74
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:6",
+   "to": "10:6",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "folly... dignity"
+    }
+   ],
+   "refs": [
+    "ECC 9:11"
+   ]
+  },
+  "ECC.10.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:7",
+   "to": "10:7",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "servants on horses",
+     "v": "10:7",
+     "at": 12
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:10",
+   "to": "10:10",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "ax",
+     "v": "10:10",
+     "at": 7
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:11",
+   "to": "10:11",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "a serpent may bite",
+     "v": "10:11",
+     "at": 0
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.12-13": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:12",
+   "to": "10:13",
+   "pdf": 1071,
+   "page": 1036,
+   "lemmas": [
+    {
+     "w": "fool",
+     "v": "10:12",
+     "at": 64
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:14",
+   "to": "10:14",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "Who... after him"
+    }
+   ],
+   "refs": [
+    "ECC 3:22",
+    "ECC 6:12",
+    "ECC 8:7",
+    "ECC 9:12",
+    "ECC 12:14"
+   ]
+  },
+  "ECC.10.15": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:15",
+   "to": "10:15",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "go to the city",
+     "v": "10:15",
+     "at": 66
+    },
+    {
+     "w": "fools",
+     "v": "10:15",
+     "at": 13
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.16": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:16",
+   "to": "10:16",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "morning",
+     "v": "10:16",
+     "at": 77
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.17": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:17",
+   "to": "10:17",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "proper time",
+     "v": "10:17",
+     "at": 92
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.18": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:18",
+   "to": "10:18",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "laziness",
+     "v": "10:18",
+     "at": 11
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.19": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:19",
+   "to": "10:19",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "money answers everything",
+     "v": "10:19",
+     "at": 56
+    }
+   ],
+   "refs": []
+  },
+  "ECC.10.20": {
+   "b": "ECC",
+   "k": "note",
+   "from": "10:20",
+   "to": "10:20",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "a bird of the air",
+     "v": "10:20",
+     "at": 94
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.1": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:1",
+   "to": "11:1",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "Cast your bread upon the waters",
+     "v": "11:1",
+     "at": 0
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:2",
+   "to": "11:2",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "seven, and also to eight",
+     "v": "11:2",
+     "at": 18
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:3",
+   "to": "11:3",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "tree falls",
+     "v": "11:3",
+     "at": 79
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:4",
+   "to": "11:4",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "will not sow",
+     "v": "11:4",
+     "at": 25
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.5": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:5",
+   "to": "11:5",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "who makes everything",
+     "v": "11:5",
+     "at": 144
+    }
+   ],
+   "refs": [
+    "ECC 12:1",
+    "ECC 3:11",
+    "ECC 8:17",
+    "ECC 9:12"
+   ]
+  },
+  "ECC.11.6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:6",
+   "to": "11:6",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "which will prosper",
+     "v": "11:6",
+     "at": 96
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:7",
+   "to": "11:7",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "light is sweet",
+     "v": "11:7",
+     "at": 10
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:8",
+   "to": "11:8",
+   "pdf": 1072,
+   "page": 1037,
+   "lemmas": [
+    {
+     "w": "remember the days of darkness",
+     "v": "11:8",
+     "at": 68
+    }
+   ],
+   "refs": []
+  },
+  "ECC.11.9": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:9",
+   "to": "11:9",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "Walk in the ways of your heart",
+     "v": "11:9",
+     "at": 93
+    }
+   ],
+   "refs": [
+    "PRO 1:8",
+    "PRO 2:1",
+    "PRO 3:1",
+    "NUM 15:39",
+    "ECC 3:17",
+    "ECC 12:14"
+   ]
+  },
+  "ECC.11.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "11:10",
+   "to": "11:10",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "youth",
+     "v": "11:10",
+     "at": 94
+    }
+   ],
+   "refs": []
+  },
+  "ECC.12.1-8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:1",
+   "to": "12:8",
+   "pdf": 1073,
+   "page": 1038,
+   "refs": []
+  },
+  "ECC.12.2": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:2",
+   "to": "12:2",
+   "pdf": 1073,
+   "page": 1038,
+   "refs": []
+  },
+  "ECC.12.3": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:3",
+   "to": "12:3",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "house",
+     "v": "12:3",
+     "at": 35
+    },
+    {
+     "w": "keepers",
+     "v": "12:3",
+     "at": 20
+    },
+    {
+     "w": "strong men bow down",
+     "v": "12:3",
+     "at": 58
+    },
+    {
+     "w": "grinders cease",
+     "v": "12:3",
+     "at": 88
+    },
+    {
+     "w": "those that look through the windows grow dim",
+     "v": "12:3",
+     "at": 129
+    }
+   ],
+   "refs": []
+  },
+  "ECC.12.4": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:4",
+   "to": "12:4",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "doors are shut in the streets",
+     "v": "12:4",
+     "at": 9
+    },
+    {
+     "w": "sound of grinding is low",
+     "v": "12:4",
+     "at": 48
+    },
+    {
+     "w": "daughters of music are brought low",
+     "v": "12:4",
+     "at": 128
+    }
+   ],
+   "refs": [
+    "JOB 41:14"
+   ]
+  },
+  "ECC.12.5": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:5",
+   "to": "12:5",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "afraid of height",
+     "v": "12:5",
+     "at": 14
+    },
+    {
+     "w": "almond tree blossoms",
+     "v": "12:5",
+     "at": 68
+    },
+    {
+     "w": "grasshopper is a burden",
+     "v": "12:5",
+     "at": 94
+    },
+    {
+     "w": "desire fails",
+     "v": "12:5",
+     "at": 123
+    },
+    {
+     "w": "eternal home",
+     "v": "12:5",
+     "at": 157
+    }
+   ],
+   "refs": []
+  },
+  "ECC.12.6": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:6",
+   "to": "12:6",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "silver cord",
+     "v": "12:6",
+     "at": 33
+    },
+    {
+     "w": "golden bowl is broken",
+     "v": "12:6",
+     "at": 63
+    },
+    {
+     "w": "pitcher shattered at the fountain",
+     "v": "12:6",
+     "at": 93
+    },
+    {
+     "w": "wheel broken at the well",
+     "v": "12:6",
+     "at": 135
+    }
+   ],
+   "refs": []
+  },
+  "ECC.12.7": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:7",
+   "to": "12:7",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "dust will return",
+     "v": "12:7",
+     "at": 9
+    },
+    {
+     "w": "spirit will return",
+     "v": "12:7",
+     "at": 58
+    }
+   ],
+   "refs": [
+    "GEN 2:7",
+    "ECC 3:19-21",
+    "ECC 8:8"
+   ]
+  },
+  "ECC.12.8": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:8",
+   "to": "12:8",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "vanity",
+     "v": "12:8",
+     "at": 1
+    }
+   ],
+   "refs": []
+  },
+  "ECC.12.9": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:9",
+   "to": "12:9",
+   "pdf": 1073,
+   "page": 1038,
+   "lemmas": [
+    {
+     "w": "the Preacher",
+     "v": "12:9",
+     "at": 22
+    },
+    {
+     "w": "pondered... sought out... set in order"
+    }
+   ],
+   "refs": [
+    "ECC 1:12",
+    "ECC 2:26",
+    "ECC 1:1-2"
+   ]
+  },
+  "ECC.12.10": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:10",
+   "to": "12:10",
+   "pdf": 1074,
+   "page": 1039,
+   "lemmas": [
+    {
+     "w": "acceptable",
+     "v": "12:10",
+     "at": 28
+    },
+    {
+     "w": "words of truth",
+     "v": "12:10",
+     "at": 79
+    }
+   ],
+   "refs": []
+  },
+  "ECC.12.11": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:11",
+   "to": "12:11",
+   "pdf": 1074,
+   "page": 1039,
+   "lemmas": [
+    {
+     "w": "well-driven nails",
+     "v": "12:11",
+     "at": 73
+    },
+    {
+     "w": "by one Shepherd",
+     "v": "12:11",
+     "at": 98
+    }
+   ],
+   "refs": [
+    "2CH 3:9",
+    "JER 10:4",
+    "PSA 80:1"
+   ]
+  },
+  "ECC.12.12": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:12",
+   "to": "12:12",
+   "pdf": 1074,
+   "page": 1039,
+   "lemmas": [
+    {
+     "w": "books",
+     "v": "12:12",
+     "at": 60
+    }
+   ],
+   "refs": []
+  },
+  "ECC.12.13": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:13",
+   "to": "12:13",
+   "pdf": 1074,
+   "page": 1039,
+   "lemmas": [
+    {
+     "w": "fear God",
+     "v": "12:13",
+     "at": 48
+    },
+    {
+     "w": "keep His commandments",
+     "v": "12:13",
+     "at": 61
+    },
+    {
+     "w": "man’s all",
+     "v": "12:13",
+     "at": 96
+    }
+   ],
+   "refs": [
+    "MAT 22:34-40"
+   ]
+  },
+  "ECC.12.14": {
+   "b": "ECC",
+   "k": "note",
+   "from": "12:14",
+   "to": "12:14",
+   "pdf": 1074,
+   "page": 1039,
+   "lemmas": [
+    {
+     "w": "judgment",
+     "v": "12:14",
+     "at": 35
+    }
+   ],
+   "refs": [
+    "2CO 5:10",
+    "ECC 3:17"
+   ]
+  },
+  "ECC.intro": {
+   "b": "ECC",
+   "k": "intro",
+   "title": "ECCLESIASTES",
+   "pdf": 1057
   }
  },
  "verses": {
@@ -260012,7 +263262,8 @@
     "2KI.13.3.word.anger",
     "PSA.11.5.word.soul",
     "JHN.20.22",
-    "1TI.2.13-14"
+    "1TI.2.13-14",
+    "ECC.12.7"
    ],
    "own": [
     "GEN.2.7"
@@ -260163,7 +263414,8 @@
    "cited": [
     "GEN.1.1.word.heavens",
     "GEN.6.12",
-    "JOS.11.20"
+    "JOS.11.20",
+    "ECC.7.20"
    ],
    "own": [
     "PSA.14.2-3"
@@ -260260,7 +263512,8 @@
     "DEU.c5.article.a-day-of-rest",
     "PSA.104.31",
     "1TI.4.3-4",
-    "REV.c20.article.god-and-the-problem-of-evil"
+    "REV.c20.article.god-and-the-problem-of-evil",
+    "ECC.7.29"
    ],
    "own": [
     "GEN.1.31"
@@ -260664,7 +263917,8 @@
   },
   "GEN 6:17": {
    "cited": [
-    "GEN.c8.chart.a-new-beginning"
+    "GEN.c8.chart.a-new-beginning",
+    "ECC.3.19"
    ],
    "own": [
     "GEN.6.17"
@@ -260782,7 +264036,8 @@
     "DEU.5.17",
     "DEU.12.28",
     "PSA.c139.article.the-sanctity-of-life-created-in-his-imag",
-    "JAS.3.9"
+    "JAS.3.9",
+    "ECC.3.3"
    ],
    "own": [
     "GEN.9.6"
@@ -260893,7 +264148,8 @@
   },
   "GEN 7:15": {
    "cited": [
-    "GEN.c10.article.the-noahic-covenant"
+    "GEN.c10.article.the-noahic-covenant",
+    "ECC.3.19"
    ],
    "own": [
     "GEN.7.15"
@@ -260901,7 +264157,8 @@
   },
   "GEN 7:16": {
    "cited": [
-    "GEN.c10.article.the-noahic-covenant"
+    "GEN.c10.article.the-noahic-covenant",
+    "ECC.3.19"
    ],
    "own": [
     "GEN.7.16"
@@ -264664,7 +267921,8 @@
   "GEN 41:37": {
    "cited": [
     "GEN.37.5.word.dream",
-    "EST.10.2-3"
+    "EST.10.2-3",
+    "ECC.4.13-14"
    ],
    "covers": [
     "GEN.41.1-57"
@@ -264674,7 +267932,8 @@
    "cited": [
     "GEN.37.5.word.dream",
     "JDG.14.6",
-    "EST.10.2-3"
+    "EST.10.2-3",
+    "ECC.4.13-14"
    ],
    "covers": [
     "GEN.41.1-57"
@@ -264686,7 +267945,8 @@
   "GEN 41:39": {
    "cited": [
     "GEN.37.5.word.dream",
-    "EST.10.2-3"
+    "EST.10.2-3",
+    "ECC.4.13-14"
    ],
    "covers": [
     "GEN.41.1-57"
@@ -264695,7 +267955,8 @@
   "GEN 41:40": {
    "cited": [
     "GEN.37.5.word.dream",
-    "EST.10.2-3"
+    "EST.10.2-3",
+    "ECC.4.13-14"
    ],
    "covers": [
     "GEN.41.1-57"
@@ -264732,7 +267993,8 @@
   "GEN 41:16": {
    "cited": [
     "GEN.37.5.word.dream",
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ],
    "covers": [
     "GEN.41.1-57"
@@ -265358,7 +268620,9 @@
    "cited": [
     "GEN.1.2",
     "JOB.10.18-22",
-    "JOB.15.23-24"
+    "JOB.15.23-24",
+    "ECC.4.1",
+    "ECC.4.3"
    ],
    "covers": [
     "JOB.3.3-10"
@@ -266204,7 +269468,8 @@
     "JHN.4.26",
     "JHN.8.24",
     "JHN.8.58-59",
-    "JHN.18.8"
+    "JHN.18.8",
+    "ECC.1.13"
    ],
    "own": [
     "EXO.3.14"
@@ -266247,7 +269512,8 @@
     "PSA.145.7",
     "MAT.22.32",
     "LUK.20.38",
-    "JHN.1.12"
+    "JHN.1.12",
+    "ECC.1.13"
    ],
    "own": [
     "EXO.3.15"
@@ -268203,7 +271469,8 @@
     "GEN.6.12",
     "JOS.c11.article.god-s-judgment",
     "JOS.11.20",
-    "ROM.3.10"
+    "ROM.3.10",
+    "ECC.7.20"
    ],
    "covers": [
     "PSA.14.2-3"
@@ -268389,6 +271656,9 @@
   "GEN 7:18": {
    "own": [
     "GEN.7.18"
+   ],
+   "cited": [
+    "ECC.3.19"
    ]
   },
   "GEN 7:19": {
@@ -268396,12 +271666,16 @@
     "GEN.7.19"
    ],
    "cited": [
-    "GEN.8.5"
+    "GEN.8.5",
+    "ECC.3.19"
    ]
   },
   "GEN 7:21": {
    "own": [
     "GEN.7.21"
+   ],
+   "cited": [
+    "ECC.3.19"
    ]
   },
   "MAT 24:37": {
@@ -268505,7 +271779,8 @@
   },
   "GEN 7:20": {
    "cited": [
-    "GEN.8.5"
+    "GEN.8.5",
+    "ECC.3.19"
    ]
   },
   "GEN 8:7": {
@@ -269880,7 +273155,9 @@
     "2SA.5.6-9",
     "1CH.c15.article.king-david-as-priest",
     "PSA.110.4",
-    "HEB.c5.culture.melchizedek"
+    "HEB.c5.culture.melchizedek",
+    "ECC.1.16",
+    "ECC.9.7"
    ]
   },
   "GEN 14:19": {
@@ -271675,18 +274952,43 @@
    "cited": [
     "GEN.18.14",
     "PSA.128.2-3"
+   ],
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.9"
    ]
   },
   "ECC 3:10": {
    "cited": [
     "GEN.18.14",
-    "PSA.128.2-3"
+    "PSA.128.2-3",
+    "ECC.1.13",
+    "ECC.4.7-8",
+    "ECC.5.14"
+   ],
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.10"
    ]
   },
   "ECC 3:11": {
    "cited": [
     "GEN.18.14",
-    "PSA.128.2-3"
+    "PSA.128.2-3",
+    "ECC.7.14",
+    "ECC.7.29",
+    "ECC.8.17",
+    "ECC.11.5"
+   ],
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.11"
    ]
   },
   "GEN 21:7": {
@@ -273193,7 +276495,8 @@
   "GEN 41:32": {
    "cited": [
     "GEN.22.1",
-    "GEN.42.18"
+    "GEN.42.18",
+    "ECC.4.13-14"
    ],
    "covers": [
     "GEN.41.1-57"
@@ -273313,7 +276616,8 @@
     "PRO.23.17-18",
     "PRO.28.4-5",
     "PRO.31.10",
-    "ROM.3.18"
+    "ROM.3.18",
+    "ECC.5.7"
    ],
    "own": [
     "PRO.1.7"
@@ -279023,7 +282327,8 @@
     "GEN.41.14"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:15": {
@@ -279034,7 +282339,8 @@
     "GEN.41.15"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:17": {
@@ -279045,7 +282351,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:18": {
@@ -279054,7 +282361,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:19": {
@@ -279063,7 +282371,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:20": {
@@ -279072,7 +282381,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:21": {
@@ -279081,7 +282391,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:22": {
@@ -279090,7 +282401,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:23": {
@@ -279099,7 +282411,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:24": {
@@ -279108,7 +282421,8 @@
     "GEN.41.17-24"
    ],
    "cited": [
-    "EXO.7.11"
+    "EXO.7.11",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:25": {
@@ -279119,17 +282433,24 @@
     "GEN.41.25"
    ],
    "cited": [
-    "2CH.35.21"
+    "2CH.35.21",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:26": {
    "covers": [
     "GEN.41.1-57"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:27": {
    "covers": [
     "GEN.41.1-57"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:28": {
@@ -279138,11 +282459,17 @@
    ],
    "own": [
     "GEN.41.28"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:29": {
    "covers": [
     "GEN.41.1-57"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:30": {
@@ -279151,11 +282478,17 @@
    ],
    "own": [
     "GEN.41.30"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:31": {
    "covers": [
     "GEN.41.1-57"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:33": {
@@ -279164,6 +282497,9 @@
    ],
    "own": [
     "GEN.41.33"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:34": {
@@ -279172,6 +282508,9 @@
    ],
    "own": [
     "GEN.41.34"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:35": {
@@ -279180,11 +282519,17 @@
    ],
    "own": [
     "GEN.41.35"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:36": {
    "covers": [
     "GEN.41.1-57"
+   ],
+   "cited": [
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:41": {
@@ -279192,7 +282537,8 @@
     "GEN.41.1-57"
    ],
    "cited": [
-    "EST.10.2-3"
+    "EST.10.2-3",
+    "ECC.4.13-14"
    ]
   },
   "GEN 41:43": {
@@ -281685,7 +285031,8 @@
    "cited": [
     "EXO.c1.chart.the-pharaohs-and-the-exodus-story",
     "JDG.6.1",
-    "1SA.3.10.word.hears"
+    "1SA.3.10.word.hears",
+    "ECC.9.11"
    ],
    "own": [
     "EXO.2.15"
@@ -284275,7 +287622,8 @@
     "EXO.32.4",
     "2SA.12.9",
     "PSA.81.8-10",
-    "PSA.119.1"
+    "PSA.119.1",
+    "ECC.5.7"
    ],
    "covers": [
     "EXO.20.1-17"
@@ -284904,11 +288252,15 @@
   "EXO 2:11": {
    "own": [
     "EXO.2.11"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "ACT 7:22": {
    "cited": [
-    "EXO.2.11"
+    "EXO.2.11",
+    "ECC.9.11"
    ],
    "own": [
     "ACT.7.22"
@@ -284917,6 +288269,9 @@
   "EXO 2:12": {
    "own": [
     "EXO.2.12"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "GEN 29:4": {
@@ -285815,7 +289170,8 @@
    "cited": [
     "EXO.4.14",
     "EXO.34.7",
-    "PSA.39.4-5"
+    "PSA.39.4-5",
+    "ECC.3.20-21"
    ],
    "own": [
     "PSA.90.11-12"
@@ -288272,7 +291628,9 @@
   "JOB 3:6": {
    "cited": [
     "EXO.10.22-23",
-    "JOB.10.18-22"
+    "JOB.10.18-22",
+    "ECC.4.1",
+    "ECC.4.3"
    ],
    "covers": [
     "JOB.3.3-10"
@@ -289440,7 +292798,8 @@
     "2CH.34.22",
     "PSA.c136.culture.story-music",
     "PSA.68.11",
-    "LUK.2.37"
+    "LUK.2.37",
+    "ECC.3.4"
    ]
   },
   "EXO 15:21": {
@@ -295256,7 +298615,8 @@
     "NUM.c31.article.sacrifices-of-joy",
     "EZR.7.15-16",
     "ROM.2.28-29",
-    "2TI.3.5"
+    "2TI.3.5",
+    "ECC.5.1"
    ]
   },
   "ISA 1:11": {
@@ -295269,7 +298629,8 @@
     "PRO.15.8-9",
     "ROM.2.25-26",
     "ROM.2.28-29",
-    "2TI.3.5"
+    "2TI.3.5",
+    "ECC.5.1"
    ]
   },
   "ISA 1:12": {
@@ -295283,7 +298644,8 @@
     "PRO.15.8-9",
     "ROM.2.25-26",
     "ROM.2.28-29",
-    "2TI.3.5"
+    "2TI.3.5",
+    "ECC.5.1"
    ]
   },
   "ISA 1:13": {
@@ -295299,7 +298661,8 @@
     "ROM.2.25-26",
     "ROM.2.28-29",
     "2TI.3.5",
-    "HEB.10.5-7"
+    "HEB.10.5-7",
+    "ECC.5.1"
    ]
   },
   "ISA 1:14": {
@@ -295315,7 +298678,8 @@
     "ROM.2.25-26",
     "ROM.2.28-29",
     "2TI.3.5",
-    "HEB.10.5-7"
+    "HEB.10.5-7",
+    "ECC.5.1"
    ]
   },
   "ISA 1:15": {
@@ -295331,7 +298695,8 @@
     "ROM.2.25-26",
     "ROM.2.28-29",
     "2TI.3.5",
-    "HEB.10.5-7"
+    "HEB.10.5-7",
+    "ECC.5.1"
    ]
   },
   "EXO 32:4": {
@@ -297999,7 +301364,8 @@
     "1KI.21.19",
     "LUK.10.25-26",
     "GAL.5.14",
-    "REV.2.4"
+    "REV.2.4",
+    "ECC.12.13"
    ],
    "own": [
     "MAT.22.37.word.mind",
@@ -298014,7 +301380,8 @@
     "1KI.21.19",
     "LUK.10.25-26",
     "GAL.5.14",
-    "REV.2.4"
+    "REV.2.4",
+    "ECC.12.13"
    ]
   },
   "MAT 22:39": {
@@ -298026,7 +301393,8 @@
     "LUK.10.25-26",
     "GAL.5.14",
     "GAL.6.2",
-    "JAS.2.8-9"
+    "JAS.2.8-9",
+    "ECC.12.13"
    ],
    "own": [
     "MAT.22.39"
@@ -305975,7 +309343,8 @@
     "LEV.19.18",
     "1KI.21.19",
     "LUK.10.25-26",
-    "GAL.5.14"
+    "GAL.5.14",
+    "ECC.12.13"
    ],
    "own": [
     "MAT.22.40"
@@ -307831,7 +311200,8 @@
   "1KI 10:27": {
    "cited": [
     "NUM.c7.culture.silver",
-    "1SA.10.24.word.king"
+    "1SA.10.24.word.king",
+    "ECC.2.7-8"
    ],
    "own": [
     "1KI.10.27"
@@ -310008,7 +313378,8 @@
     "PSA.51.16",
     "ROM.2.25-26",
     "ROM.2.28-29",
-    "2TI.3.5"
+    "2TI.3.5",
+    "ECC.9.8"
    ]
   },
   "HOS 6:6": {
@@ -311991,7 +315362,8 @@
     "PSA.80.3",
     "PSA.125.5",
     "PRO.16.15",
-    "LUK.1.21"
+    "LUK.1.21",
+    "ECC.8.1"
    ]
   },
   "NUM 6:26": {
@@ -312875,7 +316247,8 @@
   },
   "1KI 19:4": {
    "cited": [
-    "NUM.11.12-15"
+    "NUM.11.12-15",
+    "ECC.4.1"
    ],
    "own": [
     "1KI.19.4"
@@ -313617,7 +316990,8 @@
     "NUM.15.37-41"
    ],
    "cited": [
-    "MRK.6.56"
+    "MRK.6.56",
+    "ECC.11.9"
    ]
   },
   "NUM 15:40": {
@@ -316534,7 +319908,8 @@
    "cited": [
     "NUM.30.1-2",
     "JDG.11.35",
-    "LUK.16.6"
+    "LUK.16.6",
+    "ECC.5.4-5"
    ],
    "own": [
     "DEU.23.21-22"
@@ -316559,19 +319934,29 @@
   "ECC 5:1": {
    "cited": [
     "NUM.30.1-2",
-    "PRO.20.25"
+    "PRO.20.25",
+    "ECC.4.1"
+   ],
+   "own": [
+    "ECC.5.1"
    ]
   },
   "ECC 5:2": {
    "cited": [
     "NUM.30.1-2",
-    "PRO.20.25"
+    "PRO.20.25",
+    "ECC.4.1"
+   ],
+   "own": [
+    "ECC.5.2"
    ]
   },
   "ECC 5:3": {
    "cited": [
     "NUM.30.1-2",
-    "PRO.20.25"
+    "PRO.20.25",
+    "ECC.3.10",
+    "ECC.4.1"
    ]
   },
   "ECC 5:4": {
@@ -316579,7 +319964,11 @@
     "NUM.30.1-2",
     "DEU.23.21-22",
     "JDG.11.35",
-    "PRO.20.25"
+    "PRO.20.25",
+    "ECC.4.1"
+   ],
+   "own": [
+    "ECC.5.4-5"
    ]
   },
   "ECC 5:5": {
@@ -316587,20 +319976,33 @@
     "NUM.30.1-2",
     "DEU.23.21-22",
     "JDG.11.35",
-    "PRO.20.25"
+    "PRO.20.25",
+    "ECC.4.1"
+   ],
+   "covers": [
+    "ECC.5.4-5"
    ]
   },
   "ECC 5:6": {
    "cited": [
     "NUM.30.1-2",
     "DEU.23.21-22",
-    "PRO.20.25"
+    "PRO.20.25",
+    "ECC.4.1"
+   ],
+   "own": [
+    "ECC.5.6"
    ]
   },
   "ECC 5:7": {
    "cited": [
     "NUM.30.1-2",
-    "PRO.20.25"
+    "PRO.20.25",
+    "ECC.3.14",
+    "ECC.5.1"
+   ],
+   "own": [
+    "ECC.5.7"
    ]
   },
   "NUM 30:3": {
@@ -317803,7 +321205,8 @@
     "NEH.1.5.word.awesome",
     "JOB.2.3",
     "JOB.4.12-17",
-    "JOB.8.20-21"
+    "JOB.8.20-21",
+    "ECC.5.7"
    ],
    "own": [
     "JOB.1.1.word.blameless",
@@ -318053,7 +321456,8 @@
    "cited": [
     "DEU.5.1.word.statutes",
     "DEU.6.16-19",
-    "REV.22.18-19"
+    "REV.22.18-19",
+    "ECC.3.14"
    ],
    "own": [
     "DEU.4.2"
@@ -323104,6 +326508,9 @@
   "DEU 12:32": {
    "own": [
     "DEU.12.32"
+   ],
+   "cited": [
+    "ECC.3.14"
    ]
   },
   "DEU 13:1": {
@@ -323586,11 +326993,15 @@
   "DEU 16:19": {
    "own": [
     "DEU.16.19"
+   ],
+   "cited": [
+    "ECC.7.7"
    ]
   },
   "EXO 23:8": {
    "cited": [
-    "DEU.16.19"
+    "DEU.16.19",
+    "ECC.7.7"
    ]
   },
   "DEU 16:20": {
@@ -326741,7 +330152,8 @@
   },
   "MAL 2:7": {
    "cited": [
-    "DEU.31.11-12"
+    "DEU.31.11-12",
+    "ECC.5.6"
    ]
   },
   "MAL 2:8": {
@@ -328515,7 +331927,12 @@
   },
   "ECC 11:9": {
    "cited": [
-    "JOS.22.5.word.walk"
+    "JOS.22.5.word.walk",
+    "ECC.3.16-17",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.11.9"
    ]
   },
   "ROM 8:4": {
@@ -330428,7 +333845,8 @@
     "JOS.5.1",
     "JOS.6.17-18",
     "JOS.9.15",
-    "JOS.10.28-43"
+    "JOS.10.28-43",
+    "ECC.1.16"
    ]
   },
   "JOS 10:2": {
@@ -333626,7 +337044,8 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "1CH.28.9",
-    "2CH.21.11"
+    "2CH.21.11",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.1"
@@ -333639,7 +337058,8 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "1CH.28.9",
-    "2CH.21.11"
+    "2CH.21.11",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.2"
@@ -333652,7 +337072,9 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "1CH.28.9",
-    "2CH.21.11"
+    "2CH.21.11",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.3"
@@ -333667,7 +337089,8 @@
     "1KI.16.30-31",
     "1CH.28.9",
     "2CH.21.11",
-    "NEH.13.25-27"
+    "NEH.13.25-27",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.4"
@@ -333683,7 +337106,8 @@
     "1KI.16.30-31",
     "2KI.23.10",
     "2CH.21.11",
-    "NEH.13.25-27"
+    "NEH.13.25-27",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.5"
@@ -333697,7 +337121,8 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "2CH.21.11",
-    "NEH.13.25-27"
+    "NEH.13.25-27",
+    "ECC.9.11"
    ]
   },
   "1KI 11:7": {
@@ -333711,7 +337136,8 @@
     "1KI.16.30-31",
     "2KI.14.4.word.high-places",
     "2CH.21.11",
-    "NEH.13.25-27"
+    "NEH.13.25-27",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.7"
@@ -333725,7 +337151,8 @@
     "1KI.9.1-9",
     "1KI.16.30-31",
     "2CH.21.11",
-    "NEH.13.25-27"
+    "NEH.13.25-27",
+    "ECC.9.11"
    ]
   },
   "JOS 23:13": {
@@ -334927,7 +338354,8 @@
     "JDG.5.3.word.sing-praise",
     "1SA.18.6.word.dancing",
     "PSA.146.1.word.praise",
-    "PSA.68.24-27"
+    "PSA.68.24-27",
+    "ECC.3.4"
    ],
    "covers": [
     "PSA.149.2-5"
@@ -339488,7 +342916,8 @@
    ],
    "cited": [
     "JDG.13.5",
-    "JDG.14.1-16.31"
+    "JDG.14.1-16.31",
+    "ECC.9.11"
    ]
   },
   "JDG 16:20": {
@@ -340704,7 +344133,8 @@
     "JDG.9.23",
     "1SA.17.55",
     "1SA.18.2",
-    "2PE.c2.article.demons"
+    "2PE.c2.article.demons",
+    "ECC.9.7"
    ],
    "covers": [
     "1SA.16.1-31.13"
@@ -340855,7 +344285,8 @@
     "2SA.7.14",
     "1KI.9.1-9",
     "1KI.16.30-31",
-    "2CH.10.15"
+    "2CH.10.15",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.9-13"
@@ -340867,7 +344298,8 @@
     "2SA.7.14",
     "1KI.9.1-9",
     "1KI.16.30-31",
-    "2CH.10.15"
+    "2CH.10.15",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.9-13"
@@ -340880,7 +344312,8 @@
     "1KI.6.11",
     "1KI.9.1-9",
     "1KI.16.30-31",
-    "2CH.10.15"
+    "2CH.10.15",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.9-13"
@@ -340894,7 +344327,8 @@
     "JDG.11.24",
     "2SA.7.14",
     "1KI.16.30-31",
-    "2CH.10.15"
+    "2CH.10.15",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.9-13"
@@ -340906,7 +344340,8 @@
     "2SA.7.14",
     "1KI.16.30-31",
     "2CH.10.15",
-    "PSA.87.1"
+    "PSA.87.1",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.9-13"
@@ -340918,7 +344353,8 @@
   "1KI 11:14": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.14-22"
@@ -340927,7 +344363,8 @@
   "1KI 11:15": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340936,7 +344373,8 @@
   "1KI 11:16": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340945,7 +344383,8 @@
   "1KI 11:17": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340954,7 +344393,8 @@
   "1KI 11:18": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340963,7 +344403,8 @@
   "1KI 11:19": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340972,7 +344413,8 @@
   "1KI 11:20": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340981,7 +344423,8 @@
   "1KI 11:21": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340990,7 +344433,8 @@
   "1KI 11:22": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.14-22"
@@ -340999,7 +344443,8 @@
   "1KI 11:23": {
    "cited": [
     "JDG.11.24",
-    "2SA.7.14"
+    "2SA.7.14",
+    "ECC.9.11"
    ],
    "own": [
     "1KI.11.23-25"
@@ -341007,7 +344452,8 @@
   },
   "1KI 11:24": {
    "cited": [
-    "JDG.11.24"
+    "JDG.11.24",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.23-25"
@@ -341015,7 +344461,8 @@
   },
   "1KI 11:25": {
    "cited": [
-    "JDG.11.24"
+    "JDG.11.24",
+    "ECC.9.11"
    ],
    "covers": [
     "1KI.11.23-25"
@@ -343113,7 +346560,8 @@
     "1SA.2.9.word.darkness",
     "2KI.8.1",
     "2KI.19.29",
-    "LUK.23.45"
+    "LUK.23.45",
+    "ECC.3.20-21"
    ]
   },
   "JOL 2:15": {
@@ -344244,7 +347692,8 @@
   "1KI 10:26": {
    "cited": [
     "1SA.10.24.word.king",
-    "1KI.4.26"
+    "1KI.4.26",
+    "ECC.2.7-8"
    ],
    "own": [
     "1KI.10.26"
@@ -344252,7 +347701,8 @@
   },
   "1KI 10:28": {
    "cited": [
-    "1SA.10.24.word.king"
+    "1SA.10.24.word.king",
+    "ECC.2.7-8"
    ],
    "own": [
     "1KI.10.28"
@@ -344260,7 +347710,8 @@
   },
   "1KI 10:29": {
    "cited": [
-    "1SA.10.24.word.king"
+    "1SA.10.24.word.king",
+    "ECC.2.7-8"
    ]
   },
   "1KI 5:1": {
@@ -344969,7 +348420,8 @@
     "PSA.33.1-3",
     "PSA.68.24-27",
     "PSA.149.2-5",
-    "REV.19.1"
+    "REV.19.1",
+    "ECC.3.4"
    ],
    "covers": [
     "PSA.150.3-5"
@@ -347944,7 +351396,8 @@
     "1SA.4.4",
     "2SA.6.2",
     "PSA.c26.chart.names-and-descriptions-of-god-in-the-psa",
-    "PSA.18.10-12"
+    "PSA.18.10-12",
+    "ECC.12.11"
    ],
    "own": [
     "PSA.80.1-2"
@@ -349437,7 +352890,8 @@
     "2CH.30.18-20",
     "PSA.40.6",
     "PRO.21.3",
-    "ROM.2.25-26"
+    "ROM.2.25-26",
+    "ECC.5.1"
    ]
   },
   "1SA 15:35": {
@@ -350816,7 +354270,8 @@
     "1SA.30.11-12",
     "2SA.2.2",
     "2SA.16.1",
-    "PRO.15.1"
+    "PRO.15.1",
+    "ECC.9.7"
    ]
   },
   "1SA 25:19": {
@@ -353780,6 +357235,9 @@
    "own": [
     "2SA.17.7.word.advice",
     "2SA.17.7"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "JOB 38:2": {
@@ -354641,7 +358099,8 @@
    ],
    "cited": [
     "2SA.3.27",
-    "1CH.11.26"
+    "1CH.11.26",
+    "ECC.9.11"
    ]
   },
   "2SA 2:25": {
@@ -354937,7 +358396,8 @@
   "2SA 2:22": {
    "cited": [
     "2SA.3.27",
-    "1CH.11.26"
+    "1CH.11.26",
+    "ECC.9.11"
    ]
   },
   "2SA 3:28": {
@@ -355288,7 +358748,8 @@
    "cited": [
     "2SA.5.14",
     "1KI.1.8",
-    "EST.4.16.word.fasting"
+    "EST.4.16.word.fasting",
+    "ECC.3.20-21"
    ],
    "own": [
     "2SA.12.22"
@@ -355338,7 +358799,13 @@
    "cited": [
     "2SA.6.9",
     "PSA.62.12",
-    "COL.3.17"
+    "COL.3.17",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.12",
+    "ECC.3.14"
+   ],
+   "own": [
+    "ECC.12.13"
    ]
   },
   "ECC 12:14": {
@@ -355346,7 +358813,15 @@
     "2SA.6.9",
     "PSA.62.12",
     "PRO.15.3",
-    "COL.3.17"
+    "COL.3.17",
+    "ECC.1.12",
+    "ECC.3.16-17",
+    "ECC.8.6",
+    "ECC.10.14",
+    "ECC.11.9"
+   ],
+   "own": [
+    "ECC.12.14"
    ]
   },
   "1CH 15:18": {
@@ -356330,7 +359805,8 @@
     "1KI.6.20.word.gold",
     "1KI.7.1-2",
     "1KI.10.10",
-    "1KI.14.27"
+    "1KI.14.27",
+    "ECC.2.7-8"
    ],
    "own": [
     "1KI.10.16-17"
@@ -356341,7 +359817,9 @@
     "2SA.8.7",
     "1KI.7.1-2",
     "1KI.10.10",
-    "1KI.14.27"
+    "1KI.14.27",
+    "ECC.2.4-6",
+    "ECC.2.7-8"
    ],
    "covers": [
     "1KI.10.16-17"
@@ -357054,7 +360532,8 @@
    "cited": [
     "2SA.14.14",
     "1KI.1.6",
-    "1CH.3.9"
+    "1CH.3.9",
+    "ECC.3.7"
    ]
   },
   "2SA 13:32": {
@@ -357613,7 +361092,8 @@
   },
   "2SA 16:23": {
    "cited": [
-    "2SA.15.31"
+    "2SA.15.31",
+    "ECC.9.11"
    ],
    "own": [
     "2SA.16.23"
@@ -358029,7 +361509,8 @@
   },
   "2SA 17:8": {
    "cited": [
-    "2SA.16.6"
+    "2SA.16.6",
+    "ECC.9.11"
    ],
    "own": [
     "2SA.17.8"
@@ -358154,31 +361635,49 @@
   "2SA 17:5": {
    "own": [
     "2SA.17.5"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "2SA 17:9": {
    "own": [
     "2SA.17.9"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "2SA 17:10": {
    "own": [
     "2SA.17.10"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "2SA 17:11": {
    "own": [
     "2SA.17.11-12"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "2SA 17:12": {
    "covers": [
     "2SA.17.11-12"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "2SA 17:13": {
    "own": [
     "2SA.17.13"
+   ],
+   "cited": [
+    "ECC.9.11"
    ]
   },
   "2SA 17:15": {
@@ -360210,7 +363709,8 @@
     "2KI.c12.culture.millo",
     "2CH.1.14",
     "2CH.10.4",
-    "2CH.32.5"
+    "2CH.32.5",
+    "ECC.2.4-6"
    ],
    "own": [
     "1KI.9.15"
@@ -360220,7 +363720,8 @@
    "cited": [
     "1KI.c6.article.sparing-no-expense",
     "1KI.3.1",
-    "2CH.1.14"
+    "2CH.1.14",
+    "ECC.2.4-6"
    ],
    "own": [
     "1KI.9.16"
@@ -360229,7 +363730,8 @@
   "1KI 9:17": {
    "cited": [
     "1KI.c6.article.sparing-no-expense",
-    "2CH.1.14"
+    "2CH.1.14",
+    "ECC.2.4-6"
    ],
    "own": [
     "1KI.9.17-18"
@@ -360238,7 +363740,8 @@
   "1KI 9:18": {
    "cited": [
     "1KI.c6.article.sparing-no-expense",
-    "2CH.1.14"
+    "2CH.1.14",
+    "ECC.2.4-6"
    ],
    "covers": [
     "1KI.9.17-18"
@@ -361505,7 +365008,8 @@
   "1KI 10:18": {
    "cited": [
     "1KI.c22.culture.ivory",
-    "1KI.10.10"
+    "1KI.10.10",
+    "ECC.2.7-8"
    ],
    "own": [
     "1KI.10.18"
@@ -361514,24 +365018,28 @@
   "1KI 10:19": {
    "cited": [
     "1KI.c22.culture.ivory",
-    "1KI.10.10"
+    "1KI.10.10",
+    "ECC.2.7-8"
    ]
   },
   "1KI 10:20": {
    "cited": [
     "1KI.c22.culture.ivory",
-    "1KI.10.10"
+    "1KI.10.10",
+    "ECC.2.7-8"
    ]
   },
   "1KI 10:21": {
    "cited": [
     "1KI.c22.culture.ivory",
-    "1KI.10.10"
+    "1KI.10.10",
+    "ECC.2.7-8"
    ]
   },
   "1KI 10:22": {
    "cited": [
-    "1KI.c22.culture.ivory"
+    "1KI.c22.culture.ivory",
+    "ECC.2.7-8"
    ],
    "own": [
     "1KI.10.22"
@@ -364104,7 +367612,8 @@
    ],
    "cited": [
     "1KI.10.1",
-    "2CH.9.1"
+    "2CH.9.1",
+    "ECC.2.4-6"
    ]
   },
   "1CH 21:18": {
@@ -364176,7 +367685,8 @@
    "cited": [
     "1KI.5.8-11",
     "1CH.14.1-2",
-    "2CH.8.1-2"
+    "2CH.8.1-2",
+    "ECC.2.4-6"
    ],
    "own": [
     "1KI.9.10-14"
@@ -364892,7 +368402,8 @@
     "1KI.8.44-53"
    ],
    "cited": [
-    "PSA.87.1"
+    "PSA.87.1",
+    "ECC.7.20"
    ]
   },
   "1KI 8:47": {
@@ -365952,11 +369463,17 @@
   "1KI 10:24": {
    "own": [
     "1KI.10.24-25"
+   ],
+   "cited": [
+    "ECC.2.7-8"
    ]
   },
   "1KI 10:25": {
    "covers": [
     "1KI.10.24-25"
+   ],
+   "cited": [
+    "ECC.2.7-8"
    ]
   },
   "ACT 6:9": {
@@ -367294,7 +370811,8 @@
     "1KI.15.6",
     "2CH.12.14",
     "2CH.14.11",
-    "2CH.20.3-4"
+    "2CH.20.3-4",
+    "ECC.8.17"
    ],
    "covers": [
     "2CH.13.7-8"
@@ -369708,7 +373226,8 @@
   "2KI 3:19": {
    "cited": [
     "1KI.22.45",
-    "JOB.5.23"
+    "JOB.5.23",
+    "ECC.3.5"
    ],
    "covers": [
     "2KI.3.16-19"
@@ -369717,7 +373236,8 @@
   "2KI 3:20": {
    "cited": [
     "1KI.22.45",
-    "JOB.5.23"
+    "JOB.5.23",
+    "ECC.3.5"
    ],
    "own": [
     "2KI.3.20"
@@ -369726,19 +373246,22 @@
   "2KI 3:21": {
    "cited": [
     "1KI.22.45",
-    "JOB.5.23"
+    "JOB.5.23",
+    "ECC.3.5"
    ]
   },
   "2KI 3:22": {
    "cited": [
     "1KI.22.45",
-    "JOB.5.23"
+    "JOB.5.23",
+    "ECC.3.5"
    ]
   },
   "2KI 3:23": {
    "cited": [
     "1KI.22.45",
-    "JOB.5.23"
+    "JOB.5.23",
+    "ECC.3.5"
    ],
    "own": [
     "2KI.3.23"
@@ -369747,13 +373270,15 @@
   "2KI 3:24": {
    "cited": [
     "1KI.22.45",
-    "JOB.5.23"
+    "JOB.5.23",
+    "ECC.3.5"
    ]
   },
   "2KI 3:25": {
    "cited": [
     "1KI.22.45",
-    "JOB.5.23"
+    "JOB.5.23",
+    "ECC.3.5"
    ]
   },
   "2KI 3:26": {
@@ -376063,7 +379588,14 @@
   },
   "ECC 3:8": {
    "cited": [
-    "1CH.12.18.word.peace"
+    "1CH.12.18.word.peace",
+    "ECC.3.11"
+   ],
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.8"
    ]
   },
   "2KI 5:19": {
@@ -377392,7 +380924,8 @@
   "HAG 1:13": {
    "cited": [
     "1CH.3.19",
-    "1CH.6.14"
+    "1CH.6.14",
+    "ECC.5.6"
    ]
   },
   "HAG 1:14": {
@@ -382509,7 +386042,11 @@
   },
   "ECC 12:10": {
    "cited": [
-    "2CH.20.32.word.right"
+    "2CH.20.32.word.right",
+    "ECC.1.12"
+   ],
+   "own": [
+    "ECC.12.10"
    ]
   },
   "PRO 11:3": {
@@ -383235,6 +386772,9 @@
   "2CH 3:9": {
    "own": [
     "2CH.3.9"
+   ],
+   "cited": [
+    "ECC.12.11"
    ]
   },
   "2CH 5:9": {
@@ -387128,12 +390668,24 @@
   },
   "ECC 2:7": {
    "cited": [
-    "EZR.2.65"
+    "EZR.2.65",
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.7-8"
    ]
   },
   "ECC 2:8": {
    "cited": [
-    "EZR.2.65"
+    "EZR.2.65",
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ],
+   "covers": [
+    "ECC.2.7-8"
    ]
   },
   "EZR 2:66": {
@@ -388042,7 +391594,11 @@
   "ECC 12:11": {
    "cited": [
     "EZR.9.8-9",
-    "PSA.28.8-9"
+    "PSA.28.8-9",
+    "ECC.1.12"
+   ],
+   "own": [
+    "ECC.12.11"
    ]
   },
   "HOS 12:13": {
@@ -388984,7 +392540,8 @@
   },
   "PSA 127:1": {
    "cited": [
-    "NEH.3.1"
+    "NEH.3.1",
+    "ECC.2.11.word.labor"
    ],
    "own": [
     "PSA.127.1-2"
@@ -389156,6 +392713,9 @@
   "NEH 5:15": {
    "own": [
     "NEH.5.15"
+   ],
+   "cited": [
+    "ECC.9.7"
    ]
   },
   "NEH 5:16": {
@@ -390241,7 +393801,8 @@
   },
   "EST 4:14": {
    "cited": [
-    "EST.4.16.word.fasting"
+    "EST.4.16.word.fasting",
+    "ECC.3.20-21"
    ],
    "own": [
     "EST.4.14"
@@ -391356,7 +394917,8 @@
    "cited": [
     "JOB.9.13.word.proud",
     "JOB.11.10-12",
-    "JOB.23.13-16"
+    "JOB.23.13-16",
+    "ECC.8.4-5"
    ]
   },
   "JOB 26:13": {
@@ -391638,7 +395200,8 @@
    "cited": [
     "JOB.c11.chart.job-s-counseling-sessions",
     "JOB.3.20-22",
-    "JOB.10.18-22"
+    "JOB.10.18-22",
+    "ECC.1.14.word.vanity"
    ]
   },
   "JOB 10:2": {
@@ -392270,7 +395833,9 @@
    "cited": [
     "JOB.c19.article.the-mystery-of-human-suffering",
     "JHN.2.11",
-    "JHN.8.12"
+    "JHN.8.12",
+    "ECC.9.5",
+    "ECC.9.10"
    ]
   },
   "JHN 9:5": {
@@ -392471,7 +396036,11 @@
   },
   "ECC 11:7": {
    "cited": [
-    "JOB.19.27.word.behold"
+    "JOB.19.27.word.behold",
+    "ECC.8.17"
+   ],
+   "own": [
+    "ECC.11.7"
    ]
   },
   "ISA 26:10": {
@@ -393023,7 +396592,8 @@
   "JOB 28:28": {
    "cited": [
     "JOB.1.1",
-    "ROM.3.18"
+    "ROM.3.18",
+    "ECC.7.24"
    ],
    "covers": [
     "JOB.28.1-28"
@@ -393039,7 +396609,8 @@
     "PSA.34.11-14",
     "PRO.9.7-9",
     "PRO.16.6",
-    "PRO.19.1"
+    "PRO.19.1",
+    "ECC.7.16"
    ],
    "own": [
     "PRO.3.7-10"
@@ -393400,7 +396971,9 @@
     "JOB.3.3-10"
    ],
    "cited": [
-    "JOB.10.18-22"
+    "JOB.10.18-22",
+    "ECC.4.1",
+    "ECC.4.3"
    ]
   },
   "JOB 3:4": {
@@ -393409,7 +396982,9 @@
    ],
    "cited": [
     "JOB.10.18-22",
-    "JOB.15.23-24"
+    "JOB.15.23-24",
+    "ECC.4.1",
+    "ECC.4.3"
    ]
   },
   "JOB 3:7": {
@@ -393417,7 +396992,9 @@
     "JOB.3.3-10"
    ],
    "cited": [
-    "JOB.10.18-22"
+    "JOB.10.18-22",
+    "ECC.4.1",
+    "ECC.4.3"
    ]
   },
   "JOB 3:8": {
@@ -393430,7 +397007,9 @@
    "cited": [
     "JOB.10.18-22",
     "JOB.18.13-14",
-    "JOB.41.10"
+    "JOB.41.10",
+    "ECC.4.1",
+    "ECC.4.3"
    ]
   },
   "JOB 3:9": {
@@ -393438,7 +397017,9 @@
     "JOB.3.3-10"
    ],
    "cited": [
-    "JOB.10.18-22"
+    "JOB.10.18-22",
+    "ECC.4.1",
+    "ECC.4.3"
    ]
   },
   "JOB 3:10": {
@@ -393447,7 +397028,10 @@
    ],
    "cited": [
     "JOB.4.7-9",
-    "JOB.10.18-22"
+    "JOB.10.18-22",
+    "ECC.2.11.word.labor",
+    "ECC.4.1",
+    "ECC.4.3"
    ]
   },
   "EPH 1:3": {
@@ -397188,26 +400772,41 @@
    ],
    "own": [
     "JOB.28.23"
+   ],
+   "cited": [
+    "ECC.7.24"
    ]
   },
   "JOB 28:24": {
    "covers": [
     "JOB.28.1-28"
+   ],
+   "cited": [
+    "ECC.7.24"
    ]
   },
   "JOB 28:25": {
    "covers": [
     "JOB.28.1-28"
+   ],
+   "cited": [
+    "ECC.7.24"
    ]
   },
   "JOB 28:26": {
    "covers": [
     "JOB.28.1-28"
+   ],
+   "cited": [
+    "ECC.7.24"
    ]
   },
   "JOB 28:27": {
    "covers": [
     "JOB.28.1-28"
+   ],
+   "cited": [
+    "ECC.7.24"
    ]
   },
   "JOB 29:3": {
@@ -397255,7 +400854,8 @@
   },
   "LAM 2:12": {
    "cited": [
-    "JOB.30.16-17"
+    "JOB.30.16-17",
+    "ECC.9.7"
    ]
   },
   "PSA 22:14": {
@@ -398695,7 +402295,8 @@
     "JOB.41.12-34"
    ],
    "cited": [
-    "JOB.41.19-21"
+    "JOB.41.19-21",
+    "ECC.12.4"
    ]
   },
   "JOB 41:15": {
@@ -400154,7 +403755,12 @@
   },
   "ECC 5:20": {
    "cited": [
-    "PSA.25.6.word.remember"
+    "PSA.25.6.word.remember",
+    "ECC.2.11.word.labor",
+    "ECC.2.24"
+   ],
+   "own": [
+    "ECC.5.20"
    ]
   },
   "JER 20:9": {
@@ -401315,7 +404921,11 @@
   },
   "ECC 8:1": {
    "cited": [
-    "PSA.18.28.word.glorious"
+    "PSA.18.28.word.glorious",
+    "ECC.3.20-21"
+   ],
+   "own": [
+    "ECC.8.1"
    ]
   },
   "PSA 13:3": {
@@ -402187,7 +405797,8 @@
     "PRO.3.1-2",
     "PRO.4.1-4",
     "PRO.6.20-24",
-    "PRO.10.27"
+    "PRO.10.27",
+    "ECC.11.9"
    ],
    "own": [
     "PRO.1.8-9"
@@ -402393,7 +406004,8 @@
    "cited": [
     "PSA.102.14.word.mercy",
     "PRO.14.1.word.foolish",
-    "PRO.15.23"
+    "PRO.15.23",
+    "ECC.3.19"
    ]
   },
   "PRO 14:24": {
@@ -402507,6 +406119,9 @@
   "ECC 10:17": {
    "cited": [
     "PSA.84.12.word.happy"
+   ],
+   "own": [
+    "ECC.10.17"
    ]
   },
   "PSA 34:8": {
@@ -402556,7 +406171,8 @@
   "PRO 3:16": {
    "cited": [
     "PSA.84.12.word.happy",
-    "PRO.3.13.word.wisdom"
+    "PRO.3.13.word.wisdom",
+    "ECC.2.17"
    ],
    "covers": [
     "PRO.3.13-18"
@@ -402603,7 +406219,8 @@
     "PSA.126.5",
     "PRO.3.13-18",
     "MAT.3.2.word.the-kingdom-of-heaven",
-    "PHP.1.29"
+    "PHP.1.29",
+    "ECC.3.4"
    ],
    "covers": [
     "MAT.5.3-12"
@@ -403087,7 +406704,8 @@
   },
   "PSA 149:2": {
    "cited": [
-    "PSA.146.1.word.praise"
+    "PSA.146.1.word.praise",
+    "ECC.3.4"
    ],
    "own": [
     "PSA.149.2-5"
@@ -403671,7 +407289,8 @@
     "PSA.5.4-6",
     "PSA.6.8-10",
     "PSA.101.6-8",
-    "PSA.125.5"
+    "PSA.125.5",
+    "ECC.7.20"
    ],
    "own": [
     "PSA.14.4-5"
@@ -405612,7 +409231,8 @@
   "PSA 111:10": {
    "cited": [
     "PSA.25.11-14",
-    "JAS.1.5"
+    "JAS.1.5",
+    "ECC.5.7"
    ],
    "own": [
     "PSA.111.10"
@@ -406293,7 +409913,8 @@
     "PSA.78.1-2",
     "PRO.10.14-15",
     "PRO.10.27",
-    "PRO.19.1"
+    "PRO.19.1",
+    "ECC.11.9"
    ],
    "own": [
     "PRO.3.1-2"
@@ -406603,7 +410224,8 @@
   "PRO 27:20": {
    "cited": [
     "PSA.36.7-9",
-    "PSA.88.10-12"
+    "PSA.88.10-12",
+    "ECC.1.8"
    ],
    "own": [
     "PRO.27.20"
@@ -406682,12 +410304,22 @@
   },
   "ECC 3:16": {
    "cited": [
-    "PSA.37.9-11"
+    "PSA.37.9-11",
+    "ECC.7.15",
+    "ECC.8.14"
+   ],
+   "own": [
+    "ECC.3.16-17"
    ]
   },
   "ECC 3:17": {
    "cited": [
-    "PSA.37.9-11"
+    "PSA.37.9-11",
+    "ECC.11.9",
+    "ECC.12.14"
+   ],
+   "covers": [
+    "ECC.3.16-17"
    ]
   },
   "PSA 37:18": {
@@ -407647,7 +411279,8 @@
   },
   "PSA 78:33": {
    "cited": [
-    "PSA.47.1-3"
+    "PSA.47.1-3",
+    "ECC.1.14.word.vanity"
    ],
    "covers": [
     "PSA.78.32-33"
@@ -408601,7 +412234,8 @@
     "HEB.6.7-8",
     "JAS.1.12",
     "1PE.4.17",
-    "REV.2.11"
+    "REV.2.11",
+    "ECC.2.11.word.labor"
    ],
    "own": [
     "1CO.3.11-15"
@@ -408634,7 +412268,8 @@
     "HEB.11.26",
     "JAS.1.12",
     "1PE.4.17",
-    "REV.2.11"
+    "REV.2.11",
+    "ECC.2.11.word.labor"
    ],
    "covers": [
     "1CO.3.11-15"
@@ -408668,7 +412303,8 @@
     "JAS.1.12",
     "1PE.4.17",
     "REV.1.14",
-    "REV.2.11"
+    "REV.2.11",
+    "ECC.2.11.word.labor"
    ],
    "covers": [
     "1CO.3.11-15"
@@ -408703,7 +412339,8 @@
     "HEB.11.26",
     "JAS.1.12",
     "1PE.4.17",
-    "REV.2.11"
+    "REV.2.11",
+    "ECC.2.11.word.labor"
    ],
    "covers": [
     "1CO.3.11-15"
@@ -409514,7 +413151,8 @@
    "cited": [
     "PSA.64.1",
     "PRO.10.3",
-    "PRO.26.24-26"
+    "PRO.26.24-26",
+    "ECC.4.1"
    ],
    "covers": [
     "PSA.73.15-17"
@@ -412432,6 +416070,9 @@
   "PSA 105:44": {
    "covers": [
     "PSA.105.43-44"
+   ],
+   "cited": [
+    "ECC.2.11.word.labor"
    ]
   },
   "PSA 107:4": {
@@ -413894,12 +417535,26 @@
   },
   "ECC 3:12": {
    "cited": [
-    "PSA.128.2-3"
+    "PSA.128.2-3",
+    "ECC.2.24",
+    "ECC.5.17"
+   ],
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.12-13"
    ]
   },
   "ECC 3:13": {
    "cited": [
-    "PSA.128.2-3"
+    "PSA.128.2-3",
+    "ECC.2.24",
+    "ECC.5.17"
+   ],
+   "covers": [
+    "ECC.3.1-15",
+    "ECC.3.12-13"
    ]
   },
   "PSA 128:5": {
@@ -414315,6 +417970,9 @@
   "PSA 143:2": {
    "own": [
     "PSA.143.2-3"
+   ],
+   "cited": [
+    "ECC.7.20"
    ]
   },
   "PSA 143:5": {
@@ -414672,7 +418330,8 @@
   "PRO 16:8": {
    "cited": [
     "PRO.c6.article.the-poetry-of-the-proverbs",
-    "PRO.19.21"
+    "PRO.19.21",
+    "ECC.4.5-6"
    ],
    "own": [
     "PRO.16.8"
@@ -414833,7 +418492,11 @@
   },
   "ECC 12:9": {
    "cited": [
-    "PRO.10.1.word.proverb"
+    "PRO.10.1.word.proverb",
+    "ECC.1.12"
+   ],
+   "own": [
+    "ECC.12.9"
    ]
   },
   "PRO 1:1": {
@@ -414893,7 +418556,8 @@
   },
   "PRO 26:4": {
    "cited": [
-    "PRO.14.1.word.foolish"
+    "PRO.14.1.word.foolish",
+    "ECC.3.7"
    ],
    "own": [
     "PRO.26.4-5"
@@ -414901,7 +418565,8 @@
   },
   "PRO 26:5": {
    "cited": [
-    "PRO.14.1.word.foolish"
+    "PRO.14.1.word.foolish",
+    "ECC.3.7"
    ],
    "covers": [
     "PRO.26.4-5"
@@ -414948,7 +418613,8 @@
   "PRO 14:13": {
    "cited": [
     "PRO.14.1.word.foolish",
-    "PRO.10.23-24"
+    "PRO.10.23-24",
+    "ECC.2.2"
    ]
   },
   "PRO 14:14": {
@@ -415136,7 +418802,8 @@
   },
   "EXO 2:13": {
    "cited": [
-    "PRO.18.24.word.friends"
+    "PRO.18.24.word.friends",
+    "ECC.9.11"
    ]
   },
   "SNG 5:3": {
@@ -415438,6 +419105,9 @@
   "PRO 2:1": {
    "own": [
     "PRO.2.1-4"
+   ],
+   "cited": [
+    "ECC.11.9"
    ]
   },
   "PRO 2:3": {
@@ -415713,7 +419383,8 @@
     "PRO.5.1-6"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:2": {
@@ -415721,7 +419392,8 @@
     "PRO.5.1-6"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:3": {
@@ -415729,7 +419401,8 @@
     "PRO.5.1-6"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:4": {
@@ -415737,7 +419410,8 @@
     "PRO.5.1-6"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:5": {
@@ -415745,7 +419419,8 @@
     "PRO.5.1-6"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:6": {
@@ -415753,7 +419428,8 @@
     "PRO.5.1-6"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:8": {
@@ -415761,7 +419437,8 @@
     "PRO.5.8-10"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:9": {
@@ -415769,7 +419446,8 @@
     "PRO.5.8-10"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:10": {
@@ -415777,7 +419455,8 @@
     "PRO.5.8-10"
    ],
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "2TI 2:22": {
@@ -415798,7 +419477,8 @@
    ],
    "cited": [
     "PRO.7.1-5",
-    "1TH.c4.chart.sexual-immorality"
+    "1TH.c4.chart.sexual-immorality",
+    "ECC.9.9"
    ]
   },
   "PRO 9:17": {
@@ -415816,7 +419496,8 @@
    ],
    "cited": [
     "PRO.7.1-5",
-    "1TH.c4.chart.sexual-immorality"
+    "1TH.c4.chart.sexual-immorality",
+    "ECC.9.9"
    ]
   },
   "PRO 5:19": {
@@ -415825,7 +419506,8 @@
    ],
    "cited": [
     "PRO.7.1-5",
-    "1TH.c4.chart.sexual-immorality"
+    "1TH.c4.chart.sexual-immorality",
+    "ECC.9.9"
    ]
   },
   "PRO 5:20": {
@@ -415834,7 +419516,8 @@
    ],
    "cited": [
     "PRO.7.1-5",
-    "1TH.c4.chart.sexual-immorality"
+    "1TH.c4.chart.sexual-immorality",
+    "ECC.9.9"
    ]
   },
   "HEB 13:4": {
@@ -416089,39 +419772,46 @@
   },
   "PRO 5:7": {
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:11": {
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:12": {
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:13": {
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:14": {
    "cited": [
-    "PRO.7.1-5"
+    "PRO.7.1-5",
+    "ECC.9.9"
    ]
   },
   "PRO 5:16": {
    "cited": [
     "PRO.7.1-5",
-    "1TH.c4.chart.sexual-immorality"
+    "1TH.c4.chart.sexual-immorality",
+    "ECC.9.9"
    ]
   },
   "PRO 5:17": {
    "cited": [
     "PRO.7.1-5",
-    "1TH.c4.chart.sexual-immorality"
+    "1TH.c4.chart.sexual-immorality",
+    "ECC.9.9"
    ]
   },
   "PRO 5:21": {
@@ -416431,6 +420121,10 @@
   "PRO 8:35": {
    "covers": [
     "PRO.8.32-36"
+   ],
+   "cited": [
+    "ECC.2.17",
+    "ECC.7.11"
    ]
   },
   "PRO 8:36": {
@@ -416697,21 +420391,34 @@
   "ECC 7:3": {
    "cited": [
     "PRO.10.23-24"
+   ],
+   "covers": [
+    "ECC.7.2-4"
    ]
   },
   "ECC 7:4": {
    "cited": [
-    "PRO.10.23-24"
+    "PRO.10.23-24",
+    "ECC.5.20"
+   ],
+   "covers": [
+    "ECC.7.2-4"
    ]
   },
   "ECC 7:5": {
    "cited": [
     "PRO.10.23-24"
+   ],
+   "own": [
+    "ECC.7.5-6"
    ]
   },
   "ECC 7:6": {
    "cited": [
     "PRO.10.23-24"
+   ],
+   "covers": [
+    "ECC.7.5-6"
    ]
   },
   "PRO 10:27": {
@@ -417030,7 +420737,8 @@
     "1JN.3.19",
     "REV.3.11",
     "REV.11.18",
-    "REV.22.12-13"
+    "REV.22.12-13",
+    "ECC.12.14"
    ],
    "covers": [
     "2CO.5.9-10"
@@ -418471,6 +422179,9 @@
   "PRO 21:5": {
    "own": [
     "PRO.21.5"
+   ],
+   "cited": [
+    "ECC.3.19"
    ]
   },
   "PRO 21:6": {
@@ -418981,7 +422692,8 @@
    ],
    "cited": [
     "PRO.24.23-34",
-    "PRO.25.1"
+    "PRO.25.1",
+    "ECC.3.20-21"
    ]
   },
   "ISA 19:11": {
@@ -419038,7 +422750,8 @@
     "PRO.24.21-22",
     "MAT.22.21",
     "LUK.20.25",
-    "ROM.c13.chart.the-christian-life"
+    "ROM.c13.chart.the-christian-life",
+    "ECC.8.2-3"
    ],
    "own": [
     "ROM.13.1"
@@ -419048,7 +422761,8 @@
    "cited": [
     "PRO.24.21-22",
     "MAT.22.21",
-    "LUK.20.25"
+    "LUK.20.25",
+    "ECC.8.2-3"
    ],
    "own": [
     "ROM.13.2"
@@ -419058,14 +422772,16 @@
    "cited": [
     "PRO.24.21-22",
     "MAT.22.21",
-    "LUK.20.25"
+    "LUK.20.25",
+    "ECC.8.2-3"
    ]
   },
   "ROM 13:4": {
    "cited": [
     "PRO.24.21-22",
     "MAT.22.21",
-    "LUK.20.25"
+    "LUK.20.25",
+    "ECC.8.2-3"
    ],
    "own": [
     "ROM.13.4"
@@ -419075,7 +422791,8 @@
    "cited": [
     "PRO.24.21-22",
     "MAT.22.21",
-    "LUK.20.25"
+    "LUK.20.25",
+    "ECC.8.2-3"
    ],
    "own": [
     "ROM.13.5"
@@ -428426,7 +432143,8 @@
     "MAT.22.21",
     "ACT.c13.culture.the-ministries-of-peter-and-paul-compare",
     "ACT.4.19",
-    "EPH.6.1-4"
+    "EPH.6.1-4",
+    "ECC.8.2-3"
    ],
    "own": [
     "ACT.5.29"
@@ -428671,7 +432389,8 @@
     "MAT.22.34"
    ],
    "cited": [
-    "LUK.10.25-26"
+    "LUK.10.25-26",
+    "ECC.12.13"
    ]
   },
   "MAT 22:35": {
@@ -428679,7 +432398,8 @@
     "MAT.22.35-36"
    ],
    "cited": [
-    "LUK.10.25-26"
+    "LUK.10.25-26",
+    "ECC.12.13"
    ]
   },
   "MAT 22:36": {
@@ -428688,7 +432408,8 @@
    ],
    "cited": [
     "LUK.10.25-26",
-    "GAL.5.14"
+    "GAL.5.14",
+    "ECC.12.13"
    ]
   },
   "ISA 16:5": {
@@ -432292,11 +436013,17 @@
    ],
    "own": [
     "MAT.28.11"
+   ],
+   "cited": [
+    "ECC.7.7"
    ]
   },
   "MAT 28:12": {
    "covers": [
     "MAT.28.1-15"
+   ],
+   "cited": [
+    "ECC.7.7"
    ]
   },
   "MAT 28:13": {
@@ -432305,11 +436032,17 @@
    ],
    "own": [
     "MAT.28.13"
+   ],
+   "cited": [
+    "ECC.7.7"
    ]
   },
   "MAT 28:14": {
    "covers": [
     "MAT.28.1-15"
+   ],
+   "cited": [
+    "ECC.7.7"
    ]
   },
   "MAT 28:15": {
@@ -432318,6 +436051,9 @@
    ],
    "own": [
     "MAT.28.15"
+   ],
+   "cited": [
+    "ECC.7.7"
    ]
   },
   "MAT 12:38": {
@@ -433234,7 +436970,8 @@
   },
   "LUK 15:25": {
    "cited": [
-    "MRK.c4.article.parables-more-than-stories"
+    "MRK.c4.article.parables-more-than-stories",
+    "ECC.3.4"
    ]
   },
   "LUK 15:26": {
@@ -435116,7 +438853,8 @@
     "MRK.12.1",
     "LUK.20.9",
     "JHN.c11.chart.jesus-seven-i-am-statements",
-    "JHN.15.1.word.vine"
+    "JHN.15.1.word.vine",
+    "ECC.3.3"
    ]
   },
   "EPH 2:21": {
@@ -441829,7 +445567,13 @@
   },
   "ECC 2:5": {
    "cited": [
-    "LUK.23.43.word.paradise"
+    "LUK.23.43.word.paradise",
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ],
+   "covers": [
+    "ECC.2.4-6"
    ]
   },
   "SNG 4:13": {
@@ -442068,7 +445812,8 @@
   "ACT 5:5": {
    "cited": [
     "LUK.1.12",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ],
    "own": [
     "ACT.5.5"
@@ -442077,19 +445822,22 @@
   "ACT 5:6": {
    "cited": [
     "LUK.1.12",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:7": {
    "cited": [
     "LUK.1.12",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:8": {
    "cited": [
     "LUK.1.12",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ],
    "own": [
     "ACT.5.8"
@@ -442098,19 +445846,22 @@
   "ACT 5:9": {
    "cited": [
     "LUK.1.12",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:10": {
    "cited": [
     "LUK.1.12",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:11": {
    "cited": [
     "LUK.1.12",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 19:17": {
@@ -446657,7 +450408,8 @@
     "2TI.2.13",
     "TIT.3.12-13",
     "JAS.1.12",
-    "1PE.4.17"
+    "1PE.4.17",
+    "ECC.2.11.word.labor"
    ],
    "covers": [
     "1CO.3.5-10"
@@ -447572,7 +451324,8 @@
    "cited": [
     "LUK.20.36",
     "LUK.24.39",
-    "ACT.2.42.word.persevere"
+    "ACT.2.42.word.persevere",
+    "ECC.2.11.word.labor"
    ],
    "own": [
     "1CO.15.58"
@@ -447886,6 +451639,9 @@
   "LUK 22:4": {
    "own": [
     "LUK.22.4"
+   ],
+   "cited": [
+    "ECC.7.7"
    ]
   },
   "JHN 13:19": {
@@ -450857,7 +454613,8 @@
     "JHN.4.36",
     "2TI.2.13",
     "TIT.3.12-13",
-    "JAS.1.12"
+    "JAS.1.12",
+    "ECC.2.11.word.labor"
    ],
    "covers": [
     "1CO.3.5-10"
@@ -455416,7 +459173,8 @@
     "ACT.5.1-2"
    ],
    "cited": [
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:2": {
@@ -455424,7 +459182,8 @@
     "ACT.5.1-2"
    ],
    "cited": [
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:3": {
@@ -455434,7 +459193,8 @@
    "cited": [
     "GAL.5.19-21",
     "EPH.2.2",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:4": {
@@ -455443,7 +459203,8 @@
    ],
    "cited": [
     "EPH.c4.article.the-trinity-in-the-bible",
-    "1JN.5.16-17"
+    "1JN.5.16-17",
+    "ECC.5.4-5"
    ]
   },
   "ACT 5:12": {
@@ -460444,7 +464205,8 @@
     "1CO.15.23",
     "1CO.15.51-52",
     "1TH.5.1",
-    "2TH.2.5"
+    "2TH.2.5",
+    "ECC.3.4"
    ],
    "own": [
     "1TH.4.13"
@@ -461114,7 +464876,8 @@
    "cited": [
     "2TI.2.13",
     "TIT.3.12-13",
-    "JAS.1.12"
+    "JAS.1.12",
+    "ECC.2.11.word.labor"
    ]
   },
   "REV 3:17": {
@@ -462283,7 +466046,8 @@
     "1CO.13.12"
    ],
    "cited": [
-    "REV.22.4"
+    "REV.22.4",
+    "ECC.3.11"
    ]
   },
   "1CO 13:13": {
@@ -465757,7 +469521,8 @@
   "COL 3:23": {
    "cited": [
     "EPH.6.8",
-    "PHM.c1.culture.paul-and-slavery"
+    "PHM.c1.culture.paul-and-slavery",
+    "ECC.9.10"
    ],
    "covers": [
     "COL.3.22-25"
@@ -473702,7 +477467,1365 @@
   },
   "PRO 30:6": {
    "cited": [
-    "REV.22.18-19"
+    "REV.22.18-19",
+    "ECC.3.14"
+   ]
+  },
+  "ECC 1:14": {
+   "own": [
+    "ECC.1.14.word.vanity",
+    "ECC.1.14"
+   ],
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.2.17",
+    "ECC.5.16"
+   ]
+  },
+  "ECC 2:1": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.1"
+   ]
+  },
+  "ECC 2:2": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.2"
+   ]
+  },
+  "ECC 2:3": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.3",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.3"
+   ]
+  },
+  "ECC 2:4": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.4-6"
+   ]
+  },
+  "ECC 2:6": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ],
+   "covers": [
+    "ECC.2.4-6"
+   ]
+  },
+  "ECC 2:9": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.5.20"
+   ]
+  },
+  "ECC 2:10": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.3.22",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.10"
+   ]
+  },
+  "ECC 2:11": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.14",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.11.word.labor",
+    "ECC.2.11"
+   ]
+  },
+  "ECC 6:12": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.1.2",
+    "ECC.3.20-21",
+    "ECC.10.14"
+   ],
+   "own": [
+    "ECC.6.12"
+   ]
+  },
+  "ECC 7:15": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.8.14"
+   ],
+   "own": [
+    "ECC.7.15"
+   ]
+  },
+  "ISA 49:4": {
+   "cited": [
+    "ECC.1.14.word.vanity"
+   ]
+  },
+  "ECC 2:17": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.14",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.17"
+   ]
+  },
+  "JER 18:15": {
+   "cited": [
+    "ECC.1.14.word.vanity"
+   ]
+  },
+  "ECC 2:24": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.1.14",
+    "ECC.3.10",
+    "ECC.3.12-13",
+    "ECC.3.22",
+    "ECC.5.17",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.24"
+   ]
+  },
+  "ECC 2:25": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.1.14",
+    "ECC.3.10",
+    "ECC.5.17",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.25"
+   ]
+  },
+  "ECC 2:26": {
+   "cited": [
+    "ECC.1.14.word.vanity",
+    "ECC.1.14",
+    "ECC.3.10",
+    "ECC.5.17",
+    "ECC.5.20",
+    "ECC.12.9"
+   ],
+   "own": [
+    "ECC.2.26"
+   ]
+  },
+  "ECC 1:12": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.12.9"
+   ],
+   "own": [
+    "ECC.1.12"
+   ]
+  },
+  "ECC 1:13": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.3.10"
+   ],
+   "own": [
+    "ECC.1.13"
+   ]
+  },
+  "ECC 1:15": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.7.13"
+   ],
+   "own": [
+    "ECC.1.15"
+   ]
+  },
+  "ECC 1:16": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction"
+   ],
+   "own": [
+    "ECC.1.16"
+   ]
+  },
+  "ECC 1:17": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.2.12"
+   ],
+   "own": [
+    "ECC.1.17"
+   ]
+  },
+  "ECC 1:18": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction"
+   ],
+   "own": [
+    "ECC.1.18"
+   ]
+  },
+  "ECC 2:12": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.14",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.12"
+   ]
+  },
+  "ECC 2:13": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.14",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.13"
+   ]
+  },
+  "ECC 2:14": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.14",
+    "ECC.5.20",
+    "ECC.9.2"
+   ],
+   "own": [
+    "ECC.2.14"
+   ]
+  },
+  "ECC 2:15": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.14",
+    "ECC.1.17",
+    "ECC.5.20"
+   ]
+  },
+  "ECC 2:16": {
+   "cited": [
+    "ECC.c1.chart.solomon-s-search-for-satisfaction",
+    "ECC.1.14",
+    "ECC.5.20"
+   ]
+  },
+  "ECC 5:18": {
+   "cited": [
+    "ECC.2.11.word.labor",
+    "ECC.2.24",
+    "ECC.3.22"
+   ]
+  },
+  "JER 20:18": {
+   "cited": [
+    "ECC.2.11.word.labor"
+   ]
+  },
+  "PRO 16:26": {
+   "cited": [
+    "ECC.2.11.word.labor"
+   ]
+  },
+  "ECC 6:7": {
+   "cited": [
+    "ECC.2.11.word.labor"
+   ],
+   "own": [
+    "ECC.6.7"
+   ]
+  },
+  "ECC 5:19": {
+   "cited": [
+    "ECC.2.11.word.labor",
+    "ECC.2.24",
+    "ECC.6.2"
+   ],
+   "own": [
+    "ECC.5.19"
+   ]
+  },
+  "ECC 1:1": {
+   "own": [
+    "ECC.1.1"
+   ],
+   "cited": [
+    "ECC.12.9"
+   ]
+  },
+  "ECC 1:2": {
+   "own": [
+    "ECC.1.2"
+   ],
+   "cited": [
+    "ECC.2.17",
+    "ECC.12.9"
+   ]
+  },
+  "ECC 1:3": {
+   "own": [
+    "ECC.1.3"
+   ],
+   "cited": [
+    "ECC.3.9"
+   ]
+  },
+  "ECC 3:1": {
+   "cited": [
+    "ECC.1.3",
+    "ECC.3.11"
+   ],
+   "own": [
+    "ECC.3.1-15",
+    "ECC.3.1"
+   ]
+  },
+  "ECC 1:4": {
+   "own": [
+    "ECC.1.4"
+   ]
+  },
+  "ECC 1:5": {
+   "own": [
+    "ECC.1.5-7"
+   ]
+  },
+  "ECC 1:6": {
+   "covers": [
+    "ECC.1.5-7"
+   ]
+  },
+  "ECC 1:7": {
+   "covers": [
+    "ECC.1.5-7"
+   ]
+  },
+  "ECC 1:8": {
+   "own": [
+    "ECC.1.8"
+   ],
+   "cited": [
+    "ECC.5.10"
+   ]
+  },
+  "ECC 4:8": {
+   "cited": [
+    "ECC.1.8",
+    "ECC.3.10",
+    "ECC.4.7-8",
+    "ECC.5.10"
+   ],
+   "covers": [
+    "ECC.4.7-8"
+   ]
+  },
+  "ECC 5:10": {
+   "cited": [
+    "ECC.1.8",
+    "ECC.6.7"
+   ],
+   "own": [
+    "ECC.5.10"
+   ]
+  },
+  "ECC 1:10": {
+   "own": [
+    "ECC.1.10-11"
+   ],
+   "cited": [
+    "ECC.6.10"
+   ]
+  },
+  "ECC 1:11": {
+   "covers": [
+    "ECC.1.10-11"
+   ],
+   "cited": [
+    "ECC.6.10"
+   ]
+  },
+  "ECC 12:12": {
+   "cited": [
+    "ECC.1.12",
+    "ECC.1.18"
+   ],
+   "own": [
+    "ECC.12.12"
+   ]
+  },
+  "ECC 2:18": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.5.20"
+   ]
+  },
+  "ECC 2:19": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.3.20-21",
+    "ECC.5.20"
+   ]
+  },
+  "ECC 2:20": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.20"
+   ]
+  },
+  "ECC 2:21": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.3.22",
+    "ECC.5.15",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.2.21"
+   ]
+  },
+  "ECC 2:22": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.5.20"
+   ]
+  },
+  "ECC 2:23": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.3.10",
+    "ECC.5.20"
+   ]
+  },
+  "ECC 4:4": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.2.21",
+    "ECC.4.7-8"
+   ],
+   "own": [
+    "ECC.4.4"
+   ]
+  },
+  "ECC 4:5": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.4.7-8"
+   ],
+   "own": [
+    "ECC.4.5-6"
+   ]
+  },
+  "ECC 4:6": {
+   "cited": [
+    "ECC.1.14",
+    "ECC.4.7-8"
+   ],
+   "covers": [
+    "ECC.4.5-6"
+   ]
+  },
+  "ECC 6:9": {
+   "cited": [
+    "ECC.1.14"
+   ],
+   "own": [
+    "ECC.6.9"
+   ]
+  },
+  "ECC 7:13": {
+   "cited": [
+    "ECC.1.15"
+   ],
+   "own": [
+    "ECC.7.13"
+   ]
+  },
+  "ECC 7:16": {
+   "cited": [
+    "ECC.1.17"
+   ],
+   "own": [
+    "ECC.7.16"
+   ]
+  },
+  "1KI 9:24": {
+   "cited": [
+    "ECC.2.4-6"
+   ]
+  },
+  "1KI 10:14": {
+   "cited": [
+    "ECC.2.7-8"
+   ]
+  },
+  "1KI 10:15": {
+   "cited": [
+    "ECC.2.7-8"
+   ]
+  },
+  "1KI 10:23": {
+   "cited": [
+    "ECC.2.7-8"
+   ]
+  },
+  "ECC 3:19": {
+   "cited": [
+    "ECC.2.14",
+    "ECC.8.8",
+    "ECC.12.7"
+   ],
+   "own": [
+    "ECC.3.19"
+   ]
+  },
+  "ECC 9:2": {
+   "cited": [
+    "ECC.2.14"
+   ],
+   "own": [
+    "ECC.9.2"
+   ]
+  },
+  "ECC 9:3": {
+   "cited": [
+    "ECC.2.14"
+   ]
+  },
+  "ECC 9:4": {
+   "cited": [
+    "ECC.2.14"
+   ],
+   "own": [
+    "ECC.9.4"
+   ]
+  },
+  "ECC 9:5": {
+   "cited": [
+    "ECC.2.14"
+   ],
+   "own": [
+    "ECC.9.5"
+   ]
+  },
+  "ECC 9:6": {
+   "cited": [
+    "ECC.2.14"
+   ]
+  },
+  "ECC 9:7": {
+   "cited": [
+    "ECC.2.14",
+    "ECC.2.24",
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.9.7"
+   ]
+  },
+  "ECC 9:8": {
+   "cited": [
+    "ECC.2.14"
+   ],
+   "own": [
+    "ECC.9.8"
+   ]
+  },
+  "ECC 9:9": {
+   "cited": [
+    "ECC.2.14",
+    "ECC.3.22",
+    "ECC.7.26"
+   ],
+   "own": [
+    "ECC.9.9"
+   ]
+  },
+  "ECC 9:10": {
+   "cited": [
+    "ECC.2.14"
+   ],
+   "own": [
+    "ECC.9.10"
+   ]
+  },
+  "ECC 9:11": {
+   "cited": [
+    "ECC.2.14",
+    "ECC.10.6"
+   ],
+   "own": [
+    "ECC.9.11"
+   ]
+  },
+  "ECC 8:15": {
+   "cited": [
+    "ECC.2.24"
+   ],
+   "own": [
+    "ECC.8.15"
+   ]
+  },
+  "ECC 3:22": {
+   "cited": [
+    "ECC.2.24",
+    "ECC.10.14"
+   ],
+   "own": [
+    "ECC.3.22"
+   ]
+  },
+  "ECC 3:2": {
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.2"
+   ],
+   "cited": [
+    "ECC.3.11"
+   ]
+  },
+  "ECC 3:3": {
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.3"
+   ],
+   "cited": [
+    "ECC.3.11"
+   ]
+  },
+  "ECC 3:4": {
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.4"
+   ],
+   "cited": [
+    "ECC.3.11"
+   ]
+  },
+  "ECC 3:5": {
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.5"
+   ],
+   "cited": [
+    "ECC.3.11"
+   ]
+  },
+  "ECC 3:6": {
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.6"
+   ],
+   "cited": [
+    "ECC.3.11"
+   ]
+  },
+  "ECC 3:7": {
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.7"
+   ],
+   "cited": [
+    "ECC.3.11"
+   ]
+  },
+  "ECC 3:14": {
+   "covers": [
+    "ECC.3.1-15"
+   ],
+   "own": [
+    "ECC.3.14"
+   ]
+  },
+  "ECC 3:15": {
+   "covers": [
+    "ECC.3.1-15"
+   ]
+  },
+  "JER 18:7": {
+   "cited": [
+    "ECC.3.3"
+   ]
+  },
+  "JER 18:8": {
+   "cited": [
+    "ECC.3.3"
+   ]
+  },
+  "JER 18:9": {
+   "cited": [
+    "ECC.3.3"
+   ]
+  },
+  "ECC 8:16": {
+   "cited": [
+    "ECC.3.10"
+   ]
+  },
+  "ECC 5:14": {
+   "cited": [
+    "ECC.3.10"
+   ],
+   "own": [
+    "ECC.5.14"
+   ]
+  },
+  "ECC 9:1": {
+   "cited": [
+    "ECC.3.16-17"
+   ],
+   "own": [
+    "ECC.9.1"
+   ]
+  },
+  "ECC 3:18": {
+   "own": [
+    "ECC.3.18"
+   ]
+  },
+  "ECC 8:8": {
+   "cited": [
+    "ECC.3.19",
+    "ECC.12.7"
+   ],
+   "own": [
+    "ECC.8.8"
+   ]
+  },
+  "GEN 7:17": {
+   "cited": [
+    "ECC.3.19"
+   ]
+  },
+  "GEN 7:22": {
+   "cited": [
+    "ECC.3.19"
+   ]
+  },
+  "ECC 3:20": {
+   "own": [
+    "ECC.3.20-21"
+   ],
+   "cited": [
+    "ECC.6.6",
+    "ECC.12.7"
+   ]
+  },
+  "ECC 3:21": {
+   "covers": [
+    "ECC.3.20-21"
+   ],
+   "cited": [
+    "ECC.3.20-21",
+    "ECC.12.7"
+   ]
+  },
+  "JHN 3:9": {
+   "cited": [
+    "ECC.3.20-21"
+   ]
+  },
+  "ECC 11:2": {
+   "cited": [
+    "ECC.3.22"
+   ],
+   "own": [
+    "ECC.11.2"
+   ]
+  },
+  "ECC 5:17": {
+   "cited": [
+    "ECC.3.22"
+   ],
+   "own": [
+    "ECC.5.17"
+   ]
+  },
+  "ECC 4:1": {
+   "own": [
+    "ECC.4.1"
+   ],
+   "cited": [
+    "ECC.4.7-8"
+   ]
+  },
+  "ECC 4:2": {
+   "own": [
+    "ECC.4.2"
+   ]
+  },
+  "ECC 4:3": {
+   "own": [
+    "ECC.4.3"
+   ],
+   "cited": [
+    "ECC.7.15",
+    "ECC.8.14"
+   ]
+  },
+  "ECC 4:7": {
+   "own": [
+    "ECC.4.7-8"
+   ]
+  },
+  "ECC 4:9": {
+   "own": [
+    "ECC.4.9-12"
+   ]
+  },
+  "ECC 4:10": {
+   "covers": [
+    "ECC.4.9-12"
+   ]
+  },
+  "ECC 4:11": {
+   "covers": [
+    "ECC.4.9-12"
+   ]
+  },
+  "ECC 4:12": {
+   "covers": [
+    "ECC.4.9-12"
+   ]
+  },
+  "ECC 4:13": {
+   "own": [
+    "ECC.4.13-14"
+   ]
+  },
+  "ECC 4:14": {
+   "covers": [
+    "ECC.4.13-14"
+   ]
+  },
+  "ECC 4:16": {
+   "own": [
+    "ECC.4.16"
+   ],
+   "cited": [
+    "ECC.5.20"
+   ]
+  },
+  "ECC 5:9": {
+   "own": [
+    "ECC.5.9"
+   ]
+  },
+  "ECC 5:12": {
+   "own": [
+    "ECC.5.12"
+   ]
+  },
+  "ECC 5:15": {
+   "own": [
+    "ECC.5.15"
+   ]
+  },
+  "ECC 5:16": {
+   "own": [
+    "ECC.5.16"
+   ]
+  },
+  "ECC 10:19": {
+   "cited": [
+    "ECC.5.20"
+   ],
+   "own": [
+    "ECC.10.19"
+   ]
+  },
+  "ECC 6:2": {
+   "own": [
+    "ECC.6.2"
+   ]
+  },
+  "ECC 6:3": {
+   "own": [
+    "ECC.6.3"
+   ]
+  },
+  "ECC 6:6": {
+   "own": [
+    "ECC.6.6"
+   ]
+  },
+  "ECC 6:10": {
+   "own": [
+    "ECC.6.10"
+   ]
+  },
+  "ECC 1:9": {
+   "cited": [
+    "ECC.6.10"
+   ]
+  },
+  "ECC 7:1": {
+   "own": [
+    "ECC.7.1"
+   ]
+  },
+  "ECC 7:2": {
+   "own": [
+    "ECC.7.2-4"
+   ]
+  },
+  "ECC 7:7": {
+   "own": [
+    "ECC.7.7"
+   ]
+  },
+  "LUK 22:5": {
+   "cited": [
+    "ECC.7.7"
+   ]
+  },
+  "LUK 22:6": {
+   "cited": [
+    "ECC.7.7"
+   ]
+  },
+  "ECC 7:10": {
+   "own": [
+    "ECC.7.10"
+   ]
+  },
+  "ECC 7:11": {
+   "own": [
+    "ECC.7.11"
+   ]
+  },
+  "ECC 7:12": {
+   "own": [
+    "ECC.7.12"
+   ]
+  },
+  "ECC 7:14": {
+   "own": [
+    "ECC.7.14"
+   ]
+  },
+  "ECC 8:14": {
+   "cited": [
+    "ECC.7.15"
+   ],
+   "own": [
+    "ECC.8.14"
+   ]
+  },
+  "ECC 7:18": {
+   "own": [
+    "ECC.7.18"
+   ]
+  },
+  "ECC 7:20": {
+   "own": [
+    "ECC.7.20"
+   ]
+  },
+  "ECC 7:21": {
+   "own": [
+    "ECC.7.21-22"
+   ]
+  },
+  "ECC 7:22": {
+   "covers": [
+    "ECC.7.21-22"
+   ]
+  },
+  "ECC 7:23": {
+   "own": [
+    "ECC.7.23"
+   ]
+  },
+  "ECC 7:24": {
+   "own": [
+    "ECC.7.24"
+   ]
+  },
+  "ECC 7:26": {
+   "own": [
+    "ECC.7.26"
+   ],
+   "cited": [
+    "ECC.8.17"
+   ]
+  },
+  "ECC 7:28": {
+   "own": [
+    "ECC.7.28"
+   ],
+   "cited": [
+    "ECC.8.17"
+   ]
+  },
+  "PRO 20:6": {
+   "cited": [
+    "ECC.7.28"
+   ]
+  },
+  "ECC 7:29": {
+   "own": [
+    "ECC.7.29"
+   ],
+   "cited": [
+    "ECC.8.17"
+   ]
+  },
+  "ECC 8:2": {
+   "own": [
+    "ECC.8.2-3"
+   ]
+  },
+  "ECC 8:3": {
+   "covers": [
+    "ECC.8.2-3"
+   ]
+  },
+  "ECC 8:4": {
+   "own": [
+    "ECC.8.4-5"
+   ]
+  },
+  "ECC 8:5": {
+   "covers": [
+    "ECC.8.4-5"
+   ]
+  },
+  "DAN 4:32": {
+   "cited": [
+    "ECC.8.4-5"
+   ]
+  },
+  "ECC 8:6": {
+   "own": [
+    "ECC.8.6"
+   ]
+  },
+  "ECC 8:10": {
+   "own": [
+    "ECC.8.10"
+   ]
+  },
+  "ECC 8:11": {
+   "own": [
+    "ECC.8.11"
+   ]
+  },
+  "ECC 8:12": {
+   "own": [
+    "ECC.8.12-13"
+   ]
+  },
+  "ECC 8:13": {
+   "covers": [
+    "ECC.8.12-13"
+   ]
+  },
+  "ECC 8:17": {
+   "own": [
+    "ECC.8.17"
+   ],
+   "cited": [
+    "ECC.11.5"
+   ]
+  },
+  "ECC 7:25": {
+   "cited": [
+    "ECC.8.17"
+   ]
+  },
+  "ECC 7:27": {
+   "cited": [
+    "ECC.8.17"
+   ]
+  },
+  "ECC 11:5": {
+   "cited": [
+    "ECC.8.17"
+   ],
+   "own": [
+    "ECC.11.5"
+   ]
+  },
+  "ECC 11:6": {
+   "cited": [
+    "ECC.8.17"
+   ],
+   "own": [
+    "ECC.11.6"
+   ]
+  },
+  "ECC 11:8": {
+   "cited": [
+    "ECC.8.17"
+   ],
+   "own": [
+    "ECC.11.8"
+   ]
+  },
+  "ECC 13:4": {
+   "cited": [
+    "ECC.9.9"
+   ]
+  },
+  "2SA 17:6": {
+   "cited": [
+    "ECC.9.11"
+   ]
+  },
+  "2SA 17:14": {
+   "cited": [
+    "ECC.9.11"
+   ]
+  },
+  "EXO 2:14": {
+   "cited": [
+    "ECC.9.11"
+   ]
+  },
+  "ECC 9:14": {
+   "own": [
+    "ECC.9.14-18"
+   ]
+  },
+  "ECC 9:15": {
+   "covers": [
+    "ECC.9.14-18"
+   ]
+  },
+  "ECC 9:16": {
+   "covers": [
+    "ECC.9.14-18"
+   ]
+  },
+  "ECC 9:17": {
+   "covers": [
+    "ECC.9.14-18"
+   ]
+  },
+  "ECC 9:18": {
+   "covers": [
+    "ECC.9.14-18"
+   ]
+  },
+  "ECC 10:1": {
+   "own": [
+    "ECC.10.1"
+   ]
+  },
+  "ECC 10:2": {
+   "own": [
+    "ECC.10.2"
+   ]
+  },
+  "ECC 10:3": {
+   "own": [
+    "ECC.10.3"
+   ]
+  },
+  "ECC 10:4": {
+   "own": [
+    "ECC.10.4"
+   ]
+  },
+  "ECC 10:6": {
+   "own": [
+    "ECC.10.6"
+   ]
+  },
+  "ECC 10:7": {
+   "own": [
+    "ECC.10.7"
+   ]
+  },
+  "ECC 10:10": {
+   "own": [
+    "ECC.10.10"
+   ]
+  },
+  "ECC 10:11": {
+   "own": [
+    "ECC.10.11"
+   ]
+  },
+  "ECC 10:12": {
+   "own": [
+    "ECC.10.12-13"
+   ]
+  },
+  "ECC 10:13": {
+   "covers": [
+    "ECC.10.12-13"
+   ]
+  },
+  "ECC 10:14": {
+   "own": [
+    "ECC.10.14"
+   ]
+  },
+  "ECC 8:7": {
+   "cited": [
+    "ECC.10.14"
+   ]
+  },
+  "ECC 9:12": {
+   "cited": [
+    "ECC.10.14",
+    "ECC.11.5"
+   ]
+  },
+  "ECC 10:15": {
+   "own": [
+    "ECC.10.15"
+   ]
+  },
+  "ECC 10:16": {
+   "own": [
+    "ECC.10.16"
+   ]
+  },
+  "ECC 10:18": {
+   "own": [
+    "ECC.10.18"
+   ]
+  },
+  "ECC 10:20": {
+   "own": [
+    "ECC.10.20"
+   ]
+  },
+  "ECC 11:1": {
+   "own": [
+    "ECC.11.1"
+   ]
+  },
+  "ECC 11:3": {
+   "own": [
+    "ECC.11.3"
+   ]
+  },
+  "ECC 11:4": {
+   "own": [
+    "ECC.11.4"
+   ]
+  },
+  "ECC 12:1": {
+   "cited": [
+    "ECC.11.5"
+   ],
+   "own": [
+    "ECC.12.1-8"
+   ]
+  },
+  "ECC 11:10": {
+   "own": [
+    "ECC.11.10"
+   ]
+  },
+  "ECC 12:2": {
+   "covers": [
+    "ECC.12.1-8"
+   ],
+   "own": [
+    "ECC.12.2"
+   ]
+  },
+  "ECC 12:3": {
+   "covers": [
+    "ECC.12.1-8"
+   ],
+   "own": [
+    "ECC.12.3"
+   ]
+  },
+  "ECC 12:4": {
+   "covers": [
+    "ECC.12.1-8"
+   ],
+   "own": [
+    "ECC.12.4"
+   ]
+  },
+  "ECC 12:5": {
+   "covers": [
+    "ECC.12.1-8"
+   ],
+   "own": [
+    "ECC.12.5"
+   ]
+  },
+  "ECC 12:6": {
+   "covers": [
+    "ECC.12.1-8"
+   ],
+   "own": [
+    "ECC.12.6"
+   ]
+  },
+  "ECC 12:7": {
+   "covers": [
+    "ECC.12.1-8"
+   ],
+   "own": [
+    "ECC.12.7"
+   ]
+  },
+  "ECC 12:8": {
+   "covers": [
+    "ECC.12.1-8"
+   ],
+   "own": [
+    "ECC.12.8"
+   ]
+  },
+  "JER 10:4": {
+   "cited": [
+    "ECC.12.11"
    ]
   }
  }
