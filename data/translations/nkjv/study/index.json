@@ -262731,6 +262731,1691 @@
    "k": "intro",
    "title": "ECCLESIASTES",
    "pdf": 1057
+  },
+  "SNG.4.16.word.beloved": {
+   "b": "SNG",
+   "k": "word",
+   "title": "beloved",
+   "from": "4:16",
+   "to": "4:16",
+   "pdf": 1082,
+   "page": 1047,
+   "refs": [
+    "SNG 4:16",
+    "1SA 14:50",
+    "PRO 7:18",
+    "ISA 5:1"
+   ]
+  },
+  "SNG.1.1": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:1",
+   "to": "1:1",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "song of songs",
+     "v": "1:1",
+     "at": 4
+    },
+    {
+     "w": "which is Solomon’s",
+     "v": "1:1",
+     "at": 19
+    }
+   ],
+   "refs": []
+  },
+  "SNG.1.2": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:2",
+   "to": "1:2",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "love",
+     "v": "1:2",
+     "at": 54
+    }
+   ],
+   "refs": [
+    "EZK 16:8",
+    "PRO 7:18",
+    "EZK 23:17",
+    "SNG 4:10",
+    "SNG 7:12",
+    "SNG 5:1"
+   ]
+  },
+  "SNG.1.3": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:3",
+   "to": "1:3",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "ointments",
+     "v": "1:3",
+     "at": 38
+    },
+    {
+     "w": "ointments",
+     "v": "1:3",
+     "at": 38
+    },
+    {
+     "w": "Your name",
+     "v": "1:3",
+     "at": 49
+    },
+    {
+     "w": "virgins",
+     "v": "1:3",
+     "at": 99
+    },
+    {
+     "w": "love",
+     "v": "1:3",
+     "at": 107
+    }
+   ],
+   "refs": [
+    "RUT 3:3",
+    "ISA 7:14",
+    "GEN 24:67",
+    "DEU 6:5"
+   ]
+  },
+  "SNG.1.4": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:4",
+   "to": "1:4",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "The king",
+     "v": "1:4",
+     "at": 37
+    },
+    {
+     "w": "chambers",
+     "v": "1:4",
+     "at": 70
+    },
+    {
+     "w": "Rightly do they love you",
+     "v": "1:4",
+     "at": 159
+    }
+   ],
+   "refs": [
+    "SNG 3:7-11"
+   ]
+  },
+  "SNG.1.5": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:5",
+   "to": "1:5",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "dark",
+     "v": "1:5",
+     "at": 5
+    },
+    {
+     "w": "but lovely",
+     "v": "1:5",
+     "at": 11
+    },
+    {
+     "w": "O daughters of Jerusalem",
+     "v": "1:5",
+     "at": 23
+    }
+   ],
+   "refs": [
+    "SNG 2:14",
+    "SNG 4:3",
+    "SNG 6:4",
+    "PSA 33:1",
+    "PSA 147:1"
+   ]
+  },
+  "SNG.1.6": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:6",
+   "to": "1:6",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "own vineyard",
+     "v": "1:6",
+     "at": 157
+    }
+   ],
+   "refs": [
+    "SNG 8:12"
+   ]
+  },
+  "SNG.1.7": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:7",
+   "to": "1:7",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "you whom I love",
+     "v": "1:7",
+     "at": 11
+    },
+    {
+     "w": "one who veils herself",
+     "v": "1:7",
+     "at": 110
+    }
+   ],
+   "refs": []
+  },
+  "SNG.1.8": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:8",
+   "to": "1:8",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "If you do not know... feed your little goats"
+    },
+    {
+     "w": "O fairest among women",
+     "v": "1:8",
+     "at": 20
+    }
+   ],
+   "refs": []
+  },
+  "SNG.1.9": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:9",
+   "to": "1:9",
+   "pdf": 1078,
+   "page": 1043,
+   "lemmas": [
+    {
+     "w": "love",
+     "v": "1:9",
+     "at": 24
+    },
+    {
+     "w": "my filly",
+     "v": "1:9",
+     "at": 33
+    }
+   ],
+   "refs": [
+    "1KI 10:26"
+   ]
+  },
+  "SNG.1.11": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:11",
+   "to": "1:11",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "ornaments",
+     "v": "1:11",
+     "at": 17
+    }
+   ],
+   "refs": [
+    "SNG 1:4"
+   ]
+  },
+  "SNG.1.12": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:12",
+   "to": "1:12",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "his table",
+     "v": "1:12",
+     "at": 21
+    }
+   ],
+   "refs": []
+  },
+  "SNG.1.13-14": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:13",
+   "to": "1:14",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "myrrh",
+     "v": "1:13",
+     "at": 12
+    },
+    {
+     "w": "my beloved",
+     "v": "1:13",
+     "at": 21
+    },
+    {
+     "w": "En Gedi",
+     "v": "1:14",
+     "at": 66
+    }
+   ],
+   "refs": []
+  },
+  "SNG.1.15": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:15",
+   "to": "1:15",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "Behold, you are fair",
+     "v": "1:15",
+     "at": 0
+    },
+    {
+     "w": "my love",
+     "v": "1:15",
+     "at": 22
+    },
+    {
+     "w": "dove’s eyes",
+     "v": "1:15",
+     "at": 62
+    }
+   ],
+   "refs": [
+    "SNG 4:1",
+    "SNG 5:12",
+    "SNG 2:14",
+    "SNG 5:2"
+   ]
+  },
+  "SNG.1.16": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:16",
+   "to": "1:16",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "handsome",
+     "v": "1:16",
+     "at": 16
+    }
+   ],
+   "refs": []
+  },
+  "SNG.1.17": {
+   "b": "SNG",
+   "k": "note",
+   "from": "1:17",
+   "to": "1:17",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "beams of our houses are cedar",
+     "v": "1:17",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "1KI 7:1-12"
+   ]
+  },
+  "SNG.2.2": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:2",
+   "to": "2:2",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "thorns",
+     "v": "2:2",
+     "at": 18
+    }
+   ],
+   "refs": []
+  },
+  "SNG.2.3": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:3",
+   "to": "2:3",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "apple tree",
+     "v": "2:3",
+     "at": 8
+    }
+   ],
+   "refs": []
+  },
+  "SNG.2.4": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:4",
+   "to": "2:4",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "the banqueting house",
+     "v": "2:4",
+     "at": 17
+    },
+    {
+     "w": "his banner",
+     "v": "2:4",
+     "at": 43
+    },
+    {
+     "w": "love",
+     "v": "2:4",
+     "at": 66
+    }
+   ],
+   "refs": [
+    "SNG 1:2",
+    "PSA 104:15",
+    "NUM 1:52"
+   ]
+  },
+  "SNG.2.5-6": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:5",
+   "to": "2:6",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "raisins... apples"
+    },
+    {
+     "w": "lovesick",
+     "v": "2:5",
+     "at": 67
+    }
+   ],
+   "refs": []
+  },
+  "SNG.2.7": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:7",
+   "to": "2:7",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "I charge you",
+     "v": "2:7",
+     "at": 0
+    },
+    {
+     "w": "By the gazelles... does"
+    },
+    {
+     "w": "love",
+     "v": "2:7",
+     "at": 111
+    },
+    {
+     "w": "it pleases",
+     "v": "2:7",
+     "at": 122
+    }
+   ],
+   "refs": [
+    "SNG 3:5",
+    "SNG 8:4"
+   ]
+  },
+  "SNG.2.8-9": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:8",
+   "to": "2:9",
+   "pdf": 1079,
+   "page": 1044,
+   "lemmas": [
+    {
+     "w": "leaping... skipping"
+    },
+    {
+     "w": "gazelle... stag"
+    },
+    {
+     "w": "windows... lattice"
+    }
+   ],
+   "refs": []
+  },
+  "SNG.2.10": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:10",
+   "to": "2:10",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "my love",
+     "v": "2:10",
+     "at": 44
+    },
+    {
+     "w": "my fair one",
+     "v": "2:10",
+     "at": 53
+    }
+   ],
+   "refs": [
+    "SNG 1:15",
+    "SNG 1:8-15"
+   ]
+  },
+  "SNG.2.11-13": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:11",
+   "to": "2:13",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "the winter is past",
+     "v": "2:11",
+     "at": 8
+    }
+   ],
+   "refs": []
+  },
+  "SNG.2.14": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:14",
+   "to": "2:14",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "in the clefts",
+     "v": "2:14",
+     "at": 12
+    }
+   ],
+   "refs": []
+  },
+  "SNG.2.15": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:15",
+   "to": "2:15",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "catch",
+     "v": "2:15",
+     "at": 0
+    },
+    {
+     "w": "the foxes",
+     "v": "2:15",
+     "at": 9
+    },
+    {
+     "w": "little foxes",
+     "v": "2:15",
+     "at": 24
+    },
+    {
+     "w": "vine",
+     "v": "2:15",
+     "at": 52
+    }
+   ],
+   "refs": []
+  },
+  "SNG.2.16": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:16",
+   "to": "2:16",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "My beloved is mine, and I am his",
+     "v": "2:16",
+     "at": 0
+    }
+   ],
+   "refs": [
+    "SNG 6:3",
+    "SNG 7:10"
+   ]
+  },
+  "SNG.2.17": {
+   "b": "SNG",
+   "k": "note",
+   "from": "2:17",
+   "to": "2:17",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "Until the day breaks",
+     "v": "2:17",
+     "at": 0
+    },
+    {
+     "w": "gazelle",
+     "v": "2:17",
+     "at": 80
+    }
+   ],
+   "refs": [
+    "SNG 8:14"
+   ]
+  },
+  "SNG.3.1": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:1",
+   "to": "3:1",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "on my bed",
+     "v": "3:1",
+     "at": 9
+    }
+   ],
+   "refs": []
+  },
+  "SNG.3.2-3": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:2",
+   "to": "3:3",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "the one I love",
+     "v": "3:2",
+     "at": 97
+    }
+   ],
+   "refs": []
+  },
+  "SNG.3.4": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:4",
+   "to": "3:4",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "the one I love",
+     "v": "3:4",
+     "at": 44
+    },
+    {
+     "w": "house",
+     "v": "3:4",
+     "at": 128
+    }
+   ],
+   "refs": []
+  },
+  "SNG.3.5": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:5",
+   "to": "3:5",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "Do not stir up",
+     "v": "3:5",
+     "at": 85
+    }
+   ],
+   "refs": [
+    "SNG 2:8-17",
+    "SNG 2:15-17",
+    "SNG 3:1-4"
+   ]
+  },
+  "SNG.3.6": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:6",
+   "to": "3:6",
+   "pdf": 1080,
+   "page": 1045,
+   "lemmas": [
+    {
+     "w": "Who is this coming",
+     "v": "3:6",
+     "at": 0
+    },
+    {
+     "w": "pillars of smoke",
+     "v": "3:6",
+     "at": 46
+    },
+    {
+     "w": "Perfumed",
+     "v": "3:6",
+     "at": 64
+    }
+   ],
+   "refs": [
+    "SNG 2:8",
+    "EXO 19:18",
+    "SNG 4:6"
+   ]
+  },
+  "SNG.3.7-8": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:7",
+   "to": "3:8",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "couch",
+     "v": "3:7",
+     "at": 24
+    },
+    {
+     "w": "valiant men",
+     "v": "3:7",
+     "at": 42
+    },
+    {
+     "w": "fear",
+     "v": "3:8",
+     "at": 91
+    }
+   ],
+   "refs": []
+  },
+  "SNG.3.9-10": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:9",
+   "to": "3:10",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "silver",
+     "v": "3:10",
+     "at": 23
+    },
+    {
+     "w": "gold",
+     "v": "3:10",
+     "at": 46
+    },
+    {
+     "w": "love",
+     "v": "3:10",
+     "at": 96
+    }
+   ],
+   "refs": [
+    "SNG 2:4"
+   ]
+  },
+  "SNG.3.11": {
+   "b": "SNG",
+   "k": "note",
+   "from": "3:11",
+   "to": "3:11",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "O daughters of Zion",
+     "v": "3:11",
+     "at": 10
+    },
+    {
+     "w": "And see",
+     "v": "3:11",
+     "at": 31
+    },
+    {
+     "w": "gladness",
+     "v": "3:11",
+     "at": 143
+    },
+    {
+     "w": "the crown",
+     "v": "3:11",
+     "at": 57
+    }
+   ],
+   "refs": [
+    "SNG 1:5",
+    "PSA 19:5"
+   ]
+  },
+  "SNG.4.1": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:1",
+   "to": "4:1",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "Dove’s eyes",
+     "v": "4:1",
+     "at": 62
+    },
+    {
+     "w": "veil",
+     "v": "4:1",
+     "at": 86
+    },
+    {
+     "w": "hair",
+     "v": "4:1",
+     "at": 97
+    },
+    {
+     "w": "a flock of goats",
+     "v": "4:1",
+     "at": 110
+    },
+    {
+     "w": "down from Mount Gilead",
+     "v": "4:1",
+     "at": 134
+    }
+   ],
+   "refs": [
+    "SNG 2:14",
+    "SNG 1:15",
+    "SNG 5:7"
+   ]
+  },
+  "SNG.4.2-5": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:2",
+   "to": "4:5",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "teeth",
+     "v": "4:2",
+     "at": 5
+    },
+    {
+     "w": "lips",
+     "v": "4:3",
+     "at": 5
+    },
+    {
+     "w": "neck",
+     "v": "4:4",
+     "at": 5
+    },
+    {
+     "w": "breasts. Scarlet"
+    },
+    {
+     "w": "pomegranate",
+     "v": "4:3",
+     "at": 116
+    },
+    {
+     "w": "lovely",
+     "v": "4:3",
+     "at": 58
+    },
+    {
+     "w": "tower of David",
+     "v": "4:4",
+     "at": 22
+    },
+    {
+     "w": "fawns",
+     "v": "4:5",
+     "at": 30
+    }
+   ],
+   "refs": [
+    "SNG 1:5"
+   ]
+  },
+  "SNG.4.6": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:6",
+   "to": "4:6",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "Until the day breaks",
+     "v": "4:6",
+     "at": 0
+    },
+    {
+     "w": "the mountain of myrrh... the hill of frankincense"
+    }
+   ],
+   "refs": [
+    "SNG 8:14",
+    "SNG 1:13-14",
+    "SNG 2:6"
+   ]
+  },
+  "SNG.4.7": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:7",
+   "to": "4:7",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "fair",
+     "v": "4:7",
+     "at": 12
+    },
+    {
+     "w": "all",
+     "v": "4:7",
+     "at": 8
+    }
+   ],
+   "refs": []
+  },
+  "SNG.4.8": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:8",
+   "to": "4:8",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "Come",
+     "v": "4:8",
+     "at": 0
+    },
+    {
+     "w": "with me",
+     "v": "4:8",
+     "at": 5
+    },
+    {
+     "w": "spouse",
+     "v": "4:8",
+     "at": 30
+    }
+   ],
+   "refs": [
+    "SNG 5:1"
+   ]
+  },
+  "SNG.4.9": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:9",
+   "to": "4:9",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "My sister, my spouse",
+     "v": "4:9",
+     "at": 28
+    }
+   ],
+   "refs": []
+  },
+  "SNG.4.10": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:10",
+   "to": "4:10",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "your love... your love"
+    }
+   ],
+   "refs": []
+  },
+  "SNG.4.11": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:11",
+   "to": "4:11",
+   "pdf": 1081,
+   "page": 1046,
+   "lemmas": [
+    {
+     "w": "lips... Honey and milk"
+    }
+   ],
+   "refs": [
+    "SNG 5:1",
+    "SNG 1:2"
+   ]
+  },
+  "SNG.4.12": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:12",
+   "to": "4:12",
+   "pdf": 1082,
+   "page": 1047,
+   "lemmas": [
+    {
+     "w": "spring... fountain"
+    },
+    {
+     "w": "enclosed... shut up... sealed"
+    }
+   ],
+   "refs": [
+    "SNG 2:7"
+   ]
+  },
+  "SNG.4.13-15": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:13",
+   "to": "4:15",
+   "pdf": 1082,
+   "page": 1047,
+   "lemmas": [
+    {
+     "w": "pleasant fruits",
+     "v": "4:13",
+     "at": 48
+    }
+   ],
+   "refs": []
+  },
+  "SNG.4.16": {
+   "b": "SNG",
+   "k": "note",
+   "from": "4:16",
+   "to": "4:16",
+   "pdf": 1082,
+   "page": 1047,
+   "lemmas": [
+    {
+     "w": "garden",
+     "v": "4:16",
+     "at": 53
+    },
+    {
+     "w": "wind",
+     "v": "4:16",
+     "at": 15
+    }
+   ],
+   "refs": []
+  },
+  "SNG.5.1": {
+   "b": "SNG",
+   "k": "note",
+   "from": "5:1",
+   "to": "5:1",
+   "pdf": 1082,
+   "page": 1047,
+   "lemmas": [
+    {
+     "w": "drunk my wine",
+     "v": "5:1",
+     "at": 136
+    }
+   ],
+   "refs": []
+  },
+  "SNG.5.2-7": {
+   "b": "SNG",
+   "k": "note",
+   "from": "5:2",
+   "to": "5:7",
+   "pdf": 1082,
+   "page": 1047,
+   "lemmas": [
+    {
+     "w": "I sleep",
+     "v": "5:2",
+     "at": 0
+    },
+    {
+     "w": "robe",
+     "v": "5:3",
+     "at": 20
+    },
+    {
+     "w": "door",
+     "v": "5:4",
+     "at": 44
+    },
+    {
+     "w": "city",
+     "v": "5:7",
+     "at": 32
+    },
+    {
+     "w": "watchmen",
+     "v": "5:7",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "SNG 3:1-5"
+   ]
+  },
+  "SNG.5.8-9": {
+   "b": "SNG",
+   "k": "note",
+   "from": "5:8",
+   "to": "5:9",
+   "pdf": 1082,
+   "page": 1047,
+   "lemmas": [
+    {
+     "w": "daughters of Jerusalem",
+     "v": "5:8",
+     "at": 16
+    }
+   ],
+   "refs": []
+  },
+  "SNG.5.10-16": {
+   "b": "SNG",
+   "k": "note",
+   "from": "5:10",
+   "to": "5:16",
+   "pdf": 1083,
+   "page": 1048,
+   "lemmas": [
+    {
+     "w": "ruddy",
+     "v": "5:10",
+     "at": 24
+    },
+    {
+     "w": "mouth",
+     "v": "5:16",
+     "at": 4
+    }
+   ],
+   "refs": []
+  },
+  "SNG.6.1": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:1",
+   "to": "6:1",
+   "pdf": 1083,
+   "page": 1048,
+   "refs": []
+  },
+  "SNG.6.2": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:2",
+   "to": "6:2",
+   "pdf": 1083,
+   "page": 1048,
+   "lemmas": [
+    {
+     "w": "his garden... his flock"
+    }
+   ],
+   "refs": [
+    "SNG 4:12-16",
+    "SNG 6:11"
+   ]
+  },
+  "SNG.6.3": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:3",
+   "to": "6:3",
+   "pdf": 1083,
+   "page": 1048,
+   "lemmas": [
+    {
+     "w": "I am my beloved’s, and my beloved is mine",
+     "v": "6:3",
+     "at": 0
+    },
+    {
+     "w": "He feeds his flock among the lilies",
+     "v": "6:3",
+     "at": 43
+    }
+   ],
+   "refs": [
+    "SNG 2:16",
+    "SNG 7:10"
+   ]
+  },
+  "SNG.6.4": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:4",
+   "to": "6:4",
+   "pdf": 1083,
+   "page": 1048,
+   "lemmas": [
+    {
+     "w": "beautiful... Lovely"
+    },
+    {
+     "w": "Tirzah... Jerusalem"
+    },
+    {
+     "w": "army with banners",
+     "v": "6:4",
+     "at": 78
+    }
+   ],
+   "refs": [
+    "SNG 1:8-15",
+    "SNG 4:1",
+    "SNG 1:5"
+   ]
+  },
+  "SNG.6.8-9": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:8",
+   "to": "6:9",
+   "pdf": 1083,
+   "page": 1048,
+   "lemmas": [
+    {
+     "w": "sixty... eighty"
+    },
+    {
+     "w": "praised",
+     "v": "6:9",
+     "at": 194
+    }
+   ],
+   "refs": []
+  },
+  "SNG.6.10": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:10",
+   "to": "6:10",
+   "pdf": 1083,
+   "page": 1048,
+   "lemmas": [
+    {
+     "w": "morning... moon... sun"
+    }
+   ],
+   "refs": []
+  },
+  "SNG.6.11": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:11",
+   "to": "6:11",
+   "pdf": 1083,
+   "page": 1048,
+   "lemmas": [
+    {
+     "w": "garden",
+     "v": "6:11",
+     "at": 19
+    }
+   ],
+   "refs": []
+  },
+  "SNG.6.13": {
+   "b": "SNG",
+   "k": "note",
+   "from": "6:13",
+   "to": "6:13",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "Shulamite",
+     "v": "6:13",
+     "at": 18
+    },
+    {
+     "w": "the dance of the two camps",
+     "v": "6:13",
+     "at": 120
+    }
+   ],
+   "refs": [
+    "2SA 17:24"
+   ]
+  },
+  "SNG.7.1": {
+   "b": "SNG",
+   "k": "note",
+   "from": "7:1",
+   "to": "7:1",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "prince’s daughter",
+     "v": "7:1",
+     "at": 42
+    },
+    {
+     "w": "The curves of your thighs",
+     "v": "7:1",
+     "at": 61
+    }
+   ],
+   "refs": [
+    "SNG 1:2",
+    "SNG 6:13"
+   ]
+  },
+  "SNG.7.6": {
+   "b": "SNG",
+   "k": "note",
+   "from": "7:6",
+   "to": "7:6",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "fair",
+     "v": "7:6",
+     "at": 4
+    },
+    {
+     "w": "love",
+     "v": "7:6",
+     "at": 37
+    }
+   ],
+   "refs": [
+    "SNG 1:8-15",
+    "SNG 2:4"
+   ]
+  },
+  "SNG.7.7-8": {
+   "b": "SNG",
+   "k": "note",
+   "from": "7:7",
+   "to": "7:8",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "palm tree",
+     "v": "7:7",
+     "at": 32
+    }
+   ],
+   "refs": []
+  },
+  "SNG.7.10": {
+   "b": "SNG",
+   "k": "note",
+   "from": "7:10",
+   "to": "7:10",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "desire",
+     "v": "7:10",
+     "at": 27
+    }
+   ],
+   "refs": []
+  },
+  "SNG.7.12": {
+   "b": "SNG",
+   "k": "note",
+   "from": "7:12",
+   "to": "7:12",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "vineyards",
+     "v": "7:12",
+     "at": 27
+    },
+    {
+     "w": "my love",
+     "v": "7:12",
+     "at": 167
+    }
+   ],
+   "refs": [
+    "SNG 1:6",
+    "SNG 8:12",
+    "SNG 1:2"
+   ]
+  },
+  "SNG.7.13": {
+   "b": "SNG",
+   "k": "note",
+   "from": "7:13",
+   "to": "7:13",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "mandrakes",
+     "v": "7:13",
+     "at": 4
+    }
+   ],
+   "refs": [
+    "GEN 30:14"
+   ]
+  },
+  "SNG.8.1-2": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:1",
+   "to": "8:2",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "like my brother",
+     "v": "8:1",
+     "at": 18
+    }
+   ],
+   "refs": []
+  },
+  "SNG.8.2": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:2",
+   "to": "8:2",
+   "pdf": 1084,
+   "page": 1049,
+   "lemmas": [
+    {
+     "w": "spiced wine",
+     "v": "8:2",
+     "at": 119
+    }
+   ],
+   "refs": [
+    "PRO 9:2"
+   ]
+  },
+  "SNG.8.3-4": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:3",
+   "to": "8:4",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "left... right"
+    }
+   ],
+   "refs": [
+    "SNG 2:6-7"
+   ]
+  },
+  "SNG.8.5": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:5",
+   "to": "8:5",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "apple tree",
+     "v": "8:5",
+     "at": 94
+    }
+   ],
+   "refs": []
+  },
+  "SNG.8.6": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:6",
+   "to": "8:6",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "seal",
+     "v": "8:6",
+     "at": 12
+    },
+    {
+     "w": "heart",
+     "v": "8:6",
+     "at": 27
+    },
+    {
+     "w": "strong as death",
+     "v": "8:6",
+     "at": 74
+    },
+    {
+     "w": "flames of fire",
+     "v": "8:6",
+     "at": 138
+    }
+   ],
+   "refs": []
+  },
+  "SNG.8.7": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:7",
+   "to": "8:7",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "quench... despised"
+    }
+   ],
+   "refs": []
+  },
+  "SNG.8.8": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:8",
+   "to": "8:8",
+   "pdf": 1085,
+   "page": 1050,
+   "refs": [
+    "SNG 1:6"
+   ]
+  },
+  "SNG.8.9": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:9",
+   "to": "8:9",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "If... a wall"
+    },
+    {
+     "w": "if... a door"
+    }
+   ],
+   "refs": []
+  },
+  "SNG.8.10": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:10",
+   "to": "8:10",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "a wall",
+     "v": "8:10",
+     "at": 5
+    },
+    {
+     "w": "towers",
+     "v": "8:10",
+     "at": 33
+    },
+    {
+     "w": "peace",
+     "v": "8:10",
+     "at": 84
+    }
+   ],
+   "refs": []
+  },
+  "SNG.8.11-12": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:11",
+   "to": "8:12",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "Baal Hamon",
+     "v": "8:11",
+     "at": 26
+    },
+    {
+     "w": "My own vineyard",
+     "v": "8:12",
+     "at": 0
+    }
+   ],
+   "refs": [
+    "SNG 1:6",
+    "SNG 7:12"
+   ]
+  },
+  "SNG.8.13": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:13",
+   "to": "8:13",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "The companions",
+     "v": "8:13",
+     "at": 30
+    }
+   ],
+   "refs": []
+  },
+  "SNG.8.14": {
+   "b": "SNG",
+   "k": "note",
+   "from": "8:14",
+   "to": "8:14",
+   "pdf": 1085,
+   "page": 1050,
+   "lemmas": [
+    {
+     "w": "Make haste",
+     "v": "8:14",
+     "at": 0
+    },
+    {
+     "w": "gazelle... stag"
+    },
+    {
+     "w": "the mountains of spices",
+     "v": "8:14",
+     "at": 65
+    }
+   ],
+   "refs": [
+    "SNG 4:6",
+    "SNG 1:13"
+   ]
+  },
+  "SNG.intro": {
+   "b": "SNG",
+   "k": "intro",
+   "title": "SONG OF SOLOMON",
+   "pdf": 1075
   }
  },
  "verses": {
@@ -263484,7 +265169,8 @@
     "NUM.2.3-9",
     "PSA.111.2-9",
     "PSA.136.4-5",
-    "EPH.2.10.word.workmanship"
+    "EPH.2.10.word.workmanship",
+    "SNG.3.11"
    ],
    "covers": [
     "PSA.19.1-6"
@@ -274149,7 +275835,8 @@
     "1SA.16.5",
     "2SA.22.7-15",
     "2CH.5.13",
-    "ACT.2.3"
+    "ACT.2.3",
+    "SNG.3.6"
    ],
    "own": [
     "EXO.19.18"
@@ -277351,7 +279038,8 @@
     "GEN.24.67"
    ],
    "cited": [
-    "GEN.29.18"
+    "GEN.29.18",
+    "SNG.1.3"
    ]
   },
   "DEU 7:3": {
@@ -279188,12 +280876,16 @@
     "GEN.30.14"
    ],
    "cited": [
-    "GEN.49.14"
+    "GEN.49.14",
+    "SNG.7.13"
    ]
   },
   "SNG 7:13": {
    "cited": [
     "GEN.30.14"
+   ],
+   "own": [
+    "SNG.7.13"
    ]
   },
   "GEN 30:21": {
@@ -287230,6 +288922,12 @@
    "cited": [
     "EXO.c28.culture.pomegranate",
     "PRO.9.2-3"
+   ],
+   "covers": [
+    "SNG.8.1-2"
+   ],
+   "own": [
+    "SNG.8.2"
    ]
   },
   "EXO 28:33": {
@@ -287957,7 +289655,13 @@
   },
   "SNG 1:8": {
    "cited": [
-    "EXO.25.9.word.tabernacle"
+    "EXO.25.9.word.tabernacle",
+    "SNG.2.10",
+    "SNG.6.4",
+    "SNG.7.6"
+   ],
+   "own": [
+    "SNG.1.8"
    ]
   },
   "EXO 33:7": {
@@ -288246,7 +289950,8 @@
     "MAT.c2.chart.the-prophecies-of-jesus-birth",
     "MAT.1.23",
     "LUK.1.13",
-    "LUK.1.26-38"
+    "LUK.1.26-38",
+    "SNG.1.3"
    ]
   },
   "EXO 2:11": {
@@ -313853,7 +315558,8 @@
     "NUM.1.51-53"
    ],
    "cited": [
-    "NUM.35.2"
+    "NUM.35.2",
+    "SNG.2.4"
    ]
   },
   "NUM 1:53": {
@@ -321169,7 +322875,8 @@
     "LUK.c4.culture.worship",
     "LUK.10.27",
     "JHN.5.42",
-    "JAS.2.19"
+    "JAS.2.19",
+    "SNG.1.3"
    ],
    "own": [
     "DEU.6.5"
@@ -331259,7 +332966,14 @@
   "SNG 1:14": {
    "cited": [
     "JOS.c1.culture.jericho",
-    "1SA.23.29"
+    "1SA.23.29",
+    "SNG.2.10",
+    "SNG.4.6",
+    "SNG.6.4",
+    "SNG.7.6"
+   ],
+   "covers": [
+    "SNG.1.13-14"
    ]
   },
   "LUK 19:4": {
@@ -338336,7 +340050,8 @@
     "JDG.5.3.word.sing-praise",
     "PSA.146.1.word.praise",
     "PSA.33.1-3",
-    "PSA.92.1-4"
+    "PSA.92.1-4",
+    "SNG.1.5"
    ],
    "own": [
     "PSA.147.1"
@@ -343083,6 +344798,9 @@
   "SNG 8:11": {
    "cited": [
     "JDG.3.7"
+   ],
+   "own": [
+    "SNG.8.11-12"
    ]
   },
   "DEU 7:12": {
@@ -346438,6 +348156,9 @@
   "RUT 3:3": {
    "own": [
     "RUT.3.3"
+   ],
+   "cited": [
+    "SNG.1.3"
    ]
   },
   "RUT 3:4": {
@@ -347693,7 +349414,8 @@
    "cited": [
     "1SA.10.24.word.king",
     "1KI.4.26",
-    "ECC.2.7-8"
+    "ECC.2.7-8",
+    "SNG.1.9"
    ],
    "own": [
     "1KI.10.26"
@@ -348886,7 +350608,8 @@
     "1SA.c21.chart.the-sinful-and-sad-life-of-saul",
     "1SA.17.55",
     "2SA.3.2",
-    "2SA.12.8"
+    "2SA.12.8",
+    "SNG.4.16.word.beloved"
    ],
    "own": [
     "1SA.14.50"
@@ -358971,6 +360694,9 @@
   "SNG 2:5": {
    "cited": [
     "2SA.6.19"
+   ],
+   "own": [
+    "SNG.2.5-6"
    ]
   },
   "2SA 6:20": {
@@ -360584,7 +362310,8 @@
    "cited": [
     "2SA.14.2",
     "PSA.111.2-9",
-    "PSA.149.2-5"
+    "PSA.149.2-5",
+    "SNG.2.4"
    ],
    "covers": [
     "PSA.104.14-15"
@@ -361721,6 +363448,9 @@
   "2SA 17:24": {
    "own": [
     "2SA.17.24"
+   ],
+   "cited": [
+    "SNG.6.13"
    ]
   },
   "2SA 17:26": {
@@ -367526,7 +369256,8 @@
   "PRO 9:2": {
    "cited": [
     "1KI.4.23",
-    "PRO.8.14-18"
+    "PRO.8.14-18",
+    "SNG.8.2"
    ],
    "own": [
     "PRO.9.2-3"
@@ -367909,7 +369640,8 @@
     "1KI.7.1-2"
    ],
    "cited": [
-    "2CH.7.11"
+    "2CH.7.11",
+    "SNG.1.17"
    ]
   },
   "1KI 7:2": {
@@ -367917,7 +369649,8 @@
     "1KI.7.1-2"
    ],
    "cited": [
-    "2CH.7.11"
+    "2CH.7.11",
+    "SNG.1.17"
    ]
   },
   "ISA 22:8": {
@@ -367930,7 +369663,8 @@
     "1KI.7.6-7"
    ],
    "cited": [
-    "2CH.7.11"
+    "2CH.7.11",
+    "SNG.1.17"
    ]
   },
   "1KI 7:7": {
@@ -367940,7 +369674,8 @@
    "cited": [
     "2CH.7.11",
     "JOB.35.2.word.right",
-    "PSA.9.16.word.judgment"
+    "PSA.9.16.word.judgment",
+    "SNG.1.17"
    ]
   },
   "1KI 7:8": {
@@ -367948,7 +369683,8 @@
     "1KI.7.8"
    ],
    "cited": [
-    "2CH.7.11"
+    "2CH.7.11",
+    "SNG.1.17"
    ]
   },
   "2KI 11:19": {
@@ -367964,7 +369700,8 @@
     "1KI.7.9"
    ],
    "cited": [
-    "2CH.33.5"
+    "2CH.33.5",
+    "SNG.1.17"
    ]
   },
   "1KI 7:12": {
@@ -367972,7 +369709,8 @@
     "1KI.7.12"
    ],
    "cited": [
-    "2CH.33.5"
+    "2CH.33.5",
+    "SNG.1.17"
    ]
   },
   "2CH 2:14": {
@@ -369590,6 +371328,9 @@
   "SNG 6:8": {
    "cited": [
     "1KI.11.3"
+   ],
+   "own": [
+    "SNG.6.8-9"
    ]
   },
   "PSA 53:1": {
@@ -370459,7 +372200,11 @@
   "SNG 6:4": {
    "cited": [
     "1KI.14.17",
-    "2KI.15.16"
+    "2KI.15.16",
+    "SNG.1.5"
+   ],
+   "own": [
+    "SNG.6.4"
    ]
   },
   "1KI 15:33": {
@@ -373846,12 +375591,21 @@
   "SNG 4:15": {
    "cited": [
     "2KI.21.18.word.garden",
-    "PRO.5.15"
+    "PRO.5.15",
+    "SNG.6.2"
+   ],
+   "covers": [
+    "SNG.4.13-15"
    ]
   },
   "SNG 4:16": {
    "cited": [
-    "2KI.21.18.word.garden"
+    "2KI.21.18.word.garden",
+    "SNG.6.2"
+   ],
+   "own": [
+    "SNG.4.16.word.beloved",
+    "SNG.4.16"
    ]
   },
   "2KI 25:4": {
@@ -373880,18 +375634,31 @@
   },
   "SNG 4:12": {
    "cited": [
-    "2KI.21.18.word.garden"
+    "2KI.21.18.word.garden",
+    "SNG.6.2"
+   ],
+   "own": [
+    "SNG.4.12"
    ]
   },
   "SNG 5:1": {
    "cited": [
     "2KI.21.18.word.garden",
-    "PRO.18.24.word.friends"
+    "PRO.18.24.word.friends",
+    "SNG.1.2",
+    "SNG.4.8",
+    "SNG.4.11"
+   ],
+   "own": [
+    "SNG.5.1"
    ]
   },
   "SNG 8:13": {
    "cited": [
     "2KI.21.18.word.garden"
+   ],
+   "own": [
+    "SNG.8.13"
    ]
   },
   "EZK 47:12": {
@@ -387152,17 +388919,20 @@
   },
   "1KI 7:3": {
    "cited": [
-    "2CH.7.11"
+    "2CH.7.11",
+    "SNG.1.17"
    ]
   },
   "1KI 7:4": {
    "cited": [
-    "2CH.7.11"
+    "2CH.7.11",
+    "SNG.1.17"
    ]
   },
   "1KI 7:5": {
    "cited": [
-    "2CH.7.11"
+    "2CH.7.11",
+    "SNG.1.17"
    ]
   },
   "2CH 7:12": {
@@ -387843,7 +389613,8 @@
   },
   "EZK 23:17": {
    "cited": [
-    "2CH.21.11"
+    "2CH.21.11",
+    "SNG.1.2"
    ]
   },
   "EZK 23:18": {
@@ -388921,12 +390692,14 @@
   },
   "1KI 7:10": {
    "cited": [
-    "2CH.33.5"
+    "2CH.33.5",
+    "SNG.1.17"
    ]
   },
   "1KI 7:11": {
    "cited": [
-    "2CH.33.5"
+    "2CH.33.5",
+    "SNG.1.17"
    ]
   },
   "LEV 26:27": {
@@ -394613,7 +396386,11 @@
   "SNG 5:2": {
    "cited": [
     "JOB.1.1.word.blameless",
-    "PRO.18.24.word.friends"
+    "PRO.18.24.word.friends",
+    "SNG.1.15"
+   ],
+   "own": [
+    "SNG.5.2-7"
    ]
   },
   "SNG 6:9": {
@@ -394621,6 +396398,9 @@
     "JOB.1.1.word.blameless",
     "PSA.19.8.word.pure",
     "PSA.146.1.word.praise"
+   ],
+   "covers": [
+    "SNG.6.8-9"
    ]
   },
   "JOB 2:3": {
@@ -403713,6 +405493,9 @@
   "SNG 6:10": {
    "cited": [
     "PSA.19.8.word.pure"
+   ],
+   "own": [
+    "SNG.6.10"
    ]
   },
   "PSA 19:7": {
@@ -405516,6 +407299,9 @@
   "SNG 1:7": {
    "cited": [
     "PSA.11.5.word.soul"
+   ],
+   "own": [
+    "SNG.1.7"
    ]
   },
   "PSA 84:2": {
@@ -406552,7 +408338,8 @@
     "MRK.12.1",
     "LUK.20.9",
     "JHN.c11.chart.jesus-seven-i-am-statements",
-    "JHN.15.1.word.vine"
+    "JHN.15.1.word.vine",
+    "SNG.4.16.word.beloved"
    ]
   },
   "ZEP 2:14": {
@@ -409714,7 +411501,8 @@
     "PSA.81.1",
     "PSA.92.1-4",
     "PSA.147.1",
-    "PSA.149.1"
+    "PSA.149.1",
+    "SNG.1.5"
    ]
   },
   "PSA 33:2": {
@@ -418809,71 +420597,115 @@
   "SNG 5:3": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.2-7"
    ]
   },
   "SNG 5:4": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.2-7"
    ]
   },
   "SNG 5:5": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.2-7"
    ]
   },
   "SNG 5:6": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.2-7"
    ]
   },
   "SNG 5:7": {
    "cited": [
-    "PRO.18.24.word.friends"
+    "PRO.18.24.word.friends",
+    "SNG.4.1"
+   ],
+   "covers": [
+    "SNG.5.2-7"
    ]
   },
   "SNG 5:8": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "own": [
+    "SNG.5.8-9"
    ]
   },
   "SNG 5:9": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.8-9"
    ]
   },
   "SNG 5:10": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "own": [
+    "SNG.5.10-16"
    ]
   },
   "SNG 5:11": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.10-16"
    ]
   },
   "SNG 5:12": {
    "cited": [
-    "PRO.18.24.word.friends"
+    "PRO.18.24.word.friends",
+    "SNG.1.15"
+   ],
+   "covers": [
+    "SNG.5.10-16"
    ]
   },
   "SNG 5:13": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.10-16"
    ]
   },
   "SNG 5:14": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.10-16"
    ]
   },
   "SNG 5:15": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.10-16"
    ]
   },
   "SNG 5:16": {
    "cited": [
     "PRO.18.24.word.friends"
+   ],
+   "covers": [
+    "SNG.5.10-16"
    ]
   },
   "JER 3:1": {
@@ -419910,6 +421742,10 @@
   "PRO 7:18": {
    "covers": [
     "PRO.7.14-20"
+   ],
+   "cited": [
+    "SNG.4.16.word.beloved",
+    "SNG.1.2"
    ]
   },
   "PRO 7:19": {
@@ -445578,7 +447414,11 @@
   },
   "SNG 4:13": {
    "cited": [
-    "LUK.23.43.word.paradise"
+    "LUK.23.43.word.paradise",
+    "SNG.6.2"
+   ],
+   "own": [
+    "SNG.4.13-15"
    ]
   },
   "LUK 1:1": {
@@ -478826,6 +480666,557 @@
   "JER 10:4": {
    "cited": [
     "ECC.12.11"
+   ]
+  },
+  "SNG 1:1": {
+   "own": [
+    "SNG.1.1"
+   ]
+  },
+  "SNG 1:2": {
+   "own": [
+    "SNG.1.2"
+   ],
+   "cited": [
+    "SNG.2.4",
+    "SNG.4.11",
+    "SNG.7.1",
+    "SNG.7.12"
+   ]
+  },
+  "EZK 16:8": {
+   "cited": [
+    "SNG.1.2"
+   ]
+  },
+  "SNG 4:10": {
+   "cited": [
+    "SNG.1.2"
+   ],
+   "own": [
+    "SNG.4.10"
+   ]
+  },
+  "SNG 7:12": {
+   "cited": [
+    "SNG.1.2",
+    "SNG.8.11-12"
+   ],
+   "own": [
+    "SNG.7.12"
+   ]
+  },
+  "SNG 1:3": {
+   "own": [
+    "SNG.1.3"
+   ]
+  },
+  "SNG 1:4": {
+   "own": [
+    "SNG.1.4"
+   ],
+   "cited": [
+    "SNG.1.11"
+   ]
+  },
+  "SNG 3:7": {
+   "cited": [
+    "SNG.1.4"
+   ],
+   "own": [
+    "SNG.3.7-8"
+   ]
+  },
+  "SNG 3:8": {
+   "cited": [
+    "SNG.1.4"
+   ],
+   "covers": [
+    "SNG.3.7-8"
+   ]
+  },
+  "SNG 3:9": {
+   "cited": [
+    "SNG.1.4"
+   ],
+   "own": [
+    "SNG.3.9-10"
+   ]
+  },
+  "SNG 3:10": {
+   "cited": [
+    "SNG.1.4"
+   ],
+   "covers": [
+    "SNG.3.9-10"
+   ]
+  },
+  "SNG 3:11": {
+   "cited": [
+    "SNG.1.4"
+   ],
+   "own": [
+    "SNG.3.11"
+   ]
+  },
+  "SNG 1:5": {
+   "own": [
+    "SNG.1.5"
+   ],
+   "cited": [
+    "SNG.3.11",
+    "SNG.4.2-5",
+    "SNG.6.4"
+   ]
+  },
+  "SNG 2:14": {
+   "cited": [
+    "SNG.1.5",
+    "SNG.1.15",
+    "SNG.3.5",
+    "SNG.4.1"
+   ],
+   "own": [
+    "SNG.2.14"
+   ]
+  },
+  "SNG 4:3": {
+   "cited": [
+    "SNG.1.5"
+   ],
+   "covers": [
+    "SNG.4.2-5"
+   ]
+  },
+  "SNG 1:6": {
+   "own": [
+    "SNG.1.6"
+   ],
+   "cited": [
+    "SNG.7.12",
+    "SNG.8.8",
+    "SNG.8.11-12"
+   ]
+  },
+  "SNG 8:12": {
+   "cited": [
+    "SNG.1.6",
+    "SNG.7.12"
+   ],
+   "covers": [
+    "SNG.8.11-12"
+   ]
+  },
+  "SNG 1:9": {
+   "own": [
+    "SNG.1.9"
+   ],
+   "cited": [
+    "SNG.2.10",
+    "SNG.6.4",
+    "SNG.7.6"
+   ]
+  },
+  "SNG 1:11": {
+   "own": [
+    "SNG.1.11"
+   ],
+   "cited": [
+    "SNG.2.10",
+    "SNG.6.4",
+    "SNG.7.6"
+   ]
+  },
+  "SNG 1:12": {
+   "own": [
+    "SNG.1.12"
+   ],
+   "cited": [
+    "SNG.2.10",
+    "SNG.6.4",
+    "SNG.7.6"
+   ]
+  },
+  "SNG 1:13": {
+   "own": [
+    "SNG.1.13-14"
+   ],
+   "cited": [
+    "SNG.2.10",
+    "SNG.4.6",
+    "SNG.6.4",
+    "SNG.7.6",
+    "SNG.8.14"
+   ]
+  },
+  "SNG 1:15": {
+   "own": [
+    "SNG.1.15"
+   ],
+   "cited": [
+    "SNG.2.10",
+    "SNG.4.1",
+    "SNG.6.4",
+    "SNG.7.6"
+   ]
+  },
+  "SNG 4:1": {
+   "cited": [
+    "SNG.1.15",
+    "SNG.6.4"
+   ],
+   "own": [
+    "SNG.4.1"
+   ]
+  },
+  "SNG 1:16": {
+   "own": [
+    "SNG.1.16"
+   ]
+  },
+  "SNG 1:17": {
+   "own": [
+    "SNG.1.17"
+   ]
+  },
+  "SNG 2:2": {
+   "own": [
+    "SNG.2.2"
+   ]
+  },
+  "SNG 2:3": {
+   "own": [
+    "SNG.2.3"
+   ]
+  },
+  "SNG 2:4": {
+   "own": [
+    "SNG.2.4"
+   ],
+   "cited": [
+    "SNG.3.9-10",
+    "SNG.7.6"
+   ]
+  },
+  "SNG 2:6": {
+   "covers": [
+    "SNG.2.5-6"
+   ],
+   "cited": [
+    "SNG.4.6",
+    "SNG.8.3-4"
+   ]
+  },
+  "SNG 2:7": {
+   "own": [
+    "SNG.2.7"
+   ],
+   "cited": [
+    "SNG.4.12",
+    "SNG.8.3-4"
+   ]
+  },
+  "SNG 3:5": {
+   "cited": [
+    "SNG.2.7",
+    "SNG.5.2-7"
+   ],
+   "own": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 8:4": {
+   "cited": [
+    "SNG.2.7"
+   ],
+   "covers": [
+    "SNG.8.3-4"
+   ]
+  },
+  "SNG 2:8": {
+   "own": [
+    "SNG.2.8-9"
+   ],
+   "cited": [
+    "SNG.3.5",
+    "SNG.3.6"
+   ]
+  },
+  "SNG 2:9": {
+   "covers": [
+    "SNG.2.8-9"
+   ],
+   "cited": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 2:10": {
+   "own": [
+    "SNG.2.10"
+   ],
+   "cited": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 1:10": {
+   "cited": [
+    "SNG.2.10",
+    "SNG.6.4",
+    "SNG.7.6"
+   ]
+  },
+  "SNG 2:11": {
+   "own": [
+    "SNG.2.11-13"
+   ],
+   "cited": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 2:12": {
+   "covers": [
+    "SNG.2.11-13"
+   ],
+   "cited": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 2:13": {
+   "covers": [
+    "SNG.2.11-13"
+   ],
+   "cited": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 2:15": {
+   "own": [
+    "SNG.2.15"
+   ],
+   "cited": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 2:16": {
+   "own": [
+    "SNG.2.16"
+   ],
+   "cited": [
+    "SNG.3.5",
+    "SNG.6.3"
+   ]
+  },
+  "SNG 6:3": {
+   "cited": [
+    "SNG.2.16"
+   ],
+   "own": [
+    "SNG.6.3"
+   ]
+  },
+  "SNG 7:10": {
+   "cited": [
+    "SNG.2.16",
+    "SNG.6.3"
+   ],
+   "own": [
+    "SNG.7.10"
+   ]
+  },
+  "SNG 2:17": {
+   "own": [
+    "SNG.2.17"
+   ],
+   "cited": [
+    "SNG.3.5"
+   ]
+  },
+  "SNG 8:14": {
+   "cited": [
+    "SNG.2.17",
+    "SNG.4.6"
+   ],
+   "own": [
+    "SNG.8.14"
+   ]
+  },
+  "SNG 3:1": {
+   "own": [
+    "SNG.3.1"
+   ],
+   "cited": [
+    "SNG.3.5",
+    "SNG.5.2-7"
+   ]
+  },
+  "SNG 3:2": {
+   "own": [
+    "SNG.3.2-3"
+   ],
+   "cited": [
+    "SNG.3.5",
+    "SNG.5.2-7"
+   ]
+  },
+  "SNG 3:3": {
+   "covers": [
+    "SNG.3.2-3"
+   ],
+   "cited": [
+    "SNG.3.5",
+    "SNG.5.2-7"
+   ]
+  },
+  "SNG 3:4": {
+   "own": [
+    "SNG.3.4"
+   ],
+   "cited": [
+    "SNG.3.5",
+    "SNG.5.2-7"
+   ]
+  },
+  "SNG 3:6": {
+   "own": [
+    "SNG.3.6"
+   ]
+  },
+  "SNG 4:6": {
+   "cited": [
+    "SNG.3.6",
+    "SNG.8.14"
+   ],
+   "own": [
+    "SNG.4.6"
+   ]
+  },
+  "SNG 4:2": {
+   "own": [
+    "SNG.4.2-5"
+   ]
+  },
+  "SNG 4:4": {
+   "covers": [
+    "SNG.4.2-5"
+   ]
+  },
+  "SNG 4:5": {
+   "covers": [
+    "SNG.4.2-5"
+   ]
+  },
+  "SNG 4:7": {
+   "own": [
+    "SNG.4.7"
+   ]
+  },
+  "SNG 4:8": {
+   "own": [
+    "SNG.4.8"
+   ]
+  },
+  "SNG 4:9": {
+   "own": [
+    "SNG.4.9"
+   ]
+  },
+  "SNG 4:11": {
+   "own": [
+    "SNG.4.11"
+   ]
+  },
+  "SNG 4:14": {
+   "covers": [
+    "SNG.4.13-15"
+   ],
+   "cited": [
+    "SNG.6.2"
+   ]
+  },
+  "SNG 6:1": {
+   "own": [
+    "SNG.6.1"
+   ]
+  },
+  "SNG 6:2": {
+   "own": [
+    "SNG.6.2"
+   ]
+  },
+  "SNG 6:11": {
+   "cited": [
+    "SNG.6.2"
+   ],
+   "own": [
+    "SNG.6.11"
+   ]
+  },
+  "SNG 6:13": {
+   "own": [
+    "SNG.6.13"
+   ],
+   "cited": [
+    "SNG.7.1"
+   ]
+  },
+  "SNG 7:1": {
+   "own": [
+    "SNG.7.1"
+   ]
+  },
+  "SNG 7:6": {
+   "own": [
+    "SNG.7.6"
+   ]
+  },
+  "SNG 7:7": {
+   "own": [
+    "SNG.7.7-8"
+   ]
+  },
+  "SNG 7:8": {
+   "covers": [
+    "SNG.7.7-8"
+   ]
+  },
+  "SNG 8:1": {
+   "own": [
+    "SNG.8.1-2"
+   ]
+  },
+  "SNG 8:3": {
+   "own": [
+    "SNG.8.3-4"
+   ]
+  },
+  "SNG 8:5": {
+   "own": [
+    "SNG.8.5"
+   ]
+  },
+  "SNG 8:6": {
+   "own": [
+    "SNG.8.6"
+   ]
+  },
+  "SNG 8:7": {
+   "own": [
+    "SNG.8.7"
+   ]
+  },
+  "SNG 8:8": {
+   "own": [
+    "SNG.8.8"
+   ]
+  },
+  "SNG 8:9": {
+   "own": [
+    "SNG.8.9"
+   ]
+  },
+  "SNG 8:10": {
+   "own": [
+    "SNG.8.10"
    ]
   }
  }
