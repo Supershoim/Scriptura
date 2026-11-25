@@ -778,8 +778,13 @@ svg .v-pf:not(.sel) { opacity: 0 !important; }
 
 /* Footnotes after a verse: the user's comments and the studies that mention it */
 .columns:not(.no-comments) .row { -webkit-touch-callout: none; }   /* a long press opens the comments, not the system menu */
-.fns { display: inline-flex; gap: 2px; margin-left: 4px; vertical-align: super; line-height: 1; white-space: nowrap; }
-.fn { display: inline-flex; align-items: center; gap: 2px; padding: 2px 5px; border: 0; border-radius: 8px; background: transparent; font: 600 10.5px/1.2 var(--sans); cursor: pointer; transition: background .15s, color .15s; }
+/* Footnotes: floated right after the last word, in the empty end of the last line; when that line is full the
+   float drops to its own line, still right-aligned. Quiet until the row is hovered, selected or focused. */
+.fns { float: right; display: inline-flex; gap: 1px; margin: .45em -5px 0 10px; line-height: 1; opacity: .5; transition: opacity .15s; }
+.row:hover .fns, .row.selected .fns, .fns:focus-within, .fns:has([aria-expanded="true"]) { opacity: 1; }
+@media (pointer: coarse) { .fns { opacity: .75; } }
+@media (prefers-reduced-motion: reduce) { .fns { transition: none; } }
+.fn { display: inline-flex; align-items: center; gap: 3px; padding: 2px 5px; border: 0; border-radius: 8px; background: transparent; font: 500 11px/1.2 var(--sans); cursor: pointer; transition: background .15s, color .15s; }
 .fn-comment { color: var(--green); }
 .fn-study { color: var(--gold); letter-spacing: .2px; }
 .fn-notes { color: var(--kjv); letter-spacing: .3px; }

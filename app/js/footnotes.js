@@ -1,5 +1,5 @@
 // Footnotes after each verse of the reader: the user's comments (a speech-bubble pictogram), the study notes
-// printed with a translation (its abbreviation, "KJV") and, in small print, the studies that mention the verse.
+// printed with a translation (its abbreviation, "KJV") and the studies that mention the verse (a page pictogram with their count).
 // A tap or click opens them in the reference pop-up.
 import { esc } from './util.js';
 import { parseKey, books, bookIndex, available } from './data.js';
@@ -12,6 +12,7 @@ import * as studyNotes from './studynotes.js';
 const BOOK = '<svg width="12" height="12" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3.6C6.6 2.5 4.6 2 2 2v10.4c2.6 0 4.6.5 6 1.6 1.4-1.1 3.4-1.6 6-1.6V2c-2.6 0-4.6.5-6 1.6Zm0 0v10.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>';
 const PICTURE = '<svg width="11" height="11" viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m3.5 11.5 3.2-3.6 2.3 2.4 1.6-1.6 2 2.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>';
 const BUBBLE = '<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.2c0-.9.7-1.6 1.6-1.6h7.8c.9 0 1.6.7 1.6 1.6v5.6c0 .9-.7 1.6-1.6 1.6H7.2L4.4 13v-2.6h-.3c-.9 0-1.6-.7-1.6-1.6Z" fill="currentColor"/></svg>';
+const PAGE = '<svg width="12" height="12" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 1.8h6l3 3v9.4h-9Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M5.8 7.5h4.4M5.8 10h4.4M5.8 12.4h2.6" stroke="currentColor" stroke-width="1.3"/></svg>';
 const bookName = b => books[bookIndex.get(b)]?.name || b;
 const verseTitle = canon => { const { b, c, v } = parseKey(canon); return `${bookName(b)} ${c}:${v}`; };
 const plural = (n, one, many) => n === 1 ? `1 ${one}` : `${n} ${many}`;
@@ -38,11 +39,7 @@ function commentButton(canon, n, t) {
 function studiesHtml(canon, mentions) {
   let html = '';
   const list = ranked(mentions, canon);
-  if (list.length) {
-    const first = catalog.study(list[0].s);
-    const label = list.length === 1 && first ? `${first.c ? bookName(first.b) + ' ' + first.c : 'Ansamblu ' + bookName(first.b)}` : plural(list.length, 'studiu', 'studii');
-    html += `<button type="button" class="fn fn-study" data-fn="studies" aria-haspopup="dialog" aria-expanded="false" aria-label="Versetul apare în ${plural(list.length, 'studiu', 'studii')}" title="Studii care menționează versetul">${esc(label)}</button>`;
-  }
+  if (list.length) html += `<button type="button" class="fn fn-study" data-fn="studies" aria-haspopup="dialog" aria-expanded="false" aria-label="Versetul apare în ${plural(list.length, 'studiu', 'studii')}" title="Studii care menționează versetul">${PAGE}${list.length > 1 ? list.length : ''}</button>`;
   return html;
 }
 
