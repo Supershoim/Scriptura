@@ -3,8 +3,9 @@
 // The visual and the atlas entries are made later, on the computer (/regenerate-visuals).
 import { $, esc } from './util.js';
 import { books } from './data.js';
-import { github, requireUnlock } from './lock.js';
-import { commitFiles } from './github.js';
+import { github, requireUnlock, onLockChange } from './lock.js';
+import { commitFiles, readFile } from './github.js';
+import * as catalog from './catalog.js';
 
 const today = () => new Date().toISOString().slice(0, 10);
 const safeName = name => name.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '-').replace(/[^\w.-]/g, '').toLowerCase();
@@ -57,22 +58,89 @@ function chapterLimit() {
   $('importChapter').max = book?.chapters || 150;
 }
 
-export function openImport() {
+// The study the form would replace ({ chapter, title, summary, themes, date, parts: [{ label, file }] }), or null.
+let previous = null;
+const FIELDS = ['importTitle', 'importSummary', 'importThemes'];
+
+// A book's studies.json as it is where the commit will go: on GitHub once unlocked (a study imported from another
+// device is there before this copy of the app is rebuilt), else on disk through serve.mjs, else the built catalog.
+const lists = new Map();   // book -> Promise<studies.json>
+function studiesOf(b) {
+  if (!lists.has(b)) {
+    const path = `data/studies/${b}/studies.json`;
+    const fromCatalog = () => catalog.studies.filter(s => s.b === b).map(s => ({
+      chapter: s.c, date: s.date, title: s.title, summary: s.summary, themes: s.themes,
+      parts: s.parts.map(p => ({ label: p.label, file: p.src.split('/').pop() }))
+    }));
+    const local = () => fetch(`/api/file?path=${encodeURIComponent(path)}`, { cache: 'no-store' })
+      .then(r => r.ok ? r.json() : fromCatalog()).catch(fromCatalog);
+    const list = github() ? readFile(path).then(f => f ? JSON.parse(f.text) : []).catch(local) : local();
+    lists.set(b, list);
+    list.catch(() => lists.delete(b));
+  }
+  return lists.get(b);
+}
+
+// Fills the form from the study already on that chapter, so replacing it needs only the new file. When the chapter
+// has none, fields filled earlier from another study are cleared; what the user typed is left alone.
+let asked = 0;
+async function prefill() {
+  const b = $('importBook').value, c = +$('importChapter').value, ask = ++asked;
+  const list = await studiesOf(b);
+  if (ask !== asked) return;   // the book or chapter changed again meanwhile
+  const s = list.find(s => s.chapter === c) || null;
+  if (s === previous) return;
+  if (previous && !s) { for (const id of FIELDS) $(id).value = ''; $('importDate').value = today(); }
+  previous = s;
+  $('importReplace').checked = !!s;
+  if (s) {
+    $('importTitle').value = s.title;
+    $('importSummary').value = s.summary;
+    $('importThemes').value = s.themes.join(', ');
+    $('importDate').value = s.date || today();
+  }
+  $('importPrevious').innerHTML = s
+    ? `Capitolul are deja studiul ${/^[„"]/.test(s.title) ? esc(s.title) : `„${esc(s.title)}”`} (${s.parts.map(p => `<code>${esc(p.file)}</code>`).join(', ')}). Câmpurile sunt cele ale lui; alege fișierul nou și trimite.`
+    : '';
+  $('importPrevious').hidden = !s;
+  files.forEach((f, i) => { f.label = labelFor(f.name, i); });
+  renderFiles();
+}
+
+// The label of the i-th picked file (name: its safe file name). Defaults: the first is the main part, the others
+// are named after their file.
+function labelFor(name, i) {
+  // TODO(human): when replacing (previous is the old studies.json entry, previous.parts = [{ label, file }]),
+  // reuse the old part's label.
+  return i ? name.replace(/\.md$/i, '') : 'Studiu complet';
+}
+
+// Opens the dialog; at: { b, c } preselects a book and chapter (the chapter being read).
+export async function openImport(at = {}) {
+  await catalog.load();
   $('importBook').innerHTML = books.map(b => `<option value="${b.id}">${esc(b.name)}</option>`).join('');
+  if (at.b) $('importBook').value = at.b;
+  if (at.c != null) $('importChapter').value = at.c;
   $('importDate').value = today();
   files = [];
+  previous = null;
+  lists.clear();   // read again each time: studies may have been added since
+  for (const id of FIELDS) $(id).value = '';
   $('importReplace').checked = false;
-  renderFiles();
+  $('importPick').value = '';
+  $('importPrevious').hidden = true;
   chapterLimit();
-  status(github() ? '' : 'La trimitere se cere parola pentru GitHub.');
+  renderFiles();
+  prefill();
+  status(github() ? '' : 'La trimitere se cere parola pentru GitHub. Până la deblocare, câmpurile se completează din copia locală, care poate să nu aibă studiile trimise de pe alte dispozitive.');
   $('importDialog').showModal();
 }
 
 async function pick(e) {
-  files = await Promise.all([...e.target.files].map(async (f, i) => ({
-    name: safeName(f.name), text: (await f.text()).replace(/\r\n/g, '\n'),
-    label: i ? f.name.replace(/\.md$/i, '') : 'Studiu complet'
-  })));
+  files = await Promise.all([...e.target.files].map(async (f, i) => {
+    const name = safeName(f.name);
+    return { name, text: (await f.text()).replace(/\r\n/g, '\n'), label: labelFor(name, i) };
+  }));
   renderFiles();
 }
 
@@ -102,8 +170,11 @@ async function submit() {
 }
 
 export function setupImport() {
-  $('importOpen').addEventListener('click', openImport);
-  $('importBook').addEventListener('change', chapterLimit);
+  $('importOpen').addEventListener('click', () => openImport());
+  $('importBook').addEventListener('change', () => { chapterLimit(); prefill(); });
+  $('importChapter').addEventListener('input', prefill);
+  // Unlocked while the dialog is open: read the list again from GitHub, which may hold studies this copy lacks.
+  onLockChange(() => { lists.clear(); if ($('importDialog').open) prefill(); });
   $('importPick').addEventListener('change', pick);
   $('importFiles').addEventListener('input', e => { const i = e.target.dataset.label; if (i != null) files[+i].label = e.target.value; });
   $('importSave').addEventListener('click', submit);

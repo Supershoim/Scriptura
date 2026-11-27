@@ -12,7 +12,7 @@ import { setupLock } from './lock.js';
 import * as catalog from './catalog.js';
 import { linkStudy } from './refs.js';
 import { setupComments } from './comments.js';
-import { setupImport } from './importer.js';
+import { setupImport, openImport } from './importer.js';
 import { setupFootnotes, markRows } from './footnotes.js';
 import { setupStudyNotes, bookExtras, extrasHtml } from './studynotes.js';
 
@@ -489,6 +489,7 @@ function wire() {
   setupFootnotes($('columns'));
   setupStudyNotes();
   setupImport();
+  $('addStudy').addEventListener('click', () => openImport({ b: state.b, c: state.c }));
   setupComments($('columns'), {
     // The verse as shown in the first displayed translation that has it.
     verse: canon => {

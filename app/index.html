@@ -82,6 +82,7 @@
         </div>
         <div class="readerbuttons">
           <button type="button" id="back" hidden>← Înapoi la lectură</button>
+          <button type="button" id="addStudy" title="Adaugă sau înlocuiește studiul acestui capitol">Adaugă studiu</button>
           <button type="button" id="share" title="Copiază linkul către acest loc">Link</button>
           <button type="button" id="copyAll" title="Copiază capitolul în toate traducerile afișate">Copiază capitolul</button>
           <button type="button" id="prev" class="icon" title="Capitolul anterior" aria-label="Capitolul anterior">←</button>
@@ -224,6 +225,7 @@
   <p class="hint">Fișierele .md și intrarea din <code>studies.json</code> se trimit pe GitHub într-un singur commit, după deblocare (parola pentru GitHub). Vizualizarea se face după aceea, pe calculator.</p>
   <label class="field">Cartea <select id="importBook"></select></label>
   <label class="field">Capitolul (0 = privire de ansamblu) <input id="importChapter" type="number" min="0" value="1"></label>
+  <p id="importPrevious" class="hint" role="status" hidden></p>
   <label class="field">Data <input id="importDate" type="date"></label>
   <label class="field">Titlul <input id="importTitle" type="text"></label>
   <label class="field">Rezumatul <textarea id="importSummary" rows="3"></textarea></label>
